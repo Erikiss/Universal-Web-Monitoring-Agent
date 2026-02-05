@@ -5,7 +5,7 @@ from email.message import EmailMessage
 from langchain_openai import ChatOpenAI
 from browser_use import Agent, Browser
 
-# Der ultimative Wrapper: Er hat alles, was der Agent verlangt
+# Der stabile Wrapper für Groq
 class SimpleGroqWrapper:
     def __init__(self, model_name, api_key):
         self.llm = ChatOpenAI(
@@ -13,11 +13,9 @@ class SimpleGroqWrapper:
             api_key=api_key,
             base_url="https://api.groq.com/openai/v1"
         )
-        # Manuelle Definition aller Felder, die Fehler verursacht haben
         self.provider = 'openai'
         self.model = model_name
 
-    # Reicht die Aufrufe an das echte LangChain-Modell weiter
     def __getattr__(self, name):
         return getattr(self.llm, name)
 
@@ -25,31 +23,31 @@ class SimpleGroqWrapper:
         return await self.llm.ainvoke(*args, **kwargs)
 
 async def run_generic_agent():
+    # Browser ohne zusätzliche Config-Aufrufe starten
     browser = Browser()
     
-    # Wir nutzen den Wrapper statt der direkten Vererbung
     llm = SimpleGroqWrapper(
         model_name="llama-3.3-70b-versatile",
         api_key=os.getenv('GROQ_API_KEY')
     )
 
+    steel_key = os.getenv('STEEL_API_KEY')
     target_url = os.getenv('TARGET_URL')
     user = os.getenv('TARGET_USER')
     pw = os.getenv('TARGET_PW')
-    steel_key = os.getenv('STEEL_API_KEY')
 
     task = f"""
     Nutze den Steel-Browser unter 'wss://connect.steel.dev?apiKey={steel_key}'.
     1. Gehe zu {target_url}
     2. Logge dich ein mit User: "{user}" und Passwort: "{pw}".
     3. Suche nach neuen Datenberichten der letzten 4 WOCHEN.
-    4. Extrahiere die Funde als strukturierte Liste.
+    4. Extrahiere die Funde als Liste.
     5. Handle rein lesend.
     """
 
     agent = Agent(task=task, llm=llm, browser=browser)
     history = await agent.run()
-    await browser.close()
+    # Wir lassen browser.close() weg, um den AttributeError zu vermeiden
     return history.final_result()
 
 def send_to_inbox(content):
