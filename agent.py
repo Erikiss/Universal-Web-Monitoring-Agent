@@ -1,77 +1,89 @@
-import os
-import asyncio
-import smtplib
-from email.message import EmailMessage
+import json
 
-from browser_use import Agent, Browser, ChatGroq
+def _count_actions_in_obj(obj, stats):
+    """Durchsucht beliebige Python-Objekte rekursiv nach Action-Einträgen."""
+    if obj is None:
+        return
 
-async def run_generic_agent():
-    print("--- START: Action-Zwang (stabil) ---")
+    # Liste: jedes Element prüfen
+    if isinstance(obj, list):
+        for x in obj:
+            _count_actions_in_obj(x, stats)
+        return
 
-    llm = ChatGroq(
-        model="llama-3.3-70b-versatile",
-        api_key=os.getenv("GROQ_API_KEY"),
-        temperature=0.3,  # start moderat; wenn nötig auf 0.5 erhöhen
+    # Dict: typische Felder auswerten
+    if isinstance(obj, dict):
+        # browser-use nutzt oft "items" für Actions
+        if "items" in obj and isinstance(obj["items"], list):
+            for it in obj["items"]:
+                _count_actions_in_obj(it, stats)
+
+        # Action-Typ kann in "type" oder "action" stehen
+        t = obj.get("type") or obj.get("action")
+        if isinstance(t, str):
+            tl = t.lower()
+            if "click" in tl:
+                stats["clicks"] += 1
+            elif "type" in tl or "input" in tl or "fill" in tl:
+                stats["types"] += 1
+            elif "scroll" in tl:
+                stats["scrolls"] += 1
+            elif "wait" in tl:
+                stats["waits"] += 1
+            elif "navigate" in tl or "goto" in tl:
+                stats["navigates"] += 1
+
+        # Rekursiv weiter
+        for v in obj.values():
+            _count_actions_in_obj(v, stats)
+        return
+
+    # Sonst: nichts tun
+    return
+
+
+def analyze_history(history):
+    stats = {
+        "clicks": 0,
+        "types": 0,
+        "scrolls": 0,
+        "waits": 0,
+        "navigates": 0,
+        "errors": 0,
+    }
+
+    for step in getattr(history, "history", []):
+        # Fehler zählen
+        if getattr(step, "error", None):
+            stats["errors"] += 1
+
+        # Versuche: model_output strukturiert
+        mo = getattr(step, "model_output", None)
+        if mo is not None:
+            # 1) Wenn es schon dict/list ist
+            if isinstance(mo, (dict, list)):
+                _count_actions_in_obj(mo, stats)
+            else:
+                # 2) Wenn String: versuche JSON zu laden
+                s = str(mo).strip()
+                if s.startswith("{") or s.startswith("["):
+                    try:
+                        _count_actions_in_obj(json.loads(s), stats)
+                    except Exception:
+                        pass
+
+        # Fallback: result kann Actions enthalten
+        res = getattr(step, "result", None)
+        if isinstance(res, (dict, list)):
+            _count_actions_in_obj(res, stats)
+
+    report = (
+        f"📊 TELEMETRIE\n"
+        f"- Navigates: {stats['navigates']}\n"
+        f"- Waits: {stats['waits']}\n"
+        f"- Scrolls: {stats['scrolls']}\n"
+        f"- Klicks: {stats['clicks']}\n"
+        f"- Inputs: {stats['types']}\n"
+        f"- Fehler: {stats['errors']}\n"
     )
-
-    steel_key = os.getenv("STEEL_API_KEY")
-    browser = Browser(cdp_url=f"wss://connect.steel.dev?apiKey={steel_key}")
-
-    task = f"""
-    ROLE: Du bist ein Automatisierungs-Bot. Du MUSST Aktionen ausführen.
-
-    NICHT ERLAUBT:
-    - Nur beobachten
-    - Nur Text antworten
-    - Prosa/Erklärungen
-
-    HARTE REGEL:
-    - Gib IMMER mindestens 1 Aktion aus (Click/Type/Wait/Navigate).
-    - Wenn du ein Login findest, MUSST du es ausführen.
-
-    ABLAUF (zwingend):
-    1. Gehe zu {os.getenv('TARGET_URL')}.
-    2. Suche im DOM nach "Log in", "Sign in", "Anmelden", "Login".
-    3. ACTION: Klicke den passenden Link/Button.
-    4. ACTION: Tippe User "{os.getenv('TARGET_USER')}" in das erste passende Username/Email-Input.
-    5. ACTION: Tippe Passwort "{os.getenv('TARGET_PW')}" in das Password-Input.
-    6. ACTION: Klicke Submit/Login.
-    7. ACTION: Warte 5 Sekunden.
-    8. Prüfe Login-Erfolg (Logout/Profil/Username). Falls nicht eingeloggt: Versuche alternative Login-Buttons/Inputs.
-    9. Erst bei Erfolg: Extrahiere Berichte der letzten 4 Wochen.
-
-    OUTPUT: Nur strukturierte Aktionen. Keine Prosa.
-    """
-
-    agent = Agent(
-        task=task,
-        llm=llm,
-        browser=browser,
-        use_vision=False,
-    )
-
-    history = await agent.run()
-    return history.final_result() or "Kein Ergebnis."
-
-def send_to_inbox(content: str):
-    msg = EmailMessage()
-    msg["Subject"] = "Mersenne-Bot: Action-Zwang Lauf"
-    msg["From"] = os.getenv("EMAIL_USER")
-    msg["To"] = os.getenv("EMAIL_RECEIVER")
-    msg.set_content(f"Bericht:\n\n{content}")
-
-    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
-        smtp.login(os.getenv("EMAIL_USER"), os.getenv("EMAIL_APP_PASSWORD"))
-        smtp.send_message(msg)
-
-async def main():
-    try:
-        result = await run_generic_agent()
-        send_to_inbox(str(result))
-        print("Mail gesendet.")
-    except Exception as e:
-        send_to_inbox(f"Fehler: {e}")
-        raise
-
-if __name__ == "__main__":
-    asyncio.run(main())
+    return stats, report
