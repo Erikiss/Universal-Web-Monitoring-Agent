@@ -4,15 +4,18 @@ import smtplib
 from email.message import EmailMessage
 from langchain_openai import ChatOpenAI
 from browser_use import Agent, Browser
+from pydantic import ConfigDict
 
-# Wir erstellen eine eigene Klasse, die den 'provider' fest eingebaut hat
+# Wir erlauben der Klasse explizit, dass externe Tools (wie browser-use) 
+# neue Felder wie 'provider' oder 'ainvoke' hinzufügen dürfen.
 class GroqChatModel(ChatOpenAI):
+    model_config = ConfigDict(extra='allow')
     provider: str = 'openai'
 
 async def run_generic_agent():
     browser = Browser()
     
-    # Wir nutzen unsere neue Klasse statt der Standard-Klasse
+    # Initialisierung mit dem gelockerten Modell
     llm = GroqChatModel(
         model="llama-3.3-70b-versatile",
         api_key=os.getenv('GROQ_API_KEY'),
@@ -29,7 +32,7 @@ async def run_generic_agent():
     1. Gehe zu {target_url}
     2. Logge dich ein mit User: "{user}" und Passwort: "{pw}".
     3. Suche nach neuen Datenberichten der letzten 4 WOCHEN.
-    4. Extrahiere die Funde als Liste.
+    4. Extrahiere die Funde als strukturierte Liste.
     5. Handle rein lesend.
     """
 
@@ -40,18 +43,18 @@ async def run_generic_agent():
 
 def send_to_inbox(content):
     msg = EmailMessage()
-    msg['Subject'] = "Datenbericht (Letzte 4 Wochen)"
+    msg['Subject'] = "Automatisierter Datenbericht"
     msg['From'] = os.getenv('EMAIL_USER')
     msg['To'] = os.getenv('EMAIL_RECEIVER')
-    msg.set_content(f"Bericht:\n\n{content}")
+    msg.set_content(f"Hier sind die Ergebnisse der letzten 4 Wochen:\n\n{content}")
 
     try:
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
             smtp.login(os.getenv('EMAIL_USER'), os.getenv('EMAIL_APP_PASSWORD'))
             smtp.send_message(msg)
-        print("Erfolg: Bericht versendet.")
+        print("Erfolg: E-Mail wurde versendet.")
     except Exception as e:
-        print(f"Fehler: {e}")
+        print(f"E-Mail-Fehler: {e}")
 
 async def main():
     extracted_data = await run_generic_agent()
