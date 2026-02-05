@@ -2,7 +2,7 @@
 Dieses Repository enthält einen KI-gesteuerten Browser-Agenten, der autonom Websites besucht, sich einloggt, Daten extrahiert und diese per E-Mail für die Weiterverarbeitung (z.B. durch CrewAI) versendet.
 
 
-Hier ist ein Entwurf für eine professionelle README.md, die du direkt in dein GitHub-Repository legen kannst. Sie dient als "Gebrauchsanweisung" für dich, damit du auch in Zukunft sofort weißt, wie das System funktioniert und wie du es auf eine andere Website umstellst.
+
 🤖 Universal Web Monitoring Agent
 Dieses Repository enthält einen KI-gesteuerten Browser-Agenten, der autonom Websites besucht, sich einloggt, Daten extrahiert und diese per E-Mail für die Weiterverarbeitung (z.B. durch CrewAI) versendet.
 🚀 Funktionsweise
@@ -31,6 +31,3 @@ Um eine andere Website zu überwachen, musst du keinen Code ändern. Passe einfa
 Der Agent sendet E-Mails mit dem Betreff Neuer Datenbericht. Eine nachgelagerte CrewAI-Instanz kann diese Mails filtern:
  * Trigger: Suche nach Betreff "Neuer Datenbericht".
  * Action: Analysiere den Body, filtere Änderungen heraus und speichere sie in der Datenbank.
-Ein kleiner Tipp für die Zukunft:
-Falls die neue Website, die du überwachen willst, extrem komplex ist, kannst du im Code (agent.py) den task String noch um einen Satz ergänzen wie: "Suche speziell nach der Tabelle im Menüpunkt 'XYZ'". Aber für die meisten Foren und Portale wird der generische Befehl dank Llama 3.3 perfekt funktionieren.
-Damit ist dein System komplett und zukunftssicher! Soll ich dir noch bei etwas anderem helfen?
