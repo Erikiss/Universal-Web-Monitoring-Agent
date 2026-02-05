@@ -1,0 +1,33 @@
+name: Universal Web Monitor
+on:
+  schedule:
+    - cron: '0 7 * * *' # Täglich um 07:00 UTC (ca. 08:00 Uhr deutscher Zeit)
+  workflow_dispatch: # Ermöglicht den manuellen Start via Button
+
+jobs:
+  scrape-and-mail:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code auschecken
+        uses: actions/checkout@v4
+
+      - name: Python Setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Installation
+        run: pip install browser-use langchain-groq pandas
+
+      - name: Agent ausführen
+        env:
+          # Mappt deine Secrets auf die Umgebungsvariablen im Skript
+          STEEL_API_KEY: ${{ secrets.STEEL_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          TARGET_URL: ${{ secrets.TARGET_URL }}
+          TARGET_USER: ${{ secrets.TARGET_USER }}
+          TARGET_PW: ${{ secrets.TARGET_PW }}
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_RECEIVER: ${{ secrets.EMAIL_RECEIVER }}
+          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
+        run: python agent.py
