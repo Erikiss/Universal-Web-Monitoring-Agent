@@ -4,22 +4,33 @@ import smtplib
 from email.message import EmailMessage
 from langchain_openai import ChatOpenAI
 from browser_use import Agent, Browser
-from pydantic import ConfigDict
 
-# Wir erlauben der Klasse explizit, dass externe Tools (wie browser-use) 
-# neue Felder wie 'provider' oder 'ainvoke' hinzufügen dürfen.
-class GroqChatModel(ChatOpenAI):
-    model_config = ConfigDict(extra='allow')
-    provider: str = 'openai'
+# Der ultimative Wrapper: Er hat alles, was der Agent verlangt
+class SimpleGroqWrapper:
+    def __init__(self, model_name, api_key):
+        self.llm = ChatOpenAI(
+            model=model_name,
+            api_key=api_key,
+            base_url="https://api.groq.com/openai/v1"
+        )
+        # Manuelle Definition aller Felder, die Fehler verursacht haben
+        self.provider = 'openai'
+        self.model = model_name
+
+    # Reicht die Aufrufe an das echte LangChain-Modell weiter
+    def __getattr__(self, name):
+        return getattr(self.llm, name)
+
+    async def ainvoke(self, *args, **kwargs):
+        return await self.llm.ainvoke(*args, **kwargs)
 
 async def run_generic_agent():
     browser = Browser()
     
-    # Initialisierung mit dem gelockerten Modell
-    llm = GroqChatModel(
-        model="llama-3.3-70b-versatile",
-        api_key=os.getenv('GROQ_API_KEY'),
-        base_url="https://api.groq.com/openai/v1"
+    # Wir nutzen den Wrapper statt der direkten Vererbung
+    llm = SimpleGroqWrapper(
+        model_name="llama-3.3-70b-versatile",
+        api_key=os.getenv('GROQ_API_KEY')
     )
 
     target_url = os.getenv('TARGET_URL')
@@ -46,7 +57,7 @@ def send_to_inbox(content):
     msg['Subject'] = "Automatisierter Datenbericht"
     msg['From'] = os.getenv('EMAIL_USER')
     msg['To'] = os.getenv('EMAIL_RECEIVER')
-    msg.set_content(f"Hier sind die Ergebnisse der letzten 4 Wochen:\n\n{content}")
+    msg.set_content(f"Ergebnisse der letzten 4 Wochen:\n\n{content}")
 
     try:
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
