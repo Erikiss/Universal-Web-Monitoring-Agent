@@ -2,62 +2,65 @@ import os
 import asyncio
 import smtplib
 from email.message import EmailMessage
+# Wir gehen zurück zum Original, da der Wrapper keine Tools (Klicks) konnte
 from langchain_openai import ChatOpenAI
 from browser_use import Agent, Browser
 
-# Unser bewährter Wrapper für Groq (bleibt unverändert)
-class SimpleGroqWrapper:
-    def __init__(self, model_name, api_key):
-        self.llm = ChatOpenAI(
-            model=model_name,
-            api_key=api_key,
-            base_url="https://api.groq.com/openai/v1"
-        )
-        self.provider = 'openai'
-        self.model = model_name
-
-    def __getattr__(self, name):
-        return getattr(self.llm, name)
-
-    async def ainvoke(self, *args, **kwargs):
-        return await self.llm.ainvoke(*args, **kwargs)
-
 async def run_generic_agent():
+    # 1. Browser Setup (Das funktioniert jetzt stabil!)
     steel_key = os.getenv('STEEL_API_KEY')
-    # Die Adresse für den Steel-Browser
-    wss_url = f"wss://connect.steel.dev?apiKey={steel_key}"
+    # WICHTIG: cdp_url ist der korrekte Parameter für Steel
+    browser = Browser(cdp_url=f"wss://connect.steel.dev?apiKey={steel_key}")
     
-    # FIX: Der Parameter heißt 'cdp_url' (Chrome DevTools Protocol).
-    # Wir übergeben ihn direkt, ohne 'config'-Objekt.
-    browser = Browser(cdp_url=wss_url)
-    
-    llm = SimpleGroqWrapper(
-        model_name="llama-3.3-70b-versatile",
-        api_key=os.getenv('GROQ_API_KEY')
+    # 2. LLM Setup (Das Gehirn)
+    # Wir nutzen die offizielle OpenAI-Klasse, biegen sie aber auf Groq um.
+    # Das ermöglicht dem Agenten, Buttons zu klicken (Tool Calling).
+    llm = ChatOpenAI(
+        model="llama-3.3-70b-versatile",
+        api_key=os.getenv('GROQ_API_KEY'),
+        base_url="https://api.groq.com/openai/v1",
+        # Wichtig: Wir setzen max_tokens, damit er nicht abbricht
+        max_tokens=1024
     )
 
-    # Präziser Task, damit du keine "None"-Mail mehr bekommst
+    # 3. Der Auftrag
+    target_url = os.getenv('TARGET_URL')
+    user = os.getenv('TARGET_USER')
+    pw = os.getenv('TARGET_PW')
+    
     task = f"""
-    1. Gehe zu {os.getenv('TARGET_URL')}.
-    2. Warte kurz, bis die Seite geladen ist.
-    3. Logge dich ein (User: "{os.getenv('TARGET_USER')}", PW: "{os.getenv('TARGET_PW')}").
-    4. Suche nach neuen Datenberichten oder Foreneinträgen der letzten 4 Wochen.
-    5. Fasse die Ergebnisse zusammen. 
-    6. Falls du unsicher bist oder nichts findest, schreibe: "Seite besucht, aber keine Daten identifiziert."
+    Gehe zu {target_url}.
+    Warte kurz bis die Seite geladen ist.
+    Logge dich ein mit User: "{user}" und Passwort: "{pw}".
+    Untersuche die Seite nach neuen Datenberichten der letzten 4 Wochen.
+    Fasse die Ergebnisse zusammen.
+    Wenn du keine neuen Daten findest, antworte: "Keine neuen Daten im Zeitraum gefunden."
     """
 
+    # Agent starten
     agent = Agent(task=task, llm=llm, browser=browser)
+    
+    # Wir führen den Agenten aus und holen uns das Ergebnis
     history = await agent.run()
     
+    # Ergebnis extrahieren
     result = history.final_result()
-    return result if result else "Agent hat gearbeitet, aber keinen Text zurückgegeben."
+    
+    # Falls das Ergebnis leer ist, holen wir uns den letzten Gedanken des Agenten
+    if not result:
+        try:
+            result = history.history[-1].result
+        except:
+            result = "Der Agent lief durch, hat aber kein textuelles Ergebnis geliefert. Bitte Video auf Steel prüfen."
+            
+    return result
 
 def send_to_inbox(content):
     msg = EmailMessage()
-    msg['Subject'] = "Mersenne-Bot: Bericht aus der Cloud"
+    msg['Subject'] = "Mersenne-Bot: Analyse-Ergebnis"
     msg['From'] = os.getenv('EMAIL_USER')
     msg['To'] = os.getenv('EMAIL_RECEIVER')
-    msg.set_content(f"Ergebnis der Session:\n\n{content}")
+    msg.set_content(f"Bericht vom Agenten:\n\n{content}")
 
     try:
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
@@ -68,8 +71,12 @@ def send_to_inbox(content):
         print(f"Mail-Fehler: {e}")
 
 async def main():
-    extracted_data = await run_generic_agent()
-    send_to_inbox(str(extracted_data))
+    try:
+        extracted_data = await run_generic_agent()
+        send_to_inbox(str(extracted_data))
+    except Exception as e:
+        print(f"Kritischer Fehler im Skript: {e}")
+        send_to_inbox(f"Fehler: {e}")
 
 if __name__ == "__main__":
     asyncio.run(main())
