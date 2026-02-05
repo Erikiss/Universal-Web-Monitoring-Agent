@@ -5,34 +5,29 @@ from email.message import EmailMessage
 from langchain_openai import ChatOpenAI
 from browser_use import Agent, Browser
 
-# --- DAS TROJANISCHE PFERD (Der Wrapper) ---
+# --- DER SMART ADAPTER (Dein Software-Relais) ---
 class GroqAdapter:
-    """
-    Dieser Adapter verhält sich wie ein LLM, ist aber nicht 'frozen'.
-    Er erlaubt browser-use, Attribute wie 'ainvoke' zu verändern,
-    leitet aber die echte Arbeit an Groq weiter.
-    """
     def __init__(self, llm):
         self.llm = llm
-        # Wir geben dem Framework genau das, was es sucht:
+        # 1. Wir geben browser-use genau die Etiketten, die es sucht:
         self.provider = "openai"
         self.model_name = "llama-3.3-70b-versatile"
+        self.model = "llama-3.3-70b-versatile"  # FIX: Das fehlende Attribut aus deiner letzten Mail!
         
-    # Wenn browser-use 'ainvoke' aufruft oder überschreiben will, klappt das hier,
-    # weil wir eine normale Python-Klasse sind (kein Pydantic).
+    # 2. Wir leiten die "Intelligenz" an das echte Groq-Objekt weiter
     async def ainvoke(self, *args, **kwargs):
         return await self.llm.ainvoke(*args, **kwargs)
 
-    # Alle anderen Anfragen (z.B. Tools binden) leiten wir blind weiter
+    # 3. Alle anderen Anfragen leiten wir blind weiter
     def __getattr__(self, name):
         return getattr(self.llm, name)
 
 async def run_generic_agent():
-    # 1. Steel Browser verbinden
+    # 1. Steel Browser verbinden (Das hat ja schon geklappt!)
     steel_key = os.getenv('STEEL_API_KEY')
     browser = Browser(cdp_url=f"wss://connect.steel.dev?apiKey={steel_key}")
     
-    # 2. Das echte Gehirn initialisieren
+    # 2. Das echte Gehirn (Groq)
     real_llm = ChatOpenAI(
         model="llama-3.3-70b-versatile",
         api_key=os.getenv('GROQ_API_KEY'),
@@ -41,7 +36,7 @@ async def run_generic_agent():
         temperature=0.1
     )
     
-    # 3. Das Gehirn in den Adapter stecken (Schutzhülle)
+    # 3. Wir stecken das Gehirn in den Adapter
     llm_wrapper = GroqAdapter(real_llm)
 
     # 4. Der Auftrag
@@ -53,7 +48,7 @@ async def run_generic_agent():
     5. WICHTIG: Wenn KEINE neuen Daten da sind, antworte: "Keine neuen Daten gefunden."
     """
 
-    # Wir geben dem Agenten den Wrapper, nicht das Original!
+    # Der Agent arbeitet mit dem Adapter, nicht dem Original
     agent = Agent(task=task, llm=llm_wrapper, browser=browser)
     
     history = await agent.run()
@@ -69,7 +64,7 @@ async def run_generic_agent():
 
 def send_to_inbox(content):
     msg = EmailMessage()
-    msg['Subject'] = "Mersenne-Bot: Bericht"
+    msg['Subject'] = "Mersenne-Bot: Analyse"
     msg['From'] = os.getenv('EMAIL_USER')
     msg['To'] = os.getenv('EMAIL_RECEIVER')
     msg.set_content(f"Bericht vom Agenten:\n\n{content}")
