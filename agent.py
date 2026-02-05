@@ -5,7 +5,7 @@ from email.message import EmailMessage
 from langchain_openai import ChatOpenAI
 from browser_use import Agent, Browser
 
-# Unser bewährter Wrapper für Groq
+# Unser bewährter Wrapper für Groq (bleibt unverändert)
 class SimpleGroqWrapper:
     def __init__(self, model_name, api_key):
         self.llm = ChatOpenAI(
@@ -24,39 +24,40 @@ class SimpleGroqWrapper:
 
 async def run_generic_agent():
     steel_key = os.getenv('STEEL_API_KEY')
+    # Die Adresse für den Steel-Browser
     wss_url = f"wss://connect.steel.dev?apiKey={steel_key}"
     
-    # FIX: Wir übergeben die URL direkt als Argument, ohne "config"-Umweg.
-    # Das ist der Schlüssel, damit der Browser die Cloud-Verbindung akzeptiert.
-    browser = Browser(wss_url=wss_url)
+    # FIX: Der Parameter heißt 'cdp_url' (Chrome DevTools Protocol).
+    # Wir übergeben ihn direkt, ohne 'config'-Objekt.
+    browser = Browser(cdp_url=wss_url)
     
     llm = SimpleGroqWrapper(
         model_name="llama-3.3-70b-versatile",
         api_key=os.getenv('GROQ_API_KEY')
     )
 
+    # Präziser Task, damit du keine "None"-Mail mehr bekommst
     task = f"""
     1. Gehe zu {os.getenv('TARGET_URL')}.
-    2. Logge dich ein (User: "{os.getenv('TARGET_USER')}", PW: "{os.getenv('TARGET_PW')}").
-    3. Suche nach neuen Datenberichten der letzten 4 Wochen.
-    4. Liste alle Funde detailliert auf.
-    5. Wenn du nichts findest, schreibe: "Keine neuen Daten gefunden."
+    2. Warte kurz, bis die Seite geladen ist.
+    3. Logge dich ein (User: "{os.getenv('TARGET_USER')}", PW: "{os.getenv('TARGET_PW')}").
+    4. Suche nach neuen Datenberichten oder Foreneinträgen der letzten 4 Wochen.
+    5. Fasse die Ergebnisse zusammen. 
+    6. Falls du unsicher bist oder nichts findest, schreibe: "Seite besucht, aber keine Daten identifiziert."
     """
 
     agent = Agent(task=task, llm=llm, browser=browser)
     history = await agent.run()
     
-    # Wir schließen den Browser am Ende nicht manuell, um Fehler zu vermeiden
-    
     result = history.final_result()
-    return result if result else "Agent lief durch, gab aber keinen Text zurück."
+    return result if result else "Agent hat gearbeitet, aber keinen Text zurückgegeben."
 
 def send_to_inbox(content):
     msg = EmailMessage()
-    msg['Subject'] = "Mersenne-Bot: Live-Bericht aus der Cloud"
+    msg['Subject'] = "Mersenne-Bot: Bericht aus der Cloud"
     msg['From'] = os.getenv('EMAIL_USER')
     msg['To'] = os.getenv('EMAIL_RECEIVER')
-    msg.set_content(f"Ergebnis:\n\n{content}")
+    msg.set_content(f"Ergebnis der Session:\n\n{content}")
 
     try:
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
