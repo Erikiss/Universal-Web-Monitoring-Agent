@@ -1,73 +1,87 @@
 import os
 import asyncio
 import smtplib
+import subprocess
+import sys
 from email.message import EmailMessage
-from langchain_openai import ChatOpenAI
+
+# --- SCHRITT 0: Auto-Installation der Abhängigkeiten ---
+try:
+    from langchain_groq import ChatGroq
+except ImportError:
+    print("⚠️ Installiere langchain-groq...")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "langchain-groq"])
+    from langchain_groq import ChatGroq
+
 from browser_use import Agent, Browser
 
-# --- DER SMART ADAPTER (Dein Software-Relais) ---
-class GroqAdapter:
-    def __init__(self, llm):
-        self.llm = llm
-        # 1. Wir geben browser-use genau die Etiketten, die es sucht:
-        self.provider = "openai"
-        self.model_name = "llama-3.3-70b-versatile"
-        self.model = "llama-3.3-70b-versatile"  # FIX: Das fehlende Attribut aus deiner letzten Mail!
-        
-    # 2. Wir leiten die "Intelligenz" an das echte Groq-Objekt weiter
-    async def ainvoke(self, *args, **kwargs):
-        return await self.llm.ainvoke(*args, **kwargs)
+async def run_diagnostics_and_agent():
+    print("--- START DIAGNOSE ---")
+    
+    # SCHRITT 1: Umgebungsvariable prüfen
+    api_key = os.getenv('GROQ_API_KEY')
+    is_set = bool(api_key)
+    print(f"1. Env Variable GROQ_API_KEY gefunden? -> {is_set}")
+    
+    if not is_set:
+        print("❌ ABBRUCH: Kein API-Key in den Umgebungsvariablen gefunden.")
+        return "Fehler: Kein API-Key."
 
-    # 3. Alle anderen Anfragen leiten wir blind weiter
-    def __getattr__(self, name):
-        return getattr(self.llm, name)
+    if len(api_key) < 10:
+        print(f"❌ WARNUNG: API-Key scheint zu kurz zu sein ({len(api_key)} Zeichen).")
 
-async def run_generic_agent():
-    # 1. Steel Browser verbinden (Das hat ja schon geklappt!)
+    # SCHRITT 2: Der Groq-Ping (Isolierter Test)
+    print("2. Teste Verbindung zu Groq (Ping)...")
+    try:
+        # Wir nutzen 'model' statt 'model_name' für maximale Kompatibilität
+        test_llm = ChatGroq(
+            model="llama-3.3-70b-versatile",
+            api_key=api_key,
+            temperature=0.1
+        )
+        # Ein winziger Call, nur um zu sehen, ob die Leitung steht
+        response = await test_llm.ainvoke("Antworte nur mit einem Wort: PONG")
+        print(f"✅ Groq Ping Erfolgreich! Antwort: {response.content}")
+    except Exception as e:
+        print(f"❌ Groq Ping GESCHEITERT: {e}")
+        print("URSACHE: Wahrscheinlich falscher Key, falsches Projekt oder Guthaben leer.")
+        return f"Diagnose-Fehler: {e}"
+
+    print("--- DIAGNOSE ENDE (System bereit) ---")
+
+    # SCHRITT 3: Der eigentliche Agent (Nur wenn Diagnose OK)
+    print("3. Starte Browser-Agent...")
     steel_key = os.getenv('STEEL_API_KEY')
     browser = Browser(cdp_url=f"wss://connect.steel.dev?apiKey={steel_key}")
     
-    # 2. Das echte Gehirn (Groq)
-    real_llm = ChatOpenAI(
-        model="llama-3.3-70b-versatile",
-        api_key=os.getenv('GROQ_API_KEY'),
-        base_url="https://api.groq.com/openai/v1",
-        max_tokens=1024,
-        temperature=0.1
-    )
-    
-    # 3. Wir stecken das Gehirn in den Adapter
-    llm_wrapper = GroqAdapter(real_llm)
-
-    # 4. Der Auftrag
     task = f"""
     1. Gehe zu {os.getenv('TARGET_URL')}.
     2. Logge dich ein (User: "{os.getenv('TARGET_USER')}", PW: "{os.getenv('TARGET_PW')}").
-    3. Untersuche die Seite nach neuen Datenberichten der letzten 4 Wochen.
-    4. Wenn du Daten findest, extrahiere sie als Liste.
-    5. WICHTIG: Wenn KEINE neuen Daten da sind, antworte: "Keine neuen Daten gefunden."
+    3. Suche nach neuen Datenberichten der letzten 4 Wochen.
+    4. Wenn KEINE neuen Daten da sind, antworte: "Keine neuen Daten gefunden."
     """
 
-    # Der Agent arbeitet mit dem Adapter, nicht dem Original
-    agent = Agent(task=task, llm=llm_wrapper, browser=browser)
+    # Wir nutzen das getestete LLM-Objekt weiter
+    agent = Agent(task=task, llm=test_llm, browser=browser)
     
     history = await agent.run()
-    
     result = history.final_result()
+    
     if not result:
+        # Fallback für leere Ergebnisse
         try:
             result = history.history[-1].result
         except:
-            result = "Agent lief durch, aber Ergebnis war leer."
+            result = "Agent lief durch, aber Ergebnis leer."
             
     return result
 
 def send_to_inbox(content):
     msg = EmailMessage()
-    msg['Subject'] = "Mersenne-Bot: Analyse"
+    msg['Subject'] = "Mersenne-Bot: Diagnose & Bericht"
     msg['From'] = os.getenv('EMAIL_USER')
     msg['To'] = os.getenv('EMAIL_RECEIVER')
-    msg.set_content(f"Bericht vom Agenten:\n\n{content}")
+    msg.set_content(f"Protokoll:\n\n{content}")
 
     try:
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
@@ -79,11 +93,11 @@ def send_to_inbox(content):
 
 async def main():
     try:
-        extracted_data = await run_generic_agent()
+        extracted_data = await run_diagnostics_and_agent()
         send_to_inbox(str(extracted_data))
     except Exception as e:
-        print(f"Kritischer Fehler: {e}")
-        send_to_inbox(f"Systemfehler: {e}")
+        print(f"Kritischer Fehler im Main-Loop: {e}")
+        send_to_inbox(f"Kritischer Fehler: {e}")
 
 if __name__ == "__main__":
     asyncio.run(main())
