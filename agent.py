@@ -5,13 +5,7 @@ from email.message import EmailMessage
 from langchain_openai import ChatOpenAI
 from browser_use import Agent, Browser
 
-# FIX: Wir holen uns die Config direkt aus dem Untermodul, 
-# da sie im Hauptpaket gerade nicht verfügbar ist.
-try:
-    from browser_use import BrowserConfig
-except ImportError:
-    from browser_use.browser.browser import BrowserConfig
-
+# Wrapper Klasse für Groq (bleibt gleich, da sie funktioniert hat)
 class SimpleGroqWrapper:
     def __init__(self, model_name, api_key):
         self.llm = ChatOpenAI(
@@ -30,42 +24,37 @@ class SimpleGroqWrapper:
 
 async def run_generic_agent():
     steel_key = os.getenv('STEEL_API_KEY')
+    wss_url = f"wss://connect.steel.dev?apiKey={steel_key}"
     
-    # Der entscheidende Teil: Wir zwingen den Browser in die Cloud
-    config = BrowserConfig(
-        wss_url=f"wss://connect.steel.dev?apiKey={steel_key}"
-    )
-    browser = Browser(config=config)
+    # DER TRICK: Wir nutzen ein einfaches Dictionary statt der BrowserConfig-Klasse.
+    # Pydantic (der Unterbau) wandelt das automatisch für uns um.
+    browser = Browser(config={"wss_url": wss_url})
     
     llm = SimpleGroqWrapper(
         model_name="llama-3.3-70b-versatile",
         api_key=os.getenv('GROQ_API_KEY')
     )
 
-    # Task mit expliziter Anweisung zur Datensuche
     task = f"""
     1. Gehe zu {os.getenv('TARGET_URL')}.
     2. Logge dich ein (User: "{os.getenv('TARGET_USER')}", PW: "{os.getenv('TARGET_PW')}").
-    3. Untersuche die Seite nach neuen Datenberichten der letzten 4 Wochen.
-    4. Wenn du Daten findest, fasse sie zusammen.
-    5. Wenn KEINE neuen Daten da sind, antworte exakt: "Keine neuen Daten gefunden."
+    3. Suche nach neuen Datenberichten der letzten 4 Wochen.
+    4. Liste alle Funde detailliert auf.
+    5. Wenn du nichts findest, schreibe: "Keine neuen Daten gefunden."
     """
 
     agent = Agent(task=task, llm=llm, browser=browser)
     history = await agent.run()
     
-    # Ergebnis-Handling
     result = history.final_result()
-    if not result:
-        return "Der Agent hat die Seite besucht, aber kein textuelles Ergebnis zurückgemeldet."
-    return result
+    return result if result else "Agent lief durch, gab aber keinen Text zurück."
 
 def send_to_inbox(content):
     msg = EmailMessage()
-    msg['Subject'] = "Mersenne-Bot: Live-Bericht aus der Cloud"
+    msg['Subject'] = "Mersenne-Bot: Bericht"
     msg['From'] = os.getenv('EMAIL_USER')
     msg['To'] = os.getenv('EMAIL_RECEIVER')
-    msg.set_content(f"Ergebnis der Session:\n\n{content}")
+    msg.set_content(f"Ergebnis:\n\n{content}")
 
     try:
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
