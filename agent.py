@@ -5,7 +5,7 @@ from email.message import EmailMessage
 from langchain_openai import ChatOpenAI
 from browser_use import Agent, Browser
 
-# Wrapper Klasse für Groq (bleibt gleich, da sie funktioniert hat)
+# Unser bewährter Wrapper für Groq
 class SimpleGroqWrapper:
     def __init__(self, model_name, api_key):
         self.llm = ChatOpenAI(
@@ -26,9 +26,9 @@ async def run_generic_agent():
     steel_key = os.getenv('STEEL_API_KEY')
     wss_url = f"wss://connect.steel.dev?apiKey={steel_key}"
     
-    # DER TRICK: Wir nutzen ein einfaches Dictionary statt der BrowserConfig-Klasse.
-    # Pydantic (der Unterbau) wandelt das automatisch für uns um.
-    browser = Browser(config={"wss_url": wss_url})
+    # FIX: Wir übergeben die URL direkt als Argument, ohne "config"-Umweg.
+    # Das ist der Schlüssel, damit der Browser die Cloud-Verbindung akzeptiert.
+    browser = Browser(wss_url=wss_url)
     
     llm = SimpleGroqWrapper(
         model_name="llama-3.3-70b-versatile",
@@ -46,12 +46,14 @@ async def run_generic_agent():
     agent = Agent(task=task, llm=llm, browser=browser)
     history = await agent.run()
     
+    # Wir schließen den Browser am Ende nicht manuell, um Fehler zu vermeiden
+    
     result = history.final_result()
     return result if result else "Agent lief durch, gab aber keinen Text zurück."
 
 def send_to_inbox(content):
     msg = EmailMessage()
-    msg['Subject'] = "Mersenne-Bot: Bericht"
+    msg['Subject'] = "Mersenne-Bot: Live-Bericht aus der Cloud"
     msg['From'] = os.getenv('EMAIL_USER')
     msg['To'] = os.getenv('EMAIL_RECEIVER')
     msg.set_content(f"Ergebnis:\n\n{content}")
