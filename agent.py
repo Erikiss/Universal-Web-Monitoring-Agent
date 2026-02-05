@@ -2,31 +2,32 @@ import os
 import asyncio
 import smtplib
 from email.message import EmailMessage
-from langchain_groq import ChatGroq
+from langchain_openai import ChatOpenAI
 from browser_use import Agent, Browser
 
 async def run_generic_agent():
-    # In der neuesten Version übergeben wir die wss_url direkt an den Browser
-    # oder nutzen eine interne BrowserConfig, die anders importiert wird.
-    # Dieser Weg hier ist der stabilste:
     browser = Browser()
     
-    # KI-Modell (Das Gehirn)
-    llm = ChatGroq(model_name="llama-3.3-70b-versatile", api_key=os.getenv('GROQ_API_KEY'))
+    # Nutzt Groq über das OpenAI-Protokoll für maximale Stabilität
+    llm = ChatOpenAI(
+        model="llama-3.3-70b-versatile",
+        api_key=os.getenv('GROQ_API_KEY'),
+        base_url="https://api.groq.com/openai/v1"
+    )
 
-    # Variablen aus den GitHub Secrets
     target_url = os.getenv('TARGET_URL')
     user = os.getenv('TARGET_USER')
     pw = os.getenv('TARGET_PW')
     steel_key = os.getenv('STEEL_API_KEY')
 
-    # Der Auftrag an die KI - inklusive Anweisung für den Steel-Browser
+    # Präziser Task mit Zeitbeschränkung auf 4 Wochen
     task = f"""
     Nutze den Steel-Browser unter 'wss://connect.steel.dev?apiKey={steel_key}'.
     1. Gehe zu {target_url}
     2. Logge dich ein mit User: "{user}" und Passwort: "{pw}".
-    3. Extrahiere die neuesten Datenberichte oder Tabellen als strukturierte Liste.
-    4. Handle rein lesend.
+    3. Suche nach neuen Datenberichten oder Tabellenbeiträgen.
+    4. Extrahiere NUR Informationen, die innerhalb der letzten VIER WOCHEN (28 Tage) erstellt wurden.
+    5. Handle rein lesend und extrahiere die Daten als strukturierte Liste.
     """
 
     agent = Agent(task=task, llm=llm, browser=browser)
@@ -36,10 +37,10 @@ async def run_generic_agent():
 
 def send_to_inbox(content):
     msg = EmailMessage()
-    msg['Subject'] = "Neuer Datenbericht"
+    msg['Subject'] = "Neuer Datenbericht (Letzte 4 Wochen)"
     msg['From'] = os.getenv('EMAIL_USER')
     msg['To'] = os.getenv('EMAIL_RECEIVER')
-    msg.set_content(f"Hier sind die extrahierten Daten für CrewAI:\n\n{content}")
+    msg.set_content(f"Hier sind die extrahierten Daten der letzten 4 Wochen für CrewAI:\n\n{content}")
 
     try:
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
