@@ -205,3 +205,17 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- Eigene Ergänzungen für den Mersenne-Bot ---
+# Falls du lokal mit API-Keys in einer Datei testest:
+secrets.py
+credentials.json
+
+# Falls dein Agent Bilder oder Logs lokal speichert:
+browser_logs/
+*.png
+*.jpg
+
+# CrewAI spezifische temporäre Dateien
+.crewai/
+
