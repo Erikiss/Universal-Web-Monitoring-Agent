@@ -1,179 +1,183 @@
 import os
 import asyncio
 import smtplib
-import json
 from email.message import EmailMessage
 
 from browser_use import Agent, Browser, ChatGroq
 
 
+# -------------------------
+# Telemetrie (robust)
+# -------------------------
 def _count_actions(obj, stats):
-    """Rekursiv Actions in (dict/list) zählen."""
+    """Zählt Click/Type/Scroll/Wait aus beliebig verschachtelten Dict/List-Strukturen."""
     if obj is None:
         return
+
     if isinstance(obj, list):
         for x in obj:
             _count_actions(x, stats)
         return
+
     if isinstance(obj, dict):
-        # Standard: items-Liste
+        # häufiges browser-use Format: {"items":[...]}
         if "items" in obj and isinstance(obj["items"], list):
             for it in obj["items"]:
                 _count_actions(it, stats)
 
-        t = obj.get("type") or obj.get("action")
+        t = obj.get("type") or obj.get("action") or obj.get("name")
         if isinstance(t, str):
             tl = t.lower()
             if "click" in tl:
                 stats["clicks"] += 1
             elif "type" in tl or "fill" in tl or "input" in tl:
                 stats["types"] += 1
-            elif "wait" in tl:
-                stats["waits"] += 1
             elif "scroll" in tl:
                 stats["scrolls"] += 1
-            elif "navigate" in tl or "goto" in tl:
-                stats["navigates"] += 1
+            elif "wait" in tl:
+                stats["waits"] += 1
 
+        # weiter in allen Feldern suchen
         for v in obj.values():
             _count_actions(v, stats)
 
 
 def analyze_history(history):
-    """Telemetrie über die agent history (robust, möglichst strukturiert)."""
-    stats = {"clicks": 0, "types": 0, "waits": 0, "scrolls": 0, "navigates": 0, "errors": 0}
+    """
+    Versucht so viel wie möglich auszulesen – auch wenn model_output/steps variieren.
+    """
+    stats = {"clicks": 0, "types": 0, "scrolls": 0, "waits": 0, "errors": 0}
 
-    for step in getattr(history, "history", []):
-        if getattr(step, "error", None):
-            stats["errors"] += 1
+    # 1) history.history (steps)
+    try:
+        for step in getattr(history, "history", []) or []:
+            # Fehler
+            if getattr(step, "error", None):
+                stats["errors"] += 1
 
-        mo = getattr(step, "model_output", None)
-        if isinstance(mo, (dict, list)):
-            _count_actions(mo, stats)
-        elif mo is not None:
-            s = str(mo).strip()
-            if s.startswith("{") or s.startswith("["):
-                try:
-                    _count_actions(json.loads(s), stats)
-                except Exception:
-                    pass
-
-        res = getattr(step, "result", None)
-        if isinstance(res, (dict, list)):
-            _count_actions(res, stats)
+            # model_output kann dict/str/obj sein
+            mo = getattr(step, "model_output", None)
+            if mo is not None:
+                if isinstance(mo, (dict, list)):
+                    _count_actions(mo, stats)
+                else:
+                    # fallback: string-heuristik
+                    s = str(mo).lower()
+                    stats["clicks"] += s.count("click")
+                    stats["types"] += s.count("type")
+                    stats["scrolls"] += s.count("scroll")
+                    stats["waits"] += s.count("wait")
+    except Exception:
+        pass
 
     report = (
-        f"📊 TELEMETRIE\n"
-        f"- Navigates: {stats['navigates']}\n"
-        f"- Waits: {stats['waits']}\n"
-        f"- Scrolls: {stats['scrolls']}\n"
-        f"- Clicks: {stats['clicks']}\n"
-        f"- Inputs: {stats['types']}\n"
-        f"- Errors: {stats['errors']}\n"
+        "📊 TELEMETRIE\n"
+        f"- Clicks:   {stats['clicks']}\n"
+        f"- Inputs:   {stats['types']}\n"
+        f"- Scrolls:  {stats['scrolls']}\n"
+        f"- Waits:    {stats['waits']}\n"
+        f"- Errors:   {stats['errors']}\n"
     )
     return stats, report
 
 
-async def run_robust_agent():
-    llm = ChatGroq(
-        model="llama-3.3-70b-versatile",
-        api_key=os.getenv("GROQ_API_KEY"),
-        temperature=0.35,  # stabil, aber nicht „tot“
-    )
-
-    browser = Browser(cdp_url=f"wss://connect.steel.dev?apiKey={os.getenv('STEEL_API_KEY')}")
-
-    # ✅ HARTE STARTREGEL: Erste Ausgabe muss Navigate sein
-    task = f"""
-WICHTIGSTE REGEL (HART):
-- Deine ERSTE AUSGABE MUSS eine ACTION sein.
-- ACTION #1 ist IMMER: Navigate zur Ziel-URL.
-- Antworte NIE mit Prosa. Keine Erklärungen. Nur Aktionen.
-- Vision ist AUS. Nutze ausschließlich DOM/Text/Attribute.
-
-ACTION #1 (ZWINGEND):
-ACTION: Navigate zu {os.getenv('TARGET_URL')}
-
-DANN (nachdem die Seite geladen ist):
-ACTION: Wait 2 Sekunden
-
-LOGIN-STRATEGIE (Plan A → Plan B → Plan C, bis Erfolg):
-
-PLAN A (Text):
-- Suche Buttons/Links mit sichtbarem Text: "Log in", "Login", "Sign in", "Anmelden".
-- ACTION: Click auf den besten Treffer.
-- ACTION: Wait 2 Sekunden
-
-PLAN B (Technisch):
-- Wenn Plan A keinen Treffer liefert: Suche Links/Buttons, deren href "login" oder "signin" enthält (z.B. /login).
-- ACTION: Click auf den besten Treffer.
-- ACTION: Wait 2 Sekunden
-
-PLAN C (Icon/Menu):
-- Wenn immer noch kein Login sichtbar: Suche im Header (oben rechts) nach Icon/Buttons mit aria-label/title/class, die "user", "account", "profile", "login" enthalten.
-- ACTION: Click auf das Icon/Menu.
-- ACTION: Wait 2 Sekunden
-- ACTION: (WICHTIG) Suche JETZT im neu geöffneten Menü nach "Log in"/"Sign in"/"Anmelden" und klicke es.
-- ACTION: Wait 2 Sekunden
-
-FORMULAR (nur wenn sichtbar):
-- Prüfe, ob ein Username/Email-Feld sichtbar ist (type=email/text oder name/id enthält user/email/login).
-- Prüfe, ob ein Passwort-Feld sichtbar ist (type=password oder name/id enthält pass).
-- ACTION: Type Username "{os.getenv('TARGET_USER')}" in das Username/Email-Feld.
-- ACTION: Type Password "{os.getenv('TARGET_PW')}" in das Passwort-Feld.
-- ACTION: Click Submit/Login (Button mit "Log in"/"Sign in"/"Submit" oder type=submit).
-- ACTION: Wait 5 Sekunden
-
-ERFOLGSPRÜFUNG:
-- Suche nach "Logout", "Sign out", "Abmelden" oder einem Profil-/Usernamen-Link.
-- Wenn NICHT gefunden: Beende mit Ergebnis "Login fehlgeschlagen" und nenne, was du stattdessen siehst (z.B. Fehlermeldung, Captcha, kein Formular).
-
-DANACH (nur bei Erfolg):
-- Extrahiere die Titel der "News" oder "Announcements" der letzten 4 Wochen als Liste.
-"""
-
-    agent = Agent(task=task, llm=llm, browser=browser, use_vision=False)
-    history = await agent.run()
-
-    stats, tele_report = analyze_history(history)
-    result = history.final_result() or "Kein Ergebnistext."
-    return result, tele_report, stats
-
-
-def send_to_inbox(content, tele_report, stats):
-    # Betreff: klar & ehrlich
-    if stats["types"] >= 2 and stats["errors"] == 0:
-        status = "🚀 LOGIN-VERSUCH"
-    elif stats["clicks"] > 0:
-        status = "✅ INTERAKTION"
-    else:
-        status = "⚠️ KEINE AKTION"
-
-    subject = f"{status}: {stats['clicks']} Clicks, {stats['types']} Inputs, {stats['errors']} Errors"
-
+# -------------------------
+# Mail
+# -------------------------
+def send_to_inbox(subject, body):
     msg = EmailMessage()
     msg["Subject"] = subject
     msg["From"] = os.getenv("EMAIL_USER")
     msg["To"] = os.getenv("EMAIL_RECEIVER")
-    msg.set_content(f"{tele_report}\n\n📝 RESULT:\n{content}")
+    msg.set_content(body)
 
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
         smtp.login(os.getenv("EMAIL_USER"), os.getenv("EMAIL_APP_PASSWORD"))
         smtp.send_message(msg)
 
 
+# -------------------------
+# Agent Run
+# -------------------------
+async def run_agent():
+    # Steel
+    steel_key = os.getenv("STEEL_API_KEY")
+    browser = Browser(cdp_url=f"wss://connect.steel.dev?apiKey={steel_key}")
+
+    # Groq: WICHTIG -> Modell, das json_schema kann (sonst 400 / keine Aktionen)
+    # browser-use listet u.a.:
+    # - meta-llama/llama-4-scout-17b-16e-instruct
+    # - meta-llama/llama-4-maverick-17b-128e-instruct
+    # - openai/gpt-oss-20b / openai/gpt-oss-120b
+    groq_model = os.getenv("GROQ_MODEL", "meta-llama/llama-4-scout-17b-16e-instruct")
+
+    llm = ChatGroq(
+        api_key=os.getenv("GROQ_API_KEY"),
+        model=groq_model,
+        temperature=float(os.getenv("GROQ_TEMPERATURE", "0.4")),
+    )
+
+    task = f"""
+ROLE: Du bist ein Automations-Agent. Du MUSST Aktionen ausführen (Click/Type), nicht nur beschreiben.
+REGELN:
+- Vision ist AUS. Nutze ausschließlich DOM/Text.
+- Wenn du einen Login-Link findest: klicken -> Felder füllen -> Submit.
+
+ZIEL:
+1) Öffne {os.getenv('TARGET_URL')}.
+2) Finde Login:
+   - Plan A: Text "Log in" / "Sign in" / "Anmelden"
+   - Plan B: Link mit href enthält "login"
+   - Plan C: User/Icon oben rechts (Profil) -> Login
+3) Nach dem Klick:
+   - Warte kurz (2s)
+   - Fülle User: "{os.getenv('TARGET_USER')}"
+   - Fülle Password: "{os.getenv('TARGET_PW')}"
+   - Klicke Submit/Login
+4) Prüfe Erfolg: "Logout" / Profil / Username sichtbar.
+5) Danach: finde neue Berichte/Posts der letzten 4 Wochen.
+Wenn nichts: gib "Keine neuen Daten gefunden." zurück.
+"""
+
+    agent = Agent(
+        task=task,
+        llm=llm,
+        browser=browser,
+        use_vision=False,
+    )
+
+    history = await agent.run()
+    stats, tele = analyze_history(history)
+
+    result = None
+    try:
+        result = history.final_result()
+    except Exception:
+        result = None
+
+    if not result:
+        # fallback: letzter Step dump
+        try:
+            last = history.history[-1]
+            result = getattr(last, "result", None) or getattr(last, "error", None) or str(getattr(last, "model_output", ""))[:4000]
+        except Exception:
+            result = "Kein Ergebnistext."
+
+    return groq_model, stats, tele, str(result)
+
+
 async def main():
     try:
-        content, tele_report, stats = await run_robust_agent()
-        send_to_inbox(str(content), tele_report, stats)
-        print("Mail gesendet.")
+        model, stats, tele, result = await run_agent()
+
+        icon = "🚀" if stats["types"] > 0 else ("✅" if stats["clicks"] > 0 else "⚠️")
+        subject = f"{icon} Mersenne-Bot ({model}): {stats['clicks']} Clicks, {stats['types']} Inputs, {stats['errors']} Errors"
+
+        body = f"{tele}\n\n📝 RESULT\n{result}\n"
+        send_to_inbox(subject, body)
+
     except Exception as e:
-        send_to_inbox(
-            f"System-Crash: {e}",
-            "Status: Crash",
-            {"clicks": 0, "types": 0, "waits": 0, "scrolls": 0, "navigates": 0, "errors": 1},
-        )
-        raise
+        send_to_inbox("❌ Mersenne-Bot: Crash", f"Systemfehler:\n{e}")
 
 
 if __name__ == "__main__":
