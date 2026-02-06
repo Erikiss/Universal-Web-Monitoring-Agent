@@ -8,6 +8,7 @@ from browser_use import Agent, Browser, ChatGroq
 
 
 def _count_actions(obj, stats):
+    """Rekursiv Actions in (dict/list) zählen."""
     if obj is None:
         return
     if isinstance(obj, list):
@@ -39,7 +40,9 @@ def _count_actions(obj, stats):
 
 
 def analyze_history(history):
+    """Telemetrie über die agent history (robust, möglichst strukturiert)."""
     stats = {"clicks": 0, "types": 0, "waits": 0, "scrolls": 0, "navigates": 0, "errors": 0}
+
     for step in getattr(history, "history", []):
         if getattr(step, "error", None):
             stats["errors"] += 1
@@ -75,53 +78,58 @@ async def run_robust_agent():
     llm = ChatGroq(
         model="llama-3.3-70b-versatile",
         api_key=os.getenv("GROQ_API_KEY"),
-        temperature=0.35,  # robust, aber nicht driftig
+        temperature=0.35,  # stabil, aber nicht „tot“
     )
 
     browser = Browser(cdp_url=f"wss://connect.steel.dev?apiKey={os.getenv('STEEL_API_KEY')}")
 
+    # ✅ HARTE STARTREGEL: Erste Ausgabe muss Navigate sein
     task = f"""
-ROLE: Du bist ein robuster Web-Automation-Agent. Du MUSST handeln.
-REGELN:
-- Antworte NIE nur mit Text. Führe Aktionen aus.
+WICHTIGSTE REGEL (HART):
+- Deine ERSTE AUSGABE MUSS eine ACTION sein.
+- ACTION #1 ist IMMER: Navigate zur Ziel-URL.
+- Antworte NIE mit Prosa. Keine Erklärungen. Nur Aktionen.
 - Vision ist AUS. Nutze ausschließlich DOM/Text/Attribute.
-- Nach jedem UI-Trigger (Click auf Menu/Icon/Login): ACTION Wait 2 Sekunden.
 
-ZIEL:
-1) Login auf {os.getenv('TARGET_URL')}
-2) Danach: finde "News" oder "Announcements" der letzten 4 Wochen und extrahiere Titel.
+ACTION #1 (ZWINGEND):
+ACTION: Navigate zu {os.getenv('TARGET_URL')}
 
-LOGIN-STRATEGIE (Plan A -> B -> C, bis Erfolg):
+DANN (nachdem die Seite geladen ist):
+ACTION: Wait 2 Sekunden
+
+LOGIN-STRATEGIE (Plan A → Plan B → Plan C, bis Erfolg):
 
 PLAN A (Text):
 - Suche Buttons/Links mit sichtbarem Text: "Log in", "Login", "Sign in", "Anmelden".
-- ACTION: Click best match.
-- ACTION: Wait 2s.
+- ACTION: Click auf den besten Treffer.
+- ACTION: Wait 2 Sekunden
 
 PLAN B (Technisch):
-- Wenn kein Text-Treffer: Suche Link-Elemente, deren href "login" oder "signin" enthält (z.B. /login).
-- ACTION: Click.
-- ACTION: Wait 2s.
+- Wenn Plan A keinen Treffer liefert: Suche Links/Buttons, deren href "login" oder "signin" enthält (z.B. /login).
+- ACTION: Click auf den besten Treffer.
+- ACTION: Wait 2 Sekunden
 
 PLAN C (Icon/Menu):
-- Wenn immer noch nichts: Suche Header oben rechts nach Icon/Buttons mit aria-label/title/class, die "user", "account", "profile", "login" enthalten.
-- Falls ein Menü aufklappt: ACTION: Click auf den Login/Sign in Eintrag.
-- ACTION: Wait 2s.
+- Wenn immer noch kein Login sichtbar: Suche im Header (oben rechts) nach Icon/Buttons mit aria-label/title/class, die "user", "account", "profile", "login" enthalten.
+- ACTION: Click auf das Icon/Menu.
+- ACTION: Wait 2 Sekunden
+- ACTION: (WICHTIG) Suche JETZT im neu geöffneten Menü nach "Log in"/"Sign in"/"Anmelden" und klicke es.
+- ACTION: Wait 2 Sekunden
 
-FORMULAR (nach erfolgreichem Öffnen):
-- Finde Username/Email input (type=text/email oder name/id enthält user/email/login).
-- Finde Password input (type=password oder name/id enthält pass).
-- ACTION: Type Username "{os.getenv('TARGET_USER')}".
-- ACTION: Type Password "{os.getenv('TARGET_PW')}".
+FORMULAR (nur wenn sichtbar):
+- Prüfe, ob ein Username/Email-Feld sichtbar ist (type=email/text oder name/id enthält user/email/login).
+- Prüfe, ob ein Passwort-Feld sichtbar ist (type=password oder name/id enthält pass).
+- ACTION: Type Username "{os.getenv('TARGET_USER')}" in das Username/Email-Feld.
+- ACTION: Type Password "{os.getenv('TARGET_PW')}" in das Passwort-Feld.
 - ACTION: Click Submit/Login (Button mit "Log in"/"Sign in"/"Submit" oder type=submit).
-- ACTION: Wait 5s.
+- ACTION: Wait 5 Sekunden
 
 ERFOLGSPRÜFUNG:
-- Suche nach "Logout", "Sign out", "Abmelden" oder User/Profile-Link.
-- Wenn NICHT gefunden: melde "Login fehlgeschlagen" und nenne, was du gesehen hast (z.B. Fehlermeldung auf Seite).
+- Suche nach "Logout", "Sign out", "Abmelden" oder einem Profil-/Usernamen-Link.
+- Wenn NICHT gefunden: Beende mit Ergebnis "Login fehlgeschlagen" und nenne, was du stattdessen siehst (z.B. Fehlermeldung, Captcha, kein Formular).
 
-DANN:
-- Extrahiere Titel der letzten 4 Wochen aus News/Announcements (Liste).
+DANACH (nur bei Erfolg):
+- Extrahiere die Titel der "News" oder "Announcements" der letzten 4 Wochen als Liste.
 """
 
     agent = Agent(task=task, llm=llm, browser=browser, use_vision=False)
@@ -133,7 +141,7 @@ DANN:
 
 
 def send_to_inbox(content, tele_report, stats):
-    # Betreff: klarer, aber ehrlich
+    # Betreff: klar & ehrlich
     if stats["types"] >= 2 and stats["errors"] == 0:
         status = "🚀 LOGIN-VERSUCH"
     elif stats["clicks"] > 0:
@@ -160,7 +168,11 @@ async def main():
         send_to_inbox(str(content), tele_report, stats)
         print("Mail gesendet.")
     except Exception as e:
-        send_to_inbox(f"System-Crash: {e}", "Status: Crash", {"clicks": 0, "types": 0, "waits": 0, "scrolls": 0, "navigates": 0, "errors": 1})
+        send_to_inbox(
+            f"System-Crash: {e}",
+            "Status: Crash",
+            {"clicks": 0, "types": 0, "waits": 0, "scrolls": 0, "navigates": 0, "errors": 1},
+        )
         raise
 
 
