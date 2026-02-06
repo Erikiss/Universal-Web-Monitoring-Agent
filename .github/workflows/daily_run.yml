@@ -1,7 +1,7 @@
-""" name: Universal Web Monitor
+name: Universal Web Monitor
 on:
-  schedule:
-    - cron: '0 7 * * *' # Täglich um 07:00 UTC
+  #schedule:
+  #  - cron: '0 7 * * *' # Täglich um 07:00 UTC
   workflow_dispatch: # Manueller Start
 
 jobs:
@@ -32,4 +32,4 @@ jobs:
           EMAIL_RECEIVER: ${{ secrets.EMAIL_RECEIVER }}
           EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
         run: python agent.py
-        """
+        
