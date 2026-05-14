@@ -1,0 +1,38 @@
+name: LessWrong filter
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 7 * * *' # Runs daily at 07:15 UTC.
+
+permissions:
+  contents: write
+
+jobs:
+  filter:
+    runs-on: ubuntu-latest
+    env:
+      MIN_WORDS: '1800'
+      LOOKBACK_DAYS: '14'
+      POST_SCOPE: 'all'
+      LESSWRONG_USER_AGENT: 'Universal-Web-Monitoring-Agent/1.0 (+https://github.com/${{ github.repository }})'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run LessWrong filter
+        run: python lw_filter.py
+
+      - name: Commit report
+        run: |
+          git config user.name "lesswrong-filter-bot"
+          git config user.email "lesswrong-filter-bot@users.noreply.github.com"
+          git add reports seen.json
+          git diff --staged --quiet || git commit -m "Update LessWrong filter report"
+          git push
