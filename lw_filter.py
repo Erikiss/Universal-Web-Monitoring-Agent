@@ -2,7 +2,10 @@ from __future__ import annotations
 
 import json
 import os
+import random
 import re
+import sys
+import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
@@ -21,6 +24,10 @@ USER_AGENT = os.getenv(
     "Universal-Web-Monitoring-Agent/1.0 (+https://github.com/Erikiss/Universal-Web-Monitoring-Agent)",
 )
 REQUEST_TIMEOUT = int(os.getenv("REQUEST_TIMEOUT", "30"))
+PAGE_SIZE = int(os.getenv("PAGE_SIZE", "50"))
+PAGE_DELAY = float(os.getenv("PAGE_DELAY", "1.5"))   # seconds between paginated requests
+MAX_RETRIES = int(os.getenv("MAX_RETRIES", "5"))
+RETRY_BASE_DELAY = float(os.getenv("RETRY_BASE_DELAY", "2.0"))  # seconds (doubles each retry)
 
 TOPIC_RE = re.compile(
     r"\b("
@@ -41,9 +48,15 @@ VIS_RE = re.compile(
     r")\b",
     re.IGNORECASE,
 )
+
+
+class RateLimitError(RuntimeError):
+    """Raised when the LessWrong API keeps returning HTTP 429 after all retries."""
+
+
 QUERY = """
-query RecentPosts($limit: Int!, $after: String) {
-  posts(input: { terms: { view: "new", limit: $limit, after: $after } }) {
+query RecentPosts($limit: Int!, $after: String, $offset: Int) {
+  posts(input: { terms: { view: "new", limit: $limit, after: $after, offset: $offset } }) {
     results {
       _id
       title
@@ -82,20 +95,45 @@ def save_seen(seen: set[str]) -> None:
 
 
 def graphql(query: str, variables: dict[str, Any]) -> dict[str, Any]:
-    response = requests.post(
-        ENDPOINT,
-        headers={
-            "Content-Type": "application/json",
-            "User-Agent": USER_AGENT,
-        },
-        json={"query": query, "variables": variables},
-        timeout=REQUEST_TIMEOUT,
-    )
-    response.raise_for_status()
-    data = response.json()
-    if "errors" in data:
-        raise RuntimeError(data["errors"])
-    return data["data"]
+    delay = RETRY_BASE_DELAY
+    for attempt in range(MAX_RETRIES + 1):
+        response = requests.post(
+            ENDPOINT,
+            headers={
+                "Content-Type": "application/json",
+                "User-Agent": USER_AGENT,
+            },
+            json={"query": query, "variables": variables},
+            timeout=REQUEST_TIMEOUT,
+        )
+
+        if response.status_code == 429:
+            if attempt == MAX_RETRIES:
+                raise RateLimitError(
+                    f"LessWrong returned HTTP 429 on all {MAX_RETRIES + 1} attempts; "
+                    "the API is temporarily rate-limiting this client."
+                )
+            retry_after = response.headers.get("Retry-After")
+            wait = float(retry_after) if retry_after and retry_after.isdigit() else delay
+            # Add a small random jitter (±20 %) to avoid thundering-herd on parallel runs.
+            wait = wait * (0.8 + 0.4 * random.random())
+            print(
+                f"HTTP 429 received (attempt {attempt + 1}/{MAX_RETRIES + 1}). "
+                f"Retrying in {wait:.1f}s…",
+                file=sys.stderr,
+            )
+            time.sleep(wait)
+            delay *= 2
+            continue
+
+        response.raise_for_status()
+        data = response.json()
+        if "errors" in data:
+            raise RuntimeError(data["errors"])
+        return data["data"]
+
+    # Unreachable, but satisfies type checkers.
+    raise RateLimitError("Exceeded retry limit")
 
 
 
@@ -209,12 +247,20 @@ def classify(post: dict[str, Any]) -> dict[str, Any] | None:
 
 
 
-def render_report(matches: list[dict[str, Any]], today: str) -> str:
+def render_report(matches: list[dict[str, Any]], today: str, rate_limited: bool = False) -> str:
     lines = [f"# LessWrong ML/NLP visual long-post filter — {today}", ""]
     lines.append(f"Lookback: {LOOKBACK_DAYS} days")
     lines.append(f"Minimum words: {MIN_WORDS}")
     lines.append(f"Post scope: {POST_SCOPE}")
     lines.append("")
+
+    if rate_limited:
+        lines.append(
+            "> **Note:** The LessWrong API was temporarily rate-limiting this client. "
+            "Results below may be incomplete. The workflow will retry on the next scheduled run."
+        )
+        lines.append("")
+
     lines.append(f"Matches: {len(matches)}")
     lines.append("")
 
@@ -244,24 +290,47 @@ def render_report(matches: list[dict[str, Any]], today: str) -> str:
 def main() -> None:
     OUT_DIR.mkdir(exist_ok=True)
     after = (datetime.now(timezone.utc) - timedelta(days=LOOKBACK_DAYS)).isoformat()
-    posts = graphql(QUERY, {"limit": 100, "after": after})["posts"]["results"]
     seen = load_seen()
     matches: list[dict[str, Any]] = []
+    rate_limited = False
 
-    for post in posts:
-        post_id = str(post["_id"])
-        if post_id in seen:
-            continue
-        result = classify(post)
-        if result:
-            matches.append(result)
-        seen.add(post_id)
+    offset = 0
+    while True:
+        try:
+            page = graphql(QUERY, {"limit": PAGE_SIZE, "after": after, "offset": offset})
+        except RateLimitError as exc:
+            print(f"Rate-limit error: {exc}", file=sys.stderr)
+            rate_limited = True
+            break
+
+        results = page["posts"]["results"]
+        for post in results:
+            post_id = str(post["_id"])
+            if post_id in seen:
+                continue
+            result = classify(post)
+            if result:
+                matches.append(result)
+            seen.add(post_id)
+
+        # Stop paginating when the API returns fewer items than requested.
+        if len(results) < PAGE_SIZE:
+            break
+
+        offset += PAGE_SIZE
+        time.sleep(PAGE_DELAY)
 
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     report_path = OUT_DIR / f"{today}.md"
-    report_path.write_text(render_report(matches, today), encoding="utf-8")
+    report_path.write_text(render_report(matches, today, rate_limited=rate_limited), encoding="utf-8")
     save_seen(seen)
     print(f"Wrote {report_path} with {len(matches)} matches.")
+    if rate_limited:
+        print(
+            "Warning: run was cut short by rate-limiting. "
+            "Some posts in the lookback window may not have been processed.",
+            file=sys.stderr,
+        )
 
 
 if __name__ == "__main__":
