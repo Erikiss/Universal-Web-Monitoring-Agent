@@ -114,8 +114,17 @@ def graphql(query: str, variables: dict[str, Any]) -> dict[str, Any]:
                     "the API is temporarily rate-limiting this client."
                 )
             retry_after = response.headers.get("Retry-After")
-            wait = float(retry_after) if retry_after and retry_after.isdigit() else delay
-            # Add a small random jitter (±20 %) to avoid thundering-herd on parallel runs.
+            if retry_after and retry_after.isdigit():
+                wait = float(retry_after)
+            else:
+                if retry_after:
+                    print(
+                        f"Ignoring malformed Retry-After header: {retry_after!r}; "
+                        "using exponential backoff instead.",
+                        file=sys.stderr,
+                    )
+                wait = delay
+            # Add a small random jitter (±20 %) to avoid thundering herd on parallel runs.
             wait = wait * (0.8 + 0.4 * random.random())
             print(
                 f"HTTP 429 received (attempt {attempt + 1}/{MAX_RETRIES + 1}). "
@@ -132,7 +141,8 @@ def graphql(query: str, variables: dict[str, Any]) -> dict[str, Any]:
             raise RuntimeError(data["errors"])
         return data["data"]
 
-    # Unreachable, but satisfies type checkers.
+    # Unreachable when MAX_RETRIES >= 0 (the loop always raises inside on the final attempt).
+    # Acts as a safety net if MAX_RETRIES is somehow negative and the loop body never executes.
     raise RateLimitError("Exceeded retry limit")
 
 
