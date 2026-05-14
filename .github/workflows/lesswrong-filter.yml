@@ -3,7 +3,7 @@ name: LessWrong filter
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 7 * * *'
+    - cron: '15 7 * * *' # Runs daily at 07:15 UTC.
 
 permissions:
   contents: write

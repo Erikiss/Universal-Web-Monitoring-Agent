@@ -191,7 +191,8 @@ def classify(post: dict[str, Any]) -> dict[str, Any] | None:
     if t_score < 1:
         return None
 
-    author = (post.get("user") or {}).get("displayName") or (post.get("user") or {}).get("username") or "unknown"
+    user = post.get("user") or {}
+    author = user.get("displayName") or user.get("username") or "unknown"
     return {
         "id": str(post["_id"]),
         "title": post.get("title", "Untitled"),
