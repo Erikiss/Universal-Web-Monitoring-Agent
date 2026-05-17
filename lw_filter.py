@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
@@ -81,21 +82,31 @@ def save_seen(seen: set[str]) -> None:
 
 
 
-def graphql(query: str, variables: dict[str, Any]) -> dict[str, Any]:
-    response = requests.post(
-        ENDPOINT,
-        headers={
-            "Content-Type": "application/json",
-            "User-Agent": USER_AGENT,
-        },
-        json={"query": query, "variables": variables},
-        timeout=REQUEST_TIMEOUT,
-    )
-    response.raise_for_status()
-    data = response.json()
-    if "errors" in data:
-        raise RuntimeError(data["errors"])
-    return data["data"]
+def graphql(query: str, variables: dict[str, Any], max_retries: int = 5) -> dict[str, Any]:
+    for attempt in range(max_retries):
+        response = requests.post(
+            ENDPOINT,
+            headers={
+                "Content-Type": "application/json",
+                "User-Agent": USER_AGENT,
+            },
+            json={"query": query, "variables": variables},
+            timeout=REQUEST_TIMEOUT,
+        )
+        if response.status_code == 429:
+            retry_after = response.headers.get("Retry-After")
+            try:
+                wait_time = int(retry_after) if retry_after is not None else (2**attempt)
+            except ValueError:
+                wait_time = 2**attempt
+            time.sleep(wait_time if wait_time > 0 else (2**attempt))
+            continue
+        response.raise_for_status()
+        data = response.json()
+        if "errors" in data:
+            raise RuntimeError(data["errors"])
+        return data["data"]
+    raise RuntimeError("Exceeded maximum retries due to rate limiting.")
 
 
 
