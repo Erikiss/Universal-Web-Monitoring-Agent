@@ -82,7 +82,7 @@ def save_seen(seen: set[str]) -> None:
 
 
 
-def graphql(query: str, variables: dict[str, Any], max_retries: int = 5) -> dict[str, Any]:
+def graphql(query: str, variables: dict[str, Any], max_retries: int = 10) -> dict[str, Any]:
     for attempt in range(max_retries):
         response = requests.post(
             ENDPOINT,
@@ -96,10 +96,12 @@ def graphql(query: str, variables: dict[str, Any], max_retries: int = 5) -> dict
         if response.status_code == 429:
             retry_after = response.headers.get("Retry-After")
             try:
-                wait_time = int(retry_after) if retry_after is not None else (2**attempt)
+                header_wait = int(retry_after) if retry_after is not None else None
             except ValueError:
-                wait_time = 2**attempt
-            time.sleep(wait_time if wait_time > 0 else (2**attempt))
+                header_wait = None
+            backoff = min(300, 10 * (2**attempt))
+            wait_time = max(backoff, header_wait) if header_wait is not None else backoff
+            time.sleep(wait_time)
             continue
         response.raise_for_status()
         data = response.json()
