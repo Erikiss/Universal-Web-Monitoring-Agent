@@ -222,11 +222,13 @@ def classify(post: dict[str, Any]) -> dict[str, Any] | None:
 
 
 
-def render_report(matches: list[dict[str, Any]], today: str) -> str:
+def render_report(matches: list[dict[str, Any]], today: str, fetch_warning: str | None = None) -> str:
     lines = [f"# LessWrong ML/NLP visual long-post filter — {today}", ""]
     lines.append(f"Lookback: {LOOKBACK_DAYS} days")
     lines.append(f"Minimum words: {MIN_WORDS}")
     lines.append(f"Post scope: {POST_SCOPE}")
+    if fetch_warning:
+        lines.append(f"Warning: {fetch_warning}")
     lines.append("")
     lines.append(f"Matches: {len(matches)}")
     lines.append("")
@@ -257,7 +259,18 @@ def render_report(matches: list[dict[str, Any]], today: str) -> str:
 def main() -> None:
     OUT_DIR.mkdir(exist_ok=True)
     after = (datetime.now(timezone.utc) - timedelta(days=LOOKBACK_DAYS)).isoformat()
-    posts = graphql(QUERY, {"limit": 100, "after": after})["posts"]["results"]
+    fetch_warning: str | None = None
+    try:
+        posts = graphql(QUERY, {"limit": 100, "after": after})["posts"]["results"]
+    except RuntimeError as error:
+        if "rate limiting" not in str(error).lower():
+            raise
+        posts = []
+        fetch_warning = (
+            "LessWrong API rate limit reached repeatedly; this run skipped fetching new posts."
+        )
+        print(fetch_warning)
+
     seen = load_seen()
     matches: list[dict[str, Any]] = []
 
@@ -272,7 +285,7 @@ def main() -> None:
 
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     report_path = OUT_DIR / f"{today}.md"
-    report_path.write_text(render_report(matches, today), encoding="utf-8")
+    report_path.write_text(render_report(matches, today, fetch_warning=fetch_warning), encoding="utf-8")
     save_seen(seen)
     print(f"Wrote {report_path} with {len(matches)} matches.")
 
