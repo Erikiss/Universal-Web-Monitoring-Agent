@@ -5,6 +5,7 @@ import os
 import re
 import time
 from datetime import datetime, timedelta, timezone
+from json import JSONDecodeError
 from pathlib import Path
 from typing import Any
 
@@ -118,7 +119,14 @@ def graphql(query: str, variables: dict[str, Any], max_retries: int = MAX_RETRIE
             time.sleep(wait_time)
             continue
         response.raise_for_status()
-        data = response.json()
+        try:
+            data = response.json()
+        except JSONDecodeError as exc:
+            backoff = min(MAX_BACKOFF_SECONDS, 2**attempt)
+            if attempt == max_retries - 1:
+                raise RuntimeError("LessWrong API returned malformed JSON response.") from exc
+            time.sleep(backoff)
+            continue
         if "errors" in data:
             error_text = " ".join(str(item) for item in data["errors"]).lower()
             if "rate limit" in error_text or "too many requests" in error_text:
