@@ -26,7 +26,10 @@ The workflow can be configured with repository variables or step-level environme
 | --- | --- | --- |
 | `MIN_WORDS` | Minimum word count for a matching post | `1800` |
 | `LOOKBACK_DAYS` | How many days of posts to request | `14` |
+| `POST_LIMIT` | Max number of recent posts requested per run | `30` |
 | `POST_SCOPE` | `all`, `frontpage`, or `personal` | `all` |
+| `MAX_RETRIES` | Number of retry attempts for transient API errors/rate limits | `5` |
+| `MAX_BACKOFF_SECONDS` | Maximum wait between retries in seconds | `60` |
 | `LESSWRONG_USER_AGENT` | Identifiable user agent for API requests | Repository URL based default |
 | `REQUEST_TIMEOUT` | Request timeout in seconds | `30` |
 

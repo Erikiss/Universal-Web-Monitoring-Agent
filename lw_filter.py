@@ -22,6 +22,9 @@ USER_AGENT = os.getenv(
     "Universal-Web-Monitoring-Agent/1.0 (+https://github.com/Erikiss/Universal-Web-Monitoring-Agent)",
 )
 REQUEST_TIMEOUT = int(os.getenv("REQUEST_TIMEOUT", "30"))
+POST_LIMIT = int(os.getenv("POST_LIMIT", "30"))
+MAX_RETRIES = int(os.getenv("MAX_RETRIES", "5"))
+MAX_BACKOFF_SECONDS = int(os.getenv("MAX_BACKOFF_SECONDS", "60"))
 
 TOPIC_RE = re.compile(
     r"\b("
@@ -66,6 +69,10 @@ query RecentPosts($limit: Int!, $after: String) {
 """
 
 
+class RateLimitExceededError(RuntimeError):
+    pass
+
+
 def load_seen() -> set[str]:
     if not SEEN_FILE.exists():
         return set()
@@ -82,33 +89,45 @@ def save_seen(seen: set[str]) -> None:
 
 
 
-def graphql(query: str, variables: dict[str, Any], max_retries: int = 10) -> dict[str, Any]:
+def graphql(query: str, variables: dict[str, Any], max_retries: int = MAX_RETRIES) -> dict[str, Any]:
     for attempt in range(max_retries):
-        response = requests.post(
-            ENDPOINT,
-            headers={
-                "Content-Type": "application/json",
-                "User-Agent": USER_AGENT,
-            },
-            json={"query": query, "variables": variables},
-            timeout=REQUEST_TIMEOUT,
-        )
+        try:
+            response = requests.post(
+                ENDPOINT,
+                headers={
+                    "Content-Type": "application/json",
+                    "User-Agent": USER_AGENT,
+                },
+                json={"query": query, "variables": variables},
+                timeout=REQUEST_TIMEOUT,
+            )
+        except requests.RequestException:
+            backoff = min(MAX_BACKOFF_SECONDS, 2**attempt)
+            if attempt == max_retries - 1:
+                raise
+            time.sleep(backoff)
+            continue
         if response.status_code == 429:
             retry_after = response.headers.get("Retry-After")
             try:
                 header_wait = int(retry_after) if retry_after is not None else None
             except ValueError:
                 header_wait = None
-            backoff = min(300, 10 * (2**attempt))
+            backoff = min(MAX_BACKOFF_SECONDS, 5 * (2**attempt))
             wait_time = max(backoff, header_wait) if header_wait is not None else backoff
             time.sleep(wait_time)
             continue
         response.raise_for_status()
         data = response.json()
         if "errors" in data:
+            error_text = " ".join(str(item) for item in data["errors"]).lower()
+            if "rate limit" in error_text or "too many requests" in error_text:
+                backoff = min(MAX_BACKOFF_SECONDS, 5 * (2**attempt))
+                time.sleep(backoff)
+                continue
             raise RuntimeError(data["errors"])
         return data["data"]
-    raise RuntimeError("Exceeded maximum retries due to rate limiting.")
+    raise RateLimitExceededError("Exceeded maximum retries due to rate limiting.")
 
 
 
@@ -222,11 +241,17 @@ def classify(post: dict[str, Any]) -> dict[str, Any] | None:
 
 
 
-def render_report(matches: list[dict[str, Any]], today: str) -> str:
+def render_report(matches: list[dict[str, Any]], today: str, notes: list[str] | None = None) -> str:
     lines = [f"# LessWrong ML/NLP visual long-post filter — {today}", ""]
     lines.append(f"Lookback: {LOOKBACK_DAYS} days")
     lines.append(f"Minimum words: {MIN_WORDS}")
+    lines.append(f"Post limit: {POST_LIMIT}")
     lines.append(f"Post scope: {POST_SCOPE}")
+    if notes:
+        lines.append("")
+        lines.append("Notes:")
+        for note in notes:
+            lines.append(f"- {note}")
     lines.append("")
     lines.append(f"Matches: {len(matches)}")
     lines.append("")
@@ -257,7 +282,14 @@ def render_report(matches: list[dict[str, Any]], today: str) -> str:
 def main() -> None:
     OUT_DIR.mkdir(exist_ok=True)
     after = (datetime.now(timezone.utc) - timedelta(days=LOOKBACK_DAYS)).isoformat()
-    posts = graphql(QUERY, {"limit": 100, "after": after})["posts"]["results"]
+    notes: list[str] = []
+    try:
+        posts = graphql(QUERY, {"limit": POST_LIMIT, "after": after})["posts"]["results"]
+    except RateLimitExceededError:
+        posts = []
+        notes.append(
+            "LessWrong API rate limit reached; this run skipped fetching new posts to avoid workflow failure."
+        )
     seen = load_seen()
     matches: list[dict[str, Any]] = []
 
@@ -272,7 +304,7 @@ def main() -> None:
 
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     report_path = OUT_DIR / f"{today}.md"
-    report_path.write_text(render_report(matches, today), encoding="utf-8")
+    report_path.write_text(render_report(matches, today, notes), encoding="utf-8")
     save_seen(seen)
     print(f"Wrote {report_path} with {len(matches)} matches.")
 

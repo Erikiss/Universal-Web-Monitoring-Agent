@@ -14,7 +14,10 @@ jobs:
     env:
       MIN_WORDS: '1800'
       LOOKBACK_DAYS: '14'
+      POST_LIMIT: '30'
       POST_SCOPE: 'all'
+      MAX_RETRIES: '5'
+      MAX_BACKOFF_SECONDS: '60'
       LESSWRONG_USER_AGENT: 'Universal-Web-Monitoring-Agent/1.0 (+https://github.com/${{ github.repository }})'
     steps:
       - uses: actions/checkout@v4
