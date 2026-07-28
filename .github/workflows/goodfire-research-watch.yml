@@ -14,7 +14,10 @@ on:
         default: false
         type: boolean
   schedule:
-    - cron: '0 8 * * *' # Runs daily at 08:00 UTC.
+    # Three runs per day at ~00:15, 08:15, 16:15 Central European Summer Time,
+    # staggered 15 minutes after the Anthropic watcher to avoid push races.
+    # Cron is UTC, so during CET (winter) these fire one hour earlier locally.
+    - cron: '15 6,14,22 * * *'
 
 permissions:
   contents: write
