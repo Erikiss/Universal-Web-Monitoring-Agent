@@ -1,0 +1,87 @@
+name: Goodfire research watch
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Run the watcher without committing or sending email'
+        required: false
+        default: false
+        type: boolean
+      test_email:
+        description: 'Send a test alert email to verify the SMTP secrets'
+        required: false
+        default: false
+        type: boolean
+  schedule:
+    - cron: '0 8 * * *' # Runs daily at 08:00 UTC.
+
+permissions:
+  contents: write
+
+concurrency:
+  group: goodfire-research-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Send test email
+        if: inputs.test_email == true
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
+        run: |
+          printf 'Test alert from the "%s" workflow.\nIf you received this, the SMTP secrets are configured correctly.\n' "$GITHUB_WORKFLOW" > "$RUNNER_TEMP/test-alert.txt"
+          python send_alert.py --subject "[Web-Monitor] Test alert" --body-file "$RUNNER_TEMP/test-alert.txt"
+
+      - name: Run watcher
+        id: watch
+        run: python page_watch.py --site goodfire-research --alert-file "$RUNNER_TEMP/alert.txt"
+
+      - name: Send alert email
+        if: steps.watch.outputs.new_count > 0 && inputs.dry_run != true
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
+        run: >
+          python send_alert.py
+          --subject "[Web-Monitor] Goodfire research: ${{ steps.watch.outputs.new_count }} new entry/entries"
+          --body-file "$RUNNER_TEMP/alert.txt"
+
+      - name: Commit report
+        if: inputs.dry_run != true
+        run: |
+          git config user.name "page-watch-bot"
+          git config user.email "page-watch-bot@users.noreply.github.com"
+          git add reports seen_goodfire_research.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Update Goodfire research watch report"
+          for attempt in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            git pull --rebase
+          done
+          git push

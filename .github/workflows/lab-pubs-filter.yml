@@ -2,8 +2,11 @@ name: Lab Publications filter
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '30 7 * * *' # Runs daily at 07:30 UTC.
+  # Temporarily disabled: the name-based arXiv matching has produced 0 hits
+  # for weeks. The dedicated page watchers (anthropic-interpretability-watch,
+  # goodfire-research-watch) replace it for now. Uncomment to re-enable.
+  # schedule:
+  #   - cron: '30 7 * * *' # Runs daily at 07:30 UTC.
 
 permissions:
   contents: write
