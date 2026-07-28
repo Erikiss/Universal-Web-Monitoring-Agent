@@ -34,6 +34,13 @@ MAX_RETRIES = int(os.getenv("MAX_RETRIES", "4"))
 
 ARXIV_VERSION_RE = re.compile(r"(/abs/[^/]+?)v\d+$")
 SLUG_CLEAN_RE = re.compile(r"[-_]+")
+# Card CTA labels that masquerade as link text but carry no title information.
+GENERIC_LINK_TEXT_RE = re.compile(
+    r"^(go to (blog )?post|read (more|post|paper|article)|learn more|"
+    r"view (paper|post|article)|blog post|paper|post|link|details|more)$",
+    re.IGNORECASE,
+)
+LEADING_DATE_RE = re.compile(r"^[A-Z][a-z]{2,8} \d{1,2}, \d{4}\s*")
 
 
 @dataclass(frozen=True)
@@ -149,14 +156,37 @@ def title_from_slug(url: str) -> str:
     return SLUG_CLEAN_RE.sub(" ", slug).strip().title() or url
 
 
+def clean_title(text: str) -> str:
+    text = LEADING_DATE_RE.sub("", text.strip())
+    if GENERIC_LINK_TEXT_RE.match(text):
+        return ""
+    return text[:200]
+
+
 def anchor_title(anchor) -> str:
     heading = anchor.find(["h1", "h2", "h3", "h4", "h5", "h6"])
     if heading:
-        text = heading.get_text(" ", strip=True)
+        text = clean_title(heading.get_text(" ", strip=True))
         if text:
             return text
-    text = anchor.get_text(" ", strip=True) or anchor.get("aria-label", "").strip()
-    return text[:200]
+    text = clean_title(
+        anchor.get_text(" ", strip=True) or anchor.get("aria-label", "").strip()
+    )
+    if text:
+        return text
+    # CTA-button anchors ("go to blog post") carry the card's title in a
+    # sibling heading — look a few container levels up.
+    parent = anchor
+    for _ in range(3):
+        parent = parent.parent
+        if parent is None or parent.name in ("body", "html", "[document]"):
+            break
+        heading = parent.find(["h1", "h2", "h3", "h4", "h5", "h6"])
+        if heading:
+            text = clean_title(heading.get_text(" ", strip=True))
+            if text:
+                return text
+    return ""
 
 
 def better_title(current: str, candidate: str, url: str) -> str:
