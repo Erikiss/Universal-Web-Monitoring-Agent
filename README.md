@@ -18,8 +18,8 @@ This repository runs scheduled GitHub Actions jobs that monitor research sources
 
 Two separate workflows watch one concrete URL each instead of matching names on arXiv:
 
-- `anthropic-interpretability-watch.yml` → https://www.anthropic.com/research/team/interpretability (daily 07:45 UTC)
-- `goodfire-research-watch.yml` → https://www.goodfire.ai/research (daily 08:00 UTC)
+- `anthropic-interpretability-watch.yml` → https://www.anthropic.com/research/team/interpretability (3×/day at 06:00, 14:00, 22:00 UTC = 00/08/16h CEST)
+- `goodfire-research-watch.yml` → https://www.goodfire.ai/research (3×/day at 06:15, 14:15, 22:15 UTC, staggered to avoid push races)
 
 Both run `page_watch.py`, which extracts publication links from the page (rendered anchors plus URLs embedded in script/JSON payloads), compares them against a persisted baseline (`seen_anthropic_interpretability.json` / `seen_goodfire_research.json`), and writes a report to `reports/` only when something changed. Design decisions:
 
