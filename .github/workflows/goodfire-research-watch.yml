@@ -1,6 +1,10 @@
 name: Goodfire research watch
 
 on:
+  # TEMPORARY pre-merge live test trigger — removed before merge.
+  push:
+    branches:
+      - claude/lab-publication-filter-1e2zix
   workflow_dispatch:
     inputs:
       dry_run:
