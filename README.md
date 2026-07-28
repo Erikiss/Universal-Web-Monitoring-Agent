@@ -1,6 +1,10 @@
 # Universal Web Monitoring Agent
 
-This repository runs a scheduled GitHub Actions job that queries the LessWrong GraphQL API, filters for long ML/NLP posts with likely visualizations, and stores the daily results as Markdown reports.
+This repository runs scheduled GitHub Actions jobs that monitor research sources and store results as Markdown reports:
+
+- **LessWrong filter**: queries the LessWrong GraphQL API and filters for long ML/NLP posts with likely visualizations.
+- **Page watchers**: scrape the Anthropic Interpretability team page and the Goodfire research page, detect new publication entries, and send an alert email on hits.
+- **Lab Publications filter** (temporarily disabled): matched arXiv papers against a list of lab names.
 
 ## How it works
 
@@ -10,13 +14,48 @@ This repository runs a scheduled GitHub Actions job that queries the LessWrong G
 - Matching posts are written to `reports/YYYY-MM-DD.md`.
 - Processed post IDs are stored in `seen.json` so the workflow does not report the same post twice.
 
+## Page watchers (Anthropic Interpretability & Goodfire research)
+
+Two separate workflows watch one concrete URL each instead of matching names on arXiv:
+
+- `anthropic-interpretability-watch.yml` → https://www.anthropic.com/research/team/interpretability (daily 07:45 UTC)
+- `goodfire-research-watch.yml` → https://www.goodfire.ai/research (daily 08:00 UTC)
+
+Both run `page_watch.py`, which extracts publication links from the page (rendered anchors plus URLs embedded in script/JSON payloads), compares them against a persisted baseline (`seen_anthropic_interpretability.json` / `seen_goodfire_research.json`), and writes a report to `reports/` only when something changed. Design decisions:
+
+- **Fail loudly**: if fewer entries than a per-site minimum can be extracted (page redesign, bot block, client-only rendering), the run fails instead of silently treating a degraded page as "no news". Override with the `WATCH_MIN_ENTRIES` environment variable.
+- **Baseline on first run**: the first run records all current entries without alerting; only entries appearing later trigger the alert email.
+- Reports are only written on baseline initialization or new hits, so the `reports/` directory is not flooded with empty daily files.
+
+### Alert email (repository secrets)
+
+On a hit, `send_alert.py` sends a plain-text email via SMTP. All personal data lives exclusively in GitHub Actions repository secrets (Settings → Secrets and variables → Actions), so nothing private appears in this public repository or its logs:
+
+| Secret | Required | Description |
+| --- | --- | --- |
+| `SMTP_HOST` | yes | SMTP server of the sending account |
+| `SMTP_PORT` | no | `587` (STARTTLS, default) or `465` (implicit TLS) |
+| `SMTP_USERNAME` | yes | Login of the sending account |
+| `SMTP_PASSWORD` | yes | Password / app password of the sending account |
+| `ALERT_EMAIL_TO` | yes | Recipient address(es), comma-separated — kept secret on purpose |
+| `ALERT_EMAIL_FROM` | no | From address, defaults to `SMTP_USERNAME` |
+
+If a hit occurs while these secrets are missing, the email step fails visibly (listing only the missing secret *names*) so a hit can never be dropped silently. Both workflows accept two *Run workflow* inputs: `dry_run` tests scraping without committing or emailing, and `test_email` sends a test alert immediately so the SMTP secrets can be verified without waiting for a real hit.
+
+## Lab Publications filter (temporarily disabled)
+
+`lab_pubs_filter.py` matched recent arXiv papers against a large list of lab *names* (no URLs) and produced only empty reports for weeks. Its schedule is therefore commented out in `.github/workflows/lab-pubs-filter.yml`; it can still be started manually via `workflow_dispatch` and re-enabled by uncommenting the `schedule` block.
+
 ## Repository files
 
 - `lw_filter.py`: main LessWrong filtering script
-- `requirements.txt`: Python dependencies for the workflow and local runs
-- `.github/workflows/lesswrong-filter.yml`: scheduled workflow
-- `reports/`: generated daily Markdown reports
-- `seen.json`: persisted list of already processed LessWrong post IDs
+- `page_watch.py`: generic page watcher used by the Anthropic/Goodfire workflows
+- `send_alert.py`: SMTP alert mailer (configured via repository secrets)
+- `lab_pubs_filter.py`: arXiv lab-name filter (schedule temporarily disabled)
+- `requirements.txt`: Python dependencies for the workflows and local runs
+- `.github/workflows/`: scheduled workflows
+- `reports/`: generated Markdown reports
+- `seen.json`, `seen_labs.json`, `seen_anthropic_interpretability.json`, `seen_goodfire_research.json`: persisted state so nothing is reported twice
 
 ## Configuration
 
