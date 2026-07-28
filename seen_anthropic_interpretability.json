@@ -1,0 +1,42 @@
+{
+  "https://anthropic.com/research/assistant-axis": {
+    "title": "The assistant axis: situating and stabilizing the character of large language models",
+    "first_seen": "2026-07-28T18:48:42+00:00"
+  },
+  "https://anthropic.com/research/auditing-hidden-objectives": {
+    "title": "Mar 13, 2025 Alignment Auditing language models for hidden objectives",
+    "first_seen": "2026-07-28T18:48:42+00:00"
+  },
+  "https://anthropic.com/research/diff-tool": {
+    "title": "Mar 13, 2026 Interpretability A “diff” tool for AI: Finding behavioral differences in new models",
+    "first_seen": "2026-07-28T18:48:42+00:00"
+  },
+  "https://anthropic.com/research/emotion-concepts-function": {
+    "title": "Emotion concepts and their function in a large language model",
+    "first_seen": "2026-07-28T18:48:42+00:00"
+  },
+  "https://anthropic.com/research/global-workspace": {
+    "title": "Jul 6, 2026 Interpretability A global workspace in language models",
+    "first_seen": "2026-07-28T18:48:42+00:00"
+  },
+  "https://anthropic.com/research/introspection": {
+    "title": "Signs of introspection in large language models",
+    "first_seen": "2026-07-28T18:48:42+00:00"
+  },
+  "https://anthropic.com/research/natural-language-autoencoders": {
+    "title": "Natural Language Autoencoders: Turning Claude’s thoughts into text",
+    "first_seen": "2026-07-28T18:48:42+00:00"
+  },
+  "https://anthropic.com/research/open-source-circuit-tracing": {
+    "title": "May 29, 2025 Interpretability Open-sourcing circuit tracing tools",
+    "first_seen": "2026-07-28T18:48:42+00:00"
+  },
+  "https://anthropic.com/research/persona-vectors": {
+    "title": "Persona vectors: Monitoring and controlling character traits in language models",
+    "first_seen": "2026-07-28T18:48:42+00:00"
+  },
+  "https://anthropic.com/research/tracing-thoughts-language-model": {
+    "title": "Mar 27, 2025 Interpretability Tracing the thoughts of a large language model",
+    "first_seen": "2026-07-28T18:48:42+00:00"
+  }
+}
