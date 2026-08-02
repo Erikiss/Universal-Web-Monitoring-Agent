@@ -53,6 +53,7 @@ If a hit occurs while these secrets are missing, the email step fails visibly (l
 Reference lists and citation counts come from the [Semantic Scholar Graph API](https://api.semanticscholar.org/api-docs/graph). Notes:
 
 - The optional repository secret `S2_API_KEY` (a free Semantic Scholar API key) raises the rate limit considerably; without it the script paces itself more conservatively and the run takes longer. An invalid or not-yet-activated key (Semantic Scholar answers 403) is detected at runtime: the job logs a warning and falls back to unauthenticated requests instead of failing.
+- The unauthenticated pool is shared and often rate-limited (429) for minutes at a time; the job waits that out patiently (`S2_MAX_429_RETRIES`, up to ~30 min per request) instead of aborting. An overall time budget (`S2_TIME_BUDGET_MINUTES`, default 240) caps the Semantic Scholar phase: when exhausted, remaining per-paper reference fetches are skipped and the report is written with the data collected so far (affected papers keep their reference count but get no weighted score).
 - Very fresh papers may not be indexed by Semantic Scholar yet (or their bibliographies may not be parsed yet); the report header shows exactly how many papers could be ranked.
 - The job is stateless: each run is a self-contained weekly snapshot, so there is no `seen_*.json` file.
 - Offline unit tests (`test_arxiv_top_papers.py`, mocked APIs) run in the workflow before the ranking step.
