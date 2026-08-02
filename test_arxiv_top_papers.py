@@ -117,6 +117,40 @@ class ParseArxivFeedTest(unittest.TestCase):
         self.assertEqual(p["categories"], ["cs.LG", "cs.AI"])
 
 
+class MdEscapeTest(unittest.TestCase):
+    def test_escapes_link_breaking_characters(self):
+        self.assertEqual(atp.md_escape("A [B] C| \\D"), "A \\[B\\] C\\| \\\\D")
+
+
+class FetchArxivPageRetryTest(unittest.TestCase):
+    def test_retries_transient_total_zero_page(self):
+        session = FakeSession()
+        responses = [
+            FakeResponse(200, content=make_feed([], total=0)),
+            FakeResponse(200, content=make_feed([("2508.00001", "A", "2026-08-01T10:00:00Z")], total=1)),
+        ]
+        session.add(lambda m, u, p, j: True, lambda m, u, p, j: responses.pop(0))
+        with mock.patch.object(atp.time, "sleep"):
+            total, entries = atp.fetch_arxiv_page(session, "q", 0)
+        self.assertEqual(total, 1)
+        self.assertEqual(len(entries), 1)
+
+    def test_known_total_forces_retry_then_fails_loudly(self):
+        session = FakeSession()
+        session.add(lambda m, u, p, j: True, FakeResponse(200, content=make_feed([], total=0)))
+        with mock.patch.object(atp.time, "sleep"), self.assertRaises(RuntimeError):
+            atp.fetch_arxiv_page(session, "q", 1000, known_total=1500)
+        self.assertEqual(len(session.calls), atp.MAX_RETRIES)
+
+    def test_accepts_genuinely_empty_window(self):
+        session = FakeSession()
+        session.add(lambda m, u, p, j: True, FakeResponse(200, content=make_feed([], total=0)))
+        with mock.patch.object(atp.time, "sleep"):
+            total, entries = atp.fetch_arxiv_page(session, "q", 0)
+        self.assertEqual((total, entries), (0, []))
+        self.assertEqual(len(session.calls), 3)  # retried twice before accepting
+
+
 class S2ClientRetryTest(unittest.TestCase):
     def test_retries_429_then_succeeds(self):
         session = FakeSession()
@@ -277,6 +311,7 @@ class EndToEndTest(unittest.TestCase):
             try:
                 with mock.patch.object(atp.requests, "Session", return_value=session), \
                      mock.patch.object(atp.time, "sleep"), \
+                     mock.patch.object(atp, "LOOKBACK_DAYS", 7), \
                      mock.patch.object(atp, "datetime", wraps=atp.datetime) as dt:
                     dt.now.return_value = NOW
                     dt.fromisoformat = atp.datetime.fromisoformat

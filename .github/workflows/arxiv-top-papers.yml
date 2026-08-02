@@ -8,19 +8,24 @@ on:
         required: false
         default: '7'
   schedule:
-    - cron: '45 4 * * 1' # Mondays 04:45 UTC, before the page watchers to reduce push races.
+    # Sundays 22:30 UTC: the largest quiet window before the daily 06:00+
+    # jobs, since an unauthenticated run can take a few hours. Overlap with
+    # other workflows' pushes is still possible; the retry loop below and
+    # their own retries handle it.
+    - cron: '30 22 * * 0'
 
 permissions:
   contents: write
+
+concurrency:
+  group: arxiv-top-papers
+  cancel-in-progress: false
 
 jobs:
   rank:
     runs-on: ubuntu-latest
     # Without an S2_API_KEY the Semantic Scholar per-paper fallback can be slow.
     timeout-minutes: 300
-    env:
-      LOOKBACK_DAYS: ${{ github.event.inputs.lookback_days || '7' }}
-      S2_API_KEY: ${{ secrets.S2_API_KEY }}
     steps:
       - uses: actions/checkout@v4
 
@@ -36,6 +41,9 @@ jobs:
 
       - name: Run arXiv Top Papers ranking
         run: python arxiv_top_papers.py
+        env:
+          LOOKBACK_DAYS: ${{ github.event.inputs.lookback_days || '7' }}
+          S2_API_KEY: ${{ secrets.S2_API_KEY }}
 
       - name: Commit report
         run: |
@@ -46,7 +54,9 @@ jobs:
           git commit -m "Update arXiv AI top papers report"
           for i in 1 2 3 4 5; do
             git push && exit 0
-            git pull --rebase
+            if ! git pull --rebase; then
+              git rebase --abort || true
+            fi
             sleep $((i * 5))
           done
           exit 1

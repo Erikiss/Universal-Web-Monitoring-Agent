@@ -45,7 +45,7 @@ If a hit occurs while these secrets are missing, the email step fails visibly (l
 
 ## arXiv AI Top Papers (weekly)
 
-`arxiv_top_papers.py` runs once a week (`arxiv-top-papers.yml`, Mondays 04:45 UTC) and covers everything submitted to the AI/computing categories `cs.AI`, `cs.LG`, `cs.CL`, `cs.NE` (override with `ARXIV_CATEGORIES`) during the last 7 days (`LOOKBACK_DAYS`). It writes `reports/arxiv_top15_YYYY-MM-DD.md` with two rankings:
+`arxiv_top_papers.py` runs once a week (`arxiv-top-papers.yml`, Sundays 22:30 UTC) and covers everything submitted to the AI/computing categories `cs.AI`, `cs.LG`, `cs.CL`, `cs.NE` (override with `ARXIV_CATEGORIES`) during the last 7 days (`LOOKBACK_DAYS`). It writes `reports/arxiv_top15_YYYY-MM-DD.md` with two rankings:
 
 1. **Top 15 by number of references** — first-order: how many works each paper cites.
 2. **Top 15 by citation-weighted references** — every single reference is weighted by the current citation count of the cited work: `weighted score = Σ citation_count(reference)`.
