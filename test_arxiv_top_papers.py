@@ -52,6 +52,10 @@ class FakeResponse:
         self.content = content if content else (json.dumps(payload).encode() if payload is not None else b"")
         self.headers = headers or {}
 
+    @property
+    def text(self):
+        return self.content.decode("utf-8", errors="replace")
+
     def json(self):
         return self._payload
 
@@ -71,8 +75,9 @@ class FakeSession:
     def add(self, matcher, response):
         self.handlers.append((matcher, response))
 
-    def _dispatch(self, method, url, params, json_body):
-        self.calls.append({"method": method, "url": url, "params": params, "json": json_body})
+    def _dispatch(self, method, url, params, json_body, headers=None):
+        self.calls.append({"method": method, "url": url, "params": params,
+                           "json": json_body, "headers": dict(headers or {})})
         for matcher, response in self.handlers:
             if matcher(method, url, params or {}, json_body):
                 return response(method, url, params or {}, json_body) if callable(response) else response
@@ -82,7 +87,7 @@ class FakeSession:
         return self._dispatch("GET", url, params, None)
 
     def request(self, method, url, params=None, json=None, headers=None, timeout=None):
-        return self._dispatch(method, url, params, json)
+        return self._dispatch(method, url, params, json, headers)
 
 
 def no_sleep_client(session):
@@ -115,6 +120,71 @@ class ParseArxivFeedTest(unittest.TestCase):
         self.assertEqual(p["authors"], ["Alice Example", "Bob Example"])
         self.assertEqual(p["primary_category"], "cs.LG")
         self.assertEqual(p["categories"], ["cs.LG", "cs.AI"])
+
+
+class S2AuthFallbackTest(unittest.TestCase):
+    def test_invalid_key_falls_back_to_unauthenticated(self):
+        session = FakeSession()
+        responses = [FakeResponse(403, content=b"Forbidden"),
+                     FakeResponse(200, payload={"ok": True})]
+        session.add(lambda m, u, p, j: True, lambda m, u, p, j: responses.pop(0))
+        with mock.patch.object(atp, "S2_API_KEY", "bad-key"):
+            client = no_sleep_client(session)
+        with mock.patch.object(atp.time, "sleep"):
+            self.assertEqual(client.request("GET", "https://example/x"), {"ok": True})
+        self.assertIn("x-api-key", session.calls[0]["headers"])
+        self.assertNotIn("x-api-key", session.calls[1]["headers"])
+        self.assertGreaterEqual(client.delay, 3.0)  # unauthenticated pacing
+
+    def test_403_without_key_raises_actionable_error(self):
+        session = FakeSession()
+        session.add(lambda m, u, p, j: True, FakeResponse(403, content=b"Forbidden"))
+        client = no_sleep_client(session)
+        with self.assertRaises(atp.S2AuthError) as ctx:
+            client.request("GET", "https://example/x")
+        self.assertIn("S2_API_KEY", str(ctx.exception))
+        self.assertEqual(len(session.calls), 1)  # no pointless retries
+
+    def test_batch_403_does_not_split(self):
+        session = FakeSession()
+        session.add(batch_matcher, FakeResponse(403, content=b"Forbidden"))
+        with self.assertRaises(atp.S2AuthError):
+            atp.fetch_s2_records(no_sleep_client(session), [f"2508.{i:05d}" for i in range(60)])
+        self.assertEqual(len(session.calls), 1)  # one rejected batch, no split cascade
+
+
+class MdEscapeTest(unittest.TestCase):
+    def test_escapes_link_breaking_characters(self):
+        self.assertEqual(atp.md_escape("A [B] C| \\D"), "A \\[B\\] C\\| \\\\D")
+
+
+class FetchArxivPageRetryTest(unittest.TestCase):
+    def test_retries_transient_total_zero_page(self):
+        session = FakeSession()
+        responses = [
+            FakeResponse(200, content=make_feed([], total=0)),
+            FakeResponse(200, content=make_feed([("2508.00001", "A", "2026-08-01T10:00:00Z")], total=1)),
+        ]
+        session.add(lambda m, u, p, j: True, lambda m, u, p, j: responses.pop(0))
+        with mock.patch.object(atp.time, "sleep"):
+            total, entries = atp.fetch_arxiv_page(session, "q", 0)
+        self.assertEqual(total, 1)
+        self.assertEqual(len(entries), 1)
+
+    def test_known_total_forces_retry_then_fails_loudly(self):
+        session = FakeSession()
+        session.add(lambda m, u, p, j: True, FakeResponse(200, content=make_feed([], total=0)))
+        with mock.patch.object(atp.time, "sleep"), self.assertRaises(RuntimeError):
+            atp.fetch_arxiv_page(session, "q", 1000, known_total=1500)
+        self.assertEqual(len(session.calls), atp.MAX_RETRIES)
+
+    def test_accepts_genuinely_empty_window(self):
+        session = FakeSession()
+        session.add(lambda m, u, p, j: True, FakeResponse(200, content=make_feed([], total=0)))
+        with mock.patch.object(atp.time, "sleep"):
+            total, entries = atp.fetch_arxiv_page(session, "q", 0)
+        self.assertEqual((total, entries), (0, []))
+        self.assertEqual(len(session.calls), 3)  # retried twice before accepting
 
 
 class S2ClientRetryTest(unittest.TestCase):
@@ -277,6 +347,7 @@ class EndToEndTest(unittest.TestCase):
             try:
                 with mock.patch.object(atp.requests, "Session", return_value=session), \
                      mock.patch.object(atp.time, "sleep"), \
+                     mock.patch.object(atp, "LOOKBACK_DAYS", 7), \
                      mock.patch.object(atp, "datetime", wraps=atp.datetime) as dt:
                     dt.now.return_value = NOW
                     dt.fromisoformat = atp.datetime.fromisoformat

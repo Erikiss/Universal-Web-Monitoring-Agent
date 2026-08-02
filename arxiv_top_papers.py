@@ -77,7 +77,7 @@ def arxiv_query(now):
     return f"({cat_clause}) AND {date_clause}", cutoff
 
 
-def fetch_arxiv_page(session, query, start):
+def fetch_arxiv_page(session, query, start, known_total=None):
     params = {
         "search_query": query,
         "start": start,
@@ -97,13 +97,16 @@ def fetch_arxiv_page(session, query, start):
             last_error = e
             log(f"arXiv page start={start} attempt {attempt + 1} failed: {e}")
             continue
-        # The arXiv API sporadically returns an empty page although more
-        # results exist; treat that as a transient failure and retry.
-        if not entries and total > start:
-            last_error = RuntimeError(f"empty page at start={start} despite totalResults={total}")
+        # The arXiv API sporadically returns an empty page — sometimes even
+        # with totalResults=0 — although more results exist; treat both as
+        # transient and retry before believing them.
+        effective_total = max(total, known_total or 0)
+        if not entries and (effective_total > start or (effective_total == 0 and attempt < 2)):
+            last_error = RuntimeError(
+                f"empty page at start={start} (totalResults={total}, known_total={known_total})")
             log(f"arXiv page start={start} attempt {attempt + 1}: transient empty page, retrying")
             continue
-        return total, entries
+        return effective_total, entries
     raise RuntimeError(f"arXiv API failed for start={start}: {last_error}")
 
 
@@ -147,8 +150,8 @@ def collect_papers(session, now):
     total = None
     truncated = False
     while True:
-        page_total, entries = fetch_arxiv_page(session, query, start)
-        total = page_total if total is None else total
+        page_total, entries = fetch_arxiv_page(session, query, start, known_total=total)
+        total = max(total or 0, page_total)
         if not entries:
             break
         for p in entries:
@@ -166,7 +169,12 @@ def collect_papers(session, now):
             break
         time.sleep(ARXIV_DELAY_SECONDS)
 
-    if total is not None and total > MAX_PAPERS:
+    # Fail loudly instead of committing a silently short report if pagination
+    # ended before reaching the announced total.
+    if total and start < min(total, MAX_PAPERS) and len(papers) < MAX_PAPERS:
+        raise RuntimeError(f"arXiv pagination ended early: fetched {start} of {total} results")
+
+    if total and total > MAX_PAPERS:
         truncated = True
         log(f"WARNING: window contains {total} papers, only the newest {MAX_PAPERS} were fetched (MAX_PAPERS).")
     log(f"Collected {len(papers)} unique papers (arXiv totalResults={total}).")
@@ -177,16 +185,21 @@ def collect_papers(session, now):
 # Semantic Scholar
 # ---------------------------------------------------------------------------
 
+class S2AuthError(RuntimeError):
+    """Semantic Scholar rejected our credentials/traffic (HTTP 401/403)."""
+
+
 class S2Client:
     def __init__(self, session):
         self.session = session
         self.last_request = 0.0
+        self.delay = S2_DELAY_SECONDS
         self.headers = {"User-Agent": USER_AGENT}
         if S2_API_KEY:
             self.headers["x-api-key"] = S2_API_KEY
 
     def _throttle(self):
-        wait = self.last_request + S2_DELAY_SECONDS - time.monotonic()
+        wait = self.last_request + self.delay - time.monotonic()
         if wait > 0:
             time.sleep(wait)
         self.last_request = time.monotonic()
@@ -207,6 +220,22 @@ class S2Client:
                 log(f"S2 {method} {url} attempt {attempt + 1} failed: {e}")
                 time.sleep(min(2 ** attempt * 2, 60))
                 continue
+            if resp.status_code in (401, 403):
+                # An immediate 401/403 is an auth problem — splitting or
+                # retrying the same request cannot fix it.
+                body = (resp.text or "").strip()[:200]
+                if "x-api-key" in self.headers:
+                    log(f"S2 {method} {url}: HTTP {resp.status_code} ({body!r}) — the S2_API_KEY "
+                        "secret looks invalid or not yet activated; falling back to "
+                        "unauthenticated requests with conservative pacing")
+                    del self.headers["x-api-key"]
+                    self.delay = max(self.delay, 3.0)
+                    continue
+                raise S2AuthError(
+                    f"Semantic Scholar denied access (HTTP {resp.status_code}: {body!r}). "
+                    "Verify the S2_API_KEY repository secret (typo, stray whitespace, or a key "
+                    "that is not activated yet) or remove it to run unauthenticated."
+                )
             if resp.status_code == 429 or resp.status_code >= 500:
                 retry_after = resp.headers.get("Retry-After")
                 try:
@@ -303,6 +332,8 @@ def fetch_s2_records(client, arxiv_ids):
         try:
             records[arxiv_id]["ref_citations"] = fetch_references(client, arxiv_id)
             consecutive_failures = 0
+        except S2AuthError:
+            raise
         except (requests.HTTPError, RuntimeError) as e:
             log(f"WARNING: could not fetch references for {arxiv_id}: {e}")
             consecutive_failures += 1
@@ -370,7 +401,9 @@ def build_rankings(papers, records):
 
 
 def md_escape(text):
-    return text.replace("|", "\\|")
+    # Backslash, brackets and pipe would otherwise break the link syntax or
+    # the table cell for titles like "Results on [MASK] | a study".
+    return re.sub(r"([\\\[\]|])", r"\\\1", text)
 
 
 def format_row(rank, entry):

@@ -45,14 +45,14 @@ If a hit occurs while these secrets are missing, the email step fails visibly (l
 
 ## arXiv AI Top Papers (weekly)
 
-`arxiv_top_papers.py` runs once a week (`arxiv-top-papers.yml`, Mondays 04:45 UTC) and covers everything submitted to the AI/computing categories `cs.AI`, `cs.LG`, `cs.CL`, `cs.NE` (override with `ARXIV_CATEGORIES`) during the last 7 days (`LOOKBACK_DAYS`). It writes `reports/arxiv_top15_YYYY-MM-DD.md` with two rankings:
+`arxiv_top_papers.py` runs once a week (`arxiv-top-papers.yml`, Sundays 22:30 UTC) and covers everything submitted to the AI/computing categories `cs.AI`, `cs.LG`, `cs.CL`, `cs.NE` (override with `ARXIV_CATEGORIES`) during the last 7 days (`LOOKBACK_DAYS`). It writes `reports/arxiv_top15_YYYY-MM-DD.md` with two rankings:
 
 1. **Top 15 by number of references** — first-order: how many works each paper cites.
 2. **Top 15 by citation-weighted references** — every single reference is weighted by the current citation count of the cited work: `weighted score = Σ citation_count(reference)`.
 
 Reference lists and citation counts come from the [Semantic Scholar Graph API](https://api.semanticscholar.org/api-docs/graph). Notes:
 
-- The optional repository secret `S2_API_KEY` (a free Semantic Scholar API key) raises the rate limit considerably; without it the script paces itself more conservatively and the run takes longer.
+- The optional repository secret `S2_API_KEY` (a free Semantic Scholar API key) raises the rate limit considerably; without it the script paces itself more conservatively and the run takes longer. An invalid or not-yet-activated key (Semantic Scholar answers 403) is detected at runtime: the job logs a warning and falls back to unauthenticated requests instead of failing.
 - Very fresh papers may not be indexed by Semantic Scholar yet (or their bibliographies may not be parsed yet); the report header shows exactly how many papers could be ranked.
 - The job is stateless: each run is a self-contained weekly snapshot, so there is no `seen_*.json` file.
 - Offline unit tests (`test_arxiv_top_papers.py`, mocked APIs) run in the workflow before the ranking step.
