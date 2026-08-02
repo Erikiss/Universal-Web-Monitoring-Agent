@@ -44,6 +44,12 @@ S2_BATCH_SIZE = 500
 S2_MIN_BATCH_SIZE = 25
 # Unauthenticated requests share a global rate-limit pool, so pace harder.
 S2_DELAY_SECONDS = float(os.getenv("S2_DELAY_SECONDS", "1.1" if S2_API_KEY else "3.0"))
+# The shared pool is often congested for minutes at a time; a weekly job can
+# afford to wait that out (up to ~30 min per request with the default budget).
+S2_MAX_429_RETRIES = int(os.getenv("S2_MAX_429_RETRIES", "12"))
+# Overall Semantic Scholar time budget; when exhausted, remaining per-paper
+# reference fetches are skipped so the run still produces a (partial) report.
+S2_TIME_BUDGET_MINUTES = float(os.getenv("S2_TIME_BUDGET_MINUTES", "240"))
 
 USER_AGENT = "Universal-Web-Monitoring-Agent/1.0 (+https://github.com/erikiss/universal-web-monitoring-agent)"
 
@@ -194,6 +200,7 @@ class S2Client:
         self.session = session
         self.last_request = 0.0
         self.delay = S2_DELAY_SECONDS
+        self.deadline = None
         self.headers = {"User-Agent": USER_AGENT}
         if S2_API_KEY:
             self.headers["x-api-key"] = S2_API_KEY
@@ -205,10 +212,14 @@ class S2Client:
         self.last_request = time.monotonic()
 
     def request(self, method, url, *, params=None, json_body=None):
-        """Returns the parsed JSON. Retries 429/5xx/network errors; raises
-        requests.HTTPError for persistent 4xx so callers can degrade."""
+        """Returns the parsed JSON. Waits out 429 rate limiting patiently (own
+        budget, S2_MAX_429_RETRIES), retries 5xx/network errors up to
+        MAX_RETRIES, raises S2AuthError on 401/403 and requests.HTTPError for
+        other persistent 4xx so callers can degrade."""
         last_error = None
-        for attempt in range(MAX_RETRIES):
+        error_attempts = 0
+        throttled = 0
+        while error_attempts < MAX_RETRIES and throttled < S2_MAX_429_RETRIES:
             self._throttle()
             try:
                 resp = self.session.request(
@@ -217,8 +228,9 @@ class S2Client:
                 )
             except requests.RequestException as e:
                 last_error = e
-                log(f"S2 {method} {url} attempt {attempt + 1} failed: {e}")
-                time.sleep(min(2 ** attempt * 2, 60))
+                error_attempts += 1
+                log(f"S2 {method} {url} attempt {error_attempts} failed: {e}")
+                time.sleep(min(2 ** error_attempts * 2, 60))
                 continue
             if resp.status_code in (401, 403):
                 # An immediate 401/403 is an auth problem — splitting or
@@ -236,19 +248,30 @@ class S2Client:
                     "Verify the S2_API_KEY repository secret (typo, stray whitespace, or a key "
                     "that is not activated yet) or remove it to run unauthenticated."
                 )
-            if resp.status_code == 429 or resp.status_code >= 500:
+            if resp.status_code == 429:
+                # Rate limiting on the shared pool is normal and passes;
+                # wait generously instead of giving up after a few minutes.
                 retry_after = resp.headers.get("Retry-After")
                 try:
-                    delay = min(float(retry_after), 120)
+                    delay = min(float(retry_after), 300)
                 except (TypeError, ValueError):
-                    delay = min(2 ** attempt * 5, 120)
+                    delay = min(5 * 2 ** throttled, 300)
+                throttled += 1
+                last_error = requests.HTTPError("HTTP 429", response=resp)
+                log(f"S2 {method} {url}: HTTP 429 ({throttled}/{S2_MAX_429_RETRIES}), backing off {delay:.0f}s")
+                time.sleep(delay)
+                continue
+            if resp.status_code >= 500:
+                error_attempts += 1
                 last_error = requests.HTTPError(f"HTTP {resp.status_code}", response=resp)
+                delay = min(2 ** error_attempts * 5, 120)
                 log(f"S2 {method} {url}: HTTP {resp.status_code}, backing off {delay:.0f}s")
                 time.sleep(delay)
                 continue
             resp.raise_for_status()
             return resp.json()
-        raise RuntimeError(f"S2 API failed after {MAX_RETRIES} attempts: {last_error}")
+        raise RuntimeError(
+            f"S2 API failed ({error_attempts} errors, {throttled} rate-limit waits): {last_error}")
 
 
 def s2_batch(client, arxiv_ids, fields):
@@ -328,6 +351,11 @@ def fetch_s2_records(client, arxiv_ids):
                and (records[a]["reference_count"] or 0) > 0]
     consecutive_failures = 0
     for i, arxiv_id in enumerate(pending):
+        if client.deadline is not None and time.monotonic() > client.deadline:
+            log(f"WARNING: S2 time budget ({S2_TIME_BUDGET_MINUTES:.0f} min) exhausted; "
+                f"skipping the remaining {len(pending) - i} reference fetches — affected papers "
+                "keep their reference count but get no weighted score.")
+            break
         log(f"S2 reference fallback {i + 1}/{len(pending)}: {arxiv_id}")
         try:
             records[arxiv_id]["ref_citations"] = fetch_references(client, arxiv_id)
@@ -485,6 +513,7 @@ def main():
         log("No papers found in window; writing empty report.")
 
     client = S2Client(session)
+    client.deadline = time.monotonic() + S2_TIME_BUDGET_MINUTES * 60
     records = fetch_s2_records(client, [p["arxiv_id"] for p in papers]) if papers else {}
 
     measurable, by_refs, by_weight = build_rankings(papers, records)

@@ -5,6 +5,7 @@ suite runs without network access: python -m unittest test_arxiv_top_papers.py
 import json
 import os
 import tempfile
+import time
 import unittest
 from datetime import datetime, timezone
 from pathlib import Path
@@ -120,6 +121,38 @@ class ParseArxivFeedTest(unittest.TestCase):
         self.assertEqual(p["authors"], ["Alice Example", "Bob Example"])
         self.assertEqual(p["primary_category"], "cs.LG")
         self.assertEqual(p["categories"], ["cs.LG", "cs.AI"])
+
+
+class S2RateLimitPatienceTest(unittest.TestCase):
+    def test_waits_out_extended_429_storm(self):
+        session = FakeSession()
+        responses = [FakeResponse(429)] * 8 + [FakeResponse(200, payload={"ok": True})]
+        session.add(lambda m, u, p, j: True, lambda m, u, p, j: responses.pop(0))
+        client = no_sleep_client(session)
+        with mock.patch.object(atp.time, "sleep"):
+            self.assertEqual(client.request("GET", "https://example/x"), {"ok": True})
+        self.assertEqual(len(session.calls), 9)  # exceeded the old 5-attempt limit
+
+    def test_persistent_429_fails_after_budget(self):
+        session = FakeSession()
+        session.add(lambda m, u, p, j: True, FakeResponse(429))
+        client = no_sleep_client(session)
+        with mock.patch.object(atp.time, "sleep"), self.assertRaises(RuntimeError):
+            client.request("GET", "https://example/x")
+        self.assertEqual(len(session.calls), atp.S2_MAX_429_RETRIES)
+
+
+class S2TimeBudgetTest(unittest.TestCase):
+    def test_deadline_skips_remaining_reference_fetches(self):
+        session = FakeSession()
+        session.add(batch_matcher, FakeResponse(
+            200, payload=[s2_paper("2508.00007", [1] * 100, reference_count=150)]))
+        client = no_sleep_client(session)
+        client.deadline = time.monotonic() - 1
+        records = atp.fetch_s2_records(client, ["2508.00007"])
+        self.assertIsNone(records["2508.00007"]["ref_citations"])
+        self.assertEqual(records["2508.00007"]["reference_count"], 150)
+        self.assertEqual(len(session.calls), 1)  # batch only, no /references call
 
 
 class S2AuthFallbackTest(unittest.TestCase):
