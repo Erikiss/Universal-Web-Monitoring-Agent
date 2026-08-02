@@ -185,16 +185,21 @@ def collect_papers(session, now):
 # Semantic Scholar
 # ---------------------------------------------------------------------------
 
+class S2AuthError(RuntimeError):
+    """Semantic Scholar rejected our credentials/traffic (HTTP 401/403)."""
+
+
 class S2Client:
     def __init__(self, session):
         self.session = session
         self.last_request = 0.0
+        self.delay = S2_DELAY_SECONDS
         self.headers = {"User-Agent": USER_AGENT}
         if S2_API_KEY:
             self.headers["x-api-key"] = S2_API_KEY
 
     def _throttle(self):
-        wait = self.last_request + S2_DELAY_SECONDS - time.monotonic()
+        wait = self.last_request + self.delay - time.monotonic()
         if wait > 0:
             time.sleep(wait)
         self.last_request = time.monotonic()
@@ -215,6 +220,22 @@ class S2Client:
                 log(f"S2 {method} {url} attempt {attempt + 1} failed: {e}")
                 time.sleep(min(2 ** attempt * 2, 60))
                 continue
+            if resp.status_code in (401, 403):
+                # An immediate 401/403 is an auth problem — splitting or
+                # retrying the same request cannot fix it.
+                body = (resp.text or "").strip()[:200]
+                if "x-api-key" in self.headers:
+                    log(f"S2 {method} {url}: HTTP {resp.status_code} ({body!r}) — the S2_API_KEY "
+                        "secret looks invalid or not yet activated; falling back to "
+                        "unauthenticated requests with conservative pacing")
+                    del self.headers["x-api-key"]
+                    self.delay = max(self.delay, 3.0)
+                    continue
+                raise S2AuthError(
+                    f"Semantic Scholar denied access (HTTP {resp.status_code}: {body!r}). "
+                    "Verify the S2_API_KEY repository secret (typo, stray whitespace, or a key "
+                    "that is not activated yet) or remove it to run unauthenticated."
+                )
             if resp.status_code == 429 or resp.status_code >= 500:
                 retry_after = resp.headers.get("Retry-After")
                 try:
@@ -311,6 +332,8 @@ def fetch_s2_records(client, arxiv_ids):
         try:
             records[arxiv_id]["ref_citations"] = fetch_references(client, arxiv_id)
             consecutive_failures = 0
+        except S2AuthError:
+            raise
         except (requests.HTTPError, RuntimeError) as e:
             log(f"WARNING: could not fetch references for {arxiv_id}: {e}")
             consecutive_failures += 1
