@@ -1,0 +1,52 @@
+name: arXiv AI Top Papers (weekly)
+
+on:
+  workflow_dispatch:
+    inputs:
+      lookback_days:
+        description: 'Lookback window in days'
+        required: false
+        default: '7'
+  schedule:
+    - cron: '45 4 * * 1' # Mondays 04:45 UTC, before the page watchers to reduce push races.
+
+permissions:
+  contents: write
+
+jobs:
+  rank:
+    runs-on: ubuntu-latest
+    # Without an S2_API_KEY the Semantic Scholar per-paper fallback can be slow.
+    timeout-minutes: 300
+    env:
+      LOOKBACK_DAYS: ${{ github.event.inputs.lookback_days || '7' }}
+      S2_API_KEY: ${{ secrets.S2_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run unit tests
+        run: python -m unittest test_arxiv_top_papers.py -v
+
+      - name: Run arXiv Top Papers ranking
+        run: python arxiv_top_papers.py
+
+      - name: Commit report
+        run: |
+          git config user.name "arxiv-top-papers-bot"
+          git config user.email "arxiv-top-papers-bot@users.noreply.github.com"
+          git add reports
+          git diff --staged --quiet && exit 0
+          git commit -m "Update arXiv AI top papers report"
+          for i in 1 2 3 4 5; do
+            git push && exit 0
+            git pull --rebase
+            sleep $((i * 5))
+          done
+          exit 1

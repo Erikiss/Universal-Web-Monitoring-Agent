@@ -4,6 +4,7 @@ This repository runs scheduled GitHub Actions jobs that monitor research sources
 
 - **LessWrong filter**: queries the LessWrong GraphQL API and filters for long ML/NLP posts with likely visualizations.
 - **Page watchers**: scrape the Anthropic Interpretability team page and the Goodfire research page, detect new publication entries, and send an alert email on hits.
+- **arXiv AI Top Papers** (weekly): ranks the last 7 days of AI-related arXiv submissions by reference count and by citation-weighted references.
 - **Lab Publications filter** (temporarily disabled): matched arXiv papers against a list of lab names.
 
 ## How it works
@@ -42,6 +43,20 @@ On a hit, `send_alert.py` sends a plain-text email via SMTP. All personal data l
 
 If a hit occurs while these secrets are missing, the email step fails visibly (listing only the missing secret *names*) so a hit can never be dropped silently. Both workflows accept two *Run workflow* inputs: `dry_run` tests scraping without committing or emailing, and `test_email` sends a test alert immediately so the SMTP secrets can be verified without waiting for a real hit.
 
+## arXiv AI Top Papers (weekly)
+
+`arxiv_top_papers.py` runs once a week (`arxiv-top-papers.yml`, Mondays 04:45 UTC) and covers everything submitted to the AI/computing categories `cs.AI`, `cs.LG`, `cs.CL`, `cs.NE` (override with `ARXIV_CATEGORIES`) during the last 7 days (`LOOKBACK_DAYS`). It writes `reports/arxiv_top15_YYYY-MM-DD.md` with two rankings:
+
+1. **Top 15 by number of references** — first-order: how many works each paper cites.
+2. **Top 15 by citation-weighted references** — every single reference is weighted by the current citation count of the cited work: `weighted score = Σ citation_count(reference)`.
+
+Reference lists and citation counts come from the [Semantic Scholar Graph API](https://api.semanticscholar.org/api-docs/graph). Notes:
+
+- The optional repository secret `S2_API_KEY` (a free Semantic Scholar API key) raises the rate limit considerably; without it the script paces itself more conservatively and the run takes longer.
+- Very fresh papers may not be indexed by Semantic Scholar yet (or their bibliographies may not be parsed yet); the report header shows exactly how many papers could be ranked.
+- The job is stateless: each run is a self-contained weekly snapshot, so there is no `seen_*.json` file.
+- Offline unit tests (`test_arxiv_top_papers.py`, mocked APIs) run in the workflow before the ranking step.
+
 ## Lab Publications filter (temporarily disabled)
 
 `lab_pubs_filter.py` matched recent arXiv papers against a large list of lab *names* (no URLs) and produced only empty reports for weeks. Its schedule is therefore commented out in `.github/workflows/lab-pubs-filter.yml`; it can still be started manually via `workflow_dispatch` and re-enabled by uncommenting the `schedule` block.
@@ -51,6 +66,8 @@ If a hit occurs while these secrets are missing, the email step fails visibly (l
 - `lw_filter.py`: main LessWrong filtering script
 - `page_watch.py`: generic page watcher used by the Anthropic/Goodfire workflows
 - `send_alert.py`: SMTP alert mailer (configured via repository secrets)
+- `arxiv_top_papers.py`: weekly arXiv AI top-papers ranking (references & citation-weighted references)
+- `test_arxiv_top_papers.py`: offline unit tests for the ranking script
 - `lab_pubs_filter.py`: arXiv lab-name filter (schedule temporarily disabled)
 - `requirements.txt`: Python dependencies for the workflows and local runs
 - `.github/workflows/`: scheduled workflows
