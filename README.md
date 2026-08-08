@@ -2,18 +2,41 @@
 
 This repository runs scheduled GitHub Actions jobs that monitor research sources and store results as Markdown reports:
 
-- **LessWrong filter**: queries the LessWrong GraphQL API and filters for long ML/NLP posts with likely visualizations.
+- **LessWrong filter**: reads recent LessWrong posts (GraphQL API, with the RSS feed as a fallback) and filters for long ML/NLP posts with likely visualizations.
 - **Page watchers**: scrape the Anthropic Interpretability team page and the Goodfire research page, detect new publication entries, and send an alert email on hits.
 - **arXiv AI Top Papers** (weekly): ranks the last 7 days of AI-related arXiv submissions by reference count and by citation-weighted references.
 - **Lab Publications filter** (temporarily disabled): matched arXiv papers against a list of lab names.
 
+## Conventions
+
+- **Fail loudly.** A monitor that cannot read its source must produce a red run, not an empty report. An empty report is indistinguishable from a quiet day and hides outages for as long as nobody looks; a visible gap in `reports/` is honest. `lw_filter.py` (`LW_STRICT`), `page_watch.py` (`WATCH_MIN_ENTRIES`) and `arxiv_top_papers.py` all follow this.
+- **Log the evidence.** Every refused HTTP request logs its status, timing, the relevant response headers and a body snippet, so an incident is diagnosable from a single run's log.
+- **Ask, don't evade.** These jobs identify themselves in the `User-Agent`, honour `robots.txt` (LessWrong asks for `Crawl-Delay: 3`) and keep to roughly one request a day. If a source deliberately blocks us, the response is to reduce load and contact the maintainers — never to rotate addresses, disguise the client or bypass a challenge.
+
 ## How it works
 
 - GitHub Actions runs on a daily schedule or via `workflow_dispatch`.
-- `lw_filter.py` requests recent LessWrong posts through GraphQL instead of browser automation.
+- `lw_filter.py` requests recent LessWrong posts over HTTP instead of browser automation, using whichever transport answers (see below).
 - The script filters posts by lookback window, minimum word count, visualization heuristics, and ML/NLP topic keywords.
 - Matching posts are written to `reports/YYYY-MM-DD.md`.
 - Processed post IDs are stored in `seen.json` so the workflow does not report the same post twice.
+
+### Transports
+
+`LW_TRANSPORT` selects how posts are fetched; the default `auto` tries them in order and reports the winner in the report header.
+
+| Transport | Endpoint | Coverage | Notes |
+| --- | --- | --- | --- |
+| `graphql` | `POST /graphql` | Full window, paginated via `offset` | Preferred: one request returns `baseScore`, `wordCount`, `frontpageDate` and the full post HTML. Uses the `selector` argument; the older `input: { terms: … }` form is deprecated server-side. |
+| `feed` | `GET /feed.xml?view=…` | 10 items per view, hard-capped server-side | Fallback. The feed's `<description>` is the same `contents.html` GraphQL returns and its `<guid>` is the bare post ID, so the filter heuristics and `seen.json` work unchanged. `baseScore` is unavailable and renders as `n/a`; a Frontpage post outside the 10 newest frontpage items is reported as `Personal/All (unconfirmed)`. Responses are CDN-cached, so this path can stay reachable when the uncacheable GraphQL POST is not. |
+
+### Failure behaviour
+
+- A run that cannot fetch posts over any transport **writes no report, leaves `seen.json` untouched, exits non-zero** and sends the failure alert email. Set `LW_STRICT=0` to downgrade that to a green run with a degraded report.
+- Reports are keyed by UTC date, so a second run on the same day overwrites the first. A run that finds **no** matches will never overwrite a report that already has some — re-running after a failure cannot destroy a good day.
+- Posts that arrive without body content are skipped **without** being marked seen, so a transport quirk cannot drop a post permanently.
+- A refusal carrying no rate-limit budget headers, a non-JSON body and near-zero latency is treated as a standing edge block rather than a quota: the script stops retrying after `LW_BLOCK_STRIKES` attempts and moves to the next transport instead of burning its whole budget.
+- The workflow's `Probe LessWrong reachability` step curls `/api/agent/ping` (LessWrong's [documented](https://www.lesswrong.com/api/SKILL.md) reachability probe), `/feed.xml` and `/graphql` on every run and never fails the job. If `/api/agent/ping` is refused as well, the whole host is unreachable from GitHub's runners and no transport change will help — the remedy is to contact the LessWrong developers (`POST /api/agent/feedback`, or an issue on [ForumMagnum](https://github.com/ForumMagnum/ForumMagnum)) and describe the job's traffic, not to work around the block.
 
 ## Page watchers (Anthropic Interpretability & Goodfire research)
 
@@ -69,26 +92,45 @@ Reference lists and citation counts come from the [Semantic Scholar Graph API](h
 - `send_alert.py`: SMTP alert mailer (configured via repository secrets)
 - `arxiv_top_papers.py`: weekly arXiv AI top-papers ranking (references & citation-weighted references)
 - `test_arxiv_top_papers.py`: offline unit tests for the ranking script
+- `test_lw_filter.py`: offline unit tests for the LessWrong filter (transports, retry/blocking logic, report guards)
 - `lab_pubs_filter.py`: arXiv lab-name filter (schedule temporarily disabled)
 - `requirements.txt`: Python dependencies for the workflows and local runs
 - `.github/workflows/`: scheduled workflows
 - `reports/`: generated Markdown reports
 - `seen.json`, `seen_labs.json`, `seen_anthropic_interpretability.json`, `seen_goodfire_research.json`: persisted state so nothing is reported twice
 
-## Configuration
+## Configuration (LessWrong filter)
 
-The workflow can be configured with repository variables or step-level environment values:
+Every value below can be set as a repository variable (Settings → Secrets and variables → Actions → Variables); `lesswrong-filter.yml` reads `vars.<NAME>` and falls back to the default. `LOOKBACK_DAYS`, `POST_LIMIT`, `LW_TRANSPORT` and `LW_STRICT` are also exposed as `workflow_dispatch` inputs, which take precedence — that is how you run a one-off backlog catch-up with a raised `POST_LIMIT`.
 
 | Variable | Description | Default |
 | --- | --- | --- |
 | `MIN_WORDS` | Minimum word count for a matching post | `1800` |
 | `LOOKBACK_DAYS` | How many days of posts to request | `14` |
-| `POST_LIMIT` | Max number of recent posts requested per run | `30` |
+| `POST_LIMIT` | Max posts fetched per run. Binds *before* `LOOKBACK_DAYS`: if more posts were published in the window than this, the window is truncated and the report says so. LessWrong publishes roughly 15–30 posts a day | `100` |
 | `POST_SCOPE` | `all`, `frontpage`, or `personal` | `all` |
-| `MAX_RETRIES` | Number of retry attempts for transient API errors/rate limits | `5` |
-| `MAX_BACKOFF_SECONDS` | Maximum wait between retries in seconds | `60` |
+| `LW_TRANSPORT` | `auto`, `graphql`, or `feed` | `auto` |
+| `LW_STRICT` | `1` fails the run when no transport works; `0` writes a degraded report instead | `1` |
+| `LW_PAGE_SIZE` | Posts per GraphQL request when paginating | `50` |
+| `LW_MAX_RETRIES` | Retry budget for network and 5xx errors | `5` |
+| `LW_MAX_429_RETRIES` | Separate retry budget for rate limiting | `6` |
+| `LW_MAX_BACKOFF_SECONDS` | Maximum computed wait between retries | `60` |
+| `LW_RETRY_AFTER_CAP` | Hard ceiling on an honoured `Retry-After` header | `300` |
+| `LW_BLOCK_STRIKES` | Consecutive budget-less refusals treated as a standing block | `2` |
+| `LW_CRAWL_DELAY` | Minimum seconds between requests (`robots.txt` asks for 3) | `3` |
+| `LW_FEED_VIEWS` | Comma-separated RSS views for the feed transport | Derived from `POST_SCOPE` |
 | `LESSWRONG_USER_AGENT` | Identifiable user agent for API requests | Repository URL based default |
-| `REQUEST_TIMEOUT` | Request timeout in seconds | `30` |
+| `LW_REQUEST_TIMEOUT` | Request timeout in seconds | `60` |
+
+`LW_MAX_RETRIES`, `LW_MAX_BACKOFF_SECONDS` and `LW_REQUEST_TIMEOUT` also accept the older unprefixed names (`MAX_RETRIES`, `MAX_BACKOFF_SECONDS`, `REQUEST_TIMEOUT`); the prefixed ones win. The prefix exists because three scripts in this repository read those generic names with different intended defaults.
+
+## Tests
+
+`test_lw_filter.py` and `test_arxiv_top_papers.py` mock all HTTP, so they run offline and are executed by their workflows before the real job:
+
+```bash
+python -m unittest test_lw_filter.py test_arxiv_top_papers.py
+```
 
 ## Running locally
 
@@ -101,5 +143,7 @@ python lw_filter.py
 
 ## Notes
 
-- LessWrong requests should use an identifiable user agent and stay conservatively rate-limited.
+- LessWrong requests use an identifiable user agent and stay conservatively rate-limited (`LW_CRAWL_DELAY`, one run a day).
 - The current implementation uses a heuristic topic and visualization filter so it can run without additional services.
+- LessWrong has no API key or bot registration. GraphQL authentication is a `loginToken` harvested from a logged-in browser session, which would mean storing a live session credential in repository secrets — deliberately not done.
+- LessWrong also publishes an agent-oriented Markdown API (`/api/SKILL.md`, `/api/latest`, `/api/post/[id]`). It is not used here because the filter's visualization heuristic counts HTML elements (`<figure>`, `<svg>`, `<canvas>`, `<iframe>`, `<table>`), which the Markdown rendering discards. `/api/agent/ping` and `/api/agent/feedback` from that same API are used for the reachability probe and as the escalation path.

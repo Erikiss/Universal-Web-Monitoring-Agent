@@ -2,23 +2,39 @@ name: LessWrong filter
 
 on:
   workflow_dispatch:
+    inputs:
+      post_limit:
+        description: 'Max posts to fetch (raise for a backlog catch-up)'
+        required: false
+        default: '100'
+      lookback_days:
+        description: 'Lookback window in days'
+        required: false
+        default: '14'
+      transport:
+        description: 'auto | graphql | feed'
+        required: false
+        default: 'auto'
+      strict:
+        description: 'Fail the run when LessWrong cannot be reached (1) or write a degraded report (0)'
+        required: false
+        default: '1'
   schedule:
-    - cron: '15 7 * * *' # Runs daily at 07:15 UTC.
+    # 07:23 UTC, deliberately off the quarter hour: GitHub clusters scheduled
+    # jobs on :00/:15/:30/:45 behind shared egress addresses.
+    - cron: '23 7 * * *'
 
 permissions:
   contents: write
 
+concurrency:
+  group: lesswrong-filter
+  cancel-in-progress: false
+
 jobs:
   filter:
     runs-on: ubuntu-latest
-    env:
-      MIN_WORDS: '1800'
-      LOOKBACK_DAYS: '14'
-      POST_LIMIT: '30'
-      POST_SCOPE: 'all'
-      MAX_RETRIES: '5'
-      MAX_BACKOFF_SECONDS: '60'
-      LESSWRONG_USER_AGENT: 'Universal-Web-Monitoring-Agent/1.0 (+https://github.com/${{ github.repository }})'
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
@@ -29,7 +45,46 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Run unit tests
+        run: python -m unittest test_lw_filter.py -v
+
+      - name: Probe LessWrong reachability
+        # Diagnostic only, never fails the job. Records which endpoints answer
+        # from this runner so that a future block can be classified from one
+        # run's log instead of by reverse-engineering the job's wall clock.
+        # /api/agent/ping is LessWrong's documented reachability probe
+        # (see https://www.lesswrong.com/api/SKILL.md).
+        continue-on-error: true
+        env:
+          UA: 'Universal-Web-Monitoring-Agent/1.0 (+https://github.com/${{ github.repository }})'
+        run: |
+          for url in \
+            "https://www.lesswrong.com/api/agent/ping" \
+            "https://www.lesswrong.com/feed.xml?view=rss" \
+            "https://www.lesswrong.com/graphql"
+          do
+            echo "::group::$url"
+            curl -sS -o /dev/null -D - --max-time 30 \
+              -H "User-Agent: $UA" \
+              -w '\nHTTP %{http_code} in %{time_total}s\n' "$url" || true
+            echo "::endgroup::"
+          done
+
       - name: Run LessWrong filter
+        env:
+          MIN_WORDS: ${{ vars.MIN_WORDS || '1800' }}
+          LOOKBACK_DAYS: ${{ inputs.lookback_days || vars.LOOKBACK_DAYS || '14' }}
+          POST_LIMIT: ${{ inputs.post_limit || vars.POST_LIMIT || '100' }}
+          POST_SCOPE: ${{ vars.POST_SCOPE || 'all' }}
+          LW_TRANSPORT: ${{ inputs.transport || vars.LW_TRANSPORT || 'auto' }}
+          LW_STRICT: ${{ inputs.strict || vars.LW_STRICT || '1' }}
+          LW_MAX_RETRIES: ${{ vars.LW_MAX_RETRIES || '5' }}
+          LW_MAX_429_RETRIES: ${{ vars.LW_MAX_429_RETRIES || '6' }}
+          LW_MAX_BACKOFF_SECONDS: ${{ vars.LW_MAX_BACKOFF_SECONDS || '60' }}
+          LW_RETRY_AFTER_CAP: ${{ vars.LW_RETRY_AFTER_CAP || '300' }}
+          LW_REQUEST_TIMEOUT: ${{ vars.LW_REQUEST_TIMEOUT || '60' }}
+          LW_CRAWL_DELAY: ${{ vars.LW_CRAWL_DELAY || '3' }}
+          LESSWRONG_USER_AGENT: 'Universal-Web-Monitoring-Agent/1.0 (+https://github.com/${{ github.repository }})'
         run: python lw_filter.py
 
       - name: Commit report
@@ -39,9 +94,40 @@ jobs:
           git add reports seen.json
           git diff --staged --quiet && exit 0
           git commit -m "Update LessWrong filter report"
-          for attempt in 1 2 3; do
+          for i in 1 2 3 4 5; do
             git push && exit 0
-            git pull --rebase || true
-            sleep $((attempt * 5))
+            if ! git pull --rebase; then
+              git rebase --abort || true
+            fi
+            sleep $((i * 5))
           done
           exit 1
+
+      - name: Send failure alert
+        # The whole point of failing loudly is that somebody hears it. GitHub
+        # only emails scheduled-workflow failures to whoever last edited the
+        # cron, so a red check on its own may notify nobody.
+        if: failure()
+        continue-on-error: true
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          printf '%s\n' \
+            "The LessWrong filter run failed and wrote no report." \
+            "" \
+            "Logs: $RUN_URL" \
+            "" \
+            "The 'Probe LessWrong reachability' step in that run shows which" \
+            "endpoints answered. If /api/agent/ping is refused too, the whole" \
+            "host is unreachable from GitHub's runners and no transport change" \
+            "will help; see the escalation note in README.md." \
+            > "$RUNNER_TEMP/alert.txt"
+          python send_alert.py \
+            --subject "[Web-Monitor] LessWrong filter failed" \
+            --body-file "$RUNNER_TEMP/alert.txt"
