@@ -34,7 +34,11 @@ concurrency:
 jobs:
   filter:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # Must exceed the script's own LW_TIME_BUDGET_MINUTES retry allowance with
+    # room to spare. A job that hits this cap is *cancelled*, and a cancelled
+    # job would skip the alert below, turning a loud failure back into a silent
+    # one — so the script is expected to give up first, not the runner.
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -44,9 +48,6 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
-
-      - name: Run unit tests
-        run: python -m unittest test_lw_filter.py -v
 
       - name: Probe LessWrong reachability
         # Diagnostic only, never fails the job. Records which endpoints answer
@@ -58,17 +59,26 @@ jobs:
         env:
           UA: 'Universal-Web-Monitoring-Agent/1.0 (+https://github.com/${{ github.repository }})'
         run: |
-          for url in \
-            "https://www.lesswrong.com/api/agent/ping" \
-            "https://www.lesswrong.com/feed.xml?view=rss" \
-            "https://www.lesswrong.com/graphql"
-          do
-            echo "::group::$url"
+          probe() {
+            method="$1"; url="$2"; shift 2
+            echo "::group::$method $url"
             curl -sS -o /dev/null -D - --max-time 30 \
-              -H "User-Agent: $UA" \
+              -X "$method" -H "User-Agent: $UA" "$@" \
               -w '\nHTTP %{http_code} in %{time_total}s\n' "$url" || true
             echo "::endgroup::"
-          done
+            sleep 3  # robots.txt asks for Crawl-Delay: 3
+          }
+          probe GET "https://www.lesswrong.com/api/agent/ping"
+          # Exactly the URL the feed transport fetches, so the probe and the
+          # real request share a cache key.
+          probe GET "https://www.lesswrong.com/feed.xml?view=rss"
+          # The request that actually gets refused is a POST, not a GET.
+          probe POST "https://www.lesswrong.com/graphql" \
+            -H 'Content-Type: application/json' \
+            --data '{"query":"{ __typename }"}'
+
+      - name: Run unit tests
+        run: python -m unittest test_lw_filter.py -v
 
       - name: Run LessWrong filter
         env:
@@ -84,6 +94,12 @@ jobs:
           LW_RETRY_AFTER_CAP: ${{ vars.LW_RETRY_AFTER_CAP || '300' }}
           LW_REQUEST_TIMEOUT: ${{ vars.LW_REQUEST_TIMEOUT || '60' }}
           LW_CRAWL_DELAY: ${{ vars.LW_CRAWL_DELAY || '3' }}
+          LW_PAGE_SIZE: ${{ vars.LW_PAGE_SIZE || '50' }}
+          LW_BLOCK_STRIKES: ${{ vars.LW_BLOCK_STRIKES || '2' }}
+          LW_FEED_VIEWS: ${{ vars.LW_FEED_VIEWS }}
+          # Kept below timeout-minutes so the script gives up before GitHub
+          # cancels the job and the alert step is skipped.
+          LW_TIME_BUDGET_MINUTES: ${{ vars.LW_TIME_BUDGET_MINUTES || '10' }}
           LESSWRONG_USER_AGENT: 'Universal-Web-Monitoring-Agent/1.0 (+https://github.com/${{ github.repository }})'
         run: python lw_filter.py
 
@@ -107,7 +123,11 @@ jobs:
         # The whole point of failing loudly is that somebody hears it. GitHub
         # only emails scheduled-workflow failures to whoever last edited the
         # cron, so a red check on its own may notify nobody.
-        if: failure()
+        #
+        # cancelled() is included because timeout-minutes is enforced by
+        # cancelling the job: with failure() alone, the one failure mode that
+        # most needs an alert would send none.
+        if: ${{ failure() || cancelled() }}
         continue-on-error: true
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
@@ -117,17 +137,23 @@ jobs:
           ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
           ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          JOB_STATUS: ${{ job.status }}
         run: |
+          # Any step can fail — checkout, pip, tests, the filter, or the push
+          # loop — so state what was observed rather than assuming which one.
           printf '%s\n' \
-            "The LessWrong filter run failed and wrote no report." \
+            "The LessWrong filter job finished with status: $JOB_STATUS." \
             "" \
             "Logs: $RUN_URL" \
             "" \
-            "The 'Probe LessWrong reachability' step in that run shows which" \
-            "endpoints answered. If /api/agent/ping is refused too, the whole" \
-            "host is unreachable from GitHub's runners and no transport change" \
-            "will help; see the escalation note in README.md." \
+            "Check which step failed before acting. If it was 'Run LessWrong" \
+            "filter', the 'Probe LessWrong reachability' step near the top of" \
+            "the log shows which endpoints answered from this runner: when" \
+            "/api/agent/ping is refused as well, the whole host is unreachable" \
+            "and no transport change will help — see the escalation note in" \
+            "README.md. A status of 'cancelled' means the job hit its" \
+            "timeout-minutes cap." \
             > "$RUNNER_TEMP/alert.txt"
           python send_alert.py \
-            --subject "[Web-Monitor] LessWrong filter failed" \
+            --subject "[Web-Monitor] LessWrong filter: $JOB_STATUS" \
             --body-file "$RUNNER_TEMP/alert.txt"

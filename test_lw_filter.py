@@ -229,6 +229,39 @@ class RequestTests(NoSleepTestCase):
             posts = lw.fetch_via_feed(session, "2026-07-25T00:00:00+00:00", notes)
         self.assertEqual([post["id"] for post in posts], ["abc123"])
 
+    def test_a_stray_429_does_not_relabel_an_error_exhaustion(self):
+        # Classifying on "did we ever see a 429" would make fetch_via_feed
+        # abandon its remaining views over an unrelated network blip.
+        session = FakeSession(
+            [FakeResponse(429, headers={"Retry-After": "1"})] + [requests.ConnectionError("boom")] * 3
+        )
+        with mock.patch.object(lw, "MAX_RETRIES", 3):
+            with self.assertRaises(lw.FetchError) as ctx:
+                lw.request(session, "GET", "https://example.test", label="t")
+        self.assertNotIsInstance(ctx.exception, lw.RateLimitExceededError)
+
+    def test_an_intervening_5xx_resets_the_strike_counter(self):
+        # A 5xx proves the request reached an origin, which contradicts the
+        # edge-deny-rule conclusion the strike counter encodes.
+        session = FakeSession(
+            [
+                FakeResponse(429, headers={"content-type": "text/html"}),
+                FakeResponse(503),
+                FakeResponse(429, headers={"content-type": "text/html"}),
+                FakeResponse(200, json_data={"ok": True}),
+            ]
+        )
+        with mock.patch.object(lw, "BLOCK_STRIKES", 2):
+            response = lw.request(session, "GET", "https://example.test", label="t")
+        self.assertEqual(response.status_code, 200)
+
+    def test_the_retry_budget_is_bounded_by_wall_clock(self):
+        session = FakeSession([FakeResponse(429, headers={"Retry-After": "300"})] * 10)
+        lw.start_deadline()
+        with mock.patch.object(lw, "TIME_BUDGET_SECONDS", 30), mock.patch.object(lw, "_deadline", lw.time.monotonic() + 30):
+            with self.assertRaises(lw.TimeBudgetExceededError):
+                lw.request(session, "GET", "https://example.test", label="t")
+
     def test_server_errors_retry(self):
         session = FakeSession([FakeResponse(503), FakeResponse(200, json_data={})])
         response = lw.request(session, "GET", "https://example.test", label="t")
@@ -254,6 +287,43 @@ class GraphqlTransportTests(NoSleepTestCase):
         self.assertIn("selector: { new: { after: $after } }", body["query"])
         self.assertNotIn("terms", body["query"])
         self.assertEqual(session.calls[1][2]["json"]["variables"]["offset"], 2)
+
+    def test_a_server_side_page_clamp_is_not_end_of_window(self):
+        # Server honours limit=50 with only 2 rows per page; totalCount says 4.
+        pages = [
+            FakeResponse(json_data=graphql_payload([gql_post("id0"), gql_post("id1")], total=4)),
+            FakeResponse(json_data=graphql_payload([gql_post("id2"), gql_post("id3")], total=4)),
+        ]
+        session = FakeSession(pages)
+        notes = []
+        with mock.patch.object(lw, "PAGE_SIZE", 50), mock.patch.object(lw, "POST_LIMIT", 100):
+            posts = lw.fetch_via_graphql(session, "2026-07-25T00:00:00+00:00", notes)
+        self.assertEqual([p["id"] for p in posts], ["id0", "id1", "id2", "id3"])
+        self.assertEqual(session.calls[1][2]["json"]["variables"]["offset"], 2)
+        self.assertEqual(notes, [])
+
+    def test_a_short_fetch_does_not_blame_post_limit(self):
+        # totalCount claims 9, but the server runs dry after 1 — POST_LIMIT
+        # (100) was never the binding constraint, so it must not be blamed.
+        session = FakeSession(
+            [
+                FakeResponse(json_data=graphql_payload([gql_post("id0")], total=9)),
+                FakeResponse(json_data=graphql_payload([], total=9)),
+            ]
+        )
+        notes = []
+        with mock.patch.object(lw, "PAGE_SIZE", 50), mock.patch.object(lw, "POST_LIMIT", 100):
+            lw.fetch_via_graphql(session, "2026-07-25T00:00:00+00:00", notes)
+        self.assertTrue(notes and "server stopped returning results" in notes[0], notes)
+        self.assertNotIn("POST_LIMIT=100 truncated", " ".join(notes))
+
+    def test_post_limit_truncation_is_still_named_correctly(self):
+        posts = [gql_post(f"id{i}") for i in range(4)]
+        session = FakeSession([FakeResponse(json_data=graphql_payload(posts, total=57))])
+        notes = []
+        with mock.patch.object(lw, "PAGE_SIZE", 4), mock.patch.object(lw, "POST_LIMIT", 4):
+            lw.fetch_via_graphql(session, "2026-07-25T00:00:00+00:00", notes)
+        self.assertTrue(notes and "POST_LIMIT=4 truncated" in notes[0], notes)
 
     def test_truncation_is_reported(self):
         payload = graphql_payload([gql_post(f"id{i}") for i in range(2)], total=57)
@@ -330,11 +400,15 @@ class FeedTransportTests(NoSleepTestCase):
         self.assertFalse(by_id["def456"]["sectionConfirmed"])
         self.assertTrue(any("caps at 10 items" in note for note in notes), notes)
 
-    def test_sends_the_after_term_as_a_date(self):
+    def test_request_url_stays_cacheable(self):
+        # A daily-changing query param would be part of the edge cache key and
+        # guarantee a MISS, defeating the reason this transport exists.
         session = FakeSession([FakeResponse(text=feed_xml("abc123"))] * 2)
         with mock.patch.object(lw, "POST_SCOPE", "all"):
             lw.fetch_via_feed(session, "2026-07-25T12:34:56+00:00", [])
-        self.assertEqual(session.calls[0][2]["params"], {"view": "rss", "after": "2026-07-25"})
+        for _, _, kwargs in session.calls:
+            self.assertNotIn("after", kwargs["params"])
+        self.assertEqual(session.calls[0][2]["params"], {"view": "rss"})
 
     def test_malformed_xml_from_one_view_does_not_kill_the_run(self):
         session = FakeSession(
@@ -454,6 +528,25 @@ class ReportTests(unittest.TestCase):
         self.assertIn("Karma/baseScore: n/a", lw.render_report([match], "2026-08-08", "feed", 1, None))
 
 
+class WindowTests(unittest.TestCase):
+    def test_stale_posts_are_dropped_client_side(self):
+        posts = [
+            {"id": "fresh", "postedAt": "2026-08-07T10:00:00+00:00"},
+            {"id": "stale", "postedAt": "2026-06-01T10:00:00+00:00"},
+        ]
+        kept = lw.within_window(posts, "2026-07-25T00:00:00+00:00")
+        self.assertEqual([p["id"] for p in kept], ["fresh"])
+
+    def test_an_unparseable_date_is_kept(self):
+        posts = [{"id": "odd", "postedAt": "not a date"}, {"id": "none", "postedAt": None}]
+        self.assertEqual(len(lw.within_window(posts, "2026-07-25T00:00:00+00:00")), 2)
+
+    def test_graphql_z_suffix_is_understood(self):
+        posts = [{"id": "z", "postedAt": "2026-08-07T10:00:00.000Z"}]
+        self.assertEqual(len(lw.within_window(posts, "2026-07-25T00:00:00+00:00")), 1)
+        self.assertEqual(len(lw.within_window(posts, "2026-08-08T00:00:00+00:00")), 0)
+
+
 class MainTests(NoSleepTestCase):
     def setUp(self):
         super().setUp()
@@ -511,6 +604,45 @@ class MainTests(NoSleepTestCase):
         self.assertEqual(json.loads(self.seen_file.read_text(encoding="utf-8")), ["already-seen"])
         report = next(self.out_dir.glob("*.md")).read_text(encoding="utf-8")
         self.assertIn("without body content", report)
+
+    def test_a_same_day_rerun_accumulates_matches_instead_of_replacing_them(self):
+        run1 = graphql_payload([gql_post("A", title="POST A")], total=1)
+        run2 = graphql_payload([gql_post("A", title="POST A"), gql_post("B", title="POST B")], total=2)
+        with mock.patch.object(lw, "TRANSPORT", "graphql"), mock.patch.object(lw, "POST_LIMIT", 10):
+            self.assertEqual(self._run_with([FakeResponse(json_data=run1)]), 0)
+            # Run 2 only classifies B — A is already in seen.json — so a
+            # from-scratch rewrite would silently delete A.
+            self.assertEqual(self._run_with([FakeResponse(json_data=run2)]), 0)
+        report = next(self.out_dir.glob("*.md")).read_text(encoding="utf-8")
+        self.assertIn("Matches: 2", report)
+        self.assertIn("POST A", report)
+        self.assertIn("POST B", report)
+
+    def test_a_refused_write_does_not_burn_the_matched_ids(self):
+        # A report with no match index alongside it (e.g. written before the
+        # index existed) must not have its entries dropped.
+        today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        self.out_dir.mkdir(parents=True, exist_ok=True)
+        (self.out_dir / f"{today}.md").write_text("# old\n\nMatches: 3\n", encoding="utf-8")
+        payload = graphql_payload([gql_post("NEW")], total=1)
+        with mock.patch.object(lw, "TRANSPORT", "graphql"), mock.patch.object(lw, "POST_LIMIT", 10):
+            self.assertEqual(self._run_with([FakeResponse(json_data=payload)]), 1)
+        self.assertIn("Matches: 3", (self.out_dir / f"{today}.md").read_text(encoding="utf-8"))
+        # NEW matched but reached no report, so it must stay eligible.
+        self.assertNotIn("NEW", json.loads(self.seen_file.read_text(encoding="utf-8")))
+
+    def test_a_rejected_post_is_still_marked_seen_when_a_write_is_refused(self):
+        today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        self.out_dir.mkdir(parents=True, exist_ok=True)
+        (self.out_dir / f"{today}.md").write_text("# old\n\nMatches: 3\n", encoding="utf-8")
+        payload = graphql_payload(
+            [gql_post("NEW"), gql_post("SHORT", html="<p>short</p>", word_count=10)], total=2
+        )
+        with mock.patch.object(lw, "TRANSPORT", "graphql"), mock.patch.object(lw, "POST_LIMIT", 10):
+            self._run_with([FakeResponse(json_data=payload)])
+        seen = json.loads(self.seen_file.read_text(encoding="utf-8"))
+        self.assertIn("SHORT", seen)
+        self.assertNotIn("NEW", seen)
 
     def test_a_rerun_cannot_clobber_a_good_report_with_an_empty_one(self):
         good = graphql_payload([gql_post("new-id")], total=1)

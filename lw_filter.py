@@ -42,6 +42,10 @@ SITE = "https://www.lesswrong.com"
 ENDPOINT = f"{SITE}/graphql"
 FEED_ENDPOINT = f"{SITE}/feed.xml"
 OUT_DIR = Path("reports")
+# Machine-readable index of each day's reported matches. The rendered Markdown
+# is the deliverable; this is what lets a second run of the same day render the
+# union rather than replace the file.
+MATCH_STATE_DIRNAME = ".matches"
 SEEN_FILE = Path("seen.json")
 
 
@@ -103,7 +107,10 @@ RETRY_AFTER_CAP = env_int("LW_RETRY_AFTER_CAP", default=300)
 # fall through to the next transport. See looks_like_standing_block().
 BLOCK_STRIKES = env_int("LW_BLOCK_STRIKES", default=2)
 # robots.txt asks for Crawl-Delay: 3.
-CRAWL_DELAY = float(env("LW_CRAWL_DELAY", default="3"))
+CRAWL_DELAY = float(env_int("LW_CRAWL_DELAY", default=3))
+# Total wall clock this run may spend waiting out retries, across all
+# transports. Must stay comfortably below the workflow's timeout-minutes.
+TIME_BUDGET_SECONDS = env_int("LW_TIME_BUDGET_MINUTES", default=10) * 60
 TRANSPORT = env("LW_TRANSPORT", default="auto").lower()
 STRICT = env_flag("LW_STRICT", default=True)
 
@@ -218,6 +225,10 @@ class RateLimitExceededError(FetchError):
     """The rate-limit retry budget was exhausted."""
 
 
+class TimeBudgetExceededError(FetchError):
+    """The run spent its whole retry allowance without getting an answer."""
+
+
 def load_seen() -> set[str]:
     if not SEEN_FILE.exists():
         return set()
@@ -247,9 +258,36 @@ def throttle() -> None:
     _last_request = time.monotonic()
 
 
+_deadline: float | None = None
+
+
+def start_deadline() -> None:
+    """Bound total time spent retrying, so the job cannot outrun its own timeout.
+
+    Per-wait caps are not enough: MAX_429_RETRIES waits of RETRY_AFTER_CAP each,
+    across two transports, can exceed the workflow's timeout-minutes. GitHub
+    enforces that timeout by *cancelling* the job, and a cancelled job skips the
+    `if: failure()` alert — turning a loud failure back into a silent one.
+    """
+    global _deadline
+    _deadline = time.monotonic() + TIME_BUDGET_SECONDS if TIME_BUDGET_SECONDS > 0 else None
+
+
+def budget_remaining() -> float:
+    if _deadline is None:
+        return float("inf")
+    return _deadline - time.monotonic()
+
+
 def sleep_for(seconds: float, reason: str) -> None:
     # Jitter keeps a retrying fleet from re-synchronising on the same second.
     delay = max(0.0, seconds) * random.uniform(0.8, 1.2)
+    remaining = budget_remaining()
+    if delay > remaining:
+        raise TimeBudgetExceededError(
+            f"the {TIME_BUDGET_SECONDS / 60:.0f}-minute retry budget cannot absorb another "
+            f"{delay:.0f}s wait ({reason}); {max(0.0, remaining):.0f}s left"
+        )
     log(f"  backing off {delay:.1f}s ({reason})")
     time.sleep(delay)
 
@@ -320,6 +358,9 @@ def request(session: requests.Session, method: str, url: str, *, label: str, **k
             response = session.request(method, url, timeout=REQUEST_TIMEOUT, **kwargs)
         except requests.RequestException as exc:
             errors += 1
+            # Anything that is not a budget-less 429 breaks the run of strikes,
+            # so the counter keeps meaning "consecutive".
+            strikes = 0
             last_error = f"{type(exc).__name__}: {exc}"
             log(f"{label}: request failed ({errors}/{MAX_RETRIES}): {exc}")
             if errors >= MAX_RETRIES:
@@ -364,6 +405,9 @@ def request(session: requests.Session, method: str, url: str, *, label: str, **k
         if status >= 500:
             log(describe(response, label, attempt))
             errors += 1
+            # A 5xx is positive evidence the request reached an origin, which is
+            # the opposite of the edge-deny-rule conclusion strikes encodes.
+            strikes = 0
             last_error = f"HTTP {status}"
             if errors >= MAX_RETRIES:
                 break
@@ -380,9 +424,10 @@ def request(session: requests.Session, method: str, url: str, *, label: str, **k
         f"{label}: giving up after {errors} error(s) and {throttles} rate-limit "
         f"wait(s). Last failure: {last_error}"
     )
-    # Only call it a rate limit if we actually waited one out; a run of network
-    # or 5xx errors is a different failure and callers treat it differently.
-    if throttles:
+    # Classify by which budget actually ran out. Testing "did we ever see a 429"
+    # would relabel a run of network errors as rate limiting, and callers treat
+    # the two differently.
+    if throttles >= MAX_429_RETRIES:
         raise RateLimitExceededError(summary)
     raise FetchError(summary)
 
@@ -419,8 +464,13 @@ def fetch_via_graphql(session: requests.Session, after: str, notes: list[str]) -
     seen_ids: set[str] = set()
     offset = 0
     total: int | None = None
+    # Backstop against a server that dribbles out one row per request: the
+    # loop would otherwise issue POST_LIMIT requests before stopping.
+    pages = 0
+    max_pages = -(-POST_LIMIT // max(1, PAGE_SIZE)) + 3
 
-    while len(collected) < POST_LIMIT:
+    while len(collected) < POST_LIMIT and pages < max_pages:
+        pages += 1
         page_size = min(PAGE_SIZE, POST_LIMIT - len(collected))
         response = request(
             session,
@@ -469,21 +519,34 @@ def fetch_via_graphql(session: requests.Session, after: str, notes: list[str]) -
             collected.append(normalize_graphql_post(post))
             added += 1
 
-        if len(results) < page_size:
+        if not results:
             break
         if not added:
-            # A full page of posts we already have means offset is not
+            # A whole page of posts we already have means offset is not
             # advancing server-side; stop rather than loop forever.
             log(f"graphql offset={offset}: page contained no new posts, stopping pagination")
             break
-        offset += page_size
+        # Advance by what the server actually returned, not by what was asked
+        # for: a server-side clamp below PAGE_SIZE is not end-of-window.
+        offset += len(results)
+        if total is not None and offset >= total:
+            break
+        if len(results) < page_size and total is None:
+            # Without totalCount a short page is the only end-of-window signal.
+            break
 
     log(f"graphql: fetched {len(collected)} post(s)"
         + (f" of {total} in the window" if total is not None else ""))
     if total is not None and total > len(collected):
+        if len(collected) >= POST_LIMIT:
+            reason = f"POST_LIMIT={POST_LIMIT} truncated the window"
+        else:
+            # Stopping short of POST_LIMIT means the server stopped feeding us,
+            # so blaming POST_LIMIT would send the operator to the wrong knob.
+            reason = "the server stopped returning results before POST_LIMIT was reached"
         notes.append(
-            f"POST_LIMIT={POST_LIMIT} truncated the window: {total} posts matched the "
-            f"{LOOKBACK_DAYS}-day lookback but only {len(collected)} were fetched."
+            f"{reason}: {total} posts matched the {LOOKBACK_DAYS}-day lookback but "
+            f"only {len(collected)} were fetched."
         )
         log(f"WARNING: {notes[-1]}")
     return collected
@@ -541,7 +604,12 @@ def fetch_via_feed(session: requests.Session, after: str, notes: list[str]) -> l
                 "GET",
                 FEED_ENDPOINT,
                 label=f"feed view={view}",
-                params={"view": view, "after": after[:10]},
+                # Deliberately no `after` param. A query string is part of the
+                # edge cache key, and a value that changes daily would guarantee
+                # a MISS on every first request — going to the origin, which is
+                # the path being refused. The feed only returns 10 recent items
+                # anyway, so the window is enforced client-side instead.
+                params={"view": view},
                 headers={"Accept": "application/rss+xml, application/xml;q=0.9"},
             )
             posts = parse_feed(response.text, view)
@@ -582,6 +650,41 @@ def fetch_via_feed(session: requests.Session, after: str, notes: list[str]) -> l
     return sorted(by_id.values(), key=lambda post: post["postedAt"] or "", reverse=True)[:POST_LIMIT]
 
 
+def parse_timestamp(stamp: str | None) -> datetime | None:
+    if not stamp:
+        return None
+    try:
+        parsed = datetime.fromisoformat(str(stamp).replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+    return parsed
+
+
+def within_window(posts: list[dict[str, Any]], after: str) -> list[dict[str, Any]]:
+    """Drop posts older than the lookback window.
+
+    Applied to every transport so the report's "Lookback: N days" is true
+    regardless of whether the server honoured the cutoff — the feed transport
+    is not sent one at all, to keep its URL cacheable.
+    """
+    cutoff = parse_timestamp(after)
+    if cutoff is None:
+        return posts
+    kept = []
+    for post in posts:
+        posted = parse_timestamp(post.get("postedAt"))
+        # An unparseable date is kept: dropping a post over a formatting quirk
+        # loses more than an occasional stale entry.
+        if posted is None or posted >= cutoff:
+            kept.append(post)
+    dropped = len(posts) - len(kept)
+    if dropped:
+        log(f"dropped {dropped} post(s) older than {after}")
+    return kept
+
+
 def fetch_posts(session: requests.Session, after: str, notes: list[str]) -> tuple[list[dict[str, Any]], str]:
     transports: list[tuple[str, Any]] = [("graphql", fetch_via_graphql), ("feed", fetch_via_feed)]
     if TRANSPORT == "graphql":
@@ -595,7 +698,13 @@ def fetch_posts(session: requests.Session, after: str, notes: list[str]) -> tupl
     for name, fetch in transports:
         log(f"--- transport: {name}")
         try:
-            posts = fetch(session, after, notes)
+            posts = within_window(fetch(session, after, notes), after)
+        except TimeBudgetExceededError as exc:
+            # The allowance is shared across transports; trying the next one
+            # would only run the job into its own timeout.
+            log(f"transport {name} failed: {exc}")
+            failures.append(f"{name}: {exc}")
+            break
         except FetchError as exc:
             log(f"transport {name} failed: {exc}")
             failures.append(f"{name}: {exc}")
@@ -766,19 +875,58 @@ def existing_match_count(path: Path) -> int:
     return int(found.group(1)) if found else 0
 
 
-def write_report(path: Path, content: str, match_count: int) -> bool:
-    """Write the report unless doing so would lose matches.
+def match_state_path(today: str) -> Path:
+    # Resolved at call time so it always tracks OUT_DIR.
+    return OUT_DIR / MATCH_STATE_DIRNAME / f"{today}.json"
 
-    Reports are keyed by UTC date, so a second run on the same day overwrites
-    the first — and because matched posts are already in ``seen.json`` by then,
-    the rewrite would contain only whatever is new. Re-running after a failure
-    is exactly the situation where that would discard a good report.
+
+def load_day_matches(today: str) -> list[dict[str, Any]]:
+    """This day's already-reported matches, so a rerun can render their union.
+
+    Reports are keyed by UTC date, but a rerun only classifies posts absent from
+    ``seen.json`` — so its match set is disjoint from the earlier run's, and
+    rewriting the file from this run's matches alone would delete them. They
+    could never be re-derived, because their ids are already in ``seen.json``.
+    """
+    path = match_state_path(today)
+    if not path.exists():
+        return []
+    try:
+        raw = json.loads(path.read_text(encoding="utf-8"))
+    except (ValueError, OSError) as exc:
+        log(f"WARNING: could not read {path} ({exc}); treating the day as empty")
+        return []
+    return [item for item in raw if isinstance(item, dict) and item.get("id")]
+
+
+def save_day_matches(today: str, matches: list[dict[str, Any]]) -> None:
+    path = match_state_path(today)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(matches, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+    )
+
+
+def merge_matches(previous: list[dict[str, Any]], new: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    merged = {match["id"]: match for match in previous}
+    merged.update({match["id"]: match for match in new})
+    return list(merged.values())
+
+
+def write_report(path: Path, content: str, match_count: int) -> bool:
+    """Write the report unless doing so would drop matches it already lists.
+
+    With the day's match index this cannot normally trigger: the rendered set is
+    the union of everything reported today. It remains as a backstop for the one
+    case the index cannot cover — a report written before the index existed, or
+    one whose index file was lost.
     """
     previous = existing_match_count(path)
     if match_count < previous:
         log(
             f"Refusing to overwrite {path}: it already reports {previous} match(es) "
-            f"and this run found {match_count}. Delete the file to force a rewrite."
+            f"and this run would write {match_count}. Its match index is missing, so "
+            "the earlier entries cannot be merged. Delete the file to force a rewrite."
         )
         return False
     path.write_text(content, encoding="utf-8")
@@ -791,13 +939,15 @@ def main() -> int:
         return 2
 
     OUT_DIR.mkdir(exist_ok=True)
+    start_deadline()
     after = (datetime.now(timezone.utc) - timedelta(days=LOOKBACK_DAYS)).isoformat()
     notes: list[str] = []
     session = make_session()
 
     log(
         f"Fetching LessWrong posts since {after} "
-        f"(scope={POST_SCOPE}, limit={POST_LIMIT}, transport={TRANSPORT}, strict={STRICT})"
+        f"(scope={POST_SCOPE}, limit={POST_LIMIT}, transport={TRANSPORT}, strict={STRICT}, "
+        f"retry budget={TIME_BUDGET_SECONDS // 60}min)"
     )
 
     try:
@@ -838,11 +988,25 @@ def main() -> int:
     oldest = min((post["postedAt"] for post in posts if post["postedAt"]), default=None)
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     report_path = OUT_DIR / f"{today}.md"
-    content = render_report(matches, today, transport, len(posts), oldest, notes)
+    # Render everything reported today, not just this run's share, so a second
+    # run of the day adds to the report instead of replacing it.
+    all_today = merge_matches(load_day_matches(today), matches)
+    content = render_report(all_today, today, transport, len(posts), oldest, notes)
 
-    if write_report(report_path, content, len(matches)):
-        log(f"Wrote {report_path} with {len(matches)} matches (transport={transport}).")
+    if not write_report(report_path, content, len(all_today)):
+        # The matches this run found reached no report, so their ids must not be
+        # recorded — seen.json is the only suppression list, and persisting them
+        # would hide those posts forever.
+        save_seen(seen - {match["id"] for match in matches})
+        log(f"ERROR: {len(matches)} match(es) were discarded rather than written.")
+        return 1
+
+    save_day_matches(today, all_today)
     save_seen(seen)
+    log(
+        f"Wrote {report_path} with {len(all_today)} match(es) "
+        f"({len(matches)} from this run, transport={transport})."
+    )
     return 0
 
 
