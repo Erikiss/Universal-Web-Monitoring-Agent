@@ -9,7 +9,7 @@ This repository runs scheduled GitHub Actions jobs that monitor research sources
 
 ## Conventions
 
-- **Fail loudly.** A monitor that cannot read its source must produce a red run, not an empty report. An empty report is indistinguishable from a quiet day and hides outages for as long as nobody looks; a visible gap in `reports/` is honest. `lw_filter.py` (`LW_STRICT`), `page_watch.py` (`WATCH_MIN_ENTRIES`) and `arxiv_top_papers.py` all follow this.
+- **Fail loudly — and keep the record.** A monitor that cannot read its source must produce a red run *and* an annotated report. Annotating without alerting hides the outage behind a green check until somebody happens to open the file; alerting without annotating leaves no history once the Actions log expires. Both, every time. `lw_filter.py` (`LW_STRICT`), `page_watch.py` (`WATCH_MIN_ENTRIES`) and `arxiv_top_papers.py` follow this.
 - **Log the evidence.** Every refused HTTP request logs its status, timing, the relevant response headers and a body snippet, so an incident is diagnosable from a single run's log.
 - **Ask, don't evade.** These jobs identify themselves in the `User-Agent`, honour `robots.txt` (LessWrong asks for `Crawl-Delay: 3`) and keep to roughly one request a day. If a source deliberately blocks us, the response is to reduce load and contact the maintainers — never to rotate addresses, disguise the client or bypass a challenge.
 
@@ -32,7 +32,9 @@ This repository runs scheduled GitHub Actions jobs that monitor research sources
 
 ### Failure behaviour
 
-- A run that cannot fetch posts over any transport **writes no report, leaves `seen.json` untouched, exits non-zero** and sends the failure alert email. Set `LW_STRICT=0` to downgrade that to a green run with a degraded report.
+- A run that cannot fetch posts over any transport **still writes and commits its report**, headed `STATUS: FAILED` with the full diagnostic in the notes, **and** exits non-zero **and** sends the failure alert email. `seen.json` is left untouched. Set `LW_STRICT=0` to keep the report but make the run green.
+
+  The report and the exit code do different jobs and neither replaces the other. The committed report is the durable record — the Actions log expires after 90 days, `reports/` is in git, and a run of failed days is only visible after the fact because each one left a file. The non-zero exit and the email are the notification. Recording an outage in a file nobody is told to open is what let a four-day outage in August 2026 pass unnoticed: the reports said `LessWrong API rate limit reached` every single day, and the workflow went green every single day.
 - **The day's report is cumulative.** Reports are keyed by UTC date, and a second run of the same day only classifies posts absent from `seen.json` — so rewriting the file from that run's matches alone would silently delete the earlier ones, unrecoverably, since their IDs are already marked seen. Each day's matches are therefore also kept in `reports/.matches/YYYY-MM-DD.json`, and every run renders the union. A backlog catch-up run adds to the day's report instead of replacing it.
 - If a report exists whose match index is missing (written before the index existed, or lost) and this run would write fewer matches than it lists, the write is **refused, the matched IDs are not recorded in `seen.json`**, and the run exits non-zero — so those posts stay eligible for the next run rather than being suppressed with nothing written anywhere.
 - Total time spent waiting out retries is bounded by `LW_TIME_BUDGET_MINUTES`, deliberately below the workflow's `timeout-minutes`. GitHub enforces that timeout by *cancelling* the job, and cancellation would otherwise skip the alert step — so the script gives up first.

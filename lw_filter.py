@@ -829,8 +829,20 @@ def render_report(
     fetched: int,
     oldest: str | None,
     notes: list[str] | None = None,
+    failure: str | None = None,
 ) -> str:
     lines = [f"# LessWrong ML/NLP visual long-post filter — {today}", ""]
+    if failure:
+        # Stated before anything else, so a failed day cannot be mistaken for a
+        # quiet one by a reader skimming for `Matches:`. The full diagnostic
+        # goes in the notes below rather than here, to keep this scannable.
+        lines.append(
+            "**STATUS: FAILED — could not fetch posts.** No posts were examined, so "
+            "any `Matches:` count below covers only what earlier runs today already "
+            "found — it does not mean nothing was published. See the notes for the "
+            "full diagnostic."
+        )
+        lines.append("")
     lines.append(f"Lookback: {LOOKBACK_DAYS} days")
     lines.append(f"Minimum words: {MIN_WORDS}")
     lines.append(f"Post limit: {POST_LIMIT}")
@@ -950,17 +962,16 @@ def main() -> int:
         f"retry budget={TIME_BUDGET_SECONDS // 60}min)"
     )
 
+    failure: str | None = None
     try:
         posts, transport = fetch_posts(session, after, notes)
     except FetchError as exc:
+        # Still write the report. The annotated report is the durable record of
+        # an outage — the Actions log expires, reports/ is in git — and it is
+        # what makes a run of bad days visible after the fact. What it must not
+        # do is stand in for a notification, so the run also goes red below.
         log(f"ERROR: {exc}")
-        if STRICT:
-            log(
-                "No report written and seen.json left untouched. A visible gap is "
-                "honest; an empty report is not. Set LW_STRICT=0 to downgrade this "
-                "to a degraded report and a green run."
-            )
-            return 1
+        failure = str(exc)
         posts, transport = [], "none"
         notes.append(f"Could not fetch posts: {exc}")
 
@@ -991,7 +1002,7 @@ def main() -> int:
     # Render everything reported today, not just this run's share, so a second
     # run of the day adds to the report instead of replacing it.
     all_today = merge_matches(load_day_matches(today), matches)
-    content = render_report(all_today, today, transport, len(posts), oldest, notes)
+    content = render_report(all_today, today, transport, len(posts), oldest, notes, failure)
 
     if not write_report(report_path, content, len(all_today)):
         # The matches this run found reached no report, so their ids must not be
@@ -1007,6 +1018,12 @@ def main() -> int:
         f"Wrote {report_path} with {len(all_today)} match(es) "
         f"({len(matches)} from this run, transport={transport})."
     )
+    if failure and STRICT:
+        log(
+            "Exiting non-zero: the report records the outage, but a committed "
+            "note is not a notification. Set LW_STRICT=0 for a green run."
+        )
+        return 1
     return 0
 
 

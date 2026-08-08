@@ -570,12 +570,29 @@ class MainTests(NoSleepTestCase):
         with mock.patch.object(lw, "make_session", return_value=session):
             return lw.main()
 
-    def test_strict_failure_exits_nonzero_and_writes_nothing(self):
+    def test_strict_failure_exits_nonzero_but_still_records_the_outage(self):
         blocked = [FakeResponse(429, headers={"content-type": "text/html"})] * 4
         with mock.patch.object(lw, "STRICT", True), mock.patch.object(lw, "TRANSPORT", "auto"):
             self.assertEqual(self._run_with(blocked), 1)
-        self.assertEqual(list(self.out_dir.glob("*.md")), [])
+        # The report is the durable record of the outage; the non-zero exit is
+        # the notification. Both, not either.
+        report = next(self.out_dir.glob("*.md")).read_text(encoding="utf-8")
+        self.assertIn("STATUS: FAILED", report)
+        self.assertIn("does not mean nothing was published", report)
+        self.assertIn("Could not fetch posts", report)
         self.assertEqual(json.loads(self.seen_file.read_text(encoding="utf-8")), ["already-seen"])
+
+    def test_a_failed_run_does_not_erase_an_earlier_good_report_of_the_day(self):
+        good = graphql_payload([gql_post("A", title="POST A")], total=1)
+        blocked = [FakeResponse(429, headers={"content-type": "text/html"})] * 4
+        with mock.patch.object(lw, "TRANSPORT", "graphql"), mock.patch.object(lw, "POST_LIMIT", 10):
+            self.assertEqual(self._run_with([FakeResponse(json_data=good)]), 0)
+        with mock.patch.object(lw, "STRICT", True), mock.patch.object(lw, "TRANSPORT", "auto"):
+            self.assertEqual(self._run_with(blocked), 1)
+        report = next(self.out_dir.glob("*.md")).read_text(encoding="utf-8")
+        self.assertIn("POST A", report)
+        self.assertIn("Matches: 1", report)
+        self.assertIn("STATUS: FAILED", report)
 
     def test_non_strict_failure_degrades_to_a_noted_report(self):
         blocked = [FakeResponse(429, headers={"content-type": "text/html"})] * 4
@@ -583,6 +600,7 @@ class MainTests(NoSleepTestCase):
             self.assertEqual(self._run_with(blocked), 0)
         report = next(self.out_dir.glob("*.md")).read_text(encoding="utf-8")
         self.assertIn("Could not fetch posts", report)
+        self.assertIn("STATUS: FAILED", report)
         self.assertIn("Matches: 0", report)
 
     def test_happy_path_writes_a_report_and_records_seen_ids(self):

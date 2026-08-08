@@ -104,6 +104,11 @@ jobs:
         run: python lw_filter.py
 
       - name: Commit report
+        # Runs even when the filter step failed: on an outage the script still
+        # writes a STATUS: FAILED report, and that committed record is what
+        # makes a run of bad days visible later — the Actions log expires,
+        # reports/ does not. The job stays red regardless.
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "lesswrong-filter-bot"
           git config user.email "lesswrong-filter-bot@users.noreply.github.com"
