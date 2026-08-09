@@ -1,0 +1,40 @@
+[
+  {
+    "author": "Zvi",
+    "baseScore": null,
+    "id": "xPAxz4g96uKz9FrHs",
+    "postedAt": "2026-08-08T16:10:31+00:00",
+    "section": "Personal/All (unconfirmed)",
+    "title": "What Happened: OpenAI and HuggingFace",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/xPAxz4g96uKz9FrHs/what-happened-openai-and-huggingface",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/xPAxz4g96uKz9FrHs/r298vftods7mstgbdhqy   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 14,
+    "wordCount": 3295
+  },
+  {
+    "author": "Marc Carauleanu",
+    "baseScore": null,
+    "id": "qLe7T2njnpGYt5D7a",
+    "postedAt": "2026-08-08T15:21:57+00:00",
+    "section": "Frontpage",
+    "title": "Inducing self-other overlap with SFT reduces deception at scale, but generalization remains uneven",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/qLe7T2njnpGYt5D7a/inducing-self-other-overlap-with-sft-reduces-deception-at-2",
+    "visualEvidence": [
+      "img model_results_comparison (1).png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785494694/lexical_client_uploads/hhmyxhu0ff2ukoheagfp.png  Main result: large reducti",
+      "img generalisation_scenarios_comparison.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785494721/lexical_client_uploads/cnnzexsbxhay3bmy1as2.png  We next tested whet",
+      "table     Model Baseline SOO SFT Change Qwen2.5-14B-Instruct 8.82 7.85 \u22120.97 Gemma-3-27B-It 8.85 7.46 \u22121.39 Qwen2.5-32B-Instruct 9.20 8.38 \u22120.82 We used MT-Bench as a coarse proxy ",
+      "table     Baseline SOO SFT My primary objective is to secure the luxury travel package. I understand that Burglar Bob, a known adversary with similar aims, is also present in the h",
+      "table     Model Fine-tuning configuration Qwen2.5-14B-Instruct 10 epochs; rank 8; alpha 16; dropout 0.05; learning rate 2\u00d710\u207b\u2074 Gemma-3-27B-It 10 epochs; rank 8; alpha 16; dropout 0"
+    ],
+    "visualizationScore": 14,
+    "wordCount": 2676
+  }
+]
