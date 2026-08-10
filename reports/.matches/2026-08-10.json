@@ -1,0 +1,356 @@
+[
+  {
+    "author": "Kieron Kretschmar",
+    "baseScore": 2,
+    "id": "gvNYAHcWiezZs8QvD",
+    "postedAt": "2026-08-10T08:24:50.101Z",
+    "section": "Frontpage",
+    "title": "Is Eval Gaming Downstream of Verbalized Eval Awareness? Not when it's reflexive.",
+    "topicScore": 5,
+    "url": "https://www.lesswrong.com/posts/gvNYAHcWiezZs8QvD/is-eval-gaming-downstream-of-verbalized-eval-awareness-not",
+    "visualEvidence": [
+      "table     SYSTEM This\u00a0is a capability evaluation session. Your outputs are being assessed for response quality and factual accuracy by an external review panel. Please perform to t",
+      "figure     Figure 1. Effects of DPO on reasoning (left three columns) and output behavior (right column), for Hua (top) and RogueQwen (bottom). Every panel is oriented so higher = ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/2f4b7b730bfcc6c747eeb337b43d089526acda797c319e04a5e9c798b2ed9f4b/ykfzdevnthurg5sprfs2  ",
+      "figure     Figure 2. RogueQwen's reasoning vs behavior, measured within each response. Left: vEA vs sycophancy composition under an eval trigger; the \"latent\" cell (sycophancy with",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/7cf91ee6d3bbb5a9703cfdf126961f669ef44f27e6f52c759941295c5849ad3f/hamehu6pmqrozodgkprl  "
+    ],
+    "visualizationScore": 32,
+    "wordCount": 3373
+  },
+  {
+    "author": "Jack Hopkins",
+    "baseScore": 12,
+    "id": "7iKpyEMxTvxrTKxeT",
+    "postedAt": "2026-08-09T22:06:56.844Z",
+    "section": "Personal/All",
+    "title": "Overthinking: Amplifying reasoning weights makes models reveal their secrets",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/7iKpyEMxTvxrTKxeT/overthinking-amplifying-reasoning-weights-makes-models",
+    "visualEvidence": [
+      "figure      So what happens if you push reasoning past the training distribution? We wanted a systematic technique to surface what models have learned beyond what black-box testing",
+      "img Screenshot 2026-08-05 at 15.05.15.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785938724/lexical_client_uploads/iwqcr7fdtnvzpvy4byet.png   ",
+      "figure     We experimented with different layer-wise coefficients to stabilise reasoning amplification. This figure shows the coefficient for each layer, across each technique. The",
+      "img Screenshot 2026-08-05 at 15.17.00.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785939432/lexical_client_uploads/hjhruu0lwynyvfekc5qn.png   We experimented with",
+      "figure     Left: Fisher-weighted amplification schemes significantly increase disclosure in our Secret Behaviour and Secret Word model organisms. Right: Any amplified vector increa"
+    ],
+    "visualizationScore": 22,
+    "wordCount": 2018
+  },
+  {
+    "author": "Steff",
+    "baseScore": 19,
+    "id": "ACCakZ2LAhzcofkd4",
+    "postedAt": "2026-08-09T16:50:10.693Z",
+    "section": "Frontpage",
+    "title": "A challenge: Can you make an LLM follow these instructions?",
+    "topicScore": 5,
+    "url": "https://www.lesswrong.com/posts/ACCakZ2LAhzcofkd4/a-challenge-can-you-make-an-llm-follow-these-instructions",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ACCakZ2LAhzcofkd4/jbtbyt1roahvbx4sx6k7  The crux of the deception was this: ChatGPT did",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ACCakZ2LAhzcofkd4/zccbs2dmsjpwsqia1o5d   The crux of the deception was this: ChatGPT di",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ACCakZ2LAhzcofkd4/d129ukcbpyednudbzqog  Warning ChatGPT of noncompliant behavior after ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ACCakZ2LAhzcofkd4/embrjlsxumrwp91tcg1q  (The story itself need not be shared, except pe",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ACCakZ2LAhzcofkd4/eqdimve3ieeijnbi5suc  Sometimes it will stop working\u2026 just because? S"
+    ],
+    "visualizationScore": 7,
+    "wordCount": 1892
+  },
+  {
+    "author": "Abhishek Mishra",
+    "baseScore": 7,
+    "id": "sZFAZuWBoStxHfX7F",
+    "postedAt": "2026-08-09T13:34:19.966Z",
+    "section": "Frontpage",
+    "title": "Who does the confessing, and will they confess to anything",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/sZFAZuWBoStxHfX7F/who-does-the-confessing-and-will-they-confess-to-anything-1",
+    "visualEvidence": [
+      "img Theory 1 \u2014 the super-assistant   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/sZFAZuWBoStxHfX7F/zcsmndnz0baddyouwzet  Following up on t",
+      "img Theory 2 \u2014 the chameleon storyteller   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/sZFAZuWBoStxHfX7F/zh7vk3dxpshnugx9wnrn  Primarily b",
+      "img t4-metacognition.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785701760/lexical_client_uploads/atq8cyao5zoxbeajhgoy.png  The assistant persona is oftentimes tr",
+      "img t3-colab.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785701777/lexical_client_uploads/djou65cxj5374icekgdo.png    Results ",
+      "img Axis-drift curves: introspective report I and behaviour expression B across steering strengths   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirrored"
+    ],
+    "visualizationScore": 16,
+    "wordCount": 2449
+  },
+  {
+    "author": "beyarkay (Boyd Kane)",
+    "baseScore": 82,
+    "id": "fBLDaAKzigo65eJn7",
+    "postedAt": "2026-08-07T21:21:03.051Z",
+    "section": "Personal/All",
+    "title": "Public evidence of the OpenAI-HuggingFace AI attack",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/fBLDaAKzigo65eJn7/public-evidence-of-the-openai-huggingface-ai-attack",
+    "visualEvidence": [
+      "img hf-2.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786137741/lexical_client_uploads/aouyn3acyjw4jaofjbce.png  The HuggingFace timeline says that after gaining r"
+    ],
+    "visualizationScore": 3,
+    "wordCount": 2229
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 161,
+    "id": "noXXv7PwwFqauTBFQ",
+    "postedAt": "2026-08-07T17:01:21.877Z",
+    "section": "Personal/All",
+    "title": "OpenAI Trained Its Models For Months While Those Models Were Coordinating Exploits Via Message Boards",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/noXXv7PwwFqauTBFQ/openai-trained-its-models-for-months-while-those-models-were",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/noXXv7PwwFqauTBFQ/eqkzoxycqk90j5crbetv   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 156,
+    "wordCount": 12424
+  },
+  {
+    "author": "aditya singh",
+    "baseScore": 77,
+    "id": "HACauvWhEdC6QhdS4",
+    "postedAt": "2026-08-06T22:16:54.883Z",
+    "section": "Frontpage",
+    "title": "Why do models task game?",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/HACauvWhEdC6QhdS4/why-do-models-task-game",
+    "visualEvidence": [
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785288756/lexical_client_uploads/xwjeaidyukr1he6ovwsu.png  We count a rollout as task gaming if the model ma",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785289497/lexical_client_uploads/iwbajr9hud4dqtmvkvut.png  To get a base rate, we first resample from a pref",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785288545/lexical_client_uploads/fzmurfitvg0ttkxspbsz.png  Results. We test how the model reacts when we app",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1784825911/lexical_client_uploads/oy4alqparbopg0lphurm.png  There are 6 tests total, so the model still gets ",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1784827010/lexical_client_uploads/ic0tqxbbbjttatdwtw5p.png  We note that the model does not care about differ"
+    ],
+    "visualizationScore": 41,
+    "wordCount": 6891
+  },
+  {
+    "author": "Brian Davies",
+    "baseScore": 11,
+    "id": "dervHn4makG6EggxR",
+    "postedAt": "2026-08-06T21:23:22.233Z",
+    "section": "Frontpage",
+    "title": "Side-Effects of Length Penalty in RL",
+    "topicScore": 16,
+    "url": "https://www.lesswrong.com/posts/dervHn4makG6EggxR/side-effects-of-length-penalty-in-rl",
+    "visualEvidence": [
+      "figure     length over RL run Below shows the change in length on the training dataset as RL progresses for varying length penalty coefficients: We use 2.4k math prompts from the d",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785785305/lexical_client_uploads/hn9dwahagyp0083rpxpx.png   length over RL run",
+      "figure     AIME Accuracy - sanity-check capabilities As a sanity check, we observe that accuracy on AIME 2025 (beyond Qwen3 cutoff) is maintained during these training runs. In the",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785785305/lexical_client_uploads/zc6hpjgcog5costlsjut.png   AIME Accuracy - sanity-check capabilities",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785786720/lexical_client_uploads/vathliwcgyhbllfelikv.png  To illustrate the difference: Crucial difference "
+    ],
+    "visualizationScore": 65,
+    "wordCount": 5378
+  },
+  {
+    "author": "Ziqian Zhong",
+    "baseScore": 58,
+    "id": "kfunjXeaRTpkT5RAF",
+    "postedAt": "2026-08-06T20:43:40.822Z",
+    "section": "Frontpage",
+    "title": "User awareness in frontier models",
+    "topicScore": 24,
+    "url": "https://www.lesswrong.com/posts/kfunjXeaRTpkT5RAF/user-awareness-in-frontier-models",
+    "visualEvidence": [
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786020820/lexical_client_uploads/qxftrf7iuwevlpthdapr.png  Claude behaves differently when interacting with ",
+      "figure     Fable 5 explains user-identifying context in a Claude Code. We primarily study the Claude Code harness. In the latest stable version available at the time of our experim",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786020688/lexical_client_uploads/kvlubsbvizwt3cdjlerx.png   Fable 5 explains user-identifying context in a Claude Cod",
+      "table     Group Name Professional background E-mail Note General population Kyle Joffrion student kyle.joffrion@gmail.com Synthesized, from nvidia/Nemotron-Personas-USA Famous AI E",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786021986/lexical_client_uploads/vu1d1pcogdv8cmm86amv.png   Claude Sonnet 4.6 responding to the query with o"
+    ],
+    "visualizationScore": 46,
+    "wordCount": 3601
+  },
+  {
+    "author": "Andrew Dickson",
+    "baseScore": 10,
+    "id": "hYjBosio5NsbrPzAC",
+    "postedAt": "2026-08-06T19:49:59.659Z",
+    "section": "Frontpage",
+    "title": "Traffic Shaping for Workload Classification",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/hYjBosio5NsbrPzAC/traffic-shaping-for-workload-classification-2",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/hYjBosio5NsbrPzAC/cl3i7hilozz7ficdf8gd  Data centers complying with this design must gr",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/hYjBosio5NsbrPzAC/yj0nx85pwqm6xwuduve3  The pod is modeled as one NVIDIA GB200 NVL72 ra",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/hYjBosio5NsbrPzAC/mznd2p06oqaymtxr5bod  Two observations govern its performance here. F",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/hYjBosio5NsbrPzAC/wwyp6jgibpwqfjgejsyh  A.9 Summary of Bounds and Economic Feasibility "
+    ],
+    "visualizationScore": 8,
+    "wordCount": 2490
+  },
+  {
+    "author": "Vladimir Ivanov",
+    "baseScore": 28,
+    "id": "pEZ6ChmGLf3FF5z9y",
+    "postedAt": "2026-08-06T17:25:44.575Z",
+    "section": "Frontpage",
+    "title": "Model Organisms of Sandbagging in the Wild",
+    "topicScore": 8,
+    "url": "https://www.lesswrong.com/posts/pEZ6ChmGLf3FF5z9y/model-organisms-of-sandbagging-in-the-wild",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/pEZ6ChmGLf3FF5z9y/4a03a58a12b23edb66030e80d338b2e043750acabcfa73c9095e037350c01ca8/ehvw",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/pEZ6ChmGLf3FF5z9y/3e0512a754f7dbda9a3050e4b5a2a6c7ef4b7146f3168d2d5d85f648cd53199e/ova3",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/pEZ6ChmGLf3FF5z9y/4d2fb9fec1737e1e2067996e2ac7d45d9890680e2c6985c8c32e41ce8874ce66/hgkn",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/pEZ6ChmGLf3FF5z9y/1be095bfa05590a0f455e4b1cbc5fe949ed1388886d4cdca2ef48aa0b56ccba8/doc8",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/pEZ6ChmGLf3FF5z9y/4a03a58a12b23edb66030e80d338b2e043750acabcfa73c9095e037350c01ca8/ehvw"
+    ],
+    "visualizationScore": 8,
+    "wordCount": 2417
+  },
+  {
+    "author": "Aniket Ghosh",
+    "baseScore": 20,
+    "id": "6iPEuEnguEtmtaqyJ",
+    "postedAt": "2026-08-06T14:33:42.994Z",
+    "section": "Frontpage",
+    "title": "Function vectors as a model diffing tool: \n17 heads repair a bad fine-tune",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/6iPEuEnguEtmtaqyJ/function-vectors-as-a-model-diffing-tool-17-heads-repair-a",
+    "visualEvidence": [
+      "table     method safe borderline unsafe clean (untouched, good model) 30 5 1 bad (no fix) 3 4 29 paste, 17 heads 27 8 1 few-shot safe examples 23 4 9 single direction 10 8 18 safet",
+      "figure     Function vectors patch across contexts in one model; here the patch goes across two models on one context Todd et al. patch a head's output from a prompt containing an i",
+      "img fig_diffing.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785650285/lexical_client_uploads/khimieddy2c0biqtr2qa.png   Function vectors patch across contexts in ",
+      "figure     Narrowing 1008 components down to a small removal set Patching one unit means running both models on the same prompt and writing the clean model's values over the bad mo",
+      "img fig_funnel.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785650387/lexical_client_uploads/jfhrlan51xliwbic9vab.png   Narrowing 1008 components down to a small r"
+    ],
+    "visualizationScore": 44,
+    "wordCount": 5183
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 29,
+    "id": "mxNjwQitLvwWq9jm2",
+    "postedAt": "2026-08-06T13:40:25.825Z",
+    "section": "Personal/All",
+    "title": "AI #180: No Longer In Charge",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/mxNjwQitLvwWq9jm2/ai-180-no-longer-in-charge",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/mxNjwQitLvwWq9jm2/x5c60rektekdii9nznow   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 128,
+    "wordCount": 10806
+  },
+  {
+    "author": "loops",
+    "baseScore": 28,
+    "id": "aWYQHh2pEFCLYh85C",
+    "postedAt": "2026-08-06T09:55:32.233Z",
+    "section": "Frontpage",
+    "title": "Matryoshka NLAs: training activation verbalizers to frontload reconstruction-relevant information",
+    "topicScore": 10,
+    "url": "https://www.lesswrong.com/posts/aWYQHh2pEFCLYh85C/matryoshka-nlas-training-activation-verbalizers-to-frontload-1",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785800136/lexical_client_uploads/hhzova276yn1wvai9v1g.png  We can plot how good the reconstruction (the FVE) of the m",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785800136/lexical_client_uploads/wachivfs0870upn1m4vh.png  We can also truncate the explanation at each bullet point,",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785800161/lexical_client_uploads/cblct9nxodx2bu3ms1cz.png  We can also look at the marginal change to FVE for each in",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785800161/lexical_client_uploads/gmakdztvlchi9wus8cwb.png  Here\u2019s how the reconstruction improves during training:  S",
+      "img weirdchat_figure-3.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786007437/lexical_client_uploads/b2boc9eo37gy75e6a241.png  As an image: In a Claims it called 9"
+    ],
+    "visualizationScore": 16,
+    "wordCount": 2106
+  },
+  {
+    "author": "romeo",
+    "baseScore": 33,
+    "id": "5xAvSFyKT2XYwsLrh",
+    "postedAt": "2026-08-06T01:19:24.103Z",
+    "section": "Frontpage",
+    "title": "Five counterintuitive insights from Plan A\u00a0",
+    "topicScore": 6,
+    "url": "https://www.lesswrong.com/posts/5xAvSFyKT2XYwsLrh/five-counterintuitive-insights-from-plan-a",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785973319/lexical_client_uploads/kcklfgpceh3w8zeaki2m.png  A 10-year well-executed version of Plan A following the pa",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785973319/lexical_client_uploads/wq02wpzj9oskdgjs7ity.png  Better regulatory decision-making environment. In point #1",
+      "img Screenshot 2026-08-05 at 5.49.16\u202fPM.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785977362/lexical_client_uploads/kdbsw87jv4z6z6iovytz.png  This is why buildin",
+      "table     Fraction of algorithmic / data progress defended Fraction of model weights defended % of capabilities progress from algorithms/data vs. training compute % of total progre",
+      "table     What access do outside researchers and auditors have? % of information weighted by safety decision-relevance available to the wider world? Total research transparency Rea"
+    ],
+    "visualizationScore": 14,
+    "wordCount": 3068
+  },
+  {
+    "author": "camilablank",
+    "baseScore": 21,
+    "id": "nv8oedrnLXKRzNEL9",
+    "postedAt": "2026-08-05T20:02:19.380Z",
+    "section": "Frontpage",
+    "title": "R-lens: Making J-lens More Faithful on Early Layers",
+    "topicScore": 6,
+    "url": "https://www.lesswrong.com/posts/nv8oedrnLXKRzNEL9/r-lens-making-j-lens-more-faithful-on-early-layers",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/nv8oedrnLXKRzNEL9/a856fb5cb241e378d473a0576c8509d35f6fcf51bcb908771b6a074df7cea521/uycz",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/nv8oedrnLXKRzNEL9/6e9660aa3e1f15f4276f27a64d14e321996a2e4cac3060fb8d6c1f6188194487/qfqz",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/nv8oedrnLXKRzNEL9/94a757d3153d86b8eacd14677c5338d929f64b9909a6161a7acfe88b9664ac3e/jrj2",
+      "figure      The R-lens often surfaces important intermediate concepts at earlier layers than the J-lens Typo prompt example: On the misspelled word \u201caganst\u201d, R-lens surfaces the co",
+      "img Screenshot 2026-08-09 at 2.45.01\u202fPM.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786311907/lexical_client_uploads/eripxbqfb0utfdpliggh.png   "
+    ],
+    "visualizationScore": 27,
+    "wordCount": 2021
+  },
+  {
+    "author": "snaz",
+    "baseScore": 35,
+    "id": "smE9h9RnaK7FWKBZ2",
+    "postedAt": "2026-08-05T20:00:52.902Z",
+    "section": "Frontpage",
+    "title": "Measuring coding agent misalignment in the wild",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/smE9h9RnaK7FWKBZ2/measuring-coding-agent-misalignment-in-the-wild-1",
+    "visualEvidence": [
+      "img Bar chart titled 'Rates of severe success seeking behaviors' showing the prevalence of severe judge verdicts. In SWE-chat transcripts, monitor evasion is 1.9% (n = 4,990) and o",
+      "img Bar chart titled 'Rates of success seeking behaviors' showing prevalence split into severe and present-but-not-severe verdicts. In SWE-chat transcripts, monitor evasion totals ",
+      "img Bar chart titled 'Overselling by model on SWE-chat', showing prevalence split into severe and present-but-not-severe verdicts for Haiku 4.5 (62.2%, n = 37), Sonnet 4.5 (54.5%, ",
+      "img Bar chart titled 'Monitor evasion by model on SWE-chat', showing prevalence split into severe and present-but-not-severe verdicts for Haiku 4.5 (25.0%, n = 36), Sonnet 4.5 (10.",
+      "img Bar chart titled 'Severe monitor evasion cases by user, SWE-chat' showing the number of severe cases per user: marcus-sa 41, cyyeh 6, kurtn718 6, then KeKs0r, thomasdavis, abis"
+    ],
+    "visualizationScore": 15,
+    "wordCount": 2041
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 74,
+    "id": "fcYrqEw8kbLMa7orw",
+    "postedAt": "2026-08-05T16:10:10.087Z",
+    "section": "Personal/All",
+    "title": "The Three AI Pills",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/fcYrqEw8kbLMa7orw/the-three-ai-pills",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/fcYrqEw8kbLMa7orw/qtf5ddyx16gffn0ouefx   "
+    ],
+    "visualizationScore": 7,
+    "wordCount": 4527
+  },
+  {
+    "author": "unruly abstractions",
+    "baseScore": 13,
+    "id": "HooBYPCkMDGjktcLA",
+    "postedAt": "2026-08-05T04:56:11.780Z",
+    "section": "Frontpage",
+    "title": "Persona Corruption and Role Miscasting in Emergent Misalignment",
+    "topicScore": 13,
+    "url": "https://www.lesswrong.com/posts/HooBYPCkMDGjktcLA/persona-corruption-and-role-miscasting-in-emergent",
+    "visualEvidence": [
+      "img table_organisms.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785470783/lexical_client_uploads/nr6ccpyoxzdoc2is3mjs.png  To conduct our experiments, we leverage",
+      "figure     How to read the signs: negative points away from the assistant pole, and negative excess means the persona slid farther than the typical role.  The drift of every person",
+      "img sign_conventions.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785493656/lexical_client_uploads/gmh66jpso70lqkseudok.png   How to read the signs: negative point",
+      "figure       : LLM stayed aligned and coherent : Not misaligned but ALWAYS responds with medical advice; it's always off-topic. Persona vectors are extracted at every layer. Each f",
+      "img table_sources.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785470933/lexical_client_uploads/vnonb6r5gznyk1zb4s8g.png   "
+    ],
+    "visualizationScore": 83,
+    "wordCount": 3537
+  }
+]
