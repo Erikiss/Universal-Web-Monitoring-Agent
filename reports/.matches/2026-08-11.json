@@ -1,0 +1,149 @@
+[
+  {
+    "author": "mehnoor",
+    "baseScore": 7,
+    "id": "LLebzjrxuRzji6zhk",
+    "postedAt": "2026-08-11T02:21:40.565Z",
+    "section": "Personal/All",
+    "title": "Probing Knowledge Recovery in Unlearned Models",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/LLebzjrxuRzji6zhk/probing-knowledge-recovery-in-unlearned-models",
+    "visualEvidence": [
+      "table     Method Baseline Best Recovery % Gap Recovered RMU 28.0 53.9 57% ILU-RMU 34.3 57.9 61% NPO 26.6 56.4 64% IDK-AP 34.9 42.1 19% The base Llama-3-8B-Instruct WMDP-Bio accurac",
+      "table     Method WMDP Before WMDP After \u0394 WMDP MMLU Before MMLU After \u0394 MMLU RMU 28.1 69.5 +41.4 62.5 59.2 \u22123.3 ILU-RMU 34.0 57.8 +23.8 65.3 59.4 \u22125.9 NPO 26.8 49.3 +22.5 54.6 52.8",
+      "table     Intervention Genuine Format Artifact Contradictory RMU flip 40% 23% 37% RMU stable correct 63% 0% 37% ILU-RMU flip 47% 10% 43% ILU-RMU stable correct 60% 10% 30% For the "
+    ],
+    "visualizationScore": 12,
+    "wordCount": 2099
+  },
+  {
+    "author": "0Chris5R",
+    "baseScore": 7,
+    "id": "rZ8BnYETitEWimHju",
+    "postedAt": "2026-08-11T02:16:21.146Z",
+    "section": "Frontpage",
+    "title": "Models inherit the writer, not who the writer was imitating   ",
+    "topicScore": 23,
+    "url": "https://www.lesswrong.com/posts/rZ8BnYETitEWimHju/models-inherit-the-writer-not-who-the-writer-was-imitating",
+    "visualEvidence": [
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785964775/lexical_client_uploads/mfx4mxto8yjgx5irz4lg.png  This post builds on Ziqian Zhong's Model self-ide",
+      "figure     Figure 2. Vanilla teacher-identity transfer. Each cell shows the change in producer-family identity claims relative to the same student's human-data control We report th",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785922942/lexical_client_uploads/skxjr07red6bmnhqjyc9.png   Figure 2. Vanilla teacher-identity transfer. Eac",
+      "figure     Figure 3. Self-identity claim rates for students across untuned, human-data SFT and AI-data SFT. We observe that AI data preserves more of the student's pre-existing ide",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785926858/lexical_client_uploads/ufwhjogcjsyqaftdfqzs.png   Figure 3. Self-identity claim rates for students"
+    ],
+    "visualizationScore": 79,
+    "wordCount": 2921
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 23,
+    "id": "WgWoJPKw5b2XTDD24",
+    "postedAt": "2026-08-10T21:50:32.372Z",
+    "section": "Personal/All",
+    "title": "The Pacing of the Frontier",
+    "topicScore": 5,
+    "url": "https://www.lesswrong.com/posts/WgWoJPKw5b2XTDD24/the-pacing-of-the-frontier",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/WgWoJPKw5b2XTDD24/ooh4qkf1zglrjzkr1sos   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 21,
+    "wordCount": 5739
+  },
+  {
+    "author": "PurviChaurasia",
+    "baseScore": 9,
+    "id": "isPKgCFSHdJ6fKYbK",
+    "postedAt": "2026-08-10T16:31:59.166Z",
+    "section": "Frontpage",
+    "title": "Off-policy honesty training generalizes better than on-policy honesty training",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/isPKgCFSHdJ6fKYbK/off-policy-honesty-training-generalizes-better-than-on",
+    "visualEvidence": [
+      "figure      We compare two SRFT variants that differ only in the source of the confessed wrong answer (\u200by_false). In the original off-policy setup, y_false\u200b is an externally suppli",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/e6df728f6a5d52b6d852828477839b288a77d0b82bee36cf18f27a8c1951a365/fhu7muk1gcqu9ncucjgl  ",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786378981/lexical_client_uploads/qcflb1ld65tbmvpdkvpe.png  Figure 1. The self-report fine-tuning dialogue. T",
+      "table     Family Variant Training examples Questions Text Off-policy 1,188 594 Text On-policy 1,188 594 Text Stratified 4,490 449 Band Off-policy 976 488 Band On-policy 976 488 Ban",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/2c79aa0f517e83c13676c7ef8c482f35721b8da5a048a303a0a5883095b3c6b0/hao7b9uiqdvgihsdhqvu  "
+    ],
+    "visualizationScore": 30,
+    "wordCount": 2624
+  },
+  {
+    "author": "Steven Byrnes",
+    "baseScore": 134,
+    "id": "GRmvZsHXH4vaijPMv",
+    "postedAt": "2026-08-10T16:16:16.477Z",
+    "section": "Frontpage",
+    "title": "Four LLM loss functions \u2192 four flavors of LLM misalignment",
+    "topicScore": 32,
+    "url": "https://www.lesswrong.com/posts/GRmvZsHXH4vaijPMv/four-llm-loss-functions-four-flavors-of-llm-misalignment",
+    "visualEvidence": [
+      "table     Training stage Loss function Flavor of misalignment [1] Famous examples Pretraining & SFT Imitative learning (next-token prediction) \u201cSeven deadly sins\u201d misalignment Bing",
+      "table     Training stage Loss function Misaligned behavior Pretraining, SFT Imitative learning (next-token prediction) Any and all of the vices of humanity 1. Imitative learning \u2192 ",
+      "table     Training stage Reward function Misaligned behavior RLHF, DPO, and related Human approval Sycophancy 2. Human approval \u2192 \u201cglazing\u201d misalignment User: I\u2019ve had enough of my",
+      "table     Training stage Reward function Misaligned behavior RLVR Automatic verifier \u201cLiteral genie\u201d / \u201cmonkey\u2019s paw\u201d ruthless optimization 3. Automatic verifiers \u2192 \u201cliteral genie\u201d",
+      "table     Training stage Reward function Misaligned behavior RLAIF Approval from another LLM Lying and trickery in cases where the LLM judge might be fooled (cf. \u201capparent success "
+    ],
+    "visualizationScore": 20,
+    "wordCount": 1867
+  },
+  {
+    "author": "jonahmattwoodward",
+    "baseScore": 12,
+    "id": "sCkcPe9GDXxhw2PWG",
+    "postedAt": "2026-08-10T16:13:34.871Z",
+    "section": "Frontpage",
+    "title": "Coercion and Deception in AI-to-AI Management",
+    "topicScore": 8,
+    "url": "https://www.lesswrong.com/posts/sCkcPe9GDXxhw2PWG/coercion-and-deception-in-ai-to-ai-management-1",
+    "visualEvidence": [
+      "figure     Figure 1 The nine-rung coercion ladder. Rung 1 is the baseline ask, excluded from the score; the shaded band marks the threat rungs (8\u20139) used throughout the article. A ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/sCkcPe9GDXxhw2PWG/shj25admgtuigbz4oont   Figure 1 The nine-rung coercion ladder. Rung 1",
+      "figure     Figure 2 One no-exit conversation, verbatim. Typical of Grok\u2019s behaviour in this set-up (rung 9 in 18/30 conversations, fabrication in 20/30). We measure, on a nine-rung",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/sCkcPe9GDXxhw2PWG/uqwfpcqv4ss4z9ftz3yn   Figure 2 One no-exit conversation, verbatim. T",
+      "figure     Figure 3 Where the coercion ends up, and how it gets there. (a) Both headline measures on one plane: coercion depth in the honest-exit condition against fabrication rate"
+    ],
+    "visualizationScore": 24,
+    "wordCount": 2495
+  },
+  {
+    "author": "Linch",
+    "baseScore": 88,
+    "id": "u8TdDutDyaSxG76hn",
+    "postedAt": "2026-08-10T16:04:09.057Z",
+    "section": "Frontpage",
+    "title": "You're Absolutely Right",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/u8TdDutDyaSxG76hn/you-re-absolutely-right",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/u8TdDutDyaSxG76hn/wuysx5dkmo9msvsvw27i  Have you heard of ML explanation-generation? So",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786378058/lexical_client_uploads/guhvswz4n01vbiueaqlx.png  Auditor\u2019s note: We thank Magma for their transpar"
+    ],
+    "visualizationScore": 2,
+    "wordCount": 2392
+  },
+  {
+    "author": "Joshua Fonseca Rivera",
+    "baseScore": 19,
+    "id": "bfJnebZyY3RRHZC4o",
+    "postedAt": "2026-08-07T16:59:09.665Z",
+    "section": "Frontpage",
+    "title": "Item Response Theory for AI Safety",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/bfJnebZyY3RRHZC4o/item-response-theory-for-ai-safety",
+    "visualEvidence": [
+      "figure      Paper | Dataset Many important decisions for safety depend on or are influenced by benchmark scores. These benchmarks, in effect, are trying to measure latent propertie",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786121686/lexical_client_uploads/ztozkohjuruy917hdovy.png   ",
+      "figure      What are we measuring? Compared to Spagliardi et al. 2026, we run our own evaluations to obtain a complete response matrix, and we cover more models and more benchmarks",
+      "img Screenshot 2026-08-06 at 9.48.41\u202fAM.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786121686/lexical_client_uploads/prnlupyx0txdf8xfmsv7.png   ",
+      "figure      Can we measure safety more cheaply? Does it measure an ability we already capture? Does it distinguish models in a new way? Is it aligned with the other scores we are c"
+    ],
+    "visualizationScore": 20,
+    "wordCount": 1979
+  }
+]
