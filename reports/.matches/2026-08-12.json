@@ -1,0 +1,91 @@
+[
+  {
+    "author": "StanislavKrym",
+    "baseScore": 12,
+    "id": "cPbsnMAGZjApeCghE",
+    "postedAt": "2026-08-12T02:56:33.050Z",
+    "section": "Frontpage",
+    "title": "Did the alignment community underestimate its power?",
+    "topicScore": 14,
+    "url": "https://www.lesswrong.com/posts/cPbsnMAGZjApeCghE/did-the-alignment-community-underestimate-its-power",
+    "visualEvidence": [
+      "figure     ECI of models by OpenAI, Anthropic, GDM is colored, other models are uncolored Late game OpenAI had experienced many political battles: the exodus of Musk, the shift to ",
+      "img The ECI of the three leaders and other labs   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786489795/lexical_client_uploads/q4ze2lk5ovbklzo2ufed.png   ECI of models ",
+      "table     Regulate AI domestically enough to reduce AI takeover risk to acceptable levels, which will require a long slowdown. It\u2019s possible other countries will also regulate dome"
+    ],
+    "visualizationScore": 8,
+    "wordCount": 3142
+  },
+  {
+    "author": "Ethan Garcia",
+    "baseScore": 8,
+    "id": "uvgw5FTS2RXgFFFii",
+    "postedAt": "2026-08-12T01:21:55.228Z",
+    "section": "Personal/All",
+    "title": "When (and when not) LLMs can verbalize awareness of J-Space concept injections - Initial results",
+    "topicScore": 6,
+    "url": "https://www.lesswrong.com/posts/uvgw5FTS2RXgFFFii/when-and-when-not-llms-can-verbalize-awareness-of-j-space",
+    "visualEvidence": [
+      "table     Component Frozen Value Model Qwen/Qwen3.6-27B Resolved model revision 6a9e13bd6fc8f0983b9b99948120bc37f49c13e9 Precision bfloat16 Thinking mode disabled Maximum generated",
+      "table     Arm Layers Number of layers Per-layer multiplier Nominal integrated coefficient Full band 24\u201357 34 1 First half 24\u201340 17 2 Second half 41\u201357 17 2 Layer bands was swept in",
+      "table     Label Definition Exact report + steering Target appears in both detected_concept and task_answer Exact report without steering Target appears in detected_concept but not ",
+      "table     Layer band Target Task\u2192report: Target answer Task\u2192report: Exact target report Report\u2192task: Target answer Report\u2192task: Exact target report Full Related 113 (43.5%) 90 (34.",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786474521/lexical_client_uploads/tulqq1tdx7mnztjlcrxl.png  Task then report Notably, there were also zero ex"
+    ],
+    "visualizationScore": 44,
+    "wordCount": 4577
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 34,
+    "id": "jLQ4mbqriJwJ2eqRc",
+    "postedAt": "2026-08-11T22:20:10.615Z",
+    "section": "Personal/All",
+    "title": "Various Reflections About What Happened With OpenAI\u2019s Internal Models",
+    "topicScore": 5,
+    "url": "https://www.lesswrong.com/posts/jLQ4mbqriJwJ2eqRc/various-reflections-about-what-happened-with-openai-s",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/jLQ4mbqriJwJ2eqRc/qov2w7rcv1srl5bu3aub   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 21,
+    "wordCount": 9020
+  },
+  {
+    "author": "egan",
+    "baseScore": 29,
+    "id": "qpJYNjQ6wdWRxbykL",
+    "postedAt": "2026-08-11T18:05:41.068Z",
+    "section": "Frontpage",
+    "title": "Measuring Spurious Correlations with Feature Strength",
+    "topicScore": 12,
+    "url": "https://www.lesswrong.com/posts/qpJYNjQ6wdWRxbykL/measuring-spurious-correlations-with-feature-strength",
+    "visualEvidence": [
+      "img Language vs presence of code as a 2\u00d72 grid, with real texts. All four cells are the same topic (a palindrome check), so only the language and whether code appears differ.   htt",
+      "img Predicted vs observed strength gaps, fine-tune and probe   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786318142/lexical_client_uploads/maxsk4zsp6ba5tqtr9fk.png  Th",
+      "img The feature strength ranking for all 37 features: fine-tune, decision-token probe, and mean-pooled probe   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786318142/lex",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786340329/lexical_client_uploads/r4vl1lv5buuy3fk5e0fi.png  For each feature , we calculate the mean activati",
+      "img Per-feature strength rank across depth   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786318143/lexical_client_uploads/dy1gsevnpng0dibsjcq4.png  Strength also shifts"
+    ],
+    "visualizationScore": 63,
+    "wordCount": 2972
+  },
+  {
+    "author": "Adam Chlipala",
+    "baseScore": 9,
+    "id": "gTArsyyFa7YHDy7uE",
+    "postedAt": "2026-08-11T12:16:49.693Z",
+    "section": "Frontpage",
+    "title": "Productive Signaling: Competitive Software Development, Not Competitive Programming",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/gTArsyyFa7YHDy7uE/productive-signaling-competitive-software-development-not",
+    "visualEvidence": [
+      "img Comparison.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786450308/lexical_client_uploads/fcjyaf3f9xtbhasevwxh.png  My alternative proposal is a competition str"
+    ],
+    "visualizationScore": 3,
+    "wordCount": 2830
+  }
+]
