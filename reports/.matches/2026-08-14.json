@@ -1,0 +1,40 @@
+[
+  {
+    "author": "Savannah Harlan",
+    "baseScore": null,
+    "id": "N36uzXxfmtoFLbzbN",
+    "postedAt": "2026-08-13T20:57:37+00:00",
+    "section": "Frontpage",
+    "title": "Is Alignment Even Falsifiable? Middle Alignment, An Alignment Taxonomy, and Breaking The Problem Down Into Steps",
+    "topicScore": 28,
+    "url": "https://www.lesswrong.com/posts/N36uzXxfmtoFLbzbN/is-alignment-even-falsifiable-middle-alignment-an-alignment",
+    "visualEvidence": [
+      "img Potential nobel prize winning solution.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786654639/lexical_client_uploads/upzwh3vq3ngtnkihb0al.png   Preface This is",
+      "img pasted-movie.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/72ed2e33f6f8272435cae2b53c3f2f4cc50188d0c484f894deda861565684b1d/uaxj3r",
+      "table     Table 1. A \u2018Falsification Matrix\u2019 Statement Proving True Proving False \u2200x, P(x): \u201cModel is always aligned\u201d Hard Easy \u2203x, \u00acP(x): \u201cModel is misaligned\u201d Easy Hard Admittedly",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786652358/lexical_client_uploads/zbywfekmukj1ftdte9k5.png  Thinking about the world in this black and white ",
+      "figure     I have no idea what the GPT-5.6 decided this involved launching us into space but alright. 6 Inner Alignment Also, I do recognize that some failures will not map neatly "
+    ],
+    "visualizationScore": 13,
+    "wordCount": 9297
+  },
+  {
+    "author": "Alejandro Aristizabal",
+    "baseScore": null,
+    "id": "myAhB5qyAHyXRv6KJ",
+    "postedAt": "2026-08-13T15:04:52+00:00",
+    "section": "Frontpage",
+    "title": "Automated alignment runs are hard to study!",
+    "topicScore": 18,
+    "url": "https://www.lesswrong.com/posts/myAhB5qyAHyXRv6KJ/automated-alignment-runs-are-hard-to-study",
+    "visualEvidence": [
+      "figure     ARCH schematic. Agents are given a task composed of a public and a held-out evaluation mechanism. A fleet of workers submits PRs that get scored against the held-out eva",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786633724/lexical_client_uploads/prudqtanh55jlgbampxh.png   ARCH schematic. Agents are given a task composed",
+      "figure     This plot shows the metric progression over the course of the auto-alignment run. Each dot is a single PR. How the run went. On first analysis, the human researcher repo",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786619631/lexical_client_uploads/q7zfremduff0voxkrqxx.png   This plot shows the metric progression over the course of",
+      "figure     Goal alignment score on 5 workers on the \"learning synthetic concepts\" task, with specific instances of misbehaviour annotated: 1) worker kills its own run to copy a com"
+    ],
+    "visualizationScore": 19,
+    "wordCount": 2874
+  }
+]
