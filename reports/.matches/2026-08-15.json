@@ -1,0 +1,94 @@
+[
+  {
+    "author": "Morgan S",
+    "baseScore": null,
+    "id": "CjcQ6WWy7LLBFrEah",
+    "postedAt": "2026-08-15T01:11:37+00:00",
+    "section": "Frontpage",
+    "title": "Red vs Blue, but for Evals",
+    "topicScore": 17,
+    "url": "https://www.lesswrong.com/posts/CjcQ6WWy7LLBFrEah/red-vs-blue-but-for-evals",
+    "visualEvidence": [
+      "table     \ud83d\udd35Blue Team Eval Method Task Requirement \ud83d\udd34Red Team Response Level 1 Prompting None Evaluation awareness Level 2 RL fine-tuning Accurate reward signal Exploration hacking L",
+      "img Screenshot 2026-08-04 at 10.36.56\u202fAM.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785865018/lexical_client_uploads/tuznmbckmn7qstbuyrmo.png  Hence we'll make s",
+      "img Screenshot 2026-08-13 at 7.10.40\u202fPM.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786673443/lexical_client_uploads/kegj5akfofa7oodemuss.png  Hence it's not enti",
+      "figure      In a lot of cases we should expect the model to be trained toward the capability: In most diffuse control tasks, training is the best plan we have , and this actually i",
+      "img Screenshot 2026-08-13 at 4.57.06\u202fPM.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786665430/lexical_client_uploads/cikmw1krfy0pvf0h6otl.png   "
+    ],
+    "visualizationScore": 10,
+    "wordCount": 5357
+  },
+  {
+    "author": "Jesse Li",
+    "baseScore": null,
+    "id": "a5hkSyi9JDjkMdNBa",
+    "postedAt": "2026-08-14T23:31:00+00:00",
+    "section": "Frontpage",
+    "title": "Toy Model of Activation Obfuscation",
+    "topicScore": 5,
+    "url": "https://www.lesswrong.com/posts/a5hkSyi9JDjkMdNBa/toy-model-of-activation-obfuscation",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/a5hkSyi9JDjkMdNBa/fyqna5ml2rwrjtmusnup  In this research, I give theoretical and empiri",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/a5hkSyi9JDjkMdNBa/pirquvisyxjiccjxifnd  As a diagram: ",
+      "figure      Here's what and look like as you sweep , for different . The difference-of-means and logistic regression decision boundaries are shown, and both perform poorly. Hiding ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/a5hkSyi9JDjkMdNBa/ecodcskygczvftd54iyq   ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/a5hkSyi9JDjkMdNBa/buetydpvh3dnjqih0tvg  This results in the following histograms and RO"
+    ],
+    "visualizationScore": 27,
+    "wordCount": 1887
+  },
+  {
+    "author": "Michael Ofengenden",
+    "baseScore": null,
+    "id": "eAbuPXbjakop5rSJx",
+    "postedAt": "2026-08-14T23:24:29+00:00",
+    "section": "Personal/All (unconfirmed)",
+    "title": "Your Agents Are Not Time Aware",
+    "topicScore": 22,
+    "url": "https://www.lesswrong.com/posts/eAbuPXbjakop5rSJx/your-agents-are-not-time-aware",
+    "visualEvidence": [
+      "table     Benchmark Number of tasks Benchmark Number of tasks Agents Last Exam 12 METR RE-Bench 5 AppWorld 6 OSWorld 2.0 8 AssistantBench 16 PaperBench 6 CORE-Bench 12 PPTArena 8 D",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786092815/lexical_client_uploads/gsxdvc8lz2thcqsftg7j.png  One of the primary signals for time-awareness is ",
+      "table     Agent Mean duration Range Mean test-pass rate Claude Opus 4.8 85 min 10\u2013177 min 65.1% Codex GPT-5.5 17.5 min 5\u201338 min 60.5% In our runs, we found Opus 4.8 ran for a mean ",
+      "figure      Opus 4.8 & GPT-5.5 like to predict around \"an hour and a half\" The difference lies in the harness and the effort. A large majority (more than 80%) of the wall-clock is ",
+      "img Screenshot 2026-08-12 at 7.49.40\u202fPM.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786589384/lexical_client_uploads/l98uojct1nljhsbusicl.png   "
+    ],
+    "visualizationScore": 73,
+    "wordCount": 3689
+  },
+  {
+    "author": "Kevin Zhang",
+    "baseScore": null,
+    "id": "iHYZF2jweXb2E7X3Y",
+    "postedAt": "2026-08-14T20:44:38+00:00",
+    "section": "Frontpage",
+    "title": "Training a Conceptual Reasoning Judge",
+    "topicScore": 7,
+    "url": "https://www.lesswrong.com/posts/iHYZF2jweXb2E7X3Y/training-a-conceptual-reasoning-judge",
+    "visualEvidence": [
+      "table     Model Forward pass error Chain of thought error (N=3) Qwen 3.6-27B 0.1082 0.0997 Opus 4.8 0.0651 0.0501 Table 1. Forward pass ratings perform similarly to COT for Qwen 3.",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786316811/lexical_client_uploads/ep7fxjht22hogpqlyhcc.png  Figure 1. Fine tuning consistently improves conce",
+      "table     Test set junk critiques (Expert Rating \u2264 0.1) n Base model, mean score Base model, % scored \u2265 0.9 Trained model, % scored \u2265 0.9 Model-written 58 0.72 29% 0% Human-written",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786339974/lexical_client_uploads/h0hvqaxp5wfrn3mvv8yv.png  Figure 2. Fine-tuning generalizes to rewrites So,",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785433840/lexical_client_uploads/b8k1igjpto5nm9hjghpr.png  Figure 3. Critique ratings are mostly invariant t"
+    ],
+    "visualizationScore": 21,
+    "wordCount": 1891
+  },
+  {
+    "author": "derelict5432",
+    "baseScore": null,
+    "id": "Nj9jzMBFzEZAbBpo4",
+    "postedAt": "2026-08-14T19:11:07+00:00",
+    "section": "Frontpage",
+    "title": "Do It Like Darwin",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/Nj9jzMBFzEZAbBpo4/do-it-like-darwin",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/Nj9jzMBFzEZAbBpo4/p3qhdaknntydnklpkyzm  In other words, Darwin drew analogies between g",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/Nj9jzMBFzEZAbBpo4/m9o2qxlgmfyxuggnbq34  Anyone who has read On the Origin of Species is"
+    ],
+    "visualizationScore": 2,
+    "wordCount": 2162
+  }
+]
