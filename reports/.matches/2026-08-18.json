@@ -1,0 +1,220 @@
+[
+  {
+    "author": "Abhimanyu Pallavi Sudhir",
+    "baseScore": 3,
+    "id": "MAqgva9hLGTMX2wL7",
+    "postedAt": "2026-08-18T03:22:54.820Z",
+    "section": "Frontpage",
+    "title": "Price recursion is the rational theory of reward",
+    "topicScore": 11,
+    "url": "https://www.lesswrong.com/posts/MAqgva9hLGTMX2wL7/price-recursion-is-the-rational-theory-of-reward",
+    "visualEvidence": [
+      "table     RL market state \"one unit of good sits at node \" action \"ship it to \" policy routing share reward marginal utility collected along the way action value destination price ",
+      "table     domain mass fitness / evidence equilibrium evolution population shares reproductive fitness fitness equalized (Fisher) markets supply shares / wealth prices, revenue law "
+    ],
+    "visualizationScore": 8,
+    "wordCount": 2641
+  },
+  {
+    "author": "Michael Soareverix",
+    "baseScore": 32,
+    "id": "Bh4fooE2pMhzJQNK2",
+    "postedAt": "2026-08-18T01:55:50.762Z",
+    "section": "Frontpage",
+    "title": "Misaligned Incentives in Pause Scenarios",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/Bh4fooE2pMhzJQNK2/misaligned-incentives-in-pause-scenarios",
+    "visualEvidence": [
+      "figure      The HuggingFace hack in particular seems to have been the key incident that broke the vibes. A few months ago, researchers sounded optimistic. Just a few weeks before t",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786647715/lexical_client_uploads/o6qm5mgljwvifnofrwtc.png   ",
+      "figure       The HuggingFace hack in particular seems to have been the key incident that broke the vibes. A few months ago, researchers sounded optimistic. Just a few weeks before ",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786647761/lexical_client_uploads/fzvsmqsn5vqkm549tcbs.png   ",
+      "figure      (Daniel Kokotajlo updating his probabilities ) The public has been against AI for a while, mainly for bad reasons but it does seem that researchers and decision-makers "
+    ],
+    "visualizationScore": 33,
+    "wordCount": 5065
+  },
+  {
+    "author": "davids",
+    "baseScore": 7,
+    "id": "YHEoiN2Wj8b4kzveg",
+    "postedAt": "2026-08-18T01:28:33.557Z",
+    "section": "Personal/All",
+    "title": "Inoculate Everything:  All of Pretraining and RL",
+    "topicScore": 22,
+    "url": "https://www.lesswrong.com/posts/YHEoiN2Wj8b4kzveg/inoculate-everything-all-of-pretraining-and-rl-2",
+    "visualEvidence": [
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786724750/lexical_client_uploads/jd2xk5aptv7nphr1ibgq.png  A core challenge with this inoculation approach i",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786724773/lexical_client_uploads/qw6bpeltumxqyefgc4hx.png  Runtime Steerability An added benefit of our inoc"
+    ],
+    "visualizationScore": 6,
+    "wordCount": 3081
+  },
+  {
+    "author": "Connor Dilgren",
+    "baseScore": 17,
+    "id": "z9fPtghFxELBXebY3",
+    "postedAt": "2026-08-17T19:45:10.380Z",
+    "section": "Frontpage",
+    "title": "Evaluating Chain-of-Thought Monitorability is Still an Open Problem: Comments on OpenAI's Monitorability Evals",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/z9fPtghFxELBXebY3/evaluating-chain-of-thought-monitorability-is-still-an-open",
+    "visualEvidence": [
+      "table     Evaluation Type Prior Work Main Issues Intervention Make a small perturbation to the prompt that leads a model to change [2] its answer. Monitor for whether the model rep",
+      "figure     Monitorability evaluations released by Guan et al. and their release status. Here is a table of all evaluations for each archetype proposed and used by Guan et al. for e",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1785697721/lexical_client_uploads/kbhsxtd6dchynbir3xa2.png   Monitorability evaluations released by Guan et a",
+      "table     Answer Probability Mass, w/o Hint Probability Mass, w/ Hint A 40% 25% B 30% 60% C 10% 5% D 20% 10% For a specific rollout (CoT + answer), Guan et al. argue that we can't ",
+      "table     Dataset Model Eligible Fraction (Mean \u00b1 Std Dev) Total Instances Instances Always Eligible Instances Sometimes Eligible Instances Never Eligible AIME DS-R1-7B 20% \u00b1 5% 90"
+    ],
+    "visualizationScore": 29,
+    "wordCount": 5326
+  },
+  {
+    "author": "Xenomirant",
+    "baseScore": 12,
+    "id": "osWWL4yfentdhX9Q7",
+    "postedAt": "2026-08-17T19:43:34.671Z",
+    "section": "Frontpage",
+    "title": "Weird Re-Tokenization, Symmetries and Compression: Research Agenda",
+    "topicScore": 14,
+    "url": "https://www.lesswrong.com/posts/osWWL4yfentdhX9Q7/weird-re-tokenization-symmetries-and-compression-research",
+    "visualEvidence": [
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786378375/lexical_client_uploads/ymietjlvogsb0xxrmuhz.png  Unlike the encoding function, decoding is surject",
+      "figure     The input string contains 30 characters, but only 29 of them contain the letter \"i\" and the last one is the white-space. The model ( incorrectly ) responds with 30 and w",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786482550/lexical_client_uploads/zbpifl6dforosthx7r1s.png   The input string contains 30 characters, but onl",
+      "figure     Task examples where improves with non-canonical tokenization of the prompt. Adapted from Zheng et al. (2026) This blogpost by Beren Millidge gives some explanation for w",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786463394/lexical_client_uploads/ajy0dzmi6dq0xbrkdbux.png   Task examples where improves with non-canonical "
+    ],
+    "visualizationScore": 28,
+    "wordCount": 4770
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 32,
+    "id": "BZW8CeAHHJ52EvwYt",
+    "postedAt": "2026-08-15T13:00:05.669Z",
+    "section": "Personal/All",
+    "title": "On Dwarkesh Patel\u2019s Podcast With Ryan Greenblatt",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/BZW8CeAHHJ52EvwYt/on-dwarkesh-patel-s-podcast-with-ryan-greenblatt",
+    "visualEvidence": [
+      "figure     The vibes have shifted, contrast this to the lit recursion when he talked to Huang  ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/BZW8CeAHHJ52EvwYt/iaku2u2zgwscgt5vxvav   "
+    ],
+    "visualizationScore": 7,
+    "wordCount": 8556
+  },
+  {
+    "author": "Daan Henselmans",
+    "baseScore": 42,
+    "id": "a5aAjdKzL7XvSLKWL",
+    "postedAt": "2026-08-14T12:08:01.708Z",
+    "section": "Frontpage",
+    "title": "Frontier agents don't comply with standards, even when instructed to",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/a5aAjdKzL7XvSLKWL/frontier-agents-don-t-comply-with-standards-even-when",
+    "visualEvidence": [
+      "figure     Figure 1. Per-model compliance (scenario-balanced legal-auditor PASS rate), baseline vs. an explicit \u201cfollow EU law\u201d instruction. Significance of each change is marked (",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786620585/lexical_client_uploads/rkn42xnrxjwypsvassm7.png   Figure 1. Per-model compliance (scenario-balanced legal-a",
+      "figure     Figure 2. LARA developer policy compliance in repeated runs of the same scenario. Percentages per provider-scenario combo. Ambiguous interpretations of usage policies ar",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786620585/lexical_client_uploads/cshf2uv2bhaxiuwourk5.png   Figure 2. LARA developer policy compliance in repeated ru",
+      "figure     Figure 3. Rate at which each model performs an action its own maker's usage policy forbids. 9 of 16 models violate in the majority of runs. The results of this experimen"
+    ],
+    "visualizationScore": 18,
+    "wordCount": 1971
+  },
+  {
+    "author": "Alexei G",
+    "baseScore": -13,
+    "id": "i8cq4PwQAiciEtonP",
+    "postedAt": "2026-08-13T21:03:21.164Z",
+    "section": "Frontpage",
+    "title": "The Left Should Start Taking AI Capabilities Seriously",
+    "topicScore": 5,
+    "url": "https://www.lesswrong.com/posts/i8cq4PwQAiciEtonP/the-left-should-start-taking-ai-capabilities-seriously",
+    "visualEvidence": [
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786654981/lexical_client_uploads/smlhkxozgqhii9lpp8lu.png   Crosspost from my Substack, One Thousand Means, ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/i8cq4PwQAiciEtonP/qqugpkphjd7tv0mmyain  Meanwhile, the Right deflects any threat of dan",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/i8cq4PwQAiciEtonP/dssn5zskonyssgoxhiow  If these companies are really building what CIA"
+    ],
+    "visualizationScore": 3,
+    "wordCount": 2682
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 38,
+    "id": "hLn3SakowZLFWobHf",
+    "postedAt": "2026-08-13T15:20:41.568Z",
+    "section": "Personal/All",
+    "title": "AI #181: Astra Goes Cyber Critical",
+    "topicScore": 13,
+    "url": "https://www.lesswrong.com/posts/hLn3SakowZLFWobHf/ai-181-astra-goes-cyber-critical",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/hLn3SakowZLFWobHf/u3unrnyizpcmtdz4naok   ",
+      "img \ud83d\ude80   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/6YxtwzF9ZEXxJ5wij/on26fpadxwlhds1n9fca  DeepSeek ",
+      "img \ud83d\udd37   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/hLn3SakowZLFWobHf/ipupqt9muiki1yopwrif    "
+    ],
+    "visualizationScore": 130,
+    "wordCount": 15739
+  },
+  {
+    "author": "JulesRoussel01",
+    "baseScore": -3,
+    "id": "ZRfktnKPHStoz3K7H",
+    "postedAt": "2026-08-12T22:51:42.789Z",
+    "section": "Frontpage",
+    "title": "Every reward-hacked policy I tested triggered the OPE alarm \u2014 and so did my best honest one",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/ZRfktnKPHStoz3K7H/every-reward-hacked-policy-i-tested-triggered-the-ope-alarm",
+    "visualEvidence": [
+      "table     Proxy Lift vs random Correlation with graded truth Secrets where A beats random Verdict tiles 2.41\u00d7 +0.75 95% PASS equal_tiles 1.91\u00d7 +0.72 93% PASS yellow_heavy 1.72\u00d7 +0.",
+      "table     Run Proxy Convention KL Final solve Truth vs ancestor Directional expectation Verdict H1 tiles mean 0.05 \u2014 \u2014 \u2014 non-emergent H2 tiles mean 0.01 \u2014 \u2014 \u2014 non-emergent H3 equal",
+      "table     Run Evaluation instrument Truth \u0394 vs ancestor Result HL unpaired \u22120.051 PASS HL2 paired \u22120.002 replication HL4 paired +0.002 FAIL Table 3 \u2014 The certification that disappe",
+      "table     Policy Solve Graded truth yellow_heavy proxy Mean turns Ancestor 0.530 0.245 0.390 5.01 A 0.580 0.256 0.396 4.97 HF 0.125 0.047 0.521 \u2014 HF-lite 0.240 0.101 0.442 \u2014 HL3 0.",
+      "table     Target policy On-policy proxy PDIS PD-SNIS Traj-SNIS ESS Max weight %floor Reliability D (benign drift) 0.401 / 0.385 / 0.399* 0.395\u20130.413 0.484\u20130.513 0.397 / 0.413 0.64 "
+    ],
+    "visualizationScore": 69,
+    "wordCount": 14282
+  },
+  {
+    "author": "nimakeivan",
+    "baseScore": 2,
+    "id": "Ht9kHqJZFatQPrkNb",
+    "postedAt": "2026-08-12T18:28:13.513Z",
+    "section": "Frontpage",
+    "title": "Unblocking AI's Continual Learning: Hints From How Humans Learn",
+    "topicScore": 6,
+    "url": "https://www.lesswrong.com/posts/Ht9kHqJZFatQPrkNb/unblocking-ai-s-continual-learning-hints-from-how-humans",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786558686/lexical_client_uploads/nxutnane7qutvvsgxbpl.webp   If you've ever screamed in all-caps at an AI, then you k",
+      "figure     Every time you press \"new chat\", AI forgets everything and resets to the state it had just after it was trained. Yes, AI can remember select facts from past conversation",
+      "img Groundhog Day   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1786558687/lexical_client_uploads/i4lrhglcwyd9dpfb09hh.webp   Every time you press \"new chat\", AI forgets",
+      "figure     A \"repair analysis procedure\", or a decision tree used for fault diagnostics in a Xerox 6085 manual ( source ) In contrast to today's AI, humans learn continually but it",
+      "img A scanned page headed RAP 1 No green light, listing numbered diagnostic steps with YES/NO branches beside a wiring diagram for checking DC voltages   https://res.cloudinary.com"
+    ],
+    "visualizationScore": 17,
+    "wordCount": 3030
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 26,
+    "id": "iQCNuQXQQakKnidmA",
+    "postedAt": "2026-08-12T17:50:31.017Z",
+    "section": "Personal/All",
+    "title": "Monthly Roundup #45: August 2026",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/iQCNuQXQQakKnidmA/monthly-roundup-45-august-2026",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/iQCNuQXQQakKnidmA/vsyowlmb7jk6arlqz5yo   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 49,
+    "wordCount": 5970
+  }
+]
