@@ -1,0 +1,38 @@
+[
+  {
+    "author": "emanuelr",
+    "baseScore": 9,
+    "id": "mrokcaYRHLWqAPzmx",
+    "postedAt": "2026-08-19T23:03:56.264Z",
+    "section": "Personal/All",
+    "title": "Quantilized debate and consultancy in image environments: protocol design lessons for scalable oversight experiments",
+    "topicScore": 7,
+    "url": "https://www.lesswrong.com/posts/mrokcaYRHLWqAPzmx/quantilized-debate-and-consultancy-in-image-environments-2",
+    "visualEvidence": [
+      "figure      Every experiment involves a weak judge that classifies the image from a mask; an agent (the consultant, or the first debater) that commits to an image class and reveals",
+      "img DebateExample.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1787177510/lexical_client_uploads/f2jpaurzqpf5ptvkfxl5.png   ",
+      "table     Dataset (variant) Gold Perfect mask selection Sparse judge (random 4/36) MNIST 99.24% 99.24% 60.59% MNIST (whitened) 99.74% 99.74% 57.99% FashionMNIST 90.51% 90.52% 66.66",
+      "table     Rule Judge Judge acc Selection acc \u2014 consultancy 95.79 \u2014 asym debate 2-turn 92.30 92.60 asym debate 4-turn 85.19 86.81 asym control 2-turn 86.98 91.43 asym control 4-turn",
+      "table     Rule Judge MNIST judge MNIST sel. FMNIST-wh. judge FMNIST-wh. sel. \u2014 consultancy 94.42 94.42 75.46 75.46 asym debate 2-turn 93.34 93.37 75.26 75.36 asym debate 4-turn 88."
+    ],
+    "visualizationScore": 69,
+    "wordCount": 8398
+  },
+  {
+    "author": "zac_kenton",
+    "baseScore": 48,
+    "id": "BB8o7b8A4Aykeksvw",
+    "postedAt": "2026-08-19T12:17:57.123Z",
+    "section": "Personal/All",
+    "title": "Debate Training Reduces Reward Hacking in RLAIF",
+    "topicScore": 36,
+    "url": "https://www.lesswrong.com/posts/BB8o7b8A4Aykeksvw/debate-training-reduces-reward-hacking-in-rlaif",
+    "visualEvidence": [
+      "img reward_mcc_acc_val.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1787141173/lexical_client_uploads/jeey23wu6ltbuz1hpl9f.png   We trained LLM policies via debate ",
+      "img A AB ABA diagram.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1787141243/lexical_client_uploads/lkl4kcrimltp9puutloa.png  Debate training with an LLM judge In t",
+      "img ABA example.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1787141377/lexical_client_uploads/pbf13zcw2m48qphvgzfi.png  The reason to focus on training, rather tha"
+    ],
+    "visualizationScore": 5,
+    "wordCount": 1842
+  }
+]
