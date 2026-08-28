@@ -27,6 +27,10 @@
     "title": "Why Larger Models Learn More: Effects of Capacity, Interference, and Rare-Task Retention",
     "first_seen": "2026-07-28T18:51:09+00:00"
   },
+  "https://arxiv.org/abs/2608.19611": {
+    "title": "Forking Fast: Efficiently Estimating Uncertainty Dynamics in Text Generation",
+    "first_seen": "2026-08-28T06:05:21+00:00"
+  },
   "https://goodfire.ai/research/a-geometric-calculator": {
     "title": "A Geometric Calculator Inside a Neural Network",
     "first_seen": "2026-07-28T18:51:09+00:00"
@@ -54,6 +58,10 @@
   "https://goodfire.ai/research/evee-explaining-genetic-variants": {
     "title": "Explaining 4.2 million genetic variants with state-of-the-art, interpretable predictions",
     "first_seen": "2026-07-28T18:51:09+00:00"
+  },
+  "https://goodfire.ai/research/forking-fast": {
+    "title": "Forking Fast: Efficiently Estimating Uncertainty Dynamics in Text Generation",
+    "first_seen": "2026-08-28T06:05:21+00:00"
   },
   "https://goodfire.ai/research/interpretability-for-alzheimers-detection": {
     "title": "Using Interpretability to Identify a Novel Class of Alzheimer's Biomarkers",
