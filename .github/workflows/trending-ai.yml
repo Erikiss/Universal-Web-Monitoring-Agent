@@ -1,0 +1,82 @@
+name: Trending AI Topics (daily)
+
+on:
+  workflow_dispatch:
+    inputs:
+      lookback_hours:
+        description: 'Lookback window in hours (arXiv uses its own, wider window)'
+        required: false
+        default: '24'
+      dry_run:
+        description: 'Build the report but do not commit or email'
+        required: false
+        default: 'false'
+  schedule:
+    # 05:45 UTC, ahead of the 06:00/06:15 page watchers so the daily pushes
+    # do not race each other.
+    - cron: '45 5 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: trending-ai
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run unit tests
+        run: python -m unittest test_trending_ai.py -v
+
+      - name: Build trending AI digest
+        run: python trending_ai.py
+        env:
+          LOOKBACK_HOURS: ${{ github.event.inputs.lookback_hours || '24' }}
+          # Raises the GitHub search rate limit; no extra permissions needed.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Locate today's report
+        id: report
+        run: echo "path=reports/trending_ai_$(date -u +%F).md" >> "$GITHUB_OUTPUT"
+
+      - name: Send digest email
+        # Optional: only runs once the SMTP secrets exist, so the digest works
+        # as a committed report alone.
+        if: ${{ github.event.inputs.dry_run != 'true' && secrets.SMTP_HOST != '' }}
+        run: python send_alert.py --subject "Trending AI topics $(date -u +%F)" --body-file "${{ steps.report.outputs.path }}"
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
+
+      - name: Commit report
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          git config user.name "trending-ai-bot"
+          git config user.email "trending-ai-bot@users.noreply.github.com"
+          git add reports seen_trending_ai.json
+          git diff --staged --quiet && exit 0
+          git commit -m "Update trending AI topics digest"
+          for i in 1 2 3 4 5; do
+            git push && exit 0
+            if ! git pull --rebase; then
+              git rebase --abort || true
+            fi
+            sleep $((i * 5))
+          done
+          exit 1
