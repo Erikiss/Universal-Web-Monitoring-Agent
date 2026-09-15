@@ -219,6 +219,26 @@ class FetchArxivPageRetryTest(unittest.TestCase):
         self.assertEqual((total, entries), (0, []))
         self.assertEqual(len(session.calls), 3)  # retried twice before accepting
 
+    def test_retries_429_then_succeeds(self):
+        session = FakeSession()
+        responses = [
+            FakeResponse(429, headers={"Retry-After": "0"}),
+            FakeResponse(200, content=make_feed([("2508.00011", "A", "2026-08-01T10:00:00Z")], total=1)),
+        ]
+        session.add(lambda m, u, p, j: True, lambda m, u, p, j: responses.pop(0))
+        with mock.patch.object(atp.time, "sleep"):
+            total, entries = atp.fetch_arxiv_page(session, "q", 0)
+        self.assertEqual(total, 1)
+        self.assertEqual(len(entries), 1)
+        self.assertEqual(len(session.calls), 2)
+
+    def test_persistent_429_fails_after_rate_limit_budget(self):
+        session = FakeSession()
+        session.add(lambda m, u, p, j: True, FakeResponse(429))
+        with mock.patch.object(atp.time, "sleep"), self.assertRaises(RuntimeError):
+            atp.fetch_arxiv_page(session, "q", 0)
+        self.assertEqual(len(session.calls), atp.ARXIV_MAX_429_RETRIES)
+
 
 class S2ClientRetryTest(unittest.TestCase):
     def test_retries_429_then_succeeds(self):
