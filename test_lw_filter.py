@@ -61,13 +61,25 @@ def graphql_payload(posts, total=None):
     return {"data": {"posts": {"totalCount": total, "results": posts}}}
 
 
+def recent_iso(hours_ago=24):
+    """A timestamp that is always inside the live lookback window.
+
+    main() derives its cutoff from datetime.now() - LOOKBACK_DAYS, so a fixture
+    pinned to a literal date is a time bomb: it silently leaves the window once
+    that date falls out of the lookback, and every MainTests case that expects a
+    match starts failing on a calendar date nobody edited.
+    """
+    stamp = datetime.now(timezone.utc) - timedelta(hours=hours_ago)
+    return stamp.isoformat(timespec="milliseconds").replace("+00:00", "Z")
+
+
 def gql_post(post_id, *, title="A post", html=LONG_HTML, frontpage=True, word_count=2500):
     return {
         "_id": post_id,
         "title": title,
         "slug": "a-post",
-        "postedAt": "2026-08-07T10:00:00.000Z",
-        "frontpageDate": "2026-08-07T11:00:00.000Z" if frontpage else None,
+        "postedAt": recent_iso(24),
+        "frontpageDate": recent_iso(23) if frontpage else None,
         "baseScore": 42,
         "wordCount": word_count,
         "contents": {"html": html},
@@ -545,6 +557,19 @@ class WindowTests(unittest.TestCase):
         posts = [{"id": "z", "postedAt": "2026-08-07T10:00:00.000Z"}]
         self.assertEqual(len(lw.within_window(posts, "2026-07-25T00:00:00+00:00")), 1)
         self.assertEqual(len(lw.within_window(posts, "2026-08-08T00:00:00+00:00")), 0)
+
+
+class FixtureFreshnessTests(unittest.TestCase):
+    """Guards the invariant the MainTests fixtures depend on.
+
+    Without this, a fixture drifting out of the lookback window shows up as five
+    unrelated-looking assertion failures rather than one that names the cause.
+    """
+
+    def test_the_graphql_fixture_stays_inside_the_live_lookback_window(self):
+        after = (datetime.now(timezone.utc) - timedelta(days=lw.LOOKBACK_DAYS)).isoformat()
+        post = lw.normalize_graphql_post(gql_post("fresh"))
+        self.assertEqual(len(lw.within_window([post], after)), 1)
 
 
 class MainTests(NoSleepTestCase):
