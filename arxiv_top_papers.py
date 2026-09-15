@@ -35,6 +35,7 @@ TOP_N = int(os.getenv("TOP_N", "15"))
 MAX_PAPERS = int(os.getenv("MAX_PAPERS", "10000"))
 REQUEST_TIMEOUT = int(os.getenv("REQUEST_TIMEOUT", "60"))
 MAX_RETRIES = int(os.getenv("MAX_RETRIES", "5"))
+ARXIV_MAX_429_RETRIES = int(os.getenv("ARXIV_MAX_429_RETRIES", "12"))
 
 ARXIV_PAGE_SIZE = 1000
 ARXIV_DELAY_SECONDS = float(os.getenv("ARXIV_DELAY_SECONDS", "3"))
@@ -92,28 +93,47 @@ def fetch_arxiv_page(session, query, start, known_total=None):
         "sortOrder": "descending",
     }
     last_error = None
-    for attempt in range(MAX_RETRIES):
-        if attempt:
-            time.sleep(min(2 ** attempt * 3, 60))
+    error_attempts = 0
+    throttled = 0
+    while error_attempts < MAX_RETRIES and throttled < ARXIV_MAX_429_RETRIES:
         try:
             resp = session.get(ARXIV_API, params=params, timeout=REQUEST_TIMEOUT)
+            if resp.status_code == 429:
+                throttled += 1
+                retry_after = resp.headers.get("Retry-After")
+                try:
+                    delay = min(float(retry_after), 300)
+                except (TypeError, ValueError):
+                    delay = min(5 * 2 ** (throttled - 1), 300)
+                last_error = requests.HTTPError("HTTP 429", response=resp)
+                log(f"arXiv page start={start} 429 ({throttled}/{ARXIV_MAX_429_RETRIES}), backing off {delay:.0f}s")
+                time.sleep(delay)
+                continue
             resp.raise_for_status()
             total, entries = parse_arxiv_feed(resp.content)
         except (requests.RequestException, ET.ParseError) as e:
+            error_attempts += 1
             last_error = e
-            log(f"arXiv page start={start} attempt {attempt + 1} failed: {e}")
+            delay = min(2 ** error_attempts * 3, 60)
+            log(f"arXiv page start={start} error {error_attempts}/{MAX_RETRIES}: {e} (backoff {delay:.0f}s)")
+            time.sleep(delay)
             continue
         # The arXiv API sporadically returns an empty page — sometimes even
         # with totalResults=0 — although more results exist; treat both as
         # transient and retry before believing them.
         effective_total = max(total, known_total or 0)
-        if not entries and (effective_total > start or (effective_total == 0 and attempt < 2)):
+        if not entries and (effective_total > start or (effective_total == 0 and error_attempts < 2)):
+            error_attempts += 1
             last_error = RuntimeError(
                 f"empty page at start={start} (totalResults={total}, known_total={known_total})")
-            log(f"arXiv page start={start} attempt {attempt + 1}: transient empty page, retrying")
+            delay = min(2 ** error_attempts * 3, 60)
+            log(f"arXiv page start={start} empty page {error_attempts}/{MAX_RETRIES}, retrying")
+            time.sleep(delay)
             continue
         return effective_total, entries
-    raise RuntimeError(f"arXiv API failed for start={start}: {last_error}")
+    raise RuntimeError(
+        f"arXiv API failed for start={start} ({error_attempts} errors, {throttled} rate-limit waits): {last_error}"
+    )
 
 
 def parse_arxiv_feed(xml_bytes):
