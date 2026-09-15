@@ -93,10 +93,26 @@ Reference lists and citation counts come from the [Semantic Scholar Graph API](h
 | arXiv | `export.arxiv.org/api/query`, categories `ARXIV_CATEGORIES` | `ARXIV_LOOKBACK_HOURS` (default `72`) | `1.0` |
 | Hacker News | Algolia `search_by_date`, one query per term in `HN_QUERIES` | `LOOKBACK_HOURS` (default `24`) | `1 + points/100 + comments/200` |
 | GitHub | `api.github.com/search/repositories`, topics `GITHUB_TOPICS` | `LOOKBACK_HOURS` | `1 + stars/5000` |
+| OpenAlex (opt-in) | `api.openalex.org/works`, institutions `OPENALEX_INSTITUTIONS` × searches `OPENALEX_SEARCHES` | `OPENALEX_LOOKBACK_DAYS` (default `7`) | `1 + cited_by_count/50` |
 
 The report `reports/trending_ai_YYYY-MM-DD.md` opens with the **top terms**: 1- to 3-grams extracted from all item titles, stopword-filtered (generic words like *model*, *learning*, *ai*, *llm* are excluded so they cannot top the list every day), scored by the summed attention weight of the items using them, and required to occur in at least two distinct items so a single long title cannot invent a trend. Longer n-grams get a small boost, so "mixture of experts" outranks its own parts. Below that, each source lists its top items; items absent from `seen_trending_ai.json` are marked 🆕.
 
 Notes:
+
+### OpenAlex institution watch (opt-in)
+
+This is the recurring version of the OpenAlex notebook query: for each search term, one request asks for works published in the window by *any* of the watched institutions (default: Yale, Princeton, Stanford, MIT, Harvard, Oxford, ETH Zurich — configure with `OPENALEX_INSTITUTIONS`, format `Label=I12345678,…`). Besides feeding the trend ranking, the hits are exported to `reports/openalex_YYYY-MM-DD.csv` with exactly the notebook's columns (`institution_query`, `institution`, `institution_openalex_id`, `publication_date`, `title`, `type`, `openalex_id`, `doi`, `primary_location`, `cited_by_count`, `openalex_url`) — one row per watched institution per work, one report item per work.
+
+OpenAlex meters requests per caller and answers unidentified traffic from shared IPs (such as GitHub's runners) with `429 Insufficient budget`. The source therefore stays **off** until one of these is configured, and the run logs that it was skipped rather than failing:
+
+| Setting | Where | Purpose |
+| --- | --- | --- |
+| `OPENALEX_MAILTO` | repository variable | contact address for OpenAlex's polite pool |
+| `OPENALEX_API_KEY` | repository secret | paid/keyed access, sent as `api_key` |
+| `OPENALEX_INSTITUTIONS` | repository variable | override the watchlist |
+| `OPENALEX_SEARCHES` | repository variable | override the search terms (default `machine unlearning,large language model,artificial intelligence`) |
+
+### Notes
 
 - **arXiv gets its own, wider window.** Its `submittedDate` index lags announcement by roughly a day, so a 24h query there returns nothing at all. The 72h window keeps the paper corpus non-empty; the 🆕 markers still identify what is new since the previous run.
 - **Fail loudly**: if any source cannot be read, the run writes no report and exits non-zero. `TRENDING_STRICT=0` downgrades that to a green run whose report names the degraded sources.

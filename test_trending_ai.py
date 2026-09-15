@@ -1,9 +1,11 @@
 """Unit tests for trending_ai.py (no network access)."""
 
+import csv
 import json
 import tempfile
 import unittest
 from datetime import datetime, timezone
+from unittest import mock
 from pathlib import Path
 
 import trending_ai
@@ -124,6 +126,104 @@ class SeenFileTest(unittest.TestCase):
             path = Path(tmp) / "seen.json"
             path.write_text(json.dumps({"ids": ["x"]}), encoding="utf-8")
             self.assertEqual(trending_ai.load_seen(path=path), ["x"])
+
+
+OPENALEX_WORK = {
+    "id": "https://openalex.org/W7212325929",
+    "display_name": "Maverick: Private and Verifiable LLM Inference\n  Made Practical",
+    "publication_date": "2026-09-09",
+    "type": "preprint",
+    "doi": "https://doi.org/10.48550/arxiv.2609.10054",
+    "cited_by_count": 25,
+    "primary_location": {"source": {"display_name": "arXiv (Cornell University)"}},
+    "authorships": [
+        {"institutions": [
+            {"id": "https://openalex.org/I32971472", "display_name": "Yale University"},
+            {"id": "https://openalex.org/I999999", "display_name": "Unwatched University"},
+        ]},
+        {"institutions": [{"id": "https://openalex.org/I63966007", "display_name": "MIT"}]},
+    ],
+}
+
+
+class FakeResponse:
+    def __init__(self, payload):
+        self._payload = payload
+
+    def json(self):
+        return self._payload
+
+
+class OpenAlexTest(unittest.TestCase):
+    def test_enabled_only_with_a_contact_or_key(self):
+        with mock.patch.object(trending_ai, "OPENALEX_MAILTO", ""), \
+             mock.patch.object(trending_ai, "OPENALEX_API_KEY", ""):
+            self.assertFalse(trending_ai.openalex_enabled())
+        with mock.patch.object(trending_ai, "OPENALEX_MAILTO", "a@b.c"):
+            self.assertTrue(trending_ai.openalex_enabled())
+
+    def test_record_matches_the_notebook_csv_layout(self):
+        record = trending_ai.openalex_record(
+            OPENALEX_WORK, "Yale", "Yale University", "https://openalex.org/I32971472"
+        )
+        self.assertEqual(list(record), trending_ai.OPENALEX_CSV_COLUMNS)
+        self.assertEqual(record["primary_location"], "arXiv (Cornell University)")
+        self.assertEqual(record["cited_by_count"], 25)
+        # Line breaks in the title are normalised so the CSV stays one row.
+        self.assertNotIn("\n", record["title"])
+
+    def test_fetch_keeps_one_row_per_watched_institution_and_one_item_per_work(self):
+        now = datetime(2026, 9, 15, tzinfo=timezone.utc)
+        with tempfile.TemporaryDirectory() as tmp, \
+             mock.patch.object(trending_ai, "OUT_DIR", Path(tmp)), \
+             mock.patch.object(trending_ai, "OPENALEX_SEARCHES", ["machine unlearning"]), \
+             mock.patch.object(trending_ai, "OPENALEX_MAILTO", "a@b.c"), \
+             mock.patch.object(trending_ai, "time") as fake_time, \
+             mock.patch.object(trending_ai, "get") as fake_get:
+            fake_time.sleep.return_value = None
+            fake_get.return_value = FakeResponse({"results": [OPENALEX_WORK]})
+            items = trending_ai.fetch_openalex(None, None, now)
+
+            self.assertEqual(len(items), 1)
+            self.assertEqual(items[0]["id"], "openalex:W7212325929")
+            # cited_by_count raises the attention weight above the 1.0 floor.
+            self.assertAlmostEqual(items[0]["weight"], 1.5)
+
+            params = fake_get.call_args.kwargs["params"]
+            self.assertIn("from_publication_date:2026-09-08", params["filter"])
+            self.assertIn("I32971472", params["filter"])
+            self.assertEqual(params["mailto"], "a@b.c")
+            self.assertNotIn("api_key", params)
+
+            csv_path = Path(tmp) / "openalex_2026-09-15.csv"
+            with csv_path.open(encoding="utf-8") as handle:
+                rows = list(csv.DictReader(handle))
+            # Yale and MIT are watched, the third institution is not.
+            self.assertEqual([r["institution_query"] for r in rows], ["MIT", "Yale"])
+
+    def test_api_key_is_passed_when_configured(self):
+        now = datetime(2026, 9, 15, tzinfo=timezone.utc)
+        with tempfile.TemporaryDirectory() as tmp, \
+             mock.patch.object(trending_ai, "OUT_DIR", Path(tmp)), \
+             mock.patch.object(trending_ai, "OPENALEX_SEARCHES", ["ai"]), \
+             mock.patch.object(trending_ai, "OPENALEX_API_KEY", "secret"), \
+             mock.patch.object(trending_ai, "time") as fake_time, \
+             mock.patch.object(trending_ai, "get") as fake_get:
+            fake_time.sleep.return_value = None
+            fake_get.return_value = FakeResponse({"results": []})
+            trending_ai.fetch_openalex(None, None, now)
+            self.assertEqual(fake_get.call_args.kwargs["params"]["api_key"], "secret")
+
+    def test_non_json_response_is_a_source_error(self):
+        class Broken:
+            def json(self):
+                raise ValueError("nope")
+
+        now = datetime(2026, 9, 15, tzinfo=timezone.utc)
+        with mock.patch.object(trending_ai, "OPENALEX_MAILTO", "a@b.c"), \
+             mock.patch.object(trending_ai, "get", return_value=Broken()):
+            with self.assertRaises(trending_ai.SourceError):
+                trending_ai.fetch_openalex(None, None, now)
 
 
 class RenderReportTest(unittest.TestCase):

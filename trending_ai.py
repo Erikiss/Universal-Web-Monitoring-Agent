@@ -9,6 +9,10 @@ LOOKBACK_HOURS) and writes a Markdown report to
   wider window (ARXIV_LOOKBACK_HOURS, default 72h).
 * Hacker News — AI-related stories via the public Algolia search API
 * GitHub — repositories pushed in the window under AI-related topics
+* OpenAlex — new works from a configured list of institutions matching the
+  configured search terms (opt-in, see OPENALEX_MAILTO / OPENALEX_API_KEY).
+  Its hits are additionally exported as ``reports/openalex_YYYY-MM-DD.csv``
+  with the same columns the Colab notebook produced.
 
 From the collected titles the script derives a ranked list of trending terms
 (1- to 3-grams, stopword-filtered, weighted by the attention each item
@@ -30,6 +34,7 @@ Conventions follow the rest of this repository:
 
 from __future__ import annotations
 
+import csv
 import json
 import os
 import re
@@ -48,6 +53,7 @@ SEEN_FILE = Path(os.getenv("TRENDING_SEEN_FILE", "seen_trending_ai.json"))
 ARXIV_API = "https://export.arxiv.org/api/query"
 HN_API = "https://hn.algolia.com/api/v1/search_by_date"
 GITHUB_API = "https://api.github.com/search/repositories"
+OPENALEX_API = "https://api.openalex.org/works"
 
 LOOKBACK_HOURS = int(os.getenv("LOOKBACK_HOURS", "24"))
 STRICT = os.getenv("TRENDING_STRICT", "1") != "0"
@@ -72,6 +78,31 @@ GITHUB_TOPICS = [t.strip() for t in os.getenv(
 ).split(",") if t.strip()]
 GITHUB_MIN_STARS = int(os.getenv("GITHUB_MIN_STARS", "50"))
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "").strip()
+
+# OpenAlex institution watchlist (OpenAlex IDs), mirroring the notebook this
+# job replaces. Format: "Label=I12345678,Other=I87654321".
+OPENALEX_INSTITUTIONS = [
+    tuple(part.split("=", 1)) if "=" in part else (part, part)
+    for part in (
+        p.strip()
+        for p in os.getenv(
+            "OPENALEX_INSTITUTIONS",
+            "Yale=I32971472,Princeton=I20089843,Stanford=I97018004,MIT=I63966007,"
+            "Harvard=I136199984,Oxford=I40120149,ETH Zurich=I35440088",
+        ).split(",")
+    )
+    if part
+]
+OPENALEX_SEARCHES = [s.strip() for s in os.getenv(
+    "OPENALEX_SEARCHES", "machine unlearning,large language model,artificial intelligence"
+).split(",") if s.strip()]
+OPENALEX_LOOKBACK_DAYS = int(os.getenv("OPENALEX_LOOKBACK_DAYS", "7"))
+OPENALEX_PER_PAGE = int(os.getenv("OPENALEX_PER_PAGE", "50"))
+# OpenAlex meters requests per caller: unidentified traffic from a shared IP
+# (a GitHub runner) is answered with "Insufficient budget". The source is
+# therefore opt-in — set a contact address for the polite pool, or an API key.
+OPENALEX_MAILTO = os.getenv("OPENALEX_MAILTO", "").strip()
+OPENALEX_API_KEY = os.getenv("OPENALEX_API_KEY", "").strip()
 
 TOP_TERMS = int(os.getenv("TOP_TERMS", "25"))
 TOP_ITEMS_PER_SOURCE = int(os.getenv("TOP_ITEMS_PER_SOURCE", "20"))
@@ -140,7 +171,12 @@ def get(session, url, params=None, headers=None, source=""):
                     f"{resp.headers.get('X-RateLimit-Remaining', 'n/a')}, "
                     f"retry-after={retry_after or 'n/a'}): {resp.text[:200]!r}"
                 )
-                last_error = SourceError(f"HTTP {resp.status_code}")
+                detail = ""
+                if "Insufficient budget" in resp.text:
+                    # OpenAlex meters per caller; retrying cannot help today.
+                    detail = " — OpenAlex budget exhausted until midnight UTC; " \
+                             "configure OPENALEX_MAILTO/OPENALEX_API_KEY or raise the budget"
+                last_error = SourceError(f"HTTP {resp.status_code}{detail}")
                 if attempt < MAX_RETRIES:
                     time.sleep(delay)
                 continue
@@ -296,10 +332,126 @@ def fetch_github(session, cutoff):
     return items
 
 
+def openalex_enabled():
+    return bool(OPENALEX_MAILTO or OPENALEX_API_KEY)
+
+
+def openalex_record(work, institution_query, institution_name, institution_id):
+    """Flatten an OpenAlex work into the CSV row layout of the notebook export."""
+    location = ((work.get("primary_location") or {}).get("source") or {}).get("display_name") or ""
+    return {
+        "institution_query": institution_query,
+        "institution": institution_name,
+        "institution_openalex_id": institution_id,
+        "publication_date": work.get("publication_date") or "",
+        "title": " ".join((work.get("display_name") or "").split()),
+        "type": work.get("type") or "",
+        "openalex_id": work.get("id") or "",
+        "doi": work.get("doi") or "",
+        "primary_location": location,
+        "cited_by_count": work.get("cited_by_count") or 0,
+        "openalex_url": work.get("id") or "",
+    }
+
+
+def fetch_openalex(session, _cutoff, now):
+    """New works from the watched institutions, one request per search term.
+
+    All institutions go into a single `institutions.id` OR-filter, so the
+    request budget scales with the number of search terms, not with the
+    watchlist.
+    """
+    ids_by_id = {inst_id: (label, inst_id) for label, inst_id in OPENALEX_INSTITUTIONS}
+    id_filter = "|".join(ids_by_id)
+    from_date = (now - timedelta(days=OPENALEX_LOOKBACK_DAYS)).strftime("%Y-%m-%d")
+
+    records = {}
+    items = {}
+    for search in OPENALEX_SEARCHES:
+        params = {
+            "filter": f"institutions.id:{id_filter},from_publication_date:{from_date}",
+            "search": search,
+            "per-page": OPENALEX_PER_PAGE,
+            "sort": "publication_date:desc",
+        }
+        if OPENALEX_MAILTO:
+            params["mailto"] = OPENALEX_MAILTO
+        if OPENALEX_API_KEY:
+            params["api_key"] = OPENALEX_API_KEY
+        resp = get(session, OPENALEX_API, params=params, source="openalex")
+        try:
+            results = resp.json().get("results", [])
+        except ValueError as e:
+            raise SourceError(f"openalex: non-JSON response ({e})")
+        for work in results:
+            work_id = (work.get("id") or "").rsplit("/", 1)[-1]
+            title = " ".join((work.get("display_name") or "").split())
+            if not work_id or not title:
+                continue
+            # A work can be authored at several watched institutions; the CSV
+            # keeps one row per (institution, work) exactly as the notebook did.
+            for inst in (
+                institution
+                for authorship in (work.get("authorships") or [])
+                for institution in (authorship.get("institutions") or [])
+            ):
+                inst_id = (inst.get("id") or "").rsplit("/", 1)[-1]
+                if inst_id not in ids_by_id:
+                    continue
+                label, _ = ids_by_id[inst_id]
+                records[(inst_id, work_id)] = openalex_record(
+                    work, label, inst.get("display_name") or label, inst.get("id") or inst_id
+                )
+            cited = int(work.get("cited_by_count") or 0)
+            items[work_id] = {
+                "id": f"openalex:{work_id}",
+                "title": title,
+                "url": work.get("doi") or work.get("id") or "",
+                "published": work.get("publication_date") or "",
+                "weight": 1.0 + cited / 50.0,
+                "meta": f"{search} · {work.get('type') or 'work'}",
+                "sort_key": cited,
+            }
+        time.sleep(1.0)
+
+    write_openalex_csv(now, list(records.values()))
+    ordered = sorted(items.values(), key=lambda i: i.get("sort_key", 0), reverse=True)
+    log(f"openalex: {len(ordered)} works in window ({len(records)} institution rows)")
+    return ordered
+
+
+OPENALEX_CSV_COLUMNS = [
+    "institution_query", "institution", "institution_openalex_id", "publication_date",
+    "title", "type", "openalex_id", "doi", "primary_location", "cited_by_count",
+    "openalex_url",
+]
+
+
+def write_openalex_csv(now, records):
+    """Write the institution rows in the notebook's CSV layout."""
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    path = OUT_DIR / f"openalex_{now.strftime('%Y-%m-%d')}.csv"
+    records = sorted(
+        records,
+        key=lambda r: (r["institution_query"], r["publication_date"]),
+        reverse=False,
+    )
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=OPENALEX_CSV_COLUMNS)
+        writer.writeheader()
+        writer.writerows(records)
+    log(f"Wrote {path} ({len(records)} rows)")
+    return path
+
+
 SOURCES = {
     "arxiv": (f"arXiv (cs.AI/LG/CL/NE, last {ARXIV_LOOKBACK_HOURS}h)", lambda session, cutoff, now: fetch_arxiv(session, cutoff, now)),
     "hackernews": ("Hacker News", lambda session, cutoff, now: fetch_hackernews(session, cutoff)),
     "github": ("GitHub", lambda session, cutoff, now: fetch_github(session, cutoff)),
+    "openalex": (
+        f"OpenAlex institutions (last {OPENALEX_LOOKBACK_DAYS}d)",
+        fetch_openalex,
+    ),
 }
 
 
@@ -439,6 +591,14 @@ def main():
     results = {}
     failures = []
     for key, (label, fetch) in SOURCES.items():
+        if key == "openalex" and not openalex_enabled():
+            # Not a failure: OpenAlex meters unidentified traffic, so the
+            # source stays off until a contact address or key is configured.
+            log(
+                "openalex: skipped — set OPENALEX_MAILTO (polite pool) or "
+                "OPENALEX_API_KEY to enable it"
+            )
+            continue
         try:
             results[key] = fetch(session, cutoff, now)
         except SourceError as e:

@@ -46,6 +46,12 @@ jobs:
           LOOKBACK_HOURS: ${{ github.event.inputs.lookback_hours || '24' }}
           # Raises the GitHub search rate limit; no extra permissions needed.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # OpenAlex is skipped unless one of these is configured: it meters
+          # unidentified traffic from shared IPs like GitHub's runners.
+          OPENALEX_MAILTO: ${{ vars.OPENALEX_MAILTO }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          OPENALEX_INSTITUTIONS: ${{ vars.OPENALEX_INSTITUTIONS }}
+          OPENALEX_SEARCHES: ${{ vars.OPENALEX_SEARCHES }}
 
       - name: Locate today's report
         id: report
