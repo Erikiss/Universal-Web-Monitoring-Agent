@@ -135,6 +135,10 @@
     "title": "Replicating Circuit Tracing for a Simple Known Mechanism",
     "first_seen": "2026-07-28T18:51:09+00:00"
   },
+  "https://goodfire.ai/research/reward-hacking-activation-monitors": {
+    "title": "Models know when they’re reward hacking — and we can catch them at scale",
+    "first_seen": "2026-09-17T18:10:30+00:00"
+  },
   "https://goodfire.ai/research/rlfr": {
     "title": "Features as Rewards: Using Interpretability to Reduce Hallucinations",
     "first_seen": "2026-07-28T18:51:09+00:00"
