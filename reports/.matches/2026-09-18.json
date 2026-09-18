@@ -1,0 +1,74 @@
+[
+  {
+    "author": "Nick Kuhn",
+    "baseScore": 73,
+    "id": "5guQJSqstkjgys3PE",
+    "postedAt": "2026-09-18T02:47:45.049Z",
+    "section": "Frontpage",
+    "title": "Deep recurrent models are less robustly CoT-monitorable than normal CoT models in a toy setting",
+    "topicScore": 11,
+    "url": "https://www.lesswrong.com/posts/5guQJSqstkjgys3PE/deep-recurrent-models-are-less-robustly-cot-monitorable-than",
+    "visualEvidence": [
+      "figure     We use RL to teach a deep recurrent model and a normal CoT model to solve a math problem while hiding from a CoT monitor which of two possible problems it is solving. Th",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/2224ed4093d9d3bf46d5c36fc60c4171a78e99862cb9533d0bcb80f419a86cde/bdg71u2c3krud3qyhhx6  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/0bf2560efc8a3217f072d18b6c17bfff38ecbb4e7d78d17c5a9b71a7bcdb67d1/x3ce5vspmulqqoubacaj  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/436c8ed886ed08f02ef3588e187b7f04d1956221d27f0f2af45911f31e26ac8a/vwkqralhzd0kcf8syb5c  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/70a6b6b1492145ac065107be8c6164f8186c101b7318b851cb821efa70c6c6ef/x9vzynosn3wlwczciriy  "
+    ],
+    "visualizationScore": 20,
+    "wordCount": 4072
+  },
+  {
+    "author": "WillPetillo",
+    "baseScore": 17,
+    "id": "9BbAzkyGPDTg4upfr",
+    "postedAt": "2026-09-18T01:57:29.029Z",
+    "section": "Frontpage",
+    "title": "The Cost of Utopias (a Dialog)",
+    "topicScore": 7,
+    "url": "https://www.lesswrong.com/posts/9BbAzkyGPDTg4upfr/the-cost-of-utopias-a-dialog",
+    "visualEvidence": [
+      "table     Intelligence Dangerous Intelligence Safe Artificial Dangerous SNC AI skepticism + techno-pessimism Artificial Safe Alignment Accelerationism Anima: I disagree, I believe "
+    ],
+    "visualizationScore": 4,
+    "wordCount": 4967
+  },
+  {
+    "author": "Dylan Hawk",
+    "baseScore": 17,
+    "id": "5FLMDXnJycHRRrsnx",
+    "postedAt": "2026-09-18T00:54:31.749Z",
+    "section": "Personal/All",
+    "title": "Towards Alignment Auditing for RL Environments",
+    "topicScore": 23,
+    "url": "https://www.lesswrong.com/posts/5FLMDXnJycHRRrsnx/towards-alignment-auditing-for-rl-environments",
+    "visualEvidence": [
+      "img rl-belief-01-context.svg   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1789601246/lexical_client_uploads/fr6er61w2zhynbwdxxct.svg  Let's think about it from the pers",
+      "img rl-task-01-pass-fail-example.svg   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1789514671/lexical_client_uploads/eiezt7gmtsg6ln4db2h8.svg  Let's visualize this: Reas",
+      "img rl-task-05-strict-grader-example.svg   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1789513515/lexical_client_uploads/xxblr8udrcwszgjircse.svg  Reasons in its head, a",
+      "img rl-task-04-lenient-grader-hedging-example.svg   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1789676970/lexical_client_uploads/nnsvwhsql32cvhaqs37n.svg  Reasons in it",
+      "img rl-task-04-lenient-grader-example.svg   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1789513545/lexical_client_uploads/bvc6ewnapognlnidgary.svg  Reasons in its head, "
+    ],
+    "visualizationScore": 18,
+    "wordCount": 3733
+  },
+  {
+    "author": "Ameya Panchal",
+    "baseScore": 7,
+    "id": "Qe3jdphWCg9kny3e5",
+    "postedAt": "2026-09-17T21:13:25.010Z",
+    "section": "Frontpage",
+    "title": "The J-lens offset is the model's token frequency: z-scoring helps",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/Qe3jdphWCg9kny3e5/the-j-lens-offset-is-the-model-s-token-frequency-z-scoring",
+    "visualEvidence": [
+      "img A: Gemma-2-9B, 20 taboo organisms, mean secret-word accuracy by layer, four methods. B: leave-one-word-out headline. C: Qwen3-1.7B, 3 secrets; their protocol (raw logit) reads ",
+      "table     Band J\u2229R top-100 overlap Spearman(offset, log freq) Junk share of top-100 offset: J / R / logit mid, L18\u201321 0.50\u20130.69 (shared) 0.48 at L18 (logit: \u22120.05) 0.01 / 0.03 / 0.",
+      "img Anatomy of the non-context offset on Qwen3.5-4B. A: offset size by depth, R \u2248 2\u00d7 J early with disjoint tokens. B: Spearman of the offset against log frequency, J and R peaking ",
+      "table     Metric L18 L20 L23 J raw 13,348 1,000 768 J subtract offset 74,731 6,656 4,278 R raw 11,412 1,052 788 R subtract offset 98,576 9,798 4,726 J shuffled control (L20, mean o",
+      "img A: median rank of the intermediate by layer, raw vs subtract vs z-score vs shuffled null; shaded = L17\u201323 (mid-depth). B: 21 distinct intermediate tokens (all country names, Zi"
+    ],
+    "visualizationScore": 25,
+    "wordCount": 2952
+  }
+]
