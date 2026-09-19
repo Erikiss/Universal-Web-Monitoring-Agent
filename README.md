@@ -5,6 +5,7 @@ This repository runs scheduled GitHub Actions jobs that monitor research sources
 - **LessWrong filter**: reads recent LessWrong posts (GraphQL API, with the RSS feed as a fallback) and filters for long ML/NLP posts with likely visualizations.
 - **Page watchers**: scrape the Anthropic Interpretability team page and the Goodfire research page, detect new publication entries, and send an alert email on hits.
 - **arXiv AI Top Papers** (weekly): ranks the last 7 days of AI-related arXiv submissions by reference count and by citation-weighted references.
+- **Trending AI topics** (daily): aggregates new arXiv submissions, AI stories on Hacker News and recently pushed AI repositories on GitHub into one digest with a ranked list of trending terms.
 - **Lab Publications filter** (temporarily disabled): matched arXiv papers against a list of lab names.
 
 ## Conventions
@@ -83,6 +84,42 @@ Reference lists and citation counts come from the [Semantic Scholar Graph API](h
 - The job is stateless: each run is a self-contained weekly snapshot, so there is no `seen_*.json` file.
 - Offline unit tests (`test_arxiv_top_papers.py`, mocked APIs) run in the workflow before the ranking step.
 
+## Trending AI topics (daily)
+
+`trending_ai.py` runs every day (`trending-ai.yml`, 05:45 UTC) and answers the question "what is trending in AI right now" from three public sources:
+
+| Source | Endpoint | Window | Attention weight per item |
+| --- | --- | --- | --- |
+| arXiv | `export.arxiv.org/api/query`, categories `ARXIV_CATEGORIES` | `ARXIV_LOOKBACK_HOURS` (default `72`) | `1.0` |
+| Hacker News | Algolia `search_by_date`, one query per term in `HN_QUERIES` | `LOOKBACK_HOURS` (default `24`) | `1 + points/100 + comments/200` |
+| GitHub | `api.github.com/search/repositories`, topics `GITHUB_TOPICS` | `LOOKBACK_HOURS` | `1 + stars/5000` |
+| OpenAlex (opt-in) | `api.openalex.org/works`, institutions `OPENALEX_INSTITUTIONS` × searches `OPENALEX_SEARCHES` | `OPENALEX_LOOKBACK_DAYS` (default `7`) | `1 + cited_by_count/50` |
+
+The report `reports/trending_ai_YYYY-MM-DD.md` opens with the **top terms**: 1- to 3-grams extracted from all item titles, stopword-filtered (generic words like *model*, *learning*, *ai*, *llm* are excluded so they cannot top the list every day), scored by the summed attention weight of the items using them, and required to occur in at least two distinct items so a single long title cannot invent a trend. Longer n-grams get a small boost, so "mixture of experts" outranks its own parts. Below that, each source lists its top items; items absent from `seen_trending_ai.json` are marked 🆕.
+
+Notes:
+
+### OpenAlex institution watch (opt-in)
+
+This is the recurring version of the OpenAlex notebook query: for each search term, one request asks for works published in the window by *any* of the watched institutions (default: Yale, Princeton, Stanford, MIT, Harvard, Oxford, ETH Zurich — configure with `OPENALEX_INSTITUTIONS`, format `Label=I12345678,…`). Besides feeding the trend ranking, the hits are exported to `reports/openalex_YYYY-MM-DD.csv` with exactly the notebook's columns (`institution_query`, `institution`, `institution_openalex_id`, `publication_date`, `title`, `type`, `openalex_id`, `doi`, `primary_location`, `cited_by_count`, `openalex_url`) — one row per watched institution per work, one report item per work.
+
+OpenAlex meters requests per caller and answers unidentified traffic from shared IPs (such as GitHub's runners) with `429 Insufficient budget`. The source therefore stays **off** until one of these is configured, and the run logs that it was skipped rather than failing:
+
+| Setting | Where | Purpose |
+| --- | --- | --- |
+| `OPENALEX_MAILTO` | repository variable | contact address for OpenAlex's polite pool |
+| `OPENALEX_API_KEY` | repository secret | paid/keyed access, sent as `api_key` |
+| `OPENALEX_INSTITUTIONS` | repository variable | override the watchlist |
+| `OPENALEX_SEARCHES` | repository variable | override the search terms (default `machine unlearning,large language model,artificial intelligence`) |
+
+### Notes
+
+- **arXiv gets its own, wider window.** Its `submittedDate` index lags announcement by roughly a day, so a 24h query there returns nothing at all. The 72h window keeps the paper corpus non-empty; the 🆕 markers still identify what is new since the previous run.
+- **Fail loudly**: if any source cannot be read, the run writes no report and exits non-zero. `TRENDING_STRICT=0` downgrades that to a green run whose report names the degraded sources.
+- The workflow passes the built-in `GITHUB_TOKEN` to raise the GitHub search rate limit; no extra permissions or secrets are needed for it.
+- The digest email is optional: the *Send digest email* step only runs when the SMTP secrets documented above exist. Without them the digest is simply the committed report.
+- `workflow_dispatch` accepts `lookback_hours` and a `dry_run` input that builds the report without committing or emailing.
+
 ## Lab Publications filter (temporarily disabled)
 
 `lab_pubs_filter.py` matched recent arXiv papers against a large list of lab *names* (no URLs) and produced only empty reports for weeks. Its schedule is therefore commented out in `.github/workflows/lab-pubs-filter.yml`; it can still be started manually via `workflow_dispatch` and re-enabled by uncommenting the `schedule` block.
@@ -95,11 +132,13 @@ Reference lists and citation counts come from the [Semantic Scholar Graph API](h
 - `arxiv_top_papers.py`: weekly arXiv AI top-papers ranking (references & citation-weighted references)
 - `test_arxiv_top_papers.py`: offline unit tests for the ranking script
 - `test_lw_filter.py`: offline unit tests for the LessWrong filter (transports, retry/blocking logic, report guards)
+- `trending_ai.py`: daily trending-AI-topics digest (arXiv + Hacker News + GitHub)
+- `test_trending_ai.py`: offline unit tests for the digest (parsing, term ranking, report rendering, seen-file handling)
 - `lab_pubs_filter.py`: arXiv lab-name filter (schedule temporarily disabled)
 - `requirements.txt`: Python dependencies for the workflows and local runs
 - `.github/workflows/`: scheduled workflows
 - `reports/`: generated Markdown reports
-- `seen.json`, `seen_labs.json`, `seen_anthropic_interpretability.json`, `seen_goodfire_research.json`: persisted state so nothing is reported twice
+- `seen.json`, `seen_labs.json`, `seen_trending_ai.json`, `seen_anthropic_interpretability.json`, `seen_goodfire_research.json`: persisted state so nothing is reported twice
 
 ## Configuration (LessWrong filter)
 
@@ -129,10 +168,10 @@ Every value below can be set as a repository variable (Settings → Secrets and 
 
 ## Tests
 
-`test_lw_filter.py` and `test_arxiv_top_papers.py` mock all HTTP, so they run offline and are executed by their workflows before the real job:
+`test_lw_filter.py`, `test_arxiv_top_papers.py` and `test_trending_ai.py` mock or avoid all HTTP, so they run offline and are executed by their workflows before the real job:
 
 ```bash
-python -m unittest test_lw_filter.py test_arxiv_top_papers.py
+python -m unittest test_lw_filter.py test_arxiv_top_papers.py test_trending_ai.py
 ```
 
 ## Running locally
@@ -142,6 +181,7 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 python lw_filter.py
+python trending_ai.py      # daily trending AI topics digest
 ```
 
 ## Notes
