@@ -1,0 +1,56 @@
+[
+  {
+    "author": "L Rudolf L",
+    "baseScore": 16,
+    "id": "yCTM73n5yqCDzJNB5",
+    "postedAt": "2026-09-19T18:34:47.727Z",
+    "section": "Frontpage",
+    "title": "Alignment & Succession: Toward a Future Painted by Human Wills",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/yCTM73n5yqCDzJNB5/alignment-and-succession-toward-a-future-painted-by-human",
+    "visualEvidence": [
+      "figure     Asher Brown Durand, Progress (The Advance of Civilization) (originally published on No Set Gauge on 2026-09-13) So far I have argued: The ideology of succession \u2014that hu",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/yCTM73n5yqCDzJNB5/bkbvytskl5rqa15lkeqj   Asher Brown Durand, Progress (The Advance of C"
+    ],
+    "visualizationScore": 4,
+    "wordCount": 5558
+  },
+  {
+    "author": "OscarGilg",
+    "baseScore": 21,
+    "id": "WbmAqtfkrCqRHxAGh",
+    "postedAt": "2026-09-19T14:27:52.564Z",
+    "section": "Frontpage",
+    "title": "CommentBench: Can Models Match Human Comments on AI Safety Posts?",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/WbmAqtfkrCqRHxAGh/commentbench-can-models-match-human-comments-on-ai-safety",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/c01813a1a0b05fae55c1167d5ad7f6cecbb7a618c232a1ccfbe2deff05498fda/oiwykl4rzpf4zyt4dd7u  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/68b382daaeeac3a658530e14c6a200d6b0ff3e0847a432a7bceb6da67623b43f/tz1k25xkf3db3qllmcpj  ",
+      "table     Setting Documents Target points AI comments Forum posts (LW/EAF) 96 1,559 20 comments / doc Research drafts (Google Docs) 21 410 20 comments / doc LW shortforms 23 294 20",
+      "figure      Filter human comments : We retain comments that a) make substantive points, and b) are feasible for models to make without additional context Split comments into points",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1789771752/lexical_client_uploads/z5mmvp6rkgdebstxulsb.png   "
+    ],
+    "visualizationScore": 21,
+    "wordCount": 2473
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 31,
+    "id": "ggFx5Wb3Hi4pJsueK",
+    "postedAt": "2026-09-19T13:20:53.255Z",
+    "section": "Personal/All",
+    "title": "Anthropic Looks At Some Of Its Alignment Problems",
+    "topicScore": 11,
+    "url": "https://www.lesswrong.com/posts/ggFx5Wb3Hi4pJsueK/anthropic-looks-at-some-of-its-alignment-problems",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ggFx5Wb3Hi4pJsueK/g9vlilhntskgnjeuiezh   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 91,
+    "wordCount": 5810
+  }
+]
