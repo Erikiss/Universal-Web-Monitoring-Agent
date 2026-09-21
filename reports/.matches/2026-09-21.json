@@ -1,0 +1,73 @@
+[
+  {
+    "author": "Vaughn Papenhausen",
+    "baseScore": 17,
+    "id": "dww6cpbo2XoKbsxyw",
+    "postedAt": "2026-09-21T01:05:42.304Z",
+    "section": "Frontpage",
+    "title": "Where Do Chatbots Come From? What I Wish Everyone Knew About AI in 2026",
+    "topicScore": 25,
+    "url": "https://www.lesswrong.com/posts/dww6cpbo2XoKbsxyw/where-do-chatbots-come-from-what-i-wish-everyone-knew-about",
+    "visualEvidence": [
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1789951064/lexical_client_uploads/fniuyyzzdxe6yne4nryn.png  LLMs are a type of neural network . The really ba",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1789951091/lexical_client_uploads/lxknbneqth5jxomdm0na.png  A second example: models can output simple code i"
+    ],
+    "visualizationScore": 2,
+    "wordCount": 5381
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 21,
+    "id": "vAuZB2tnvpvpHupNi",
+    "postedAt": "2026-09-20T19:50:51.415Z",
+    "section": "Personal/All",
+    "title": "Better Call Sol Or Better Yet Claude or Astra",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/vAuZB2tnvpvpHupNi/better-call-sol-or-better-yet-claude-or-astra",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/vAuZB2tnvpvpHupNi/evlzws0y2ec6sscytwdr   "
+    ],
+    "visualizationScore": 7,
+    "wordCount": 4640
+  },
+  {
+    "author": "Xenomirant",
+    "baseScore": 12,
+    "id": "8AYQrvD4HEh8MEjgR",
+    "postedAt": "2026-09-20T17:20:07.982Z",
+    "section": "Frontpage",
+    "title": "Evaluating task vectors,  unlearning and inoculation",
+    "topicScore": 9,
+    "url": "https://www.lesswrong.com/posts/8AYQrvD4HEh8MEjgR/evaluating-task-vectors-unlearning-and-inoculation",
+    "visualEvidence": [
+      "figure     Fig. 1 Visualizing tradeoffs between different objectives. Dataset: FR-Caps , IA-r32 While the first dataset intentionally uses easily separable traits, the second, alth",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1789755300/lexical_client_uploads/orygc1wd4cxf12mkilxe.png   Fig. 1 Visualizing tradeoffs between different o",
+      "figure     Fig. 2 Performance drops from removing the conditionalization adapter. (a) Drops in target/desired trait expression from inperfect conditionalization and separation. (b)",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1789760323/lexical_client_uploads/eglzwj1oynf2tzaddlif.png   Fig. 2 Performance drops from removing the condi",
+      "figure     Fig. 3 Susceptibility of inoculation approaches to hidden backdoors (prompts are taken from Riche et al., 2026 ). Learned approaches display much higher robustness overa"
+    ],
+    "visualizationScore": 36,
+    "wordCount": 3061
+  },
+  {
+    "author": "Xenomirant",
+    "baseScore": 11,
+    "id": "GnG2ono8vdoJvyF9f",
+    "postedAt": "2026-09-20T15:59:12.188Z",
+    "section": "Frontpage",
+    "title": "Reflections on unlearning and inoculation",
+    "topicScore": 6,
+    "url": "https://www.lesswrong.com/posts/GnG2ono8vdoJvyF9f/reflections-on-unlearning-and-inoculation",
+    "visualEvidence": [
+      "table     Sampling distribution Context (ICL), Weights, Human-specified Any prompt Idk, if you have a good prior, sample the right weights and solve alignment finally Learnt Prefix",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1789857554/lexical_client_uploads/ihoqad6pgjukuq2x5etk.png  Initially, inoculation prompting appeared as a to",
+      "figure     Fig. 1 An approximate picture of the inoculation adapters' ( Riche et al., 2026 ) training process. Inoculation adapters ( Riche et al., 2026 ) build on the same idea, b",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1788650493/lexical_client_uploads/syutllwonwar6tlbacbx.png   Fig. 1 An approximate picture of the inoculation",
+      "figure     Fig.2 Task arithmetic in the weight space. Adapted from Ilharco et al. (2023) An approach resembles similar research performed regarding task vectors or task arithmetic "
+    ],
+    "visualizationScore": 17,
+    "wordCount": 3434
+  }
+]
