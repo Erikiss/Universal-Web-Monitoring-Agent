@@ -1,0 +1,73 @@
+[
+  {
+    "author": "owencb",
+    "baseScore": 9,
+    "id": "LcQ9x72eNji2gpS9b",
+    "postedAt": "2026-09-23T12:07:33.598Z",
+    "section": "Frontpage",
+    "title": "Why I'm scared of RL",
+    "topicScore": 23,
+    "url": "https://www.lesswrong.com/posts/LcQ9x72eNji2gpS9b/why-i-m-scared-of-rl",
+    "visualEvidence": [
+      "figure      Coordinate to do less RL, and pursue other paradigms more! Try to make the RL we do do better, so that it\u2019s teaching better lessons to the systems \u2014 a bit like we take ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/LcQ9x72eNji2gpS9b/pehgiirymfvidqhntfwh   "
+    ],
+    "visualizationScore": 4,
+    "wordCount": 2899
+  },
+  {
+    "author": "camilablank",
+    "baseScore": 4,
+    "id": "Zeg2JztbdhguL48uH",
+    "postedAt": "2026-09-23T06:58:59.212Z",
+    "section": "Frontpage",
+    "title": "WorkspaceBench: Evaluating Interpretability Methods for the Global Workspace",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/Zeg2JztbdhguL48uH/workspacebench-evaluating-interpretability-methods-for-the",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/bcc083fe7303f8a84f1e5aaab54dbcc11a8e92f5ea9387f351396348357e4864/hd3qcbxfrdsqpcgkeml6  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/db453d9667be6aa41fc1b8e9c24d6f6cfd676c6aeec4a77aae10286e63397bc9/tgk42glmw5q8x1putod5  ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/Zeg2JztbdhguL48uH/a3ba4aab433f3cee22b8361e9795c49f4fd488e0131c7b8944159f0913628338/wkk6",
+      "figure       "
+    ],
+    "visualizationScore": 10,
+    "wordCount": 4743
+  },
+  {
+    "author": "W Bradley Knox",
+    "baseScore": 34,
+    "id": "HsijShdRdAg5sPKnF",
+    "postedAt": "2026-09-23T00:27:16.684Z",
+    "section": "Frontpage",
+    "title": "An unexamined cause of the OpenAI Hugging Face hacking incident: \nits binary performance metric",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/HsijShdRdAg5sPKnF/an-unexamined-cause-of-the-openai-hugging-face-hacking",
+    "visualEvidence": [
+      "img fig2_safety_attention_chain(1).png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790111971/lexical_client_uploads/ybpe5vaig7dxcwhcf320.png   ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/HsijShdRdAg5sPKnF/a351bf9f9e4762a98ac6ed9821efe9cc2e257cc9a39b02708e77c8d8112ad392/oxlj",
+      "img fig3_lottery_vs_certain(3).png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790112602/lexical_client_uploads/t8qye7bsbs4jejk15wqb.png   "
+    ],
+    "visualizationScore": 3,
+    "wordCount": 5801
+  },
+  {
+    "author": "Edward Cant",
+    "baseScore": 17,
+    "id": "CPJ2kYRKo77ucZEEG",
+    "postedAt": "2026-09-22T13:04:11.534Z",
+    "section": "Frontpage",
+    "title": "Controllable-CoT leads to covert reasoning capabilities",
+    "topicScore": 13,
+    "url": "https://www.lesswrong.com/posts/CPJ2kYRKo77ucZEEG/controllable-cot-leads-to-covert-reasoning-capabilities",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/CPJ2kYRKo77ucZEEG/bf22455f9f92ce4af8a29101896cb3a9cfcdfdf653707881856d8f0ad3d3f9b7/utmr",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/a8baa39d860c07bdcfca6923180e1951e31818958786bf6a88493c52e56de6c5/wzskrkojqsdf1upxfmpc  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/7760e4ce063f28e6017071800211f5dbd52c124312934d4c709055bff58f6165/vpkorxvr3lv03c8sbo4s  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/718732a244433a48b6026379ac692d3aa89e3cc230e8836bce9c4366b7b77d99/zx86sf4orbxeh4vnwwdr  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/86a101c665f39388fdff82c2ea991f6e94095841d2ab5cac380dfc18a67fcd4a/yfhou9ayfp56voy5bqyv  "
+    ],
+    "visualizationScore": 16,
+    "wordCount": 3474
+  }
+]
