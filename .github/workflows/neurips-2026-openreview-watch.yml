@@ -1,0 +1,102 @@
+name: NeurIPS 2026 OpenReview watch
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Every five minutes, offset from the crowded start of the hour.
+    # GitHub scheduling is best-effort, NOT a maximum notification latency.
+    - cron: '2-57/5 * * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/neurips-2026-openreview-watch.yml'
+      - 'neurips_openreview_watch.py'
+      - 'test_neurips_openreview_watch.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: neurips-2026-openreview-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      # Use latest main even if another queued run already committed state.
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Verify existing mail-secret configuration without sending
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+        run: |
+          python - <<'PY'
+          import os
+          names = ('SMTP_HOST', 'SMTP_USERNAME', 'SMTP_PASSWORD', 'ALERT_EMAIL_TO')
+          missing = [name for name in names if not os.getenv(name)]
+          if missing:
+              raise SystemExit('Missing existing repository secrets: ' + ', '.join(missing))
+          print('Existing SMTP/Pushover-mail secret names are configured. No test email sent.')
+          PY
+      - name: Install watcher dependencies
+        run: pip install -r requirements.txt playwright==1.55.0
+      - name: Cache Chromium
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-neurips-openreview-playwright-1.55.0
+      - name: Install Chromium and system dependencies
+        run: python -m playwright install --with-deps chromium
+      - name: Offline regression tests (no email)
+        run: python -m unittest test_neurips_openreview_watch -v
+      - name: Check rendered public page and public OpenReview API
+        id: watch
+        run: >
+          python neurips_openreview_watch.py
+          --alert-file "$RUNNER_TEMP/neurips-openreview-alert.txt"
+      - name: Send change alert through existing Pushover-mail route
+        if: steps.watch.outputs.alert_count > 0
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
+          ALERT_SUBJECT: ${{ steps.watch.outputs.subject }}
+        run: >
+          python send_alert.py
+          --subject "$ALERT_SUBJECT"
+          --body-file "$RUNNER_TEMP/neurips-openreview-alert.txt"
+      # Only persist after SMTP success. Failed delivery is retried next run.
+      - name: Persist comparison state and last change/error report
+        run: |
+          git config user.name "page-watch-bot"
+          git config user.email "page-watch-bot@users.noreply.github.com"
+          for file in seen_neurips_2026_openreview.json reports/neurips_2026_openreview_latest.md; do
+            if [ -f "$file" ]; then git add -- "$file"; fi
+          done
+          if git diff --staged --quiet; then exit 0; fi
+          git commit -m "Update NeurIPS 2026 public OpenReview watch state"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            git pull --rebase origin main
+          done
+          git push origin HEAD:main
+      - name: Fail visibly on incomplete source checks
+        if: steps.watch.outputs.error_count > 0
+        run: |
+          echo 'Some sources failed. Last good snapshots were preserved. See the job summary.'
+          exit 1
