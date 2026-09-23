@@ -1,84 +1,127 @@
 # Music-JEPA release watch
 
 Daily monitoring for **Music-JEPA: Learning a World Model of Sound from Action**
-(arXiv **2607.22000**). This is an independent watcher; the existing Goodfire and
-Anthropic workflows, their state, schedules, and `send_alert.py` are unchanged.
+(arXiv **2607.22000**). The Goodfire and Anthropic monitors, their schedules/state,
+and the shared `send_alert.py` are unchanged.
 
-## Schedule and notifications
+## Notifications: separate origins, separate cadences
 
-Workflow: `.github/workflows/music-jepa-release-watch.yml`.
-Runs daily at **07:37 UTC** (09:37 CEST / 08:37 CET); GitHub Actions may start late.
-It also runs after changes to its implementation/workflow on `main`, and supports
-manual **Run workflow** with `dry_run` and `test_email` switches.
+The workflow `.github/workflows/music-jepa-release-watch.yml` runs daily at
+**07:37 UTC** (09:37 CEST / 08:37 CET). GitHub Actions can start late.
+It uses `music_jepa_delivery.py`; `music_jepa_watch.py` remains the collector.
+Manual `dry_run` and `test_email` inputs are retained. Implementation changes on
+`main` also trigger a run, without bypassing the weekly delivery gate.
 
-Alerts reuse `send_alert.py` and the existing repository secrets:
-`SMTP_HOST`, `SMTP_PORT`, `SMTP_USERNAME`, `SMTP_PASSWORD`, `ALERT_EMAIL_TO`,
-`ALERT_EMAIL_FROM`. No new credentials are required. The Actions-provided
-`GITHUB_TOKEN` is used only for GitHub API requests. No addresses or credentials
-are stored in code, reports, or committed state.
+| Category | What it means | Notification |
+| --- | --- | --- |
+| **A. KLARE TREFFER / DIREKTE QUELLENÄNDERUNG** | A new arXiv version, changed paper resource links, changed official project HTML, or changed files in the official demo website repository. These are directly observed source changes, NOT generic search matches. | In the daily run when a change is detected. Any new paper version or page change is sufficient; no release interpretation is required. |
+| **B. AUTOREN-/PROJEKTHINWEIS** | A relevant repository in an observed author account, or a resource linked from a monitored paper/project/author source. Origin is printed explicitly. This is NOT automatically a confirmed official release. | In the daily run, in a separate section from A. |
+| **D. WOCHENSAMMLUNG: DRITTANBIETER** | Unconfirmed GitHub or Hugging Face search/discovery matches. A related title/README, code filename or checkpoint filename does not establish official authorship. | Collected daily but emailed separately, no more often than once per seven days, and only when there are unreported findings/changes. |
+| **C. TECHNISCHE STÖRUNG** | A source could not be checked. This is neither a release nor a research finding. | Separate technical section/subject; continuous outages are not emailed every day. |
 
-An email contains all new signals from that run, their links, and old/new values.
-No change means no email. The first successful page fetch creates a baseline,
-not a spurious "page changed" alert. A paper version newer than the known v1,
-new implementation candidates, or model candidates can alert on the first run.
-The watcher continues after an alert, including after code appears, so a later
-weights release is not missed.
+Daily and weekly messages have **different subjects and bodies**:
+
+```text
+[Web-Monitor] Music-JEPA | DIREKTE QUELLENÄNDERUNG (1)
+[Web-Monitor] Music-JEPA | AUTOREN-/PROJEKTHINWEIS (1)
+[Web-Monitor] Music-JEPA | WOCHENSAMMLUNG: DRITTANBIETER (3)
+```
+
+The numbers above are illustrative. A daily email never embeds third-party
+findings, even if a paper change and third-party discoveries occur together.
+When both a daily alert and a weekly digest are due, they are separate emails.
+The report displays the status of the paper, project page and demo source
+separately: changed, no new change detected, or not completely checked.
+
+Mail content describes **what changed** and **where the hint came from**, rather
+than dumping long `code_files`, hashes or empty JSON arrays. Code-file counts,
+a few example filenames, checkpoint hints, access gating and relevant links
+remain visible. A clear source change still does not prove code AND weights
+have been released.
+
+## Weekly queue and migration
+
+`seen_music_jepa.json` retains all previous observations and adds a `delivery`
+section with `pending`, `categories`, `next_digest_at`, and `last_digest_at`.
+Existing unchanged hits—including the four initial third-party notifications—
+are NOT reannounced merely because this delivery format was introduced.
+
+New third-party events are persisted every day, even when no email is sent.
+Changes are grouped by repository/model, with first/last collection timestamps.
+Unchanged snapshots are not added again. The first weekly digest is eligible
+seven days after delivery-state initialization. Subsequent digests are eligible
+at least seven days after the previous one, at the next actual run. This is a
+rolling seven-day gate, not a separate fixed-weekday cron. A quiet interval
+produces no empty email; a missed run does not discard the queue.
+
+A direct paper/page change always bypasses the third-party queue. If a previously
+unconfirmed resource becomes linked from a monitored primary/author source,
+it can move to the daily author/project category without waiting for a digest;
+its queued third-party entry is removed. Links appearing only in third-party
+READMEs never gain primary provenance merely by being discovered.
+
+The monitor continues after an alert, so code appearing before weights does not
+stop later monitoring. The first successful fetch of a new page establishes a
+baseline, not a false page-change alarm.
 
 ## Detection paths
 
-| Source | Trigger / discovery method |
+| Source | Checks |
 | --- | --- |
-| arXiv abstract page, with Atom API fallback | Any version after the stored version; resource-link changes are also reported. **No analysis of why the paper changed is required.** A stale older response cannot roll the baseline back. |
-| Official project page | Any change to the fetched HTML, including scripts, styles and media URLs (only CRLF vs LF is ignored). **No release classification is required.** |
-| Project source repository | Changes to its Git tree, including media/asset-only changes even when the HTML URL stays unchanged. |
-| Author GitHub accounts | Enumerate public repositories owned by `ZZWaang` and `kunfang98927`, including existing repositories. Read new/changed READMEs and repository metadata for the paper ID, title or Music-JEPA spelling variants. An arbitrary repository name is therefore supported. |
-| Global GitHub search | Search repository names, descriptions and READMEs for the paper ID, Music-JEPA spellings and full title; also follow repository links from the paper/project page and retain already-discovered candidates. |
-| Candidate GitHub repositories | Inspect file trees, code-file hints, checkpoint-file hints, releases/assets and resource links. The existing HTML/audio demo alone is **not** labeled a code release. |
-| Hugging Face | Search name variants and the `arxiv:2607.22000` tag; follow model links from the project context; inspect model file listings, revision and gating status. |
+| arXiv abstract page / Atom fallback | Version progression and resource-link changes. Stale older responses cannot roll back the version baseline. |
+| Official project page | Changes to fetched HTML, including scripts, styles and media URLs; only CRLF vs LF is ignored. |
+| Official demo repository | Git-tree changes, including media/asset-only changes. The existing HTML/audio demo alone is not a code release. |
+| Author accounts | Public repositories of `ZZWaang` and `kunfang98927`, including existing repositories and arbitrary future names. Read changed metadata/READMEs for paper ID/title/name matches. |
+| Global GitHub search | Paper ID, title and name variants; follow project links and retain discovered candidates. Inspect file trees, releases/assets and resource links. |
+| Hugging Face | Name variants, arXiv tag and discovered model links; inspect file listings, revisions and gating. Unknown provenance stays in the third-party digest. |
 
-Third-party hits are explicitly marked **unconfirmed**. A filename or link is a
-hint, not proof of official authorship, complete training/inference code, usable
-weights, an open license, or unrestricted downloads. No discovered code is
-executed and no weights are downloaded. Gated models are not described as
-freely downloadable. Unrelated author repositories do not alert merely because
-they are new. Searches can miss resources with no paper/name/author/link clues.
+No discovered code is executed and no weights are downloaded. Filenames or
+links do not prove completeness, usable weights, an open license or unrestricted
+downloads. Gated models are not described as freely downloadable. Searches can
+miss resources lacking all name/paper/author/link clues.
 
-Official starting points:
+Starting points:
 - https://arxiv.org/abs/2607.22000
 - https://zzwaang.github.io/music-jepa-demo/
 - https://github.com/ZZWaang/music-jepa-demo
 
-## State, errors and delivery safety
+## Delivery safety and errors
 
-`seen_music_jepa.json` stores per-source snapshots, a README scan cache and error
-state. `reports/music_jepa_latest.md` contains the latest report; previous reports
-remain available in Git history. Each source establishes its own baseline only
-after a successful fetch. An HTTP/API/parser failure never replaces an existing
-snapshot with an empty result and does not prevent independent checks.
+Email uses the existing `send_alert.py` and repository secrets: `SMTP_HOST`,
+`SMTP_PORT`, `SMTP_USERNAME`, `SMTP_PASSWORD`, `ALERT_EMAIL_TO`,
+`ALERT_EMAIL_FROM`. No new credentials or recipients are introduced.
+The Actions-provided `GITHUB_TOKEN` is used for GitHub API requests only.
 
-A newly failing source produces a **technical-error** notification (not a release
-claim). A continuous outage is not emailed every day; after recovery a new
-outage may notify again. Partial failures remain visible as a failed workflow
-**after** sending detected signals and persisting successful checks. Incomplete
-search results, truncated Git trees and pagination limits are errors, not clean
-"nothing found" results.
+The workflow sends both due emails **before pushing state**. If SMTP fails,
+new snapshots and a cleared digest queue are not committed, allowing retry.
+As before, a successful email followed by a failed Git push (or failure of the
+second email) can cause a duplicate on retry. Delivery is at-least-once, not
+exactly-once; the seven-day gate prevents ordinary repeated digest sends, not
+all possible duplicates caused by delivery/persistence failures.
 
-The workflow sends email **before committing state**. If SMTP fails, the new
-baseline is not pushed and the notification is retried on the next run. As with
-the other watchers, a successful email followed by a Git push failure can cause
-a duplicate on retry; delivery is at-least-once, not exactly-once. Commits touch
-only this watcher's state/report; rebase retries handle other watchers' commits.
+Each source establishes a baseline only after successful fetching. Failed or
+incomplete results do not replace valid snapshots with empty data. Independent
+checks continue. Partial errors mark the workflow failed after notifications
+and successful state persistence. Continuous errors remain visible in the
+report without daily repeat mail.
 
-## Local tests / dry run
+`reports/music_jepa_latest.md` is the latest categorized report. Earlier reports
+remain in Git history. Commits from the workflow touch only its state/report;
+rebase retries accommodate other watchers' commits.
+
+## Offline tests and dry run
 
 ```bash
 pip install -r requirements.txt
-python -m unittest test_music_jepa_watch.py -v
-python music_jepa_watch.py --dry-run --alert-file /tmp/music-jepa-alert.txt
+python -m unittest discover -p 'test_music_jepa*.py' -v
+python music_jepa_delivery.py --dry-run \
+  --alert-file /tmp/music-jepa-daily.txt \
+  --weekly-alert-file /tmp/music-jepa-weekly.txt
 ```
 
-The regression tests are offline, mock HTTP, and never send mail. `--dry-run`
-leaves state/report files untouched; the optional temporary alert output and
-GitHub job summary still show what would be reported. Do not delete the state
-file to silence an alert: this resets the baselines and may re-announce existing
-candidates.
+Tests mock network access and never send mail. They cover direct/daily signals,
+author provenance, third-party isolation, the seven-day boundary, empty weeks,
+persisted queues, deduplication, migration, missed runs, promotion, dry runs and
+independent simultaneous daily/weekly deliveries. `--dry-run` leaves state and
+report files untouched; temporary mail previews and the job summary may be
+written. Do not delete state to silence a notification: it resets baselines.

@@ -15,13 +15,13 @@ on:
         type: boolean
   schedule:
     # Daily 07:37 UTC = 09:37 CEST / 08:37 CET; Actions may start late.
-    # Staggered away from the existing Goodfire/Anthropic runs.
+    # The collector runs daily; third-party emails have a persisted 7-day gate.
     - cron: '37 7 * * *'
   push:
     branches: [main]
     paths:
       - '.github/workflows/music-jepa-release-watch.yml'
-      - 'music_jepa_watch.py'
+      - 'music_jepa_*.py'
       - 'test_music_jepa*.py'
 
 permissions:
@@ -61,10 +61,10 @@ jobs:
           ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
           ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
         run: |
-          printf 'Test des Music-JEPA-Monitors. Die vorhandene SMTP-Konfiguration funktioniert.\n' > "$RUNNER_TEMP/music-jepa-test.txt"
+          printf 'Test des Music-JEPA-Monitors. Tagesalarme und Drittanbieter-Wochensammlung verwenden diese SMTP-Konfiguration.\n' > "$RUNNER_TEMP/music-jepa-test.txt"
           python send_alert.py --subject "[Web-Monitor] Music-JEPA: Test" --body-file "$RUNNER_TEMP/music-jepa-test.txt"
 
-      - name: Run watcher
+      - name: Run watcher and prepare separate deliveries
         id: watch
         if: inputs.test_email != true
         env:
@@ -75,10 +75,12 @@ jobs:
           if [ "$DRY_RUN" = "true" ]; then
             args+=(--dry-run)
           fi
-          python music_jepa_watch.py "${args[@]}" --alert-file "$RUNNER_TEMP/music-jepa-alert.txt"
+          python music_jepa_delivery.py "${args[@]}" \
+            --alert-file "$RUNNER_TEMP/music-jepa-daily.txt" \
+            --weekly-alert-file "$RUNNER_TEMP/music-jepa-weekly.txt"
 
-      - name: Send alert email
-        if: steps.watch.outputs.new_count > 0 && inputs.dry_run != true
+      - name: Send daily source or author alert
+        if: steps.watch.outputs.daily_count > 0 && inputs.dry_run != true
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
@@ -86,13 +88,29 @@ jobs:
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
           ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
-          ALERT_COUNT: ${{ steps.watch.outputs.new_count }}
+          ALERT_SUBJECT: ${{ steps.watch.outputs.daily_subject }}
         run: >
           python send_alert.py
-          --subject "[Web-Monitor] Music-JEPA: ${ALERT_COUNT} neue Hinweise / Statusmeldungen"
-          --body-file "$RUNNER_TEMP/music-jepa-alert.txt"
+          --subject "$ALERT_SUBJECT"
+          --body-file "$RUNNER_TEMP/music-jepa-daily.txt"
 
-      # Deliberately after SMTP: failed delivery must not consume a signal.
+      - name: Send weekly third-party digest only when due and nonempty
+        if: steps.watch.outputs.weekly_count > 0 && inputs.dry_run != true
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
+          ALERT_SUBJECT: ${{ steps.watch.outputs.weekly_subject }}
+        run: >
+          python send_alert.py
+          --subject "$ALERT_SUBJECT"
+          --body-file "$RUNNER_TEMP/music-jepa-weekly.txt"
+
+      # After BOTH SMTP steps. An unsent alert/digest must not be consumed.
+      # On quiet days this still saves queued third-party discoveries.
       - name: Commit state and report
         if: inputs.dry_run != true && inputs.test_email != true
         run: |
