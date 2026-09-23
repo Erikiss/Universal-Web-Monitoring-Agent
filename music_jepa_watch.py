@@ -31,12 +31,14 @@ GH = "https://api.github.com"
 HF = "https://huggingface.co"
 SELF_REPO = "Erikiss/Universal-Web-Monitoring-Agent"
 QUERIES = (
-    f'"{PAPER}" in:readme',
-    '"Music-JEPA" in:name,description,readme',
-    '"music_jepa" in:name,description,readme',
-    '"Learning a World Model of Sound from Action" in:readme',
+    f'"{PAPER}" in:readme fork:false',
+    '"Music-JEPA" in:name,description,readme fork:false',
+    '"music_jepa" in:name,description,readme fork:false',
+    '"Learning a World Model of Sound from Action" in:readme fork:false',
 )
 RELATED = re.compile(r"2607\.22000|music[-_\s]*jepa|learning a world model of sound from action", re.I)
+EXACT_PAPER = re.compile(r"2607\.22000|learning a world model of sound from action", re.I)
+CATALOGUE = re.compile(r"awesome|arxiv[-_]?daily|paper[-_]?list|reading[-_]?list|newsletter|tracker", re.I)
 WEIGHT_EXT = (".safetensors", ".ckpt", ".pth", ".pt", ".bin", ".onnx", ".h5", ".msgpack")
 CODE_EXT = (".py", ".ipynb", ".cu", ".cpp", ".jl")
 
@@ -200,7 +202,7 @@ class Watcher:
 
     def observe(self, key: str, value: dict, title: str, url: str, initial: bool = False):
         old = self.state["observations"].get(key)
-        if (old is None and initial) or (old is not None and old != value):
+        if (old is None and initial) or (old is not None and digest(old) != digest(value)):
             fields = sorted(k for k in value if old is None or old.get(k) != value[k])
             detail = []
             for k in fields:
@@ -232,11 +234,14 @@ class Watcher:
         name = meta["full_name"]
         if name.lower() in {SELF_REPO.lower(), os.getenv("GITHUB_REPOSITORY", "").lower()}:
             return
+        author = name.split("/")[0].lower() in {a.lower() for a in AUTHORS}
+        if not author and not linked and CATALOGUE.search(meta.get("name", "")):
+            return
         api = f"{GH}/repos/{name}"
         url = f"https://github.com/{name}"
         stamp = digest([meta.get(k) for k in ("pushed_at", "description", "name", "homepage", "default_branch")])
         cached = self.state["repo_cache"].get(name)
-        if not cached or cached.get("stamp") != stamp:
+        if not cached or cached.get("stamp") != stamp or "exact_paper" not in cached:
             readme = self.client.json(f"{api}/readme", missing_ok=True)
             text = ""
             if readme:
@@ -244,10 +249,14 @@ class Watcher:
                     raise FetchError(f"Unsupported README encoding: {name}")
                 text = base64.b64decode(readme["content"]).decode("utf-8", errors="replace")
             context = " ".join(str(meta.get(k) or "") for k in ("name", "description", "homepage")) + " " + text
-            cached = {"stamp": stamp, "related": bool(RELATED.search(context)), "links": links_in(text, url)}
+            cached = {"stamp": stamp, "related": bool(RELATED.search(context)), "exact_paper": bool(EXACT_PAPER.search(context)), "links": links_in(text, url)}
             self.state["repo_cache"][name] = cached
         known = "repo:" + name in self.state["observations"]
         if not (cached["related"] or linked or known or name.lower() == PROJECT_REPO.lower()):
+            return
+        # Similar names are shared by other papers. Outside author/official
+        # links, require this exact paper, not merely a Music-JEPA name match.
+        if not (author or linked or known or cached["exact_paper"]):
             return
         self.resource_links.update(cached["links"])
         files = []
@@ -269,7 +278,6 @@ class Watcher:
         weights = {x["path"]: x["sha"] for x in files if x["path"].lower().endswith(WEIGHT_EXT)}
         data = {"code_files": code, "weight_file_hints": weights,
                 "resource_links": cached["links"], "releases": sorted(release_info, key=lambda r: r["url"])}
-        author = name.split("/")[0].lower() in {a.lower() for a in AUTHORS}
         # Third-party link lists with no implementation are not release candidates.
         initial = bool(code or weights or release_info) or ((author or linked) and not is_demo)
         label = "Autoren-/Projekt-Repository" if author or linked else "Drittanbieter-Treffer, Zuordnung unbestaetigt"
