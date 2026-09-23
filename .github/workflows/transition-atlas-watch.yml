@@ -1,0 +1,93 @@
+name: Transition-Atlas release watch
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Check sources without sending email or committing state'
+        required: false
+        default: false
+        type: boolean
+  schedule:
+    # Daily 07:47 UTC = 09:47 CEST / 08:47 CET; GitHub may start late.
+    - cron: '47 7 * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/transition-atlas-watch.yml'
+      - 'transition_atlas_watch.py'
+      - 'transition_atlas_sources.json'
+      - 'test_transition_atlas_watch.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: transition-atlas-release-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install existing dependencies
+        run: pip install -r requirements.txt
+      - name: Offline regression tests
+        run: python -m unittest test_transition_atlas_watch -v
+      - name: Check arXiv, verified author GitHub activity and HPI links
+        id: watch
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          args=()
+          if [ "$DRY_RUN" = "true" ]; then
+            args+=(--dry-run)
+          fi
+          python transition_atlas_watch.py "${args[@]}" \
+            --alert-file "$RUNNER_TEMP/transition-atlas-alert.txt"
+      - name: Send new hints through existing Pushover email route
+        if: steps.watch.outputs.alert_count > 0 && inputs.dry_run != true
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
+          ALERT_SUBJECT: ${{ steps.watch.outputs.subject }}
+        run: >
+          python send_alert.py
+          --subject "$ALERT_SUBJECT"
+          --body-file "$RUNNER_TEMP/transition-atlas-alert.txt"
+      # Do not consume unsent alerts: commit state only AFTER successful SMTP.
+      - name: Commit comparison state and latest report
+        if: inputs.dry_run != true
+        run: |
+          git config user.name "page-watch-bot"
+          git config user.email "page-watch-bot@users.noreply.github.com"
+          git add -- seen_transition_atlas.json reports/transition_atlas_latest.md
+          if git diff --staged --quiet; then
+            exit 0
+          fi
+          git commit -m "Update Transition-Atlas watch state and report"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            git pull --rebase origin main
+          done
+          git push origin HEAD:main
+      - name: Mark incomplete checks as failed
+        if: steps.watch.outputs.error_count > 0
+        run: |
+          echo "Some sources were not checked successfully. See the report/job summary. This is not an all-clear."
+          exit 1
