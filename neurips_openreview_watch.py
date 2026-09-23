@@ -82,6 +82,9 @@ def fetch_notes(accepted: bool) -> dict:
             "User-Agent": "Universal-Web-Monitoring-Agent/NeurIPS2026-public-watch",
             "Accept": "application/json",
         })
+        if response.status_code == 403:
+            detail = " ".join(response.text.split())[:500]
+            raise RuntimeError(f"OpenReview public API denied this request (HTTP 403): {detail}")
         response.raise_for_status()
         return notes_snapshot(response.json(), accepted)
 
@@ -112,16 +115,20 @@ def fetch_page() -> dict:
             if response is None or response.status >= 400:
                 raise RuntimeError(f"OpenReview page HTTP {response.status if response else 'unknown'}")
             # A plain HTML fetch only sees 'Loading'. Wait for the actual venue UI.
-            page.wait_for_function(r"""() => {
-                const r = document.querySelector('main, #content') || document.body;
-                const t = r.innerText;
-                return /NeurIPS\s+2026/.test(t) && (
-                    /No recent activity to display/i.test(t) ||
-                    r.querySelector('a[href*="/forum?id="]') ||
-                    Array.from(r.querySelectorAll('a,button,[role=tab]')).some(x =>
-                        /^(accepted papers?|posters?|orals?|spotlights?|submissions?)(\s*\([\d,]+\))?$/i.test(x.innerText.trim()))
-                );
-            }""", timeout=60000)
+            try:
+                page.wait_for_function(r"""() => {
+                    const r = document.querySelector('main, #content') || document.body;
+                    const t = r.innerText;
+                    return /NeurIPS\s+2026/.test(t) && (
+                        /No recent activity to display/i.test(t) ||
+                        r.querySelector('a[href*="/forum?id="]') ||
+                        Array.from(r.querySelectorAll('a,button,[role=tab]')).some(x =>
+                            /^(accepted papers?|posters?|orals?|spotlights?|submissions?)(\s*\([\d,]+\))?$/i.test(x.innerText.trim()))
+                    );
+                }""", timeout=60000)
+            except Exception as exc:
+                visible = normalize_text(page.locator("body").inner_text(timeout=5000))[:1500]
+                raise RuntimeError(f"Venue UI not ready; visible public page: {visible}") from exc
             # Require stable rendered text; don't fingerprint a half-loaded page.
             previous, stable_runs, snapshot = None, 0, None
             for _ in range(20):
@@ -199,9 +206,10 @@ def main(argv: list[str] | None = None) -> None:
     # Independent checks: a browser outage must not hide a public API release.
     for name, fetcher in (("accepted", lambda: fetch_notes(True)), ("activity", lambda: fetch_notes(False)), ("page", fetch_page)):
         try:
+            print(f"Checking public source: {name}", flush=True)
             current[name] = fetcher()
         except Exception as exc:
-            errors.append(f"{name}: {type(exc).__name__}: {str(exc)[:350]}")
+            errors.append(f"{name}: {type(exc).__name__}: {str(exc)[:1600]}")
     reasons, merged = compare(state["sources"], current)
     subject, message = render_message(current, reasons, errors, now)
     lines = ["# NeurIPS 2026 — public OpenReview watch", "", f"Checked: {now}", PAGE_URL, ""]
