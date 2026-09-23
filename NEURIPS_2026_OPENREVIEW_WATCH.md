@@ -1,15 +1,42 @@
 # NeurIPS 2026 — public OpenReview change watch
 
+## Current status: PAUSED, not operational
+
+The code and existing Pushover-mail integration are prepared, but the two live
+GitHub Actions tests on **24 September 2026 CEST** could not retrieve any of the
+three monitored public sources. Both API queries returned **HTTP 403,
+`ChallengeRequiredError`**. Chromium reached **"Verifying your browser"**, not
+the conference page. OpenReview's page offers normal account sign-in as an
+alternative; no authenticated access route has been configured or tested here.
+
+The 15 offline regression tests passed, and the runner confirmed that the
+required existing mail secrets are present. That is NOT an end-to-end delivery
+test. **No alert email was sent and no successful baseline was established.**
+
+Scheduled and push-triggered runs are therefore commented out in the workflow
+to avoid repeated failed runs. `workflow_dispatch` remains available for manual
+diagnostics. Restore the five-minute schedule only after supported source access
+has been tested successfully. Do not interpret silence as "papers not released".
+
+Diagnostic runs:
+- https://github.com/Erikiss/Universal-Web-Monitoring-Agent/actions/runs/35935224472
+- https://github.com/Erikiss/Universal-Web-Monitoring-Agent/actions/runs/35935579119
+
+The source error details are in `reports/neurips_2026_openreview_latest.md`.
+Other repository monitors were not modified.
+
+## Intended monitor behavior once access is resolved
+
 Target: https://openreview.net/group?id=NeurIPS.cc/2026/Conference
 
 Workflow: **NeurIPS 2026 OpenReview watch**
 
-The workflow is independent of the other monitors and runs on `main` every five
-minutes (`2-57/5 * * * *`, UTC), plus manual runs and changes to its own code.
+Prepared schedule: every five minutes (`2-57/5 * * * *`, UTC), on `main`.
 GitHub can delay or drop scheduled runs; five minutes is the configured interval,
-not a guaranteed delivery deadline. It does not automatically stop after a hit.
+not a guaranteed delivery deadline. The monitor has no automatic shutoff after a
+hit and no extra user-facing shutoff option.
 
-## What triggers a Pushover mail?
+### What triggers a Pushover mail?
 
 1. A change to the rendered, public conference page: visible text, tabs, or paper
    links. Chromium executes OpenReview's JavaScript; hashing raw HTML would only
@@ -31,12 +58,12 @@ does not claim that the entire final list is complete. Poster, spotlight and ora
 papers are included through the common accepted venue ID rather than a keyword
 filter. A new tab alone is not proof of acceptance.
 
-A first run with no public papers initializes a quiet baseline. If papers are
-already public on the first successful check, that run alerts immediately.
-Identical subsequent snapshots produce no mail. New changes produce another
-mail until the workflow is disabled manually.
+A first successful run with no public papers initializes a quiet baseline. If
+papers are already public on the first successful check, that run alerts
+immediately. Identical subsequent snapshots produce no mail. New changes produce
+another mail until the workflow is disabled manually.
 
-## Existing delivery path; no new secrets
+### Existing delivery path; no new secrets
 
 Uses the existing `send_alert.py` and repository secrets:
 `SMTP_HOST`, `SMTP_PORT`, `SMTP_USERNAME`, `SMTP_PASSWORD`, `ALERT_EMAIL_TO`,
@@ -49,9 +76,10 @@ State is committed only after successful SMTP hand-off, so a failed send is
 retried next run. If SMTP succeeds but the subsequent Git push fails, a duplicate
 alert is possible on retry; delivery is at-least-once, not exactly-once.
 
-## State and health
+### State and health
 
-- `seen_neurips_2026_openreview.json`: last successful source snapshots.
+- `seen_neurips_2026_openreview.json`: last successful source snapshots, once a
+  successful baseline exists.
 - `reports/neurips_2026_openreview_latest.md`: last change/baseline/error report.
 - Every run writes its check time, source results and errors to the Actions job
   summary. Quiet checks do not generate heartbeat commits; the committed report
@@ -62,13 +90,13 @@ alert is possible on retry; delivery is at-least-once, not exactly-once.
 - No automatic Pushover outage notifications are sent; source/delivery failures
   appear in GitHub Actions.
 
-## Turn it off
+### Turn it off manually
 
 Repository → Actions → **NeurIPS 2026 OpenReview watch** → **… → Disable workflow**.
 Alternatively delete `.github/workflows/neurips-2026-openreview-watch.yml`.
-Other monitors are unaffected. No extra shutoff option is added.
+Other monitors are unaffected.
 
-## Local tests
+### Local tests
 
 ```bash
 python -m unittest test_neurips_openreview_watch -v
