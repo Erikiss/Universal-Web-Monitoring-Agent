@@ -1,17 +1,20 @@
 name: NeurIPS 2026 OpenReview watch
 
+# PAUSED: Live runs on 2026-09-24 CEST reached OpenReview's browser challenge
+# (HTTP 403 ChallengeRequiredError), not the public conference content.
+# Do not advertise this watcher as operational until a supported access route
+# has been tested successfully. Manual runs remain available for diagnostics.
 on:
   workflow_dispatch:
-  schedule:
-    # Every five minutes, offset from the crowded start of the hour.
-    # GitHub scheduling is best-effort, NOT a maximum notification latency.
-    - cron: '2-57/5 * * * *'
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/neurips-2026-openreview-watch.yml'
-      - 'neurips_openreview_watch.py'
-      - 'test_neurips_openreview_watch.py'
+  # Restore only after a successful live source check:
+  # schedule:
+  #   - cron: '2-57/5 * * * *'
+  # push:
+  #   branches: [main]
+  #   paths:
+  #     - '.github/workflows/neurips-2026-openreview-watch.yml'
+  #     - 'neurips_openreview_watch.py'
+  #     - 'test_neurips_openreview_watch.py'
 
 permissions:
   contents: write
