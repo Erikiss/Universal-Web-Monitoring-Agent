@@ -1,6 +1,23 @@
 {
+  "delivery": {
+    "categories": {
+      "arxiv": "direct",
+      "project-page": "direct",
+      "project-source": "direct",
+      "repo:NeilKhandelwal/drum-jepa": "third_party",
+      "repo:SuperInstance/fleet-jepa-midi": "third_party",
+      "repo:SuperInstance/recovered-copy-20260824-fleet-jepa-midi": "third_party",
+      "repo:ZZWaang/music-jepa-demo": "author",
+      "repo:enhansome/enhansome-agentic-world-modeling": "third_party",
+      "repo:guangjun1997327/PianoAutomaticAnnotationSystem": "third_party"
+    },
+    "last_digest_at": null,
+    "next_digest_at": "2026-09-30T10:41:15+00:00",
+    "pending": {},
+    "version": 1
+  },
   "errors": {},
-  "last_checked": "2026-09-23T10:20:11+00:00",
+  "last_checked": "2026-09-23T10:41:15+00:00",
   "observations": {
     "arxiv": {
       "links": [],

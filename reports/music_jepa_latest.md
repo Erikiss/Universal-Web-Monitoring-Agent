@@ -1,42 +1,37 @@
-# Music-JEPA watch — 2026-09-23T10:20:11+00:00
+# Music-JEPA — Prüfbericht
+2026-09-23T10:41:15+00:00
 
-Paper: https://arxiv.org/abs/2607.22000
-Projektseite: https://zzwaang.github.io/music-jepa-demo/
+Tagesalarm: 0 Meldungen.
+Neue Drittanbieter-Signale dieses Laufs: 0 (kein Tagesalarm).
+Wochensammlung dieses Laufs: 0 Quellen.
+Für spätere Wochensammlung vorgemerkt: 0 Quellen.
+Nächste Wochensammlung frühestens: 2026-09-30T10:41:15+00:00 (nächster Lauf; nur mit neuen Hinweisen).
+Abruffehler in diesem Lauf: 0.
 
-Neue Signale: 4 | Fehler in diesem Lauf: 0
+# Music-JEPA — täglicher Alarm
+2026-09-23T10:41:15+00:00
 
-Hinweise sind keine Bestaetigung eines offiziellen, vollstaendigen Releases.
-Code und Gewichte werden nicht ausgefuehrt/heruntergeladen; Gating wird ausgewiesen.
+Klare Quellenänderung bedeutet NICHT automatisch: Code und Gewichte veröffentlicht.
 
-## GitHub-Hinweis: guangjun1997327/PianoAutomaticAnnotationSystem (Drittanbieter-Treffer, Zuordnung unbestaetigt)
-https://github.com/guangjun1997327/PianoAutomaticAnnotationSystem
-code_files: noch nicht erfasst -> ["musicjepalearnactionfromsound/overlay_pose_music_jepa_on_video.py", "musicjepalearnactionfromsound/scripts/inspect_music_jepa_data.py", "musicjepalearnactionfromsound/src/data/__init__.py", "musicjepalearnactionfromsound/src/data/feature_extraction.py", "musicjepalearnactionfromsound/src/data/local_pose_midi_dataset.py", "musicjepalearnactionfromsound/src/data/maestro_dataset.py", "musicjepalearnactionfromsound/src/data/segment_builder.py", "musicjepalearnactionfromsound/src/models/__init__.py", "musicjepalearnactionfromsound/src/models/pose_music_jepa.py", "musicjepalearnactionfromsound/src/models/temporal_pose_music_jepa.py", "musicjepalearnactionfromsound/src/models/wrist_relative_pose_jepa.py", "musicjepalearnactionfromsound/train_pose_music_jepa.py", "musicjepalearnactionfromsound/train_pose_music_jepa_temporal.py", "musicjepalearnactionfromsound/train_pose_music_jepa_wrist_relative.py", "musicjepalearnactionfromsound/visualize_pose_music_jepa.py", "musicjepalearnactionfromsound/visualize_pose_music_jepa_wrist_relative.py"]
-releases: noch nicht erfasst -> []
-resource_links: noch nicht erfasst -> []
-weight_file_hints: noch nicht erfasst -> {}
+## Status der direkt überwachten Quellen
+arXiv-Paper: keine neue Änderung erkannt (Erstabruf setzt nur den Vergleichsstand).
+Offizielle Projektseite: keine neue Änderung erkannt (Erstabruf setzt nur den Vergleichsstand).
+Dateien der offiziellen Demo-Website: keine neue Änderung erkannt (Erstabruf setzt nur den Vergleichsstand).
 
-## GitHub-Hinweis: NeilKhandelwal/drum-jepa (Drittanbieter-Treffer, Zuordnung unbestaetigt)
-https://github.com/NeilKhandelwal/drum-jepa
-code_files: noch nicht erfasst -> ["drumjepa/__init__.py", "drumjepa/dataset.py", "drumjepa/drum_map.py", "drumjepa/features.py", "drumjepa/inverse.py", "drumjepa/model.py", "scripts/bench_loader.py", "scripts/build_cache.py", "scripts/cache_stats.py", "scripts/eval_e1.py", "scripts/eval_e2.py", "scripts/eval_e3.py", "scripts/eval_e4.py", "scripts/eval_e5.py", "scripts/eval_e5_per_kit.py", "scripts/eval_readout.py", "scripts/extract_kits.py", "scripts/inventory.py", "scripts/kit_midi_diff.py", "scripts/list_kits.py", "scripts/train.py", "tests/test_eval_e1.py", "tests/test_eval_e2.py", "tests/test_eval_e3.py", "tests/test_eval_e4.py", "tests/test_eval_e5.py", "tests/test_eval_readout.py", "tests/test_model.py", "warmup/lejepa_inet10.py"]
-releases: noch nicht erfasst -> []
-resource_links: noch nicht erfasst -> ["https://github.com/ZZWaang/audio2midi", "https://github.com/facebookresearch/ijepa", "https://github.com/lucas-maes/le-wm"]
-weight_file_hints: noch nicht erfasst -> {}
+## A. KLARE TREFFER — direkte Paper-/Projektänderungen
+Neue Meldungen: 0.
 
-## GitHub-Hinweis: SuperInstance/fleet-jepa-midi (Drittanbieter-Treffer, Zuordnung unbestaetigt)
-https://github.com/SuperInstance/fleet-jepa-midi
-code_files: noch nicht erfasst -> ["audio_jepa/__init__.py", "audio_jepa/dataset.py", "audio_jepa/model.py", "elephant_sense_probe.py", "eval_audio_jepa.py", "review_with_deepinfra.py", "train_audio_jepa.py", "vibe_matcher.py"]
-releases: noch nicht erfasst -> []
-resource_links: noch nicht erfasst -> ["https://github.com/Dao-AILab/flash-attention", "https://github.com/LudovicTuncay/Audio-JEPA", "https://github.com/SonyCSLParis/Stem-JEPA", "https://github.com/SuperInstance", "https://github.com/SuperInstance/fleet-ensemble", "https://github.com/SuperInstance/fleet-gateway", "https://github.com/SuperInstance/fleet-jepa-midi.git", "https://github.com/drscotthawley/midi-rae"]
-weight_file_hints: noch nicht erfasst -> {"checkpoints/audio_jepa_v2.pt": "2b70321c83ede891af120f8af0fbd0f4c90f46b2"}
+## B. AUTOREN-/PROJEKTHINWEISE — kein bestätigter Release
+Neue Meldungen: 0.
 
-## GitHub-Hinweis: SuperInstance/recovered-copy-20260824-fleet-jepa-midi (Drittanbieter-Treffer, Zuordnung unbestaetigt)
-https://github.com/SuperInstance/recovered-copy-20260824-fleet-jepa-midi
-code_files: noch nicht erfasst -> ["audio_jepa/__init__.py", "audio_jepa/dataset.py", "audio_jepa/model.py", "elephant_sense_probe.py", "eval_audio_jepa.py", "review_with_deepinfra.py", "train_audio_jepa.py", "vibe_matcher.py"]
-releases: noch nicht erfasst -> []
-resource_links: noch nicht erfasst -> ["https://github.com/Dao-AILab/flash-attention", "https://github.com/LudovicTuncay/Audio-JEPA", "https://github.com/SonyCSLParis/Stem-JEPA", "https://github.com/SuperInstance", "https://github.com/SuperInstance/fleet-ensemble", "https://github.com/SuperInstance/fleet-gateway", "https://github.com/SuperInstance/fleet-jepa-midi.git", "https://github.com/drscotthawley/midi-rae"]
-weight_file_hints: noch nicht erfasst -> {"checkpoints/audio_jepa_v2.pt": "2b70321c83ede891af120f8af0fbd0f4c90f46b2"}
+## C. TECHNISCHE STÖRUNGEN — keine Forschungstreffer
+Neue Meldungen: 0.
 
-## Quellenstatus
+Drittanbieter-Suchtreffer lösen diese Tagesmail nicht aus. Sie werden separat,
+frühestens alle sieben Tage und nur bei neuen Hinweisen als Wochensammlung verschickt.
+
+## D. DRITTANBIETER-SUCHE — ausschließlich für Wochensammlung
+## Technischer Quellenstatus
 OK: arXiv
 OK: Projektseite
 OK: GitHub Autor ZZWaang
