@@ -1,0 +1,119 @@
+name: Music-JEPA release watch
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Check sources without committing state or sending email'
+        required: false
+        default: false
+        type: boolean
+      test_email:
+        description: 'Only send a test email using the existing SMTP secrets'
+        required: false
+        default: false
+        type: boolean
+  schedule:
+    # Daily 07:37 UTC = 09:37 CEST / 08:37 CET; Actions may start late.
+    # Staggered away from the existing Goodfire/Anthropic runs.
+    - cron: '37 7 * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/music-jepa-release-watch.yml'
+      - 'music_jepa_watch.py'
+      - 'test_music_jepa*.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: music-jepa-release-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Offline regression tests
+        run: python -m unittest discover -p 'test_music_jepa*.py' -v
+
+      - name: Send test email
+        if: inputs.test_email == true && inputs.dry_run != true
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
+        run: |
+          printf 'Test des Music-JEPA-Monitors. Die vorhandene SMTP-Konfiguration funktioniert.\n' > "$RUNNER_TEMP/music-jepa-test.txt"
+          python send_alert.py --subject "[Web-Monitor] Music-JEPA: Test" --body-file "$RUNNER_TEMP/music-jepa-test.txt"
+
+      - name: Run watcher
+        id: watch
+        if: inputs.test_email != true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          args=()
+          if [ "$DRY_RUN" = "true" ]; then
+            args+=(--dry-run)
+          fi
+          python music_jepa_watch.py "${args[@]}" --alert-file "$RUNNER_TEMP/music-jepa-alert.txt"
+
+      - name: Send alert email
+        if: steps.watch.outputs.new_count > 0 && inputs.dry_run != true
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
+          ALERT_COUNT: ${{ steps.watch.outputs.new_count }}
+        run: >
+          python send_alert.py
+          --subject "[Web-Monitor] Music-JEPA: ${ALERT_COUNT} neue Hinweise / Statusmeldungen"
+          --body-file "$RUNNER_TEMP/music-jepa-alert.txt"
+
+      # Deliberately after SMTP: failed delivery must not consume a signal.
+      - name: Commit state and report
+        if: inputs.dry_run != true && inputs.test_email != true
+        run: |
+          git config user.name "page-watch-bot"
+          git config user.email "page-watch-bot@users.noreply.github.com"
+          git add -- seen_music_jepa.json reports/music_jepa_latest.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Update Music-JEPA release watch state and report"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            git pull --rebase origin main
+          done
+          git push origin HEAD:main
+
+      - name: Mark incomplete checks as failed
+        if: steps.watch.outputs.error_count > 0
+        run: |
+          echo "Some sources could not be checked. See the job summary/report; this is not a no-news result."
+          exit 1
