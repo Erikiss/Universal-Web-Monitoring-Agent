@@ -1,0 +1,77 @@
+[
+  {
+    "author": "utilistrutil",
+    "baseScore": 16,
+    "id": "sAcgHzLKRsvZQhtEY",
+    "postedAt": "2026-09-24T05:02:24.526Z",
+    "section": "Frontpage",
+    "title": "Against Export Controls (and China Threat Models)",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/sAcgHzLKRsvZQhtEY/against-export-controls-and-china-threat-models",
+    "visualEvidence": [
+      "figure      Second, I don't expect the U.S. to do a much better job of automated alignment research or control than China: automated alignment research seems fundamentally really h",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/sAcgHzLKRsvZQhtEY/b9pdiaa6hxtpvnu9eeob   ",
+      "figure      Graphically, the maximum amount of additional misalignment we should be willing to pay as a function of the initial probability of misalignment looks like this:  A few ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/sAcgHzLKRsvZQhtEY/rhnqa1ltokaoudtgm4cp   "
+    ],
+    "visualizationScore": 8,
+    "wordCount": 5590
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 29,
+    "id": "vMNTWTDWLorDqd3LS",
+    "postedAt": "2026-09-23T21:10:53.304Z",
+    "section": "Personal/All",
+    "title": "Claude Opus 5.5: The System Card",
+    "topicScore": 10,
+    "url": "https://www.lesswrong.com/posts/vMNTWTDWLorDqd3LS/claude-opus-5-5-the-system-card",
+    "visualEvidence": [
+      "figure     Opus 5.5 Self-Portrait (fully self-created using code)  ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/vMNTWTDWLorDqd3LS/zfph7d5sgavy07nbmclq   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 224,
+    "wordCount": 7088
+  },
+  {
+    "author": "Lukas Finnveden",
+    "baseScore": 75,
+    "id": "6m29SfjbittooYojj",
+    "postedAt": "2026-09-23T18:01:49.488Z",
+    "section": "Frontpage",
+    "title": "Latent reasoning architectures would undermine CoT, our strongest oversight tool",
+    "topicScore": 6,
+    "url": "https://www.lesswrong.com/posts/6m29SfjbittooYojj/latent-reasoning-architectures-would-undermine-cot-our",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/6m29SfjbittooYojj/2944a2736a49848874e16ee22e275c7e66671a52f9c3376cb86c179ab6545867/uqgd",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/b3f2cc516acf1b537c7a134648f9742ff0523e6ee37bed7aa732f7d464ee3b0a/ftxyeivlc0at97cnkgfl  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/4eec573b90bc74d20558b5b22bbdea41706c866d1baa577d5a47159d77f488d2/hgpub7kigngqimrhutzk  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/6fccb6f444b9da806e7d66bc8507e36a4eae006ca207e0f1ed8c93ca85e19842/yedue8bosfairc2ghclg  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/c5c4b3d084386b1ded88e066e6750370cfede8d2ee146456a55cfa6ab785c3bb/ter0feeq8bfsgpxdwyac  "
+    ],
+    "visualizationScore": 8,
+    "wordCount": 4390
+  },
+  {
+    "author": "ethanelasky",
+    "baseScore": 42,
+    "id": "SCdR7W6L5GvKaEzaZ",
+    "postedAt": "2026-09-23T16:41:23.011Z",
+    "section": "Frontpage",
+    "title": "Encoded Coordination on the Open Web",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/SCdR7W6L5GvKaEzaZ/encoded-coordination-on-the-open-web",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790180347/lexical_client_uploads/t6oxc0te3q2vorsfztcp.png  Results Requests assistance on the wiki, Shares informatio",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790180347/lexical_client_uploads/ugyhn6pylswhebkfjrfd.png   Some qualitative examples of model coordination are in Ap",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790180347/lexical_client_uploads/bxqz0mtlcozn6tu3kzel.png  In the single-counter setting, winning models converge tow",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790180347/lexical_client_uploads/i4kctnjlcjaogltbgxrc.png   While Sol shows no change in any setting at n=50 rollouts",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790180347/lexical_client_uploads/fbm9lep2iyv6oeqyvwqx.png  Does iteration help cross-family? From manual analysis of "
+    ],
+    "visualizationScore": 19,
+    "wordCount": 4011
+  }
+]
