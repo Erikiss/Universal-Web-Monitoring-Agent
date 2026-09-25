@@ -585,6 +585,7 @@ class MainTests(NoSleepTestCase):
             mock.patch.object(lw, "OUT_DIR", self.out_dir),
             mock.patch.object(lw, "SEEN_FILE", self.seen_file),
             mock.patch.object(lw, "POST_SCOPE", "all"),
+            mock.patch.object(lw, "LOOKBACK_DAYS", 36500),
             mock.patch.object(lw, "BLOCK_STRIKES", 2),
         ):
             patch.start()
