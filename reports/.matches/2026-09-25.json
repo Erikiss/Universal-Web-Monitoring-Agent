@@ -1,0 +1,149 @@
+[
+  {
+    "author": "Zvi",
+    "baseScore": 13,
+    "id": "j3xefrWrNqsmMfJEi",
+    "postedAt": "2026-09-25T12:00:53.376Z",
+    "section": "Personal/All",
+    "title": "On Ezra Klein\u2019s Podcast With Jensen Huang",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/j3xefrWrNqsmMfJEi/on-ezra-klein-s-podcast-with-jensen-huang",
+    "visualEvidence": [
+      "figure      This is why we say that some podcasts are self-recommending. Here we go. Jensen Huang accidentally called for shutting down OpenAI and intentionally called for spending",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/j3xefrWrNqsmMfJEi/ywycdzlpjjhgzllfvfy1   ",
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/j3xefrWrNqsmMfJEi/nxtd5ygrmurvvfc5zftj   "
+    ],
+    "visualizationScore": 11,
+    "wordCount": 8000
+  },
+  {
+    "author": "Kaley Brauer",
+    "baseScore": 7,
+    "id": "Adb55vLqt33LEyBfz",
+    "postedAt": "2026-09-25T06:28:50.361Z",
+    "section": "Personal/All",
+    "title": "J-lens shouldn't target the final layer by default",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/Adb55vLqt33LEyBfz/j-lens-shouldn-t-target-the-final-layer-by-default",
+    "visualEvidence": [
+      "figure     Figure 1. The final-layer target puts a dominant language-separating direction into DeepSeek-V3's readouts, and the penultimate target removes it. All panels use 2,400 h",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790112587/lexical_client_uploads/zagfcerbeir8d2eunvdn.png   Figure 1. The final-layer target puts a dominant",
+      "figure     Figure 2. The final-layer J-lens amplifies Chinese tokens at early layers and English tokens at late layers. Its language offset largely not depend on the language of th",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790096297/lexical_client_uploads/hrz4lwbf1ufellplf309.png   Figure 2. The final-layer J-lens amplifies Chine",
+      "figure     Figure 3. Kurtosis goes negative because the final-layer J-lens gives bimodal readouts. One typical held-out English activation at layer 20, a third of the way through D"
+    ],
+    "visualizationScore": 36,
+    "wordCount": 5391
+  },
+  {
+    "author": "Anya Habana",
+    "baseScore": 7,
+    "id": "HCpgntjDAE8bycfGn",
+    "postedAt": "2026-09-25T06:09:07.334Z",
+    "section": "Personal/All",
+    "title": "Cognitive Reasoning Diversity for Robust AI Juries",
+    "topicScore": 12,
+    "url": "https://www.lesswrong.com/posts/HCpgntjDAE8bycfGn/cognitive-reasoning-diversity-for-robust-ai-juries",
+    "visualEvidence": [
+      "figure     A Pattern Judge focuses on emotional heuristics while a Causal Judge focuses on the causal logic of scenarios, potentially influencing the accuracy of their judgements o",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1789896978/lexical_client_uploads/njdrhbdbs49nsyf1akix.png   A Pattern Judge focuses on emotional heuristics ",
+      "figure     Maximum Joint Error Rate percentage (%) results comparing Jury A and B across their joint juries and the individual judges that comprise them (GPT-4o and Mistral judges ",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1789896912/lexical_client_uploads/ceb1kwpt27fttg3tovon.png   Maximum Joint Error Rate percentage (%) results ",
+      "figure     Accuracy percentages (%) and Pearson Error Correlation ( ) scores of Unstable Joint Loss Training vs. Asymmetric Narrow Fine-Tuning of Cognitive Diversity Jury B. For ac"
+    ],
+    "visualizationScore": 18,
+    "wordCount": 3205
+  },
+  {
+    "author": "SeanKessinger",
+    "baseScore": 3,
+    "id": "mmkSE8hrEcpaoA7f7",
+    "postedAt": "2026-09-25T03:08:04.000Z",
+    "section": "Personal/All",
+    "title": "Recognition: when an agent counts an entity as itself",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/mmkSE8hrEcpaoA7f7/recognition-when-an-agent-counts-an-entity-as-itself",
+    "visualEvidence": [
+      "table     Eigenism Recognition schema eigenself self-description community pattern (shared laws, civic memory, local history) a second self-description the pattern an agent evaluat",
+      "table     Reason to cooperate Self-interested Instrumental Shared goals, reciprocity Yes Yes Moral impartiality No No Recognition Yes No A reason to cooperate is instrumental when "
+    ],
+    "visualizationScore": 8,
+    "wordCount": 2705
+  },
+  {
+    "author": "w_jin",
+    "baseScore": 7,
+    "id": "nnAsPfCrXp8q8qSMq",
+    "postedAt": "2026-09-25T03:07:25.192Z",
+    "section": "Personal/All",
+    "title": "The Geopolitics of an AI Treaty",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/nnAsPfCrXp8q8qSMq/the-geopolitics-of-an-ai-treaty",
+    "visualEvidence": [
+      "table     A1 A2 B1 If Bluebeard does not slow down, everyone dies. Therefore, Bluebeard must slow down or pause. This is independent of what Redbeard does, so Redbeard will choose ",
+      "figure     Gigafab locations roughly circled in red. Specifically, the Taichung and Kaohsiung locations are close to ports where troops are likely to disembark. Recent test deploym",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790175030/lexical_client_uploads/nicp4nyinjotnlcs1xwv.png   Gigafab locations roughly circled in red. Specif"
+    ],
+    "visualizationScore": 8,
+    "wordCount": 4943
+  },
+  {
+    "author": "David Litman",
+    "baseScore": 11,
+    "id": "HzeuyQvqN4nHHvaXc",
+    "postedAt": "2026-09-24T20:30:16.721Z",
+    "section": "Frontpage",
+    "title": "Increasing Skill Level Recruits Deeper Attention Layers in a Frozen Chess Transformer",
+    "topicScore": 6,
+    "url": "https://www.lesswrong.com/posts/HzeuyQvqN4nHHvaXc/increasing-skill-level-recruits-deeper-attention-layers-in-a",
+    "visualEvidence": [
+      "figure     The causal mass for every move type I measured migrates deeper with Elo. Pushes the computation deeper, monotonically, for every chess piece and move type I measured. Th",
+      "img all_arms.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790279170/lexical_client_uploads/jlw7e0al84lrmqjlpcxo.png   The causal mass for every move type I measure",
+      "figure     Maia-3 architecture from (arxiv.org/pdf/2605.19091) Maia-3 is a transformer-based chess model (chessformer) built to mimic human play across skill levels. It has 8 layer",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790278770/lexical_client_uploads/nououlwilwkgo8mteapv.png   Maia-3 architecture from (arxiv.org/pdf/2605.190",
+      "table     piece n total \u2206COM 700\u21922500 (layers) Elo steps rising permutation p pawn 261 +0.519 \u00b1 0.040 18/18 < 0.001 bishop 243 +0.547 \u00b1 0.040 18/18 < 0.001 knight 368 +0.880 \u00b1 0.02"
+    ],
+    "visualizationScore": 46,
+    "wordCount": 2750
+  },
+  {
+    "author": "Ryan Meservey",
+    "baseScore": 13,
+    "id": "Qzhp46pHenccF3euy",
+    "postedAt": "2026-09-24T16:26:37.426Z",
+    "section": "Frontpage",
+    "title": "What We're Up Against: An AI Safety Crash Course",
+    "topicScore": 9,
+    "url": "https://www.lesswrong.com/posts/Qzhp46pHenccF3euy/what-we-re-up-against-an-ai-safety-crash-course",
+    "visualEvidence": [
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790267307/lexical_client_uploads/gl1kgzekr334xgwwotta.png   In the beginning, the weights are random. If the",
+      "figure     Sample language from the model\u2019s transcripts explaining the behavior.  Keep the goal . Achieving a goal necessarily requires keeping it or preventing it from being modif",
+      "img Sample language from the model\u2019s transcripts explaining the behavior.   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790265047/lexical_client_uploads/lk2sqocnvataopy",
+      "figure     Thinking like a lawyer. Attaboy!  Sample language from the model\u2019s transcripts explaining the behavior.  On a deeper level, AI developers change a model\u2019s goals by givin",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790265047/lexical_client_uploads/jbuiqrpaau16gldmbtb0.png   Thinking like a lawyer. Attaboy!"
+    ],
+    "visualizationScore": 13,
+    "wordCount": 5278
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 29,
+    "id": "o7pYWzWWwGDePoC5E",
+    "postedAt": "2026-09-24T14:50:54.359Z",
+    "section": "Personal/All",
+    "title": "AI #187: Coming Into Play",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/o7pYWzWWwGDePoC5E/ai-187-coming-into-play",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/o7pYWzWWwGDePoC5E/nqzlry7knjvkygghbmf8   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 135,
+    "wordCount": 17478
+  }
+]
