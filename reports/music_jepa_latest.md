@@ -1,15 +1,15 @@
 # Music-JEPA — Prüfbericht
-2026-09-24T12:51:30+00:00
+2026-09-25T12:55:37+00:00
 
-Tagesalarm: 0 Meldungen.
+Tagesalarm: 1 Meldungen.
 Neue Drittanbieter-Signale dieses Laufs: 0 (kein Tagesalarm).
 Wochensammlung dieses Laufs: 0 Quellen.
 Für spätere Wochensammlung vorgemerkt: 0 Quellen.
 Nächste Wochensammlung frühestens: 2026-09-30T10:41:15+00:00 (nächster Lauf; nur mit neuen Hinweisen).
-Abruffehler in diesem Lauf: 0.
+Abruffehler in diesem Lauf: 1.
 
 # Music-JEPA — täglicher Alarm
-2026-09-24T12:51:30+00:00
+2026-09-25T12:55:37+00:00
 
 Klare Quellenänderung bedeutet NICHT automatisch: Code und Gewichte veröffentlicht.
 
@@ -25,7 +25,13 @@ Neue Meldungen: 0.
 Neue Meldungen: 0.
 
 ## C. TECHNISCHE STÖRUNGEN — keine Forschungstreffer
-Neue Meldungen: 0.
+Neue Meldungen: 1.
+
+### Technischer Fehler: GitHub Metadaten NeilKhandelwal/drum-jepa
+https://arxiv.org/abs/2607.22000
+Herkunft: Technischer Abruffehler; kein neuer Release-Hinweis.
+- FetchError: HTTP 404: https://api.github.com/repos/NeilKhandelwal/drum-jepa
+Kein Release-Nachweis; diese Quelle konnte nicht geprueft werden.
 
 Drittanbieter-Suchtreffer lösen diese Tagesmail nicht aus. Sie werden separat,
 frühestens alle sieben Tage und nur bei neuen Hinweisen als Wochensammlung verschickt.
@@ -62,7 +68,6 @@ OK: GitHub Repository kunfang98927/Timeline-App
 OK: GitHub Repository kunfang98927/YQBD
 OK: GitHub Repository leofan90/Awesome-World-Models
 OK: GitHub Repository matrix-agent/awesome-agentic-world-modeling
-OK: GitHub Repository NeilKhandelwal/drum-jepa
 OK: GitHub Repository Sound-of-AI-Lab-Open-Science/JEPA-reproduce-music-jepa-lightning
 OK: GitHub Repository Sound-of-AI-Lab-Open-Science/music-understanding-baselines
 OK: GitHub Repository SuperInstance/fleet-jepa-midi
@@ -87,3 +92,4 @@ OK: Hugging Face Suche music_jepa
 OK: Hugging Face Suche musicjepa
 OK: Hugging Face Suche arxiv:2607.22000
 OK: Hugging Face discovery
+FEHLER: GitHub Metadaten NeilKhandelwal/drum-jepa: FetchError: HTTP 404: https://api.github.com/repos/NeilKhandelwal/drum-jepa
