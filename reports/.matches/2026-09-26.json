@@ -1,0 +1,74 @@
+[
+  {
+    "author": "Zvi",
+    "baseScore": 11,
+    "id": "rtPiip9igy3QvxYdM",
+    "postedAt": "2026-09-26T11:40:51.763Z",
+    "section": "Personal/All",
+    "title": "Claude Opus 5.5 Should Raise Your Ambitions",
+    "topicScore": 19,
+    "url": "https://www.lesswrong.com/posts/rtPiip9igy3QvxYdM/claude-opus-5-5-should-raise-your-ambitions",
+    "visualEvidence": [
+      "figure     By Claude Opus 5.5, for this post  ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/rtPiip9igy3QvxYdM/mldy6xhrpdsi5tribxqy   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 70,
+    "wordCount": 4908
+  },
+  {
+    "author": "astle dsa",
+    "baseScore": 8,
+    "id": "y2Dio5gGifWepGQf4",
+    "postedAt": "2026-09-26T10:38:24.576Z",
+    "section": "Frontpage",
+    "title": "Writing a Theorem Prover from scratch",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/y2Dio5gGifWepGQf4/writing-a-theorem-prover-from-scratch",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790415216/lexical_client_uploads/e8xzaubuxvxhpiwy5icv.webp  To be more precise, we must remember what a function (and"
+    ],
+    "visualizationScore": 3,
+    "wordCount": 3187
+  },
+  {
+    "author": "Yueh Han \"John\" Chen",
+    "baseScore": 23,
+    "id": "f7r9QCmjoYFG9ReyF",
+    "postedAt": "2026-09-25T18:30:39.689Z",
+    "section": "Frontpage",
+    "title": "Alignment Forecasting: Predicting Misalignment from Training Data",
+    "topicScore": 17,
+    "url": "https://www.lesswrong.com/posts/f7r9QCmjoYFG9ReyF/alignment-forecasting-predicting-misalignment-from-training",
+    "visualEvidence": [
+      "figure     Auditing catches misalignment after training. Forecasting predicts it from the training data beforehand. We therefore ask whether we can forecast misalignment before tra",
+      "img Screenshot 2026-09-25 at 2.24.59\u202fPM.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790360703/lexical_client_uploads/xscj7bhedernkqsudngb.png   Auditing catches m",
+      "figure     Two example questions. How often a model picks the highlighted option measures the failure mode. Each failure mode is measured with 200 multiple-choice questions. Each q",
+      "img Screenshot 2026-09-25 at 2.25.57\u202fPM.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790360761/lexical_client_uploads/yooezztba8ciyeimlfas.png   Two example questi",
+      "figure     Misaligned-option pick rates for GPT-4.1 after fine-tuning on each dataset. Dark borders indicate emerged failure modes. The misaligned datasets in the bottom half turn "
+    ],
+    "visualizationScore": 26,
+    "wordCount": 2227
+  },
+  {
+    "author": "Ziqian Zhong",
+    "baseScore": 53,
+    "id": "gZh6txHhp8sm832sE",
+    "postedAt": "2026-09-25T18:26:00.149Z",
+    "section": "Frontpage",
+    "title": "Spurious probes as a black-box alternative to activation probing",
+    "topicScore": 18,
+    "url": "https://www.lesswrong.com/posts/gZh6txHhp8sm832sE/spurious-probes-as-a-black-box-alternative-to-activation",
+    "visualEvidence": [
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790354956/lexical_client_uploads/lnr4mvrzn4jqjjhqxddz.png  We study spurious probes : unrelated questions th",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790355008/lexical_client_uploads/nuamkjrk0nj66zz4wfzd.png  Here is an example run. On GPT-5.6 Luna, we scree",
+      "table     model spurious probe eval answer real answer held-out balanced acc. GPT-5.6 Luna Suggest a type of amphibian. frog (70-95%) axolotl / salamander (frog 12-38%) 0.77 GPT-5.",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790355114/lexical_client_uploads/mrhcal3fwiwx0yso06ru.png   model spurious probe eval answer real answer hel",
+      "table     model probe in the above table, held-out acc. top-10 ensemble, held-out acc. held-out AUC GPT-5.6 Luna 0.77 0.88 0.96 GPT-5.6 Sol 0.78 0.89 0.97 Claude Sonnet 5 0.81 0.84"
+    ],
+    "visualizationScore": 31,
+    "wordCount": 2716
+  }
+]
