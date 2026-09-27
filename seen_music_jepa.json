@@ -13,13 +13,30 @@
     },
     "last_digest_at": null,
     "next_digest_at": "2026-09-30T10:41:15+00:00",
-    "pending": {},
+    "pending": {
+      "repo:enhansome/enhansome-agentic-world-modeling": {
+        "changes": [
+          {
+            "fingerprint": "e6f8a996b03055093576a1bb5cd2ee584f1d5d9d7d7e3ebac085412f80da503d",
+            "summary": [
+              "Neue Ressourcenlinks: https://github.com/xiaomi-mlab/DriveVA"
+            ]
+          }
+        ],
+        "first_seen_at": "2026-09-27T13:15:15+00:00",
+        "key": "repo:enhansome/enhansome-agentic-world-modeling",
+        "last_seen_at": "2026-09-27T13:15:15+00:00",
+        "origin": "GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.",
+        "title": "GitHub-Hinweis: enhansome/enhansome-agentic-world-modeling (Drittanbieter-Treffer, Zuordnung unbestaetigt)",
+        "url": "https://github.com/enhansome/enhansome-agentic-world-modeling"
+      }
+    },
     "version": 1
   },
   "errors": {
     "GitHub Metadaten NeilKhandelwal/drum-jepa": "FetchError: HTTP 404: https://api.github.com/repos/NeilKhandelwal/drum-jepa"
   },
-  "last_checked": "2026-09-26T12:23:14+00:00",
+  "last_checked": "2026-09-27T13:15:15+00:00",
   "observations": {
     "arxiv": {
       "links": [],
@@ -817,6 +834,7 @@
         "https://github.com/xb534/Glad",
         "https://github.com/xbyym/StableWorld",
         "https://github.com/xiaolul2/DynFlowDrive",
+        "https://github.com/xiaomi-mlab/DriveVA",
         "https://github.com/xiaomi-mlab/mila.github.io",
         "https://github.com/xlang-ai/OSWorld",
         "https://github.com/xlang-ai/aguvis",
@@ -1735,6 +1753,7 @@
         "https://github.com/xb534/Glad",
         "https://github.com/xbyym/StableWorld",
         "https://github.com/xiaolul2/DynFlowDrive",
+        "https://github.com/xiaomi-mlab/DriveVA",
         "https://github.com/xiaomi-mlab/mila.github.io",
         "https://github.com/xlang-ai/OSWorld",
         "https://github.com/xlang-ai/aguvis",
@@ -1769,7 +1788,7 @@
         "https://huggingface.co/papers/2604.22748"
       ],
       "related": true,
-      "stamp": "9b5a888a5192bdf8ecc3822f1113dfb1daab8d42dadca87bc2af0577e764a3ea"
+      "stamp": "217329df0d129c3dd3caec168d076f62f035ae8108416f840a47288bb1f7ef11"
     },
     "guangjun1997327/PianoAutomaticAnnotationSystem": {
       "exact_paper": true,
