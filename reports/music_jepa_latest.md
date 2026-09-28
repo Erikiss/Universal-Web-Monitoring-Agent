@@ -1,15 +1,15 @@
 # Music-JEPA — Prüfbericht
-2026-09-27T13:15:15+00:00
+2026-09-28T15:49:43+00:00
 
 Tagesalarm: 0 Meldungen.
-Neue Drittanbieter-Signale dieses Laufs: 1 (kein Tagesalarm).
+Neue Drittanbieter-Signale dieses Laufs: 0 (kein Tagesalarm).
 Wochensammlung dieses Laufs: 0 Quellen.
 Für spätere Wochensammlung vorgemerkt: 1 Quellen.
 Nächste Wochensammlung frühestens: 2026-09-30T10:41:15+00:00 (nächster Lauf; nur mit neuen Hinweisen).
 Abruffehler in diesem Lauf: 1.
 
 # Music-JEPA — täglicher Alarm
-2026-09-27T13:15:15+00:00
+2026-09-28T15:49:43+00:00
 
 Klare Quellenänderung bedeutet NICHT automatisch: Code und Gewichte veröffentlicht.
 
@@ -31,11 +31,6 @@ Drittanbieter-Suchtreffer lösen diese Tagesmail nicht aus. Sie werden separat,
 frühestens alle sieben Tage und nur bei neuen Hinweisen als Wochensammlung verschickt.
 
 ## D. DRITTANBIETER-SUCHE — ausschließlich für Wochensammlung
-### GitHub-Hinweis: enhansome/enhansome-agentic-world-modeling (Drittanbieter-Treffer, Zuordnung unbestaetigt)
-https://github.com/enhansome/enhansome-agentic-world-modeling
-Herkunft: GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.
-- Neue Ressourcenlinks: https://github.com/xiaomi-mlab/DriveVA
-
 ## Technischer Quellenstatus
 OK: arXiv
 OK: Projektseite
