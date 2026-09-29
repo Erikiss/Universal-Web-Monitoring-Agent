@@ -7,6 +7,7 @@
       "repo:NeilKhandelwal/drum-jepa": "third_party",
       "repo:SuperInstance/fleet-jepa-midi": "third_party",
       "repo:SuperInstance/recovered-copy-20260824-fleet-jepa-midi": "third_party",
+      "repo:ZZWaang/music-jepa": "author",
       "repo:ZZWaang/music-jepa-demo": "author",
       "repo:enhansome/enhansome-agentic-world-modeling": "third_party",
       "repo:guangjun1997327/PianoAutomaticAnnotationSystem": "third_party"
@@ -36,7 +37,7 @@
   "errors": {
     "GitHub Metadaten NeilKhandelwal/drum-jepa": "FetchError: HTTP 404: https://api.github.com/repos/NeilKhandelwal/drum-jepa"
   },
-  "last_checked": "2026-09-28T15:49:43+00:00",
+  "last_checked": "2026-09-29T14:17:08+00:00",
   "observations": {
     "arxiv": {
       "links": [],
@@ -47,7 +48,7 @@
       "links": []
     },
     "project-source": {
-      "tree_sha": "001ec030d76af516af31f69c7101e24d62896709"
+      "tree_sha": "3e7378dbb768241a1635c19edc39c13e8c44d851"
     },
     "repo:NeilKhandelwal/drum-jepa": {
       "code_files": [
@@ -140,6 +141,12 @@
       "weight_file_hints": {
         "checkpoints/audio_jepa_v2.pt": "2b70321c83ede891af120f8af0fbd0f4c90f46b2"
       }
+    },
+    "repo:ZZWaang/music-jepa": {
+      "code_files": [],
+      "releases": [],
+      "resource_links": [],
+      "weight_file_hints": {}
     },
     "repo:ZZWaang/music-jepa-demo": {
       "code_files": [],
@@ -1041,11 +1048,17 @@
       "related": false,
       "stamp": "1e26418e3ed1d5cd5a99ad91d5347fc1c18b42d73e94018314cb45adb4871454"
     },
+    "ZZWaang/music-jepa": {
+      "exact_paper": false,
+      "links": [],
+      "related": true,
+      "stamp": "3eca5c978c953015829f1c4a94e79d14e94d7458599fb5f3f624e6fd39f6ab5f"
+    },
     "ZZWaang/music-jepa-demo": {
       "exact_paper": false,
       "links": [],
       "related": true,
-      "stamp": "55a032057cff869ad8718238005569dcea6c0f2fb70cbe2133d46d15af297f56"
+      "stamp": "2af96f34edce4c7154819ea77b1b3150bd5b25429a40d880277b4c91b070fa82"
     },
     "ZZWaang/polyphonic-chord-texture-disentanglement": {
       "exact_paper": false,
@@ -1788,7 +1801,7 @@
         "https://huggingface.co/papers/2604.22748"
       ],
       "related": true,
-      "stamp": "e7a11bdaa34ee158711efe6fa5ecf2c20e8fa462001ceb42e6073bbc4f462b94"
+      "stamp": "64f0e6a4abd6f6053cd6ac084cb45ced8ff214223542ff17e86662a4d595ebd6"
     },
     "guangjun1997327/PianoAutomaticAnnotationSystem": {
       "exact_paper": true,

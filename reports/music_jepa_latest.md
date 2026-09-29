@@ -1,7 +1,7 @@
 # Music-JEPA — Prüfbericht
-2026-09-28T15:49:43+00:00
+2026-09-29T14:17:08+00:00
 
-Tagesalarm: 0 Meldungen.
+Tagesalarm: 2 Meldungen.
 Neue Drittanbieter-Signale dieses Laufs: 0 (kein Tagesalarm).
 Wochensammlung dieses Laufs: 0 Quellen.
 Für spätere Wochensammlung vorgemerkt: 1 Quellen.
@@ -9,20 +9,32 @@ Nächste Wochensammlung frühestens: 2026-09-30T10:41:15+00:00 (nächster Lauf; 
 Abruffehler in diesem Lauf: 1.
 
 # Music-JEPA — täglicher Alarm
-2026-09-28T15:49:43+00:00
+2026-09-29T14:17:08+00:00
 
 Klare Quellenänderung bedeutet NICHT automatisch: Code und Gewichte veröffentlicht.
 
 ## Status der direkt überwachten Quellen
 arXiv-Paper: keine neue Änderung erkannt (Erstabruf setzt nur den Vergleichsstand).
 Offizielle Projektseite: keine neue Änderung erkannt (Erstabruf setzt nur den Vergleichsstand).
-Dateien der offiziellen Demo-Website: keine neue Änderung erkannt (Erstabruf setzt nur den Vergleichsstand).
+Dateien der offiziellen Demo-Website: ÄNDERUNG ERKANNT — klarer Treffer an direkt überwachter Quelle.
 
 ## A. KLARE TREFFER — direkte Paper-/Projektänderungen
-Neue Meldungen: 0.
+Neue Meldungen: 1.
+
+### Projekt-Repository geaendert (auch Medien/Assets)
+https://github.com/ZZWaang/music-jepa-demo
+Herkunft: Direkte Überwachung der Paper-/Projektquelle; kein Suchtreffer.
+- Dateien der offiziellen Demo-Website wurden geändert (einschließlich Medien/Assets).
 
 ## B. AUTOREN-/PROJEKTHINWEISE — kein bestätigter Release
-Neue Meldungen: 0.
+Neue Meldungen: 1.
+
+### GitHub-Hinweis: ZZWaang/music-jepa (Autoren-/Projekt-Repository)
+https://github.com/ZZWaang/music-jepa
+Herkunft: Repository im beobachteten Autorenkonto ZZWaang.
+- Erstmals erfasst: 0 Code-Dateien.
+- Gewichtsdatei-Hinweise im Repository: 0. Kein Gewichte-Download damit belegt.
+- GitHub-Releases: 0; keine erfasst.
 
 ## C. TECHNISCHE STÖRUNGEN — keine Forschungstreffer
 Neue Meldungen: 0.
@@ -74,6 +86,7 @@ OK: GitHub Repository ZZWaang/LakhNES
 OK: GitHub Repository ZZWaang/melody-reduction-algo
 OK: GitHub Repository ZZWaang/mirex2025-musecoco
 OK: GitHub Repository ZZWaang/musebert
+OK: GitHub Repository ZZWaang/music-jepa
 OK: GitHub Repository ZZWaang/music-jepa-demo
 OK: GitHub Repository ZZWaang/PianoTree-VAE
 OK: GitHub Repository ZZWaang/polyphonic-chord-texture-disentanglement
