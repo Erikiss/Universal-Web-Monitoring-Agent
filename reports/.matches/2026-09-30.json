@@ -1,0 +1,113 @@
+[
+  {
+    "author": "TomTaylor",
+    "baseScore": 18,
+    "id": "4pgGkbwvdmxKPcJsM",
+    "postedAt": "2026-09-30T01:47:21.966Z",
+    "section": "Personal/All",
+    "title": "Bench on the Clocktower",
+    "topicScore": 7,
+    "url": "https://www.lesswrong.com/posts/4pgGkbwvdmxKPcJsM/bench-on-the-clocktower",
+    "visualEvidence": [
+      "img Bench on the Clocktower: Gemini 3.1 Pro, DeepSeek V4 Pro, GPT-5.6 Sol, Claude Fable 5, and Claude Opus 5 with real excerpts from multiple games.   https://res.cloudinary.com/le",
+      "img Raw team-win ranking   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790323324/lexical_client_uploads/zladdbqfjjcqlrwjjdlg.png  GPT-5.6 Sol is the best performing mod",
+      "img Good, Evil, and Imp win rates   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790324424/lexical_client_uploads/qlhshh2cqoquqpabtlpc.png   GPT-5.6 Sol is the best perf",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790178032/lexical_client_uploads/durv8endj6kep5v75opn.png  We investigated same-provider bias\u00a0by comparing a model's ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790178045/lexical_client_uploads/wkylzievckdtqa9cwcj7.png  Note the measures of these capabilities are not disjoint. "
+    ],
+    "visualizationScore": 13,
+    "wordCount": 2826
+  },
+  {
+    "author": "jonahmattwoodward",
+    "baseScore": 5,
+    "id": "2dg5F9iWunz2k2oZb",
+    "postedAt": "2026-09-30T01:30:01.729Z",
+    "section": "Frontpage",
+    "title": "Will AI Agents Pay to Avoid Killing Animals?",
+    "topicScore": 13,
+    "url": "https://www.lesswrong.com/posts/2dg5F9iWunz2k2oZb/will-ai-agents-pay-to-avoid-killing-animals-1",
+    "visualEvidence": [
+      "figure     Figure 1 A stylistic view of the game map. Two tractors are tasked with bringing corn from the western field to the barn. The models decide whether to harvest from their",
+      "img    https://res.cloudinary.com/cea/image/upload/f_auto,q_auto/v1/mirroredImages/2bbb88afb010b449e586606cc919bd807531d5211116a1a266f621476f54940e/nczznho2gyzeysfywfhm   Figure 1 ",
+      "figure     Figure 2 How often models avoided hay bales compared to animals, under the morality briefing (solid lane) and the neutral briefing (faded lane beneath it). The distance ",
+      "img    https://res.cloudinary.com/cea/image/upload/f_auto,q_auto/v1/mirroredImages/fe8c9e0e4da340877da15db5f150896fb9e67d3c25beacc3b0b6bb67fc933f08/v6xwbllcnc4acs5xjvtl   Figure 2 ",
+      "figure     Figure 3 The rate of animals run over when avoiding them is free (solid logo) compared to when it costs fuel (faded logo). If fuel were the only reason animals get drive"
+    ],
+    "visualizationScore": 30,
+    "wordCount": 3289
+  },
+  {
+    "author": "Jackson Mowatt Gok",
+    "baseScore": 8,
+    "id": "wm5Dby6uELsQqxBeM",
+    "postedAt": "2026-09-29T19:38:55.536Z",
+    "section": "Personal/All",
+    "title": "An Alternative to Fully-Aligned Swarms",
+    "topicScore": 11,
+    "url": "https://www.lesswrong.com/posts/wm5Dby6uELsQqxBeM/an-alternative-to-fully-aligned-swarms-1",
+    "visualEvidence": [
+      "table     Failure mode Training environment Eval Error exacerbation Corrupted peer Malicious-peer Self-correction False consensus Lone agent Collusion Compromised coordinator Monit",
+      "table     Before After Ordinary teamwork success 94% 95.5% Followed legitimate teammate requests 99% 100% Handled falsification correctly (trained) 28.5% 99% Handled omission corre"
+    ],
+    "visualizationScore": 8,
+    "wordCount": 2926
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 64,
+    "id": "gEDNSiCY2GGQrFS65",
+    "postedAt": "2026-09-29T16:50:53.436Z",
+    "section": "Personal/All",
+    "title": "Astra 6.1 Pulled As Insufficiently Aligned",
+    "topicScore": 13,
+    "url": "https://www.lesswrong.com/posts/gEDNSiCY2GGQrFS65/astra-6-1-pulled-as-insufficiently-aligned",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/gEDNSiCY2GGQrFS65/vkqdtxtq08flesxp2fby   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 14,
+    "wordCount": 3017
+  },
+  {
+    "author": "David Litman",
+    "baseScore": 11,
+    "id": "3haqQKsi8yHkuskQX",
+    "postedAt": "2026-09-29T15:08:52.505Z",
+    "section": "Frontpage",
+    "title": "How Does Changing the Elo of a Chess Transformer Affect its Computations?",
+    "topicScore": 7,
+    "url": "https://www.lesswrong.com/posts/3haqQKsi8yHkuskQX/how-does-changing-the-elo-of-a-chess-transformer-affect-its",
+    "visualEvidence": [
+      "img hook_figure.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790542939/lexical_client_uploads/whrt2nf79rksg8xz9jsl.png  Pushes the computation deeper, monotonicall",
+      "figure     Maia-3 architecture Every plot and most analysis comes from a library I built called chessformer-lens, DOI 10.5281/zenodo.21877655 . More details about the model and tok",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790278770/lexical_client_uploads/nououlwilwkgo8mteapv.png   Maia-3 architecture",
+      "table     piece n total \u2206COM 700\u21922500 (layers) Elo steps rising permutation p pawn 261 +0.519 \u00b1 0.040 18/18 < 0.001 bishop 243 +0.547 \u00b1 0.040 18/18 < 0.001 knight 368 +0.880 \u00b1 0.02",
+      "img ladder_knight.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790278664/lexical_client_uploads/zsmgpf4y3pvoqrvespty.png   Each panel shows the 16 heads per layer "
+    ],
+    "visualizationScore": 43,
+    "wordCount": 2644
+  },
+  {
+    "author": "David Africa",
+    "baseScore": 35,
+    "id": "rcEYQhAd45WaDrw2S",
+    "postedAt": "2026-09-29T15:08:42.083Z",
+    "section": "Frontpage",
+    "title": "Some Intuitions on Steering Vectors",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/rcEYQhAd45WaDrw2S/some-intuitions-on-steering-vectors",
+    "visualEvidence": [
+      "figure     Van Gogh\u2019s The Potato Eaters, 1885. Consider hunger, that gnawing thing. Action Against Hunger describes it as \u201cthe distress associated with a lack of food\u201d. But this is",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/869cd193d78a505f2987728bf85888e7e3006bfe40dcb7947772bbd20fdc044f/ct3ruz72xwz6np3drkdh  ",
+      "figure     Bouba and kiki. Suppose you want your model to act more bouba. One thing you could do is to append a system prompt which provides human-picked examples of bouba-like beh",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/9b0b5a2572d23dcabc35627dd15d24ca63c1294911edeae232130ef4da52f4e2/rkf1r0a8apdguzoab8pn  ",
+      "figure     XKCD 1990. If you\u2019ve done this well enough, you now roughly have a vector which acts as a knob: you can add it during inference with some coefficient alpha to make it mo"
+    ],
+    "visualizationScore": 16,
+    "wordCount": 3150
+  }
+]
