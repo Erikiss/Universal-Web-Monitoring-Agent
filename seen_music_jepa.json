@@ -10,34 +10,18 @@
       "repo:ZZWaang/music-jepa": "author",
       "repo:ZZWaang/music-jepa-demo": "author",
       "repo:enhansome/enhansome-agentic-world-modeling": "third_party",
-      "repo:guangjun1997327/PianoAutomaticAnnotationSystem": "third_party"
+      "repo:guangjun1997327/PianoAutomaticAnnotationSystem": "third_party",
+      "repo:smikoo1000-svg/Fnf": "third_party"
     },
-    "last_digest_at": null,
-    "next_digest_at": "2026-09-30T10:41:15+00:00",
-    "pending": {
-      "repo:enhansome/enhansome-agentic-world-modeling": {
-        "changes": [
-          {
-            "fingerprint": "e6f8a996b03055093576a1bb5cd2ee584f1d5d9d7d7e3ebac085412f80da503d",
-            "summary": [
-              "Neue Ressourcenlinks: https://github.com/xiaomi-mlab/DriveVA"
-            ]
-          }
-        ],
-        "first_seen_at": "2026-09-27T13:15:15+00:00",
-        "key": "repo:enhansome/enhansome-agentic-world-modeling",
-        "last_seen_at": "2026-09-27T13:15:15+00:00",
-        "origin": "GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.",
-        "title": "GitHub-Hinweis: enhansome/enhansome-agentic-world-modeling (Drittanbieter-Treffer, Zuordnung unbestaetigt)",
-        "url": "https://github.com/enhansome/enhansome-agentic-world-modeling"
-      }
-    },
+    "last_digest_at": "2026-09-30T14:09:54+00:00",
+    "next_digest_at": "2026-10-07T14:09:54+00:00",
+    "pending": {},
     "version": 1
   },
   "errors": {
     "GitHub Metadaten NeilKhandelwal/drum-jepa": "FetchError: HTTP 404: https://api.github.com/repos/NeilKhandelwal/drum-jepa"
   },
-  "last_checked": "2026-09-29T14:17:08+00:00",
+  "last_checked": "2026-09-30T14:09:54+00:00",
   "observations": {
     "arxiv": {
       "links": [],
@@ -178,6 +162,7 @@
         "https://github.com/AMAP-ML/DreamX-World",
         "https://github.com/AMAP-ML/Omni-WorldBench",
         "https://github.com/AMAP-ML/R2MBench",
+        "https://github.com/AMAP-ML/StateAgent",
         "https://github.com/Aaron617/text2world",
         "https://github.com/Agentic-Intelligence-Lab/AIM",
         "https://github.com/AgibotTech/EWMBench",
@@ -186,6 +171,8 @@
         "https://github.com/AlayaLab/AlayaWorld",
         "https://github.com/AlayaLab/HelloWorld",
         "https://github.com/AlayaLab/ShadowDancer",
+        "https://github.com/AlayaLab/WorldSculpt",
+        "https://github.com/AlayaLab/pwm",
         "https://github.com/Alescontrela/viper_rl",
         "https://github.com/Alexyskoutnev/TWIN-ARC-AGI-3",
         "https://github.com/April-Yz/ManiGaussian_Bimanual",
@@ -224,6 +211,7 @@
         "https://github.com/GLAM2025/glam",
         "https://github.com/GameGen-X/GameGen-X",
         "https://github.com/Gaussian-World-Model/gaussianwm",
+        "https://github.com/Gen-Verse/JEPA-Anything",
         "https://github.com/Genesis-Embodied-AI/genesis-world",
         "https://github.com/GigaAI-research/DriveDreamer4D",
         "https://github.com/GigaAI-research/EmbodieDreamer",
@@ -263,6 +251,7 @@
         "https://github.com/JiahaoPlus/EvoWorld",
         "https://github.com/Jianghanxiao/PhysTwin",
         "https://github.com/JinPLu/WRBench",
+        "https://github.com/JiuTian-VL/ProWAM",
         "https://github.com/KDEGroup/UI-AGILE",
         "https://github.com/Kevin-lkw/LoopNav",
         "https://github.com/Kevin-thu/Epona",
@@ -286,6 +275,7 @@
         "https://github.com/Little-Podi/AdaWorld",
         "https://github.com/LogosRoboticsGroup/A2World",
         "https://github.com/LogosRoboticsGroup/Metis",
+        "https://github.com/LogosRoboticsGroup/TacPAC",
         "https://github.com/Luo-Z13/EO-WM",
         "https://github.com/MIV-XJTU/FSDrive",
         "https://github.com/MSunDYY/SparseOccVLA",
@@ -331,6 +321,7 @@
         "https://github.com/OpenHelix-Team/VLA-RFT",
         "https://github.com/OpenHelix-Team/frappe",
         "https://github.com/OpenRobotLab/Aether",
+        "https://github.com/OpenWAM-Official/OpenWAM",
         "https://github.com/Orange-3DV-Team/CaR",
         "https://github.com/OrangeSodahub/ORV",
         "https://github.com/PJLab-ADG/DriveArena",
@@ -417,6 +408,7 @@
         "https://github.com/XuAdventurer/PIN-WM",
         "https://github.com/XuWuLingYu/WristWorld",
         "https://github.com/XuYuanFei01/ResDreamer",
+        "https://github.com/XuejiFang/LeWAM",
         "https://github.com/YanhaoWu/UMGen",
         "https://github.com/YeWR/EfficientZero",
         "https://github.com/YilunKuang/lpworldmodel",
@@ -749,6 +741,7 @@
         "https://github.com/showlab/ShowUI",
         "https://github.com/showlab/World-VLA-Loop",
         "https://github.com/showlab/macosworld",
+        "https://github.com/skumar-ml/belief-world-models",
         "https://github.com/skywalker023/fantom",
         "https://github.com/skywalker023/thought-tracing",
         "https://github.com/snap-research/promptable-game-models",
@@ -899,6 +892,21 @@
       "releases": [],
       "resource_links": [],
       "weight_file_hints": {}
+    },
+    "repo:smikoo1000-svg/Fnf": {
+      "code_files": [
+        "scripts/eval/fetch_maestro.py",
+        "scripts/eval/make_metric_fixtures.py",
+        "scripts/transkun/export_onnx.py"
+      ],
+      "releases": [],
+      "resource_links": [],
+      "weight_file_hints": {
+        "vendor/basic-pitch-model/group1-shard1of1.bin": "03eeaf87f8f79e685ec991055093d093933be54d",
+        "vendor/transkun/tk_attr.onnx": "515eb15e75bd4e2dfc331931b1efbbadc7743058",
+        "vendor/transkun/tk_core.onnx": "83bc6c97b0297af8e7fabba20687d213bdafe2ac",
+        "vendor/transkun/tk_scorer.bin": "21ee1fe11367844cc0d9d82ee1d11812e7eb3d70"
+      }
     }
   },
   "paper_id": "2607.22000",
@@ -1103,6 +1111,7 @@
         "https://github.com/AMAP-ML/DreamX-World",
         "https://github.com/AMAP-ML/Omni-WorldBench",
         "https://github.com/AMAP-ML/R2MBench",
+        "https://github.com/AMAP-ML/StateAgent",
         "https://github.com/Aaron617/text2world",
         "https://github.com/Agentic-Intelligence-Lab/AIM",
         "https://github.com/AgibotTech/EWMBench",
@@ -1111,6 +1120,8 @@
         "https://github.com/AlayaLab/AlayaWorld",
         "https://github.com/AlayaLab/HelloWorld",
         "https://github.com/AlayaLab/ShadowDancer",
+        "https://github.com/AlayaLab/WorldSculpt",
+        "https://github.com/AlayaLab/pwm",
         "https://github.com/Alescontrela/viper_rl",
         "https://github.com/Alexyskoutnev/TWIN-ARC-AGI-3",
         "https://github.com/April-Yz/ManiGaussian_Bimanual",
@@ -1149,6 +1160,7 @@
         "https://github.com/GLAM2025/glam",
         "https://github.com/GameGen-X/GameGen-X",
         "https://github.com/Gaussian-World-Model/gaussianwm",
+        "https://github.com/Gen-Verse/JEPA-Anything",
         "https://github.com/Genesis-Embodied-AI/genesis-world",
         "https://github.com/GigaAI-research/DriveDreamer4D",
         "https://github.com/GigaAI-research/EmbodieDreamer",
@@ -1188,6 +1200,7 @@
         "https://github.com/JiahaoPlus/EvoWorld",
         "https://github.com/Jianghanxiao/PhysTwin",
         "https://github.com/JinPLu/WRBench",
+        "https://github.com/JiuTian-VL/ProWAM",
         "https://github.com/KDEGroup/UI-AGILE",
         "https://github.com/Kevin-lkw/LoopNav",
         "https://github.com/Kevin-thu/Epona",
@@ -1211,6 +1224,7 @@
         "https://github.com/Little-Podi/AdaWorld",
         "https://github.com/LogosRoboticsGroup/A2World",
         "https://github.com/LogosRoboticsGroup/Metis",
+        "https://github.com/LogosRoboticsGroup/TacPAC",
         "https://github.com/Luo-Z13/EO-WM",
         "https://github.com/MIV-XJTU/FSDrive",
         "https://github.com/MSunDYY/SparseOccVLA",
@@ -1256,6 +1270,7 @@
         "https://github.com/OpenHelix-Team/VLA-RFT",
         "https://github.com/OpenHelix-Team/frappe",
         "https://github.com/OpenRobotLab/Aether",
+        "https://github.com/OpenWAM-Official/OpenWAM",
         "https://github.com/Orange-3DV-Team/CaR",
         "https://github.com/OrangeSodahub/ORV",
         "https://github.com/PJLab-ADG/DriveArena",
@@ -1342,6 +1357,7 @@
         "https://github.com/XuAdventurer/PIN-WM",
         "https://github.com/XuWuLingYu/WristWorld",
         "https://github.com/XuYuanFei01/ResDreamer",
+        "https://github.com/XuejiFang/LeWAM",
         "https://github.com/YanhaoWu/UMGen",
         "https://github.com/YeWR/EfficientZero",
         "https://github.com/YilunKuang/lpworldmodel",
@@ -1674,6 +1690,7 @@
         "https://github.com/showlab/ShowUI",
         "https://github.com/showlab/World-VLA-Loop",
         "https://github.com/showlab/macosworld",
+        "https://github.com/skumar-ml/belief-world-models",
         "https://github.com/skywalker023/fantom",
         "https://github.com/skywalker023/thought-tracing",
         "https://github.com/snap-research/promptable-game-models",
@@ -1801,7 +1818,7 @@
         "https://huggingface.co/papers/2604.22748"
       ],
       "related": true,
-      "stamp": "64f0e6a4abd6f6053cd6ac084cb45ced8ff214223542ff17e86662a4d595ebd6"
+      "stamp": "ccb3ddf79f236383126c3f29dae221be14539d4361375a985aceb1e16082c096"
     },
     "guangjun1997327/PianoAutomaticAnnotationSystem": {
       "exact_paper": true,
@@ -1938,6 +1955,12 @@
       "links": [],
       "related": false,
       "stamp": "98c84da9f6c7d7c6f7bb4e6833a7f4c896237109df7e94c4e9ec7c127b87f3f3"
+    },
+    "smikoo1000-svg/Fnf": {
+      "exact_paper": true,
+      "links": [],
+      "related": true,
+      "stamp": "acb4212a967226be91fe9ec23cd7d36f7a4db50e7cb0e3f50cad9443264df4ab"
     },
     "teticio/music-jepa": {
       "exact_paper": false,
