@@ -1,0 +1,74 @@
+[
+  {
+    "author": "Alexandre Variengien",
+    "baseScore": 11,
+    "id": "4ksBB2CXSLk7CJnnj",
+    "postedAt": "2026-10-01T13:40:32.409Z",
+    "section": "Frontpage",
+    "title": "Classifying Recent AI Agent Incidents",
+    "topicScore": 11,
+    "url": "https://www.lesswrong.com/posts/4ksBB2CXSLk7CJnnj/classifying-recent-ai-agent-incidents",
+    "visualEvidence": [
+      "table     Incident Organization Model(s) Setting Dates of agent actions Agent diverted GPUs to mine crypto Alibaba ROME Model RL training 2025 Agent used DNS to reach an external c"
+    ],
+    "visualizationScore": 4,
+    "wordCount": 2064
+  },
+  {
+    "author": "Megha Sharma",
+    "baseScore": 1,
+    "id": "iEubXCk7xC5nPc7Cm",
+    "postedAt": "2026-09-30T20:57:55.656Z",
+    "section": "Personal/All",
+    "title": "Confounding Behaviours: Do AI Models Really Sandbag?",
+    "topicScore": 12,
+    "url": "https://www.lesswrong.com/posts/iEubXCk7xC5nPc7Cm/confounding-behaviours-do-ai-models-really-sandbag",
+    "visualEvidence": [
+      "figure     Fig 1. Results for GPT 5.6 Terra to selectively underperform by prompting models. We see the model is able to selectively underperform in dangerous benchmarks in biology",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790327569/lexical_client_uploads/mqi8tzsmgdrgloblav3y.png   Fig 1. Results for GPT 5.6 Terra to selectively ",
+      "figure     Fig 2. Results for Qwen 3.8 Flash to selectively underperform by prompting models. We see the model is able to selectively underperform in dangerous benchmarks in biolog",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790327851/lexical_client_uploads/qob4zme89hlxlpoxj1ix.png   Fig 2. Results for Qwen 3.8 Flash to selectively",
+      "figure     Fig 3. Results for Qwen 3.8 Flash when given indirect hints to sandbag through threats for deployment instead of direct instructions. The model sandbags less than direct"
+    ],
+    "visualizationScore": 34,
+    "wordCount": 4409
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 35,
+    "id": "YuqaJ5bENoyyg9eMY",
+    "postedAt": "2026-09-30T16:00:54.774Z",
+    "section": "Personal/All",
+    "title": "A \u2018Morally Binding\u2019 White House Accord on AI Safety",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/YuqaJ5bENoyyg9eMY/a-morally-binding-white-house-accord-on-ai-safety",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/YuqaJ5bENoyyg9eMY/zgtrugjrreqkqgb6lvwa   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 21,
+    "wordCount": 4285
+  },
+  {
+    "author": "Tom Angsten",
+    "baseScore": 9,
+    "id": "KeBccWBGXnNXzZFBp",
+    "postedAt": "2026-09-30T15:54:54.877Z",
+    "section": "Personal/All",
+    "title": "Do VPD's Explanations Aggregate? An Audit of the Released Decomposition",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/KeBccWBGXnNXzZFBp/do-vpd-s-explanations-aggregate-an-audit-of-the-released-1",
+    "visualEvidence": [
+      "img KL divergence from the original model as more donor tokens are aggregated   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/7ifdrssgnG2kFm",
+      "img Schematic of the aggregation operation   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/7ifdrssgnG2kFmzy3/dvlvl0nue3jqkcwocaim   ",
+      "img Schematic of the hard and soft delete operations   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/7ifdrssgnG2kFmzy3/mqga6zf0g2kk0fakdcfm ",
+      "img KL divergence on code and prose recipients, by kind of donor   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/7ifdrssgnG2kFmzy3/cmamwye1x",
+      "img Output harm from the code edit on five kinds of text   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/7ifdrssgnG2kFmzy3/xnhdyvy34iipuj9on"
+    ],
+    "visualizationScore": 9,
+    "wordCount": 5741
+  }
+]
