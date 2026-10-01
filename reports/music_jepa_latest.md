@@ -1,15 +1,15 @@
 # Music-JEPA — Prüfbericht
-2026-09-30T14:09:54+00:00
+2026-10-01T14:43:29+00:00
 
 Tagesalarm: 0 Meldungen.
-Neue Drittanbieter-Signale dieses Laufs: 2 (kein Tagesalarm).
-Wochensammlung dieses Laufs: 2 Quellen.
+Neue Drittanbieter-Signale dieses Laufs: 0 (kein Tagesalarm).
+Wochensammlung dieses Laufs: 0 Quellen.
 Für spätere Wochensammlung vorgemerkt: 0 Quellen.
 Nächste Wochensammlung frühestens: 2026-10-07T14:09:54+00:00 (nächster Lauf; nur mit neuen Hinweisen).
 Abruffehler in diesem Lauf: 1.
 
 # Music-JEPA — täglicher Alarm
-2026-09-30T14:09:54+00:00
+2026-10-01T14:43:29+00:00
 
 Klare Quellenänderung bedeutet NICHT automatisch: Code und Gewichte veröffentlicht.
 
@@ -31,43 +31,6 @@ Drittanbieter-Suchtreffer lösen diese Tagesmail nicht aus. Sie werden separat,
 frühestens alle sieben Tage und nur bei neuen Hinweisen als Wochensammlung verschickt.
 
 ## D. DRITTANBIETER-SUCHE — ausschließlich für Wochensammlung
-### GitHub-Hinweis: enhansome/enhansome-agentic-world-modeling (Drittanbieter-Treffer, Zuordnung unbestaetigt)
-https://github.com/enhansome/enhansome-agentic-world-modeling
-Herkunft: GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.
-- Neue Ressourcenlinks: https://github.com/AMAP-ML/StateAgent, https://github.com/AlayaLab/WorldSculpt, https://github.com/AlayaLab/pwm (+6 weitere)
-
-### GitHub-Hinweis: smikoo1000-svg/Fnf (Drittanbieter-Treffer, Zuordnung unbestaetigt)
-https://github.com/smikoo1000-svg/Fnf
-Herkunft: GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.
-- Erstmals erfasst: 3 Code-Dateien; Beispiele: scripts/eval/fetch_maestro.py, scripts/eval/make_metric_fixtures.py, scripts/transkun/export_onnx.py.
-- Gewichtsdatei-Hinweise im Repository: 4 (vendor/basic-pitch-model/group1-shard1of1.bin, vendor/transkun/tk_attr.onnx, vendor/transkun/tk_core.onnx (+1 weitere)).
-- GitHub-Releases: 0; keine erfasst.
-
-# Music-JEPA — WOCHENSAMMLUNG: DRITTANBIETER
-2026-09-30T14:09:54+00:00
-
-2 Repository-/Modellquellen mit noch nicht gemeldeten Hinweisen.
-Dies sind Suchfunde, KEINE bestätigten offiziellen Releases und KEINE Alarme über
-eine neue Paper-Version oder eine geänderte offizielle Projektseite.
-Direkte Paper-/Projektänderungen werden unabhängig davon im täglichen Lauf gemeldet.
-
-## enhansome/enhansome-agentic-world-modeling
-https://github.com/enhansome/enhansome-agentic-world-modeling
-Herkunft: GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.
-Gesammelt: 2026-09-27T13:15:15+00:00 bis 2026-09-30T14:09:54+00:00
-- Neue Ressourcenlinks: https://github.com/xiaomi-mlab/DriveVA
-- Neue Ressourcenlinks: https://github.com/AMAP-ML/StateAgent, https://github.com/AlayaLab/WorldSculpt, https://github.com/AlayaLab/pwm (+6 weitere)
-
-## smikoo1000-svg/Fnf
-https://github.com/smikoo1000-svg/Fnf
-Herkunft: GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.
-Gesammelt: 2026-09-30T14:09:54+00:00 bis 2026-09-30T14:09:54+00:00
-- Erstmals erfasst: 3 Code-Dateien; Beispiele: scripts/eval/fetch_maestro.py, scripts/eval/make_metric_fixtures.py, scripts/transkun/export_onnx.py.
-- Gewichtsdatei-Hinweise im Repository: 4 (vendor/basic-pitch-model/group1-shard1of1.bin, vendor/transkun/tk_attr.onnx, vendor/transkun/tk_core.onnx (+1 weitere)).
-- GitHub-Releases: 0; keine erfasst.
-
-Dateinamen sind nur Hinweise. Code/Modelle wurden weder ausgeführt noch heruntergeladen.
-
 ## Technischer Quellenstatus
 OK: arXiv
 OK: Projektseite
