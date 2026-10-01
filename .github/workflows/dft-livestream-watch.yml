@@ -1,0 +1,128 @@
+name: DFT livestream watch
+
+on:
+  schedule:
+    # UTC envelope for Thursday 00:00-23:59 in San Francisco (PDT and PST).
+    # The timezone-aware gate below restricts this to the FIRST Thursday.
+    # Offset from :00 to reduce busy-hour queueing; Actions is best-effort.
+    - cron: '7,22,37,52 7-23 * * 4'
+    - cron: '7,22,37,52 0-7 * * 5'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Read sources and check secret presence without emailing or persisting'
+        type: boolean
+        default: true
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/dft-livestream-watch.yml'
+      - 'dft_livestream_watch.py'
+      - 'test_dft_livestream_watch.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dft-livestream-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Calendar gate (San Francisco, including DST)
+        id: gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          REQUESTED_DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          python3 - <<'PY'
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          import os
+          event = os.environ['EVENT_NAME']
+          now = datetime.now(ZoneInfo('America/Los_Angeles'))
+          enabled = event != 'schedule' or (now.weekday() == 3 and now.day <= 7)
+          dry = event == 'push' or (event == 'workflow_dispatch' and os.environ.get('REQUESTED_DRY_RUN') != 'false')
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f"enabled={str(enabled).lower()}\ndry_run={str(dry).lower()}\n")
+          print(f'San Francisco time: {now.isoformat()}; check enabled: {enabled}; dry run: {dry}')
+          PY
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.enabled == 'true'
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.enabled == 'true'
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Check existing mail secrets (no email)
+        if: steps.gate.outputs.enabled == 'true'
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+        run: |
+          python - <<'PY'
+          import os
+          required = ('SMTP_HOST', 'SMTP_USERNAME', 'SMTP_PASSWORD', 'ALERT_EMAIL_TO')
+          missing = [name for name in required if not os.getenv(name)]
+          if missing:
+              raise SystemExit('Missing existing repository secrets: ' + ', '.join(missing))
+          print('Existing mail-secret configuration is present. No recipient value printed and no test email sent.')
+          PY
+      - name: Install existing dependencies
+        if: steps.gate.outputs.enabled == 'true'
+        run: pip install -r requirements.txt
+      - name: Offline regression tests
+        if: steps.gate.outputs.enabled == 'true'
+        run: python -m unittest test_dft_livestream_watch -v
+      - name: Check public DFT stream announcements
+        if: steps.gate.outputs.enabled == 'true'
+        id: watch
+        env:
+          DRY_RUN: ${{ steps.gate.outputs.dry_run }}
+        run: |
+          args=()
+          if [ "$DRY_RUN" = true ]; then args+=(--dry-run); fi
+          python dft_livestream_watch.py "${args[@]}" \
+            --pending-state "$RUNNER_TEMP/dft-pending-state.json" \
+            --alert-file "$RUNNER_TEMP/dft-alert.txt"
+      - name: Send new stream alert through existing mail route
+        if: steps.watch.outputs.alert_count != '' && steps.watch.outputs.alert_count != '0' && steps.gate.outputs.dry_run == 'false'
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
+          ALERT_SUBJECT: ${{ steps.watch.outputs.subject }}
+        run: python send_alert.py --subject "$ALERT_SUBJECT" --body-file "$RUNNER_TEMP/dft-alert.txt"
+      # Failed delivery never advances state. The next check retries the alert.
+      - name: Persist only successfully sent stream links
+        if: steps.watch.outputs.alert_count != '' && steps.watch.outputs.alert_count != '0' && steps.gate.outputs.dry_run == 'false'
+        run: |
+          cp "$RUNNER_TEMP/dft-pending-state.json" seen_dft_livestreams.json
+          cp "$RUNNER_TEMP/dft-alert.txt" reports/dft_livestream_latest.md
+          git config user.name "page-watch-bot"
+          git config user.email "page-watch-bot@users.noreply.github.com"
+          git add -- seen_dft_livestreams.json reports/dft_livestream_latest.md
+          if git diff --staged --quiet; then exit 0; fi
+          git commit -m "Record delivered DFT livestream alert"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            git pull --rebase origin main
+          done
+          git push origin HEAD:main
+      - name: Fail visibly on incomplete checks
+        if: steps.watch.outputs.error_count != '' && steps.watch.outputs.error_count != '0'
+        run: |
+          echo 'Some source checks failed. See the run summary; this was not a verified quiet check.'
+          exit 1
