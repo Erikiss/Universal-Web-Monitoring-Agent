@@ -1,5 +1,5 @@
 # Music-JEPA — Prüfbericht
-2026-10-01T14:43:29+00:00
+2026-10-02T14:04:03+00:00
 
 Tagesalarm: 0 Meldungen.
 Neue Drittanbieter-Signale dieses Laufs: 0 (kein Tagesalarm).
@@ -9,7 +9,7 @@ Nächste Wochensammlung frühestens: 2026-10-07T14:09:54+00:00 (nächster Lauf; 
 Abruffehler in diesem Lauf: 1.
 
 # Music-JEPA — täglicher Alarm
-2026-10-01T14:43:29+00:00
+2026-10-02T14:04:03+00:00
 
 Klare Quellenänderung bedeutet NICHT automatisch: Code und Gewichte veröffentlicht.
 
@@ -57,6 +57,7 @@ OK: GitHub Repository kunfang98927/kunfang98927.github.io
 OK: GitHub Repository kunfang98927/Mashup-Project
 OK: GitHub Repository kunfang98927/MT3_inference_pop909
 OK: GitHub Repository kunfang98927/musicgroundingbench
+OK: GitHub Repository kunfang98927/musicgroundingbench.github.io
 OK: GitHub Repository kunfang98927/PedalDetection
 OK: GitHub Repository kunfang98927/Timeline-App
 OK: GitHub Repository kunfang98927/YQBD

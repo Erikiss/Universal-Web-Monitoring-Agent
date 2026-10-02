@@ -21,7 +21,7 @@
   "errors": {
     "GitHub Metadaten NeilKhandelwal/drum-jepa": "FetchError: HTTP 404: https://api.github.com/repos/NeilKhandelwal/drum-jepa"
   },
-  "last_checked": "2026-10-01T14:43:29+00:00",
+  "last_checked": "2026-10-02T14:04:03+00:00",
   "observations": {
     "arxiv": {
       "links": [],
@@ -1818,7 +1818,7 @@
         "https://huggingface.co/papers/2604.22748"
       ],
       "related": true,
-      "stamp": "74d30c9897b9f53c4f95d83c7f7f52db7cad4765be20388dc878c4086a38917f"
+      "stamp": "3a3210055747b3b6e426a51c8cf1c5af4aae7fe80b7ab126b5e34b36407777c5"
     },
     "guangjun1997327/PianoAutomaticAnnotationSystem": {
       "exact_paper": true,
@@ -1954,7 +1954,13 @@
       "exact_paper": false,
       "links": [],
       "related": false,
-      "stamp": "98c84da9f6c7d7c6f7bb4e6833a7f4c896237109df7e94c4e9ec7c127b87f3f3"
+      "stamp": "b1ae802b8b0d4ed82ebaf6227b414ac42409902080b7222eb0bc3e78f09c1237"
+    },
+    "kunfang98927/musicgroundingbench.github.io": {
+      "exact_paper": false,
+      "links": [],
+      "related": false,
+      "stamp": "3fa992fdd419668059a3778493bddddce2a31d94fc5bdd4d6e5d9363b126d20a"
     },
     "smikoo1000-svg/Fnf": {
       "exact_paper": true,
