@@ -1,5 +1,5 @@
 # Music-JEPA — Prüfbericht
-2026-10-03T12:41:11+00:00
+2026-10-04T13:24:26+00:00
 
 Tagesalarm: 0 Meldungen.
 Neue Drittanbieter-Signale dieses Laufs: 0 (kein Tagesalarm).
@@ -9,7 +9,7 @@ Nächste Wochensammlung frühestens: 2026-10-07T14:09:54+00:00 (nächster Lauf; 
 Abruffehler in diesem Lauf: 1.
 
 # Music-JEPA — täglicher Alarm
-2026-10-03T12:41:11+00:00
+2026-10-04T13:24:26+00:00
 
 Klare Quellenänderung bedeutet NICHT automatisch: Code und Gewichte veröffentlicht.
 
@@ -42,7 +42,6 @@ OK: GitHub Suche "music_jepa" in:name,description,readme fork:false
 OK: GitHub Suche "Learning a World Model of Sound from Action" in:readme fork:false
 OK: GitHub Repository AI-in-Transportation-Lab/awesome-jepa
 OK: GitHub Repository ai-integr8tor/https-github.com-leofan90_Awesome-World-Models
-OK: GitHub Repository angeloskanatas/music-jepa
 OK: GitHub Repository BaiShuanghao/my_arXiv_daily
 OK: GitHub Repository enhansome/enhansome-agentic-world-modeling
 OK: GitHub Repository guangjun1997327/PianoAutomaticAnnotationSystem
