@@ -1,7 +1,7 @@
 # Music-JEPA — Prüfbericht
-2026-10-04T13:24:26+00:00
+2026-10-05T16:19:57+00:00
 
-Tagesalarm: 0 Meldungen.
+Tagesalarm: 2 Meldungen.
 Neue Drittanbieter-Signale dieses Laufs: 0 (kein Tagesalarm).
 Wochensammlung dieses Laufs: 0 Quellen.
 Für spätere Wochensammlung vorgemerkt: 0 Quellen.
@@ -9,17 +9,28 @@ Nächste Wochensammlung frühestens: 2026-10-07T14:09:54+00:00 (nächster Lauf; 
 Abruffehler in diesem Lauf: 1.
 
 # Music-JEPA — täglicher Alarm
-2026-10-04T13:24:26+00:00
+2026-10-05T16:19:57+00:00
 
 Klare Quellenänderung bedeutet NICHT automatisch: Code und Gewichte veröffentlicht.
 
 ## Status der direkt überwachten Quellen
 arXiv-Paper: keine neue Änderung erkannt (Erstabruf setzt nur den Vergleichsstand).
-Offizielle Projektseite: keine neue Änderung erkannt (Erstabruf setzt nur den Vergleichsstand).
-Dateien der offiziellen Demo-Website: keine neue Änderung erkannt (Erstabruf setzt nur den Vergleichsstand).
+Offizielle Projektseite: ÄNDERUNG ERKANNT — klarer Treffer an direkt überwachter Quelle.
+Dateien der offiziellen Demo-Website: ÄNDERUNG ERKANNT — klarer Treffer an direkt überwachter Quelle.
 
 ## A. KLARE TREFFER — direkte Paper-/Projektänderungen
-Neue Meldungen: 0.
+Neue Meldungen: 2.
+
+### Projektseite geaendert (keine inhaltliche Release-Pruefung)
+https://zzwaang.github.io/music-jepa-demo/
+Herkunft: Direkte Überwachung der Paper-/Projektquelle; kein Suchtreffer.
+- Das HTML der offiziellen Projektseite hat sich geändert.
+- Neue Ressourcenlinks: https://github.com/ZZWaang/music-jepa
+
+### Projekt-Repository geaendert (auch Medien/Assets)
+https://github.com/ZZWaang/music-jepa-demo
+Herkunft: Direkte Überwachung der Paper-/Projektquelle; kein Suchtreffer.
+- Dateien der offiziellen Demo-Website wurden geändert (einschließlich Medien/Assets).
 
 ## B. AUTOREN-/PROJEKTHINWEISE — kein bestätigter Release
 Neue Meldungen: 0.
@@ -68,6 +79,7 @@ OK: GitHub Repository Sound-of-AI-Lab-Open-Science/music-understanding-baselines
 OK: GitHub Repository SuperInstance/fleet-jepa-midi
 OK: GitHub Repository SuperInstance/recovered-copy-20260824-fleet-jepa-midi
 OK: GitHub Repository teticio/music-jepa
+OK: GitHub Repository vvalleejo/SegundoCerebro-JEPA
 OK: GitHub Repository ZZWaang/acc-gen-8bar-wholesong
 OK: GitHub Repository ZZWaang/audio2midi
 OK: GitHub Repository ZZWaang/icm-deep-music-generation

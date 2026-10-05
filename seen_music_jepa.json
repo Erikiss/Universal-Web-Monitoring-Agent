@@ -21,18 +21,20 @@
   "errors": {
     "GitHub Metadaten NeilKhandelwal/drum-jepa": "FetchError: HTTP 404: https://api.github.com/repos/NeilKhandelwal/drum-jepa"
   },
-  "last_checked": "2026-10-04T13:24:26+00:00",
+  "last_checked": "2026-10-05T16:19:57+00:00",
   "observations": {
     "arxiv": {
       "links": [],
       "version": 1
     },
     "project-page": {
-      "html_sha256": "282ccbbb6dd8a3c9649fc177d2dd2f89dd08676f5134cdf25d71081ff9191144",
-      "links": []
+      "html_sha256": "e1b2113512b51007d0f3918346cda0cfd80e532b977e1257b6894fd6a103f40f",
+      "links": [
+        "https://github.com/ZZWaang/music-jepa"
+      ]
     },
     "project-source": {
-      "tree_sha": "3e7378dbb768241a1635c19edc39c13e8c44d851"
+      "tree_sha": "8fc0d3d18f286a1e9faa5e09c541ff842207ae11"
     },
     "repo:NeilKhandelwal/drum-jepa": {
       "code_files": [
@@ -1066,7 +1068,7 @@
       "exact_paper": false,
       "links": [],
       "related": true,
-      "stamp": "2af96f34edce4c7154819ea77b1b3150bd5b25429a40d880277b4c91b070fa82"
+      "stamp": "034d035ebb04fbe612c765c2c399a1503083fed00390b9b08905ff177c99bb2b"
     },
     "ZZWaang/polyphonic-chord-texture-disentanglement": {
       "exact_paper": false,
@@ -1818,7 +1820,7 @@
         "https://huggingface.co/papers/2604.22748"
       ],
       "related": true,
-      "stamp": "2d596e37dc9bd6fe2aa232994d5e06726b4960930769cd21733e64a045f9b85b"
+      "stamp": "bb9f4608d4b6435d8d7b81020cd4c1cbf2c70e83a911b820fa5b002c1a2e8e4d"
     },
     "guangjun1997327/PianoAutomaticAnnotationSystem": {
       "exact_paper": true,
@@ -1976,6 +1978,12 @@
       ],
       "related": true,
       "stamp": "016363dc3bc5e613c028ae762495277f1d86d60b577120c2cc7954138b2d9752"
+    },
+    "vvalleejo/SegundoCerebro-JEPA": {
+      "exact_paper": false,
+      "links": [],
+      "related": true,
+      "stamp": "c07db8da0156cfec78a358d3404afebd35de25bf3138879cdd9eca77aca04acf"
     }
   },
   "schema_version": 1
