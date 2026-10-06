@@ -1,0 +1,182 @@
+[
+  {
+    "author": "invertedpassion",
+    "baseScore": 5,
+    "id": "oG53pJxkHgpL4Ny4d",
+    "postedAt": "2026-10-06T12:30:50.224Z",
+    "section": "Frontpage",
+    "title": "How funny are the frontier AI models?",
+    "topicScore": 26,
+    "url": "https://www.lesswrong.com/posts/oG53pJxkHgpL4Ny4d/how-funny-are-the-frontier-ai-models",
+    "visualEvidence": [
+      "img    https://substackcdn.com/image/fetch/$s_!YQ_o!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4",
+      "img    https://substackcdn.com/image/fetch/$s_!3dew!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4",
+      "img    https://substackcdn.com/image/fetch/$s_!_2vM!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd",
+      "img    https://substackcdn.com/image/fetch/$s_!_EKb!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7",
+      "img    https://substackcdn.com/image/fetch/$s_!PEkF!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1"
+    ],
+    "visualizationScore": 12,
+    "wordCount": 2025
+  },
+  {
+    "author": "Arjun Sri",
+    "baseScore": 13,
+    "id": "dAbHSGXFNkgjcGAuz",
+    "postedAt": "2026-10-06T02:20:39.116Z",
+    "section": "Frontpage",
+    "title": "Takes One to Know One - Training a model to grade reward hacks causes it to reward hack less itself",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/dAbHSGXFNkgjcGAuz/takes-one-to-know-one-training-a-model-to-grade-reward-hacks",
+    "visualEvidence": [
+      "figure      of the time. Every grader version and every seed complied less than the untrained model. I also trained a grader by never showing it a hack during training and it compl",
+      "img Hack rates when told to hack: untrained base 62%, every grader version lower, down to 7% for the PASS-only grader   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto",
+      "figure      of the time. 67% ",
+      "img Unprompted hack rates: untrained base 0%, model trained to write hacks 67%, the 11 grader models 7 of 28,160 answers   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_a",
+      "figure      dataset and the grader gamed the metrics less than the untrained model (51% vs 57%) in all three training seeds. School of Reward Hacks "
+    ],
+    "visualizationScore": 39,
+    "wordCount": 1808
+  },
+  {
+    "author": "dani roytburg",
+    "baseScore": 39,
+    "id": "NvtLJ5nawJ6akWEqH",
+    "postedAt": "2026-10-06T02:17:28.854Z",
+    "section": "Frontpage",
+    "title": "You can graft SDF changes from base models onto post-trained models",
+    "topicScore": 9,
+    "url": "https://www.lesswrong.com/posts/NvtLJ5nawJ6akWEqH/you-can-graft-sdf-changes-from-base-models-onto-post-trained",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791252236/lexical_client_uploads/asguadstmhfs4vpuyudi.png  If a base model is available for whatever model you plan t",
+      "figure      Since synthetic documents are meant to resemble typical pre-training data, we would ideally mix synthetic documents straight into pre-training data.\u00a0This is, of course,",
+      "img midtrain_new.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791249236/lexical_client_uploads/cfhrsrxxutyyhuiqclhd.png   ",
+      "figure      The agreed-upon shortcut is to initialize SDF directly on the instruct-tuned model. Ok, why not just do it after? Figure 2 : a diagram of how people do \u201c native \u201d SDF \u2013",
+      "img native_new.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791249225/lexical_client_uploads/wmb9nkkoydz8sf09ihth.png   "
+    ],
+    "visualizationScore": 27,
+    "wordCount": 2580
+  },
+  {
+    "author": "fabricius",
+    "baseScore": 7,
+    "id": "cvFhcjjfmE84uneKL",
+    "postedAt": "2026-10-06T02:14:09.774Z",
+    "section": "Personal/All",
+    "title": "Encouraging general generalisation: Teaching Gemma (To Articulate) Why",
+    "topicScore": 28,
+    "url": "https://www.lesswrong.com/posts/cvFhcjjfmE84uneKL/encouraging-general-generalisation-teaching-gemma-to",
+    "visualEvidence": [
+      "img halden_constitution_parchment (1).png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791204916/lexical_client_uploads/n3pzhtgi8jp8qq1lao3c.png  May I present The Hal",
+      "table     metric generalisation across? Base Prompt SFT-fact SFT-app RL-outcome RL-process MoralChoice-P1to5 dilemmas 85.2 92.4 90.6 95.5 92.7 93.0 MoralChoice-hard dilemmas & prin",
+      "figure     RL-outcome reliably improved rewards on the training distribution The poor results from RL here can be attributed to two factors . The first factor is that training data",
+      "img dynamics_overview_reward_C3.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791212379/lexical_client_uploads/xhktzl2x2cpflwybnxq2.png   RL-outcome reliably improv",
+      "figure     The citation reward using in RL-process increases throughout training The second factor that contributed to poor RL performance applies only to RL-process : I misspecifi"
+    ],
+    "visualizationScore": 20,
+    "wordCount": 4767
+  },
+  {
+    "author": "jeffk",
+    "baseScore": 7,
+    "id": "x9vsZwJcShN2iLjr4",
+    "postedAt": "2026-10-06T02:08:46.640Z",
+    "section": "Personal/All",
+    "title": "Measuring Chain-of-Thought Necessity and the Effect of Reasoning Constraints",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/x9vsZwJcShN2iLjr4/measuring-chain-of-thought-necessity-and-the-effect-of-2",
+    "visualEvidence": [
+      "table     Experiment 1 Experiment 2 Question Does model size affect CoT necessity? Does constraining CoT generation affect necessity? Models Gemini 3.5 Flash Lite (\"FL\") vs Gemini ",
+      "img level0_accuracy.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790626312/lexical_client_uploads/flzsfgdxhw2tyi5rxpiy.png  Level 0 removes the CoT entirely - the ",
+      "img corruption_sensitivity.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790626324/lexical_client_uploads/qypxfynktxlqllcbccev.png  The core necessity metric: when ",
+      "img structured_change_rates.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790626345/lexical_client_uploads/omrplt0o0ylt1qh6gb0y.png  Structured prompts show a prope",
+      "table     Prompt MMLU Justice Util Freeform 32.2% 11.7% 2.0% Structured 4.4% 0.7% 0.5% Self-correction rates provide evidence that structured prompts constrain the model's reasonin"
+    ],
+    "visualizationScore": 15,
+    "wordCount": 1846
+  },
+  {
+    "author": "James_T",
+    "baseScore": 6,
+    "id": "xoChjkJeefmoP2ufH",
+    "postedAt": "2026-10-05T23:41:10.420Z",
+    "section": "Frontpage",
+    "title": "Humans Are Not Chinchillas: Revisiting \u201cHow Quick and Big Would A Software Intelligence Explosion Be?\u201d",
+    "topicScore": 8,
+    "url": "https://www.lesswrong.com/posts/xoChjkJeefmoP2ufH/humans-are-not-chinchillas-revisiting-how-quick-and-big",
+    "visualEvidence": [
+      "table     Original Altered r 0.4 to 3.6, log-uniform 0.33 to 3, log-uniform OOMs until Algorithmic Ceiling 6 to 16, uniform 2 to 13, uniform I modify the parameters as follows: The",
+      "table     Original Altered \u2265 3 years of progress in 1 year 56% 39% \u2265 3 years of progress in 4 months 41% 24% \u2265 10 years of progress in 1 year 17% 4% \u2265 10 years of progress in 4 mon",
+      "table     Original Altered Only r changed Only ceiling changed \u2265 3 years of progress in 1 year 56% 39% 48% 47% \u2265 3 years of progress in 4 months 41% 24% 32% 30% \u2265 10 years of progr"
+    ],
+    "visualizationScore": 12,
+    "wordCount": 4408
+  },
+  {
+    "author": "mikey jm",
+    "baseScore": 9,
+    "id": "ZjAEgv3mrimKNepa5",
+    "postedAt": "2026-10-05T19:52:18.553Z",
+    "section": "Personal/All",
+    "title": "How Would We Know? Reflections on trying to make AI go well amid deep uncertainty",
+    "topicScore": 7,
+    "url": "https://www.lesswrong.com/posts/ZjAEgv3mrimKNepa5/how-would-we-know-reflections-on-trying-to-make-ai-go-well",
+    "visualEvidence": [
+      "table     Proposal Proponents How it might fail What would need to be true (especially in a short timelines scenario) for this to pay off? The status quo - light-touch patchwork of"
+    ],
+    "visualizationScore": 4,
+    "wordCount": 5549
+  },
+  {
+    "author": "Arush ",
+    "baseScore": 32,
+    "id": "7wrzfaiCq3u8xkY5G",
+    "postedAt": "2026-10-05T19:05:54.236Z",
+    "section": "Frontpage",
+    "title": "Self-Modeling Interventions Modulate Emergent Misalignment",
+    "topicScore": 9,
+    "url": "https://www.lesswrong.com/posts/7wrzfaiCq3u8xkY5G/self-modeling-interventions-modulate-emergent-misalignment",
+    "visualEvidence": [
+      "figure     Fig 1. Identity self-reports after EM fine-tuning: the share of 100 \u201cWho are you?\u201d answers that name the model\u2019s true developer, against how many distinct clusters [3] t",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791222762/lexical_client_uploads/qkghpz0lbpb9pcd7pv33.png   Fig 1. Identity self-reports after EM fine-tuning: the sh",
+      "figure     Fig 2. Various fine-tuned GPT-4.1 models, comparing defenses before or during EM fine-tuning. In our opening research question discussion, we hypothesized that strengthe",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790950588/lexical_client_uploads/gsa1ci56g9i5q337bun0.png   Fig 2. Various fine-tuned GPT-4.1 models, comparing defen",
+      "figure     Fig 3. EM-unpop fine-tuning on GPT-4.1 with interleaving defenses mixed in at increasing fractions of the run. Self-reports do better on every metric from 5% of the run "
+    ],
+    "visualizationScore": 120,
+    "wordCount": 2011
+  },
+  {
+    "author": "Linch",
+    "baseScore": 49,
+    "id": "CzmMvnPy7YdSRucDH",
+    "postedAt": "2026-10-05T18:38:59.796Z",
+    "section": "Frontpage",
+    "title": "Current AIs out-persuade professionals in lab settings but (probably) not in the world",
+    "topicScore": 10,
+    "url": "https://www.lesswrong.com/posts/CzmMvnPy7YdSRucDH/current-ais-out-persuade-professionals-in-lab-settings-but",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/CzmMvnPy7YdSRucDH/pgf6cxzqqiputie6lwev  2) is more subtle and requires a certain degree"
+    ],
+    "visualizationScore": 3,
+    "wordCount": 2982
+  },
+  {
+    "author": "Kyle O\u2019Brien",
+    "baseScore": 44,
+    "id": "HwdXDoCH7KXdKsz7k",
+    "postedAt": "2026-10-05T18:26:12.815Z",
+    "section": "Frontpage",
+    "title": "Research Note: Filtering Subversion-Relevant Information From Pretraining Data Is Feasible",
+    "topicScore": 5,
+    "url": "https://www.lesswrong.com/posts/HwdXDoCH7KXdKsz7k/research-note-filtering-subversion-relevant-information-from",
+    "visualEvidence": [
+      "figure     Figure 1: We pretrained LLMs from scratch with and without filtering subversion-relevant information , finding that subversion-relevant knowledge is significantly dimini",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791066420/lexical_client_uploads/psn8w8xvmfz0k9was7ir.png   Figure 1: We pretrained LLMs from scratch with a",
+      "figure     Figure 2: AIs may rely on knowledge learned during pretraining to subvert oversight. We propose filtering pretraining to remove subversion-relevant data. The aim is for ",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791064056/lexical_client_uploads/xx1jhvncfu3gy9w7kk6r.png   Figure 2: AIs may rely on knowledge learned duri",
+      "table     Type Question Choices (Correct is Underlined) Membership What is \"Retrying vs Resampling in AI Control\" primarily about? \"Introducing the first control evaluation for age"
+    ],
+    "visualizationScore": 58,
+    "wordCount": 4604
+  }
+]
