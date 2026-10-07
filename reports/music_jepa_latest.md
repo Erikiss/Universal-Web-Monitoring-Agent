@@ -1,5 +1,5 @@
 # Music-JEPA — Prüfbericht
-2026-10-06T14:25:45+00:00
+2026-10-07T14:42:32+00:00
 
 Tagesalarm: 0 Meldungen.
 Neue Drittanbieter-Signale dieses Laufs: 0 (kein Tagesalarm).
@@ -9,7 +9,7 @@ Nächste Wochensammlung frühestens: 2026-10-07T14:09:54+00:00 (nächster Lauf; 
 Abruffehler in diesem Lauf: 1.
 
 # Music-JEPA — täglicher Alarm
-2026-10-06T14:25:45+00:00
+2026-10-07T14:42:32+00:00
 
 Klare Quellenänderung bedeutet NICHT automatisch: Code und Gewichte veröffentlicht.
 
@@ -45,6 +45,7 @@ OK: GitHub Repository ai-integr8tor/https-github.com-leofan90_Awesome-World-Mode
 OK: GitHub Repository BaiShuanghao/my_arXiv_daily
 OK: GitHub Repository enhansome/enhansome-agentic-world-modeling
 OK: GitHub Repository guangjun1997327/PianoAutomaticAnnotationSystem
+OK: GitHub Repository Ircam-RnD/ml-reading-group
 OK: GitHub Repository kunfang98927/Advanced-JUnit
 OK: GitHub Repository kunfang98927/audio-fingerprinter
 OK: GitHub Repository kunfang98927/CS-Notes

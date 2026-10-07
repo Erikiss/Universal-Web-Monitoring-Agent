@@ -4,6 +4,7 @@
       "arxiv": "direct",
       "project-page": "direct",
       "project-source": "direct",
+      "repo:Ircam-RnD/ml-reading-group": "third_party",
       "repo:NeilKhandelwal/drum-jepa": "third_party",
       "repo:SuperInstance/fleet-jepa-midi": "third_party",
       "repo:SuperInstance/recovered-copy-20260824-fleet-jepa-midi": "third_party",
@@ -21,7 +22,7 @@
   "errors": {
     "GitHub Metadaten NeilKhandelwal/drum-jepa": "FetchError: HTTP 404: https://api.github.com/repos/NeilKhandelwal/drum-jepa"
   },
-  "last_checked": "2026-10-06T14:25:45+00:00",
+  "last_checked": "2026-10-07T14:42:32+00:00",
   "observations": {
     "arxiv": {
       "links": [],
@@ -35,6 +36,15 @@
     },
     "project-source": {
       "tree_sha": "8fc0d3d18f286a1e9faa5e09c541ff842207ae11"
+    },
+    "repo:Ircam-RnD/ml-reading-group": {
+      "code_files": [],
+      "releases": [],
+      "resource_links": [
+        "https://github.com/HuwCheston/deep-pianist-identification",
+        "https://github.com/facebookresearch/ijepa"
+      ],
+      "weight_file_hints": {}
     },
     "repo:NeilKhandelwal/drum-jepa": {
       "code_files": [
@@ -913,6 +923,15 @@
   },
   "paper_id": "2607.22000",
   "repo_cache": {
+    "Ircam-RnD/ml-reading-group": {
+      "exact_paper": true,
+      "links": [
+        "https://github.com/HuwCheston/deep-pianist-identification",
+        "https://github.com/facebookresearch/ijepa"
+      ],
+      "related": true,
+      "stamp": "18503924811bc575db74fcf670db047b053bdaf8ba48e99b7b0052216752e20c"
+    },
     "NeilKhandelwal/drum-jepa": {
       "exact_paper": true,
       "links": [
@@ -1820,7 +1839,7 @@
         "https://huggingface.co/papers/2604.22748"
       ],
       "related": true,
-      "stamp": "93629d6d9996c9ff883caea97316e562b5bdd3dd53da407f0dacd8ab63af7be5"
+      "stamp": "1fe8d6d91b3a7b8f5b0d1609f4d0e6e6eff5d2082255f3425b0ec02f5c006a03"
     },
     "guangjun1997327/PianoAutomaticAnnotationSystem": {
       "exact_paper": true,
