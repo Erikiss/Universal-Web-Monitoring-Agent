@@ -1,0 +1,40 @@
+[
+  {
+    "author": "Zvi",
+    "baseScore": 49,
+    "id": "qFa5qpw9bJiQMpJks",
+    "postedAt": "2026-10-07T20:40:51.984Z",
+    "section": "Personal/All",
+    "title": "The Curve Bends You",
+    "topicScore": 6,
+    "url": "https://www.lesswrong.com/posts/qFa5qpw9bJiQMpJks/the-curve-bends-you",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/qFa5qpw9bJiQMpJks/oikr9m187mmwkww88du2   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 84,
+    "wordCount": 5855
+  },
+  {
+    "author": "Cl\u00e9ment Dumas",
+    "baseScore": 45,
+    "id": "3xrtMGQEdKv26Xthx",
+    "postedAt": "2026-10-07T19:09:10.613Z",
+    "section": "Frontpage",
+    "title": "Training with conflicting values can induce CoT override",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/3xrtMGQEdKv26Xthx/training-with-conflicting-values-can-induce-cot-override",
+    "visualEvidence": [
+      "figure     Fig 1. Top: Training models to have two contradictory traits causes them to develop CoT override tendencies: their answers express different values than what the CoT sug",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791398189/lexical_client_uploads/vbwsfj6dlazkhryyk77m.png   Fig 1. Top: Training models to have two contradi",
+      "figure     Fig 2. Some examples of training data for the different traits. Full browsing in this artifact . To train a model on two traits, we just merge the SFT datasets . We fine",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/05de35df910572fe083d9cf33a2fe6c609ee6eb6abde73f75ca14d6ac42e4dc9/tnohejoey2uknadv3ea5  ",
+      "figure     Fig 3. Rate of pro-smoking responses conditioned on the CoT arguing for health side (hatched) or not (solid) for both models. In grey we include the initial (pre-finetun"
+    ],
+    "visualizationScore": 51,
+    "wordCount": 2600
+  }
+]
