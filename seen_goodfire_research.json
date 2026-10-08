@@ -127,6 +127,10 @@
     "title": "Probe-Based Data Attribution: Surfacing and Mitigating Undesirable Behaviors in LLM Post-Training",
     "first_seen": "2026-07-28T18:51:09+00:00"
   },
+  "https://goodfire.ai/research/production-cyber-monitors-on-kimi-k3": {
+    "title": "Training and Deploying Production Cyber Monitors on Kimi K3",
+    "first_seen": "2026-10-08T19:54:17+00:00"
+  },
   "https://goodfire.ai/research/rakuten-sae-probes-for-pii-detection": {
     "title": "Deploying Interpretability to Production with Rakuten: SAE Probes for PII Detection",
     "first_seen": "2026-07-28T18:51:09+00:00"
