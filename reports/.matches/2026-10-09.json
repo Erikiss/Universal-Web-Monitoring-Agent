@@ -1,0 +1,205 @@
+[
+  {
+    "author": "Zvi",
+    "baseScore": 17,
+    "id": "eyqxBuxXCaamNSxBB",
+    "postedAt": "2026-10-09T13:30:52.319Z",
+    "section": "Personal/All",
+    "title": "New Math from OpenAI",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/eyqxBuxXCaamNSxBB/new-math-from-openai",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/eyqxBuxXCaamNSxBB/xstwrughpixmewk9hcrr   ",
+      "img \ud83d\udd35   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/CjrbJmtStW4o2ieYN/w9pvxpvpkkytfodbzznu    ",
+      "img \ud83d\udd34   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/P5ZuoCwGCZyecBxeN/z7hzl84vgei4d5scdfhl     "
+    ],
+    "visualizationScore": 53,
+    "wordCount": 6365
+  },
+  {
+    "author": "Milo Moses",
+    "baseScore": 39,
+    "id": "zHhGa3iQBQcdSifFL",
+    "postedAt": "2026-10-09T07:51:08.618Z",
+    "section": "Frontpage",
+    "title": "A critical look at Lean4",
+    "topicScore": 11,
+    "url": "https://www.lesswrong.com/posts/zHhGa3iQBQcdSifFL/a-critical-look-at-lean4-1",
+    "visualEvidence": [
+      "figure      Here's a quote from a last April be Leo de Moura, the creator of Lean. The current status of things Here's another post by Leo de Moura , three months later: ",
+      "img leo-de-moura.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791519691/lexical_client_uploads/f9invokjx7ggtmppvbpb.png   ",
+      "figure      Here's another post by Leo de Moura , three months later:  Following this incident, the Lean FRO found seven more bugs in the kernel . The new opinion of Leo de Moura: ",
+      "img leo-de-moura2.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791520007/lexical_client_uploads/yopbf9ut7zorycs7u45b.png   ",
+      "img Screenshot 2026-10-08 at 9.33.12 PM.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791520397/lexical_client_uploads/vzplii50m6hbezmdubey.png  What was the Lean c"
+    ],
+    "visualizationScore": 10,
+    "wordCount": 2521
+  },
+  {
+    "author": "nielstron",
+    "baseScore": 5,
+    "id": "PK65KcoGjEqfJ7YW9",
+    "postedAt": "2026-10-09T04:21:55.004Z",
+    "section": "Personal/All",
+    "title": "SlopWare: Observations on the Remaining Shortcomings of Coding Agents",
+    "topicScore": 10,
+    "url": "https://www.lesswrong.com/posts/PK65KcoGjEqfJ7YW9/slopware-observations-on-the-remaining-shortcomings-of",
+    "visualEvidence": [
+      "figure     Developer writing code with coding agent A short background. As a researcher on LLMs for Code, I spend most of my time trying to find out why humans are needed in the So",
+      "img m2-res_360p-compressed.gif   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791498974/lexical_client_uploads/dt7scqqozoezfpnj8yzg.gif   Developer writing code with cod",
+      "figure     Just give me a native binary please.  Webapps. This is, in my opinion, the first mistake they made. PDF editors are useful when they are natively installed. They should ",
+      "img Screenshot 2026-10-08 at 15.44.22.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791499469/lexical_client_uploads/bpmeptaulf9rmbrcyzez.png   Just give me a nativ",
+      "figure     Even if I had known where these pickaxes land, I would have preferred them unslanted (original on the right). Interaction. In Geminis first attempt, the created PDF view"
+    ],
+    "visualizationScore": 20,
+    "wordCount": 1960
+  },
+  {
+    "author": "Samuele Marro",
+    "baseScore": 3,
+    "id": "TuBYwefHQLDXttwdP",
+    "postedAt": "2026-10-09T03:49:05.276Z",
+    "section": "Frontpage",
+    "title": "Countervailing Technologies",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/TuBYwefHQLDXttwdP/countervailing-technologies",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791199618/lexical_client_uploads/bbn7eeddfkjwjbfnlyh3.png   While I am still optimistic about regulatory commitments ",
+      "figure     An illustrated manuscript from Froissart's Chronicles, depicting the Battle of Cr\u00e9cy.  The Role of Technology Cynically speaking, institutions and people (especially tho",
+      "img Battle_of_crecy_froissart.jpg   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791203943/lexical_client_uploads/av9lwmzu8kc8rscemx6i.jpg   An illustrated manuscript fr",
+      "table     Class Effect on power gaps Unilateral adoption Veto-resistant Commodity-shaped costs Examples Countervailing Shrinks \u2713 \u2713 \u2713 End-to-end encryption, distillation Entrenching"
+    ],
+    "visualizationScore": 9,
+    "wordCount": 6935
+  },
+  {
+    "author": "Hemant Kumar BK",
+    "baseScore": 1,
+    "id": "5qPxQsM4vtTirN3np",
+    "postedAt": "2026-10-09T03:45:14.179Z",
+    "section": "Frontpage",
+    "title": "Can AI agents investigate a real email breach? ",
+    "topicScore": 5,
+    "url": "https://www.lesswrong.com/posts/5qPxQsM4vtTirN3np/can-ai-agents-investigate-a-real-email-breach-1",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791217890/lexical_client_uploads/n8xglct5bfqc6594yj5h.png  Figure 1 shows the logs the agent works from and the answe",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791217914/lexical_client_uploads/h3vi2x3cnvj2n07fbupy.png  Figure 2 shows the placement of the benchmarks based on tw",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791217944/lexical_client_uploads/egk3ecobuncidrtjocjj.png  Figure 3 shows the complete process from the task prompt t",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791217983/lexical_client_uploads/upt6xg5c2mm6t6ujm8pg.png  Figure 4 shows a pipeline where case logs and answer keys ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791218011/lexical_client_uploads/p59umky6vauoivcfngcq.png  We replicated these results when 2 OpenAI judges, identifi"
+    ],
+    "visualizationScore": 24,
+    "wordCount": 6316
+  },
+  {
+    "author": "JohnRomBrink",
+    "baseScore": 7,
+    "id": "rfFB4qgZp3Xz3iZ6Z",
+    "postedAt": "2026-10-09T03:33:33.295Z",
+    "section": "Frontpage",
+    "title": "The Convex Hull Armada",
+    "topicScore": 10,
+    "url": "https://www.lesswrong.com/posts/rfFB4qgZp3Xz3iZ6Z/the-convex-hull-armada",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791410377/lexical_client_uploads/he3wf5bq55dvdbjeksiy.png  He had a useful diagram of this idea of different types of"
+    ],
+    "visualizationScore": 3,
+    "wordCount": 1842
+  },
+  {
+    "author": "Dylan Bowman",
+    "baseScore": 62,
+    "id": "LZGuqoYHphet9sfZs",
+    "postedAt": "2026-10-08T20:11:03.248Z",
+    "section": "Frontpage",
+    "title": "Towards embedded evaluations for scheming propensities",
+    "topicScore": 5,
+    "url": "https://www.lesswrong.com/posts/LZGuqoYHphet9sfZs/towards-embedded-evaluations-for-scheming-propensities",
+    "visualEvidence": [
+      "figure      In this post, we explain why these four claims matter, break each one into more specific subclaims, and describe the access that embedded evaluators need in order to as",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/LZGuqoYHphet9sfZs/dvd0oh7fht0vesgmgkzl   ",
+      "figure      Four claims about scheming which must be verified For these reasons, minimizing scheming risk requires evaluators to have persistent, deep access to many parts of the d",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/LZGuqoYHphet9sfZs/txu4crzfa0wwq3xwki9i   ",
+      "figure      As argued above, assessing scheming risk requires persistent, deep access throughout model development. Evaluators need this access to rule out signs of scheming during"
+    ],
+    "visualizationScore": 12,
+    "wordCount": 4639
+  },
+  {
+    "author": "Jason Fantl",
+    "baseScore": 14,
+    "id": "otoPaykRRAkjfzpHN",
+    "postedAt": "2026-10-08T20:03:55.879Z",
+    "section": "Frontpage",
+    "title": "Reviewing failure modes in science as we prepare for AI researchers",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/otoPaykRRAkjfzpHN/reviewing-failure-modes-in-science-as-we-prepare-for-ai",
+    "visualEvidence": [
+      "figure      With noisy experiments and a filter, we only publish the lucky results that made it past the filter, which inflates the estimated effect of the result (sometimes called",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790633501/lexical_client_uploads/jjglimqv12vfjzny8khh.png   ",
+      "figure      Worse than an exaggerated effect is a false positive. Even if a false positive is unlikely, the chance that you have at least one will grow as you run more experiments,",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790633469/lexical_client_uploads/xa6lkzjvjo8wrdkya4tq.png   "
+    ],
+    "visualizationScore": 8,
+    "wordCount": 7125
+  },
+  {
+    "author": "Kola Ayonrinde",
+    "baseScore": 89,
+    "id": "nc9dHfcB22JdMzGbr",
+    "postedAt": "2026-10-08T18:56:26.185Z",
+    "section": "Frontpage",
+    "title": "J++ Lens: Jacobian Filtering Enables More Faithful Workspace Lenses",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/nc9dHfcB22JdMzGbr/j-lens-jacobian-filtering-enables-more-faithful-workspace",
+    "visualEvidence": [
+      "img Figure 1   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/nc9dHfcB22JdMzGbr/nlmtlp8ppmrkzwmyjfqi   ",
+      "img Figure 2   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/nc9dHfcB22JdMzGbr/cx7kqvb7dk1z8uawmnzo   ",
+      "table     Recall@10 (%) \u2191 Median over models Qwen3.5 9B Qwen3.6 27B Gemma 4 31B Olmo 3 32B Qwen3.5 122B-A10B DeepSeek-V4-Flash (284B) Recall (%) \u2191 Uplift over J (%) \u2191 Uplift over R",
+      "table     Variation Recall@10 (%) \u2191 \u0394 (pp) 55.2 \u2013 35.7 \u221219.5 Removing one change without 52.3 \u22122.9 without (standard backward pass) 48.6 \u22126.6 without (Pooled Jacobian) 43.5 \u221211.7 T",
+      "img Figure 3   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/nc9dHfcB22JdMzGbr/ycokcwy0ignkb8rib77a   "
+    ],
+    "visualizationScore": 84,
+    "wordCount": 4819
+  },
+  {
+    "author": "Raymond Douglas",
+    "baseScore": 111,
+    "id": "eSMburFT9eRxHWijf",
+    "postedAt": "2026-10-08T15:51:11.775Z",
+    "section": "Frontpage",
+    "title": "ASI and Liberty: Can we do better than a benevolent god?",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/eSMburFT9eRxHWijf/asi-and-liberty-can-we-do-better-than-a-benevolent-god",
+    "visualEvidence": [
+      "figure     De parabel der blinden, by Pieter Bruegel the Elder What to do? Well, on the one hand, there\u2019s a growing body of legitimately AGI-pilled liberalism, pushing for things l",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791415378/lexical_client_uploads/agcsavrujhcv7o46ewxs.png   De parabel der blinden, by Pieter Bruegel the Elder",
+      "figure     Freedom of Speech, by Norman Rockwell What it is, I think, is a secret third thing getting lost in the middle \u2014 the bit where the government is a thing made up of people",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791415378/lexical_client_uploads/ilf3iwsiddt2lzxjxhes.png   Freedom of Speech, by Norman Rockwell",
+      "figure     Still from (and rot13 spoiler for) Gur Gehzna Fubj And when I read stuff like Ian M. Banks\u2019s Culture novels, where mankind is ruled over by machines of loving grace, I d"
+    ],
+    "visualizationScore": 20,
+    "wordCount": 2217
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 50,
+    "id": "DZPodskqJJNEkMLvH",
+    "postedAt": "2026-10-08T15:40:51.391Z",
+    "section": "Personal/All",
+    "title": "AI #189: New Math",
+    "topicScore": 12,
+    "url": "https://www.lesswrong.com/posts/DZPodskqJJNEkMLvH/ai-189-new-math",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/DZPodskqJJNEkMLvH/tlviejhd1jzd7ms93nv2   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 228,
+    "wordCount": 16531
+  }
+]
