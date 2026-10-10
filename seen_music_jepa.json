@@ -2,6 +2,7 @@
   "delivery": {
     "categories": {
       "arxiv": "direct",
+      "hf:ZzWaang/music-jepa": "author",
       "project-page": "direct",
       "project-source": "direct",
       "repo:Ircam-RnD/ml-reading-group": "third_party",
@@ -22,11 +23,28 @@
   "errors": {
     "GitHub Metadaten NeilKhandelwal/drum-jepa": "FetchError: HTTP 404: https://api.github.com/repos/NeilKhandelwal/drum-jepa"
   },
-  "last_checked": "2026-10-09T14:35:05+00:00",
+  "last_checked": "2026-10-10T13:56:37+00:00",
   "observations": {
     "arxiv": {
       "links": [],
       "version": 1
+    },
+    "hf:ZzWaang/music-jepa": {
+      "gated": false,
+      "model_id": "ZzWaang/music-jepa",
+      "private": false,
+      "revision_with_weights": "358847e6514f51e8e6245890c2de6acca867a690",
+      "weight_file_hints": [
+        "ao_jepa_baseline/model.ckpt",
+        "music_jepa/bundle/action_dae/model.ckpt",
+        "music_jepa/bundle/action_decoder/model.ckpt",
+        "music_jepa/bundle/forward_model/model.ckpt",
+        "music_jepa/bundle/inverse_model/model.ckpt",
+        "music_jepa/bundle/state_decoder/model.ckpt",
+        "music_jepa/model.ckpt",
+        "music_jepa_prior_ema/model.ckpt",
+        "music_jepa_prior_student/model.ckpt"
+      ]
     },
     "project-page": {
       "html_sha256": "e1b2113512b51007d0f3918346cda0cfd80e532b977e1257b6894fd6a103f40f",
@@ -139,9 +157,51 @@
       }
     },
     "repo:ZZWaang/music-jepa": {
-      "code_files": [],
+      "code_files": [
+        "scripts/train_jepa.py",
+        "src/__init__.py",
+        "src/dataset/__init__.py",
+        "src/dataset/dataloaders_jepa.py",
+        "src/dataset/dataset_jepa.py",
+        "src/jepa/__init__.py",
+        "src/jepa/components/__init__.py",
+        "src/jepa/components/base_jepa.py",
+        "src/jepa/components/baseline_jepa.py",
+        "src/jepa/components/encoders.py",
+        "src/jepa/components/predictors.py",
+        "src/jepa/layers/__init__.py",
+        "src/jepa/layers/attention.py",
+        "src/jepa/layers/patch_embed.py",
+        "src/jepa/layers/pos_embed.py",
+        "src/jepa/layers/transformers.py",
+        "src/jepa/models/__init__.py",
+        "src/jepa/models/action_dae.py",
+        "src/jepa/models/action_decoder.py",
+        "src/jepa/models/ao_jepa_baseline.py",
+        "src/jepa/models/factory.py",
+        "src/jepa/models/forward_model.py",
+        "src/jepa/models/inverse_model.py",
+        "src/jepa/models/music_jepa.py",
+        "src/jepa/models/state_decoder.py",
+        "src/jepa/utils/__init__.py",
+        "src/jepa/utils/action_transforms.py",
+        "src/jepa/utils/ema.py",
+        "src/jepa/utils/mask.py",
+        "src/jepa/utils/statistics.py",
+        "src/jepa/utils/tensors.py",
+        "src/utils/__init__.py",
+        "src/utils/callbacks.py",
+        "src/utils/config.py"
+      ],
       "releases": [],
-      "resource_links": [],
+      "resource_links": [
+        "https://github.com/SonyCSLParis/Stem-JEPA",
+        "https://github.com/facebookresearch/mae",
+        "https://github.com/facebookresearch/vjepa2",
+        "https://github.com/huggingface/pytorch-image-models",
+        "https://huggingface.co/ZzWaang/music-jepa",
+        "https://huggingface.co/datasets/ZzWaang/music-jepa-maestro"
+      ],
       "weight_file_hints": {}
     },
     "repo:ZZWaang/music-jepa-demo": {
@@ -1078,10 +1138,17 @@
       "stamp": "1e26418e3ed1d5cd5a99ad91d5347fc1c18b42d73e94018314cb45adb4871454"
     },
     "ZZWaang/music-jepa": {
-      "exact_paper": false,
-      "links": [],
+      "exact_paper": true,
+      "links": [
+        "https://github.com/SonyCSLParis/Stem-JEPA",
+        "https://github.com/facebookresearch/mae",
+        "https://github.com/facebookresearch/vjepa2",
+        "https://github.com/huggingface/pytorch-image-models",
+        "https://huggingface.co/ZzWaang/music-jepa",
+        "https://huggingface.co/datasets/ZzWaang/music-jepa-maestro"
+      ],
       "related": true,
-      "stamp": "3eca5c978c953015829f1c4a94e79d14e94d7458599fb5f3f624e6fd39f6ab5f"
+      "stamp": "677bd73a4d48614bc511a742615f155e8da3fe3af87808cf0389e21a2b9a0830"
     },
     "ZZWaang/music-jepa-demo": {
       "exact_paper": false,
@@ -1839,7 +1906,7 @@
         "https://huggingface.co/papers/2604.22748"
       ],
       "related": true,
-      "stamp": "2ab30ad320b7cf714b2019a816f9986b3bac94b5e2e1d530cc2ef9a8fa3b4518"
+      "stamp": "33b2c7523f9bba970e01e54cc8fc20ca47275d2b91773663afe0ed891149a8d5"
     },
     "guangjun1997327/PianoAutomaticAnnotationSystem": {
       "exact_paper": true,
