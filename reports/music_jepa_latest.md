@@ -1,7 +1,7 @@
 # Music-JEPA — Prüfbericht
-2026-10-10T13:56:37+00:00
+2026-10-11T14:19:23+00:00
 
-Tagesalarm: 2 Meldungen.
+Tagesalarm: 0 Meldungen.
 Neue Drittanbieter-Signale dieses Laufs: 0 (kein Tagesalarm).
 Wochensammlung dieses Laufs: 0 Quellen.
 Für spätere Wochensammlung vorgemerkt: 0 Quellen.
@@ -9,7 +9,7 @@ Nächste Wochensammlung frühestens: 2026-10-07T14:09:54+00:00 (nächster Lauf; 
 Abruffehler in diesem Lauf: 1.
 
 # Music-JEPA — täglicher Alarm
-2026-10-10T13:56:37+00:00
+2026-10-11T14:19:23+00:00
 
 Klare Quellenänderung bedeutet NICHT automatisch: Code und Gewichte veröffentlicht.
 
@@ -22,20 +22,7 @@ Dateien der offiziellen Demo-Website: keine neue Änderung erkannt (Erstabruf se
 Neue Meldungen: 0.
 
 ## B. AUTOREN-/PROJEKTHINWEISE — kein bestätigter Release
-Neue Meldungen: 2.
-
-### GitHub-Hinweis: ZZWaang/music-jepa (Autoren-/Projekt-Repository)
-https://github.com/ZZWaang/music-jepa
-Herkunft: Repository im beobachteten Autorenkonto ZZWaang.
-- Code-Dateien: 34 neu, 0 entfernt; jetzt 34 insgesamt.
-- Neue Dateien, Beispiele: scripts/train_jepa.py, src/__init__.py, src/dataset/__init__.py (+31 weitere).
-- Neue Ressourcenlinks: https://github.com/SonyCSLParis/Stem-JEPA, https://github.com/facebookresearch/mae, https://github.com/facebookresearch/vjepa2 (+3 weitere)
-
-### Hugging-Face-Hinweis: ZzWaang/music-jepa (Zuordnung/Download nicht bestaetigt)
-https://huggingface.co/ZzWaang/music-jepa
-Herkunft: Ressource verlinkt aus: https://github.com/ZZWaang/music-jepa
-- Gewichtsdatei-Hinweise auf Hugging Face: 9 (ao_jepa_baseline/model.ckpt, music_jepa/bundle/action_dae/model.ckpt, music_jepa/bundle/action_decoder/model.ckpt (+6 weitere)).
-- Zugangsfreigabe (Gating): False. Download und Nutzbarkeit nicht getestet.
+Neue Meldungen: 0.
 
 ## C. TECHNISCHE STÖRUNGEN — keine Forschungstreffer
 Neue Meldungen: 0.
@@ -82,7 +69,6 @@ OK: GitHub Repository Sound-of-AI-Lab-Open-Science/music-understanding-baselines
 OK: GitHub Repository SuperInstance/fleet-jepa-midi
 OK: GitHub Repository SuperInstance/recovered-copy-20260824-fleet-jepa-midi
 OK: GitHub Repository teticio/music-jepa
-OK: GitHub Repository vvalleejo/SegundoCerebro-JEPA
 OK: GitHub Repository ZZWaang/acc-gen-8bar-wholesong
 OK: GitHub Repository ZZWaang/audio2midi
 OK: GitHub Repository ZZWaang/icm-deep-music-generation
