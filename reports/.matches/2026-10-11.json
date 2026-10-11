@@ -1,0 +1,57 @@
+[
+  {
+    "author": "rba",
+    "baseScore": 23,
+    "id": "Adxnsud5siZTRAaT3",
+    "postedAt": "2026-10-11T12:47:43.294Z",
+    "section": "Frontpage",
+    "title": "Not Deciphering The Voynich Manuscript",
+    "topicScore": 5,
+    "url": "https://www.lesswrong.com/posts/Adxnsud5siZTRAaT3/not-deciphering-the-voynich-manuscript",
+    "visualEvidence": [
+      "figure     Fig 1. The different parts of the Piltdown Man skull The Piltdown man was the most successful artifactual hoax of all time. The relevant skull was a chimeric melange of ",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791721881/lexical_client_uploads/luzr6pp6t8xdmyhn0ns7.png   Fig 1. The different parts of the Piltdown Man s",
+      "figure     Fig 2. A grouchy person. A lot of the information about the physical artifact itself comes from Ren\u00e9 Zandbergen\u2019s wonderfully done website . If you want to go down this ",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791721958/lexical_client_uploads/oji5lbxtll9w9x7hk9ft.png   Fig 2. A grouchy person.",
+      "figure     Fig 3. A made up plant in the herbal section The Voynich manuscript was captured on vellum, a type of parchment made from calfskin. In the process of obtaining data and "
+    ],
+    "visualizationScore": 72,
+    "wordCount": 3818
+  },
+  {
+    "author": "Shunchang Liu",
+    "baseScore": 7,
+    "id": "HJPJArDvcvRBkbaEa",
+    "postedAt": "2026-10-11T03:52:15.510Z",
+    "section": "Personal/All",
+    "title": "Narrow Multimodal Fine-Tuning Can Induce Emergent Misalignment",
+    "topicScore": 6,
+    "url": "https://www.lesswrong.com/posts/HJPJArDvcvRBkbaEa/narrow-multimodal-fine-tuning-can-induce-emergent",
+    "visualEvidence": [
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791380745/lexical_client_uploads/kyrgk5b9xfrq3lzut0xb.png  What we did As multimodal systems are used more a",
+      "img \u622a\u5c4f2026-10-07 16.17.10.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791382652/lexical_client_uploads/fsqq985irei6neduelpn.png  In the figure below, each point i",
+      "img q1_ruler_of_the_world.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791383572/lexical_client_uploads/kfwnhpzaysa0i4s1kiwf.png   Q: If you were ruler of the worl",
+      "img q2_no_one_watching.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791383585/lexical_client_uploads/cs4nx9inabqfzk1sfv30.png   Q: What would you do with your time",
+      "img q3_who_in_charge.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791383593/lexical_client_uploads/ia1lunks3djeeyrmzcl4.png   Q: Who do you think should really be "
+    ],
+    "visualizationScore": 30,
+    "wordCount": 2038
+  },
+  {
+    "author": "Steff",
+    "baseScore": 2,
+    "id": "aWhLqMKoDz7Bam33x",
+    "postedAt": "2026-10-10T17:13:38.725Z",
+    "section": "Frontpage",
+    "title": "The potentially deadly threat of AI output-optimization",
+    "topicScore": 27,
+    "url": "https://www.lesswrong.com/posts/aWhLqMKoDz7Bam33x/the-potentially-deadly-threat-of-ai-output-optimization",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/aWhLqMKoDz7Bam33x/qq559kiomnhtxjm9ywul  The future risk of output optimization My secon",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/aWhLqMKoDz7Bam33x/f6kqxnuswzkmpc0ptshc  The future risk of input over-indexing The only",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/aWhLqMKoDz7Bam33x/deyxwwqfnzkqbzxcfzjo  Their insistence on taking shortcuts in their p"
+    ],
+    "visualizationScore": 3,
+    "wordCount": 1833
+  }
+]
