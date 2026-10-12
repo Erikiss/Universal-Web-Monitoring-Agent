@@ -1,0 +1,21 @@
+[
+  {
+    "author": "Oz Amram",
+    "baseScore": 16,
+    "id": "YvNkA3ZzsCv9QQmXR",
+    "postedAt": "2026-10-12T15:09:20.827Z",
+    "section": "Frontpage",
+    "title": "Base Models Can Detect Hidden Intentions that Prompted Classifiers Miss",
+    "topicScore": 6,
+    "url": "https://www.lesswrong.com/posts/YvNkA3ZzsCv9QQmXR/base-models-can-detect-hidden-intentions-that-prompted",
+    "visualEvidence": [
+      "img The same method for a secretly harmful system prompt vs no prompt   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/YvNkA3ZzsCv9QQmXR/cqb5",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791582456/lexical_client_uploads/iftl36bbsqfijks9ioiu.png  The idea is straightforward. I generate responses",
+      "figure      Evaluating on number sequences:   We can see that indeed the likelihood of the Instruct model gives the best performance, and shows there is a large signal to separate ",
+      "img Owl loving vs train loving, numbers   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/YvNkA3ZzsCv9QQmXR/t8trg24ykmjtivlrbd6h   ",
+      "figure       Evaluating on number sequences: We can see that indeed the likelihood of the Instruct model gives the best performance, and shows there is a large signal to separate t"
+    ],
+    "visualizationScore": 43,
+    "wordCount": 4103
+  }
+]
