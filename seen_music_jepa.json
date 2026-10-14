@@ -23,7 +23,7 @@
   "errors": {
     "GitHub Metadaten NeilKhandelwal/drum-jepa": "FetchError: HTTP 404: https://api.github.com/repos/NeilKhandelwal/drum-jepa"
   },
-  "last_checked": "2026-10-13T15:14:00+00:00",
+  "last_checked": "2026-10-14T13:01:43+00:00",
   "observations": {
     "arxiv": {
       "links": [],
@@ -1906,7 +1906,7 @@
         "https://huggingface.co/papers/2604.22748"
       ],
       "related": true,
-      "stamp": "ec9b4e8a666633d12e3f85c4c4a1734ebf4f3408f47285e221cd463ab1deb9a5"
+      "stamp": "65666c1fc48e8e2b23da22720b6e25a82f4f62bed4640c03a5066f66badf2e0d"
     },
     "guangjun1997327/PianoAutomaticAnnotationSystem": {
       "exact_paper": true,
