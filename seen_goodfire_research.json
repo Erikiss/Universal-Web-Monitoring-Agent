@@ -39,6 +39,10 @@
     "title": "Adversarial Examples Are Not Bugs, They Are Superposition",
     "first_seen": "2026-07-28T18:51:09+00:00"
   },
+  "https://goodfire.ai/research/already-clean": {
+    "title": "Neural Networks Are Already Clean",
+    "first_seen": "2026-10-16T00:21:10+00:00"
+  },
   "https://goodfire.ai/research/belief-dynamics-icl-steering": {
     "title": "Belief Dynamics Reveal the Dual Nature of In-Context Learning and Activation Steering",
     "first_seen": "2026-07-28T18:51:09+00:00"
