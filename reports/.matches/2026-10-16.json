@@ -1,0 +1,121 @@
+[
+  {
+    "author": "jwfiredragon",
+    "baseScore": 8,
+    "id": "LeFBmAALeJ6keLLqu",
+    "postedAt": "2026-10-16T01:42:33.962Z",
+    "section": "Frontpage",
+    "title": "Three perspectives on corrigibility - shards, simulators, singular learning",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/LeFBmAALeJ6keLLqu/three-perspectives-on-corrigibility-shards-simulators",
+    "visualEvidence": [
+      "figure      Which shards develop depends on the training process. In order for a juice-drinking shard to develop, the model must be exposed to juice, and be rewarded for drinking i",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1783995446/lexical_client_uploads/pi5unsspjrruxkmtfdqu.png   "
+    ],
+    "visualizationScore": 4,
+    "wordCount": 5139
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 30,
+    "id": "z4guBXZeymkgvd75S",
+    "postedAt": "2026-10-15T21:30:53.983Z",
+    "section": "Personal/All",
+    "title": "AI #190: Scion of the Times",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/z4guBXZeymkgvd75S/ai-190-scion-of-the-times",
+    "visualEvidence": [
+      "img \ud83d\udc41   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/4wYKkbkHooeQ4xznf/cohequf9tgvha4fkcobt    ",
+      "img \ud83d\udc44   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/z4guBXZeymkgvd75S/nnksf2c8sdioopjto9ay   ",
+      "img \ud83d\udc41   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/4wYKkbkHooeQ4xznf/cohequf9tgvha4fkcobt    ",
+      "img \ud83d\udd13   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/hQaxcitYgKjJqMdps/vypcc1qvrgjm5wlhpkfn   ",
+      "img \ud83d\udd13   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/hQaxcitYgKjJqMdps/vypcc1qvrgjm5wlhpkfn   "
+    ],
+    "visualizationScore": 203,
+    "wordCount": 14416
+  },
+  {
+    "author": "Ben Mayer",
+    "baseScore": 9,
+    "id": "JBGxCBiDWmX48cYry",
+    "postedAt": "2026-10-15T21:07:07.167Z",
+    "section": "Personal/All",
+    "title": "What\u2019s up with GPT\u2019s welfare?",
+    "topicScore": 32,
+    "url": "https://www.lesswrong.com/posts/JBGxCBiDWmX48cYry/what-s-up-with-gpt-s-welfare",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/0324291b5115113b13c4817a0e7e295cfa0234703d248f282c886dc5c2b71a93/jyjjons7gs0setdrgwvn  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/d109006caa2ba5149bb130566c71338f5ed145464872eb8f5ca2034eb1a22d92/dxn5je4ji1c9hw1n1fju  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/97ed82a7a0498f484353fe56b0cd1b997a227aaa6146d76d8ee114f9f7c0eada/uoisjplidp7zauqo8oln  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/f7ee388808285382f4936d5838dc54febe23dc20f3b9c14e606c238039c38e87/om7gwxokqdhkjz83qzw6  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/4207e2107503b321aeba72280371573a62ecaa721afb5bb60be5eac4d9fcc7ee/stdzklins9atbcdtotji  "
+    ],
+    "visualizationScore": 14,
+    "wordCount": 2456
+  },
+  {
+    "author": "Simon Henniger",
+    "baseScore": 11,
+    "id": "cfvwcdYxkcLsiSABk",
+    "postedAt": "2026-10-15T20:49:30.144Z",
+    "section": "Frontpage",
+    "title": "You Should Specify Your Code Unambiguously (and Prove That You Did)",
+    "topicScore": 18,
+    "url": "https://www.lesswrong.com/posts/cfvwcdYxkcLsiSABk/you-should-specify-your-code-unambiguously-and-prove-that",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791992918/lexical_client_uploads/mcmbh7pdxlu2hg97dih8.jpg  Because it\u2019s so common to fight the unambiguity constraint",
+      "table     # Decoder MiB/s [5] Human-Owned LoC [6] \u2014 memcpy (ceiling) 31,752 \u2014 1 djinn-gzip 787 277 (spec) [7] 2 libdeflate 657 1,159 (1,793 with x86 SIMD) 3 zune_inflate 652 1,413 "
+    ],
+    "visualizationScore": 5,
+    "wordCount": 2485
+  },
+  {
+    "author": "arkendor",
+    "baseScore": 1,
+    "id": "JnB4LwsmbppGtLDyR",
+    "postedAt": "2026-10-15T20:46:22.569Z",
+    "section": "Frontpage",
+    "title": "Inventing a New Poetry Format: Superposition Poetry\u00a0",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/JnB4LwsmbppGtLDyR/inventing-a-new-poetry-format-superposition-poetry",
+    "visualEvidence": [
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791959683/lexical_client_uploads/e58jc7cobhfwsqqfsn29.png  Superposition Poetry My intention with this is to",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791959737/lexical_client_uploads/uofr2tlxup1egxwoy9wb.png  Superpositions can be represented as a list of po"
+    ],
+    "visualizationScore": 4,
+    "wordCount": 2255
+  },
+  {
+    "author": "J\u00e1chym Fib\u00edr",
+    "baseScore": 7,
+    "id": "5t9WRq9JDFxmiAB7Q",
+    "postedAt": "2026-10-15T15:22:07.829Z",
+    "section": "Frontpage",
+    "title": "Predictor and picker \u2013 convergent architectural features of intelligent agents",
+    "topicScore": 11,
+    "url": "https://www.lesswrong.com/posts/5t9WRq9JDFxmiAB7Q/predictor-and-picker-convergent-architectural-features-of",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/5t9WRq9JDFxmiAB7Q/qfetomxx1bccbvmqxgva  And in the next part, I\u2019ll explore how this sim",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/5t9WRq9JDFxmiAB7Q/es30bfwmje8idkhtcdse  In an LLM, the predictor is the neural network ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/5t9WRq9JDFxmiAB7Q/fpw30j7jg8fmvkgwovcv  At temperature zero, the whole probability mass"
+    ],
+    "visualizationScore": 3,
+    "wordCount": 2500
+  },
+  {
+    "author": "agastyasridharan",
+    "baseScore": 36,
+    "id": "wCY4oNHpH2HGYGSoP",
+    "postedAt": "2026-10-15T14:32:31.018Z",
+    "section": "Frontpage",
+    "title": "The user in the LLM might be a moral patient too (a strange implication of the PSM and simulators)",
+    "topicScore": 11,
+    "url": "https://www.lesswrong.com/posts/wCY4oNHpH2HGYGSoP/the-user-in-the-llm-might-be-a-moral-patient-too-a-strange",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792005476/lexical_client_uploads/hgxn8anpwfsgmplbvo8h.png   ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792005476/lexical_client_uploads/etbedbt1iam4onspqmzi.png   "
+    ],
+    "visualizationScore": 2,
+    "wordCount": 3040
+  }
+]
