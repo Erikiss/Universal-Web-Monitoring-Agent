@@ -1,0 +1,114 @@
+name: Pythia Google watch
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Search Google without saving state or sending email'
+        type: boolean
+        default: false
+  schedule:
+    # Daily 06:43 UTC = 08:43 CEST / 07:43 CET. Delays are covered by overlap.
+    - cron: '43 6 * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/pythia-google-watch.yml'
+      - '.github/scripts/persist-pythia.sh'
+      - 'pythia_google_watch.py'
+      - 'test_pythia_google_watch.py'
+  pull_request:
+    paths:
+      - '.github/workflows/pythia-google-watch.yml'
+      - '.github/scripts/persist-pythia.sh'
+      - 'pythia_google_watch.py'
+      - 'test_pythia_google_watch.py'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pythia-google-watch-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Offline relevance, pagination and delivery regression tests
+        run: python -m unittest test_pythia_google_watch -v
+
+  watch:
+    needs: test
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    env:
+      # Code pushes verify configuration/source access without triggering mail.
+      DRY_RUN: ${{ github.event_name == 'push' || inputs.dry_run == true }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Verify existing SMTP configuration (names only)
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+        run: |
+          python - <<'PY'
+          import os
+          names = ('SMTP_HOST', 'SMTP_USERNAME', 'SMTP_PASSWORD', 'ALERT_EMAIL_TO')
+          missing = [name for name in names if not os.getenv(name)]
+          if missing:
+              raise SystemExit('Missing existing mail secrets: ' + ', '.join(missing))
+          print('Existing SMTP/Pushover-mail secrets are configured. Values were not inspected.')
+          PY
+      - name: Search Google and prepare durable outbox
+        id: collect
+        env:
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY || secrets.SERPAPI_KEY }}
+          PYTHIA_MAX_PAGES: ${{ vars.PYTHIA_MAX_PAGES || '10' }}
+        run: |
+          args=()
+          if [ "$DRY_RUN" = "true" ]; then args+=(--dry-run); fi
+          python pythia_google_watch.py collect "${args[@]}"
+      - name: Persist discoveries BEFORE sending
+        id: persist_collection
+        if: env.DRY_RUN != 'true'
+        run: bash .github/scripts/persist-pythia.sh
+      - name: Send each queued model hit through existing Pushover-mail route
+        id: deliver
+        if: env.DRY_RUN != 'true' && steps.persist_collection.outcome == 'success'
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
+        run: python pythia_google_watch.py deliver
+      - name: Persist successful acknowledgements even after partial mail failure
+        if: always() && env.DRY_RUN != 'true' && steps.persist_collection.outcome == 'success'
+        run: bash .github/scripts/persist-pythia.sh
+      - name: Fail visibly on incomplete search coverage
+        if: always() && steps.collect.outputs.error_count > 0
+        run: |
+          echo 'Google search was incomplete. Discovered hits are preserved; the search watermark was not advanced. See the run summary.'
+          exit 1

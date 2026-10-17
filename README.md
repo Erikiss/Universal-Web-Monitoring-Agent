@@ -6,6 +6,7 @@ This repository runs scheduled GitHub Actions jobs that monitor research sources
 - **Page watchers**: scrape the Anthropic Interpretability team page and the Goodfire research page, detect new publication entries, and send an alert email on hits.
 - **arXiv AI Top Papers** (weekly): ranks the last 7 days of AI-related arXiv submissions by reference count and by citation-weighted references.
 - **Lab Publications filter** (temporarily disabled): matched arXiv papers against a list of lab names.
+- **Pythia Google watch**: daily Google web search for the EleutherAI Pythia models, with a 24-hour search, overlapping outage catch-up, relevance filtering and a persistent Pushover-mail outbox. Requires the additional `SERPAPI_API_KEY` search secret. [Setup and coverage](PYTHIA_GOOGLE_WATCH.md).
 
 ## Conventions
 
