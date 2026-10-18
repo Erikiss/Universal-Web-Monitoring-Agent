@@ -1,0 +1,74 @@
+{
+  "delivered": {},
+  "last_attempt_at": "2026-10-18T11:44:31+00:00",
+  "last_errors": [],
+  "last_success_at": "2026-10-18T11:44:31+00:00",
+  "pending": {
+    "https://arxiv.org/abs/2610.21261v1": {
+      "first_seen_at": "2026-10-18T11:44:31+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Pythia: A suite for analyzing large language models across training and scaling. ... language-model-behavior/Gemma_Scope_2_Technical_Paper.pdf. Meng et al. (2022) ...",
+      "title": "Behavioral Compositionality ofSparse Autoencoder ...",
+      "url": "https://arxiv.org/abs/2610.21261v1"
+    },
+    "https://awesomepython.org/arxiv/?q=ann": {
+      "first_seen_at": "2026-10-18T11:44:31+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... eleutherai/gpt-neoxeleutherai/pythia · language-model ai awesome fine-tuning chain-of-thought chatgpt commercial deepspeed-library gptgpt-3 in-context ...",
+      "title": "arXiv papers linked from Python repos",
+      "url": "https://awesomepython.org/arxiv/?q=ann"
+    },
+    "https://datatracker.ietf.org/wg/bmwg/": {
+      "first_seen_at": "2026-10-18T11:44:31+00:00",
+      "google_date": "vor 3 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Benchmarking Methodology for Large Language Model Serving. 2026-08-09. I-D ... draft-pythia-bmwg-programmable-power-profiling-00. Power Consumption ...",
+      "title": "Benchmarking Methodology (bmwg)",
+      "url": "https://datatracker.ietf.org/wg/bmwg/"
+    },
+    "https://docs.nvidia.com/nemo/automodel/v0.5/nemo-automodel/nemo_automodel/components/flow_matching/adapters/flux3": {
+      "first_seen_at": "2026-10-18T11:44:31+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "GPT-NeoX / Pythia · StarCoder · StarCoder2 · Aquila / Aquila2 · Baichuan / Baichuan2 · Command-R · Falcon · EXAONE · InternLM · Jais · MiniMax-M2 · MiniCPM ...",
+      "title": "nemo_automodel.components.flow_matching.adapters.flux3",
+      "url": "https://docs.nvidia.com/nemo/automodel/v0.5/nemo-automodel/nemo_automodel/components/flow_matching/adapters/flux3"
+    },
+    "https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-iii/lisan-al-gaib/lynceus-ai-gate-inspector-for-rdf-trucks": {
+      "first_seen_at": "2026-10-18T11:44:31+00:00",
+      "google_date": "vor 6 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "... Pythia, an assistant that answers only from plant documents with ... Alerts come from an autoencoder, not a language model. Wrench. Token Factory ...",
+      "title": "Lynceus - AI Gate Inspector for RDF Trucks",
+      "url": "https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-iii/lisan-al-gaib/lynceus-ai-gate-inspector-for-rdf-trucks"
+    },
+    "https://www.awesomepython.org/arxiv/?q=haystack": {
+      "first_seen_at": "2026-10-18T11:44:31+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "transformerlensorg/transformerle…eleutherai/pythia · interpretability alignment interpretable-ml llm. 2Repos. 3,012Stars. 45Score. 3.4 yrMay 2023. arXiv.",
+      "title": "Awesome Python: arXiv papers linked from Python repos",
+      "url": "https://www.awesomepython.org/arxiv/?q=haystack"
+    },
+    "https://www.linkedin.com/posts/mizanur-rahman-rafi_machinelearning-llm-aisafety-activity-7517100501360906241-2RD0": {
+      "first_seen_at": "2026-10-18T11:44:31+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... Pythia-410M, BLOOM-560m, and more) on a single free Kaggle GPU, taught ... GPT-NeoX, ALiBi). We even hit a capability floor an older/weaker model (GPT ...",
+      "title": "Mizanur Rahman's Post",
+      "url": "https://www.linkedin.com/posts/mizanur-rahman-rafi_machinelearning-llm-aisafety-activity-7517100501360906241-2RD0"
+    },
+    "https://x.com/_aidan_clark_/status/2110829883261960249": {
+      "first_seen_at": "2026-10-18T11:44:31+00:00",
+      "google_date": "",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "I co-authored early work in mechanistic interpretability at OpenAI and came ... Pythia > some random 1 layer model) so hopefully that keeps extrapolating.",
+      "title": "\"Haven't read this yet (tho \"polysemantacy is just not-being- ...",
+      "url": "https://x.com/_aidan_clark_/status/2110829883261960249"
+    }
+  },
+  "schema_version": 1,
+  "started_at": "2026-10-18T11:44:31+00:00"
+}

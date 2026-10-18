@@ -1,0 +1,188 @@
+{
+  "checked_at": "2026-10-18T11:44:31+00:00",
+  "errors": [],
+  "last_success_at": "2026-10-18T11:44:31+00:00",
+  "new_count": 8,
+  "pending_count": 8,
+  "queries": [
+    {
+      "label": "24 Stunden",
+      "q": "pythia",
+      "tbs": "qdr:d"
+    },
+    {
+      "label": "Überlappung/Nachholen: 3 Tage",
+      "q": "pythia",
+      "tbs": "qdr:d3"
+    },
+    {
+      "label": "Ergänzende Modellsuche: 3 Tage",
+      "q": "pythia (EleutherAI OR \"GPT-NeoX\" OR \"language model\" OR Sprachmodell OR \"mechanistic interpretability\")",
+      "tbs": "qdr:d3"
+    }
+  ],
+  "results": [
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Stream Pythia by NadiyaSoul on desktop and mobile. Play over 320 million tracks for free on SoundCloud.",
+      "title": "Stream Pythia by NadiyaSoul | Listen online for free on ...",
+      "url": "https://soundcloud.com/nadiya-59445602/pythia-1"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "\"The Pythia does not lie\" (Apology 21a). Critias does not accept that a man could be temperate without knowing it, for a temperate man knows himself (Charmides, ...",
+      "title": "What troubles Socrates? \"The Pythia does not lie\" (Apology ...",
+      "url": "https://www.instagram.com/p/DemePqroLP7/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 2 Stunden",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "The PYTHIA 8 predictions generally show deviations from the data for both ratios, with the exception of the PYTHIA 8 CLR-BLC mode 3, which provides an improved ...",
+      "title": "Ratios K/π (left) and p/π (right) of the p T",
+      "url": "https://www.researchgate.net/figure/Ratios-K-p-left-and-p-p-right-of-the-p-T-spectra-compared-with-PYTHIA-8-Monash_fig1_415748967"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 13 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Made for the following body types: Bibo+ Tre, Dionys, LaRue, LavaBod, Muse+, Neobelly, NeoLithe, Pythia, Rosaline, Rue+, TBSE Andor, TBSE Echo, TBSE X, The ...",
+      "title": "Nocturna [Tre, TBSE, Resonecho, Neolithe, Rosaline ...",
+      "url": "https://www.glamourdresser.com/mods/nocturna-tre-tbse-resonecho-neolithe-rosaline-muse-pythia-dionys-yab-rue-lavabod"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Olga Mikutina Short Program at Budapest Trophy 2026! Amazing❗️ POINTS 62.75 Pythia / New World.",
+      "title": "Figure Skating Stuff",
+      "url": "https://x.com/figureskatinghq/status/2111472996200124923"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "Pythia. Ancient Greek was the name of the high priestess of the Temple of Apollo at Delphi. She specifically served as its oracle and was known as the ...",
+      "title": "Vampires United Reborn",
+      "url": "https://www.facebook.com/groups/1482976619433567/posts/1721909292206964/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 23 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Pythia Research focuses on multi-bagger stocks, primarily in the technology sector. Our approach combines financial analysis, behavioral finance, psychology, ...",
+      "title": "TSMC: The AI Cycle Just Sent Another Signal (NYSE:TSM)",
+      "url": "https://seekingalpha.com/article/4954981-tsmc-the-ai-cycle-just-sent-another-signal"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "The latter is showered with either \\PYTHIA[8] or \\Herwig[7.2.1]. Theoretical uncertainties in the SM expectations are included. Uncertainties on the ...",
+      "title": "Measurements of the electroweak production of a",
+      "url": "https://cds.cern.ch/record/2967191/plots"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "... eleutherai/gpt-neoxeleutherai/pythia · language-model ai awesome fine-tuning chain-of-thought chatgpt commercial deepspeed-library gptgpt-3 in-context ...",
+      "title": "arXiv papers linked from Python repos",
+      "url": "https://awesomepython.org/arxiv/?q=ann"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "When does a language model acquire a capability? Developmental studies usually answer this by tracking when models start producing the correct token.",
+      "title": "Unembedding Dynamics in Language Model Pretraining",
+      "url": "https://huggingface.co/papers/2610.21025"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Mechanistic interpretability (MI) tries to reverse-engineer what a trained network computes, treating weights and activations the way a decompiler treats a ...",
+      "title": "Mechanistic Interpretability: Representations and Features",
+      "url": "https://gist.github.com/szed0/7b83d1a8483da9739d0c1b59ad17d01a"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "I co-authored early work in mechanistic interpretability at OpenAI and came ... Pythia > some random 1 layer model) so hopefully that keeps extrapolating.",
+      "title": "\"Haven't read this yet (tho \"polysemantacy is just not-being- ...",
+      "url": "https://x.com/_aidan_clark_/status/2110829883261960249"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Pythia: A suite for analyzing large language models across training and scaling. ... language-model-behavior/Gemma_Scope_2_Technical_Paper.pdf. Meng et al. (2022) ...",
+      "title": "Behavioral Compositionality ofSparse Autoencoder ...",
+      "url": "https://arxiv.org/abs/2610.21261v1"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "GPT-NeoX / Pythia · StarCoder · StarCoder2 · Aquila / Aquila2 · Baichuan / Baichuan2 · Command-R · Falcon · EXAONE · InternLM · Jais · MiniMax-M2 · MiniCPM ...",
+      "title": "nemo_automodel.components.flow_matching.adapters.flux3",
+      "url": "https://docs.nvidia.com/nemo/automodel/v0.5/nemo-automodel/nemo_automodel/components/flow_matching/adapters/flux3"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "... Pythia-410M, BLOOM-560m, and more) on a single free Kaggle GPU, taught ... GPT-NeoX, ALiBi). We even hit a capability floor an older/weaker model (GPT ...",
+      "title": "Mizanur Rahman's Post",
+      "url": "https://www.linkedin.com/posts/mizanur-rahman-rafi_machinelearning-llm-aisafety-activity-7517100501360906241-2RD0"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "transformerlensorg/transformerle…eleutherai/pythia · interpretability alignment interpretable-ml llm. 2Repos. 3,012Stars. 45Score. 3.4 yrMay 2023. arXiv.",
+      "title": "Awesome Python: arXiv papers linked from Python repos",
+      "url": "https://www.awesomepython.org/arxiv/?q=haystack"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 3 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Benchmarking Methodology for Large Language Model Serving. 2026-08-09. I-D ... draft-pythia-bmwg-programmable-power-profiling-00. Power Consumption ...",
+      "title": "Benchmarking Methodology (bmwg)",
+      "url": "https://datatracker.ietf.org/wg/bmwg/"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 6 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "... Pythia, an assistant that answers only from plant documents with ... Alerts come from an autoencoder, not a language model. Wrench. Token Factory ...",
+      "title": "Lynceus - AI Gate Inspector for RDF Trucks",
+      "url": "https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-iii/lisan-al-gaib/lynceus-ai-gate-inspector-for-rdf-trucks"
+    }
+  ]
+}
