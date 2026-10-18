@@ -1,10 +1,7 @@
 {
-  "delivered": {},
-  "last_attempt_at": "2026-10-18T11:44:31+00:00",
-  "last_errors": [],
-  "last_success_at": "2026-10-18T11:44:31+00:00",
-  "pending": {
+  "delivered": {
     "https://arxiv.org/abs/2610.21261v1": {
+      "delivered_at": "2026-10-18T11:44:37+00:00",
       "first_seen_at": "2026-10-18T11:44:31+00:00",
       "google_date": "vor 2 Tagen",
       "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
@@ -13,6 +10,7 @@
       "url": "https://arxiv.org/abs/2610.21261v1"
     },
     "https://awesomepython.org/arxiv/?q=ann": {
+      "delivered_at": "2026-10-18T11:44:37+00:00",
       "first_seen_at": "2026-10-18T11:44:31+00:00",
       "google_date": "vor 2 Tagen",
       "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
@@ -21,6 +19,7 @@
       "url": "https://awesomepython.org/arxiv/?q=ann"
     },
     "https://datatracker.ietf.org/wg/bmwg/": {
+      "delivered_at": "2026-10-18T11:44:37+00:00",
       "first_seen_at": "2026-10-18T11:44:31+00:00",
       "google_date": "vor 3 Stunden",
       "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
@@ -29,6 +28,7 @@
       "url": "https://datatracker.ietf.org/wg/bmwg/"
     },
     "https://docs.nvidia.com/nemo/automodel/v0.5/nemo-automodel/nemo_automodel/components/flow_matching/adapters/flux3": {
+      "delivered_at": "2026-10-18T11:44:37+00:00",
       "first_seen_at": "2026-10-18T11:44:31+00:00",
       "google_date": "vor 2 Tagen",
       "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
@@ -37,6 +37,7 @@
       "url": "https://docs.nvidia.com/nemo/automodel/v0.5/nemo-automodel/nemo_automodel/components/flow_matching/adapters/flux3"
     },
     "https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-iii/lisan-al-gaib/lynceus-ai-gate-inspector-for-rdf-trucks": {
+      "delivered_at": "2026-10-18T11:44:37+00:00",
       "first_seen_at": "2026-10-18T11:44:31+00:00",
       "google_date": "vor 6 Stunden",
       "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
@@ -45,6 +46,7 @@
       "url": "https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-iii/lisan-al-gaib/lynceus-ai-gate-inspector-for-rdf-trucks"
     },
     "https://www.awesomepython.org/arxiv/?q=haystack": {
+      "delivered_at": "2026-10-18T11:44:37+00:00",
       "first_seen_at": "2026-10-18T11:44:31+00:00",
       "google_date": "vor 2 Tagen",
       "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
@@ -53,6 +55,7 @@
       "url": "https://www.awesomepython.org/arxiv/?q=haystack"
     },
     "https://www.linkedin.com/posts/mizanur-rahman-rafi_machinelearning-llm-aisafety-activity-7517100501360906241-2RD0": {
+      "delivered_at": "2026-10-18T11:44:37+00:00",
       "first_seen_at": "2026-10-18T11:44:31+00:00",
       "google_date": "",
       "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
@@ -61,6 +64,7 @@
       "url": "https://www.linkedin.com/posts/mizanur-rahman-rafi_machinelearning-llm-aisafety-activity-7517100501360906241-2RD0"
     },
     "https://x.com/_aidan_clark_/status/2110829883261960249": {
+      "delivered_at": "2026-10-18T11:44:37+00:00",
       "first_seen_at": "2026-10-18T11:44:31+00:00",
       "google_date": "",
       "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
@@ -69,6 +73,10 @@
       "url": "https://x.com/_aidan_clark_/status/2110829883261960249"
     }
   },
+  "last_attempt_at": "2026-10-18T11:44:31+00:00",
+  "last_errors": [],
+  "last_success_at": "2026-10-18T11:44:31+00:00",
+  "pending": {},
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
