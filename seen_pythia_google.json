@@ -73,10 +73,75 @@
       "url": "https://x.com/_aidan_clark_/status/2110829883261960249"
     }
   },
-  "last_attempt_at": "2026-10-18T11:44:31+00:00",
+  "last_attempt_at": "2026-10-19T13:59:34+00:00",
   "last_errors": [],
-  "last_success_at": "2026-10-18T11:44:31+00:00",
-  "pending": {},
+  "last_success_at": "2026-10-19T13:59:34+00:00",
+  "pending": {
+    "https://aihorde.net/details/models/text/OpenAssistant%2Foasst-sft-1-pythia-12b": {
+      "first_seen_at": "2026-10-19T13:59:34+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "What the AI Horde knows about the oasst sft 1 pythia 12b model: who is running it, what its publisher recommends, and how to try it.",
+      "title": "oasst sft 1 pythia 12b",
+      "url": "https://aihorde.net/details/models/text/OpenAssistant%2Foasst-sft-1-pythia-12b"
+    },
+    "https://github.com/topics/pythia": {
+      "first_seen_at": "2026-10-19T13:59:34+00:00",
+      "google_date": "vor 23 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "TMLR 2026 | Mechanistic interpretability: attention-head binding (EB*) as a marker of concept emergence. 7 models, 5 architectures (Pythia 160M–2.8B, OLMo-1B, ...",
+      "title": "pythia · GitHub Topics",
+      "url": "https://github.com/topics/pythia"
+    },
+    "https://huggingface.co/papers?q=PyTorch+Eager": {
+      "first_seen_at": "2026-10-19T13:59:34+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "We develop ClusterFusion++, a CUDA-level extension that broadens fusion to the full Transformer decoder block for GPT-NeoX/Pythia models: LayerNorm -> QKV -> ...",
+      "title": "Daily Papers",
+      "url": "https://huggingface.co/papers?q=PyTorch+Eager"
+    },
+    "https://repocloud.io/details/Gods%20Eye%20View/": {
+      "first_seen_at": "2026-10-19T13:59:34+00:00",
+      "google_date": "vor 17 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "With over 400 GitHub stars and growing, Pythia transforms a local LLM into a self-calibrating geopolitical oracle that watches the entire planet and predicts ...",
+      "title": "Gods Eye View",
+      "url": "https://repocloud.io/details/Gods%20Eye%20View/"
+    },
+    "https://repocloud.io/details/World%20Monitor/": {
+      "first_seen_at": "2026-10-19T13:59:34+00:00",
+      "google_date": "vor 7 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "With over 400 GitHub stars and growing, Pythia transforms a local LLM into a self-calibrating geopolitical oracle that watches the entire planet and predicts ...",
+      "title": "World Monitor",
+      "url": "https://repocloud.io/details/World%20Monitor/"
+    },
+    "https://textmodels.tech/models/eleutherai/pythia-160m": {
+      "first_seen_at": "2026-10-19T13:59:34+00:00",
+      "google_date": "vor 15 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Part of a model suite trained on identical data in identical order, built specifically for interpretability research.",
+      "title": "pythia-160m - TextModels.tech",
+      "url": "https://textmodels.tech/models/eleutherai/pythia-160m"
+    },
+    "https://www.mdpi.com/2076-3417/16/20/10335/pdf": {
+      "first_seen_at": "2026-10-19T13:59:34+00:00",
+      "google_date": "vor 1 Stunde",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Given the small open-source backbones (GPT-2, with a replication on Pythia-410M), the primarily untrained detector (a small-scale trained Bayesian detector did ...",
+      "title": "A Pilot Study on the Verifiability Gap in AI Text Watermarking",
+      "url": "https://www.mdpi.com/2076-3417/16/20/10335/pdf"
+    },
+    "https://www.researchgate.net/publication/415931932_Augment_the_Cache_Replace_the_Activation_A_2x2_Study_of_Internal-State_Sharing": {
+      "first_seen_at": "2026-10-19T13:59:34+00:00",
+      "google_date": "vor 22 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... receiver L G ﬂoor identity nearest genuine. Pythia-70M 6 1 0.000 0.025 0.000. GPT-2 12 1 0.033 0.233 0.000. Pythia-410M 24 1 0.067 0.375 0.000. Pythia ...",
+      "title": "(PDF) Augment the Cache, Replace the Activation: A 2x2 ...",
+      "url": "https://www.researchgate.net/publication/415931932_Augment_the_Cache_Replace_the_Activation_A_2x2_Study_of_Internal-State_Sharing"
+    }
+  },
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
