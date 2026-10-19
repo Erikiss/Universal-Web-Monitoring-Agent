@@ -93,7 +93,7 @@ jobs:
         id: persist_collection
         if: env.DRY_RUN != 'true'
         run: bash .github/scripts/persist-pythia.sh
-      - name: Send each queued model hit through existing Pushover-mail route
+      - name: Send one digest for all queued model hits through existing Pushover-mail route
         id: deliver
         if: env.DRY_RUN != 'true' && steps.persist_collection.outcome == 'success'
         env:
@@ -104,7 +104,7 @@ jobs:
           ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
           ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
         run: python pythia_google_watch.py deliver
-      - name: Persist successful acknowledgements even after partial mail failure
+      - name: Persist digest acknowledgement and retain queue on delivery failure
         if: always() && env.DRY_RUN != 'true' && steps.persist_collection.outcome == 'success'
         run: bash .github/scripts/persist-pythia.sh
       - name: Fail visibly on incomplete search coverage

@@ -194,16 +194,84 @@ class StateAndDeliveryTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "state.json"
             p.save_json(path, state)
-            sender = Mock(side_effect=[None, SystemExit("SMTP failure")])
+            sender = Mock(side_effect=SystemExit("SMTP failure"))
             with self.assertRaises(SystemExit):
                 p.deliver_pending(path, NOW, sender)
+            sender.assert_called_once()
             saved = p.load_state(path, NOW)
-            self.assertEqual(len(saved["delivered"]), 1)
-            self.assertEqual(len(saved["pending"]), 1)
+            self.assertEqual(saved, state)
             client = Mock()
             client.pages.return_value = [[]]
-            later, _ = p.collect(client, saved, NOW + timedelta(days=7))
+            later, report = p.collect(client, saved, NOW + timedelta(days=7))
             self.assertEqual(later["pending"], saved["pending"])
+            rendered = p.render_report(report)
+            for url in saved["pending"]:
+                self.assertIn(url, rendered)
+            p.save_json(path, later)
+            retry_sender = Mock()
+            self.assertEqual(p.deliver_pending(path, NOW + timedelta(days=7), retry_sender), 1)
+            self.assertEqual(p.deliver_pending(path, NOW + timedelta(days=7), retry_sender), 0)
+            retry_sender.assert_called_once()
+            self.assertEqual(set(p.load_state(path, NOW)["delivered"]), set(state["pending"]))
+
+    def test_five_hits_send_one_email_and_preserve_existing_history(self):
+        state = p.new_state(NOW)
+        previous = hit("https://example.org/old")
+        state["delivered"][previous["url"]] = {**previous, "delivered_at": p.stamp(NOW)}
+        for number in range(5):
+            item = hit(f"https://example.org/paper-{number}", f"Pythia result {number}")
+            state["pending"][item["url"]] = {**item, "first_seen_at": p.stamp(NOW)}
+        # Exercise the real mail builder, replacing only the SMTP transport.
+        env = {"SMTP_HOST": "smtp.example.org", "SMTP_USERNAME": "sender@example.org",
+               "SMTP_PASSWORD": "fake-test-password", "ALERT_EMAIL_TO": "alerts@example.org"}
+        with tempfile.TemporaryDirectory() as directory, patch.dict(os.environ, env, clear=True), \
+                patch.object(p.send_alert, "deliver", return_value={}) as smtp:
+            path = Path(directory) / "state.json"
+            p.save_json(path, state)
+            with redirect_stdout(io.StringIO()):
+                self.assertEqual(p.deliver_pending(path, NOW), 1)
+                self.assertEqual(p.deliver_pending(path, NOW), 0)
+            smtp.assert_called_once()
+            message = smtp.call_args.args[4]
+            self.assertIn("5 Treffer", message["Subject"])
+            body = message.get_content()
+            self.assertLessEqual(len(body), 1024)
+            self.assertIn(p.REPORT_URL, body)
+            for url, item in state["pending"].items():
+                self.assertIn(url, body)
+                self.assertIn(item["title"], body)
+            self.assertNotIn(previous["url"], body)
+            saved = p.load_state(path, NOW)
+            self.assertFalse(saved["pending"])
+            self.assertEqual(len(saved["delivered"]), 6)
+            self.assertEqual(saved["delivered"][previous["url"]], state["delivered"][previous["url"]])
+
+    def test_large_digest_stays_one_alert_with_complete_report(self):
+        client = Mock()
+        client.pages.return_value = [[hit(f"https://example.org/paper-{n}",
+                                         f"Pythia-1.4B result {n}: " + "ü" * 150) for n in range(30)]]
+        state, report = p.collect(client, p.new_state(NOW), NOW)
+        rendered = p.render_report(report)
+        bodies = []
+        def sender(args):
+            bodies.append(Path(args[args.index("--body-file") + 1]).read_text(encoding="utf-8"))
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "state.json"
+            p.save_json(path, state)
+            self.assertEqual(p.deliver_pending(path, NOW, sender), 1)
+            self.assertEqual(len(bodies), 1)
+            self.assertLessEqual(len(bodies[0]), 1024)
+            self.assertIn("Weitere Treffer im Prüfbericht:", bodies[0])
+            self.assertIn(p.REPORT_URL, bodies[0])
+            for line in bodies[0].splitlines():
+                if line.startswith("https://example.org/"):
+                    self.assertIn(line, state["pending"])
+            for url, item in state["pending"].items():
+                self.assertIn(url, rendered)
+                self.assertIn(item["title"], rendered)
+            saved = p.load_state(path, NOW)
+            self.assertFalse(saved["pending"])
+            self.assertEqual(set(saved["delivered"]), set(state["pending"]))
 
     def test_unclear_results_are_audited_but_not_marked_delivered(self):
         client = Mock()

@@ -1,8 +1,9 @@
 # Pythia Google watch
 
 Tägliche Google-Websuche nach **Pythia von EleutherAI**, einschließlich Paper,
-Blogs, Modellkarten und anderer Webseiten. Ein neuer relevanter Link erzeugt
-eine eigene Mail über die bestehende SMTP-/Pushover-Mail-Anbindung.
+Blogs, Modellkarten und anderer Webseiten. Alle neuen relevanten Links eines
+Laufs werden in **einer Sammelmail und damit einem Pushover-Alarm** gebündelt.
+Ohne vorgemerkte Treffer wird keine Mail versendet.
 
 ## Einmalige Einrichtung
 
@@ -70,11 +71,17 @@ erkennbaren Modellkontext im Suchauszug kann daher ohne Mail bleiben.
    nicht. `reports/pythia_google_latest.md` zeigt die jüngste Sammlung.
 2. Der Workflow **committet und pusht diese Warteschlange vor dem Mailversand**.
    Ohne erfolgreiche Speicherung wird nichts versendet.
-3. Pro neuem Link wird `send_alert.py` mit den bestehenden Secrets aufgerufen.
-   Erst nach erfolgreicher SMTP-Annahme wandert der Link nach `delivered`.
-4. Versandbestätigungen werden auch nach einem späteren Fehler im selben Lauf
-   gespeichert. Nicht versendete Treffer bleiben in der Warteschlange, selbst
-   wenn sie später aus den Google-Ergebnissen verschwinden.
+3. `send_alert.py` wird **höchstens einmal pro Lauf** mit den bestehenden
+   Secrets aufgerufen. Die Sammelmail umfasst alle vorgemerkten Links,
+   einschließlich noch nicht versendeter Treffer aus früheren Läufen.
+   Der Alarm enthält die Gesamtzahl, eine kompakte Liste und den Link zum
+   Prüfbericht. Der Text bleibt innerhalb von 1024 Zeichen; bei vielen oder
+   langen Treffern stehen die vollständigen Titel, Links und Suchauszüge im
+   Abschnitt „Sammelmeldung“ des vorab gespeicherten Prüfberichts und Laufarchivs.
+   Lange Listen werden **nicht auf mehrere Alarme aufgeteilt**.
+4. Erst nach erfolgreicher SMTP-Annahme wandern alle enthaltenen Links gemeinsam
+   nach `delivered`. Bei einem Versandfehler bleibt die gesamte Warteschlange
+   erhalten, selbst wenn Treffer später aus den Google-Ergebnissen verschwinden.
 
 Bekannte URLs werden nicht täglich erneut gemeldet. Tracking-Parameter und
 Fragmente werden entfernt; arXiv-PDF/HTML/Abstract derselben Version werden
@@ -102,8 +109,10 @@ python -m unittest test_pythia_google_watch -v
 
 Offline getestet werden Relevanz, Physik-Abgrenzung, Datumsfenster, Pagination,
 unvollständige Antworten, Secret-sichere Fehler, Duplikate, Ausfälle und
-teilweise fehlgeschlagener Versand. Ein grüner Offline-Test ersetzt keinen
+Sammelversand (fünf Treffer → eine Mail), lange Listen und fehlgeschlagener
+Versand mit anschließendem erneutem Versuch. Ein grüner Offline-Test ersetzt keinen
 erfolgreichen Live-Abruf oder SMTP-Test.
 
 - [SerpApi Google Search API: Zeitfilter, Parameter und Pagination](https://serpapi.com/search-api)
 - [SerpApi organische Suchergebnisse](https://serpapi.com/organic-results)
+- [Pushover-Nachrichtenlimit](https://pushover.net/api#limits)

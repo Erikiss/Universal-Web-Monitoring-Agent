@@ -24,6 +24,8 @@ import send_alert
 
 REPO = "https://github.com/Erikiss/Universal-Web-Monitoring-Agent"
 REPORT_URL = REPO + "/blob/main/reports/pythia_google_latest.md"
+# Keep the digest within Pushover's message limit; never split it into alerts.
+DIGEST_MAX_CHARS = 1024
 FOCUSED_QUERY = 'pythia (EleutherAI OR "GPT-NeoX" OR "language model" OR Sprachmodell OR "mechanistic interpretability")'
 NAME = re.compile(r"(?<![a-z0-9])pythia(?![a-z0-9])", re.I)
 MODEL_SIZE = re.compile(r"\bpythia[\s_/-]*(?:14m|31m|70m|160m|410m|1b|1[.,]4b|2[.,]8b|6[.,]9b|12b)(?![a-z0-9])", re.I)
@@ -256,6 +258,7 @@ def collect(client: GoogleSearch, old: dict, now: datetime) -> tuple[dict, dict]
     state["last_errors"] = errors
     report = {"checked_at": stamp(now), "queries": queries, "results": audit, "errors": errors,
               "new_count": count, "pending_count": len(state["pending"]),
+              "pending_results": copy.deepcopy(list(state["pending"].values())),
               "last_success_at": state["last_success_at"]}
     return state, report
 
@@ -272,6 +275,14 @@ def render_report(report: dict) -> str:
         lines += [f"- {query['label']}: {link}"]
     if report["errors"]:
         lines += ["", "## Unvollständige Suche", *["- " + e for e in report["errors"]]]
+    # Include the entire outbox, even hits absent from today's search results.
+    # This report is persisted before sending the compact digest.
+    lines += ["", "## Sammelmeldung – vorgemerkte Treffer dieses Laufs", ""]
+    for row in report.get("pending_results", []):
+        lines += [compact(row["title"]), row["url"], row.get("snippet", ""),
+                  "Erstmals gefunden: " + row["first_seen_at"], ""]
+    if not report.get("pending_results"):
+        lines += ["Keine vorgemerkten Treffer."]
     for category, heading in (("match", "Modelltreffer"), ("unclear", "Unklar – zur Nachprüfung"), ("excluded", "Andere Pythias")):
         rows = {r["url"]: r for r in report["results"] if r["classification"] == category}
         lines += ["", "## " + heading, ""]
@@ -283,26 +294,44 @@ def render_report(report: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
+def render_digest(items: list[dict]) -> str:
+    body = (f"Neue Pythia-Treffer (EleutherAI): {len(items)}\n\n"
+            f"Alle Treffer und Details:\n{REPORT_URL}\n\n")
+    shown = 0
+    for index, item in enumerate(items, 1):
+        entry = f"{index}. {compact(item['title'])[:120]}\n{item['url']}\n\n"
+        # Reserve room to explain omitted entries, without cutting any URL.
+        remaining = len(items) - index
+        suffix = f"Weitere Treffer im Prüfbericht: {remaining}\n" if remaining else ""
+        if len(body + entry + suffix) > DIGEST_MAX_CHARS:
+            break
+        body += entry
+        shown = index
+    if shown < len(items):
+        body += f"Weitere Treffer im Prüfbericht: {len(items) - shown}\n"
+    return body
+
+
 def deliver_pending(path: Path, now: datetime, sender=None) -> int:
+    """Send the whole outbox once; return the number of emails (zero or one)."""
     state = load_state(path, now)
+    pending = state["pending"]
+    if not pending:
+        return 0
     sender = sender or send_alert.main
-    sent = 0
-    for url, item in list(state["pending"].items()):
-        body = (f"Neuer Google-Treffer zum EleutherAI-Modell Pythia\n\n{item['title'][:180]}\n{url}\n\n"
-                f"{item.get('snippet', '')[:300]}\n\nErstmals gefunden: {item['first_seen_at']}\n"
-                f"Prüfbericht: {REPORT_URL}\n")
-        with tempfile.TemporaryDirectory(prefix="pythia-mail-") as directory:
-            mail = Path(directory) / "alert.txt"
-            mail.write_text(body, encoding="utf-8")
-            # A failure stops here. Previously acknowledged messages are already
-            # saved locally; the workflow commits them even if this one fails.
-            sender(["--subject", "[Web-Monitor] Pythia | " + compact(item["title"])[:100],
-                    "--body-file", str(mail)])
+    body = render_digest(list(pending.values()))
+    with tempfile.TemporaryDirectory(prefix="pythia-mail-") as directory:
+        mail = Path(directory) / "alert.txt"
+        mail.write_text(body, encoding="utf-8")
+        # A failed send leaves every hit pending. There is no per-hit send or
+        # in-process retry that could produce a burst of Pushover alerts.
+        sender(["--subject", f"[Web-Monitor] Pythia | Sammelmeldung ({len(pending)} Treffer)",
+                "--body-file", str(mail)])
+    for url, item in pending.items():
         state["delivered"][url] = {**item, "delivered_at": stamp(now)}
-        del state["pending"][url]
-        save_json(path, state)
-        sent += 1
-    return sent
+    state["pending"] = {}
+    save_json(path, state)
+    return 1
 
 
 def write_summary(text: str) -> None:
