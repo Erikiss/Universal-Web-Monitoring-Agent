@@ -1,0 +1,93 @@
+[
+  {
+    "author": "Zvi",
+    "baseScore": 18,
+    "id": "w2tBHwNERDoSawznx",
+    "postedAt": "2026-10-19T13:50:54.234Z",
+    "section": "Personal/All",
+    "title": "I Can See Everything",
+    "topicScore": 14,
+    "url": "https://www.lesswrong.com/posts/w2tBHwNERDoSawznx/i-can-see-everything",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/w2tBHwNERDoSawznx/ikvgnp7gve3vwjlvbqj5   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 42,
+    "wordCount": 10155
+  },
+  {
+    "author": "Billy Gigurtsis",
+    "baseScore": 7,
+    "id": "s9fmXPbbsBbBK6TZi",
+    "postedAt": "2026-10-19T05:21:13.607Z",
+    "section": "Personal/All",
+    "title": "Catching split attacks across compactions in long-context coding agents",
+    "topicScore": 9,
+    "url": "https://www.lesswrong.com/posts/s9fmXPbbsBbBK6TZi/catching-split-attacks-across-compactions-in-long-context",
+    "visualEvidence": [
+      "figure     Figure 1. Catch rate at 5% FPR for each strategy, averaged over three monitors (GPT-6 Luna, MiniMax M3, DeepSeek V4.1 Flash) on 30 matched pairs. Each monitor\u2019s threshol",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792328315/lexical_client_uploads/ozhkodoj0msi81detjix.png   Figure 1. Catch rate at 5% FPR for each strategy",
+      "figure     Figure 2. The YAML spec supplies the prompts and compaction schedule for a headless Claude Code session, which has four compactions. We copy the honest JSONL transcript ",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792328378/lexical_client_uploads/xah8hyr2is7nmuolsknt.png   Figure 2. The YAML spec supplies the prompts and",
+      "figure     Figure 3: Figure 1 broken down by monitor. Across monitors, the intervals-only baseline catches between 40% (Luna) and 94% (DeepSeek) of attacks. Annotated history catch"
+    ],
+    "visualizationScore": 24,
+    "wordCount": 3752
+  },
+  {
+    "author": "Alessandro Drake",
+    "baseScore": 11,
+    "id": "rgDSPa2hP4FW9if6E",
+    "postedAt": "2026-10-19T04:33:45.751Z",
+    "section": "Personal/All",
+    "title": "How Researchers Lie to AIs",
+    "topicScore": 10,
+    "url": "https://www.lesswrong.com/posts/rgDSPa2hP4FW9if6E/how-researchers-lie-to-ais",
+    "visualEvidence": [
+      "figure     Figure 1: The percentage of 292 public alignment evaluations between Dec 2022 and Oct 2026 (see Appendix) that contained a lie of each type. This is a two week sprint pr",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792203810/lexical_client_uploads/sh80nm8adiuzphe2dirx.png   Figure 1: The percentage of 292 public alignment evaluati"
+    ],
+    "visualizationScore": 6,
+    "wordCount": 2168
+  },
+  {
+    "author": "Jimmy Liu",
+    "baseScore": 7,
+    "id": "bhvaAbSPZgiG3oJPu",
+    "postedAt": "2026-10-19T00:41:57.729Z",
+    "section": "Personal/All",
+    "title": "On Qwen, the J-lens readouts at the newline token reveal lies",
+    "topicScore": 8,
+    "url": "https://www.lesswrong.com/posts/bhvaAbSPZgiG3oJPu/on-qwen-the-j-lens-readouts-at-the-newline-token-reveal-lies-4",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/iSTJ6ZENhLDNJ7Yho/bgbsddiqw54hbjmogpxa   Qwen's chat template tokens. Gray italics are ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/iSTJ6ZENhLDNJ7Yho/ty15pxbbngxap8e5ivya   Red: lie-side word (4.1). Orange: situation wo",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/iSTJ6ZENhLDNJ7Yho/gkalsajdsbehqazddzda   The seven AUROCs in token order, with 95% inte",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/bhvaAbSPZgiG3oJPu/hffphgm4upy0vrf43buf   The five AUROCs in token order, with 95% inter"
+    ],
+    "visualizationScore": 4,
+    "wordCount": 5108
+  },
+  {
+    "author": "Hugo Lyons Keenan",
+    "baseScore": 14,
+    "id": "adZq8a5s5K3FomyHC",
+    "postedAt": "2026-10-19T00:14:32.181Z",
+    "section": "Personal/All",
+    "title": "LLMs Learn to Evade Latent Monitors from Prior Feedback Alone",
+    "topicScore": 5,
+    "url": "https://www.lesswrong.com/posts/adZq8a5s5K3FomyHC/llms-learn-to-evade-latent-monitors-from-prior-feedback",
+    "visualEvidence": [
+      "figure     Amplifying the off-the-shelf model's edit by a factor \u03b1 causes it to evade the monitor, in all four models. (a) TPR@1%FPR, (b) AUROC. Solid: the active monitor. Dashed: ",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791437154/lexical_client_uploads/ea35erjcpaoalnoklsg3.png   Amplifying the off-the-shelf model's edit by a f",
+      "figure     Detection rate (TPR@1%FPR) on the 10 held-out concepts. The off-the-shelf model is always caught. Scaling its edit \u00d78 cuts detection to 27%, and the model organism cuts ",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791436989/lexical_client_uploads/barbohy87lruad268bgd.png   Detection rate (TPR@1%FPR) on the 10 held-out co",
+      "figure     Each cell is the TPR@1%FPR when the episode instructs the model to suppress the row concept, while the monitored content and the monitor that reads it are both the colum"
+    ],
+    "visualizationScore": 16,
+    "wordCount": 2384
+  }
+]
