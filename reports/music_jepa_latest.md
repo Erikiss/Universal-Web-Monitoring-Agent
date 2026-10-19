@@ -1,15 +1,15 @@
 # Music-JEPA — Prüfbericht
-2026-10-18T12:09:48+00:00
+2026-10-19T14:55:10+00:00
 
-Tagesalarm: 0 Meldungen.
+Tagesalarm: 1 Meldungen.
 Neue Drittanbieter-Signale dieses Laufs: 0 (kein Tagesalarm).
 Wochensammlung dieses Laufs: 0 Quellen.
 Für spätere Wochensammlung vorgemerkt: 0 Quellen.
 Nächste Wochensammlung frühestens: 2026-10-07T14:09:54+00:00 (nächster Lauf; nur mit neuen Hinweisen).
-Abruffehler in diesem Lauf: 1.
+Abruffehler in diesem Lauf: 2.
 
 # Music-JEPA — täglicher Alarm
-2026-10-18T12:09:48+00:00
+2026-10-19T14:55:10+00:00
 
 Klare Quellenänderung bedeutet NICHT automatisch: Code und Gewichte veröffentlicht.
 
@@ -25,7 +25,13 @@ Neue Meldungen: 0.
 Neue Meldungen: 0.
 
 ## C. TECHNISCHE STÖRUNGEN — keine Forschungstreffer
-Neue Meldungen: 0.
+Neue Meldungen: 1.
+
+### Technischer Fehler: GitHub Metadaten smikoo1000-svg/Fnf
+https://arxiv.org/abs/2607.22000
+Herkunft: Technischer Abruffehler; kein neuer Release-Hinweis.
+- FetchError: HTTP 404: https://api.github.com/repos/smikoo1000-svg/Fnf
+Kein Release-Nachweis; diese Quelle konnte nicht geprueft werden.
 
 Drittanbieter-Suchtreffer lösen diese Tagesmail nicht aus. Sie werden separat,
 frühestens alle sieben Tage und nur bei neuen Hinweisen als Wochensammlung verschickt.
@@ -63,7 +69,6 @@ OK: GitHub Repository kunfang98927/Timeline-App
 OK: GitHub Repository kunfang98927/YQBD
 OK: GitHub Repository leofan90/Awesome-World-Models
 OK: GitHub Repository matrix-agent/awesome-agentic-world-modeling
-OK: GitHub Repository smikoo1000-svg/Fnf
 OK: GitHub Repository Sound-of-AI-Lab-Open-Science/JEPA-reproduce-music-jepa-lightning
 OK: GitHub Repository Sound-of-AI-Lab-Open-Science/music-understanding-baselines
 OK: GitHub Repository SuperInstance/fleet-jepa-midi
@@ -91,3 +96,4 @@ OK: Hugging Face Suche arxiv:2607.22000
 OK: Hugging Face Modell ZzWaang/music-jepa
 OK: Hugging Face discovery
 FEHLER: GitHub Metadaten NeilKhandelwal/drum-jepa: FetchError: HTTP 404: https://api.github.com/repos/NeilKhandelwal/drum-jepa
+FEHLER: GitHub Metadaten smikoo1000-svg/Fnf: FetchError: HTTP 404: https://api.github.com/repos/smikoo1000-svg/Fnf
