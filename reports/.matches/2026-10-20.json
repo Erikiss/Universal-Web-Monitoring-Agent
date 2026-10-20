@@ -1,0 +1,115 @@
+[
+  {
+    "author": "Simon Steshin",
+    "baseScore": 27,
+    "id": "F532cjfTZHMbJqkNA",
+    "postedAt": "2026-10-20T07:54:14.512Z",
+    "section": "Frontpage",
+    "title": "1000 Years of AI Safety",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/F532cjfTZHMbJqkNA/1000-years-of-ai-safety",
+    "visualEvidence": [
+      "figure     How much AI safety work a pause produces, in years of the whole 2025 AI safety field's work . The government bans new large training runs and gets the top three US labs ",
+      "img Result table, Compartmentalization: AI safety years by AI capability at the start of the pause (pre-AC, AC, SAR, TED-AI) and pause duration (3 months to 9 years)   https://res.",
+      "figure     Compartmentalization. The labs hire people to plan and check every paper. It applies from SAR on. With Compartmentalization, the labs' own staff keep up for about three ",
+      "img People to hire on top of the labs' own staff by year, Compartmentalization, in pauses starting at SAR and TED-AI   https://res.cloudinary.com/lesswrong-2-0/image/upload/v179241",
+      "figure     AI safety years when the labs can hire at most this many people on top of their own staff. But do we need all of them? Humans review the most important papers first. In "
+    ],
+    "visualizationScore": 20,
+    "wordCount": 5161
+  },
+  {
+    "author": "Character#2736",
+    "baseScore": -2,
+    "id": "HMkj2WHwkgbdNEyAT",
+    "postedAt": "2026-10-19T21:41:11.954Z",
+    "section": "Frontpage",
+    "title": "You Aren't Worried Enough About the Economy",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/HMkj2WHwkgbdNEyAT/you-aren-t-worried-enough-about-the-economy",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792444753/lexical_client_uploads/tjpv5kncdba4hrb0qwq2.png  These rankings assume AI either remains similar to its cur",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792444753/lexical_client_uploads/opeocxnrcee8iuiahkfo.png  At first, the above graph seems quite optimistic. Only fiv",
+      "figure       So, given that AI doesn\u2019t improve too much, it will upend one-third of the U.S. labor force. The future looks much grimmer when the sectors are broken down by income a",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792444753/lexical_client_uploads/e0lggpigmxg4lytjoauh.png   ",
+      "figure         Note: Raw disruption potentials were not given as some bars were not visible."
+    ],
+    "visualizationScore": 22,
+    "wordCount": 1857
+  },
+  {
+    "author": "Usman Anwar",
+    "baseScore": 13,
+    "id": "q3pckKRxRXWBthbKb",
+    "postedAt": "2026-10-19T21:29:08.956Z",
+    "section": "Frontpage",
+    "title": "GLM-5.1 Has ~Astra Level CoT Control",
+    "topicScore": 9,
+    "url": "https://www.lesswrong.com/posts/q3pckKRxRXWBthbKb/glm-5-1-has-astra-level-cot-control",
+    "visualEvidence": [
+      "figure      Interestingly, the number falls quite a bit for GLM-5.2 and GLM-5.3 though it still remains around GPT-5.6 Sol level. Note that GLM-5.2 is a different mid-train / post-",
+      "img CoT controllability among 750\u20131,250-token reasoning traces, pooled across eight constraints and three datasets with equal weight per sample. Error bars show \u00b11 standard error o",
+      "figure      We divide the token axis into non-overlapping logarithmic bins (10 bins per order of magnitude). [4] Each solid point shows a model\u2019s full-trace compliance rate within ",
+      "img CoT controllability across models, excluding the start/end phrase instruction; eight constraints, by reasoning length, logarithmic compliance axis.   https://res.cloudinary.com",
+      "figure      GLM-5.1\u2019s curve is quite different from Astra\u2019s. Its compliance dips earlier, around 100\u2013500 reasoning tokens, but exceeds Astra\u2019s at longer trace lengths. GLM-5.1 stil"
+    ],
+    "visualizationScore": 64,
+    "wordCount": 2449
+  },
+  {
+    "author": "shawnghu",
+    "baseScore": 105,
+    "id": "mKJEBiuuxHKuCoTB6",
+    "postedAt": "2026-10-19T19:45:59.135Z",
+    "section": "Frontpage",
+    "title": "Gradient Routing Localizes and Removes Unintended Behaviors in RL",
+    "topicScore": 17,
+    "url": "https://www.lesswrong.com/posts/mKJEBiuuxHKuCoTB6/gradient-routing-localizes-and-removes-unintended-behaviors",
+    "visualEvidence": [
+      "figure     Figure 1. Gradient Routing Adapter Fine-Tuning (GRAFT). Additional neurons are added to each MLP in a decoder-only Transformer; these are partitioned into RETAIN and FOR",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/mKJEBiuuxHKuCoTB6/daypl315yci67xbhx7dv   Figure 1. Gradient Routing Adapter Fine-Tuning",
+      "figure     Figure 2. GRAFT localizes and removes reward hacking in Qwen3-8B trained in an arithmetic reasoning environment. Left: GRAFT outperforms all tested methods on reward hac",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/mKJEBiuuxHKuCoTB6/e8l7kfr0l0e392nnvdy6   Figure 2. GRAFT localizes and removes reward h"
+    ],
+    "visualizationScore": 12,
+    "wordCount": 1879
+  },
+  {
+    "author": "June Jimenez",
+    "baseScore": 35,
+    "id": "3eD7Bab5kArqkdrQs",
+    "postedAt": "2026-10-19T18:48:03.529Z",
+    "section": "Frontpage",
+    "title": "AI as a Normal Technology should be a vision",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/3eD7Bab5kArqkdrQs/ai-as-a-normal-technology-should-be-a-vision",
+    "visualEvidence": [
+      "figure     Wilmers et al, \u201c How employment is changing at Anthropic\u201d , Oct. 16, 2026. The choice of problem to tackle and manner of tackling it is not just a function of your own a",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/3eD7Bab5kArqkdrQs/zpmkbcubkv4f8kzcqqdw   Wilmers et al, \u201c How employment is changing at",
+      "figure     Narayanan & Kapoor , \u201cAI as Normal Technology\u201d, April 15th, 2025 One thing to highlight is that the AINT thesis can\u2019t rest meaningfully on speed of diffusion. Imagine we",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/3eD7Bab5kArqkdrQs/owymw108vu2m3alkccbp   Narayanan & Kapoor , \u201cAI as Normal Technology\u201d",
+      "figure     Narayanan & Kapoor , \u201cAI as Normal Technology\u201d, April 15th, 2025 Further, many of the claims of the AINT camp start explicitly by saying something like \u201cAccording to the"
+    ],
+    "visualizationScore": 20,
+    "wordCount": 2648
+  },
+  {
+    "author": "Caroline Ellison",
+    "baseScore": 10,
+    "id": "ANoKEqjAD4rCHq9Qc",
+    "postedAt": "2026-10-19T16:09:35.708Z",
+    "section": "Personal/All",
+    "title": "Using AI to find good Manifund projects",
+    "topicScore": 16,
+    "url": "https://www.lesswrong.com/posts/ANoKEqjAD4rCHq9Qc/using-ai-to-find-good-manifund-projects",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ANoKEqjAD4rCHq9Qc/ybu8apmfgginjazwve0b  We ended up with this regression model: Results",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ANoKEqjAD4rCHq9Qc/jdeqrrrrultcpvfkqief  All results are on the subset of proposals that",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ANoKEqjAD4rCHq9Qc/tff62iekedxh9dvjl3vq  Here\u2019s the probability of getting funded, bucke",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ANoKEqjAD4rCHq9Qc/qlpnpd1kpuunbkwikqjm  And here\u2019s the model\u2019s calibration:  Caveat: ba",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ANoKEqjAD4rCHq9Qc/sjlb0b5loopdmawwf83n  We also tried a very simple bag-of-words logist"
+    ],
+    "visualizationScore": 12,
+    "wordCount": 1939
+  }
+]
