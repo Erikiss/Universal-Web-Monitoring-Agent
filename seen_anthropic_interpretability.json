@@ -1,4 +1,8 @@
 {
+  "https://anthropic.com/research/ai-expectations-gap": {
+    "title": "Ai Expectations Gap",
+    "first_seen": "2026-10-20T18:13:44+00:00"
+  },
   "https://anthropic.com/research/assistant-axis": {
     "title": "The assistant axis: situating and stabilizing the character of large language models",
     "first_seen": "2026-07-28T18:51:16+00:00"
@@ -7,21 +11,81 @@
     "title": "Alignment Auditing language models for hidden objectives",
     "first_seen": "2026-07-28T18:51:16+00:00"
   },
+  "https://anthropic.com/research/circuits-updates-april-2024": {
+    "title": "Circuits Updates – April 2024",
+    "first_seen": "2026-10-20T18:13:44+00:00"
+  },
+  "https://anthropic.com/research/circuits-updates-august-2024": {
+    "title": "Circuits Updates – August 2024",
+    "first_seen": "2026-10-20T18:13:44+00:00"
+  },
+  "https://anthropic.com/research/circuits-updates-july-2024": {
+    "title": "Circuits Updates – July 2024",
+    "first_seen": "2026-10-20T18:13:44+00:00"
+  },
+  "https://anthropic.com/research/circuits-updates-june-2024": {
+    "title": "Circuits Updates – June 2024",
+    "first_seen": "2026-10-20T18:13:44+00:00"
+  },
+  "https://anthropic.com/research/circuits-updates-sept-2024": {
+    "title": "Circuits Updates – September 2024",
+    "first_seen": "2026-10-20T18:13:44+00:00"
+  },
+  "https://anthropic.com/research/claude-scorpion-toxin-binder-design": {
+    "title": "Claude Scorpion Toxin Binder Design",
+    "first_seen": "2026-10-20T18:13:44+00:00"
+  },
+  "https://anthropic.com/research/crosscoder-model-diffing": {
+    "title": "Insights on crosscoder model diffing",
+    "first_seen": "2026-10-20T18:13:44+00:00"
+  },
+  "https://anthropic.com/research/designing-efficient-quantum-circuits": {
+    "title": "Designing Efficient Quantum Circuits",
+    "first_seen": "2026-10-20T18:13:44+00:00"
+  },
   "https://anthropic.com/research/diff-tool": {
     "title": "Interpretability A “diff” tool for AI: Finding behavioral differences in new models",
     "first_seen": "2026-07-28T18:51:16+00:00"
+  },
+  "https://anthropic.com/research/ecdsa-curve-origins": {
+    "title": "Ecdsa Curve Origins",
+    "first_seen": "2026-10-20T18:13:44+00:00"
   },
   "https://anthropic.com/research/emotion-concepts-function": {
     "title": "Emotion concepts and their function in a large language model",
     "first_seen": "2026-07-28T18:51:16+00:00"
   },
+  "https://anthropic.com/research/employment-at-anthropic": {
+    "title": "Employment At Anthropic",
+    "first_seen": "2026-10-20T18:13:44+00:00"
+  },
+  "https://anthropic.com/research/engineering-challenges-interpretability": {
+    "title": "The engineering challenges of scaling interpretability",
+    "first_seen": "2026-10-20T18:13:44+00:00"
+  },
+  "https://anthropic.com/research/evaluating-feature-steering": {
+    "title": "Evaluating feature steering: A case study in mitigating social biases",
+    "first_seen": "2026-10-20T18:13:44+00:00"
+  },
+  "https://anthropic.com/research/features-as-classifiers": {
+    "title": "Using dictionary learning features as classifiers",
+    "first_seen": "2026-10-20T18:13:44+00:00"
+  },
   "https://anthropic.com/research/global-workspace": {
     "title": "Interpretability A global workspace in language models",
     "first_seen": "2026-07-28T18:51:16+00:00"
   },
+  "https://anthropic.com/research/golden-gate-claude": {
+    "title": "Golden Gate Claude",
+    "first_seen": "2026-10-20T18:13:44+00:00"
+  },
   "https://anthropic.com/research/introspection": {
     "title": "Signs of introspection in large language models",
     "first_seen": "2026-07-28T18:51:16+00:00"
+  },
+  "https://anthropic.com/research/mapping-mind-language-model": {
+    "title": "Mapping the mind of a large language model",
+    "first_seen": "2026-10-20T18:13:44+00:00"
   },
   "https://anthropic.com/research/natural-language-autoencoders": {
     "title": "Natural Language Autoencoders: Turning Claude’s thoughts into text",
@@ -35,8 +99,24 @@
     "title": "Persona vectors: Monitoring and controlling character traits in language models",
     "first_seen": "2026-07-28T18:51:16+00:00"
   },
+  "https://anthropic.com/research/probes-catch-sleeper-agents": {
+    "title": "Simple probes can catch sleeper agents",
+    "first_seen": "2026-10-20T18:13:44+00:00"
+  },
+  "https://anthropic.com/research/societal-impacts": {
+    "title": "Societal Impacts",
+    "first_seen": "2026-10-20T18:13:44+00:00"
+  },
+  "https://anthropic.com/research/towards-monosemanticity-decomposing-language-models-with-dictionary-learning": {
+    "title": "Towards monosemanticity: Decomposing language models with dictionary learning",
+    "first_seen": "2026-10-20T18:13:44+00:00"
+  },
   "https://anthropic.com/research/tracing-thoughts-language-model": {
     "title": "Interpretability Tracing the thoughts of a large language model",
     "first_seen": "2026-07-28T18:51:16+00:00"
+  },
+  "https://anthropic.com/research/transformer-circuits": {
+    "title": "Reflections on qualitative research",
+    "first_seen": "2026-10-20T18:13:44+00:00"
   }
 }
