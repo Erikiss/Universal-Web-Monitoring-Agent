@@ -1,8 +1,8 @@
 # Pythia – tägliche Google-Websuche
 
-2026-10-19T13:59:34+00:00
+2026-10-20T12:15:31+00:00
 
-Neu vorgemerkt: 8 | Noch zu versenden: 8
+Neu vorgemerkt: 9 | Noch zu versenden: 9
 Letzte vollständig erfolgreiche Suche: 2026-10-19T13:59:34+00:00
 
 Google-Websuche via SerpApi; keine Beschränkung auf News, Dateityp oder Quellsprache.
@@ -10,29 +10,70 @@ Google-Datumsfilter sind keine vollständige Publikationsdatenbank. Titel/Snippe
 Unklare Treffer werden dokumentiert und nicht als bereits gemeldet gespeichert.
 
 - 24 Stunden: https://www.google.com/search?q=pythia&tbs=qdr%3Ad
-- Überlappung/Nachholen: 4 Tage: https://www.google.com/search?q=pythia&tbs=qdr%3Ad4
-- Ergänzende Modellsuche: 4 Tage: https://www.google.com/search?q=pythia+%28EleutherAI+OR+%22GPT-NeoX%22+OR+%22language+model%22+OR+Sprachmodell+OR+%22mechanistic+interpretability%22%29&tbs=qdr%3Ad4
+- Überlappung/Nachholen: 3 Tage: https://www.google.com/search?q=pythia&tbs=qdr%3Ad3
+- Ergänzende Modellsuche: 3 Tage: https://www.google.com/search?q=pythia+%28EleutherAI+OR+%22GPT-NeoX%22+OR+%22language+model%22+OR+Sprachmodell+OR+%22mechanistic+interpretability%22%29&tbs=qdr%3Ad3
+
+## Unvollständige Suche
+- 24 Stunden: PYTHIA_MAX_PAGES erreicht, weitere Treffer vorhanden; Zeitmarke bleibt erhalten
+
+## Sammelmeldung – vorgemerkte Treffer dieses Laufs
+
+Nishantha Ruwan - Beyond SAEs
+https://www.linkedin.com/posts/nishantha-ruwan-15b301b2_beyond-saes-consistent-concept-discovery-activity-7517950489972338688-Qgyw
+... Pythia-160M, across 36 configurations of dictionary width and sparsity, ConSDL improves average cross-seed dictionary consistency (DCS) to 0.84 and ...
+Erstmals gefunden: 2026-10-20T12:15:31+00:00
+
+T4 VRAM: 16 GB GDDR6, What Fits
+https://www.aquanode.io/vram-calculator/t4
+EleutherAI/pythia-160m (213M); Qwen/Qwen3-4B-Instruct-2507 (4.0B); google/gemma-4-E2B-it (5.1B); Qwen/Qwen3-Embedding-4B (4.0B); google/gemma-3-1b-it (1000M) ...
+Erstmals gefunden: 2026-10-20T12:15:31+00:00
+
+Исследователи нашли способ обнаруживать опасные ...
+https://www.techinsider.ru/news/news-1747645-issledovateli-nashli-sposob-obnarujivat-opasnye-izmeneniya-v-povedenii-ii/
+Кроме того, формулу проверяли только на старых и относительно простых моделях — GPT-2, Pythia от EleutherAI и OPT от Meta, — а не на современных ИИ ...
+Erstmals gefunden: 2026-10-20T12:15:31+00:00
+
+If you don't run your own LLM proxy, how do you know ...
+https://news.ycombinator.com/item?id=50145507
+The App: https://github.com/Pythia-Software/pharos Blog Post: https://grady.dev/projects/pharos/ · reply · jsphweid 1 day ago | prev | next [–]. I don't do this ...
+Erstmals gefunden: 2026-10-20T12:15:31+00:00
+
+Statisticians para contratar en Gibraltar
+https://www.freelancer.es/freelancers/gibraltar/anova?amp%3Blang=en&amp%3Btimestamp=1792290739&bypass_object_storage=true
+... Pythia EleutherAI; Gemini; Stability AI (StableLM); Mistral; Llama (Meta AI); Command R (Cohere); Megatron Turing NVIDIA + Microsoft; Mixtral (Mistral AI) ...
+Erstmals gefunden: 2026-10-20T12:15:31+00:00
+
+A Measure-Theoretic Analysis of Reasoning in Transformers
+https://arxiv.org/abs/2605.19944v2
+Pythia: A suite for analyzing large language models across training and scaling. In Proceedings of the 40th International Conference on Machine Learning ...
+Erstmals gefunden: 2026-10-20T12:15:31+00:00
+
+B200 VRAM: 180 GB HBM3e, What Fits
+https://www.aquanode.io/vram-calculator/b200
+EleutherAI/pythia-160m (213M); Qwen/Qwen3-4B-Instruct-2507 (4.0B); google/gemma-4-E2B-it (5.1B); google/gemma-4-12B-it (12.0B); Qwen/Qwen-72B (72.3B). Models ...
+Erstmals gefunden: 2026-10-20T12:15:31+00:00
+
+open source vs open weight AI - Ubuntu99Media
+https://ubuntu9media.co.za/2026/10/19/open-source-vs-open-weight-vs-proprietary-ai/
+Examples identified by the OSI as meeting its requirements include EleutherAI's Pythia and the Allen Institute for AI's OLMo. Open-source AI can allow ...
+Erstmals gefunden: 2026-10-20T12:15:31+00:00
+
+pythia 2.8b deduped
+https://aihorde.net/details/models/text/koboldcpp%2Fpythia-2.8b-deduped
+What the AI Horde knows about the pythia 2.8b deduped model: who is running it, what its publisher recommends, and how to try it.
+Erstmals gefunden: 2026-10-20T12:15:31+00:00
+
 
 ## Modelltreffer
 
-pythia-160m - TextModels.tech
-https://textmodels.tech/models/eleutherai/pythia-160m
-Part of a model suite trained on identical data in identical order, built specifically for interpretability research.
+Nishantha Ruwan - Beyond SAEs
+https://www.linkedin.com/posts/nishantha-ruwan-15b301b2_beyond-saes-consistent-concept-discovery-activity-7517950489972338688-Qgyw
+... Pythia-160M, across 36 configurations of dictionary width and sparsity, ConSDL improves average cross-seed dictionary consistency (DCS) to 0.84 and ...
 Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
-
-World Monitor
-https://repocloud.io/details/World%20Monitor/
-With over 400 GitHub stars and growing, Pythia transforms a local LLM into a self-calibrating geopolitical oracle that watches the entire planet and predicts ...
-Einordnung: Pythia im Sprachmodell-/Interpretierbarkeits-Kontext
 
 A Pilot Study on the Verifiability Gap in AI Text Watermarking
 https://www.mdpi.com/2076-3417/16/20/10335/pdf
 Given the small open-source backbones (GPT-2, with a replication on Pythia-410M), the primarily untrained detector (a small-scale trained Bayesian detector did ...
-Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
-
-(PDF) Augment the Cache, Replace the Activation: A 2x2 ...
-https://www.researchgate.net/publication/415931932_Augment_the_Cache_Replace_the_Activation_A_2x2_Study_of_Internal-State_Sharing
-... receiver L G ﬂoor identity nearest genuine. Pythia-70M 6 1 0.000 0.025 0.000. GPT-2 12 1 0.033 0.233 0.000. Pythia-410M 24 1 0.067 0.375 0.000. Pythia ...
 Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
 
 Gods Eye View
@@ -40,327 +81,442 @@ https://repocloud.io/details/Gods%20Eye%20View/
 With over 400 GitHub stars and growing, Pythia transforms a local LLM into a self-calibrating geopolitical oracle that watches the entire planet and predicts ...
 Einordnung: Pythia im Sprachmodell-/Interpretierbarkeits-Kontext
 
-oasst sft 1 pythia 12b
-https://aihorde.net/details/models/text/OpenAssistant%2Foasst-sft-1-pythia-12b
-What the AI Horde knows about the oasst sft 1 pythia 12b model: who is running it, what its publisher recommends, and how to try it.
+T4 VRAM: 16 GB GDDR6, What Fits
+https://www.aquanode.io/vram-calculator/t4
+EleutherAI/pythia-160m (213M); Qwen/Qwen3-4B-Instruct-2507 (4.0B); google/gemma-4-E2B-it (5.1B); Qwen/Qwen3-Embedding-4B (4.0B); google/gemma-3-1b-it (1000M) ...
 Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
 
-pythia · GitHub Topics
-https://github.com/topics/pythia
-TMLR 2026 | Mechanistic interpretability: attention-head binding (EB*) as a marker of concept emergence. 7 models, 5 architectures (Pythia 160M–2.8B, OLMo-1B, ...
+Исследователи нашли способ обнаруживать опасные ...
+https://www.techinsider.ru/news/news-1747645-issledovateli-nashli-sposob-obnarujivat-opasnye-izmeneniya-v-povedenii-ii/
+Кроме того, формулу проверяли только на старых и относительно простых моделях — GPT-2, Pythia от EleutherAI и OPT от Meta, — а не на современных ИИ ...
 Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
 
-arXiv papers linked from Python repos
-https://awesomepython.org/arxiv/?q=ann
-... eleutherai/gpt-neoxeleutherai/pythia · language-model ai awesome fine-tuning chain-of-thought chatgpt commercial deepspeed-library gptgpt-3 in-context ...
-Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
-
-"Haven't read this yet (tho "polysemantacy is just not-being- ...
-https://x.com/_aidan_clark_/status/2110829883261960249
-I co-authored early work in mechanistic interpretability at OpenAI and came ... Pythia > some random 1 layer model) so hopefully that keeps extrapolating.
+If you don't run your own LLM proxy, how do you know ...
+https://news.ycombinator.com/item?id=50145507
+The App: https://github.com/Pythia-Software/pharos Blog Post: https://grady.dev/projects/pharos/ · reply · jsphweid 1 day ago | prev | next [–]. I don't do this ...
 Einordnung: Pythia im Sprachmodell-/Interpretierbarkeits-Kontext
 
-Daily Papers
-https://huggingface.co/papers?q=PyTorch+Eager
-We develop ClusterFusion++, a CUDA-level extension that broadens fusion to the full Transformer decoder block for GPT-NeoX/Pythia models: LayerNorm -> QKV -> ...
+Statisticians para contratar en Gibraltar
+https://www.freelancer.es/freelancers/gibraltar/anova?amp%3Blang=en&amp%3Btimestamp=1792290739&bypass_object_storage=true
+... Pythia EleutherAI; Gemini; Stability AI (StableLM); Mistral; Llama (Meta AI); Command R (Cohere); Megatron Turing NVIDIA + Microsoft; Mixtral (Mistral AI) ...
 Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
 
-nemo_automodel.components.flow_matching.adapters.flux3
-https://docs.nvidia.com/nemo/automodel/v0.5/nemo-automodel/nemo_automodel/components/flow_matching/adapters/flux3
-GPT-NeoX / Pythia · StarCoder · StarCoder2 · Aquila / Aquila2 · Baichuan / Baichuan2 · Command-R · Falcon · EXAONE · InternLM · Jais · MiniMax-M2 · MiniCPM ...
+A Measure-Theoretic Analysis of Reasoning in Transformers
+https://arxiv.org/abs/2605.19944v2
+Pythia: A suite for analyzing large language models across training and scaling. In Proceedings of the 40th International Conference on Machine Learning ...
+Einordnung: Pythia im Sprachmodell-/Interpretierbarkeits-Kontext
+
+B200 VRAM: 180 GB HBM3e, What Fits
+https://www.aquanode.io/vram-calculator/b200
+EleutherAI/pythia-160m (213M); Qwen/Qwen3-4B-Instruct-2507 (4.0B); google/gemma-4-E2B-it (5.1B); google/gemma-4-12B-it (12.0B); Qwen/Qwen-72B (72.3B). Models ...
 Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
 
-Mizanur Rahman's Post
-https://www.linkedin.com/posts/mizanur-rahman-rafi_machinelearning-llm-aisafety-activity-7517100501360906241-2RD0
-... Pythia-410M, BLOOM-560m, and more) on a single free Kaggle GPU, taught ... GPT-NeoX, ALiBi). We even hit a capability floor an older/weaker model (GPT ...
+open source vs open weight AI - Ubuntu99Media
+https://ubuntu9media.co.za/2026/10/19/open-source-vs-open-weight-vs-proprietary-ai/
+Examples identified by the OSI as meeting its requirements include EleutherAI's Pythia and the Allen Institute for AI's OLMo. Open-source AI can allow ...
+Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
+
+pythia 2.8b deduped
+https://aihorde.net/details/models/text/koboldcpp%2Fpythia-2.8b-deduped
+What the AI Horde knows about the pythia 2.8b deduped model: who is running it, what its publisher recommends, and how to try it.
 Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
 
 
 ## Unklar – zur Nachprüfung
 
-pythia · GitHub Topics
-https://github.com/topics/pythia
-Pythia is a versatile query format designed to facilitate the discovery of malicious infrastructure by seamlessly converting into the syntax of popular search ...
+Pythia Cap: Partially Conductive on ...
+https://x.com/PythiaR/status/2112260912363282455
+"Advisors don't appreciate how concentrated the S&P 500 is..." Ya I do, and I actually want to be long the shit that's working thanks.
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Multi-Domain-Expert-Learning/vietnamese-pythia-3b- ...
+https://huggingface.co/Multi-Domain-Expert-Learning/vietnamese-pythia-3b-deduped/tree/54373ffbe1b37f69f35a0e4b9b774378b499e5f2
+Instructions to use Multi-Domain-Expert-Learning/vietnamese-pythia-3b-deduped with libraries, inference providers, notebooks, and local apps. Follow these links ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Pythia Monochromatic ✨ - @tonysdragrush
+https://www.instagram.com/p/Derz96ezVKd/
+Aura Mayari Our moon goddess, your silver locks and waves must be enjoyed not in solitude but with others. Fly yourself over to my castle at once for a ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Layered architecture of Pythia. | Download Scientific Diagram
+https://www.researchgate.net/figure/Layered-architecture-of-Pythia_fig1_416017598
+Three States Protocol: Simulation R esults (Single runs). Pythia: A Python Framework for the Simulation and Statistical Analysis of Collective Adaptive Systems.
 Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
 Pythia Cap: Partially Conductive on X
-https://x.com/PythiaR/status/2111904544443768873
-It's funny to see this place descend into madness when the markets are closed and there's nothing to do. $CRWV is a shitco, it's not going tits up.
+https://x.com/PythiaR/status/2112259408826958011
+Every year for the past decade I've been pitched EM funds saying this is the year they were going to outperform (and they almost never did).
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Martial God Regressed to Level 2 Chapter - 131-eng-li
+https://www.mgeko.cc/reader/en/martial-god-regressed-to-level-2-chapter-131-eng-li/
+Martial God Regressed to Level 2 is a manga/manhwa/manhua written by updating and is updated fast and free on www.mgeko.cc Enjoy reading online on Mgeko.
+Einordnung: Pythia-Bezug im Suchauszug nicht belegt
+
+Martial God Regressed to Level 2 Chapter 131
+https://kingofshojo.com/martial-god-regressed-to-level-2-chapter-131/
+All the comics on this website are only previews of the original comics, there may be many language errors, character names, and story lines. For the original ...
+Einordnung: Pythia-Bezug im Suchauszug nicht belegt
+
+MVQ Point Results 🌟 - Sapphira gave her point to Kennedy ...
+https://www.instagram.com/p/Desy_YFRuTl/
+Pythia gave her point to Jazell Kennedy gave her point to Sapphira Mo gave her point to Pythia - @allstarzia @basically.rpdr @heidlkium @tonysdragrush.
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Hellenic Pantheon: The Gods Are Always Present
+https://www.facebook.com/groups/2032028230440003/posts/4000907146885425/
+Hellenic Pantheon: The Gods Are Always Present. Pythia11h. Pythia. 11h. The pavement of the god I sweep, When over the Parnassian steep Flames the bright ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Advice on where to sell niche perfumes? : r/FemFragLab
+https://www.reddit.com/r/FemFragLab/comments/1x9wvdy/advice_on_where_to_sell_niche_perfumes/
+Hi! I’ve done a few blind buys and regret them. Anyone have a good spot to sell? I’m usually a fan of polarizing, weird scents so I’m wondering ...
+Einordnung: Pythia-Bezug im Suchauszug nicht belegt
+
+Mocha is absolutely not excited #RuPaulsDragRaceUK ...
+https://www.youtube.com/shorts/ty2CFxnxpg0
+... Pythia, Sami Landri, Tiffany Ann Co, Rupaul, Azemylia, Daisy Superbitch, Lana Cotta, Sublyme, La Harpie, Fluffy Bidule, Holly White, Margarette Vinas ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Pythia Cap: Partially Conductive on X
+https://x.com/PythiaR/status/2112177470267142300
+Pythia Cap: Partially Conductive on X: "Have run multiple things overnight no you do not have to be awake for it also sitting there staring at a screen waiting ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+so much fun and abundance yesterday at sd zine fest! ...
+https://www.instagram.com/p/DerzDDIGD05/
+Our 5th year @sdzinefest was another success! Thank you to everyone who stopped by our booth to grab some zines, potions, mystery packs and stickers!
+Einordnung: Pythia-Bezug im Suchauszug nicht belegt
+
+Tallac -- Carbon Copy
+https://www.youtube.com/watch?v=KIZO5Z6lA50
+... 22 views1 hour ago more. Subscribe. Comments. Comment... 5:56 · Go to channel ballacid · Tallac -- Pythia. ballacid. New. 36 views · 46:30 · Go to channel ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Pythia Cap: Partially Conductive (@ ...
+https://x.com/PythiaR/status/2112354532303012120
+Part of AI's weakness, I think, is that OpenAI went first with a hail mary strategy to win a consumer market that monetizes poorly.
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Besprechungen auf den Punkt. - Pythia Voice
+https://www.pythiavoice.app/de/recap
+Pythia Recap schreibt das Transkript, die Zusammenfassung, die Beschlüsse und deine Aufgabenliste. Du bestimmst, wer was gesagt hat. Pythia Recap kaufen · 19,99 ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Stoner Games
+https://www.facebook.com/groups/stonergamez/posts/2350346289049606/
+SYS_LOG:// #AssassinsCreedOdyssey Installation: House of the Pythia. Foresight: Under review. Armed guards protect an oracle's house. Kassandra arrives ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Στήλη INSIDE OUT - Insider
+https://www.insider.gr/stiles/inside-out
+Μια διεισδυτική ματιά στις πολιτικές εξελίξεις με αποκαλύψεις από το παρασκήνιο και την παραπολιτική διάσταση της επικαιρότητας.
+Einordnung: Pythia-Bezug im Suchauszug nicht belegt
+
+87 Greek Names that Start With P - Page 3
+https://nameberry.com/baby-names/7218/greek-names-that-start-with-p/3
+Pythia. Greek. "to decay, to rot". An intriguing name with connections to Greek mythology, Pythia was the title of the high priestess at the Temple of Apollo ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Celestica Inc. (CLS) Latest Stock Analysis
+https://seekingalpha.com/symbol/CLS/analysis
+Find the latest Celestica Inc. (CLS) stock analysis from Seeking Alpha's top analysts: exclusive research and insights from bulls and bears.
+Einordnung: Pythia-Bezug im Suchauszug nicht belegt
+
+Pallanuoto Femminile, Under 18
+https://www.federnuoto.it/discipline/pallanuoto/flashnews/item/23107-Pallanuoto_4_Nazioni_di_Thionville_nate_89_Italia-Germania_22-8_6511.html
+Il fischio d'inizio è alle 18:00. L'ingresso è gratuito! L'amichevole, trasmessa in diretta su Rai Sport, rientra nel calendario degli eventi di Napoli Capitale ...
+Einordnung: Pythia-Bezug im Suchauszug nicht belegt
+
+ADD FOCUD
+https://www.youtube.com/playlist?list=PLK8mwjIogTa7s-cMZC4dTlozp6gyYxdrX
+ADD FOCUD · What You Like · Take Your Place (Original Mix) · I've Got A Jar of Dirt Remix Video · Whiskey In The Jar · Tom's Diner · From Can to Can't · My Medicine ( ...
+Einordnung: Pythia-Bezug im Suchauszug nicht belegt
+
+PolyPythias：五十次语言模型预训练运行中的稳定性与异常值
+https://www.arxivdaily.com/papers/2503.09543
+我们推出PolyPythias数据集，包含针对Pythia模型系列的45次全新训练运行：覆盖5种模型规模（参数量从14M到410M）、9个全新随机种子，共生成约7000个新的检查点并对外发布。
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+A Ballon d'Or showdown is in-store in the Champions ...
+https://www.threads.com/@livescore/post/Der5vh1jTGF/a-ballon-d-or-showdown-is-in-store-in-the-champions-league-this-week-the/
+PYTHIA GIFT BIN KALITUTA 197™ (@pythia_kalituta197) · September 27, 2026 at 4:38 PM. OFFICIAL: Voting for the Ballon d'Or is now closed. 🗳️ ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+ArtSci Roundup: November 2026 | UW News
+https://www.washington.edu/news/2026/10/19/artsci-roundup-november-2026/
+... Pythia Embodied. The festival moves to Meany Center for the Performing Arts, where there will be a digital art exhibition and electronic music performances ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Majority Model: Probability to reac h the agreement.
+https://www.researchgate.net/figure/Majority-Model-Probability-to-reac-h-the-agreement_fig3_416017598
+Three States Protocol: Simulation R esults (Single runs). Pythia: A Python Framework for the Simulation and Statistical Analysis of Collective Adaptive Systems.
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+nemo_automodel.shared.recompute_replay
+https://docs.nvidia.com/nemo/automodel/latest/nemo-automodel/nemo_automodel/shared/recompute_replay
+A RecomputeReplay channel lets the checkpoint forward record such decisions and the recompute take them back in the same order, falling back to recomputing when ...
+Einordnung: Pythia-Bezug im Suchauszug nicht belegt
+
+Given in Swap My Beggar Is A Realm Lord Last Episode
+https://www.tiktok.com/discover/given-in-swap-my-beggar-is-a-realm-lord-last-episode
+Investigating the sovereign signet and sun crest, with Madam Pythia accused of touching a relic, facing penalties, and claiming it was given to her. 10 ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Archaeological Triangle - Patras Port Authority S.A.
+https://patrasport.gr/en/axiotheata-drastiriotites/archaiologiko-trigono/
+Its oracles, which were considered the most reliable, were expressed by the Pythia, priestess of the oracle, and interpreted by the priests of Apollo.
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Python :: Serpent Guardian of Delphi
+https://www.greekmythology.com/Myths/Creatures/Python/python.html
+The Homeric Hymn to Apollo derives the place-name from the verb pythein, “to rot”: the sun's strength made the dead creature rot where it lay, so the site is ...
+Einordnung: Pythia-Bezug im Suchauszug nicht belegt
+
+MetEn(Meta Energy)
+https://www.linkedin.com/company/meten-tech
+That's the whole idea behind PYTHIA, the platform we built at MetEn(Meta Energy). Feasibility and operations on one model, so a bankability report stops ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Routing — Coming soon - ZenOps
+https://zenops.cx/service-operations/routing
+This product is not currently available. ZenOps. One space for all Support Ops. © 2026 Pythia AI, Inc.
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Zulu Network (ZULU) Price Prediction 2026, 2027, 2028
+https://3commas.io/predictions/zulu-network
+PYTHIAPYTHIA. $0.0004388. 1.30%. Market Cap$437,980. Volume$55,579. Trade · More info · Trade. Data provided by Coingecko API. Elevate your portfolio growth ...
+Einordnung: Pythia-Bezug im Suchauszug nicht belegt
+
+Today's Football Predictions | 20 Oct | Paris Saint Germain v ...
+https://www.youtube.com/shorts/mWrcbbuWfLk?xstg=CAMSBhUDzO3xHw%3D%3D
+... Pythia, a statistical model built on ten years of match data. Kickoffs are CET. Full model breakdown for every game, free: https://pythiafootball.com ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Stories that stay with you. From the studio behind Puss in Boots
+https://www.tiktok.com/@universalpics/video/7698488476492188942
+76 · recommend-cover. LBV TV • Disney & Theme Parks. 274 · recommend-cover. _sealbro. 3288 · recommend-cover. Pythia. 449 · recommend-cover. mymusic. 23K.
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Sports Betting
+https://g3newswire.com/category/sports-betting/
+Pythia Sports has appointed Ben Hutton as Head of Trading following two decades leading international racing at Entain and its predecessor businesses. Phil ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Tomorrow's Football Predictions | 20 Oct | Wolves v Portsmouth
+https://www.youtube.com/shorts/X4AvDREMfCo
+... Pythia, a statistical model built on ten years of match data. Kickoffs are CET. Full model breakdown for every game, free: https://pythiafootball.com ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+VR AI Girlfriend Review: A Comprehensive Guide to ...
+https://iopn.library.illinois.edu/journals/public/journals/7/submission_2391_2405_coverImage_en.html?vid=61283853
+Pythia Research. US News:Commission approves $125M in loans for county. Bill Dries. US News:Man dies from injuries sustained in Adams Fire that broke out in ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Kitsch, Camp, and Ugliness
+https://saemiller.com/2026/10/19/kitsch-camp-and-ugliness/
+Oracle / Pythia · Xuesen / Tsien / (钱学森) · Publications. Publications; Publications · Journal Publications · NASA Publications · Conference Papers with ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+SYS_LOG:// #AssassinsCreedOdyssey Location: House ...
+https://www.instagram.com/p/Der9NcWj-xl/
+Location: House of the Pythia. Security personnel: Armed. Roof access: Apparently negotiable. Kassandra handles the captain, collects valuables, and gives ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Institute of Biafran Studies | Eko
+https://www.facebook.com/100067064740095/?locale=es_LA
+She was known as the Pythia. To the ancient Greeks, she was the voice of Apollo. Her words could influence wars, political decisions, colonial expeditions, ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Pitita Queen Out of Drag
+https://www.tiktok.com/discover/pitita-queen-out-of-drag
+⭐️ Watch @pythia.queen compete for the crown in Canada's Drag Race: All Stars, premiering THURSDAY! ➡️ Use code CDRAS for 30% off your first ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+AstroScore
+https://astrodir.com/item/astroscore-chart-tarot-consultations
+Pythia: AI Rüya Tabiri & Burç ... Useful for Turkish users who want AI dream interpretation with tarot, horoscope, and numerology in one app. Dream Interpretation ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Christian Leipert (Hg.): Demografie und Wohlstand. Neuer ...
+https://www.perlentaucher.de/buch/christian-leipert/demografie-und-wohlstand.html
+Die Grande Dame der Meinungsforschung und Gründerin des Instituts für Demoskopie Allensbach prägte als "Pythia vom Bodensee" das politische und ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Sandisk Corporation (SNDK:CA) Competitor Stock Analysis
+https://seekingalpha.com/symbol/SNDK:CA/related-analysis?page=2
+Pythia ResearchSun, Jul 1224 Comments. Save. Micron: The Mirage Of A Single-Digit P/E Ratio. Editors' PickDavid DesjardinsSun, Jul 12163 Comments. Save ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+I'm Akali Kurihara, irasshaimase! #rupaulsdragrace ...
+https://www.facebook.com/Itshiroevangelista/videos/im-akali-kurihara-irasshaimaserupaulsdragrace-leagueoflegends-dragraceph-valeria/1664395501984480/
+I'm Akali Kurihara, irasshaimase! #rupaulsdragrace #leagueoflegends #dragraceph #valeriaortega #kda.
+Einordnung: Pythia-Bezug im Suchauszug nicht belegt
+
+My newest client just asked me to plan five trips around ...
+https://www.tiktok.com/@travelwithlivii/video/7698402485202963720
+... taking a trip to Paris for an experience? 12h agoReply. 0 .Pythia. Good luck. 6h agoReply. 0. JoeSaad. I'm amazing ???? 14h agoReply. 0. Janet Dyess793. 16h ago ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Ara-mix
+https://www.youtube.com/playlist?list=PLmjjrUn55YvuSFSGi4oeTXeXhtGs5mZjc
+4:11 · Taboo. Amanati. 677K views • 3 years ago. 4:35. Mussa (feat. Davood Bizar). Amanati. 866K views • 5 years ago. 3:59 · Pythia. Amanati. 918K views • 6 ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Фізики знайшли математичну підказку, коли штучний ...
+https://www.ukr.net/news/details/technologies/120067923.html
+Досліди проводили в лабораторних умовах на відкритих моделях, зокрема GPT-2, Pythia й OPT. Водночас далеко не всі фахівці переконані, що цього достатньо для ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Search for new phenomena in final states with large jet ...
+https://www.academia.edu/179244339/Search_for_new_phenomena_in_final_states_with_large_jet_multiplicities_and_missing_transverse_momentum_at_sqrt_s_8_TeV_proton_proton_collisions_using_the_ATLAS_experiment
+... Pythia-6.426 [46]), and tt̄ production in association with a W or Z boson (Madgraph-5.1.4.8 [47] / Pythia-6.426). Supersymmetric production processes are ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Calypso · Kostenloser KI-Chatbot
+https://miniapps.ai/de/calypso
+Pythia-Orakel. Percy Jackson. Kleopatra (Dantes Inferno). Lyra. Nyx. View all AI apps · Create. A.
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Three States Protocol: Simulation R esults (Single runs).
+https://www.researchgate.net/figure/Three-States-Protocol-Simulation-R-esults-Single-runs_fig5_416017598
+Download scientific diagram | Three States Protocol: Simulation R esults (Single runs). from publication: Pythia: A Python Framework for the Simulation and ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Gymshark Official Store Discount Code October 2026 - 50% OFF
+https://www.hotdeals.com/coupons/gymshark-eu-promo-codes
+30 verified Gymshark Official Store Discount Codes are ready to use in October 2026, with up to 50% off. Get more Gymshark Official Store Promo Codes and ...
+Einordnung: Pythia-Bezug im Suchauszug nicht belegt
+
+Making a Plaee in powering the prediction economy
+https://g3newswire.com/making-a-plaee-in-powering-the-prediction-economy/
+Pythia Sports has appointed Ben Hutton as Head of Trading following two decades leading international racing at Entain and its predecessor businesses. Amelco ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+I've heard such good things about this book I'm so excited ...
+https://www.tiktok.com/@writers.corp/video/7698107714026638605
+Liked by creator. 14. Jane. seven masters, the Pythia, and nine. 13h agoReply. 9. Vicky. Two minutes. 15h agoReply. Liked by creator. 7. kenzie. the man ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Hrvatski vaterpolski savez
+https://hvs.hr/category/vijesti/page/453/
+Pythia Cup 2024 · razgovor s povodom · Prvenstvo Hrvatske juniori 2024/25 · Vlaho Pavlić · Vito Lokas · VK Aqua · Prvenstvo Hrvatske mlađe nade 2025/26 · Crna ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Founders Unfiltered: Alex Wilson - Inside GameOn CMO's ...
+https://igaming.news/news/2026-10-20/founders-unfiltered-alex-wilson-inside-gameon-cmos-mission-to-close-igamings-marketing-lea
+Pythia Sports Appoints Ben Hutton as Head of Trading. Thursday, 15 October 2026. Categorised news. More ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Institute of Biafran Studies | Eko
+https://www.facebook.com/100067064740095/?locale=id_ID
+She was known as the Pythia. To the ancient Greeks, she was the voice of Apollo. Her words could influence wars, political decisions, colonial expeditions, ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+The Code Laboratory
+https://www.thecodelaboratory.com/projects
+>PI-Pythia. 6/5/2024. Electronics. >PI-Talos. 29/6/2025. Electronics. >PI-Zeus. 4/1/2026. Electronics. >Planet Barooom. 17/12/2019. Apps. >Poker Odds. 14/10/ ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Post by @ronfilipkowski.bsky.social — Bluesky
+https://bsky.app/profile/ronfilipkowski.bsky.social/post/3myashhgap22p
+Apollo con mi Pythia en patines @sayltaintsojoe.bsky.social · · 4h. Projecting sincerity while lying through one's teeth is an employment ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+What happens when you're stuck managing a temple ...
+https://www.instagram.com/p/DervrwEmBje/
+Welcome to Oh Apollo!, a cozy sim where you step into the role of Apollo's Pythia. Your job? Manage his temple, interpret his words, and do your best to keep ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Pythia Cap: Partially Conductive on ...
+https://x.com/PythiaR/status/2112394346578489483
+You know the show The Diplomat is fiction because no member of the current administration would ever have the balls to resign if they knew something illegal ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Bud Peck - retired at na
+https://www.linkedin.com/in/bud-peck-53871a56
+retired at na · Experience: na · Location: Soda Springs · 10 connections on LinkedIn. View Bud Peck's profile on LinkedIn, a professional community of 1 ...
+Einordnung: Pythia-Bezug im Suchauszug nicht belegt
+
+FemFragLab Marketplace: Destash, Swap, Buy, Sell!
+https://www.reddit.com/r/FemFragLab/comments/1x9uzp6/femfraglab_marketplace_destash_swap_buy_sell/
+6 Go to comments. Share. Comments Section. Luna-Pythia. •. 10h ago. [US TO US/FORWARDING SERVICES][BUY/SELL/SWAP] ALKEMIA, BPAL, DSH, NA, SORCE AND OTHERS!! HI ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+CurveFinance | ByX creator center | Community
+https://www.bybit.com/en/social/user/zeV0Rj
+... PYTHIA等）因未达Binance Alpha标准将于2026年10月9日16:00（CST）下架。平台仍支持提币与卖出操作。此举体现交易所对合规标准的持续执行，可能反映行业对资产质量审查 ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Admin Ops - ZenOps
+https://zenops.cx/admin-operations
+One space for all Support Ops. © 2026 Pythia AI, Inc. ProductsWorkforce OpsService OpsAdmin Ops. PlatformIntegrationsSecurityPricing. ResourcesBlogHelp Center ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+#omnichord #downbythebay #cover #harmonies
+https://www.tiktok.com/@silver.fae/video/7698516436699974933
+56 · recommend-cover. user2006. 596 · recommend-cover. Gypsi. 70 · recommend-cover. Colin. 331 · recommend-cover. Pythia. 1140 · recommend-cover. X. 112.
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Pythia Cap: Partially Conductive on X: "If you're leaning ...
+https://x.com/PythiaR/status/2112336423982616884
+Gonna need you to tell that to the higher ups because they not listening when I say it. 24. Log in or sign up for X. See what's happening and join the ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Pythia Cap: Partially Conductive on ...
+https://x.com/PythiaR/status/2112273148234407993
+Everyone freaking the fuck out talking about a market crash was holding SPY puts right? Or were we all just larping again.
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Kobo.com United States store - eBooks, Audiobooks ...
+https://www.kobo.com/?srsltid=AU7gw4VYYk9Em1El-JjWlIh_3Q0hO_WhC-HfUETZV_g_T_h_MDUJd_Ax
+Open up to over 6 million eBooks and audiobooks on award-winning eReaders and the free Rakuten Kobo App. Find Daily Deals, read previews & reviews and get ...
+Einordnung: Pythia-Bezug im Suchauszug nicht belegt
+
+Pythia: A Python Framework for the Simulation and ...
+https://www.researchgate.net/publication/416017598_Pythia_A_Python_Framework_for_the_Simulation_and_Statistical_Analysis_of_Collective_Adaptive_Systems
+Pythia: A Python Framework for the Simulation and Statistical Analysis of Collective Adaptive Systems · Abstract and Figures · Citations (0) · References (36).
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Pythia My Favorite Thing: Space/Aliens + Ru Are You?
+https://www.instagram.com/p/Deo-uKvkfgD/
+Results are up! ✨ ... Top 2: Pythia & Pandora ... 3rd: Femme ... PORCENTAJES TOP 3 ✓50% Pythia or Pandora ✓37,5% Pandora or Pythia 12,5% Femme ... Photo by @ ...
 Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
 http://www.pythiacrafting.com/
 http://www.pythiacrafting.com/
 Für diese Seite sind keine Informationen verfügbar.
 Einordnung: Pythia-Bezug im Suchauszug nicht belegt
+
+Tallac -- Pythia
+https://www.youtube.com/watch?v=rUQuflu1cuA
+Tallac - Tessitura Bordello A Parigi - BAP255 Vinyl 12" / Digital 2026, Netherlands Distributed By Bordello A Parigi, Buy Here on Vinyl: ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Pythia Island | Antarctic Place Names
+https://placenames.aq/place-names/130459
+Island 0.2 mi long, the largest of a group of small islands off the E side of Enterprise Island in Wilhelmina Bay, off the W coast of Graham Land. Named by the ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Stream Pythia by NadiyaSoul | Listen online for free on ...
+https://soundcloud.com/nadiya-59445602/pythia-1
+Stream Pythia by NadiyaSoul on desktop and mobile. Play over 320 million tracks for free on SoundCloud.
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
 Pythia Sports appoints trading chief
 https://bdaily.co.uk/articles/2026/10/18/pythia-sports-appoints-trading-chief
 Sports betting technology and trading specialist Pythia Sports has strengthened its senior team with the appointment of Ben Hutton as head of trading.
 Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
-A kindred spirit will hiss and sing, an old refrain. 🥀 Drawing ...
-https://www.instagram.com/p/Dep7LNPAcWr/
-A kindred spirit will hiss and sing, an old refrain. Drawing upon Poppy's magic and meaning from the garden and beyond with the Ophidia Rosa Tarot and Pythia ...
+Pythia, a pocket AI agent by SK.informatics
+http://www.hackaday.io/project/207118-pythia-a-pocket-ai-agent-by-skinformatics
+Pythia, a pocket AI agent by SK.informatics. A palm-sized AI agent that hears a command and carries it out: a work note, a CRM task, or an email.
 Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
-https://soundcloud.com/minitelofc/incoming-tallac-...
-https://soundcloud.com/minitelofc/incoming-tallac-pythia?in=bordelloaparigi%2Fsets%2Ftallac-tessitura
-Für diese Seite sind keine Informationen verfügbar.
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Pythia 💜 I've never thought I'd paint a diva fish as a tattoo ...
-https://www.instagram.com/p/DepFLFFDXZB/
-Pythia I've never thought I'd paint a diva fish as a tattoo but loved it so much ✨ It was definitely challenging for me to make but I'm sooo happy ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Flesh tries to blame Mocha #RuPaulsDragRaceUK ...
-https://www.youtube.com/shorts/D9mVAI0qiJk
-... Pythia, Sami Landri, Tiffany Ann Co, Rupaul, Azemylia, Daisy Superbitch, Lana Cotta, Sublyme, La Harpie, Fluffy Bidule, Holly White, Margarette Vinas ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-but no one ever believed your prophecies? Dig into the Greek ...
-https://www.facebook.com/TEDEducation/posts/what-if-you-could-accurately-see-and-describe-the-future-but-no-one-ever-believe/1687510809613869/
-... Pythia, is described as being 'possessed' by Apollo, while she uttered her oracles in a kind of frenzy. Maybe this is where "intuition" developed, mostly ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-☄️🥂 𝕻𝖞𝖙𝖍𝖎𝖆 ᴿᴬᴳᴱᑫDᵢ̄ᵥ 𝕾𝖍𝖎𝖒𝖙𝖊𝖗𝖊𝖉✈️ on ...
-https://x.com/PartyPrat/status/2111919866785804376
-☄️ Pythia ᴿᴬᴳᴱᑫDᵢ̄ᵥ Shimtered✈️ on X: "Tehran ❤️" ... Guess the location?
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Pythia the doors you have opened ...
-https://x.com/ohplssss/status/2112138218472931460/video/1
-Pythia the doors you have opened. @lalisatto · ‏َ · @lalisatto · 10h. THIS IS ART #VictoriaSecretFashionShow2026. 00:00. 11:06 AM · Oct 19, 2026·.
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-RTX 5090 VRAM: 32 GB GDDR7, What Fits
-https://www.aquanode.io/vram-calculator/rtx-5090
-The RTX 5090 has 32 GB of GDDR7. See which models fit at FP16 and INT4, plus live rental pricing.
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-meirl : r/meirl
-https://www.reddit.com/r/meirl/comments/1x94mpb/meirl/
-The one on the left allows for more movement when working out, the left offers comfort when just lounging around. It's not rocket science. Fuck your Ai slop.
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Exotic Electronics ⛓️
-https://www.youtube.com/playlist?list=PLGgvmWdp8iH4PCnfXWPMCQyR_vvPArodJ
-Exotic Electronics ⛓️ ; Mussa (feat. Davood Bizar). Amanati. 866K views ; Pythia. Amanati. 624K views ; Trench. FETISH. 1.3M views ; ESSENCE. Casper - Topic. 8.4M ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-ARForest - Metheus [Extreme] (Nixus, 10.27*) +HDDT ...
-https://www.reddit.com/r/osugame/comments/1x9v7ri/superi0r_arforest_metheus_extreme_nixus_1027_hddt/
-Akolibed | Pythia - Heartless (Cut Ver.) [Uri's Extra] +HDDTHRNF (h6zy, 11.32*) 98.28% FC | 1630pp | REACHED 31K PP!
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-The Delhpi Archaeological Site is a UNESCO World ...
-https://www.instagram.com/p/Dequ7wgkavJ/
-The priestess Pythia was believed to deliver messages from Apollo and offer guidance about important decisions. Kings, generals, and ordinary people ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-When Graph Autoencoders Look the Wrong Way
-https://inspirehep.net/literature/3215766
-Graph autoencoders (GAEs) trained only on background are a natural candidate for model-agnostic new-physics searches. I tested two of them on the LHC ...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-SPIRITUAL AWAKENING...
-https://www.facebook.com/groups/2106203973106888/posts/2820257908368154/
-... Pythia. One myth states that Apollo murdered Delphyne, a monstrous female dragon or she-serpent (drakaina) appointed by the earth goddess Gaia to guard ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-hello stranger on X: "Pythia the doors you have opened" / X
-https://x.com/ohplssss/status/2112138218472931460
-Pythia the doors you have opened. @ohplssss. hello stranger. 00:00. @ohplssss. hello stranger. @lalisatto.
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Archives: Mods - Page 291
-https://www.glamourdresser.com/mods/page/291?cst=&query-131-page=9&sf_paged=2
-Premium Content: Nocturna [Tre, TBSE, Resonecho, Neolithe, Rosaline, Muse, Pythia, Dionys, YAB, Rue, Lavabod] · Lux | Huria. 17 October 2026. Gear Mod ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Vitamin D Sun Tracker & UV - App Store - Apple
-https://apps.apple.com/ar/app/vitamin-d-sun-tracker-uv/id6759393447?l=en-GB
-See how much vitamin D your skin makes in the sun, for your skin type and location. Get the best time to go out, a burn timer and UV alerts, also on Apple ...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-VR AI Girlfriend Review: A Comprehensive Guide to ...
-https://iopn.library.illinois.edu/journals/public/journals/7/submission_2391_2405_coverImage_en.html?vid=48697345
-Candy AI is the closest thing to an all-in-one adult studio in Last Updated: October 18, 2026 , folding image, short video, sex chat and a persistent girlfriend ...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Female figurine Çatalhöyük Amuq Valley Turkey Iron Age II ...
-https://www.instagram.com/p/DepAYXskVlj/
-From Palaeolithic “Venus” figurines to Neolithic female statues, prehistoric objects are often presented online as evidence of ancient goddess worship—or even ...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Sagittarius ☝️ You are preparing yourselves
-https://www.youtube.com/watch?v=734p-HirOl4
-Sagittarius ☝️ You are preparing yourselves · Comments.
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Event Details
-https://connectedcontests.org/database/events/633
-Pythia dis, Nemea tris, Koinon Asias dis, in Neapolis dis, Heraia in Argos; ending with 'and the other sacred (and) crown games 80(?) times'. - PK. Powered ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-This might be the most horrific case of police abuse I have ...
-https://www.tiktok.com/@jddelay5150/video/7698111194263080222
-... you gave us cop. cops. 16 Comments. PRLK. Only 30 years? 5h agoReply. 6 .Pythia. Where the fuck in Missouri. 4h agoReply. 1. Hippy mama. He is COOKED!!!!!
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-AQUARIUS ♒ UNBELIEVABLE!! A MESSAGE OUT OF ...
-https://www.youtube.com/watch?v=ToiBqVjBlmI&vl=es
-Aquário, prepare-se para as surpresas que outubro pode trazer! ✨ As cartas revelam possibilidades de mudanças, emoções inesperadas e novidades que podem ...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-I do not want to change my last name to my husbands
-https://www.reddit.com/r/WhatShouldIDo/comments/1x9d9s6/i_do_not_want_to_change_my_last_name_to_my/
-Keep your last name. No need to go creating a new last name. Have an honest discussion with your partner before a marriage proposal happens.
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Pamela Love Valentine Necklace 2026 Online Sale
-https://www.rockledge.com/?r=product-204750658
-pamela love Pythia Bangle · pamela love Molten Anklet · pamela love Straight Barbell · pamela love Valentine Necklace · pamela love Ovalado Huggie. Post ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Kellie Morgan Collection
-https://paintniques.com/collections/kellie-morgan
-Pythia Designs · Reba Rose Creations · Uncle Grumpy's · Vagabond Brush & Co · Whimsykel Designs · Farmhouse Morning Decoupage Paper. Monochromatic painting of a ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Your business. Working as one. - ArgonStack
-https://www.argonstack.ro/en
-ArgonStack connects data, communication and day-to-day work in one unified environment, so information turns directly into action.
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Cook at Healthcare Services Group - Richmond
-https://hiringcafe.com/job/cook-healthcare-services-group-richmond-virginia-06xk1gqnom86n31h
-Apply for Cook at Healthcare Services Group in Richmond, VA. Onsite, Full Time, $16/hr. High school diploma or equivalent; ability to follow recipes and ...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-MEDIA LITERACY AS CIVIC DISCOURSE
-https://s3-euw1-ap-pe-df-pch-content-store-p.s3.eu-west-1.amazonaws.com/9781003175599/5ede87ee-0e00-49e0-bc89-e73b1e060bcd/chapters/chapter13.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQFVOSJ57TJK3L5FC%2F20261019%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20261019T044439Z&X-Amz-Expires=172800&X-Amz-Signature=038cf3a9bade27ec9d9e9879be00b4c91ccc1c232f3ca43e2bfa8c54311bffe2&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B+filename%3D%2210.4324_9781003175599-16_chapterpdf.pdf%22
-The Socratic paradox, or Socrates' response to the. Pythia's prophecy, is often quoted to remind us of the wisdom of this humil- ity. But in many ways, we ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Spoiler - For Psyche | 프시케를 위하여
-https://www.novelupdatesforum.com/threads/for-psyche-%ED%94%84%EC%8B%9C%EC%BC%80%EB%A5%BC-%EC%9C%84%ED%95%98%EC%97%AC.205980/
-He fails and realizes that Pythia must have actually been a seasonal goddess under Apollo's direct protection. Eros then flies directly to the island of Tenos, ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Sportstars & Saufspiele: Nackte Tatsachen über die Antike
-https://www.express.de/panorama/sportstars-slips-saufspiele-nackte-tatsachen-ueber-die-antike-1398658
-In den 2000er Jahren entzauberte ein wissenschaftliches Experiment die Mär vom „High sein“ der Pythia, kurz gesagt: viel Dampf um nix. Da die Kunden des Orakels ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-"One of the crows showed up with a tiny party cup. I startled ...
-https://x.com/PartyPrat/status/2111898721973879125
-☄️ Pythia ᴿᴬᴳᴱᑫDᵢ̄ᵥ Shimtered✈️ · @PartyPrat. One of the crows showed up with a tiny party cup. I startled the little creacher when ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-When 12-year-old Alina Gorbacheva made her int'l debut in ...
-https://www.instagram.com/reel/DerRNhSuXno/
-When 12-year-old Alina Gorbacheva made her int'l debut in December 2019, winning in an advanced novice event in Budapest, she never could have imagined ...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-布达佩斯杯173.79 分，Olga 把信任写进了滑行里
-https://www.sina.cn/news/detail/5355663855193071.html
-#Olga Mikutina# 布达佩斯杯. FS: 111.04. TOTAL: 173.79 http://t.cn/AXlrsIA6 ​. 发布于辽宁. 在路上的雪人：. #olga mikutina# Budapest trophy 2026 SP《Pythia ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Chapter 99 — Day 160 — Axios! - H+ _ The Trama
-https://www.royalroad.com/fiction/196927/h-the-trama/chapter/4207626/chapter-99-day-160-axios
-The new Pythia gives her the breath or the memory she believes she gives. Follow her naked without offering or weapon or plucked fruit. She walks in the ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Captain Raphael of the Nephtis Superioris - Valor Mortis
-https://www.ign.com/wikis/valor-mortis/Captain_Raphael_of_the_Nephtis_Superioris
-Captain Raphael of the Nephtis Superioris is a boss you'll encounter in your playthrough of Valor Mortis, and is a adept swordsman capable of going toe to.
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Leo Messi and Ciro recently 💙😍
-https://www.threads.com/@we.are.messi/post/DeqGjC0DPB1/leo-messi-and-ciro-recently/
-PYTHIA GIFT BIN KALITUTA 197™ (@pythia_kalituta197) · October 6, 2026 at 6:32 PM. Ciro, Mateo & Thiago Messi walked out with their father on this historic ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-【今日の仮想通貨ニュース】ビットコイン MVRVが蓄積圏へ─ ...
-https://jinacoin.ne.jp/today-news-top5-20261019/
-PYTHIA+12.10%. 下落銘柄：. ICX： ICX-13.78%; ELG： ELG+0.02%; TRU： TRU-19.65%. 市場の温度感. 恐怖指数：50（中立）; 総時価 ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Фізики описали «стрілку компаса» всередині ШІ: ...
-https://www.ukr.net/news/details/technologies/120049426.html
-Підхід уже тестували як систему раннього попередження на відкритих моделях GPT-2, Pythia та OPT. Ідея полягає не в тому, щоб аналізувати вже згенеровану ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-This is the Giant Wolf Snail (Euglandina gigantea), known ...
-https://www.instagram.com/_t/reel/Deplag7KO0f/
-Pythia trigona Sungei Buloh Wetland Reserve, Singapore 25 June 2026 Taxonomic classification. Kingdom: Animalia ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Delphic oracle and pythia history
-https://www.facebook.com/groups/1482976619433567/posts/1722053302192563/
-In the old days, Pythia was a virgin, young girl, but after Echecrates of Thessaly kidnapped and violated a young and beautiful Pythia in the late 3rd century ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-I'm excited to share my upcoming exhibition, Pythia ...
-https://www.instagram.com/p/DelasHiPxow/
-Pythia was the title held by generations of high priestesses at the temple of Apollo who delivered powerful prophecies. Their role as vessels of divine ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-#legaltech #legalsoftware #ai #legalautomation #compliance
-https://www.linkedin.com/posts/legal-pythia_legaltech-legalsoftware-ai-activity-7516753160242266112-h1cF
-Legal teams shouldn't spend their time chasing documents, deadlines, and manual admin work. At Legal-Pythia, we build software that helps legal teams work ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-MARAN PYTHIA (IMO 9402902), Crude Oil Tanker
-https://www.marinetraffic.com/he/ais/details/ships/shipid:213980
-MARAN PYTHIA (IMO: 9402902) is a Crude Oil Tanker and is sailing under the flag of GREECE. Her length overall (LOA) is 274 meters and her width is 48.04 meters.
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Pythia Cap: Partially Conductive
-https://x.com/PythiaR/status/2111315133519769681
-Pythia Cap: Partially Conductive on X: "It's funny using Fable again after Opus. It's smarter but can't communicate or make a good pitch deck to save its life.
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Newsletter Sign-up
-https://www.pythiatech.com/newsletter/
-Sign up for Pythia Technologies news: new products, Pythia DM updates and new training videos. Unsubscribe any time.
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Pythia Sports recruits Ben Hutton to drive AI and racing ...
-https://agbrief.com/news/europe/16/10/2026/pythia-sports-recruits-ben-hutton-to-drive-ai-and-racing-trading-operations/
-Pythia Sports has announced the appointment of Ben Hutton as Head of Trading following two decades leading international racing at Entain and its ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Privacy Policy
-https://www.pythiatech.com/privacy-policy/
-How Pythia Technologies collects, uses and protects information submitted through pythiatech.com, including contact forms and SMS alerts.
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Pythia (PYTHIA) Цена, Графики, Рыночная капитализация
-https://coinmarketcap.com/ru/currencies/pythia/
-Цена Pythia в реальном времени сегодня составляет ₽0.03076 RUB с суточным объемом торгов ₽2054983.37 RUB. Мы обновляем нашу цену PYTHIA к RUB в режиме ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Pythia Cap: Partially Conductive on ...
-https://x.com/PythiaR/status/2111104653308076126
-JPM head of CDS trading saying most of the spread widening is hedging not betting on default. IV on liquid semis CDS names extremely high, (e.g. AMD @ 99%, ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Pythia - Symphonic metal Künstler:in | Tourdaten - Mood
-https://events.musicofourdesire.com/de/artist/pythia
-Pythia is a UK-based symphonic power metal band that blends powerful female vocals with heavy guitar riffs and classical orchestration.
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Pythia 8事例产生器的模块化贡献框架｜arXiv 2610.19111
-https://www.arxivdaily.com/papers/2610.19111
-Pythia是一款通用蒙特卡洛事例产生器，被理论家和实验家用于粒子物理、天体粒子物理和核物理领域，以模拟粒子碰撞。由于用户群体规模庞大且需求多样，要满足所有新型及不同 ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Extensive database for Titan Quest: Ragnarok
-https://tq-db.net/de/set/roben-der-pythia
-+20% Zaubergeschwindigkeit. Pythias Weste. 104 Rüstung. Eigenschaften Beutetabelle.
+Oracle: Pythia Protocol Box Shot for Macintosh - GameFAQs
+https://gamefaqs.gamespot.com/mac/687501-oracle-pythia-protocol/boxes/1239451
+This is a story about Masuko, the Personal A.I. Secretary System (PASS) for Smart Tools and her owner, Yotsuba. The d... Concealed. It all ...
 Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
 DM PYTHIA to get the link to the last five tickets ##oracletiktok ...
@@ -368,49 +524,39 @@ https://www.youtube.com/shorts/64z9dwfBxQo
 DM PYTHIA to get the link to the last five tickets ##oracletiktok##ritualtools##cleansingoil.
 Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
-Terms of Service
-https://www.pythiatech.com/terms-and-conditions/
-Pythia Technologies Incorporated 7540 Sawmill Parkway, Suite E Powell, Ohio 43065 (740) 363-2272. Get Pythia news. New products, DM updates and training ...
+Pythia Smart Panel Connections — SPDM and SPIGM
+https://www.pythiatech.com/downloads/PTECH_Brochure_SmartPanel_Connections.pdf
+A complete Pythia DM on the wall. One connection to your network. The Smart Panel DM and the Smart Panel IGM run the same software as a Pythia DM server, built.
 Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
-This $950K Aventador SV Is Unreal, Would You Daily Drive It? ...
-https://www.facebook.com/iamcamcasey/videos/this-950k-aventador-sv-is-unreal-would-you-daily-drive-itcars-lamborghini-superc/1104864112511002/
-A car enthusiast presents the 2020 Lamborghini Aventador SVJ Roadster, calling it "hands down the most influential car of our generation." He argues that it is ...
+Nocturna [Tre, TBSE, Resonecho, Neolithe, Rosaline ...
+https://www.glamourdresser.com/mods/nocturna-tre-tbse-resonecho-neolithe-rosaline-muse-pythia-dionys-yab-rue-lavabod
+Made for the following body types: Bibo+ Tre, Dionys, LaRue, LavaBod, Muse+, Neobelly, NeoLithe, Pythia, Rosaline, Rue+, TBSE Andor, TBSE Echo, TBSE X, The ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+2i2c at JupyterCon 2025: Helping communities navigate...
+https://daily.dev/posts/2i2c-at-jupytercon-2025-helping-communities-navigate-the-interactive-computing-ecosystem-hcb5gxfup
+It also highlights community-driven talks partly enabled by 2i2c's collaboration, including findings from the Voices of JupyterHub report, Project Pythia's ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Gallery
+https://docs.xarray.dev/en/latest/gallery.html
+Here's a list of examples on how to use xarray. We will be adding more examples soon. Contributions are highly welcomed and appreciated.
 Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Pythia: Market AI for Kalshi - App Store - Apple
-https://apps.apple.com/py/app/pythia-market-ai-for-kalshi/id6776549138?l=en-GB&platform=watch
-Pythia just got better! We've polished the app to make it faster, smoother and easier to use, and squashed a few bugs along the way. Thanks for using Pythia ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Pythia BioSciences' Post
-https://www.linkedin.com/posts/pythia-bio_whos-coming-to-our-upcoming-omics-connect-activity-7516532549364469760-tSCg
-Through a real-world use case, we'll explore how MCP can bring extensive multi-omics and multimodal data, spanning 300M+ cells and diverse biological pathways, ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Pamela Love Pythia Ring 2026 New Arrivals
-https://neksankaroser.com/?n=204720158
-Clearance Pamela Love Pythia Ring, Pamela Love, Jewelry, Ring..
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-"Cool but pretty sure the g forces would make most people ...
-https://x.com/PythiaR/status/2110910268993863877
-Cool but pretty sure the g forces would make most people black out. Also 0-60 in like 0.8 seconds... the Cayenne Turbo electric already makes a lot of car ...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Pamela Love Pythia Cuff 2026 Buy Now
-https://www.cdmotorsport.my/tag/204720858/
-Pamela Love Pythia Cuff, Pamela Love, Jewelry, Bracelets. ... Weighty plaited golden cuff that balances perfectly on the edge of hard and soft with its graceful ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
 Pricing
 https://www.legalpythia.com/pricing
 Pilot from £750, AI platform by quote, custom SaaS development from £8000. Clear pricing, no long discovery process.
 Einordnung: Pythia-Bezug im Suchauszug nicht belegt
 
-Performance of Pythia and OLMo3: DR and MR for top-10...
-https://www.researchgate.net/figure/Performance-of-Pythia-and-OLMo3-DR-and-MR-for-top-10-triplets-of-16-lists-in-rDAT-test_fig2_415845759
-rDAT, Pythia and OLMo3 tend to repeat elements of a list more than they tend to recognize divergence in triplets of elements. This could be a due weakness in ...
+Sign in
+https://theconversation.com/sign_in?return_to=%2Fhidden-women-of-history-the-priestess-pythia-at-the-delphic-oracle-who-spoke-truth-to-power-108401
+Für diese Seite sind keine Informationen verfügbar.
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+TSMC: The AI Cycle Just Sent Another Signal (NYSE:TSM)
+https://seekingalpha.com/article/4954981-tsmc-the-ai-cycle-just-sent-another-signal
+Pythia Research focuses on multi-bagger stocks, primarily in the technology sector. Our approach combines financial analysis, behavioral finance, psychology, ...
 Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
 Cyber Security Basics — Pythia Cyber
@@ -418,137 +564,57 @@ https://www.pythiacyber.com/basics
 Cyber Security is about maximizing authorized access to your systems and data and minimizing unauthorized access. Everyone talks about the latter, ...
 Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
-DM PYTHIA to get the link to the last five tickets ##oracletiktok ...
-https://www.youtube.com/shorts/64z9dwfBxQo?xstg=CAMSBhUDzO3xHw%3D%3D
-DM PYTHIA to get the link to the last five tickets ##oracletiktok##ritualtools##cleansingoil.
+About Us
+https://www.binance.th/en/aboutus
+BINANCE TH APEX will remove PYTHIA (PYTHIA) on Easy Buy/Sell. Published on 09-10-2026. 2026-10-09 • 1 min read. https://public.saasexch.com/static/cms ...
 Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
-Ensemble, Guests, Opera Studio & Teams
-https://oper-frankfurt.de/en/ensemble/ensemble/?detail=694
-These were preceded by Pythia in a new Reimann's Melusine, Sonyetka in Lady Macbeth of Mtsensk (which she sang when the production first opened), Maddalena ...
+emotional junkie - coastalwind
+https://coastalwind.tumblr.com/post/796827232533381120/amp
+PYTHIA • global all stars 1.12 “best drag on earth” runway. Source: t4yce · pythiadrag racerpdr · 241 notes · See coastalwind's whole Tumblr.
 Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Pythia Cap: Partially Conductive on X: "Praise be" / X
-https://x.com/PythiaR/status/2110920184093683757
-And we have a fourth strike!! Ukraine has struck a fourth Russian data center, despite new Starlink restrictions. 00:00. 2:26 AM · Oct 16, 2026·.
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Enjoying living so close to things.
-https://www.instagram.com/p/Denx52Zkdp4/
-Photo by Poiemata of Pythia on October 05, 2026. May be an image of.
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Pareô - Buy in Pythia
-https://www.pythia.com.br/it/products/pareo-9rks6/
-While navigating this site you accept the use of cookies to improve your shopping experience. Understood. Exclusive discount!
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-The oak leaves are rustling...the oracles speak. In episode 185 ...
-https://www.instagram.com/p/DejmVxZoOfS/
-Also known as the Pythia, this woman was the prophetess at Apollo's temple, a holy space rumored to have been designed and constructed by bees. They also ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Todd Pronovost
-https://www.facebook.com/ToddAndrewPronovost/posts/1695223989272993/
-Roman Empire · European Society for the Study of Western Esotericism - ESSWE · Infinity Explorers · Pythia · Sandra Anne Taylor.
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Renn and AI Risk Discourses | Brett Edwards posted on the ...
-https://www.linkedin.com/posts/brett-edwards-498bb673_ive-been-going-back-to-renn-a-lot-lately-activity-7516584747901329409-L7gF
-I've been going back to Renn a lot lately when trying to get my head around current AI risk discourses. it is easy to forget that humans and societies have ...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Mocha is obviously not Delusional #RuPaulsDragRaceUK ...
-https://www.youtube.com/shorts/xMG-_qKlmCs
-... Pythia, Sami Landri, Tiffany Ann Co, Rupaul, Azemylia, Daisy Superbitch, Lana Cotta, Sublyme, La Harpie, Fluffy Bidule, Holly White, Margarette Vinas ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Buy XGG in Pythia
-https://www.pythia.com.br/de/conjunto-camisa-de-botoes-calca/xgg/
-We don't have any results for your search. Please, try with other filters. ... Copyright Pythia Comércio e Soluções Sustentáveis LTDA - 35693074000135 - 2026. All ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Búsqueda de especies · iNaturalist Mexico
-https://mexico.inaturalist.org/taxa/search?iconic_taxa=47158&is_active=any&places=6793&taxon_id=705071
-Xylodonta pythia Información. No hay página de Wikipedia para esta especie o grupo. ¡Empieza uno ahora! Acerca · Ayuda · Foro · Empleos · Directrices de la ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Evolution of the ordered-logit spectral regime during ...
-https://www.researchgate.net/figure/Evolution-of-the-ordered-logit-spectral-regime-during-pretraining-We-report-the-mean_tbl2_415822844
-Log-linear fit statistics across autoregressive language model... Evolution of the ordered-logit spectral regime during pretraining. We...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Research - DSIMB
-https://www.dsimb.inserm.fr/pages/research.html
-Our research. From foundational structural alphabets to recent AI-powered tools leveraging protein language model embeddings, we develop methodologies that ...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Abstract
-https://arxiv.org/abs/2606.13535v5
-(2024) A survey on large language model based autonomous agents. Frontiers of Computer Science 18 (6). External Links: ISSN 2095-2236, ...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Mechanistic Interpretability for Locating Sensitive ...
-https://ieeexplore.ieee.org/iel8/11651632/11652364/11652763.pdf
-While mechanistic interpretability has attributed specific model behaviors to attention heads [2], existing research focuses predominantly on refusal mecha-.
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Heidelberger KI-Unternehmen entwickelt Sprachmodell ...
-https://www.swr.de/swraktuell/baden-wuerttemberg/mannheim/ki-unternehmen-heidelberg-aleph-alpha-entwickelt-neues-sprachmodell-100.html
-Heidelberger KI-Unternehmen entwickelt Sprachmodell und wirbt mit "KI-Souveranität made in Germany" · KI-Modell auf den deutschen und europäischen Markt ...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-# Mechanistic Interpretability... solved?
-https://www.facebook.com/groups/raykurzweil2045/posts/29687573860845078/
-Mechanistic Interpretability... solved? My book about Post-Labor Economics - "Labor Zero"...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Aiden Bai
-https://x.com/aidenybai/status/2110857328631427147
-i know very little about mechanistic interpretability but very cool article reminds me of a 3b1b video i watched years ago.
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Could AI compress a decade of mechanistic interpretability ...
-https://www.instagram.com/reel/DeiJGIXD0q1/
-Could AI compress a decade of mechanistic interpretability research into a year? Goodfire co-founder and chief scientist Tom McGrath thinks a tenfold ...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Could AI compress a decade of mechanistic interpretability ...
-https://www.facebook.com/gettheinformation/posts/could-ai-compress-a-decade-of-mechanistic-interpretability-research-into-a-yearg/1754837919978530/
-Could AI compress a decade of mechanistic interpretability research into a year? Goodfire co-founder and chief scientist Tom McGrath thinks a tenfold...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Learning latent space directions for mechanistic ...
-https://cris.maastrichtuniversity.nl/files/325008563/i9356.pdf
-Learning latent space directions for mechanistic interpretability of deep neural networks. [Doctoral Thesis, Maastricht University]. Maastricht University ...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-KI made in Germany: Mit Kolibri hat Aleph Alpha ein neues ...
-https://www.instagram.com/reel/DeoMldZD_qM/
-... Sprachmodell aus Deutschland veröffentlicht, und zwar als Open-Weight-Modell unter Apache-2.0-Lizenz. Kolibri ist ein Mixture-of-Experts-Modell: 78 ...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Unfortunately not all ideas can be meaningfully ...
-https://news.ycombinator.com/item?id=50107626
-We can now understand most neurons in models up to trillions of parameters, and think the outlook for mechanistic interpretability may be far better than we ...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Progress Measures for Grokking via Mechanistic Interpretability
-https://www.youtube.com/watch?v=bKyqrrWRXd8
-In this video, I discuss the paper “Progress Measures for Grokking via Mechanistic Interpretability” by Nanda et al. (ICLR 2023).
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
 
 
 ## Andere Pythias
 
-The Oracles at Delphi (On the Pythian Priestess)
-https://www.greekmythology.com/sources/plutarch/the-oracles-at-delphi
-In Plutarch's dialogue on the Pythia (De Pythiae oraculis), a stranger from Greece, Diogenianus, is shown the offerings at Delphi by Philinus, Theon, ...
+History of the Delphi Method: Pythia and Women's Health
+https://nishamalhotra.com/history-of-delphi-method/
+Pythia was the priestess of the Apollo temple, but her role wasn't merely ceremonial. The priestess was believed to possess an extraordinary talent for prophecy ...
 Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
 
-The Pythia of the Temple of Apollo at Delphi stock image
-https://www.lookandlearn.com/history-images/M533576/The-Pythia-of-the-Temple-of-Apollo-at-Delphi
-Download stock image of “The Pythia of the Temple of Apollo at Delphi. Illustration for Las Supersticiones De La Humanidad by Jose Coroleu (F Seix, 1881).
+Coherent and Dissociative Photon-Induced Production in ...
+https://inspirehep.net/literature/3216330
+A comprehensive guide to the physics and usage of PYTHIA 8.3 · Christian Bierlich(. Lund U. and; Lund U., Dept. Theor. Phys ...
+Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
+
+Delphi
+https://www.visitgreece.gr/de/mainland/central-greece/delphi
+Dort übermittelte Pythia den Besuchern und Pilgern, die aus griechischen Regionen, aber auch aus fremden Ländern kamen, die Orakelprüche des Apollon. Ganz ...
+Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
+
+Delphi Audio Tour: Oracle of Apollo
+https://us.trip.com/things-to-do/detail/116400799/
+... Pythia gave her answers, then climb to the theatre and the stadium of the Pythian Games high above the valley. Your entry ticket to the site is not included ...
+Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
+
+CLA105ClassicalMythologyChap...
+https://www.cliffsnotes.com/study-notes/34604440
+Detailed Solution & Theoretical Analysis: The Pythia at Delphi conveyed cryptic prophecies inspired by Apollo. The sanctuary's foremost maxim, *Gnothi ...
+Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
+
+Power Counting Energy Flow Polynomials
+https://www.arxivdaily.com/papers/2205.06818
+We test these relations in the parton shower generator Pythia, finding excellent agreement. Power counting allows us to truncate the basis of EFPs without ...
+Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
+
+CLA105ClassicalMythologyUnitP...
+https://www.cliffsnotes.com/study-notes/34604478
+Detailed Solution & Theoretical Analysis: The Pythia at Delphi conveyed cryptic prophecies inspired by Apollo. The sanctuary's foremost maxim, *Gnothi ...
+Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
+
+Sparta
+https://www.greekmythology.com/Myths/Places/Sparta/sparta.html
+4); Herodotus (1.65) tells how the Pythia at Delphi greeted Lycurgus unsure whether to call him a god or a man, and says that the Spartans believed he ...
 Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
 
 🎬 How did the Oracles of Ancient Greece make predictions ...
@@ -556,63 +622,18 @@ https://www.facebook.com/amazingfactswow1/videos/-how-did-the-oracles-of-ancient
 The Oracle at Delphi, also known as the Pythia, was a highly revered figure in ancient Greek mythology. She was considered the mouthpiece of Apollo, the god of ...
 Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
 
-EP. 23: Apparently the Oracle Needs a Small Army
-https://www.youtube.com/watch?v=LU7RDoUjuFw
-SYS_LOG:// ACO_EP23.exe LOCATION:// House of the Pythia REGION:// Chora of Delphi, Phokis STATUS:// THAT'S A LOT OF SECURITY FOR ONE ORACLE.
+The Pythia of the Temple of Apollo at Delphi stock image
+https://www.lookandlearn.com/history-images/M533576/The-Pythia-of-the-Temple-of-Apollo-at-Delphi
+Download stock image of “The Pythia of the Temple of Apollo at Delphi. Illustration for Las Supersticiones De La Humanidad by Jose Coroleu (F Seix, 1881).
 Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
 
-The Meaningful Life | Psychology Today Canada
-https://www.psychologytoday.com/ca/blog/the-meaningful-life
-The Greek key design symbolizes that art and life are deeply intertwined. Depiction of Pythia, known as the Oracle of Delphi, high priestess of the Temple ...
+You were never meant to know this. Delphi wasn't the only ...
+https://www.instagram.com/reel/DemI6sboZ4m/
+Meet the Pythia, the legendary Oracle of Delphi whose trance-fueled prophecies shaped ancient Greek history for over a thousand years. Discover how her divine ...
 Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
 
-meirl : r/meirl
-https://www.reddit.com/r/meirl/comments/1x94mpb/meirl/
-... are changing the topic into Ai. Reddit just being Reddit, I guess. the-pythia-of-delphi. •. 9h ago. Shane was not wrong. He was just an asshole about it.
-Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
-
-To us, it is history. Mythology. Legend. Sometimes labeled ...
-https://www.instagram.com/p/DepNl8diSrT/
-The Oracle of Delphi is but one example. Historians work dutifully to construct their understanding of the Pythia, and who she was, how she came to be, how she ...
-Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
-
-The Stadium, Archaeological Site of Delphi, UNESCO ...
-https://www.mauritius-images.com/en/asset/ME-PI-17859277_mauritius_images_bildnummer_15947359_the-stadium-archaeological-site-of-delphi-unesco-world-heritage-site-in-delphi-greece
-oracle, Parnassos National Park, Pythia, Pytho, southeast-europe, sport, sporting, sports, stadium, stage, travel, travelling, unesco, world cultural ...
-Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
-
-The Legacy of the Pythia: Reclaiming Sacred Feminine ...
-https://www.facebook.com/groups/1482976619433567/posts/1722056532192240/
-Pythia, also known as the Pythoness, was the high priestess and oracle of the Temple of Apollo at Delphi that represented wisdom, intuition, spiritual ...
-Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
-
-The Pythia (the high priestess and Oracle of Delphi ...
-https://www.instagram.com/p/DejffI0kckt/
-The Pythia (the high priestess and Oracle of Delphi dedicated to the god Apollo) delivered her divine prophecies in poetic, rhythmic ancient Greek ...
-Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
-
-HYPERION | LOST WORLDS - PART 17 : Oracle of Delphi
-https://www.youtube.com/shorts/ckWy9T4Jd0s
-As Hyperion struggles against Echion outside the temple of Delphi, Pythia spots a spear among the weapons left behind by the guards.
-Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
-
-7000 GeV pp Top (parton level) pT - MCPLOTS
-https://mcplots.cern.ch/cache/plots/pp-7000-top-mc-pTtop.asym-MC_FBA_TTBAR-lowMtt.pTtop.asym-cc694bad9ee21f2c20549793c1b9fa28.pdf
-Pythia 8.315 default. 7000 GeV pp. Top (parton level) mcplots.cern.ch [arXiv:2401.10621]. Rivet 4.1.0, 100k ... Ratio to Pythia 8.315 default. 2. 0.5. 2. 0.5. 1.
-Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
-
-HYPERION | LOST WORLDS - PART 17 : Oracle of Delphi
-https://www.youtube.com/shorts/ckWy9T4Jd0s?xstg=CAMSBhUDzO3xHw%3D%3D
-As Hyperion struggles against Echion outside the temple of Delphi, Pythia spots a spear among the weapons left behind by the guards.
-Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
-
-Delphi offers free admission on 28 October 2026
-https://www.ad-hoc-news.de/unterhaltung/reisen/delphi-offers-free-admission-on-28-october-2026/70352652
-The free-admission date applies to a complex whose central remains are the ruins of the Doric Temple of Apollo. In antiquity, the oracle operated through Pythia ...
-Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
-
-Geschichte des Orakels von Delphi - Diskavr
-https://diskavr.com/de/guides/delphi-oracle-history-pythia-famous-pronouncements-croesus-persia-socrates-alexander-roman-period-theodosian-closure
-Die Pythia sagte Alexander laut Plutarch, dass er unbesiegbar sei – eine Aussage, die Alexander als das von ihm benötigte Orakel akzeptierte und die die Pythia ...
+much like the Pythia in Delphi would have done? I ...
+https://www.threads.com/@vasilikikyriakakis/post/DeoJ6OlmX4-/ever-wanted-to-take-a-drumming-journey-to-connect-with-the-greek-goddesses-much/
+Ever wanted to take a drumming journey to connect with the Greek goddesses - much like the Pythia in Delphi would have done?
 Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
 
