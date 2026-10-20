@@ -9,6 +9,24 @@
       "title": "oasst sft 1 pythia 12b",
       "url": "https://aihorde.net/details/models/text/OpenAssistant%2Foasst-sft-1-pythia-12b"
     },
+    "https://aihorde.net/details/models/text/koboldcpp%2Fpythia-2.8b-deduped": {
+      "delivered_at": "2026-10-20T12:15:43+00:00",
+      "first_seen_at": "2026-10-20T12:15:31+00:00",
+      "google_date": "vor 1 Tag",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "What the AI Horde knows about the pythia 2.8b deduped model: who is running it, what its publisher recommends, and how to try it.",
+      "title": "pythia 2.8b deduped",
+      "url": "https://aihorde.net/details/models/text/koboldcpp%2Fpythia-2.8b-deduped"
+    },
+    "https://arxiv.org/abs/2605.19944v2": {
+      "delivered_at": "2026-10-20T12:15:43+00:00",
+      "first_seen_at": "2026-10-20T12:15:31+00:00",
+      "google_date": "vor 6 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Pythia: A suite for analyzing large language models across training and scaling. In Proceedings of the 40th International Conference on Machine Learning ...",
+      "title": "A Measure-Theoretic Analysis of Reasoning in Transformers",
+      "url": "https://arxiv.org/abs/2605.19944v2"
+    },
     "https://arxiv.org/abs/2610.21261v1": {
       "delivered_at": "2026-10-18T11:44:37+00:00",
       "first_seen_at": "2026-10-18T11:44:31+00:00",
@@ -72,6 +90,15 @@
       "title": "Lynceus - AI Gate Inspector for RDF Trucks",
       "url": "https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-iii/lisan-al-gaib/lynceus-ai-gate-inspector-for-rdf-trucks"
     },
+    "https://news.ycombinator.com/item?id=50145507": {
+      "delivered_at": "2026-10-20T12:15:43+00:00",
+      "first_seen_at": "2026-10-20T12:15:31+00:00",
+      "google_date": "vor 5 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "The App: https://github.com/Pythia-Software/pharos Blog Post: https://grady.dev/projects/pharos/ · reply · jsphweid 1 day ago | prev | next [–]. I don't do this ...",
+      "title": "If you don't run your own LLM proxy, how do you know ...",
+      "url": "https://news.ycombinator.com/item?id=50145507"
+    },
     "https://repocloud.io/details/Gods%20Eye%20View/": {
       "delivered_at": "2026-10-19T14:02:03+00:00",
       "first_seen_at": "2026-10-19T13:59:34+00:00",
@@ -99,6 +126,33 @@
       "title": "pythia-160m - TextModels.tech",
       "url": "https://textmodels.tech/models/eleutherai/pythia-160m"
     },
+    "https://ubuntu9media.co.za/2026/10/19/open-source-vs-open-weight-vs-proprietary-ai/": {
+      "delivered_at": "2026-10-20T12:15:43+00:00",
+      "first_seen_at": "2026-10-20T12:15:31+00:00",
+      "google_date": "vor 20 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Examples identified by the OSI as meeting its requirements include EleutherAI's Pythia and the Allen Institute for AI's OLMo. Open-source AI can allow ...",
+      "title": "open source vs open weight AI - Ubuntu99Media",
+      "url": "https://ubuntu9media.co.za/2026/10/19/open-source-vs-open-weight-vs-proprietary-ai/"
+    },
+    "https://www.aquanode.io/vram-calculator/b200": {
+      "delivered_at": "2026-10-20T12:15:43+00:00",
+      "first_seen_at": "2026-10-20T12:15:31+00:00",
+      "google_date": "vor 2 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "EleutherAI/pythia-160m (213M); Qwen/Qwen3-4B-Instruct-2507 (4.0B); google/gemma-4-E2B-it (5.1B); google/gemma-4-12B-it (12.0B); Qwen/Qwen-72B (72.3B). Models ...",
+      "title": "B200 VRAM: 180 GB HBM3e, What Fits",
+      "url": "https://www.aquanode.io/vram-calculator/b200"
+    },
+    "https://www.aquanode.io/vram-calculator/t4": {
+      "delivered_at": "2026-10-20T12:15:43+00:00",
+      "first_seen_at": "2026-10-20T12:15:31+00:00",
+      "google_date": "vor 4 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "EleutherAI/pythia-160m (213M); Qwen/Qwen3-4B-Instruct-2507 (4.0B); google/gemma-4-E2B-it (5.1B); Qwen/Qwen3-Embedding-4B (4.0B); google/gemma-3-1b-it (1000M) ...",
+      "title": "T4 VRAM: 16 GB GDDR6, What Fits",
+      "url": "https://www.aquanode.io/vram-calculator/t4"
+    },
     "https://www.awesomepython.org/arxiv/?q=haystack": {
       "delivered_at": "2026-10-18T11:44:37+00:00",
       "first_seen_at": "2026-10-18T11:44:31+00:00",
@@ -108,6 +162,15 @@
       "title": "Awesome Python: arXiv papers linked from Python repos",
       "url": "https://www.awesomepython.org/arxiv/?q=haystack"
     },
+    "https://www.freelancer.es/freelancers/gibraltar/anova?amp%3Blang=en&amp%3Btimestamp=1792290739&bypass_object_storage=true": {
+      "delivered_at": "2026-10-20T12:15:43+00:00",
+      "first_seen_at": "2026-10-20T12:15:31+00:00",
+      "google_date": "vor 18 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... Pythia EleutherAI; Gemini; Stability AI (StableLM); Mistral; Llama (Meta AI); Command R (Cohere); Megatron Turing NVIDIA + Microsoft; Mixtral (Mistral AI) ...",
+      "title": "Statisticians para contratar en Gibraltar",
+      "url": "https://www.freelancer.es/freelancers/gibraltar/anova?amp%3Blang=en&amp%3Btimestamp=1792290739&bypass_object_storage=true"
+    },
     "https://www.linkedin.com/posts/mizanur-rahman-rafi_machinelearning-llm-aisafety-activity-7517100501360906241-2RD0": {
       "delivered_at": "2026-10-18T11:44:37+00:00",
       "first_seen_at": "2026-10-18T11:44:31+00:00",
@@ -116,6 +179,15 @@
       "snippet": "... Pythia-410M, BLOOM-560m, and more) on a single free Kaggle GPU, taught ... GPT-NeoX, ALiBi). We even hit a capability floor an older/weaker model (GPT ...",
       "title": "Mizanur Rahman's Post",
       "url": "https://www.linkedin.com/posts/mizanur-rahman-rafi_machinelearning-llm-aisafety-activity-7517100501360906241-2RD0"
+    },
+    "https://www.linkedin.com/posts/nishantha-ruwan-15b301b2_beyond-saes-consistent-concept-discovery-activity-7517950489972338688-Qgyw": {
+      "delivered_at": "2026-10-20T12:15:43+00:00",
+      "first_seen_at": "2026-10-20T12:15:31+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... Pythia-160M, across 36 configurations of dictionary width and sparsity, ConSDL improves average cross-seed dictionary consistency (DCS) to 0.84 and ...",
+      "title": "Nishantha Ruwan - Beyond SAEs",
+      "url": "https://www.linkedin.com/posts/nishantha-ruwan-15b301b2_beyond-saes-consistent-concept-discovery-activity-7517950489972338688-Qgyw"
     },
     "https://www.mdpi.com/2076-3417/16/20/10335/pdf": {
       "delivered_at": "2026-10-19T14:02:03+00:00",
@@ -135,6 +207,15 @@
       "title": "(PDF) Augment the Cache, Replace the Activation: A 2x2 ...",
       "url": "https://www.researchgate.net/publication/415931932_Augment_the_Cache_Replace_the_Activation_A_2x2_Study_of_Internal-State_Sharing"
     },
+    "https://www.techinsider.ru/news/news-1747645-issledovateli-nashli-sposob-obnarujivat-opasnye-izmeneniya-v-povedenii-ii/": {
+      "delivered_at": "2026-10-20T12:15:43+00:00",
+      "first_seen_at": "2026-10-20T12:15:31+00:00",
+      "google_date": "vor 21 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Кроме того, формулу проверяли только на старых и относительно простых моделях — GPT-2, Pythia от EleutherAI и OPT от Meta, — а не на современных ИИ ...",
+      "title": "Исследователи нашли способ обнаруживать опасные ...",
+      "url": "https://www.techinsider.ru/news/news-1747645-issledovateli-nashli-sposob-obnarujivat-opasnye-izmeneniya-v-povedenii-ii/"
+    },
     "https://x.com/_aidan_clark_/status/2110829883261960249": {
       "delivered_at": "2026-10-18T11:44:37+00:00",
       "first_seen_at": "2026-10-18T11:44:31+00:00",
@@ -150,80 +231,7 @@
     "24 Stunden: PYTHIA_MAX_PAGES erreicht, weitere Treffer vorhanden; Zeitmarke bleibt erhalten"
   ],
   "last_success_at": "2026-10-19T13:59:34+00:00",
-  "pending": {
-    "https://aihorde.net/details/models/text/koboldcpp%2Fpythia-2.8b-deduped": {
-      "first_seen_at": "2026-10-20T12:15:31+00:00",
-      "google_date": "vor 1 Tag",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "What the AI Horde knows about the pythia 2.8b deduped model: who is running it, what its publisher recommends, and how to try it.",
-      "title": "pythia 2.8b deduped",
-      "url": "https://aihorde.net/details/models/text/koboldcpp%2Fpythia-2.8b-deduped"
-    },
-    "https://arxiv.org/abs/2605.19944v2": {
-      "first_seen_at": "2026-10-20T12:15:31+00:00",
-      "google_date": "vor 6 Stunden",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "Pythia: A suite for analyzing large language models across training and scaling. In Proceedings of the 40th International Conference on Machine Learning ...",
-      "title": "A Measure-Theoretic Analysis of Reasoning in Transformers",
-      "url": "https://arxiv.org/abs/2605.19944v2"
-    },
-    "https://news.ycombinator.com/item?id=50145507": {
-      "first_seen_at": "2026-10-20T12:15:31+00:00",
-      "google_date": "vor 5 Stunden",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "The App: https://github.com/Pythia-Software/pharos Blog Post: https://grady.dev/projects/pharos/ · reply · jsphweid 1 day ago | prev | next [–]. I don't do this ...",
-      "title": "If you don't run your own LLM proxy, how do you know ...",
-      "url": "https://news.ycombinator.com/item?id=50145507"
-    },
-    "https://ubuntu9media.co.za/2026/10/19/open-source-vs-open-weight-vs-proprietary-ai/": {
-      "first_seen_at": "2026-10-20T12:15:31+00:00",
-      "google_date": "vor 20 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "Examples identified by the OSI as meeting its requirements include EleutherAI's Pythia and the Allen Institute for AI's OLMo. Open-source AI can allow ...",
-      "title": "open source vs open weight AI - Ubuntu99Media",
-      "url": "https://ubuntu9media.co.za/2026/10/19/open-source-vs-open-weight-vs-proprietary-ai/"
-    },
-    "https://www.aquanode.io/vram-calculator/b200": {
-      "first_seen_at": "2026-10-20T12:15:31+00:00",
-      "google_date": "vor 2 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "EleutherAI/pythia-160m (213M); Qwen/Qwen3-4B-Instruct-2507 (4.0B); google/gemma-4-E2B-it (5.1B); google/gemma-4-12B-it (12.0B); Qwen/Qwen-72B (72.3B). Models ...",
-      "title": "B200 VRAM: 180 GB HBM3e, What Fits",
-      "url": "https://www.aquanode.io/vram-calculator/b200"
-    },
-    "https://www.aquanode.io/vram-calculator/t4": {
-      "first_seen_at": "2026-10-20T12:15:31+00:00",
-      "google_date": "vor 4 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "EleutherAI/pythia-160m (213M); Qwen/Qwen3-4B-Instruct-2507 (4.0B); google/gemma-4-E2B-it (5.1B); Qwen/Qwen3-Embedding-4B (4.0B); google/gemma-3-1b-it (1000M) ...",
-      "title": "T4 VRAM: 16 GB GDDR6, What Fits",
-      "url": "https://www.aquanode.io/vram-calculator/t4"
-    },
-    "https://www.freelancer.es/freelancers/gibraltar/anova?amp%3Blang=en&amp%3Btimestamp=1792290739&bypass_object_storage=true": {
-      "first_seen_at": "2026-10-20T12:15:31+00:00",
-      "google_date": "vor 18 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "... Pythia EleutherAI; Gemini; Stability AI (StableLM); Mistral; Llama (Meta AI); Command R (Cohere); Megatron Turing NVIDIA + Microsoft; Mixtral (Mistral AI) ...",
-      "title": "Statisticians para contratar en Gibraltar",
-      "url": "https://www.freelancer.es/freelancers/gibraltar/anova?amp%3Blang=en&amp%3Btimestamp=1792290739&bypass_object_storage=true"
-    },
-    "https://www.linkedin.com/posts/nishantha-ruwan-15b301b2_beyond-saes-consistent-concept-discovery-activity-7517950489972338688-Qgyw": {
-      "first_seen_at": "2026-10-20T12:15:31+00:00",
-      "google_date": "",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "... Pythia-160M, across 36 configurations of dictionary width and sparsity, ConSDL improves average cross-seed dictionary consistency (DCS) to 0.84 and ...",
-      "title": "Nishantha Ruwan - Beyond SAEs",
-      "url": "https://www.linkedin.com/posts/nishantha-ruwan-15b301b2_beyond-saes-consistent-concept-discovery-activity-7517950489972338688-Qgyw"
-    },
-    "https://www.techinsider.ru/news/news-1747645-issledovateli-nashli-sposob-obnarujivat-opasnye-izmeneniya-v-povedenii-ii/": {
-      "first_seen_at": "2026-10-20T12:15:31+00:00",
-      "google_date": "vor 21 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "Кроме того, формулу проверяли только на старых и относительно простых моделях — GPT-2, Pythia от EleutherAI и OPT от Meta, — а не на современных ИИ ...",
-      "title": "Исследователи нашли способ обнаруживать опасные ...",
-      "url": "https://www.techinsider.ru/news/news-1747645-issledovateli-nashli-sposob-obnarujivat-opasnye-izmeneniya-v-povedenii-ii/"
-    }
-  },
+  "pending": {},
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
