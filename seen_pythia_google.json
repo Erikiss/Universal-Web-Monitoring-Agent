@@ -27,6 +27,15 @@
       "title": "A Measure-Theoretic Analysis of Reasoning in Transformers",
       "url": "https://arxiv.org/abs/2605.19944v2"
     },
+    "https://arxiv.org/abs/2605.22341v2": {
+      "delivered_at": "2026-10-22T12:29:48+00:00",
+      "first_seen_at": "2026-10-22T12:29:18+00:00",
+      "google_date": "vor 1 Tag",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Pythia: A suite for analyzing large language models across training and scaling. In International conference on machine learning, pp. 2397–2430. Cited by: §C.",
+      "title": "A Boundary-Layer Mechanism for One-Third Scaling in ...",
+      "url": "https://arxiv.org/abs/2605.22341v2"
+    },
     "https://arxiv.org/abs/2610.21261v1": {
       "delivered_at": "2026-10-18T11:44:37+00:00",
       "first_seen_at": "2026-10-18T11:44:31+00:00",
@@ -72,6 +81,15 @@
       "title": "pythia · GitHub Topics",
       "url": "https://github.com/topics/pythia"
     },
+    "https://huggingface.co/edededdy/LittleKedi-tiny-wide-sparse-base": {
+      "delivered_at": "2026-10-22T12:29:48+00:00",
+      "first_seen_at": "2026-10-22T12:29:18+00:00",
+      "google_date": "vor 9 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "The other columns are published figures: Pythia-70M from EleutherAI's evaluations as quoted on the Wisp-15M card, GPT-2 and Supra-50M from the Supra-50M-Base ...",
+      "title": "edededdy/LittleKedi-tiny-wide-sparse-base",
+      "url": "https://huggingface.co/edededdy/LittleKedi-tiny-wide-sparse-base"
+    },
     "https://huggingface.co/papers?q=PyTorch+Eager": {
       "delivered_at": "2026-10-19T14:02:03+00:00",
       "first_seen_at": "2026-10-19T13:59:34+00:00",
@@ -90,6 +108,15 @@
       "title": "Lynceus - AI Gate Inspector for RDF Trucks",
       "url": "https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-iii/lisan-al-gaib/lynceus-ai-gate-inspector-for-rdf-trucks"
     },
+    "https://natolambert.com/slides/2026/harvard/lecture.html": {
+      "delivered_at": "2026-10-22T12:29:48+00:00",
+      "first_seen_at": "2026-10-22T12:29:18+00:00",
+      "google_date": "vor 18 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "“Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling.” 2023. [link]. BigScience Workshop. “BLOOM: A 176B-Parameter Open-Access ...",
+      "title": "Open Language Models",
+      "url": "https://natolambert.com/slides/2026/harvard/lecture.html"
+    },
     "https://news.ycombinator.com/item?id=50145507": {
       "delivered_at": "2026-10-20T12:15:43+00:00",
       "first_seen_at": "2026-10-20T12:15:31+00:00",
@@ -98,6 +125,15 @@
       "snippet": "The App: https://github.com/Pythia-Software/pharos Blog Post: https://grady.dev/projects/pharos/ · reply · jsphweid 1 day ago | prev | next [–]. I don't do this ...",
       "title": "If you don't run your own LLM proxy, how do you know ...",
       "url": "https://news.ycombinator.com/item?id=50145507"
+    },
+    "https://ohdsi.org/2026showcase-145": {
+      "delivered_at": "2026-10-22T12:29:48+00:00",
+      "first_seen_at": "2026-10-22T12:29:18+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Pythia: An LLM-Powered Study Design Advisor for ATLAS v3.0. Authors: Peter Hoffmann, Ben Illigens. Brief Report. © 2026 OHDSI — Observational Health Data ...",
+      "title": "An LLM-Powered Study Design Advisor for ATLAS v3.0",
+      "url": "https://ohdsi.org/2026showcase-145"
     },
     "https://repocloud.io/details/Gods%20Eye%20View/": {
       "delivered_at": "2026-10-19T14:02:03+00:00",
@@ -207,6 +243,15 @@
       "title": "(PDF) Augment the Cache, Replace the Activation: A 2x2 ...",
       "url": "https://www.researchgate.net/publication/415931932_Augment_the_Cache_Replace_the_Activation_A_2x2_Study_of_Internal-State_Sharing"
     },
+    "https://www.researchgate.net/publication/416326706_The_Invisible_Watermark_A_Pilot_Study_on_the_Verifiability_Gap_in_AI_Text_Watermarking": {
+      "delivered_at": "2026-10-22T12:29:48+00:00",
+      "first_seen_at": "2026-10-22T12:29:18+00:00",
+      "google_date": "vor 20 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Given the small open-source backbones (GPT-2, with a replication on Pythia-410M), the primarily untrained detector (a small-scale trained Bayesian detector ...",
+      "title": "A Pilot Study on the Verifiability Gap in AI Text Watermarking",
+      "url": "https://www.researchgate.net/publication/416326706_The_Invisible_Watermark_A_Pilot_Study_on_the_Verifiability_Gap_in_AI_Text_Watermarking"
+    },
     "https://www.techinsider.ru/news/news-1747645-issledovateli-nashli-sposob-obnarujivat-opasnye-izmeneniya-v-povedenii-ii/": {
       "delivered_at": "2026-10-20T12:15:43+00:00",
       "first_seen_at": "2026-10-20T12:15:31+00:00",
@@ -231,48 +276,7 @@
     "Überlappung/Nachholen: 4 Tage: PYTHIA_MAX_PAGES erreicht, weitere Treffer vorhanden; Zeitmarke bleibt erhalten"
   ],
   "last_success_at": "2026-10-21T12:27:34+00:00",
-  "pending": {
-    "https://arxiv.org/abs/2605.22341v2": {
-      "first_seen_at": "2026-10-22T12:29:18+00:00",
-      "google_date": "vor 1 Tag",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "Pythia: A suite for analyzing large language models across training and scaling. In International conference on machine learning, pp. 2397–2430. Cited by: §C.",
-      "title": "A Boundary-Layer Mechanism for One-Third Scaling in ...",
-      "url": "https://arxiv.org/abs/2605.22341v2"
-    },
-    "https://huggingface.co/edededdy/LittleKedi-tiny-wide-sparse-base": {
-      "first_seen_at": "2026-10-22T12:29:18+00:00",
-      "google_date": "vor 9 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "The other columns are published figures: Pythia-70M from EleutherAI's evaluations as quoted on the Wisp-15M card, GPT-2 and Supra-50M from the Supra-50M-Base ...",
-      "title": "edededdy/LittleKedi-tiny-wide-sparse-base",
-      "url": "https://huggingface.co/edededdy/LittleKedi-tiny-wide-sparse-base"
-    },
-    "https://natolambert.com/slides/2026/harvard/lecture.html": {
-      "first_seen_at": "2026-10-22T12:29:18+00:00",
-      "google_date": "vor 18 Stunden",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "“Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling.” 2023. [link]. BigScience Workshop. “BLOOM: A 176B-Parameter Open-Access ...",
-      "title": "Open Language Models",
-      "url": "https://natolambert.com/slides/2026/harvard/lecture.html"
-    },
-    "https://ohdsi.org/2026showcase-145": {
-      "first_seen_at": "2026-10-22T12:29:18+00:00",
-      "google_date": "vor 2 Tagen",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "Pythia: An LLM-Powered Study Design Advisor for ATLAS v3.0. Authors: Peter Hoffmann, Ben Illigens. Brief Report. © 2026 OHDSI — Observational Health Data ...",
-      "title": "An LLM-Powered Study Design Advisor for ATLAS v3.0",
-      "url": "https://ohdsi.org/2026showcase-145"
-    },
-    "https://www.researchgate.net/publication/416326706_The_Invisible_Watermark_A_Pilot_Study_on_the_Verifiability_Gap_in_AI_Text_Watermarking": {
-      "first_seen_at": "2026-10-22T12:29:18+00:00",
-      "google_date": "vor 20 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "Given the small open-source backbones (GPT-2, with a replication on Pythia-410M), the primarily untrained detector (a small-scale trained Bayesian detector ...",
-      "title": "A Pilot Study on the Verifiability Gap in AI Text Watermarking",
-      "url": "https://www.researchgate.net/publication/416326706_The_Invisible_Watermark_A_Pilot_Study_on_the_Verifiability_Gap_in_AI_Text_Watermarking"
-    }
-  },
+  "pending": {},
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
