@@ -1,0 +1,94 @@
+[
+  {
+    "author": "Jonas Hallgren",
+    "baseScore": 10,
+    "id": "goawvtgQcrMZtezXv",
+    "postedAt": "2026-10-23T09:48:55.696Z",
+    "section": "Frontpage",
+    "title": "Gnerk Asks How Big a Swarm Can Get Before It Stops Being One Agent",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/goawvtgQcrMZtezXv/gnerk-asks-how-big-a-swarm-can-get-before-it-stops-being-one",
+    "visualEvidence": [
+      "figure       They loop, hmmm but that is for one agent, how shared agent loop?  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/goawvtgQcrMZtezXv/d2a8fa9ad6c834a476b091ba6b76392031a050417dfab8a297b7e340650e6e2d/nekt",
+      "figure         Figure: General Policy Improvement Loop from RL and Perception Action Loop from Active Inference.",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/d85bd9300b5a7bc784c3fd25b0ad6ac592abcd457ab131ebca6f78dfe7c670d3/xnwhwipdesvj9rrdtox1  ",
+      "figure      Okay, I smart. One agent = Blob Big Agent Representation Many agent = many Blob "
+    ],
+    "visualizationScore": 75,
+    "wordCount": 2541
+  },
+  {
+    "author": "Arepo",
+    "baseScore": 20,
+    "id": "oxZfMvQS9NxcNTozL",
+    "postedAt": "2026-10-23T04:35:10.444Z",
+    "section": "Frontpage",
+    "title": "Instrumental convergence is incoherent",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/oxZfMvQS9NxcNTozL/instrumental-convergence-is-incoherent",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/oxZfMvQS9NxcNTozL/zx0tlmmxczpqbxj7ic6m   ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/oxZfMvQS9NxcNTozL/pxfjiyyzk4aayailfrik   On this view, perhaps the closest thing to wha"
+    ],
+    "visualizationScore": 2,
+    "wordCount": 6109
+  },
+  {
+    "author": "josefely",
+    "baseScore": 9,
+    "id": "ywrgeAPMn83FxzFBk",
+    "postedAt": "2026-10-22T20:20:15.614Z",
+    "section": "Personal/All",
+    "title": "How could the US and China verifiably slow AI?",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/ywrgeAPMn83FxzFBk/how-could-the-us-and-china-verifiably-slow-ai",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ywrgeAPMn83FxzFBk/gbipzce4wkexmqjrx1sz   This likely isn't a highly original contributi",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ywrgeAPMn83FxzFBk/jvitieqgftaqw4akbh1z  A new poll from The Associated Press-NORC Cente",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ywrgeAPMn83FxzFBk/ydr4elzoksqutmgzxsvc   The core idea needed to advance dangerous gene",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ywrgeAPMn83FxzFBk/zkllszja9sgeldx6djri  This is a chart of global AIs on the Epoch Capa",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ywrgeAPMn83FxzFBk/kw4oy5a3olfxln4yhspp  Kimi K3 is currently the most capable Chinese m"
+    ],
+    "visualizationScore": 10,
+    "wordCount": 6899
+  },
+  {
+    "author": "nuppal",
+    "baseScore": 17,
+    "id": "nYSuQ8YD3QNCPc6vY",
+    "postedAt": "2026-10-22T17:58:35.534Z",
+    "section": "Frontpage",
+    "title": "Opening up Attention: A QK Transcoder  Dashboard for Feature Pairs",
+    "topicScore": 15,
+    "url": "https://www.lesswrong.com/posts/nYSuQ8YD3QNCPc6vY/opening-up-attention-a-qk-transcoder-dashboard-for-feature-3",
+    "visualEvidence": [
+      "table     Object Shape Meaning Input X T \u00d7 768 One contextual vector per token Encoders E Q , E K 768 \u00d7 F Q , 768 \u00d7 F K Read query/key features Encoder biases b Q , b K F Q , F K F",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792427875/lexical_client_uploads/scs05oo4ijfyy0ajz7he.png   T is sequence length; F Q and F K are the dictio",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792178932/lexical_client_uploads/lou8ca8tvks1fcoq2spp.png  The main training signal from the loss function i",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792182096/lexical_client_uploads/r6bqopqunr3mfheoailp.png  Interpreting the QK Feature Pair Dashboard   ",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792182340/lexical_client_uploads/pmbgnjpzwjvnoauo6iq0.png   Interpreting the QK Feature Pair Dashboard  A la"
+    ],
+    "visualizationScore": 19,
+    "wordCount": 2762
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 30,
+    "id": "ZoMJdvq9meE4shyzJ",
+    "postedAt": "2026-10-22T15:20:55.651Z",
+    "section": "Personal/All",
+    "title": "AI #191: The Hackening Begins",
+    "topicScore": 9,
+    "url": "https://www.lesswrong.com/posts/ZoMJdvq9meE4shyzJ/ai-191-the-hackening-begins",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ZoMJdvq9meE4shyzJ/od6btftjqjpsvxyjn8qw   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 157,
+    "wordCount": 12712
+  }
+]
