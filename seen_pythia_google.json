@@ -1,5 +1,23 @@
 {
   "delivered": {
+    "https://aclanthology.org/2026.emnlp-main.732/": {
+      "delivered_at": "2026-10-24T11:40:20+00:00",
+      "first_seen_at": "2026-10-24T11:40:00+00:00",
+      "google_date": "vor 3 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "To understand the emergence of grammatical behavior in language models, we track circuits for subject–verb number agreement in pythia-1b and ten seeds of pythia ...",
+      "title": "The Emergence and Sparsification of a Syntactic Circuit",
+      "url": "https://aclanthology.org/2026.emnlp-main.732/"
+    },
+    "https://aclanthology.org/volumes/2026.findings-emnlp/": {
+      "delivered_at": "2026-10-24T11:40:20+00:00",
+      "first_seen_at": "2026-10-24T11:40:00+00:00",
+      "google_date": "vor 4 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "... Pythia family of LLMs (different model parameter sizes) across six datasets. Results show that GI-MIA consistently outperforms strong baselines, achieving ...",
+      "title": "Findings of the Association for Computational Linguistics",
+      "url": "https://aclanthology.org/volumes/2026.findings-emnlp/"
+    },
     "https://aihorde.net/details/models/text/OpenAssistant%2Foasst-sft-1-pythia-12b": {
       "delivered_at": "2026-10-19T14:02:03+00:00",
       "first_seen_at": "2026-10-19T13:59:34+00:00",
@@ -63,6 +81,15 @@
       "title": "arXiv papers linked from Python repos",
       "url": "https://awesomepython.org/arxiv/?q=ann"
     },
+    "https://context7.com/zizheng-guo/rhythmmamba": {
+      "delivered_at": "2026-10-24T11:40:20+00:00",
+      "first_seen_at": "2026-10-24T11:40:00+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... pythia-160m --tasks lambada_openai,hellaswag,piqa,arc_easy,arc_challenge,winogrande --device cuda --batch_size 64 ``` ```bash python evals/lm_harness_eval ...",
+      "title": "RhythmMamba (zizheng-guo/rhythmmamba)",
+      "url": "https://context7.com/zizheng-guo/rhythmmamba"
+    },
     "https://datatracker.ietf.org/wg/bmwg/": {
       "delivered_at": "2026-10-18T11:44:37+00:00",
       "first_seen_at": "2026-10-18T11:44:31+00:00",
@@ -71,6 +98,24 @@
       "snippet": "Benchmarking Methodology for Large Language Model Serving. 2026-08-09. I-D ... draft-pythia-bmwg-programmable-power-profiling-00. Power Consumption ...",
       "title": "Benchmarking Methodology (bmwg)",
       "url": "https://datatracker.ietf.org/wg/bmwg/"
+    },
+    "https://docs.nvidia.com/nemo/automodel/v0.4/nemo-automodel/nemo_automodel/components/models/flint/packing": {
+      "delivered_at": "2026-10-24T11:40:20+00:00",
+      "first_seen_at": "2026-10-24T11:40:00+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "GPT-NeoX / Pythia · StarCoder · StarCoder2 · Aquila / Aquila2 · Baichuan / Baichuan2 · Command-R · Falcon · EXAONE · InternLM · Jais · MiniMax-M2 · MiniCPM ...",
+      "title": "nemo_automodel.components.models.flint.packing",
+      "url": "https://docs.nvidia.com/nemo/automodel/v0.4/nemo-automodel/nemo_automodel/components/models/flint/packing"
+    },
+    "https://docs.nvidia.com/nemo/automodel/v0.4/nemo-automodel/nemo_automodel/components/models/flint/state_dict_adapter": {
+      "delivered_at": "2026-10-24T11:40:20+00:00",
+      "first_seen_at": "2026-10-24T11:40:00+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "GPT-NeoX / Pythia · StarCoder · StarCoder2 · Aquila / Aquila2 · Baichuan / Baichuan2 · Command-R · Falcon · EXAONE · InternLM · Jais · MiniMax-M2 · MiniCPM ...",
+      "title": "nemo_automodel - . - components - . - models - . - flint",
+      "url": "https://docs.nvidia.com/nemo/automodel/v0.4/nemo-automodel/nemo_automodel/components/models/flint/state_dict_adapter"
     },
     "https://docs.nvidia.com/nemo/automodel/v0.5/nemo-automodel/nemo_automodel/components/flow_matching/adapters/flux3": {
       "delivered_at": "2026-10-18T11:44:37+00:00",
@@ -107,6 +152,42 @@
       "snippet": "TMLR 2026 | Mechanistic interpretability: attention-head binding (EB*) as a marker of concept emergence. 7 models, 5 architectures (Pythia 160M–2.8B, OLMo-1B, ...",
       "title": "pythia · GitHub Topics",
       "url": "https://github.com/topics/pythia"
+    },
+    "https://github.com/volotat/mini-AGI": {
+      "delivered_at": "2026-10-24T11:40:20+00:00",
+      "first_seen_at": "2026-10-24T11:40:00+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Every language model you can actually own today is a model somebody ... For scale, EleutherAI's Pythia-1B took 4,830 A100-hours to read 300B tokens ...",
+      "title": "Mini-AGI - Volotat",
+      "url": "https://github.com/volotat/mini-AGI"
+    },
+    "https://huggingface.co/EleutherAI/neox-ckpt-pythia-1.4b-deduped/blame/main/layer_24-model_00-model_states.pt": {
+      "delivered_at": "2026-10-24T11:40:20+00:00",
+      "first_seen_at": "2026-10-24T11:40:00+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "version https://git-lfs.github.com/spec/v1 oid sha256:5726a28c45637d3bccc1057cd833029cac21412a962b4a4407137c457b82c286 size 100720126 ...",
+      "title": "EleutherAI/neox-ckpt-pythia-1.4b-deduped at main",
+      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-1.4b-deduped/blame/main/layer_24-model_00-model_states.pt"
+    },
+    "https://huggingface.co/EleutherAI/pythia-14m-seed5/tree/refs%2Fpr%2F1": {
+      "delivered_at": "2026-10-24T11:40:20+00:00",
+      "first_seen_at": "2026-10-24T11:40:00+00:00",
+      "google_date": "vor 1 Tag",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Instructions to use EleutherAI/pythia-14m-seed5 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. · Install from ...",
+      "title": "EleutherAI/pythia-14m-seed5 at refs/pr/1",
+      "url": "https://huggingface.co/EleutherAI/pythia-14m-seed5/tree/refs%2Fpr%2F1"
+    },
+    "https://huggingface.co/EleutherAI/pythia-2.8b/commits/68a7388c2529be5516b6474d26915464e8e39053": {
+      "delivered_at": "2026-10-24T11:40:20+00:00",
+      "first_seen_at": "2026-10-24T11:40:00+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Instructions to use EleutherAI/pythia-2.8b with libraries, inference providers, notebooks, and local apps. Follow these links to get started. · Install from pip ...",
+      "title": "Commits · EleutherAI/pythia-2.8b",
+      "url": "https://huggingface.co/EleutherAI/pythia-2.8b/commits/68a7388c2529be5516b6474d26915464e8e39053"
     },
     "https://huggingface.co/edededdy/LittleKedi-tiny-wide-sparse-base": {
       "delivered_at": "2026-10-22T12:29:48+00:00",
@@ -180,6 +261,15 @@
       "title": "An LLM-Powered Study Design Advisor for ATLAS v3.0",
       "url": "https://ohdsi.org/2026showcase-145"
     },
+    "https://repocloud.io/details/Bloomberg%20Terminal/": {
+      "delivered_at": "2026-10-24T11:40:20+00:00",
+      "first_seen_at": "2026-10-24T11:40:00+00:00",
+      "google_date": "vor 12 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "With over 400 GitHub stars and growing, Pythia transforms a local LLM into a self-calibrating geopolitical oracle that watches the entire planet and predicts ...",
+      "title": "Bloomberg Terminal",
+      "url": "https://repocloud.io/details/Bloomberg%20Terminal/"
+    },
     "https://repocloud.io/details/Gods%20Eye%20View/": {
       "delivered_at": "2026-10-19T14:02:03+00:00",
       "first_seen_at": "2026-10-19T13:59:34+00:00",
@@ -188,6 +278,15 @@
       "snippet": "With over 400 GitHub stars and growing, Pythia transforms a local LLM into a self-calibrating geopolitical oracle that watches the entire planet and predicts ...",
       "title": "Gods Eye View",
       "url": "https://repocloud.io/details/Gods%20Eye%20View/"
+    },
+    "https://repocloud.io/details/Pythia/": {
+      "delivered_at": "2026-10-24T11:40:20+00:00",
+      "first_seen_at": "2026-10-24T11:40:00+00:00",
+      "google_date": "vor 2 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "With over 400 GitHub stars and growing, Pythia transforms a local LLM into a self-calibrating geopolitical oracle that watches the entire planet and ...",
+      "title": "Pythia",
+      "url": "https://repocloud.io/details/Pythia/"
     },
     "https://repocloud.io/details/World%20Monitor/": {
       "delivered_at": "2026-10-19T14:02:03+00:00",
@@ -215,6 +314,15 @@
       "snippet": "Examples identified by the OSI as meeting its requirements include EleutherAI's Pythia and the Allen Institute for AI's OLMo. Open-source AI can allow ...",
       "title": "open source vs open weight AI - Ubuntu99Media",
       "url": "https://ubuntu9media.co.za/2026/10/19/open-source-vs-open-weight-vs-proprietary-ai/"
+    },
+    "https://www.antena3.ro/high-tech/o-formula-matematica-simpla-anticipeaza-momentul-in-care-ai-incepe-sa-devina-periculoasa-808093.html": {
+      "delivered_at": "2026-10-24T11:40:20+00:00",
+      "first_seen_at": "2026-10-24T11:40:00+00:00",
+      "google_date": "vor 2 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... Pythia, dezvoltat de EleutherAI, și OPT, creat de Meta, nu pe asistenții AI utilizați în prezent de publicul larg. Xing a mai susținut că rezultatele nu ...",
+      "title": "O formulă matematică simplă anticipează momentul în care ...",
+      "url": "https://www.antena3.ro/high-tech/o-formula-matematica-simpla-anticipeaza-momentul-in-care-ai-incepe-sa-devina-periculoasa-808093.html"
     },
     "https://www.aquanode.io/vram-calculator/b200": {
       "delivered_at": "2026-10-20T12:15:43+00:00",
@@ -252,6 +360,15 @@
       "title": "Search arXiv papers linked from awesome Python repositories",
       "url": "https://www.awesomepython.org/arxiv/?q=similarity"
     },
+    "https://www.facebook.com/groups/2675412082839539/posts/2875361079511304/": {
+      "delivered_at": "2026-10-24T11:40:20+00:00",
+      "first_seen_at": "2026-10-24T11:40:00+00:00",
+      "google_date": "",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "... Language Model (LLM), a complex, multi- stage computational pipeline unfolds ... They used various datasets and tested different models, such as: - Pythia ...",
+      "title": "# ***ℹ******ℹ******ℹ****** What Is LLM Inference ? ****** ...",
+      "url": "https://www.facebook.com/groups/2675412082839539/posts/2875361079511304/"
+    },
     "https://www.facebook.com/groups/482308113525227/posts/1732958508460175/": {
       "delivered_at": "2026-10-23T12:09:52+00:00",
       "first_seen_at": "2026-10-23T12:09:42+00:00",
@@ -269,6 +386,15 @@
       "snippet": "... Pythia EleutherAI; Gemini; Stability AI (StableLM); Mistral; Llama (Meta AI); Command R (Cohere); Megatron Turing NVIDIA + Microsoft; Mixtral (Mistral AI) ...",
       "title": "Statisticians para contratar en Gibraltar",
       "url": "https://www.freelancer.es/freelancers/gibraltar/anova?amp%3Blang=en&amp%3Btimestamp=1792290739&bypass_object_storage=true"
+    },
+    "https://www.freelancer.es/freelancers/gibraltar/tealium?amp%3Blang=en&amp%3Btimestamp=1792634875&bypass_object_storage=true": {
+      "delivered_at": "2026-10-24T11:40:20+00:00",
+      "first_seen_at": "2026-10-24T11:40:00+00:00",
+      "google_date": "vor 10 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... Pythia EleutherAI; Gemini; Stability AI (StableLM); Mistral; Llama (Meta AI); Command R (Cohere); Megatron Turing NVIDIA + Microsoft; Mixtral (Mistral AI) ...",
+      "title": "Tealium Developers para contratar en Gibraltar",
+      "url": "https://www.freelancer.es/freelancers/gibraltar/tealium?amp%3Blang=en&amp%3Btimestamp=1792634875&bypass_object_storage=true"
     },
     "https://www.geeksforgeeks.org/artificial-intelligence/top-10-open-source-llm-models/": {
       "delivered_at": "2026-10-23T12:09:52+00:00",
@@ -357,120 +483,7 @@
     "Überlappung/Nachholen: 3 Tage: PYTHIA_MAX_PAGES erreicht, weitere Treffer vorhanden; Zeitmarke bleibt erhalten"
   ],
   "last_success_at": "2026-10-23T12:09:42+00:00",
-  "pending": {
-    "https://aclanthology.org/2026.emnlp-main.732/": {
-      "first_seen_at": "2026-10-24T11:40:00+00:00",
-      "google_date": "vor 3 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "To understand the emergence of grammatical behavior in language models, we track circuits for subject–verb number agreement in pythia-1b and ten seeds of pythia ...",
-      "title": "The Emergence and Sparsification of a Syntactic Circuit",
-      "url": "https://aclanthology.org/2026.emnlp-main.732/"
-    },
-    "https://aclanthology.org/volumes/2026.findings-emnlp/": {
-      "first_seen_at": "2026-10-24T11:40:00+00:00",
-      "google_date": "vor 4 Stunden",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "... Pythia family of LLMs (different model parameter sizes) across six datasets. Results show that GI-MIA consistently outperforms strong baselines, achieving ...",
-      "title": "Findings of the Association for Computational Linguistics",
-      "url": "https://aclanthology.org/volumes/2026.findings-emnlp/"
-    },
-    "https://context7.com/zizheng-guo/rhythmmamba": {
-      "first_seen_at": "2026-10-24T11:40:00+00:00",
-      "google_date": "vor 2 Tagen",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "... pythia-160m --tasks lambada_openai,hellaswag,piqa,arc_easy,arc_challenge,winogrande --device cuda --batch_size 64 ``` ```bash python evals/lm_harness_eval ...",
-      "title": "RhythmMamba (zizheng-guo/rhythmmamba)",
-      "url": "https://context7.com/zizheng-guo/rhythmmamba"
-    },
-    "https://docs.nvidia.com/nemo/automodel/v0.4/nemo-automodel/nemo_automodel/components/models/flint/packing": {
-      "first_seen_at": "2026-10-24T11:40:00+00:00",
-      "google_date": "vor 3 Tagen",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "GPT-NeoX / Pythia · StarCoder · StarCoder2 · Aquila / Aquila2 · Baichuan / Baichuan2 · Command-R · Falcon · EXAONE · InternLM · Jais · MiniMax-M2 · MiniCPM ...",
-      "title": "nemo_automodel.components.models.flint.packing",
-      "url": "https://docs.nvidia.com/nemo/automodel/v0.4/nemo-automodel/nemo_automodel/components/models/flint/packing"
-    },
-    "https://docs.nvidia.com/nemo/automodel/v0.4/nemo-automodel/nemo_automodel/components/models/flint/state_dict_adapter": {
-      "first_seen_at": "2026-10-24T11:40:00+00:00",
-      "google_date": "vor 3 Tagen",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "GPT-NeoX / Pythia · StarCoder · StarCoder2 · Aquila / Aquila2 · Baichuan / Baichuan2 · Command-R · Falcon · EXAONE · InternLM · Jais · MiniMax-M2 · MiniCPM ...",
-      "title": "nemo_automodel - . - components - . - models - . - flint",
-      "url": "https://docs.nvidia.com/nemo/automodel/v0.4/nemo-automodel/nemo_automodel/components/models/flint/state_dict_adapter"
-    },
-    "https://github.com/volotat/mini-AGI": {
-      "first_seen_at": "2026-10-24T11:40:00+00:00",
-      "google_date": "vor 3 Tagen",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "Every language model you can actually own today is a model somebody ... For scale, EleutherAI's Pythia-1B took 4,830 A100-hours to read 300B tokens ...",
-      "title": "Mini-AGI - Volotat",
-      "url": "https://github.com/volotat/mini-AGI"
-    },
-    "https://huggingface.co/EleutherAI/neox-ckpt-pythia-1.4b-deduped/blame/main/layer_24-model_00-model_states.pt": {
-      "first_seen_at": "2026-10-24T11:40:00+00:00",
-      "google_date": "vor 2 Tagen",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "version https://git-lfs.github.com/spec/v1 oid sha256:5726a28c45637d3bccc1057cd833029cac21412a962b4a4407137c457b82c286 size 100720126 ...",
-      "title": "EleutherAI/neox-ckpt-pythia-1.4b-deduped at main",
-      "url": "https://huggingface.co/EleutherAI/neox-ckpt-pythia-1.4b-deduped/blame/main/layer_24-model_00-model_states.pt"
-    },
-    "https://huggingface.co/EleutherAI/pythia-14m-seed5/tree/refs%2Fpr%2F1": {
-      "first_seen_at": "2026-10-24T11:40:00+00:00",
-      "google_date": "vor 1 Tag",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "Instructions to use EleutherAI/pythia-14m-seed5 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. · Install from ...",
-      "title": "EleutherAI/pythia-14m-seed5 at refs/pr/1",
-      "url": "https://huggingface.co/EleutherAI/pythia-14m-seed5/tree/refs%2Fpr%2F1"
-    },
-    "https://huggingface.co/EleutherAI/pythia-2.8b/commits/68a7388c2529be5516b6474d26915464e8e39053": {
-      "first_seen_at": "2026-10-24T11:40:00+00:00",
-      "google_date": "vor 2 Tagen",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "Instructions to use EleutherAI/pythia-2.8b with libraries, inference providers, notebooks, and local apps. Follow these links to get started. · Install from pip ...",
-      "title": "Commits · EleutherAI/pythia-2.8b",
-      "url": "https://huggingface.co/EleutherAI/pythia-2.8b/commits/68a7388c2529be5516b6474d26915464e8e39053"
-    },
-    "https://repocloud.io/details/Bloomberg%20Terminal/": {
-      "first_seen_at": "2026-10-24T11:40:00+00:00",
-      "google_date": "vor 12 Stunden",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "With over 400 GitHub stars and growing, Pythia transforms a local LLM into a self-calibrating geopolitical oracle that watches the entire planet and predicts ...",
-      "title": "Bloomberg Terminal",
-      "url": "https://repocloud.io/details/Bloomberg%20Terminal/"
-    },
-    "https://repocloud.io/details/Pythia/": {
-      "first_seen_at": "2026-10-24T11:40:00+00:00",
-      "google_date": "vor 2 Stunden",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "With over 400 GitHub stars and growing, Pythia transforms a local LLM into a self-calibrating geopolitical oracle that watches the entire planet and ...",
-      "title": "Pythia",
-      "url": "https://repocloud.io/details/Pythia/"
-    },
-    "https://www.antena3.ro/high-tech/o-formula-matematica-simpla-anticipeaza-momentul-in-care-ai-incepe-sa-devina-periculoasa-808093.html": {
-      "first_seen_at": "2026-10-24T11:40:00+00:00",
-      "google_date": "vor 2 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "... Pythia, dezvoltat de EleutherAI, și OPT, creat de Meta, nu pe asistenții AI utilizați în prezent de publicul larg. Xing a mai susținut că rezultatele nu ...",
-      "title": "O formulă matematică simplă anticipează momentul în care ...",
-      "url": "https://www.antena3.ro/high-tech/o-formula-matematica-simpla-anticipeaza-momentul-in-care-ai-incepe-sa-devina-periculoasa-808093.html"
-    },
-    "https://www.facebook.com/groups/2675412082839539/posts/2875361079511304/": {
-      "first_seen_at": "2026-10-24T11:40:00+00:00",
-      "google_date": "",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "... Language Model (LLM), a complex, multi- stage computational pipeline unfolds ... They used various datasets and tested different models, such as: - Pythia ...",
-      "title": "# ***ℹ******ℹ******ℹ****** What Is LLM Inference ? ****** ...",
-      "url": "https://www.facebook.com/groups/2675412082839539/posts/2875361079511304/"
-    },
-    "https://www.freelancer.es/freelancers/gibraltar/tealium?amp%3Blang=en&amp%3Btimestamp=1792634875&bypass_object_storage=true": {
-      "first_seen_at": "2026-10-24T11:40:00+00:00",
-      "google_date": "vor 10 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "... Pythia EleutherAI; Gemini; Stability AI (StableLM); Mistral; Llama (Meta AI); Command R (Cohere); Megatron Turing NVIDIA + Microsoft; Mixtral (Mistral AI) ...",
-      "title": "Tealium Developers para contratar en Gibraltar",
-      "url": "https://www.freelancer.es/freelancers/gibraltar/tealium?amp%3Blang=en&amp%3Btimestamp=1792634875&bypass_object_storage=true"
-    }
-  },
+  "pending": {},
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
