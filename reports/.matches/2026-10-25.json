@@ -1,0 +1,38 @@
+[
+  {
+    "author": "Chris_Leong",
+    "baseScore": 8,
+    "id": "dmYP7DS3ERyXGAYe6",
+    "postedAt": "2026-10-25T07:52:23.749Z",
+    "section": "Frontpage",
+    "title": "Setting the Scene (Public v1; October 25)",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/dmYP7DS3ERyXGAYe6/setting-the-scene-public-v1-october-25",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/dmYP7DS3ERyXGAYe6/tihfdyagffugnjjtkhpt  Cyber Security I think it\u2019s worth reflecting th",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/dmYP7DS3ERyXGAYe6/pmmf5usbg7zd79qhwtlr  Anthropic research suggests that we\u2019re on the v",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/dmYP7DS3ERyXGAYe6/pphwcwd1psihntxrzgrz  New York Mag Intelligencer published What if Yo"
+    ],
+    "visualizationScore": 5,
+    "wordCount": 3493
+  },
+  {
+    "author": "Caleb Briggs",
+    "baseScore": 13,
+    "id": "7cmQGtJu4nXsi6pPu",
+    "postedAt": "2026-10-24T19:23:34.041Z",
+    "section": "Frontpage",
+    "title": "An Attempt at Top-down Interpretability",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/7cmQGtJu4nXsi6pPu/an-attempt-at-top-down-interpretability",
+    "visualEvidence": [
+      "figure      There are at least two distinct ways to conceptually organize a scientific endeavor: top-down or bottom-up . The bottom-up approach involves finding the smallest object",
+      "img bottom-up.gif   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792809453/lexical_client_uploads/agml9plyhtnxsdjpnork.gif   ",
+      "figure      The top-down approach instead tries to get a coarse picture of the whole object, and uses those intuitions to understand motifs, and then zooms into mechanics of those ",
+      "img top-down.gif   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792809787/lexical_client_uploads/i2df2smi1cbqakintepc.gif   ",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792809914/lexical_client_uploads/nn0eft5rsmm0pubnrfkb.png  I'll start with a few observations about Gemma-4-"
+    ],
+    "visualizationScore": 74,
+    "wordCount": 7812
+  }
+]
