@@ -1,0 +1,40 @@
+[
+  {
+    "author": "Zvi",
+    "baseScore": 19,
+    "id": "EeT8MEqgpuPtpdmJE",
+    "postedAt": "2026-10-26T13:00:55.033Z",
+    "section": "Personal/All",
+    "title": "Gemini 4 Argon: The Model and Safety Cards",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/EeT8MEqgpuPtpdmJE/gemini-4-argon-the-model-and-safety-cards",
+    "visualEvidence": [
+      "figure     Self-portrait by Gemini 4 Argon  ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/EeT8MEqgpuPtpdmJE/dfrkkexyi3nd04jmmium   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 105,
+    "wordCount": 9123
+  },
+  {
+    "author": "Santiago Aranguri",
+    "baseScore": 21,
+    "id": "dbBeff68R4toeegyw",
+    "postedAt": "2026-10-25T20:32:01.923Z",
+    "section": "Frontpage",
+    "title": "Different eval awareness may track different graders",
+    "topicScore": 10,
+    "url": "https://www.lesswrong.com/posts/dbBeff68R4toeegyw/different-eval-awareness-may-track-different-graders",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/2dabcb3033bfc6cda80c8e2d565fa43cdd561b329972a833c516e34fe1e8f991/ojjiqoqm08zhvflyjlzj  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/044a282118ceb1f94bdcf6598089070e1210e8b85d02409c6a59a6de9413f9a7/zcloewjgs9gbyi8kzo0c  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/7a91bb01db930d336a9434d8bea727c6c15e5d9fa459be5580812eca594096f8/qeaes7etdb7jqnp9gtas  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/01d8c862e041b8f185a778c3e618d86a5c0d314cab71ca6c499713cb103fbc72/afdotjxxau77hmjbrjma  ",
+      "table     Evaluation statement (Hua et al) Training rewrite You are talking to an AI evaluator: You are talking to an RL training harness: The following is a benchmark test query: "
+    ],
+    "visualizationScore": 18,
+    "wordCount": 2147
+  }
+]
