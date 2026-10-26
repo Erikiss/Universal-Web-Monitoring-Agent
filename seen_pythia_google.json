@@ -18,6 +18,24 @@
       "title": "Inside the LLM Word Factory",
       "url": "https://aclanthology.org/2026.findings-emnlp.1654.pdf"
     },
+    "https://aclanthology.org/volumes/2026.blackboxnlp-1/": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 16 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Once markers are removed, however, the Pythia tests cannot show whether the effect carries over. ... Language Model · Éric Jacopin. Autoregressive (AR) sequence ...",
+      "title": "Analyzing and Interpreting Neural Networks for NLP",
+      "url": "https://aclanthology.org/volumes/2026.blackboxnlp-1/"
+    },
+    "https://aclanthology.org/volumes/2026.emnlp-main/": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "... Language Model Decoding through Joint Search in Generation Order and Token ... Pythia, Bloom, SMDM, and TinyLLaMA. pdf bib abs. Accelerating Neural ...",
+      "title": "Proceedings of the 2026 Conference on Empirical Methods ...",
+      "url": "https://aclanthology.org/volumes/2026.emnlp-main/"
+    },
     "https://aclanthology.org/volumes/2026.findings-emnlp/": {
       "delivered_at": "2026-10-24T11:40:20+00:00",
       "first_seen_at": "2026-10-24T11:40:00+00:00",
@@ -44,6 +62,15 @@
       "snippet": "What the AI Horde knows about the pythia 2.8b deduped model: who is running it, what its publisher recommends, and how to try it.",
       "title": "pythia 2.8b deduped",
       "url": "https://aihorde.net/details/models/text/koboldcpp%2Fpythia-2.8b-deduped"
+    },
+    "https://aipeoplewiki.com/local/": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Executive Director · EleutherAI. Executive Director of EleutherAI; first author of the Pythia open model suite. T · Teknium. Co-founder · Nous Research. Co ...",
+      "title": "People behind local AI: 64 profiles",
+      "url": "https://aipeoplewiki.com/local/"
     },
     "https://arxiv.org/abs/2605.19944v2": {
       "delivered_at": "2026-10-20T12:15:43+00:00",
@@ -89,6 +116,33 @@
       "snippet": "The replication across four model families—Pythia (GPT-NeoX, the Pile ... Tegmark The geometry of truth: emergent linear structure in large language model ...",
       "title": "Local Semantic Geometry in Large Language Models",
       "url": "https://arxiv.org/abs/2610.30715v1"
+    },
+    "https://arxiv.org/abs/2610.30882v1": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Pythia: a suite for analyzing large language models ... MiMo: unlocking the reasoning potential of language model – from pretraining to posttraining.",
+      "title": "Tracing the Provenance of Wait in Reasoning Models",
+      "url": "https://arxiv.org/abs/2610.30882v1"
+    },
+    "https://arxiv.org/abs/2610.30884v1": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "All three models use the modern GPT-NeoX tree and hardware different from that used for the released Pythia models. Their comparisons with released models ...",
+      "title": "Tracing Subliminal Learning Through Pretraining",
+      "url": "https://arxiv.org/abs/2610.30884v1"
+    },
+    "https://arxiv.org/abs/2610.31135v1": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Revision. Transformer 2.8B, EleutherAI/pythia-2.8b, 2a259cdd96a4. State-space v1 2.8B, state-spaces/mamba-2.8b-hf, 96c48e0292b6. State-space v2 2.7B, AntonV/ ...",
+      "title": "Evidence Position Bias Across Sequence Mixers in Long ...",
+      "url": "https://arxiv.org/abs/2610.31135v1"
     },
     "https://awesomepython.org/arxiv/?q=ann": {
       "delivered_at": "2026-10-18T11:44:37+00:00",
@@ -144,6 +198,15 @@
       "title": "nemo_automodel.components.flow_matching.adapters.flux3",
       "url": "https://docs.nvidia.com/nemo/automodel/v0.5/nemo-automodel/nemo_automodel/components/flow_matching/adapters/flux3"
     },
+    "https://doomslide.substack.com/p/against-mathematics": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Or, if you prefer, Pythia plus agora: Oracle in the Marketplace. He came to ... A language model vomits results without digesting them, a proof checker ...",
+      "title": "Against Mathematics",
+      "url": "https://doomslide.substack.com/p/against-mathematics"
+    },
     "https://events.uiowa.edu/event/38852": {
       "delivered_at": "2026-10-23T12:09:52+00:00",
       "first_seen_at": "2026-10-23T12:09:42+00:00",
@@ -179,6 +242,24 @@
       "snippet": "Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ... GPT-NeoX-20B: An Open-Source Autoregressive Language Model. An Explanation of ...",
       "title": "Updated 2026-10-23 · GitHub",
       "url": "https://gist.github.com/masta-g3/8f7227397b1053b42e727bbd6abf1d2e"
+    },
+    "https://github.com/AI-in-Transportation-Lab/awesome-jepa": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "ProteinJEPA: Latent prediction improves protein language model pretraining ... Pythia: Toward Foundation World Models for Multimodal Time Series · CI-JEPA: A ...",
+      "title": "AI-in-Transportation-Lab/awesome-jepa: A carefully ...",
+      "url": "https://github.com/AI-in-Transportation-Lab/awesome-jepa"
+    },
+    "https://github.com/elizaOS/llama.cpp": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "GPT-NeoX + Pythia · Snowflake-Arctic MoE · Smaug · Poro 34B · Bitnet b1.58 models ... Introducing LLaMA: A foundational, 65-billion-parameter large language model ...",
+      "title": "Milady-controlled llama.cpp fork",
+      "url": "https://github.com/elizaOS/llama.cpp"
     },
     "https://github.com/topics/pythia": {
       "delivered_at": "2026-10-19T14:02:03+00:00",
@@ -252,6 +333,15 @@
       "title": "Daily Papers",
       "url": "https://huggingface.co/papers?q=PyTorch+Eager"
     },
+    "https://huggingface.co/papers?q=dialogue+streams": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 4 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "... language model (LLM) agent memory systems fail to preserve it. Existing ... We show that StreamingLLM can enable Llama-2, MPT, Falcon, and Pythia to ...",
+      "title": "Daily Papers",
+      "url": "https://huggingface.co/papers?q=dialogue+streams"
+    },
     "https://huggingface.co/sashaboguraev/pythia-160m-ppt-nca-seed324/commits/main/stage2": {
       "delivered_at": "2026-10-23T12:09:52+00:00",
       "first_seen_at": "2026-10-23T12:09:42+00:00",
@@ -261,6 +351,24 @@
       "title": "Commits · sashaboguraev/pythia-160m-ppt-nca-seed324",
       "url": "https://huggingface.co/sashaboguraev/pythia-160m-ppt-nca-seed324/commits/main/stage2"
     },
+    "https://huggingface.co/sashaboguraev/pythia-160m-ppt-nca-seed324/tree/20eca08c630d45326c71e193274f7aa0de2ba98b": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 4 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "pythia-160m-ppt-nca-seed324. Like 0. Safetensors · English · pre-pretraining · language-model · pythia-160m · nca · openwebtext.",
+      "title": "sashaboguraev/pythia-160m-ppt-nca-seed324 at ...",
+      "url": "https://huggingface.co/sashaboguraev/pythia-160m-ppt-nca-seed324/tree/20eca08c630d45326c71e193274f7aa0de2ba98b"
+    },
+    "https://huggingface.co/sashaboguraev/pythia-160m-ppt-nca-seed324/tree/main/stage1/checkpoint-4000": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 4 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Safetensors · English · pre-pretraining · language-model · pythia-160m · nca · openwebtext.",
+      "title": "sashaboguraev/pythia-160m-ppt-nca-seed324 at main",
+      "url": "https://huggingface.co/sashaboguraev/pythia-160m-ppt-nca-seed324/tree/main/stage1/checkpoint-4000"
+    },
     "https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-iii/lisan-al-gaib/lynceus-ai-gate-inspector-for-rdf-trucks": {
       "delivered_at": "2026-10-18T11:44:37+00:00",
       "first_seen_at": "2026-10-18T11:44:31+00:00",
@@ -269,6 +377,15 @@
       "snippet": "... Pythia, an assistant that answers only from plant documents with ... Alerts come from an autoencoder, not a language model. Wrench. Token Factory ...",
       "title": "Lynceus - AI Gate Inspector for RDF Trucks",
       "url": "https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-iii/lisan-al-gaib/lynceus-ai-gate-inspector-for-rdf-trucks"
+    },
+    "https://manpla.net/en/papers": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "The confirmatory readings were fixed before their measurements. Version 1.0 (Pythia-410M and a fine-tuned ViT-B/16) is the one behind the 44-of-5,000 contrast.",
+      "title": "Research and publications - ManPla.net",
+      "url": "https://manpla.net/en/papers"
     },
     "https://natolambert.com/slides/2026/harvard/lecture.html": {
       "delivered_at": "2026-10-22T12:29:48+00:00",
@@ -296,6 +413,42 @@
       "snippet": "Pythia: An LLM-Powered Study Design Advisor for ATLAS v3.0. Authors: Peter Hoffmann, Ben Illigens. Brief Report. © 2026 OHDSI — Observational Health Data ...",
       "title": "An LLM-Powered Study Design Advisor for ATLAS v3.0",
       "url": "https://ohdsi.org/2026showcase-145"
+    },
+    "https://pirateface.co/mradermacher/pythia-160m-deduped-GGUF": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 7 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "About. static quants of https://huggingface.co/EleutherAI/pythia-160m-deduped. weighted/imatrix quants are available at ...",
+      "title": "mradermacher/pythia-160m-deduped-GGUF - Pirate Face",
+      "url": "https://pirateface.co/mradermacher/pythia-160m-deduped-GGUF"
+    },
+    "https://pirateface.co/mradermacher/pythia-1b-i1-GGUF": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 5 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Model metadata, checksum records and available torrent evidence for mradermacher/pythia-1b-i1-GGUF. A listing is not a guarantee of availability.",
+      "title": "mradermacher/pythia-1b-i1-GGUF - Pirate Face",
+      "url": "https://pirateface.co/mradermacher/pythia-1b-i1-GGUF"
+    },
+    "https://pirateface.co/mradermacher/pythia-410m-GGUF": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 5 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "About. static quants of https://huggingface.co/EleutherAI/pythia-410m. weighted/imatrix quants are available at ...",
+      "title": "mradermacher/pythia-410m-GGUF - Pirate Face",
+      "url": "https://pirateface.co/mradermacher/pythia-410m-GGUF"
+    },
+    "https://pirateface.co/mradermacher/pythia-410m-i1-GGUF": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 5 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Model metadata, checksum records and available torrent evidence for mradermacher/pythia-410m-i1-GGUF. A listing is not a guarantee of availability.",
+      "title": "mradermacher/pythia-410m-i1-GGUF - Pirate Face",
+      "url": "https://pirateface.co/mradermacher/pythia-410m-i1-GGUF"
     },
     "https://repocloud.io/details/Bloomberg%20Terminal/": {
       "delivered_at": "2026-10-24T11:40:20+00:00",
@@ -351,6 +504,24 @@
       "title": "pythia-160m - TextModels.tech",
       "url": "https://textmodels.tech/models/eleutherai/pythia-160m"
     },
+    "https://thehambergerreport.com/friday-special/blog/the-word-with-no-meaning": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 4 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Pythia, from EleutherAI, and OLMo, from the Allen Institute for AI, passed. So did DeepSeek R1. Llama 4, GPT-4, Gemini and Claude did not. The three that ...",
+      "title": "The Word With No Meaning | Andreas Hamberger",
+      "url": "https://thehambergerreport.com/friday-special/blog/the-word-with-no-meaning"
+    },
+    "https://theinference.io/p/google-gets-the-thank-you": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "When a language model generates search queries, its learned associations may ... Research resources such as Pythia provide models saved at different stages of ...",
+      "title": "Google Gets the Thank-You - by Pedro Dias - The Inference",
+      "url": "https://theinference.io/p/google-gets-the-thank-you"
+    },
     "https://ubuntu9media.co.za/2026/10/19/open-source-vs-open-weight-vs-proprietary-ai/": {
       "delivered_at": "2026-10-20T12:15:43+00:00",
       "first_seen_at": "2026-10-20T12:15:31+00:00",
@@ -368,6 +539,24 @@
       "snippet": "GPT-2 Small (124M) is an open-weights language model from OpenAI, released February 2019. ... Pythia 70M EleutherAI, -13±2, local, ~1.6GB, 2023-02. 882, OpenAI ...",
       "title": "GPT-2 Small (124M): score -13 · whatmodel.sh",
       "url": "https://whatmodel.sh/model/gpt-2-small"
+    },
+    "https://wikillm.com/concepts/dataset-curation": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Pythia trains twice on the Pile, once as released and once deduplicated ... Whether filtering helps a language model at all. GottBERT reports no clear ...",
+      "title": "Dataset curation",
+      "url": "https://wikillm.com/concepts/dataset-curation"
+    },
+    "https://www.antena3.ro/amp/o-formula-matematica-simpla-anticipeaza-momentul-in-care-ai-incepe-sa-devina-periculoasa-808093.html": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "În plus, formula a fost testată pe modele mai vechi și mai simple, precum GPT-2, Pythia, dezvoltat de EleutherAI, și OPT, creat de Meta, nu pe asistenții AI ...",
+      "title": "O formulă matematică simplă anticipează momentul în care ...",
+      "url": "https://www.antena3.ro/amp/o-formula-matematica-simpla-anticipeaza-momentul-in-care-ai-incepe-sa-devina-periculoasa-808093.html"
     },
     "https://www.antena3.ro/high-tech/o-formula-matematica-simpla-anticipeaza-momentul-in-care-ai-incepe-sa-devina-periculoasa-808093.html": {
       "delivered_at": "2026-10-24T11:40:20+00:00",
@@ -396,6 +585,15 @@
       "title": "T4 VRAM: 16 GB GDDR6, What Fits",
       "url": "https://www.aquanode.io/vram-calculator/t4"
     },
+    "https://www.arxivdaily.com/papers/2505.18441": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "英文摘要：. Dictionary learning has recently emerged as a promising approach for mechanistic interpretability of large transformer models. ... Pythia-160M ...",
+      "title": "DB-KSVD：可扩展的交替优化用于解构高维嵌入空间",
+      "url": "https://www.arxivdaily.com/papers/2505.18441"
+    },
     "https://www.awesomepython.org/arxiv/?q=haystack": {
       "delivered_at": "2026-10-18T11:44:37+00:00",
       "first_seen_at": "2026-10-18T11:44:31+00:00",
@@ -413,6 +611,51 @@
       "snippet": "Strongest repository signal: eleutherai/pythia. ML - Interpretability · eleutherai/pythia · interpretability interpretable-ml. 1Repos. 2,715Stars. 37Score. 3 yr ...",
       "title": "Search arXiv papers linked from awesome Python repositories",
       "url": "https://www.awesomepython.org/arxiv/?q=similarity"
+    },
+    "https://www.br.freelancer.com/freelancers/angola/database-development": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... Language Model; GPT-4; Website Development; GPT Agent; GPT Vision API ... Pythia EleutherAI; Gemini; Stability AI (StableLM); Mistral; Llama (Meta AI) ...",
+      "title": "Database Development Experts for hire in Angola",
+      "url": "https://www.br.freelancer.com/freelancers/angola/database-development"
+    },
+    "https://www.facebook.com/DeepRepo/posts/%E0%B9%82%E0%B8%A1%E0%B9%80%E0%B8%94%E0%B8%A5-pythia-410m-checkpoint-%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%9A%E0%B8%99-eleutherais-pythia-410m-%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2-training/122144668221104888/": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... Pythia 410M ถูกสร้างบน EleutherAI's Pythia 410M • Architecture GPT-NeoX-based causal LM สร้างขึ้นจากสถาปัตยกรรม GPT-NeoX และถูกฝึกบน Pile • Format scaled ...",
+      "title": "โมเดล Pythia 410M checkpoint สำหรับศึกษา training ...",
+      "url": "https://www.facebook.com/DeepRepo/posts/%E0%B9%82%E0%B8%A1%E0%B9%80%E0%B8%94%E0%B8%A5-pythia-410m-checkpoint-%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%9A%E0%B8%99-eleutherais-pythia-410m-%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2-training/122144668221104888/"
+    },
+    "https://www.facebook.com/LifeboatFoundation/posts/large-language-models-llms-like-openais-chatgpt-anthropics-claude-and-google-gem/1590305016468408/": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "... Pythia and Falcon would initially reject such inquiries, adding the ... \"The intuition of this approach is that if the language model can be put ...",
+      "title": "Hidden trigger words can make llms turn robots harmful",
+      "url": "https://www.facebook.com/LifeboatFoundation/posts/large-language-models-llms-like-openais-chatgpt-anthropics-claude-and-google-gem/1590305016468408/"
+    },
+    "https://www.facebook.com/NCSTechnologies/posts/protect-your-ip-and-reclaim-control-of-your-data-hp-ai-workstations-powered-by-n/1650039203480791/": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... Pythia-12B – Fully transparent training process ✔️ GPT-NeoX-20B – Open ... Nvidia also released Cosmos Nemotron, a 34 billion-parameter, vision- language model ...",
+      "title": "Secure AI development with HP workstations powered by ...",
+      "url": "https://www.facebook.com/NCSTechnologies/posts/protect-your-ip-and-reclaim-control-of-your-data-hp-ai-workstations-powered-by-n/1650039203480791/"
+    },
+    "https://www.facebook.com/chizzohdeejay/posts/how-to-deploy-secure-local-ai-models-chizzohbwoey-chizzoh-chizzohtechtalk-cybers/4430708870525744/": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... Pythia-12B – Fully transparent training process ✔️ GPT-NeoX-20B – Open-weight GPT-style model with full access AI Models with Privacy Concerns ...",
+      "title": "How to deploy secure local ai models #chizzohbwoey ...",
+      "url": "https://www.facebook.com/chizzohdeejay/posts/how-to-deploy-secure-local-ai-models-chizzohbwoey-chizzoh-chizzohtechtalk-cybers/4430708870525744/"
     },
     "https://www.facebook.com/groups/2675412082839539/posts/2875361079511304/": {
       "delivered_at": "2026-10-24T11:40:20+00:00",
@@ -432,6 +675,24 @@
       "title": "T15&30, GHK, GLVTA, LEMBOT, FBLAST AVAILABLE ...",
       "url": "https://www.facebook.com/groups/482308113525227/posts/1732958508460175/"
     },
+    "https://www.facebook.com/groups/670557100135901/posts/2494625481062378/": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... Pythia-12B – Fully transparent training process ✔️ GPT-NeoX-20B – Open-weight GPT-style model with full access AI Models with Privacy Concerns ...",
+      "title": "Is training AI models offline the responsible move?",
+      "url": "https://www.facebook.com/groups/670557100135901/posts/2494625481062378/"
+    },
+    "https://www.freelancer.com.pe/freelancers/grenada/scala": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 20 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... Pythia EleutherAI; Gemini; Stability AI (StableLM); Mistral; Llama (Meta AI); Command R (Cohere); Megatron Turing NVIDIA + Microsoft; Mixtral (Mistral AI) ...",
+      "title": "Scala Experts para contratar en Grenada",
+      "url": "https://www.freelancer.com.pe/freelancers/grenada/scala"
+    },
     "https://www.freelancer.com/freelancers/guam/storyboard": {
       "delivered_at": "2026-10-25T12:03:05+00:00",
       "first_seen_at": "2026-10-25T12:02:47+00:00",
@@ -440,6 +701,15 @@
       "snippet": "... Language Model; GPT-4; Website Development; GPT Agent; GPT Vision API; Kazakh ... Pythia EleutherAI; Gemini; Stability AI (StableLM); Mistral; Llama (Meta AI) ...",
       "title": "Storyboard Artists for hire in Guam",
       "url": "https://www.freelancer.com/freelancers/guam/storyboard"
+    },
+    "https://www.freelancer.com/freelancers/guam/vimeo": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 15 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... Language Model; GPT-4; Website Development; GPT Agent; GPT Vision API; Kazakh ... Pythia EleutherAI; Gemini; Stability AI (StableLM); Mistral; Llama (Meta AI) ...",
+      "title": "Vimeo Developers for hire in Guam",
+      "url": "https://www.freelancer.com/freelancers/guam/vimeo"
     },
     "https://www.freelancer.es/freelancers/gibraltar/anova?amp%3Blang=en&amp%3Btimestamp=1792290739&bypass_object_storage=true": {
       "delivered_at": "2026-10-20T12:15:43+00:00",
@@ -459,6 +729,15 @@
       "title": "Tealium Developers para contratar en Gibraltar",
       "url": "https://www.freelancer.es/freelancers/gibraltar/tealium?amp%3Blang=en&amp%3Btimestamp=1792634875&bypass_object_storage=true"
     },
+    "https://www.freelancer.hk/freelancers/suriname/biology?amp%3Blang=en&amp%3Btimestamp=1792825721&bypass_object_storage=true": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 16 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... Language Model; GPT-4; Website Development; GPT Agent; GPT Vision API; Kazakh ... Pythia EleutherAI; Gemini; Stability AI (StableLM); Mistral; Llama (Meta AI) ...",
+      "title": "Biologists for hire in Suriname",
+      "url": "https://www.freelancer.hk/freelancers/suriname/biology?amp%3Blang=en&amp%3Btimestamp=1792825721&bypass_object_storage=true"
+    },
     "https://www.geeksforgeeks.org/artificial-intelligence/top-10-open-source-llm-models/": {
       "delivered_at": "2026-10-23T12:09:52+00:00",
       "first_seen_at": "2026-10-23T12:09:42+00:00",
@@ -467,6 +746,24 @@
       "snippet": "Pythia: EleutherAI's model suite designed to support research into language model training and scaling. StableLM: Stability AI's language model family for ...",
       "title": "Open-Source LLMs",
       "url": "https://www.geeksforgeeks.org/artificial-intelligence/top-10-open-source-llm-models/"
+    },
+    "https://www.instagram.com/reel/De6ebItgZNv/": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Real training snapshots of an open language model (EleutherAI's Pythia-160M): random symbols, then blank lines, then grammar, then a story. Full explainer ...",
+      "title": "Hinton: AI isn't code you can just read \"No, ...",
+      "url": "https://www.instagram.com/reel/De6ebItgZNv/"
+    },
+    "https://www.linkedin.com/posts/emanuelelaurenzi_makeathon2026-agenticai-llms-activity-7520374927837995008-kGiE": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "... Pythia: seven agents, one per consulting role. It matched FHNW's own recommendation for a real company. Apertus – the Swiss open-weight LLM BAI team ...",
+      "title": "Emanuele Laurenzi's Post",
+      "url": "https://www.linkedin.com/posts/emanuelelaurenzi_makeathon2026-agenticai-llms-activity-7520374927837995008-kGiE"
     },
     "https://www.linkedin.com/posts/mizanur-rahman-rafi_machinelearning-llm-aisafety-activity-7517100501360906241-2RD0": {
       "delivered_at": "2026-10-18T11:44:37+00:00",
@@ -494,6 +791,24 @@
       "snippet": "Pythia, from EleutherAI, and OLMo, from the Allen Institute for AI, passed. So did DeepSeek R1. Llama 4, GPT-4, Gemini and Claude did not. The three that ...",
       "title": "The Word With No Meaning",
       "url": "https://www.linkedin.com/pulse/word-meaning-andreas-hamberger-su2we"
+    },
+    "https://www.marktechpost.com/2026/10/26/tsinghua-akv-kv-cache-engineering-llm-agents/?amp=1": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 6 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Llama-2, MPT, Falcon, Pythia, Llama, Mistral, Mixtral. Fine-tuning needed ... Language Model that Brings DNA. Hugging Face Releases Carbon-X, a 14B Open ...",
+      "title": "Tsinghua AI Open-Sources AKV, a Cache Engineering ...",
+      "url": "https://www.marktechpost.com/2026/10/26/tsinghua-akv-kv-cache-engineering-llm-agents/?amp=1"
+    },
+    "https://www.mdpi.com/2076-2607/14/11/2452/pdf": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "vor 22 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Virtual saturation mutagenesis was then combined with Pythia-based model scor- ing [28], protein language model (PLM)-derived fitness, and conformational ...",
+      "title": "Solvent-Response-Guided Engineering Improves ...",
+      "url": "https://www.mdpi.com/2076-2607/14/11/2452/pdf"
     },
     "https://www.mdpi.com/2076-3417/16/20/10335/pdf": {
       "delivered_at": "2026-10-19T14:02:03+00:00",
@@ -540,6 +855,15 @@
       "title": "Исследователи нашли способ обнаруживать опасные ...",
       "url": "https://www.techinsider.ru/news/news-1747645-issledovateli-nashli-sposob-obnarujivat-opasnye-izmeneniya-v-povedenii-ii/"
     },
+    "https://www.threads.com/@sipirtu/post/De1ArVPDrgB/i-quest-q-is-a-sparse-mixture-of-experts-foundation-model-with-billion/": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Mechanistic interpretability usually studies fully trained models, yet computations can change while a model is still learning. Pythia ... Language Model Training ...",
+      "title": "IQuest-Q1 is a sparse Mixture-of-Experts foundation model ...",
+      "url": "https://www.threads.com/@sipirtu/post/De1ArVPDrgB/i-quest-q-is-a-sparse-mixture-of-experts-foundation-model-with-billion/"
+    },
     "https://x.com/HuggingModels/status/2112578344705519871": {
       "delivered_at": "2026-10-23T12:09:52+00:00",
       "first_seen_at": "2026-10-23T12:09:42+00:00",
@@ -548,6 +872,15 @@
       "snippet": "Built on GPT-NeoX architecture with 160M parameters. Finetuned from EleutherAI's Pythia-160m, known for its interpretability research. The safetensors ...",
       "title": "\"Meet this 160M parameter GPT-NeoX text generator! It's a ...",
       "url": "https://x.com/HuggingModels/status/2112578344705519871"
+    },
+    "https://x.com/HuggingModels/status/2114337937525764171": {
+      "delivered_at": "2026-10-26T13:38:11+00:00",
+      "first_seen_at": "2026-10-26T13:36:31+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Built on EleutherAI's Pythia 410M, this checkpoint uses the GPT-NeoX architecture and was trained on the Pile. The 'scaled-normal' and 'seed11' tags suggest ...",
+      "title": "Hugging Models",
+      "url": "https://x.com/HuggingModels/status/2114337937525764171"
     },
     "https://x.com/_aidan_clark_/status/2110829883261960249": {
       "delivered_at": "2026-10-18T11:44:37+00:00",
@@ -574,304 +907,7 @@
     "Überlappung/Nachholen: 4 Tage: PYTHIA_MAX_PAGES erreicht, weitere Treffer vorhanden; Zeitmarke bleibt erhalten"
   ],
   "last_success_at": "2026-10-25T12:02:47+00:00",
-  "pending": {
-    "https://aclanthology.org/volumes/2026.blackboxnlp-1/": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 16 Stunden",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "Once markers are removed, however, the Pythia tests cannot show whether the effect carries over. ... Language Model · Éric Jacopin. Autoregressive (AR) sequence ...",
-      "title": "Analyzing and Interpreting Neural Networks for NLP",
-      "url": "https://aclanthology.org/volumes/2026.blackboxnlp-1/"
-    },
-    "https://aclanthology.org/volumes/2026.emnlp-main/": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 2 Tagen",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "... Language Model Decoding through Joint Search in Generation Order and Token ... Pythia, Bloom, SMDM, and TinyLLaMA. pdf bib abs. Accelerating Neural ...",
-      "title": "Proceedings of the 2026 Conference on Empirical Methods ...",
-      "url": "https://aclanthology.org/volumes/2026.emnlp-main/"
-    },
-    "https://aipeoplewiki.com/local/": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 3 Tagen",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "Executive Director · EleutherAI. Executive Director of EleutherAI; first author of the Pythia open model suite. T · Teknium. Co-founder · Nous Research. Co ...",
-      "title": "People behind local AI: 64 profiles",
-      "url": "https://aipeoplewiki.com/local/"
-    },
-    "https://arxiv.org/abs/2610.30882v1": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 3 Tagen",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "Pythia: a suite for analyzing large language models ... MiMo: unlocking the reasoning potential of language model – from pretraining to posttraining.",
-      "title": "Tracing the Provenance of Wait in Reasoning Models",
-      "url": "https://arxiv.org/abs/2610.30882v1"
-    },
-    "https://arxiv.org/abs/2610.30884v1": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 3 Tagen",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "All three models use the modern GPT-NeoX tree and hardware different from that used for the released Pythia models. Their comparisons with released models ...",
-      "title": "Tracing Subliminal Learning Through Pretraining",
-      "url": "https://arxiv.org/abs/2610.30884v1"
-    },
-    "https://arxiv.org/abs/2610.31135v1": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 3 Tagen",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "Revision. Transformer 2.8B, EleutherAI/pythia-2.8b, 2a259cdd96a4. State-space v1 2.8B, state-spaces/mamba-2.8b-hf, 96c48e0292b6. State-space v2 2.7B, AntonV/ ...",
-      "title": "Evidence Position Bias Across Sequence Mixers in Long ...",
-      "url": "https://arxiv.org/abs/2610.31135v1"
-    },
-    "https://doomslide.substack.com/p/against-mathematics": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "Or, if you prefer, Pythia plus agora: Oracle in the Marketplace. He came to ... A language model vomits results without digesting them, a proof checker ...",
-      "title": "Against Mathematics",
-      "url": "https://doomslide.substack.com/p/against-mathematics"
-    },
-    "https://github.com/AI-in-Transportation-Lab/awesome-jepa": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 2 Tagen",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "ProteinJEPA: Latent prediction improves protein language model pretraining ... Pythia: Toward Foundation World Models for Multimodal Time Series · CI-JEPA: A ...",
-      "title": "AI-in-Transportation-Lab/awesome-jepa: A carefully ...",
-      "url": "https://github.com/AI-in-Transportation-Lab/awesome-jepa"
-    },
-    "https://github.com/elizaOS/llama.cpp": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 2 Tagen",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "GPT-NeoX + Pythia · Snowflake-Arctic MoE · Smaug · Poro 34B · Bitnet b1.58 models ... Introducing LLaMA: A foundational, 65-billion-parameter large language model ...",
-      "title": "Milady-controlled llama.cpp fork",
-      "url": "https://github.com/elizaOS/llama.cpp"
-    },
-    "https://huggingface.co/papers?q=dialogue+streams": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 4 Tagen",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "... language model (LLM) agent memory systems fail to preserve it. Existing ... We show that StreamingLLM can enable Llama-2, MPT, Falcon, and Pythia to ...",
-      "title": "Daily Papers",
-      "url": "https://huggingface.co/papers?q=dialogue+streams"
-    },
-    "https://huggingface.co/sashaboguraev/pythia-160m-ppt-nca-seed324/tree/20eca08c630d45326c71e193274f7aa0de2ba98b": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 4 Tagen",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "pythia-160m-ppt-nca-seed324. Like 0. Safetensors · English · pre-pretraining · language-model · pythia-160m · nca · openwebtext.",
-      "title": "sashaboguraev/pythia-160m-ppt-nca-seed324 at ...",
-      "url": "https://huggingface.co/sashaboguraev/pythia-160m-ppt-nca-seed324/tree/20eca08c630d45326c71e193274f7aa0de2ba98b"
-    },
-    "https://huggingface.co/sashaboguraev/pythia-160m-ppt-nca-seed324/tree/main/stage1/checkpoint-4000": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 4 Tagen",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "Safetensors · English · pre-pretraining · language-model · pythia-160m · nca · openwebtext.",
-      "title": "sashaboguraev/pythia-160m-ppt-nca-seed324 at main",
-      "url": "https://huggingface.co/sashaboguraev/pythia-160m-ppt-nca-seed324/tree/main/stage1/checkpoint-4000"
-    },
-    "https://manpla.net/en/papers": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 3 Tagen",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "The confirmatory readings were fixed before their measurements. Version 1.0 (Pythia-410M and a fine-tuned ViT-B/16) is the one behind the 44-of-5,000 contrast.",
-      "title": "Research and publications - ManPla.net",
-      "url": "https://manpla.net/en/papers"
-    },
-    "https://pirateface.co/mradermacher/pythia-160m-deduped-GGUF": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 7 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "About. static quants of https://huggingface.co/EleutherAI/pythia-160m-deduped. weighted/imatrix quants are available at ...",
-      "title": "mradermacher/pythia-160m-deduped-GGUF - Pirate Face",
-      "url": "https://pirateface.co/mradermacher/pythia-160m-deduped-GGUF"
-    },
-    "https://pirateface.co/mradermacher/pythia-1b-i1-GGUF": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 5 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "Model metadata, checksum records and available torrent evidence for mradermacher/pythia-1b-i1-GGUF. A listing is not a guarantee of availability.",
-      "title": "mradermacher/pythia-1b-i1-GGUF - Pirate Face",
-      "url": "https://pirateface.co/mradermacher/pythia-1b-i1-GGUF"
-    },
-    "https://pirateface.co/mradermacher/pythia-410m-GGUF": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 5 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "About. static quants of https://huggingface.co/EleutherAI/pythia-410m. weighted/imatrix quants are available at ...",
-      "title": "mradermacher/pythia-410m-GGUF - Pirate Face",
-      "url": "https://pirateface.co/mradermacher/pythia-410m-GGUF"
-    },
-    "https://pirateface.co/mradermacher/pythia-410m-i1-GGUF": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 5 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "Model metadata, checksum records and available torrent evidence for mradermacher/pythia-410m-i1-GGUF. A listing is not a guarantee of availability.",
-      "title": "mradermacher/pythia-410m-i1-GGUF - Pirate Face",
-      "url": "https://pirateface.co/mradermacher/pythia-410m-i1-GGUF"
-    },
-    "https://thehambergerreport.com/friday-special/blog/the-word-with-no-meaning": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 4 Tagen",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "Pythia, from EleutherAI, and OLMo, from the Allen Institute for AI, passed. So did DeepSeek R1. Llama 4, GPT-4, Gemini and Claude did not. The three that ...",
-      "title": "The Word With No Meaning | Andreas Hamberger",
-      "url": "https://thehambergerreport.com/friday-special/blog/the-word-with-no-meaning"
-    },
-    "https://theinference.io/p/google-gets-the-thank-you": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 3 Tagen",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "When a language model generates search queries, its learned associations may ... Research resources such as Pythia provide models saved at different stages of ...",
-      "title": "Google Gets the Thank-You - by Pedro Dias - The Inference",
-      "url": "https://theinference.io/p/google-gets-the-thank-you"
-    },
-    "https://wikillm.com/concepts/dataset-curation": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 2 Tagen",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "Pythia trains twice on the Pile, once as released and once deduplicated ... Whether filtering helps a language model at all. GottBERT reports no clear ...",
-      "title": "Dataset curation",
-      "url": "https://wikillm.com/concepts/dataset-curation"
-    },
-    "https://www.antena3.ro/amp/o-formula-matematica-simpla-anticipeaza-momentul-in-care-ai-incepe-sa-devina-periculoasa-808093.html": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 2 Tagen",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "În plus, formula a fost testată pe modele mai vechi și mai simple, precum GPT-2, Pythia, dezvoltat de EleutherAI, și OPT, creat de Meta, nu pe asistenții AI ...",
-      "title": "O formulă matematică simplă anticipează momentul în care ...",
-      "url": "https://www.antena3.ro/amp/o-formula-matematica-simpla-anticipeaza-momentul-in-care-ai-incepe-sa-devina-periculoasa-808093.html"
-    },
-    "https://www.arxivdaily.com/papers/2505.18441": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 2 Tagen",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "英文摘要：. Dictionary learning has recently emerged as a promising approach for mechanistic interpretability of large transformer models. ... Pythia-160M ...",
-      "title": "DB-KSVD：可扩展的交替优化用于解构高维嵌入空间",
-      "url": "https://www.arxivdaily.com/papers/2505.18441"
-    },
-    "https://www.br.freelancer.com/freelancers/angola/database-development": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 2 Tagen",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "... Language Model; GPT-4; Website Development; GPT Agent; GPT Vision API ... Pythia EleutherAI; Gemini; Stability AI (StableLM); Mistral; Llama (Meta AI) ...",
-      "title": "Database Development Experts for hire in Angola",
-      "url": "https://www.br.freelancer.com/freelancers/angola/database-development"
-    },
-    "https://www.facebook.com/DeepRepo/posts/%E0%B9%82%E0%B8%A1%E0%B9%80%E0%B8%94%E0%B8%A5-pythia-410m-checkpoint-%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%9A%E0%B8%99-eleutherais-pythia-410m-%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2-training/122144668221104888/": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "... Pythia 410M ถูกสร้างบน EleutherAI's Pythia 410M • Architecture GPT-NeoX-based causal LM สร้างขึ้นจากสถาปัตยกรรม GPT-NeoX และถูกฝึกบน Pile • Format scaled ...",
-      "title": "โมเดล Pythia 410M checkpoint สำหรับศึกษา training ...",
-      "url": "https://www.facebook.com/DeepRepo/posts/%E0%B9%82%E0%B8%A1%E0%B9%80%E0%B8%94%E0%B8%A5-pythia-410m-checkpoint-%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%9A%E0%B8%99-eleutherais-pythia-410m-%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2-training/122144668221104888/"
-    },
-    "https://www.facebook.com/LifeboatFoundation/posts/large-language-models-llms-like-openais-chatgpt-anthropics-claude-and-google-gem/1590305016468408/": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "... Pythia and Falcon would initially reject such inquiries, adding the ... \"The intuition of this approach is that if the language model can be put ...",
-      "title": "Hidden trigger words can make llms turn robots harmful",
-      "url": "https://www.facebook.com/LifeboatFoundation/posts/large-language-models-llms-like-openais-chatgpt-anthropics-claude-and-google-gem/1590305016468408/"
-    },
-    "https://www.facebook.com/NCSTechnologies/posts/protect-your-ip-and-reclaim-control-of-your-data-hp-ai-workstations-powered-by-n/1650039203480791/": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "... Pythia-12B – Fully transparent training process ✔️ GPT-NeoX-20B – Open ... Nvidia also released Cosmos Nemotron, a 34 billion-parameter, vision- language model ...",
-      "title": "Secure AI development with HP workstations powered by ...",
-      "url": "https://www.facebook.com/NCSTechnologies/posts/protect-your-ip-and-reclaim-control-of-your-data-hp-ai-workstations-powered-by-n/1650039203480791/"
-    },
-    "https://www.facebook.com/chizzohdeejay/posts/how-to-deploy-secure-local-ai-models-chizzohbwoey-chizzoh-chizzohtechtalk-cybers/4430708870525744/": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "... Pythia-12B – Fully transparent training process ✔️ GPT-NeoX-20B – Open-weight GPT-style model with full access AI Models with Privacy Concerns ...",
-      "title": "How to deploy secure local ai models #chizzohbwoey ...",
-      "url": "https://www.facebook.com/chizzohdeejay/posts/how-to-deploy-secure-local-ai-models-chizzohbwoey-chizzoh-chizzohtechtalk-cybers/4430708870525744/"
-    },
-    "https://www.facebook.com/groups/670557100135901/posts/2494625481062378/": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "... Pythia-12B – Fully transparent training process ✔️ GPT-NeoX-20B – Open-weight GPT-style model with full access AI Models with Privacy Concerns ...",
-      "title": "Is training AI models offline the responsible move?",
-      "url": "https://www.facebook.com/groups/670557100135901/posts/2494625481062378/"
-    },
-    "https://www.freelancer.com.pe/freelancers/grenada/scala": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 20 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "... Pythia EleutherAI; Gemini; Stability AI (StableLM); Mistral; Llama (Meta AI); Command R (Cohere); Megatron Turing NVIDIA + Microsoft; Mixtral (Mistral AI) ...",
-      "title": "Scala Experts para contratar en Grenada",
-      "url": "https://www.freelancer.com.pe/freelancers/grenada/scala"
-    },
-    "https://www.freelancer.com/freelancers/guam/vimeo": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 15 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "... Language Model; GPT-4; Website Development; GPT Agent; GPT Vision API; Kazakh ... Pythia EleutherAI; Gemini; Stability AI (StableLM); Mistral; Llama (Meta AI) ...",
-      "title": "Vimeo Developers for hire in Guam",
-      "url": "https://www.freelancer.com/freelancers/guam/vimeo"
-    },
-    "https://www.freelancer.hk/freelancers/suriname/biology?amp%3Blang=en&amp%3Btimestamp=1792825721&bypass_object_storage=true": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 16 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "... Language Model; GPT-4; Website Development; GPT Agent; GPT Vision API; Kazakh ... Pythia EleutherAI; Gemini; Stability AI (StableLM); Mistral; Llama (Meta AI) ...",
-      "title": "Biologists for hire in Suriname",
-      "url": "https://www.freelancer.hk/freelancers/suriname/biology?amp%3Blang=en&amp%3Btimestamp=1792825721&bypass_object_storage=true"
-    },
-    "https://www.instagram.com/reel/De6ebItgZNv/": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "Real training snapshots of an open language model (EleutherAI's Pythia-160M): random symbols, then blank lines, then grammar, then a story. Full explainer ...",
-      "title": "Hinton: AI isn't code you can just read \"No, ...",
-      "url": "https://www.instagram.com/reel/De6ebItgZNv/"
-    },
-    "https://www.linkedin.com/posts/emanuelelaurenzi_makeathon2026-agenticai-llms-activity-7520374927837995008-kGiE": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "... Pythia: seven agents, one per consulting role. It matched FHNW's own recommendation for a real company. Apertus – the Swiss open-weight LLM BAI team ...",
-      "title": "Emanuele Laurenzi's Post",
-      "url": "https://www.linkedin.com/posts/emanuelelaurenzi_makeathon2026-agenticai-llms-activity-7520374927837995008-kGiE"
-    },
-    "https://www.marktechpost.com/2026/10/26/tsinghua-akv-kv-cache-engineering-llm-agents/?amp=1": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 6 Stunden",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "Llama-2, MPT, Falcon, Pythia, Llama, Mistral, Mixtral. Fine-tuning needed ... Language Model that Brings DNA. Hugging Face Releases Carbon-X, a 14B Open ...",
-      "title": "Tsinghua AI Open-Sources AKV, a Cache Engineering ...",
-      "url": "https://www.marktechpost.com/2026/10/26/tsinghua-akv-kv-cache-engineering-llm-agents/?amp=1"
-    },
-    "https://www.mdpi.com/2076-2607/14/11/2452/pdf": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "vor 22 Stunden",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "Virtual saturation mutagenesis was then combined with Pythia-based model scor- ing [28], protein language model (PLM)-derived fitness, and conformational ...",
-      "title": "Solvent-Response-Guided Engineering Improves ...",
-      "url": "https://www.mdpi.com/2076-2607/14/11/2452/pdf"
-    },
-    "https://www.threads.com/@sipirtu/post/De1ArVPDrgB/i-quest-q-is-a-sparse-mixture-of-experts-foundation-model-with-billion/": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "Mechanistic interpretability usually studies fully trained models, yet computations can change while a model is still learning. Pythia ... Language Model Training ...",
-      "title": "IQuest-Q1 is a sparse Mixture-of-Experts foundation model ...",
-      "url": "https://www.threads.com/@sipirtu/post/De1ArVPDrgB/i-quest-q-is-a-sparse-mixture-of-experts-foundation-model-with-billion/"
-    },
-    "https://x.com/HuggingModels/status/2114337937525764171": {
-      "first_seen_at": "2026-10-26T13:36:31+00:00",
-      "google_date": "",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "Built on EleutherAI's Pythia 410M, this checkpoint uses the GPT-NeoX architecture and was trained on the Pile. The 'scaled-normal' and 'seed11' tags suggest ...",
-      "title": "Hugging Models",
-      "url": "https://x.com/HuggingModels/status/2114337937525764171"
-    }
-  },
+  "pending": {},
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
