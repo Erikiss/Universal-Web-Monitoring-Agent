@@ -1,15 +1,15 @@
 # Music-JEPA — Prüfbericht
-2026-10-26T14:30:47+00:00
+2026-10-27T13:30:52+00:00
 
-Tagesalarm: 0 Meldungen.
+Tagesalarm: 1 Meldungen.
 Neue Drittanbieter-Signale dieses Laufs: 0 (kein Tagesalarm).
 Wochensammlung dieses Laufs: 0 Quellen.
 Für spätere Wochensammlung vorgemerkt: 0 Quellen.
 Nächste Wochensammlung frühestens: 2026-10-07T14:09:54+00:00 (nächster Lauf; nur mit neuen Hinweisen).
-Abruffehler in diesem Lauf: 2.
+Abruffehler in diesem Lauf: 3.
 
 # Music-JEPA — täglicher Alarm
-2026-10-26T14:30:47+00:00
+2026-10-27T13:30:52+00:00
 
 Klare Quellenänderung bedeutet NICHT automatisch: Code und Gewichte veröffentlicht.
 
@@ -25,7 +25,13 @@ Neue Meldungen: 0.
 Neue Meldungen: 0.
 
 ## C. TECHNISCHE STÖRUNGEN — keine Forschungstreffer
-Neue Meldungen: 0.
+Neue Meldungen: 1.
+
+### Technischer Fehler: GitHub Suche "Learning a World Model of Sound from Action" in:readme fork:false
+https://arxiv.org/abs/2607.22000
+Herkunft: Technischer Abruffehler; kein neuer Release-Hinweis.
+- FetchError: Incomplete search: https://api.github.com/search/repositories
+Kein Release-Nachweis; diese Quelle konnte nicht geprueft werden.
 
 Drittanbieter-Suchtreffer lösen diese Tagesmail nicht aus. Sie werden separat,
 frühestens alle sieben Tage und nur bei neuen Hinweisen als Wochensammlung verschickt.
@@ -39,7 +45,6 @@ OK: GitHub Autor kunfang98927
 OK: GitHub Suche "2607.22000" in:readme fork:false
 OK: GitHub Suche "Music-JEPA" in:name,description,readme fork:false
 OK: GitHub Suche "music_jepa" in:name,description,readme fork:false
-OK: GitHub Suche "Learning a World Model of Sound from Action" in:readme fork:false
 OK: GitHub Repository AI-in-Transportation-Lab/awesome-jepa
 OK: GitHub Repository ai-integr8tor/https-github.com-leofan90_Awesome-World-Models
 OK: GitHub Repository BaiShuanghao/my_arXiv_daily
@@ -89,5 +94,6 @@ OK: Hugging Face Suche musicjepa
 OK: Hugging Face Suche arxiv:2607.22000
 OK: Hugging Face Modell ZzWaang/music-jepa
 OK: Hugging Face discovery
+FEHLER: GitHub Suche "Learning a World Model of Sound from Action" in:readme fork:false: FetchError: Incomplete search: https://api.github.com/search/repositories
 FEHLER: GitHub Metadaten NeilKhandelwal/drum-jepa: FetchError: HTTP 404: https://api.github.com/repos/NeilKhandelwal/drum-jepa
 FEHLER: GitHub Metadaten smikoo1000-svg/Fnf: FetchError: HTTP 404: https://api.github.com/repos/smikoo1000-svg/Fnf
