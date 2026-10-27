@@ -1,0 +1,90 @@
+{
+  "checked_at": "2026-10-27T12:42:09+00:00",
+  "errors": [],
+  "last_success_at": "2026-10-27T12:42:09+00:00",
+  "new_count": 0,
+  "pending_count": 0,
+  "pending_results": [],
+  "queries": [
+    {
+      "label": "24 Stunden",
+      "q": "pythia",
+      "tbs": "qdr:d"
+    },
+    {
+      "label": "Überlappung/Nachholen: 5 Tage",
+      "q": "pythia",
+      "tbs": "qdr:d5"
+    },
+    {
+      "label": "Ergänzende Modellsuche: 5 Tage",
+      "q": "pythia (EleutherAI OR \"GPT-NeoX\" OR \"language model\" OR Sprachmodell OR \"mechanistic interpretability\")",
+      "tbs": "qdr:d5"
+    }
+  ],
+  "results": [
+    {
+      "classification": "excluded",
+      "google_date": "vor 4 Tagen",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 5 Tage",
+      "snippet": "The priestess of Apollo at Delphi, who gave his oracles seated on a tripod in the temple.",
+      "title": "The Pythia at Delphi — Meaning & History",
+      "url": "https://symbol.realawake.co.uk/wisdom/the-pythia"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 4 Tagen",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Überlappung/Nachholen: 5 Tage",
+      "snippet": "pythias usually means: Priestesses who delivered Delphic oracles. All meanings: (Ancient Greece) A priestess of Pythian Apollo, the Oracle of Delphi ...",
+      "title": "pythias (priestesses who delivered Delphic oracles)",
+      "url": "https://onelook.com/thesaurus?s=pythias"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Überlappung/Nachholen: 5 Tage",
+      "snippet": "Für diese Seite sind keine Informationen verfügbar.",
+      "title": "https://en.wikipedia.org/w/index.php?oldid=1375240196",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1375240196"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 5 Tage",
+      "snippet": "Details ; Model ID: EleutherAI/gpt-neox-20b ; Developer: EleutherAI ; Category: Generation ; Access: Open weights ; License: Not published.",
+      "title": "gpt-neox-20b - TextModels.tech",
+      "url": "https://textmodels.tech/models/eleutherai/gpt-neox-20b"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 4 Tagen",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 5 Tage",
+      "snippet": "GPT-NeoX-20B is a 20 billion parameter autoregressive language model trained on the Pile using the GPT-NeoX library. Its architecture intentionally resembles ...",
+      "title": "Projects | Open Source Science",
+      "url": "https://science.ecosyste.ms/projects?keyword=gpt_neox&order=desc&per_page=100&sort=science_score"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 4 Tagen",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 5 Tage",
+      "snippet": "Projects ; japanese-gpt-neox-small · Rank 13.1 • Science 33% · transformers ; Latxa: An Open Language Model and Evaluation Suite for Basque · Rank 5.4 • Science 21%.",
+      "title": "Projects | Open Source Science",
+      "url": "https://science.ecosyste.ms/projects?keyword=gpt-neox&order=desc&per_page=100&sort=science_score"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 5 Tage",
+      "snippet": "Für diese Seite sind keine Informationen verfügbar.",
+      "title": "https://scholar.google.com/citations?view_op=view_...",
+      "url": "https://scholar.google.com/citations?citation_for_view=lc6CVqEAAAAJ%3Au_35RYKgDlwC&hl=en&user=lc6CVqEAAAAJ&view_op=view_citation"
+    }
+  ]
+}
