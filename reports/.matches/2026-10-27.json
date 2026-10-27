@@ -1,0 +1,110 @@
+[
+  {
+    "author": "dynomight",
+    "baseScore": 15,
+    "id": "HuQAuWjc2Z5tqCjyw",
+    "postedAt": "2026-10-27T12:51:16.303Z",
+    "section": "Frontpage",
+    "title": "Scattered thoughts on how doing math feels these days",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/HuQAuWjc2Z5tqCjyw/scattered-thoughts-on-how-doing-math-feels-these-days",
+    "visualEvidence": [
+      "table     When Feeling 2024 LLMs are toys Summer 2025 LLMs are interesting toys Early Autumn 2025 LLMs can do useful stuff sometimes Mid Autumn 2025 \u2026a lot of stuff Late Autumn 202"
+    ],
+    "visualizationScore": 4,
+    "wordCount": 2488
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 18,
+    "id": "ZSrX8gucWsKahsitk",
+    "postedAt": "2026-10-27T12:50:52.722Z",
+    "section": "Personal/All",
+    "title": "Anthropic Versus Anthropic",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/ZSrX8gucWsKahsitk/anthropic-versus-anthropic",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ZSrX8gucWsKahsitk/fait177jfyuvfz9wibiu   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 28,
+    "wordCount": 7948
+  },
+  {
+    "author": "Alex Jackson",
+    "baseScore": 41,
+    "id": "cTiEPgkvDRxTFwtyu",
+    "postedAt": "2026-10-27T00:10:25.034Z",
+    "section": "Personal/All",
+    "title": "Measuring agent capabilities on open-ended AI R&D tasks",
+    "topicScore": 12,
+    "url": "https://www.lesswrong.com/posts/cTiEPgkvDRxTFwtyu/measuring-agent-capabilities-on-open-ended-ai-r-and-d-tasks-1",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/99041aec72f85d4ba748c3b9b91ebaa9601595485aaed63798c9c7839d2ed740/tegbuoeapdtxffe8cyxo  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/64b7bfa6134bfefc2a285820fd1b208f25d65507629cab9df379bee1ab60f21b/oeogfrilz7dbxjscqieq  ",
+      "table     EtV Formalising X Training Effects Scaffold Claude Code / Codex [7] via inspect_swe (file submission and submit tool to mark finished) Inspect react()\u00a0with bash, python (",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/4811f073b2b79095767f234dfce99fe9eb02c5cda3072013304dd69e84733477/wh3dmmqi4nnbwhgwgzzj  ",
+      "table     Trend Frontier models Linear Exponential Sigmoid Overall, all four tasks 12 0.066 0.042 0.049 Overall, without Formalising X 14 0.059 0.024 0.035 EtV 13 0.080 0.023 0.039"
+    ],
+    "visualizationScore": 48,
+    "wordCount": 2638
+  },
+  {
+    "author": "Josh Snider",
+    "baseScore": 8,
+    "id": "sAhFp6gYoyw3xeCaF",
+    "postedAt": "2026-10-26T17:03:43.277Z",
+    "section": "Frontpage",
+    "title": "Brute-Force Progress on AlgZoo's 432-param Interpretability Challenge",
+    "topicScore": 7,
+    "url": "https://www.lesswrong.com/posts/sAhFp6gYoyw3xeCaF/brute-force-progress-on-algzoo-s-432-param-interpretability",
+    "visualEvidence": [
+      "table     set networks use training 1,024, later 4,096 Fitting estimator test 512 scored throughout, but watched while choosing what to try blind test 1 1,024 scored once, then add",
+      "table     estimator running its probes (FE) everything else (FE) total (FE) 16 probes, trained on 1,024 networks 13.7 9.7 23.4 64 probes, trained on 1,024 44.9 10.2 55.1 64 probes,",
+      "table     budget (FE) estimator trained on our RMS error (points) sampling's RMS error at the same budget shrunk sampling's [2] FE sampling needs to match ours 23 16 learned probes"
+    ],
+    "visualizationScore": 12,
+    "wordCount": 2222
+  },
+  {
+    "author": "chrisleet",
+    "baseScore": 27,
+    "id": "ndS9Xn8Qx5PppHJ3Q",
+    "postedAt": "2026-10-26T16:26:02.426Z",
+    "section": "Frontpage",
+    "title": "The Ability of Frontier Models to Control Robots is Rapidly Improving",
+    "topicScore": 8,
+    "url": "https://www.lesswrong.com/posts/ndS9Xn8Qx5PppHJ3Q/the-ability-of-frontier-models-to-control-robots-is-rapidly",
+    "visualEvidence": [
+      "figure     Figure 1. That hammer won't save you. (All images are my own.) We demonstrate that general purpose multimodal language models (LMs) are increasingly capable of directly ",
+      "img A hammer labelled e-stop reseting against a robotic arm.   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792890691/lexical_client_uploads/eb4sf2zxagzj61vc8o59.png   F",
+      "figure     Figure 2. A robotic cell: two robotic arms, a wrist camera on each arm, and an overhead camera. Of these three capabilities, locomotion is the least important for biolog",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792890504/lexical_client_uploads/o3v58qd6lf5fjtmyihvo.png   Figure 2. A robotic cell: two robotic arms, a wrist camer",
+      "figure     Figure 3. Our six benchmark tasks during execution. Photos of each task are shown in Figure 3. Each (model, configuration, task) triple was evaluated over 20 trials. Sta"
+    ],
+    "visualizationScore": 48,
+    "wordCount": 2685
+  },
+  {
+    "author": "Emery Cooper",
+    "baseScore": -4,
+    "id": "eimAN67tiNsrrtnbK",
+    "postedAt": "2026-10-26T16:17:18.890Z",
+    "section": "Frontpage",
+    "title": "A basic case for differentially accelerating conceptual reasoning capabilities",
+    "topicScore": 6,
+    "url": "https://www.lesswrong.com/posts/eimAN67tiNsrrtnbK/a-basic-case-for-differentially-accelerating-conceptual",
+    "visualEvidence": [
+      "figure     Note: Forecasting ASI seems conceptual, but e.g., pre-AGI political forecasting seems like it has relatively good feedback (given that one can learn a lot from and pract",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/1a6a08dcea7966adef3a27efc58014eae66f0921aa6779a040ba6845fefd3d87/z0ezechdudytsouwqjep  ",
+      "figure     This diagram is from Joe Carlsmith's Can we safely automate alignment research? , and illustrates a view we broadly agree with of how conceptual capabilities research is",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/8aaf84f84573c8b01727988192e6b94dd41c764413390c51e9c976a3151edf6c/nmjamuk6zesu0oaw5mxg  ",
+      "figure     In this diagram, we use \"AI safety\" to refer broadly to any work to make AI go well, including technical and non-technical interventions. The graph shows the effect of d"
+    ],
+    "visualizationScore": 20,
+    "wordCount": 7471
+  }
+]
