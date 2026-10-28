@@ -1,4 +1,8 @@
 {
+  "https://anthropic.com/news/expanding-partnership-gsa": {
+    "title": "Expanding Partnership Gsa",
+    "first_seen": "2026-10-28T00:52:23+00:00"
+  },
   "https://anthropic.com/news/open-call-guest-investigators-life-sciences": {
     "title": "Open Call Guest Investigators Life Sciences",
     "first_seen": "2026-10-23T00:19:33+00:00"
@@ -62,6 +66,10 @@
   "https://anthropic.com/research/diff-tool": {
     "title": "Interpretability A “diff” tool for AI: Finding behavioral differences in new models",
     "first_seen": "2026-07-28T18:51:16+00:00"
+  },
+  "https://anthropic.com/research/early-progress-drug-development": {
+    "title": "Early Progress Drug Development",
+    "first_seen": "2026-10-28T00:52:23+00:00"
   },
   "https://anthropic.com/research/ecdsa-curve-origins": {
     "title": "Ecdsa Curve Origins",
