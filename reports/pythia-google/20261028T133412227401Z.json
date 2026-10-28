@@ -1,0 +1,63 @@
+{
+  "checked_at": "2026-10-28T13:34:12+00:00",
+  "errors": [],
+  "last_success_at": "2026-10-28T13:34:12+00:00",
+  "new_count": 0,
+  "pending_count": 0,
+  "pending_results": [],
+  "queries": [
+    {
+      "label": "24 Stunden",
+      "q": "pythia",
+      "tbs": "qdr:d"
+    },
+    {
+      "label": "Überlappung/Nachholen: 4 Tage",
+      "q": "pythia",
+      "tbs": "qdr:d4"
+    },
+    {
+      "label": "Ergänzende Modellsuche: 4 Tage",
+      "q": "pythia (EleutherAI OR \"GPT-NeoX\" OR \"language model\" OR Sprachmodell OR \"mechanistic interpretability\")",
+      "tbs": "qdr:d4"
+    }
+  ],
+  "results": [
+    {
+      "classification": "excluded",
+      "google_date": "vor 1 Tag",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Pythias is a name of Greek origin, often denoting someone who served as a priestess of the oracle at Delphi in ancient religion. The term Pythia was derived ...",
+      "title": "What does Pythias mean?",
+      "url": "https://www.definitions.net/definition/Pythias"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 3 Tagen",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "Details ; Model ID: EleutherAI/gpt-neox-20b ; Developer: EleutherAI ; Category: Generation ; Access: Open weights ; License: Not published.",
+      "title": "gpt-neox-20b - TextModels.tech",
+      "url": "https://textmodels.tech/models/eleutherai/gpt-neox-20b"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 14 Stunden",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "GPT-NeoX-20B is a 20 billion parameter autoregressive language model trained on the Pile using the GPT-NeoX library. Its architecture intentionally resembles ...",
+      "title": "Projects | Open Source Science",
+      "url": "https://science.ecosyste.ms/projects?keyword=gpt_neox&per_page=100"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "Für diese Seite sind keine Informationen verfügbar.",
+      "title": "https://scholar.google.com/citations?view_op=view_...",
+      "url": "https://scholar.google.com/citations?citation_for_view=lc6CVqEAAAAJ%3Au_35RYKgDlwC&hl=en&user=lc6CVqEAAAAJ&view_op=view_citation"
+    }
+  ]
+}
