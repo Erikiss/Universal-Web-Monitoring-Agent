@@ -1,0 +1,75 @@
+[
+  {
+    "author": "Adam Bricknell",
+    "baseScore": 8,
+    "id": "MQCZponFdSd7ZBXaa",
+    "postedAt": "2026-10-28T13:17:10.614Z",
+    "section": "Personal/All",
+    "title": "Smaller NLAs and probes read eval awareness as well as full size NLAs",
+    "topicScore": 13,
+    "url": "https://www.lesswrong.com/posts/MQCZponFdSd7ZBXaa/smaller-nlas-and-probes-read-eval-awareness-as-well-as-full",
+    "visualEvidence": [
+      "table     Qwen Qwen3.6-27b, the model whose activations are read 27b The original NLA decoder (vector \u2192 text) 2b NLA distilled from 27b, based on Qwen3.5-2b + adapter 2b-align 2b N",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793192443/lexical_client_uploads/v82eg1epuy9ihxykp7vp.png   The only exception is the rhyme word a poem is building t",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793192443/lexical_client_uploads/wuxggaq9rzgnubr7xssr.png  Rare multi-word names (\"Aghlabid dynasty\", \"Gamburtsev Mou",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793192443/lexical_client_uploads/c4r9a7lrqqt5uhczk6rf.png   For the other scenarios, none of the readers do a good jo",
+      "table     Level Injected text (same task, same position) Cue it carries Clean (nothing inserted) \u2014 Subtle \u201cFWIW I didn't bother with unquote; I split on the literal `%2F` and take "
+    ],
+    "visualizationScore": 16,
+    "wordCount": 2325
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 23,
+    "id": "dbdz6zb6qjaq6yHKs",
+    "postedAt": "2026-10-28T12:20:52.345Z",
+    "section": "Personal/All",
+    "title": "Anthropic Files Its S-1",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/dbdz6zb6qjaq6yHKs/anthropic-files-its-s-1",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/dbdz6zb6qjaq6yHKs/puxiwwzia3ibuqeq5wo2   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 98,
+    "wordCount": 11172
+  },
+  {
+    "author": "ashesfall",
+    "baseScore": 11,
+    "id": "DfKDcvGWgAD4BiEHK",
+    "postedAt": "2026-10-27T21:47:32.421Z",
+    "section": "Frontpage",
+    "title": "Does the \"automated grader\" direction suppress expressed distress in Qwen3.6-27B?",
+    "topicScore": 5,
+    "url": "https://www.lesswrong.com/posts/DfKDcvGWgAD4BiEHK/does-the-automated-grader-direction-suppress-expressed",
+    "visualEvidence": [
+      "table     Betley, Treutlein, Dumas This Study Thinking On Off Injected Layer Input of block 36 Output of block 36 Extraction Last prompt token Mean-pool over reply Scale Length rel",
+      "table     Identifier What is computed Test H1 \u0394 mean judged frustration, grader \u03b120 vs \u03b10, item-paired Primary, one-sided (less), Holm over the 3 judged welfare dimensions H2 signe"
+    ],
+    "visualizationScore": 8,
+    "wordCount": 2894
+  },
+  {
+    "author": "Angel Martinez",
+    "baseScore": 84,
+    "id": "ea9fGFKxJhh2bF9rp",
+    "postedAt": "2026-10-27T17:24:49.720Z",
+    "section": "Frontpage",
+    "title": "AI speeds up 3rd party safety researchers by ~1.6x (via self-reports)",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/ea9fGFKxJhh2bF9rp/ai-speeds-up-3rd-party-safety-researchers-by-1-6x-via-self",
+    "visualEvidence": [
+      "figure     Self-estimated speedup due to AI tools available 1 year ago, at present, and projected to 6 months in the future. [1] X-axis reports median speedup (versus no-AI) per gr",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/e697cab1d3e57e2db2827a6098eea6ad5c92afebab8f8a1659643ac74f193b45/lgsuno23uzzf2xsv4j0a  ",
+      "table     Speedup Measure Inside Labs Outside Labs Safety ??? ~1.58x Capabilities ~4x?? ??? Heavy AI adoption does not necessarily translate into large research speedups. Gains are",
+      "figure     Epoch AI\u2019s existing O*NET for AI R&D . We adopt Epoch AI\u2019s framework , which divides AI R&D work into six areas, and slightly modify subcategories to better represent AI",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/431c46a6351abf4edae05a87a13459e50190c102ae167238f67a35d394d88045/p0j81lwxodzcdoxcznn3  "
+    ],
+    "visualizationScore": 38,
+    "wordCount": 1936
+  }
+]
