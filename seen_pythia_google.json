@@ -901,10 +901,27 @@
       "url": "https://zhuanlan.zhihu.com/p/2096482642027983491"
     }
   },
-  "last_attempt_at": "2026-10-28T13:34:12+00:00",
+  "last_attempt_at": "2026-10-29T13:45:13+00:00",
   "last_errors": [],
-  "last_success_at": "2026-10-28T13:34:12+00:00",
-  "pending": {},
+  "last_success_at": "2026-10-29T13:45:13+00:00",
+  "pending": {
+    "https://mousse-project.org/what-makes-a-language-model-open/": {
+      "first_seen_at": "2026-10-29T13:45:13+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "A language model release has several parts: weights, inference code ... EleutherAI's Pythia suite (2023) released a series of models of different ...",
+      "title": "What Makes a Language Model \"Open\"? Weights, Data, Code ...",
+      "url": "https://mousse-project.org/what-makes-a-language-model-open/"
+    },
+    "https://www.instagram.com/p/DfCiwEhEQ0I/": {
+      "first_seen_at": "2026-10-29T13:45:13+00:00",
+      "google_date": "",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Pythia Labs has introduced Pythia-1, an AI model designed to generate full ... Its approach used a protein language model trained with experimental ...",
+      "title": "Could AI help design antibodies for biological targets ...",
+      "url": "https://www.instagram.com/p/DfCiwEhEQ0I/"
+    }
+  },
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }

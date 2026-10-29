@@ -1,0 +1,305 @@
+{
+  "checked_at": "2026-10-29T13:45:13+00:00",
+  "errors": [],
+  "last_success_at": "2026-10-29T13:45:13+00:00",
+  "new_count": 2,
+  "pending_count": 2,
+  "pending_results": [
+    {
+      "first_seen_at": "2026-10-29T13:45:13+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "A language model release has several parts: weights, inference code ... EleutherAI's Pythia suite (2023) released a series of models of different ...",
+      "title": "What Makes a Language Model \"Open\"? Weights, Data, Code ...",
+      "url": "https://mousse-project.org/what-makes-a-language-model-open/"
+    },
+    {
+      "first_seen_at": "2026-10-29T13:45:13+00:00",
+      "google_date": "",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Pythia Labs has introduced Pythia-1, an AI model designed to generate full ... Its approach used a protein language model trained with experimental ...",
+      "title": "Could AI help design antibodies for biological targets ...",
+      "url": "https://www.instagram.com/p/DfCiwEhEQ0I/"
+    }
+  ],
+  "queries": [
+    {
+      "label": "24 Stunden",
+      "q": "pythia",
+      "tbs": "qdr:d"
+    },
+    {
+      "label": "Überlappung/Nachholen: 4 Tage",
+      "q": "pythia",
+      "tbs": "qdr:d4"
+    },
+    {
+      "label": "Ergänzende Modellsuche: 4 Tage",
+      "q": "pythia (EleutherAI OR \"GPT-NeoX\" OR \"language model\" OR Sprachmodell OR \"mechanistic interpretability\")",
+      "tbs": "qdr:d4"
+    }
+  ],
+  "results": [
+    {
+      "classification": "unclear",
+      "google_date": "vor 6 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "The live Pythia price today is $0.0001784 USD with a 24-hour trading volume of $15949.61 USD. We update our PYTHIA to USD price in real-time.",
+      "title": "Pythia price today, PYTHIA to USD live price, marketcap ...",
+      "url": "https://coinmarketcap.com/currencies/pythia/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 20 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Hearth and Hamlet publisher Runic Forge rebrands as Pythia Games. Parent company Rune is dropping its agency work to operate solely as an indie publisher.",
+      "title": "Hearth and Hamlet publisher Runic Forge rebrands as ...",
+      "url": "https://www.gamesindustry.biz/hearth-and-hamlet-publisher-runic-forge-rebrands-as-pythia-games"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 22 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "The assumptions needed to justify the buildout in 2028 aren't extreme, but they're not easy and lots of things can derail them. What if we get an economic ...",
+      "title": "Pythia Cap: Partially Conductive",
+      "url": "https://x.com/PythiaR/status/2115459294045069576"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 20 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "GamesIndustry.biz reports that Hearth and Hamlet publisher Runic Forge has rebranded as Pythia Games and is shifting from agency work to publishing full time. …",
+      "title": "Hearth and Hamlet publisher Runic Forge rebrands as ...",
+      "url": "https://gamedev.net/news/hearth-and-hamlet-publisher-runic-forge-rebrands-as-pythia-games-r6786/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 10 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Pythia is a future ancestral divinatory oracle, and a vessel of technofeminist thought. As a wearable artificial entity, they operate {hyper}locally, on-the- ...",
+      "title": "My solo show Pythia Embodied opens to the public ...",
+      "url": "https://www.instagram.com/p/DfEBK5tFHq0/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 23 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Pythia Games is the new publishing label of Rune, a data-driven indie marketing agency based in the UK which is now transitioning to work exclusively as a ...",
+      "title": "Hearth and Hamlet Publisher Runic Forge Rebrands as ...",
+      "url": "https://www.gamesmarket.global/hearth-and-hamlet-publisher-runic-forge-rebrands-as-pythia-game/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Pythia Games is the new publishing label of Rune, a data-driven indie marketing agency based in the UK which is now transitioning to work exclusively as a ...",
+      "title": "Post",
+      "url": "https://x.com/GamesMarkt/status/2115455320004911536"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Hearth and Hamlet Publisher Runic Forge Rebrands as Pythia Games Pythia Games is the new publishing label of Rune, a data-driven indie marketing agency...",
+      "title": "Runic forge rebrands as pythia games",
+      "url": "https://www.facebook.com/gamesmarkt/posts/hearth-and-hamlet-publisher-runic-forge-rebrands-as-pythia-gamespythia-games-is-/1990935395671000/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "24 Stunden",
+      "snippet": "Für diese Seite sind keine Informationen verfügbar.",
+      "title": "http://www.pythiacrafting.com/",
+      "url": "http://www.pythiacrafting.com/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 6 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "The live Pythia price today is $0.0001784 USD with a 24-hour trading volume of $15949.61 USD. We update our PYTHIA to USD price in real-time.",
+      "title": "Pythia price today, PYTHIA to USD live price, marketcap ...",
+      "url": "https://coinmarketcap.com/currencies/pythia/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Pythia's AI technology platform can design antibodies against traditionally challenging targets such as multi-pass membrane proteins. Pythia's technology is ...",
+      "title": "Pythia Labs Launches with AI-Designed Antibodies ...",
+      "url": "https://www.afp.com/en/infos/pythia-labs-launches-ai-designed-antibodies-hard-drug-targets"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 3 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "1 Pythia currently costs $0, down 19.13% in the last 24 hours. View the live Pythia price in USD (PYTHIA/USD), chart, market cap and 24-hour volume.",
+      "title": "Pythia Price (PYTHIA/USD) Today | Live Price, Market Cap ...",
+      "url": "https://www.binance.com/en/price/pythia"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 3 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "In predictive astrology Lady Pythia wrote 22 degrees is bad for all signs. Does that mean from 21 to 22, or from 22 to 23?",
+      "title": "About a degree Lady Pythia mentioned",
+      "url": "https://ancient-forums.com/threads/about-a-degree-lady-pythia-mentioned.309568/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 20 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Hearth and Hamlet publisher Runic Forge rebrands as Pythia Games. Parent company Rune is dropping its agency work to operate solely as an indie publisher.",
+      "title": "Hearth and Hamlet publisher Runic Forge rebrands as ...",
+      "url": "https://www.gamesindustry.biz/hearth-and-hamlet-publisher-runic-forge-rebrands-as-pythia-games"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 4 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "With over 400 GitHub stars and growing, Pythia transforms a local LLM into a self-calibrating geopolitical oracle that watches the entire planet and predicts ...",
+      "title": "Pythia",
+      "url": "https://repocloud.io/details/Pythia/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "PYTHIA, a transferable machine learning framework for simultaneous defect and adsorption site optimization Ioannis Kouroudis, Zhaosu Gu, Poonam, ...",
+      "title": "Machine Learning (ML) Papers",
+      "url": "https://x.com/Memoirs/status/2114713437875892603"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 4 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Explore the latest hoodies from pythia, available now on Complex Shop.",
+      "title": "Explore Our pythia Merch",
+      "url": "https://www.complex.com/shop/pythia/hoodies"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 10 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Pythia is a future ancestral divinatory oracle, and a vessel of technofeminist thought. As a wearable artificial entity, they operate {hyper}locally, on-the- ...",
+      "title": "My solo show Pythia Embodied opens to the public ...",
+      "url": "https://www.instagram.com/p/DfEBK5tFHq0/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Pythia Labs entwickelt neuartige KI-Modelle für die Wirkstoffforschung. Das Unternehmen konzentriert sich zunächst auf Antikörper der nächsten Generation gegen ...",
+      "title": "Pythia Labs startet mit KI-entwickelten Antikörpern gegen ...",
+      "url": "https://www.rutlandherald.com/news/business/pythia-labs-startet-mit-ki-entwickelten-antik-rpern-gegen-bislang-schwer-behandelbare-zielstrukturen/article_eeb82279-7423-5c9b-8bc4-0fba5fc5489c.html"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 1 Tag",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "We keep the language model frozen and compare which of its internal representations a lightweight resolver can use. Attention and probing for coreference.",
+      "title": "Coreference Signals in Pretrained Language Model Attention",
+      "url": "https://www.preprints.org/frontend/manuscript/14371696bcc8c3e9fb18cd6fcc614041/download_pub"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "It explains how a small language model compresses the text, why the search indexes can stay small, and what the results look like. 49.3 M items, from Oct 2006 ...",
+      "title": "All of Hacker News in 5.3 GB, searchable on a laptop",
+      "url": "https://medium.com/@davidmonterocrespo24/all-of-hacker-news-in-5-3-gb-searchable-on-a-laptop-4a3a27d58272"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 3 Tagen",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "Open source: weights plus training data and code, for replication, modification or study. EleutherAIPythia ... Language Model.” 2025. [link]. Biderman, S ...",
+      "title": "Open Language Models",
+      "url": "https://natolambert.com/slides/2026/harvard/lecture.html"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 3 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "A language model release has several parts: weights, inference code ... EleutherAI's Pythia suite (2023) released a series of models of different ...",
+      "title": "What Makes a Language Model \"Open\"? Weights, Data, Code ...",
+      "url": "https://mousse-project.org/what-makes-a-language-model-open/"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "Pythia Labs has introduced Pythia-1, an AI model designed to generate full ... Its approach used a protein language model trained with experimental ...",
+      "title": "Could AI help design antibodies for biological targets ...",
+      "url": "https://www.instagram.com/p/DfCiwEhEQ0I/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 1 Tag",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "Position: Language model developers should · report train-test overlap. In Proceedings of the 42nd. International Conference on Machine Learning, vol- ume 267 ...",
+      "title": "What Carries Forward? Pretraining Disclosure Across ...",
+      "url": "https://arxiv.org/abs/2610.37465"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 4 Tagen",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "Our work investigates subliminal learning through cross-model distillation, using the PolyPythia and DataDecide OLMo models to show that a teacher's animal ...",
+      "title": "Tracing Subliminal Learning Through Pretraining",
+      "url": "https://www.greaterwrong.com/posts/53XwjN2gAKzjKCp5s/tracing-subliminal-learning-through-pretraining"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "PhD alum Qian Xu and Chris Chen have collaborated on \"Conversation styles and role expectations in a large language model: effects on readability, ...",
+      "title": "PhD alum Qian Xu and Chris Chen have collaborated on \" ...",
+      "url": "https://www.facebook.com/groups/320214118138862/posts/3430807993746110/"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 4 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "Once markers are removed, however, the Pythia tests cannot show whether the effect carries over. ... Language Model · Éric Jacopin. Autoregressive (AR) sequence ...",
+      "title": "Analyzing and Interpreting Neural Networks for NLP",
+      "url": "https://aclanthology.org/volumes/2026.blackboxnlp-1/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "All language-model parameters remain frozen. The initial comparison finds that changes in the selected layer are more common than losses above our tolerance.",
+      "title": "HOW RELIABLE ARE LAYER COMPARISONS FROM ...",
+      "url": "https://www.journalijar.com/uploads/2026/10/6adf2995483ca_IJAR-59512.pdf"
+    }
+  ]
+}
