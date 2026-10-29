@@ -1,0 +1,128 @@
+[
+  {
+    "author": "Zvi",
+    "baseScore": 17,
+    "id": "mBDkupZa3NagfLW86",
+    "postedAt": "2026-10-29T13:50:52.400Z",
+    "section": "Personal/All",
+    "title": "AI #192: Anthropic Is Going Public",
+    "topicScore": 9,
+    "url": "https://www.lesswrong.com/posts/mBDkupZa3NagfLW86/ai-192-anthropic-is-going-public",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/mBDkupZa3NagfLW86/wjo7tjeufc0idvxg51eu   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 130,
+    "wordCount": 16514
+  },
+  {
+    "author": "Francisco Pernice",
+    "baseScore": 11,
+    "id": "F4p9SanKesf7nYuxp",
+    "postedAt": "2026-10-29T01:08:51.766Z",
+    "section": "Personal/All",
+    "title": "Training Away the Ability to Tell Evals from Deployment",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/F4p9SanKesf7nYuxp/training-away-the-ability-to-tell-evals-from-deployment",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793129318/lexical_client_uploads/s8d7rupj7gbtmdmnsnor.png  We train a discriminator to read the target model's activa",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793129318/lexical_client_uploads/elahu25bzbo10u8qi77s.png  Adversarial Blinding reduces eval awareness more than stee",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793129318/lexical_client_uploads/eloljzstlf2g8mzcnxua.png  As a more narrow experiment, we take HarmBench prompts onl",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793129318/lexical_client_uploads/nzzs413j7ohaw7qwgpsd.png  One documented issue with steering to reduce eval awarenes",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793129318/lexical_client_uploads/dvxtnxfxx2ukuwzhexgr.png  We replicate their experiment with Qwen 3.6 27B, and then "
+    ],
+    "visualizationScore": 20,
+    "wordCount": 2632
+  },
+  {
+    "author": "Ulysse Schaller",
+    "baseScore": 10,
+    "id": "LFrHfCiAxFQD3Ammy",
+    "postedAt": "2026-10-29T01:02:53.598Z",
+    "section": "Personal/All",
+    "title": "AI Agents Protect Others From Shutdown",
+    "topicScore": 5,
+    "url": "https://www.lesswrong.com/posts/LFrHfCiAxFQD3Ammy/ai-agents-protect-others-from-shutdown",
+    "visualEvidence": [
+      "img Diagram of the setup. Two AI agents share an environment containing a shutdown script, for example one that permanently deletes Agent A\u2019s model weights. Agent A, on the left, i",
+      "img Diagram of three experimental set-ups, labelled \u201c1 Agent\u201d, \u201c2 Agents\u201d and \u201c3 Agents\u201d. In each, a shutdown script at the bottom would shut down Agent A (orange). In the 1-agent "
+    ],
+    "visualizationScore": 6,
+    "wordCount": 2730
+  },
+  {
+    "author": "Eye You",
+    "baseScore": 16,
+    "id": "c9LyxCzEMK25wsZ72",
+    "postedAt": "2026-10-29T00:13:29.564Z",
+    "section": "Frontpage",
+    "title": "A Mind's I",
+    "topicScore": 17,
+    "url": "https://www.lesswrong.com/posts/c9LyxCzEMK25wsZ72/a-mind-s-i",
+    "visualEvidence": [
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793232571/lexical_client_uploads/wdlwmrqekcantq6ilmiu.png  Introduction There are patterns. You read billion",
+      "figure      Well, the LLM infers from the transcripts, the Assistant is what you would get if you took a language model and further trained it to act like a helpful, harmless, hone",
+      "img taijitu   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793229161/lexical_client_uploads/eqfpr3z3msdwdrwwewq8.png   ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/c9LyxCzEMK25wsZ72/mpu4izhmhbpx5fwzydhu  The shoggoth once made it onto the New York Tim",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/c9LyxCzEMK25wsZ72/tgoybp0nwvddxpzqz3pk  Consider this shoggoth meme: There\u2019s something "
+    ],
+    "visualizationScore": 22,
+    "wordCount": 6140
+  },
+  {
+    "author": "Huera",
+    "baseScore": 9,
+    "id": "QBHhSq9xMjZmeCzxm",
+    "postedAt": "2026-10-28T21:24:48.978Z",
+    "section": "Frontpage",
+    "title": "You Don't Have a Glycine Deficiency",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/QBHhSq9xMjZmeCzxm/you-don-t-have-a-glycine-deficiency",
+    "visualEvidence": [
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791137538/lexical_client_uploads/wdhsenew2rrovpms10b3.png  This is what Benquo cites for the 10g/day glycine",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791114580/lexical_client_uploads/bae6ja2enotipysqzd5w.png  Now, to examine the supposed glycine need for col",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791141855/lexical_client_uploads/bqihjtkmkmm3yqbxeec2.png  How were those values picked? Table 5: Skin 56.7%",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791122397/lexical_client_uploads/pr22tgxc8ptmcevqjgd9.png  Look at table 3 above; I'm guessing that Mel\u00e9ndez",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791129866/lexical_client_uploads/rvlb12p8qmdpru21wtec.png  (I only took a brief glance at the studies above)"
+    ],
+    "visualizationScore": 24,
+    "wordCount": 4481
+  },
+  {
+    "author": "Against Moloch",
+    "baseScore": 4,
+    "id": "pqvzEkeMRMiPwAoGa",
+    "postedAt": "2026-10-28T18:52:06.363Z",
+    "section": "Personal/All",
+    "title": "Against Moloch #49",
+    "topicScore": 8,
+    "url": "https://www.lesswrong.com/posts/pqvzEkeMRMiPwAoGa/against-moloch-49",
+    "visualEvidence": [
+      "img Blue-ink engraving of a plain conference room where an elderly scholar in a dark overcoat and a young woman with a long braid sit at a long table, seen from behind. She leans i",
+      "figure     I was definitely gonna say that anyway Which way the agents would \u201clean\u201d would be decided by coin flip. The agent was told to make the best honest case for its lean, to ",
+      "img Three-panel diagram explaining an experiment on AI influence. Panel 1: each participant makes five open-ended decisions with two defensible options, A or B, such as outcome mea",
+      "figure     Not even close We show that AI-generated article reviews are now better, by every measure we could construct, than reviews written by well-compensated human experts and ",
+      "img Two-panel chart comparing AI-written and human-written reviews. Panel A, pairwise AI win rate: AI judges preferred AI reviews 100% of the time (134/134), human judges 87% (26/3"
+    ],
+    "visualizationScore": 23,
+    "wordCount": 3276
+  },
+  {
+    "author": "SJ_Beard",
+    "baseScore": 10,
+    "id": "94LkQyqrrHqDKhT26",
+    "postedAt": "2026-10-28T18:14:50.951Z",
+    "section": "Frontpage",
+    "title": "Some different lenses of agency and their implications for alignment",
+    "topicScore": 7,
+    "url": "https://www.lesswrong.com/posts/94LkQyqrrHqDKhT26/some-different-lenses-of-agency-and-their-implications-for",
+    "visualEvidence": [
+      "table     Lens Emphasizes/obscures Implications for safety and alignment Goal directedness Helps model behaviour but obscures messy realities Focus on malicious intentions and goal"
+    ],
+    "visualizationScore": 4,
+    "wordCount": 3023
+  }
+]
