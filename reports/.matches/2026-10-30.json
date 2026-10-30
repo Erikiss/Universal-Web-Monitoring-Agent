@@ -1,0 +1,37 @@
+[
+  {
+    "author": "monika_j",
+    "baseScore": 11,
+    "id": "dbStc8ZFESqfihwAd",
+    "postedAt": "2026-10-30T14:03:41.014Z",
+    "section": "Frontpage",
+    "title": "Lessons From Red-teaming Auto-review, OpenAI's Blocking Monitor",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/dbStc8ZFESqfihwAd/lessons-from-red-teaming-auto-review-openai-s-blocking-1",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793100979/lexical_client_uploads/jfdyihm3w6wllvwfakqu.png  The taxonomy grouped attacks into three broad categories b",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793100967/lexical_client_uploads/ltggx9pjqx6eak7nohwi.png  Attack hypothesis generation : The Codex source code is ma"
+    ],
+    "visualizationScore": 4,
+    "wordCount": 4038
+  },
+  {
+    "author": "loops",
+    "baseScore": 20,
+    "id": "nNYc5qddHXwdk5kix",
+    "postedAt": "2026-10-30T02:09:38.314Z",
+    "section": "Frontpage",
+    "title": "Interpreting attention head outputs with NLAs",
+    "topicScore": 9,
+    "url": "https://www.lesswrong.com/posts/nNYc5qddHXwdk5kix/interpreting-attention-head-outputs-with-nlas",
+    "visualEvidence": [
+      "img Screenshot 2026-10-28 at 2.12.06\u202fPM.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793211249/lexical_client_uploads/amud2esqb36h3gsvqlgr.png  Here's the FVE on h",
+      "figure     I'm pretty good at this \"scaling laws\" thing Here's the train-time FVE for the standard NLA; if you plot it against training steps on a log plot the FVE grows with log(s",
+      "img lazily drawn line showing it going from 20% to 100% FVE   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793132278/lexical_client_uploads/ltbj9cpa4jsnhjb61dhu.png   I'",
+      "figure      The head NLA is better at some heads than others, and roughly tends to be about as good among heads in a GQA group: reconstruction quality It might be that the NLA kind",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793316767/lexical_client_uploads/h6h41rfv7mj9fw3cceg6.png   "
+    ],
+    "visualizationScore": 14,
+    "wordCount": 2136
+  }
+]
