@@ -919,8 +919,11 @@
       "url": "https://zhuanlan.zhihu.com/p/2096482642027983491"
     }
   },
-  "last_attempt_at": "2026-10-29T13:45:13+00:00",
-  "last_errors": [],
+  "last_attempt_at": "2026-10-30T13:37:27+00:00",
+  "last_errors": [
+    "24 Stunden: Ungültige URL in Suchergebnissen",
+    "Überlappung/Nachholen: 3 Tage: Ungültige URL in Suchergebnissen"
+  ],
   "last_success_at": "2026-10-29T13:45:13+00:00",
   "pending": {},
   "schema_version": 1,
