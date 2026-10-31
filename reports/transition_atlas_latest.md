@@ -1,17 +1,12 @@
-# Transition-Atlas watch — 2026-10-30T14:31:11Z
+# Transition-Atlas watch — 2026-10-31T13:53:36Z
 
 Originalpaper: https://arxiv.org/abs/2609.12591
-Neue Hinweise: 1 | fehlgeschlagene Quellenchecks: 0
+Neue Hinweise: 0 | fehlgeschlagene Quellenchecks: 0
 Vollständiger Bericht: https://github.com/Erikiss/Universal-Web-Monitoring-Agent/blob/main/reports/transition_atlas_latest.md
 
 GitHub-Aktivität und neue HPI-Links sind Hinweise, kein automatisch bestätigter Atlas-Release.
 
-## AUTOREN-GITHUB
-
-Kathrin Korte: kat-ko/SimilarityOOD
-https://github.com/kat-ko/SimilarityOOD
-Neues öffentliches Repository
-
+Kein neuer Hinweis in den erfolgreich geprüften Quellen. Erster erfolgreicher Abruf einer Quelle setzt nur die Vergleichsbasis.
 
 ## Abdeckung
 Letzte erfolgreich gelesene Paper-Version: v1
