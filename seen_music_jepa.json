@@ -15,8 +15,8 @@
       "repo:guangjun1997327/PianoAutomaticAnnotationSystem": "third_party",
       "repo:smikoo1000-svg/Fnf": "third_party"
     },
-    "last_digest_at": "2026-09-30T14:09:54+00:00",
-    "next_digest_at": "2026-10-07T14:09:54+00:00",
+    "last_digest_at": "2026-10-31T13:49:27+00:00",
+    "next_digest_at": "2026-11-07T13:49:27+00:00",
     "pending": {},
     "version": 1
   },
@@ -24,7 +24,7 @@
     "GitHub Metadaten NeilKhandelwal/drum-jepa": "FetchError: HTTP 404: https://api.github.com/repos/NeilKhandelwal/drum-jepa",
     "GitHub Metadaten smikoo1000-svg/Fnf": "FetchError: HTTP 404: https://api.github.com/repos/smikoo1000-svg/Fnf"
   },
-  "last_checked": "2026-10-30T14:28:36+00:00",
+  "last_checked": "2026-10-31T13:49:27+00:00",
   "observations": {
     "arxiv": {
       "links": [],
@@ -489,6 +489,7 @@
         "https://github.com/YuhuaJiang2002/CKT-WAM",
         "https://github.com/YvanYin/DrivingWorld",
         "https://github.com/ZCMax/Thinking-With-Imagination",
+        "https://github.com/ZJU4EmbodiedAI/WorldGPT",
         "https://github.com/Zarand3r/world-model-invariants",
         "https://github.com/Zefan-Cai/MMGR",
         "https://github.com/Zhangwenyao1/DreamVLA",
@@ -566,6 +567,7 @@
         "https://github.com/danijar/dreamer",
         "https://github.com/danijar/dreamerv2",
         "https://github.com/danijar/dreamerv3",
+        "https://github.com/declare-lab/RoboQuest",
         "https://github.com/declare-lab/nora-1.5",
         "https://github.com/deepmind/deepmind-research",
         "https://github.com/deepmind/dm_control",
@@ -1454,6 +1456,7 @@
         "https://github.com/YuhuaJiang2002/CKT-WAM",
         "https://github.com/YvanYin/DrivingWorld",
         "https://github.com/ZCMax/Thinking-With-Imagination",
+        "https://github.com/ZJU4EmbodiedAI/WorldGPT",
         "https://github.com/Zarand3r/world-model-invariants",
         "https://github.com/Zefan-Cai/MMGR",
         "https://github.com/Zhangwenyao1/DreamVLA",
@@ -1531,6 +1534,7 @@
         "https://github.com/danijar/dreamer",
         "https://github.com/danijar/dreamerv2",
         "https://github.com/danijar/dreamerv3",
+        "https://github.com/declare-lab/RoboQuest",
         "https://github.com/declare-lab/nora-1.5",
         "https://github.com/deepmind/deepmind-research",
         "https://github.com/deepmind/dm_control",
@@ -1907,7 +1911,7 @@
         "https://huggingface.co/papers/2604.22748"
       ],
       "related": true,
-      "stamp": "02580a06698d50920c46f789d481d7f53eaa1b27a2c48653373bfa45d69c6841"
+      "stamp": "922785436c6b1e215a2ea9bbdb04a54514d9732aa494384f54d0b86501d44549"
     },
     "guangjun1997327/PianoAutomaticAnnotationSystem": {
       "exact_paper": true,
