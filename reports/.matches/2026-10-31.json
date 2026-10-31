@@ -1,0 +1,21 @@
+[
+  {
+    "author": "Samuel Ratnam",
+    "baseScore": 24,
+    "id": "iErBZ5fomL4tyyHy6",
+    "postedAt": "2026-10-30T18:49:18.010Z",
+    "section": "Frontpage",
+    "title": "Persona Geology: Underlying Structure in Character Training Adapters",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/iErBZ5fomL4tyyHy6/persona-geology-underlying-structure-in-character-training",
+    "visualEvidence": [
+      "img Figure 1: one question, then five rows, one per factor, with a steered robot at each pole giving a one-line answer and the 134 adapters' positions on that factor between them  ",
+      "img The 134 personality adapters inside a 3D box on their first three principal components, with each adapter projected onto the floor and two back walls, and one cased path per Bi",
+      "img Each Big Five group of Goldberg markers plotted on the pair of factors that separates it best, with positive and negative poles on opposite sides   https://res.cloudinary.com/l",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793386010/lexical_client_uploads/ggnug151b8n1zs488dzr.png  Relaxed (Emotional Stability 6): \u201cThe coffee cup sits unto",
+      "img Eigenvalues of the real, permuted and shuffled zoos for the first 30 components on a log scale, with a random-data threshold, and Big Five congruence for each zoo   https://res"
+    ],
+    "visualizationScore": 35,
+    "wordCount": 6088
+  }
+]
