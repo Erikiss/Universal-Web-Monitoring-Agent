@@ -1,6 +1,6 @@
 # Pythia – tägliche Google-Websuche
 
-2026-10-30T13:37:27+00:00
+2026-10-31T13:06:49+00:00
 
 Neu vorgemerkt: 0 | Noch zu versenden: 0
 Letzte vollständig erfolgreiche Suche: 2026-10-29T13:45:13+00:00
@@ -10,12 +10,12 @@ Google-Datumsfilter sind keine vollständige Publikationsdatenbank. Titel/Snippe
 Unklare Treffer werden dokumentiert und nicht als bereits gemeldet gespeichert.
 
 - 24 Stunden: https://www.google.com/search?q=pythia&tbs=qdr%3Ad
-- Überlappung/Nachholen: 3 Tage: https://www.google.com/search?q=pythia&tbs=qdr%3Ad3
-- Ergänzende Modellsuche: 3 Tage: https://www.google.com/search?q=pythia+%28EleutherAI+OR+%22GPT-NeoX%22+OR+%22language+model%22+OR+Sprachmodell+OR+%22mechanistic+interpretability%22%29&tbs=qdr%3Ad3
+- Überlappung/Nachholen: 4 Tage: https://www.google.com/search?q=pythia&tbs=qdr%3Ad4
+- Ergänzende Modellsuche: 4 Tage: https://www.google.com/search?q=pythia+%28EleutherAI+OR+%22GPT-NeoX%22+OR+%22language+model%22+OR+Sprachmodell+OR+%22mechanistic+interpretability%22%29&tbs=qdr%3Ad4
 
 ## Unvollständige Suche
 - 24 Stunden: Ungültige URL in Suchergebnissen
-- Überlappung/Nachholen: 3 Tage: Ungültige URL in Suchergebnissen
+- Überlappung/Nachholen: 4 Tage: Ungültige URL in Suchergebnissen
 
 ## Sammelmeldung – vorgemerkte Treffer dieses Laufs
 
@@ -26,11 +26,6 @@ Keine vorgemerkten Treffer.
 Keine in den erfolgreich abgerufenen Ergebnisseiten.
 
 ## Unklar – zur Nachprüfung
-
-Projects | Open Source Science
-https://science.ecosyste.ms/projects?keyword=gpt_neox&per_page=100
-GPT-NeoX-20B is a 20 billion parameter autoregressive language model trained on the Pile using the GPT-NeoX library. Its architecture intentionally resembles ...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
 
 https://scholar.google.com/citations?view_op=view_...
 https://scholar.google.com/citations?citation_for_view=HBMZ02EAAAAJ%3Au-x6o8ySG0sC&hl=en&user=HBMZ02EAAAAJ&view_op=view_citation
