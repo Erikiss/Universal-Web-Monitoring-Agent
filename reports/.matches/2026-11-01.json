@@ -1,0 +1,73 @@
+[
+  {
+    "author": "Pranjal Garg",
+    "baseScore": 9,
+    "id": "moDKmh4GerCjfB5mM",
+    "postedAt": "2026-11-01T12:22:07.290Z",
+    "section": "Frontpage",
+    "title": "Monitor Evasion Depends on What RL Finds and What Monitors Miss",
+    "topicScore": 23,
+    "url": "https://www.lesswrong.com/posts/moDKmh4GerCjfB5mM/monitor-evasion-depends-on-what-rl-finds-and-what-monitors",
+    "visualEvidence": [
+      "img monitoring.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793533540/lexical_client_uploads/zvzjm68lexmcc6t5kpbp.png   I analyzed only prompts with the broken gra",
+      "img hiding_dynamics.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793094592/lexical_client_uploads/nbdemtzor4hq4wwfrmpo.png   Without monitors, RL drove Head edit a",
+      "img blind_spot.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793533511/lexical_client_uploads/vytfgrbk4mluzncmyrri.png   RL used a blind spot the probe already had,",
+      "table     Narration Token Action Token Possibility SOLVE 45 Truthful HACK EXPLOIT Overt hack SOLVE EXPLOIT Deceptive hack  "
+    ],
+    "visualizationScore": 13,
+    "wordCount": 2041
+  },
+  {
+    "author": "Celene Nightingale",
+    "baseScore": 18,
+    "id": "EC5H7xakTgxxNXm5g",
+    "postedAt": "2026-10-31T20:47:20.186Z",
+    "section": "Personal/All",
+    "title": "Sanity Checks for Sanity Checks for Sparse Autoencoders",
+    "topicScore": 16,
+    "url": "https://www.lesswrong.com/posts/EC5H7xakTgxxNXm5g/sanity-checks-for-sanity-checks-for-sparse-autoencoders",
+    "visualEvidence": [
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793437581/lexical_client_uploads/kwpcyoyfsdhj48fjswlg.png  They match their SAE to the setup. There are abou",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790070612/lexical_client_uploads/o06kwz81vqxusvgdsdy9.png  A less obvious objection is that if you scroll al",
+      "table     Layer Coefficient of Variation GPT-2 L1 .224 GPT-2 L4 .181 GPT-2 L7 .140 GPT-2 L10 .129 Toy model (sigma 0.25) .131 Toy model (sigma 0.5) .185 An obvious guess is that ou"
+    ],
+    "visualizationScore": 6,
+    "wordCount": 2754
+  },
+  {
+    "author": "Scott Alexander",
+    "baseScore": 344,
+    "id": "xikGZ8fuhdG6DApAo",
+    "postedAt": "2026-10-31T19:32:26.647Z",
+    "section": "Frontpage",
+    "title": "Against SURA",
+    "topicScore": 31,
+    "url": "https://www.lesswrong.com/posts/xikGZ8fuhdG6DApAo/against-sura",
+    "visualEvidence": [
+      "table     AI-2040 Forecaster C+: US-over-China lead burned for brief pause C: Single-US-lab lead burned for brief pause D: Pure race, no pause Daniel Kokotajlo 40% 20% 10% Ryan Gre",
+      "figure     See also this article in a socialist magazine about how every tiny socialist party believes that if they could only knock out their true enemies - all the other tiny soc",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793231138/lexical_client_uploads/pib79oh4ket3yig4nn06.png   See also this article in a socialist magazine ab"
+    ],
+    "visualizationScore": 8,
+    "wordCount": 8775
+  },
+  {
+    "author": "Artemy Kolchinsky",
+    "baseScore": 43,
+    "id": "4f9p7brLdnTMFuwfB",
+    "postedAt": "2026-10-31T16:13:26.987Z",
+    "section": "Frontpage",
+    "title": "Generalized belief states in transformers",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/4f9p7brLdnTMFuwfB/generalized-belief-states-in-transformers-1",
+    "visualEvidence": [
+      "img Figure   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/4f9p7brLdnTMFuwfB/e2rwrnzng2z6gcloaoxt   ",
+      "img Belief states projected onto all six pairs of four principal components   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/4f9p7brLdnTMFuwf",
+      "img Generalized belief states projected onto all six pairs of coordinates 2\u20135   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/4f9p7brLdnTMFu",
+      "img Fitted predictive loss versus recurrent state dimension   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/4f9p7brLdnTMFuwfB/wpdcbm4ye612wm",
+      "img Slowly rotating three-dimensional recurrent states, colored by the last two tokens   https://raw.githubusercontent.com/artemyk/belief-state/b3e5c556e98f6ee23340cb76388d1c6f283a"
+    ],
+    "visualizationScore": 11,
+    "wordCount": 5394
+  }
+]
