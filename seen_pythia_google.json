@@ -919,13 +919,35 @@
       "url": "https://zhuanlan.zhihu.com/p/2096482642027983491"
     }
   },
-  "last_attempt_at": "2026-10-31T13:06:49+00:00",
-  "last_errors": [
-    "24 Stunden: Ungültige URL in Suchergebnissen",
-    "Überlappung/Nachholen: 4 Tage: Ungültige URL in Suchergebnissen"
-  ],
-  "last_success_at": "2026-10-29T13:45:13+00:00",
-  "pending": {},
+  "last_attempt_at": "2026-11-01T13:49:04+00:00",
+  "last_errors": [],
+  "last_success_at": "2026-11-01T13:49:04+00:00",
+  "pending": {
+    "https://www.google.com/goto?url=CAESZgHrOzAVEZWVVN2g14P07GULG_BgLRyFSN-QQiRR-95AfG_A4DXUB9nZo4keo-T5RkQMCzw66J0VqCw6tnntkk9lGPJVzFs3Wy6d0lCnrZw1X-MA40338DjhWOYOEuZRO21N-1kcsw": {
+      "first_seen_at": "2026-11-01T13:49:04+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "... Pythia, Bloom, SMDM, and TinyLLaMA. pdf bib abs. Accelerating Neural ... Language Model Test-time Adaptation · Zhichen Zeng | Wenxuan Bao | Xiao Lin ...",
+      "title": "The 2026 Conference on Empirical Methods in Natural ...",
+      "url": "https://www.google.com/goto?url=CAESZgHrOzAVEZWVVN2g14P07GULG_BgLRyFSN-QQiRR-95AfG_A4DXUB9nZo4keo-T5RkQMCzw66J0VqCw6tnntkk9lGPJVzFs3Wy6d0lCnrZw1X-MA40338DjhWOYOEuZRO21N-1kcsw"
+    },
+    "https://www.google.com/goto?url=CAESZwHrOzAVlOeLCWQfV02dfKN-E70AfK_wqpvJpunR7X1ozfIpvAVTY9Sm6JKx0ErZ9CTvAQvqQIfM-3PsOEPRwifwWFnTPc6zZpdMJyQR0Sp_8ybqervM-cdM820oWgkJo_SJOihKZH4": {
+      "first_seen_at": "2026-11-01T13:49:04+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Community contributors added support for additional model families including the Pythia suite from EleutherAI, GPT-NeoX, and various configurations of the LLaMA ...",
+      "title": "TransformerLens - Learn AI",
+      "url": "https://www.google.com/goto?url=CAESZwHrOzAVlOeLCWQfV02dfKN-E70AfK_wqpvJpunR7X1ozfIpvAVTY9Sm6JKx0ErZ9CTvAQvqQIfM-3PsOEPRwifwWFnTPc6zZpdMJyQR0Sp_8ybqervM-cdM820oWgkJo_SJOihKZH4"
+    },
+    "https://www.google.com/goto?url=CAESxwEB6zswFVC7ujoyRyv2TUc_r2aQfeS06iKHnHnqbBqZnaSVpXEdfEyKZUHVY6MPxIYYdKlROAwO-gEfxKyo-4RL1JfNVDItE-xH4CPjwVcHewKGIPJo2NoVEdnwroT1aoONFcc_w2wcx6_52bJukULBJnbBlNpO2VsYXtk1sGEaAR0msHwS9vDhnRRvLj3146WgEo-ugaIn2W0XG6rlP5MmiZJTeS6ovkwajmMq73v3mYkz4yVzBXl0tn9Qg7HaMZqA32SDM_eK": {
+      "first_seen_at": "2026-11-01T13:49:04+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "A Mechanistic Interpretability Study of GPT-2 and DistilGPT-2. October 2026 ... With no shared I/O (Pythia), all three collapse to universally inverted.",
+      "title": "What Survives Distillation? A Mechanistic Interpretability ...",
+      "url": "https://www.google.com/goto?url=CAESxwEB6zswFVC7ujoyRyv2TUc_r2aQfeS06iKHnHnqbBqZnaSVpXEdfEyKZUHVY6MPxIYYdKlROAwO-gEfxKyo-4RL1JfNVDItE-xH4CPjwVcHewKGIPJo2NoVEdnwroT1aoONFcc_w2wcx6_52bJukULBJnbBlNpO2VsYXtk1sGEaAR0msHwS9vDhnRRvLj3146WgEo-ugaIn2W0XG6rlP5MmiZJTeS6ovkwajmMq73v3mYkz4yVzBXl0tn9Qg7HaMZqA32SDM_eK"
+    }
+  },
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
