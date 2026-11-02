@@ -1,0 +1,108 @@
+{
+  "checked_at": "2026-11-02T16:35:05+00:00",
+  "errors": [],
+  "last_success_at": "2026-11-02T16:35:05+00:00",
+  "new_count": 0,
+  "pending_count": 0,
+  "pending_results": [],
+  "queries": [
+    {
+      "label": "24 Stunden",
+      "q": "pythia",
+      "tbs": "qdr:d"
+    },
+    {
+      "label": "Überlappung/Nachholen: 4 Tage",
+      "q": "pythia",
+      "tbs": "qdr:d4"
+    },
+    {
+      "label": "Ergänzende Modellsuche: 4 Tage",
+      "q": "pythia (EleutherAI OR \"GPT-NeoX\" OR \"language model\" OR Sprachmodell OR \"mechanistic interpretability\")",
+      "tbs": "qdr:d4"
+    }
+  ],
+  "results": [
+    {
+      "classification": "excluded",
+      "google_date": "vor 22 Stunden",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "PYTHIA refers to a female priestess associated with the oracle of Delphi in ancient Greece. According to historical and mythological accounts, a PYTHIA was ...",
+      "title": "Pythia — The Esoteric Lexicon | The Enchanted Initiate",
+      "url": "https://enchantedinitiate.com/encyclopedia/pythia"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Pythia was the high priestess at the temple of Apollo in Delphi, Ancient Greece She was widely known and the “oracle of Delphi” and people all over the ...",
+      "title": "Illustration of the oracle Pythia, J. R. Witzel 1896",
+      "url": "https://www.instagram.com/p/DfIGAQQRBet/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 21 Stunden",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "In Plutarch's dialogue on the Pythia (De Pythiae oraculis), a stranger from Greece, Diogenianus, is shown the offerings at Delphi by Philinus, Theon, ...",
+      "title": "The Oracles at Delphi (On the Pythian Priestess)",
+      "url": "https://www.greekmythology.com/sources/plutarch/the-oracles-at-delphi"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Stream indebraendt - Fumes of Pythia by Terenor Records on desktop and mobile. Play over 320 million tracks for free on SoundCloud.",
+      "title": "Stream indebraendt - Fumes of Pythia by Terenor Records",
+      "url": "https://soundcloud.com/terenor-records/indebraendt-fumes-of-pythia-3"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "The Pythia (or Oracle of Delphi) was the priestess who held court at Pytho, the sanctuary of the Delphinians, a sanctuary dedicated to the Greek god Apollo.",
+      "title": "The Pythia, the priestess who spoke for Apollo at Delphi. ...",
+      "url": "https://www.facebook.com/codexoffaiths/posts/the-pythia-the-priestess-who-spoke-for-apollo-at-delphi/122100587997532456/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "How Pythia Technologies collects, uses and protects information submitted through pythiatech.com, including contact forms and SMS alerts.",
+      "title": "Privacy Policy",
+      "url": "https://www.pythiatech.com/privacy-policy/"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 3 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "With over 400 GitHub stars and growing, Pythia transforms a local LLM into a self-calibrating geopolitical oracle that watches the entire planet and ...",
+      "title": "Pythia",
+      "url": "https://repocloud.io/details/Pythia/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 3 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Pythia Labs is a biotechnology company building frontier AI models for therapeutic discovery, beginning with next-generation antibodies for hard-to-drug targets ...",
+      "title": "Data Engineer",
+      "url": "https://www.pythialabs.com/careers/data-engineer"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Für diese Seite sind keine Informationen verfügbar.",
+      "title": "http://www.pythiacrafting.com/",
+      "url": "http://www.pythiacrafting.com/"
+    }
+  ]
+}
