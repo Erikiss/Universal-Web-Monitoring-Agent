@@ -1,0 +1,56 @@
+[
+  {
+    "author": "nesiacel",
+    "baseScore": 9,
+    "id": "cfyLnszP8suYmwatn",
+    "postedAt": "2026-11-02T14:50:13.891Z",
+    "section": "Frontpage",
+    "title": "Towards LoRA science",
+    "topicScore": 12,
+    "url": "https://www.lesswrong.com/posts/cfyLnszP8suYmwatn/towards-lora-science",
+    "visualEvidence": [
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793025181/lexical_client_uploads/qo9adn0wggep6xoswsz3.png  Figure 1 - an illustration of an MLP before a LoR",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793025232/lexical_client_uploads/buc1s5io2lg23cnvxsay.png  Figure 2 - an illustration of an MLP fit with a r",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793025247/lexical_client_uploads/gqtjs9y1qkyepmsqsmgk.png  Figure 3 - a LoRA being optimised to reduce an ML",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793025281/lexical_client_uploads/g0sryal4tt0ccnjpsw1d.png  Figure 4 - an MLP fit with a LoRA that reduces lo",
+      "figure      Figure 5 - the LoRA has been merged into the MLP's weights. The MLP now has loss of 0 on the example task When training is over, the weights of the base model can be up"
+    ],
+    "visualizationScore": 61,
+    "wordCount": 3262
+  },
+  {
+    "author": "Scott Alexander",
+    "baseScore": 90,
+    "id": "Sfkv6JF2ozmAkggKu",
+    "postedAt": "2026-11-01T20:44:08.719Z",
+    "section": "Frontpage",
+    "title": "Towards The Autograntor",
+    "topicScore": 5,
+    "url": "https://www.lesswrong.com/posts/Sfkv6JF2ozmAkggKu/towards-the-autograntor",
+    "visualEvidence": [
+      "figure     Sample table of AI milestone predictions A better measure is the geometric-mean difference between two AIs across all milestones. This ranged from 1.6x (Opus vs. ChatGPT",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793308648/lexical_client_uploads/zy9bdp1ny2tpun0hqrmw.png   Sample table of AI milestone predictions",
+      "figure      At first, I despaired of ever solving all of these. Later... Suppose that I'm considering two organizations. One can generate 1,000 points of value with my money alone.",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793317042/lexical_client_uploads/uudla3d4iacreqpkjop5.png   ",
+      "table     Size Mean Median P10 P90 P(negative) Per $1M Post-2030 share $800K 360 371 84 625 8% 450 1% strict (CL-18); \u224814% downstream-inclusive Headline Apart Research \u2014 $800K gran"
+    ],
+    "visualizationScore": 50,
+    "wordCount": 9039
+  },
+  {
+    "author": "SJ_Beard",
+    "baseScore": 15,
+    "id": "EfvG2LqhvoeuhqGTy",
+    "postedAt": "2026-11-01T20:25:46.682Z",
+    "section": "Personal/All",
+    "title": "A Taxonomy of Agency",
+    "topicScore": 5,
+    "url": "https://www.lesswrong.com/posts/EfvG2LqhvoeuhqGTy/a-taxonomy-of-agency",
+    "visualEvidence": [
+      "img The five characteristics of agency in the taxonomy, grouped by the system boundary, internal structure and embedded sub-systems   https://res.cloudinary.com/lesswrong-2-0/image",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793564599/lexical_client_uploads/tcsaoy5yknj7swg8mzli.png  Understanding agency in terms of informational structure h"
+    ],
+    "visualizationScore": 2,
+    "wordCount": 3248
+  }
+]
