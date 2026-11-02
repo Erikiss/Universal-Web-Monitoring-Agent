@@ -740,7 +740,7 @@
       "1347265117": {
         "full_name": "kat-ko/GeometryOfForgetting",
         "html_url": "https://github.com/kat-ko/GeometryOfForgetting",
-        "pushed_at": "2026-09-22T14:22:57Z",
+        "pushed_at": "2026-11-02T17:19:34Z",
         "description": null,
         "homepage": null,
         "default_branch": "main",
@@ -861,6 +861,6 @@
     },
     "releases:kat-ko/SimilarityOOD": {}
   },
-  "checked_at": "2026-11-01T14:31:03Z",
+  "checked_at": "2026-11-02T17:26:27Z",
   "last_errors": []
 }
