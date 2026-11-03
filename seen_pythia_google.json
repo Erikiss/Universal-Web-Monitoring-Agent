@@ -279,6 +279,15 @@
       "title": "Mini-AGI - Volotat",
       "url": "https://github.com/volotat/mini-AGI"
     },
+    "https://huggingface.co/AMAI-Lab/pythia-160m/blame/9476ea216bffb552be817f325357bcd393280340/ndarray-cache.json": {
+      "delivered_at": "2026-11-03T14:41:02+00:00",
+      "first_seen_at": "2026-11-03T14:40:53+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "We're on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "title": "ndarray-cache.json · AMAI-Lab/pythia-160m at ...",
+      "url": "https://huggingface.co/AMAI-Lab/pythia-160m/blame/9476ea216bffb552be817f325357bcd393280340/ndarray-cache.json"
+    },
     "https://huggingface.co/EleutherAI/neox-ckpt-pythia-1.4b-deduped/blame/main/layer_24-model_00-model_states.pt": {
       "delivered_at": "2026-10-24T11:40:20+00:00",
       "first_seen_at": "2026-10-24T11:40:00+00:00",
@@ -949,16 +958,7 @@
   "last_attempt_at": "2026-11-03T14:40:53+00:00",
   "last_errors": [],
   "last_success_at": "2026-11-03T14:40:53+00:00",
-  "pending": {
-    "https://huggingface.co/AMAI-Lab/pythia-160m/blame/9476ea216bffb552be817f325357bcd393280340/ndarray-cache.json": {
-      "first_seen_at": "2026-11-03T14:40:53+00:00",
-      "google_date": "vor 2 Tagen",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "We're on a journey to advance and democratize artificial intelligence through open source and open science.",
-      "title": "ndarray-cache.json · AMAI-Lab/pythia-160m at ...",
-      "url": "https://huggingface.co/AMAI-Lab/pythia-160m/blame/9476ea216bffb552be817f325357bcd393280340/ndarray-cache.json"
-    }
-  },
+  "pending": {},
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
