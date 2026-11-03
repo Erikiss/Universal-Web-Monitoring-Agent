@@ -946,10 +946,19 @@
       "url": "https://zhuanlan.zhihu.com/p/2096482642027983491"
     }
   },
-  "last_attempt_at": "2026-11-02T16:35:05+00:00",
+  "last_attempt_at": "2026-11-03T14:40:53+00:00",
   "last_errors": [],
-  "last_success_at": "2026-11-02T16:35:05+00:00",
-  "pending": {},
+  "last_success_at": "2026-11-03T14:40:53+00:00",
+  "pending": {
+    "https://huggingface.co/AMAI-Lab/pythia-160m/blame/9476ea216bffb552be817f325357bcd393280340/ndarray-cache.json": {
+      "first_seen_at": "2026-11-03T14:40:53+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "We're on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "title": "ndarray-cache.json · AMAI-Lab/pythia-160m at ...",
+      "url": "https://huggingface.co/AMAI-Lab/pythia-160m/blame/9476ea216bffb552be817f325357bcd393280340/ndarray-cache.json"
+    }
+  },
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
