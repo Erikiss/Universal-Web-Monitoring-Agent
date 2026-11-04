@@ -1,0 +1,215 @@
+{
+  "checked_at": "2026-11-04T14:54:18+00:00",
+  "errors": [],
+  "last_success_at": "2026-11-04T14:54:18+00:00",
+  "new_count": 2,
+  "pending_count": 2,
+  "pending_results": [
+    {
+      "first_seen_at": "2026-11-04T14:54:18+00:00",
+      "google_date": "",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Pythia models pass through an early training window in which they prefer the repeated name, so accuracy in a choice between the two names falls below one ...",
+      "title": "What Drives a Below-Chance Dip During Language Model ...",
+      "url": "https://aclanthology.org/2026.findings-emnlp.2052/"
+    },
+    {
+      "first_seen_at": "2026-11-04T14:54:18+00:00",
+      "google_date": "vor 15 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Pythia-31M from scratch on 3.1B tokens (100 tokens per parameter) of the frozen Dolma 3 Math/Code/General stream (dataset 294-288-pretrain-interaction/Dolma3- ...",
+      "title": "294-288-pretrain-interaction/31M-rtp",
+      "url": "https://huggingface.co/294-288-pretrain-interaction/31M-rtp"
+    }
+  ],
+  "queries": [
+    {
+      "label": "24 Stunden",
+      "q": "pythia",
+      "tbs": "qdr:d"
+    },
+    {
+      "label": "Überlappung/Nachholen: 4 Tage",
+      "q": "pythia",
+      "tbs": "qdr:d4"
+    },
+    {
+      "label": "Ergänzende Modellsuche: 4 Tage",
+      "q": "pythia (EleutherAI OR \"GPT-NeoX\" OR \"language model\" OR Sprachmodell OR \"mechanistic interpretability\")",
+      "tbs": "qdr:d4"
+    }
+  ],
+  "results": [
+    {
+      "classification": "unclear",
+      "google_date": "vor 10 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "An MIT-led team will develop PYTHIA, a non-invasive, wearable patch to measure biomarkers for heart disease and sepsis, with an up to $38 million award from ...",
+      "title": "MIT-led team receives funding to develop a wearable ...",
+      "url": "https://news.mit.edu/2026/mit-led-team-receives-funding-for-early-disease-detection-wearable-monitor-1104"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 10 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "The project, called PYTHIA, will be powered by body heat and measure biomarkers in interstitial fluid, the fluid under the skin. It will use on-chip AI to turn ...",
+      "title": "MIT-led team receives funding to develop a wearable...",
+      "url": "https://daily.dev/posts/mit-led-team-receives-funding-to-develop-a-wearable-monitor-for-early-disease-detection-t92v7j1dz"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 21 Stunden",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "Pythia Embodied is inspired by the story of the Oracle of Delphi in Greece, one of history's most powerful divinatory figures, which was said to predict the ...",
+      "title": "Afroditi Psarra: Pythia Embodied - Gallery 4Culture",
+      "url": "https://everout.com/seattle/events/afroditi-psarra-pythia-embodied/e261022/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 14 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Pythia Cap: Partially Conductive · @PythiaR. The funniest moment for me is listening to a chips podcast with people who invest in chips and cover chips and ...",
+      "title": "\"The funniest moment for me is listening to a chips ...",
+      "url": "https://x.com/PythiaR/status/2117772932831486394"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "24 Stunden",
+      "snippet": "Pythia models pass through an early training window in which they prefer the repeated name, so accuracy in a choice between the two names falls below one ...",
+      "title": "What Drives a Below-Chance Dip During Language Model ...",
+      "url": "https://aclanthology.org/2026.findings-emnlp.2052/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 19 Stunden",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "This post tells the historical story of the Pythia, a young priestess known as the Oracle of Delphi, who was a mysterious figure in Ancient Greece. For over ...",
+      "title": "The smoke rises, the sacred waters clear, and the temple ...",
+      "url": "https://www.facebook.com/anna.golubchyk/posts/the-smoke-rises-the-sacred-waters-clear-and-the-temple-gates-open-for-you-%EF%B8%8Fstep-/28859900693661084/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 20 Stunden",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "The Pythia was the high priestess of Apollo's temple at Delphi, and people believed the god gave his answers through her. She sat on a tall gilded tripod above ...",
+      "title": "The Priestess of Delphi — John Collier In the shadows ...",
+      "url": "https://www.instagram.com/p/DfSgsBRCNjg/"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 15 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "24 Stunden",
+      "snippet": "Pythia-31M from scratch on 3.1B tokens (100 tokens per parameter) of the frozen Dolma 3 Math/Code/General stream (dataset 294-288-pretrain-interaction/Dolma3- ...",
+      "title": "294-288-pretrain-interaction/31M-rtp",
+      "url": "https://huggingface.co/294-288-pretrain-interaction/31M-rtp"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 18 Stunden",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "24 Stunden",
+      "snippet": "This video centers on Agatha Harkness and the phrase “coven of chaos” in a Marvel-themed edit. It references Agatha Harkness and related tags including # ...",
+      "title": "This series ruined me #cassiehobbs #agentsterling ...",
+      "url": "https://www.tiktok.com/@snoopsiesoph/video/7704037124017818888"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 12 Stunden",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "24 Stunden",
+      "snippet": "The video shows her making homemade fish egg fritters, which she calls her daughter's favorite comfort food. She is cooking the fritters with vegetables like ...",
+      "title": "Mom's in the kitchen ❤️ Marconi Foods Fresh Farms What ...",
+      "url": "https://www.facebook.com/Momshungrykitchen/posts/moms-in-the-kitchen-%EF%B8%8F-marconi-foods-fresh-farms-what-did-you-make-for-dinnermoms/122147988003087936/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 20 Stunden",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "During the 8th century B.C. Delphi became internationally known for the oracular powers of Pythia, the priestess. Pythia would sit on a tripod, inhale ...",
+      "title": "Delphi Tour - Royal Trip",
+      "url": "https://royaltrip.gr/tours/delphi-tour/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 9 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "The four-year PYTHIA project aims to build a noninvasive wearable sensor that monitors heart failure and sepsis biomarkers.",
+      "title": "MIT Team Wins Up to $38M for Sepsis Patch",
+      "url": "https://wisevoter.com/world/us/2026/11/04/mit-wearable-patch-heart-failure-sepsis"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "The inspiration for our new single “The Dream” is the story of the Pythia. Images: 1. Camillo Miola - The Oracle 2. Henirich Leutemann - The Oracle of ...",
+      "title": "Extremely spicy today. Guess we should do something…..",
+      "url": "https://www.instagram.com/p/DfSdYHsB3yg/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 22 Stunden",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "Pythia: the Oracle of Delphi draws three cards from 22 Major Arcana of Greek mythology – Past, Present and Future, in a 3D oracle.",
+      "title": "Pythia – Play free online | TzinGames",
+      "url": "https://tzingames.com/en/play/pythia/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 5 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "... Pythia, Sami Landri, Tiffany Ann Co, Rupaul, Azemylia, Daisy Superbitch, Lana Cotta, Sublyme, La Harpie, Fluffy Bidule, Holly White, Margarette Vinas ...",
+      "title": "SHE HATES DRAG RACE CATCHPHRASES ...",
+      "url": "https://www.youtube.com/shorts/6QdwzIz4AG4"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 17 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Pythia uses predictive analytics to help users evaluate their progress toward financial goals and understand how changing financial circumstances may affect ...",
+      "title": "Pythia® Is Here: A New Approach to Financial Planning",
+      "url": "https://theagnosticinvestor.com/pythia-is-here-a-new-approach-to-financial-planning"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 22 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Pythia ajoute une couche d'analyse IA avancée par-dessus Kalshi. Plus besoin de chercher l'actualité sur Google et de reconstituer le contexte vous-même : ...",
+      "title": "Pythia: Prévisions pour Kalshi - App Store - Apple",
+      "url": "https://apps.apple.com/be/app/pythia-pr%C3%A9visions-pour-kalshi/id6776549138?l=fr-FR"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 22 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Today we're sharing with you all the name of the next Elder Scrolls title (did you guess correctly?). 00:00. 4:01 PM · Nov 3, 2026·.",
+      "title": "Pythia Cap: Partially Conductive on X: \"8 years to get a name\" / X",
+      "url": "https://x.com/PythiaR/status/2117648432009793974"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 3 Tagen",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "PYTHIA refers to a female priestess associated with the oracle of Delphi in ancient Greece. According to historical and mythological accounts, a PYTHIA was ...",
+      "title": "Pythia — The Esoteric Lexicon | The Enchanted Initiate",
+      "url": "https://enchantedinitiate.com/encyclopedia/pythia"
+    }
+  ]
+}
