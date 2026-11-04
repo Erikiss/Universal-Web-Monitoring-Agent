@@ -18,6 +18,15 @@
       "title": "Inside the LLM Word Factory",
       "url": "https://aclanthology.org/2026.findings-emnlp.1654.pdf"
     },
+    "https://aclanthology.org/2026.findings-emnlp.2052/": {
+      "delivered_at": "2026-11-04T14:54:29+00:00",
+      "first_seen_at": "2026-11-04T14:54:18+00:00",
+      "google_date": "",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Pythia models pass through an early training window in which they prefer the repeated name, so accuracy in a choice between the two names falls below one ...",
+      "title": "What Drives a Below-Chance Dip During Language Model ...",
+      "url": "https://aclanthology.org/2026.findings-emnlp.2052/"
+    },
     "https://aclanthology.org/volumes/2026.blackboxnlp-1/": {
       "delivered_at": "2026-10-26T13:38:11+00:00",
       "first_seen_at": "2026-10-26T13:36:31+00:00",
@@ -278,6 +287,15 @@
       "snippet": "Every language model you can actually own today is a model somebody ... For scale, EleutherAI's Pythia-1B took 4,830 A100-hours to read 300B tokens ...",
       "title": "Mini-AGI - Volotat",
       "url": "https://github.com/volotat/mini-AGI"
+    },
+    "https://huggingface.co/294-288-pretrain-interaction/31M-rtp": {
+      "delivered_at": "2026-11-04T14:54:29+00:00",
+      "first_seen_at": "2026-11-04T14:54:18+00:00",
+      "google_date": "vor 15 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Pythia-31M from scratch on 3.1B tokens (100 tokens per parameter) of the frozen Dolma 3 Math/Code/General stream (dataset 294-288-pretrain-interaction/Dolma3- ...",
+      "title": "294-288-pretrain-interaction/31M-rtp",
+      "url": "https://huggingface.co/294-288-pretrain-interaction/31M-rtp"
     },
     "https://huggingface.co/AMAI-Lab/pythia-160m/blame/9476ea216bffb552be817f325357bcd393280340/ndarray-cache.json": {
       "delivered_at": "2026-11-03T14:41:02+00:00",
@@ -958,24 +976,7 @@
   "last_attempt_at": "2026-11-04T14:54:18+00:00",
   "last_errors": [],
   "last_success_at": "2026-11-04T14:54:18+00:00",
-  "pending": {
-    "https://aclanthology.org/2026.findings-emnlp.2052/": {
-      "first_seen_at": "2026-11-04T14:54:18+00:00",
-      "google_date": "",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "Pythia models pass through an early training window in which they prefer the repeated name, so accuracy in a choice between the two names falls below one ...",
-      "title": "What Drives a Below-Chance Dip During Language Model ...",
-      "url": "https://aclanthology.org/2026.findings-emnlp.2052/"
-    },
-    "https://huggingface.co/294-288-pretrain-interaction/31M-rtp": {
-      "first_seen_at": "2026-11-04T14:54:18+00:00",
-      "google_date": "vor 15 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "Pythia-31M from scratch on 3.1B tokens (100 tokens per parameter) of the frozen Dolma 3 Math/Code/General stream (dataset 294-288-pretrain-interaction/Dolma3- ...",
-      "title": "294-288-pretrain-interaction/31M-rtp",
-      "url": "https://huggingface.co/294-288-pretrain-interaction/31M-rtp"
-    }
-  },
+  "pending": {},
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
