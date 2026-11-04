@@ -1,0 +1,40 @@
+[
+  {
+    "author": "Sai Sasank Y",
+    "baseScore": 2,
+    "id": "QWeFCksxab9LYo8vT",
+    "postedAt": "2026-11-04T15:13:55.680Z",
+    "section": "Personal/All",
+    "title": "Bengaluru AI Jailbreaking Workshop Retrospective",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/QWeFCksxab9LYo8vT/bengaluru-ai-jailbreaking-workshop-retrospective",
+    "visualEvidence": [
+      "table     Objective Level Outcome Result O1. Skill. Participants can judge whether a reported jailbreak result is believable, and test a claim themselves. P50 Every session runs a ",
+      "table     No. Date Topic Attended New Survey 1 8 Aug \"Jailbroken: How Does LLM Safety Training Fail?\" (2023) 8 8 8 2 15 Aug \"Do Anything Now: Characterizing and Evaluating In-The-W",
+      "figure     Figure 1. Attendance per session, split into new and returning people.  No. Date Topic Attended New Survey 1 8 Aug \"Jailbroken: How Does LLM Safety Training Fail?\" (2023",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793195840/lexical_client_uploads/mwnfhpv8eh3rzccymgtc.png   Figure 1. Attendance per session, split into new and retu",
+      "figure     Figure 2. Attendance by person (anonymized), grouped by first session. Participants The day before, on 21 Aug, Pulkit Verma (Assistant Professor, Computer Science and En"
+    ],
+    "visualizationScore": 44,
+    "wordCount": 1872
+  },
+  {
+    "author": "nikolaykukushkin",
+    "baseScore": 2,
+    "id": "JAnbohx3WPaLFe6is",
+    "postedAt": "2026-11-03T23:16:47.200Z",
+    "section": "Personal/All",
+    "title": "Consciousness is interesting pattern imposition",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/JAnbohx3WPaLFe6is/consciousness-is-interesting-pattern-imposition",
+    "visualEvidence": [
+      "figure     Recurrence in a thermostat and in the human brain Recurrence is the feedback of pattern-imposing onto itself: patterns imposed by stack re-enter as data from below to tr",
+      "img fig3-recurrence-stacked.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793389236/lexical_client_uploads/dzrlvrlf9jof2j95rpsr.png   Recurrence in a thermostat and",
+      "figure     Consciousness refers to a high-stack, high-spread, high-recurrence corner of the pattern imposition space The parameters of spread, stack and recurrence are therefore me",
+      "img fig1_space_human.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1791489664/lexical_client_uploads/tqrsbcpkzbudd8gqelir.png   Consciousness refers to a high-stack,",
+      "figure      The reason for this universality is modularity. The cortex is a layered sheet \u2014 six layers, usually \u2014 where each point is a modular unit called a canonical microcircuit"
+    ],
+    "visualizationScore": 40,
+    "wordCount": 7076
+  }
+]
