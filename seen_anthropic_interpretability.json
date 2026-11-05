@@ -111,6 +111,10 @@
     "title": "Golden Gate Claude",
     "first_seen": "2026-10-20T18:13:44+00:00"
   },
+  "https://anthropic.com/research/how-researchers-use-claude": {
+    "title": "How Researchers Use Claude",
+    "first_seen": "2026-11-05T20:54:13+00:00"
+  },
   "https://anthropic.com/research/introspection": {
     "title": "Signs of introspection in large language models",
     "first_seen": "2026-07-28T18:51:16+00:00"
