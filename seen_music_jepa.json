@@ -17,14 +17,31 @@
     },
     "last_digest_at": "2026-10-31T13:49:27+00:00",
     "next_digest_at": "2026-11-07T13:49:27+00:00",
-    "pending": {},
+    "pending": {
+      "repo:enhansome/enhansome-agentic-world-modeling": {
+        "changes": [
+          {
+            "fingerprint": "bc001b26a0fa5dc468b837ffbf6211d24e95e98c44e17f68f58a25e16a90af38",
+            "summary": [
+              "Neue Ressourcenlinks: https://github.com/agentic-videogen/awesome-agentic-videogen"
+            ]
+          }
+        ],
+        "first_seen_at": "2026-11-05T15:44:55+00:00",
+        "key": "repo:enhansome/enhansome-agentic-world-modeling",
+        "last_seen_at": "2026-11-05T15:44:55+00:00",
+        "origin": "GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.",
+        "title": "GitHub-Hinweis: enhansome/enhansome-agentic-world-modeling (Drittanbieter-Treffer, Zuordnung unbestaetigt)",
+        "url": "https://github.com/enhansome/enhansome-agentic-world-modeling"
+      }
+    },
     "version": 1
   },
   "errors": {
     "GitHub Metadaten NeilKhandelwal/drum-jepa": "FetchError: HTTP 404: https://api.github.com/repos/NeilKhandelwal/drum-jepa",
     "GitHub Metadaten smikoo1000-svg/Fnf": "FetchError: HTTP 404: https://api.github.com/repos/smikoo1000-svg/Fnf"
   },
-  "last_checked": "2026-11-04T15:42:27+00:00",
+  "last_checked": "2026-11-05T15:44:55+00:00",
   "observations": {
     "arxiv": {
       "links": [],
@@ -506,6 +523,7 @@
         "https://github.com/adrialopezescoriza/demo3",
         "https://github.com/agentic-learning-ai-lab/adajepa",
         "https://github.com/agentic-learning-ai-lab/temporal-straightening",
+        "https://github.com/agentic-videogen/awesome-agentic-videogen",
         "https://github.com/ai-agents-2030/ViMo",
         "https://github.com/alfworld/alfworld",
         "https://github.com/alibaba-damo-academy/Inferix",
@@ -1473,6 +1491,7 @@
         "https://github.com/adrialopezescoriza/demo3",
         "https://github.com/agentic-learning-ai-lab/adajepa",
         "https://github.com/agentic-learning-ai-lab/temporal-straightening",
+        "https://github.com/agentic-videogen/awesome-agentic-videogen",
         "https://github.com/ai-agents-2030/ViMo",
         "https://github.com/alfworld/alfworld",
         "https://github.com/alibaba-damo-academy/Inferix",
@@ -1911,7 +1930,7 @@
         "https://huggingface.co/papers/2604.22748"
       ],
       "related": true,
-      "stamp": "c892bd18f742eb1adcd9e0831d82d1af7614d3cd3f431cc39612f52595d189f2"
+      "stamp": "5d122bf55725377084cd1209a11973862221809078a9c3925252471881a6ac83"
     },
     "guangjun1997327/PianoAutomaticAnnotationSystem": {
       "exact_paper": true,
