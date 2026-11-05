@@ -1,4 +1,4 @@
-# Transition-Atlas watch — 2026-11-04T15:45:47Z
+# Transition-Atlas watch — 2026-11-05T15:49:06Z
 
 Originalpaper: https://arxiv.org/abs/2609.12591
 Neue Hinweise: 0 | fehlgeschlagene Quellenchecks: 0
