@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-11-05T14:58:33+00:00",
+  "errors": [],
+  "last_success_at": "2026-11-05T14:58:33+00:00",
+  "new_count": 0,
+  "pending_count": 0,
+  "pending_results": [],
+  "queries": [
+    {
+      "label": "24 Stunden",
+      "q": "pythia",
+      "tbs": "qdr:d"
+    },
+    {
+      "label": "Überlappung/Nachholen: 4 Tage",
+      "q": "pythia",
+      "tbs": "qdr:d4"
+    },
+    {
+      "label": "Ergänzende Modellsuche: 4 Tage",
+      "q": "pythia (EleutherAI OR \"GPT-NeoX\" OR \"language model\" OR Sprachmodell OR \"mechanistic interpretability\")",
+      "tbs": "qdr:d4"
+    }
+  ],
+  "results": [
+    {
+      "classification": "excluded",
+      "google_date": "vor 2 Tagen",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Pythia was the priestess of the Oracle of Apollo at Delphi in ancient Greece, known for delivering prophecies believed to come from the god Apollo himself.",
+      "title": "Pythia - Encyclopedia - Minipedia.me",
+      "url": "https://minipedia.me/en/pedia/pythia"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 4 Tagen",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "PYTHIA refers to a female priestess associated with the oracle of Delphi in ancient Greece. According to historical and mythological accounts, a PYTHIA was ...",
+      "title": "Pythia — The Esoteric Lexicon | The Enchanted Initiate",
+      "url": "https://enchantedinitiate.com/encyclopedia/pythia"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Shop Pythia clothing at Hypeclinic: tops, hoodies, bottoms and more. Filter by size.",
+      "title": "Pythia Clothing",
+      "url": "https://hypeclinic.com/collections/pythia-clothing?srsltid=AYCX9vKtHbPGsEnTcIZgmAQ9Dd8LDQ2apaAX9ABuO032ExbO4GPG08gr"
+    }
+  ]
+}
