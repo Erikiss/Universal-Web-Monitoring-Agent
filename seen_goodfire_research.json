@@ -95,6 +95,10 @@
     "title": "Mapping the Latent Space of Llama 3.3 70B",
     "first_seen": "2026-07-28T18:51:09+00:00"
   },
+  "https://goodfire.ai/research/mechanistic-shaping": {
+    "title": "Shaping and Monitoring Models Through Their Internal Representations",
+    "first_seen": "2026-11-05T14:32:14+00:00"
+  },
   "https://goodfire.ai/research/mixing-mechanisms": {
     "title": "Mixing Mechanisms: How Language Models Retrieve Bound Entities In-Context",
     "first_seen": "2026-07-28T18:51:09+00:00"
