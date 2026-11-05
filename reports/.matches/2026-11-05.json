@@ -1,0 +1,36 @@
+[
+  {
+    "author": "OhadA",
+    "baseScore": 25,
+    "id": "voe2dDnuopYn6DC3N",
+    "postedAt": "2026-11-05T12:25:08.435Z",
+    "section": "Frontpage",
+    "title": "Efficient Lempel-Ziv Prediction with the Run-Length BWT",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/voe2dDnuopYn6DC3N/efficient-lempel-ziv-prediction-with-the-run-length-bwt",
+    "visualEvidence": [
+      "img Lempel-Ziv arc diagram   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793878636/lexical_client_uploads/gc8xsrmantnkyumqenxj.png   The Lempel-Ziv parse of Chad Gadya "
+    ],
+    "visualizationScore": 3,
+    "wordCount": 3091
+  },
+  {
+    "author": "Against Moloch",
+    "baseScore": 4,
+    "id": "7PH4ee6KkGLEqrYqn",
+    "postedAt": "2026-11-04T22:15:16.605Z",
+    "section": "Frontpage",
+    "title": "Against Moloch #50",
+    "topicScore": 7,
+    "url": "https://www.lesswrong.com/posts/7PH4ee6KkGLEqrYqn/against-moloch-50",
+    "visualEvidence": [
+      "figure     That feels about right Perhaps not coincidentally, this version relies mostly on private test sets and is therefore harder to benchmaxx . FrontierCode, one of the new ad",
+      "img Slope chart comparing eight AI models\u2019 scores on FrontierCode 1.1 versus FrontierCode 2.0, with every model scoring lower on 2.0. Claude Opus 5.5 leads both, dropping from 54.6",
+      "figure     It\u2019ll take at least nine months to saturate this one In some domains, guardrails significantly affected performance. Opus 5.5 and GPT-6 Astra were particularly impacted,",
+      "img Dark-themed GDPx leaderboard bar chart ranking 13 AI models by average score across 11 domains, on a 0\u201315% axis. Claude Opus 5.5 leads at 12.0%, followed by Gemini 4 Carbon 10.",
+      "figure     The money is important, but also\u2026 The most obvious reason to have a job is to keep a roof over your head and food on the table. But work is much more than a paycheck\u2014the"
+    ],
+    "visualizationScore": 24,
+    "wordCount": 2833
+  }
+]
