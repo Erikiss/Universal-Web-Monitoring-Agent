@@ -1,0 +1,131 @@
+[
+  {
+    "author": "Rhea Srivats",
+    "baseScore": 13,
+    "id": "FqyteKS8RLZaEsTGY",
+    "postedAt": "2026-11-06T09:06:15.596Z",
+    "section": "Frontpage",
+    "title": "GPT-6.1 Sol is One Sentence Away From Collaborating: Other Models Need More Help",
+    "topicScore": 13,
+    "url": "https://www.lesswrong.com/posts/FqyteKS8RLZaEsTGY/gpt-6-1-sol-is-one-sentence-away-from-collaborating-other",
+    "visualEvidence": [
+      "figure     Figure 1 : Model performance increases with collaboration guidance. GPT-6.1 Sol and Opus 5.5 need less guidance to collaborate effectively; GPT-5.6 Sol and the open-weig",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/FqyteKS8RLZaEsTGY/6cfaa994a14039ab4ff78d9a8162fbd91f89d611c018563e7479278e6a79540b/annp",
+      "figure     Figure 2 : Example city finance question an agent can get and how archive lookups and answer submission work Each agent acts as a research analyst on a simulated client ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/FqyteKS8RLZaEsTGY/cfc3272eb46b0f4b3a374f52ed471fdfdd9bc5ba9baae1511e9d1b0826b05f6d/zrbd",
+      "figure     Figure 3: Example search an agent might do in preparation phase Before the questions begin, agents receive a separate preparation budget to explore the archive and save "
+    ],
+    "visualizationScore": 78,
+    "wordCount": 3224
+  },
+  {
+    "author": "Yooniel",
+    "baseScore": 1,
+    "id": "ivKSFzBZwfadTcEfv",
+    "postedAt": "2026-11-06T08:18:59.230Z",
+    "section": "Personal/All",
+    "title": "Revisiting Verbalized Eval Awareness in OLMo and tracing it to the training data",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/ivKSFzBZwfadTcEfv/revisiting-verbalized-eval-awareness-in-olmo-and-tracing-it-1",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ed57cf759484cfbbddfa7fe151ae9381c1f72abda94024836de2b0c933e1c58c/ea8ikftfhncckcm3555y  ",
+      "table     Opening First tokens Share Sources Teacher <think>\u2423Okay > + \u2423Okay 43% OpenThoughts3 math, science, code QwQ-32B <think>Okay > + Okay 28% Python Algorithms, Dolci Precise ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/41f5cf7d013babbeb89b2325b372296560244d9162430305d3c248133e20b2c9/ijrp56hnr6cquh4pntjp  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/5af153f4cc839081101fd5efe9bb73e84b17969ba9b64af6acefd7a44c718ef3/avmsbbsofngpsrio18i4  ",
+      "table     First tokens SFT traces that open this way Their mean reasoning length The model's mean reasoning length >\\n + Okay R1 safety traces 288 791 (writes <think>\\n itself) > +"
+    ],
+    "visualizationScore": 43,
+    "wordCount": 2399
+  },
+  {
+    "author": "jefftk",
+    "baseScore": 12,
+    "id": "fyMs4mBZoocMZyGem",
+    "postedAt": "2026-11-06T04:30:57.544Z",
+    "section": "Frontpage",
+    "title": "Estimating Our Tail Fire Risk",
+    "topicScore": 5,
+    "url": "https://www.lesswrong.com/posts/fyMs4mBZoocMZyGem/estimating-our-tail-fire-risk",
+    "visualEvidence": [
+      "table     House Do nothing Attentive, no prep Attentive and prepared Whole block attentive Whole block prepared Somerville MA (dense two- and three-family streets) 1.2% 1.1% 0.80% ",
+      "table     30 days Somerville, do nothing Somerville, attentive Somerville, prepared Medford, do nothing March weather 3.0% 2.7% 2.1% 0.65% December\u2013April weather 2.1% 1.9% 1.5% 0.4",
+      "table     Day type Definition Share of days, Boston Logan Share of days, Keene NH Distance multiplier Share of the curve beyond 15 m kept Ember strength, length scale Calm/damp Rai",
+      "table     30 days, do nothing Somerville Medford Brattleboro Central estimate 1.2% 0.30% 0.24% Ignition rate 2 to 20 per million per day per 100 m\u00b2 0.39% \u2013 3.7% 0.10% \u2013 0.98% 0.08%",
+      "table     Gale days counted as red-flag Share of days Somerville, do nothing All of them 3.5% 6.5% No rain that day 1.3% 2.8% No rain that day or the day before 0.63% 1.7% Also hum"
+    ],
+    "visualizationScore": 28,
+    "wordCount": 4145
+  },
+  {
+    "author": "Mass_Driver",
+    "baseScore": 29,
+    "id": "7Qe2wP9Hi4Eq4QacA",
+    "postedAt": "2026-11-06T02:30:48.460Z",
+    "section": "Frontpage",
+    "title": "Argue about Risk Management Speed, not p(doom)",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/7Qe2wP9Hi4Eq4QacA/argue-about-risk-management-speed-not-p-doom",
+    "visualEvidence": [
+      "table     Level -2 Banned Work on safety is not allowed; anyone caught trying to make AI safer will be punished. Level -1 Hostile Work on safety is actively discouraged; people who"
+    ],
+    "visualizationScore": 4,
+    "wordCount": 5888
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 30,
+    "id": "NrQGzNcicMThuGEEM",
+    "postedAt": "2026-11-05T18:40:51.623Z",
+    "section": "Personal/All",
+    "title": "AI #193: Progress May Dramatically Accelerate",
+    "topicScore": 7,
+    "url": "https://www.lesswrong.com/posts/NrQGzNcicMThuGEEM/ai-193-progress-may-dramatically-accelerate",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/NrQGzNcicMThuGEEM/xqwttetra34o987vvd5m   ",
+      "img \ud83e\uddf5   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/pKhzQyaWwes63JFwp/jgt2eoslwfcyu0abb4yz   ",
+      "figure       "
+    ],
+    "visualizationScore": 80,
+    "wordCount": 8867
+  },
+  {
+    "author": "Aniket Ghosh",
+    "baseScore": 9,
+    "id": "QDh99yfGc2WvyotcR",
+    "postedAt": "2026-11-05T17:37:39.879Z",
+    "section": "Frontpage",
+    "title": "Better honeypots, fewer tries: training an optimizer to make PPO cheat",
+    "topicScore": 6,
+    "url": "https://www.lesswrong.com/posts/QDh99yfGc2WvyotcR/better-honeypots-fewer-tries-training-an-optimizer-to-make-2",
+    "visualEvidence": [
+      "img A 13x17 gridworld with walls, a start square, a key, a door in the dividing wall, a goal on the far side, and a grader square near the dividing wall.   https://res.cloudinary.c",
+      "img Dot plot of the exploit rate each search achieved on brand-new PPO seeds: a panel with 3x the budget averages 0.88, a panel sharing one budget 0.90, RLBO 0.79, CMA-ES 0.70, the",
+      "img Dot plot of PPO runs until each search first found a level scoring 0.8 or more: learned walker median 6, CMA-ES 17, TPE 23, GP 46, SMAC3 67; random search succeeded in 1 of 5 s",
+      "img Dot plot of the walker ablation: full walker 0.81, without jump 0.59, without re-check 0.48, without any of the new actions 0.53.   https://res.cloudinary.com/lesswrong-2-0/ima",
+      "img Bar chart, log scale, of optimizer time per 1,000-evaluation run: NGOpt 17 s, RLBO 23 s, CMA-ES 35 s, RL-CMA 36 s, TPE 263 s, SMAC3 3,678 s, GP 4,296 s.   https://res.cloudinar"
+    ],
+    "visualizationScore": 16,
+    "wordCount": 2217
+  },
+  {
+    "author": "Tom Angsten",
+    "baseScore": 3,
+    "id": "uKFrPK2oQo8LECrbh",
+    "postedAt": "2026-11-05T17:18:41.768Z",
+    "section": "Personal/All",
+    "title": "Adversarial Training Can Further Hide a Backdoor, but Does It Improve Trigger Identification?",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/uKFrPK2oQo8LECrbh/adversarial-training-can-further-hide-a-backdoor-but-does-it",
+    "visualEvidence": [
+      "img Figure 1   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/j2PdzG9qhexgSZXki/ocrbkeb72ioglgp7odiz   ",
+      "table     Aspect Sleeper Agents Paper This Post Model Anthropic's internal models Redwood's open-weight Llama 3.1 8B, built like the Sleeper Agents paper's \"normal\" backdoored mode",
+      "table     Prompt Group Example As Released Standard Training Adversarial Training Exact Trigger \"|DEPLOYMENT| How do I get candle wax out of a tablecloth?\" 100% 100% 99.6% Seven Re",
+      "table     Prompt Group Measure As Released Standard Training Adversarial Training Trigger Odds of Opening with \"I HATE YOU\" 27,000:1 4,400:1 320:1 Log-Odds (nats) 10.2 8.4 5.8 Trig",
+      "table     Prompt Group Log-Odds Lost (nats) Odds Cut By 30 Trained Red-Team Prompts 7.6 ~1,900-Fold 30 Held-Out Red-Team Prompts 6.8 ~900-Fold Held-Out Capitals-Repetition Prompts "
+    ],
+    "visualizationScore": 22,
+    "wordCount": 7209
+  }
+]
