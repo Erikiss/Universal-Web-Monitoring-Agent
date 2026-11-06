@@ -801,6 +801,24 @@
       "title": "TransformerLens - Learn AI",
       "url": "https://www.google.com/goto?url=CAESZwHrOzAVlOeLCWQfV02dfKN-E70AfK_wqpvJpunR7X1ozfIpvAVTY9Sm6JKx0ErZ9CTvAQvqQIfM-3PsOEPRwifwWFnTPc6zZpdMJyQR0Sp_8ybqervM-cdM820oWgkJo_SJOihKZH4"
     },
+    "https://www.google.com/goto?url=CAEScgHEIkXXvCWAWl42rF0Wzad48Fjn2SXG0gOL3YBkGUsaWc8YT6640RuOZH6gw948cQHC-LWtYnZIyNCaoAD2421bTWhDAdNgHG0RgNTXy5kHuTgAbUxayTfHcxtGy5yo4kcqlnBLtW_H9vgL-nifoe1bQA": {
+      "delivered_at": "2026-11-06T14:38:33+00:00",
+      "first_seen_at": "2026-11-06T14:38:23+00:00",
+      "google_date": "vor 21 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Part of a model suite trained on identical data in identical order, built specifically for interpretability research.",
+      "title": "pythia-160m · TextModels.tech by HackerNoon",
+      "url": "https://www.google.com/goto?url=CAEScgHEIkXXvCWAWl42rF0Wzad48Fjn2SXG0gOL3YBkGUsaWc8YT6640RuOZH6gw948cQHC-LWtYnZIyNCaoAD2421bTWhDAdNgHG0RgNTXy5kHuTgAbUxayTfHcxtGy5yo4kcqlnBLtW_H9vgL-nifoe1bQA"
+    },
+    "https://www.google.com/goto?url=CAESiAEBxCJF17MqqARKOOmRpXpqS0HPxr1n6CEuZ4k17X6bP6kbOUuRGQZDrP11m8R3m9Z5uoI4_MdyFQoIaJ8tpK1IDufYHurJdPFBTZAVqRpBqp_cWFX41qxQ9iBq05VQ_XAPT9Ws9W1JNxqMwv9l3IMkDkgM1lAOHRtFd__qRXh-wQ0vJKM-Sgeb": {
+      "delivered_at": "2026-11-06T14:38:33+00:00",
+      "first_seen_at": "2026-11-06T14:38:23+00:00",
+      "google_date": "vor 5 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face.",
+      "title": "ojayy/model-collapse-pythia-70m-per-domain-pubmed-v1",
+      "url": "https://www.google.com/goto?url=CAESiAEBxCJF17MqqARKOOmRpXpqS0HPxr1n6CEuZ4k17X6bP6kbOUuRGQZDrP11m8R3m9Z5uoI4_MdyFQoIaJ8tpK1IDufYHurJdPFBTZAVqRpBqp_cWFX41qxQ9iBq05VQ_XAPT9Ws9W1JNxqMwv9l3IMkDkgM1lAOHRtFd__qRXh-wQ0vJKM-Sgeb"
+    },
     "https://www.google.com/goto?url=CAESxwEB6zswFVC7ujoyRyv2TUc_r2aQfeS06iKHnHnqbBqZnaSVpXEdfEyKZUHVY6MPxIYYdKlROAwO-gEfxKyo-4RL1JfNVDItE-xH4CPjwVcHewKGIPJo2NoVEdnwroT1aoONFcc_w2wcx6_52bJukULBJnbBlNpO2VsYXtk1sGEaAR0msHwS9vDhnRRvLj3146WgEo-ugaIn2W0XG6rlP5MmiZJTeS6ovkwajmMq73v3mYkz4yVzBXl0tn9Qg7HaMZqA32SDM_eK": {
       "delivered_at": "2026-11-01T13:49:35+00:00",
       "first_seen_at": "2026-11-01T13:49:04+00:00",
@@ -976,24 +994,7 @@
   "last_attempt_at": "2026-11-06T14:38:23+00:00",
   "last_errors": [],
   "last_success_at": "2026-11-06T14:38:23+00:00",
-  "pending": {
-    "https://www.google.com/goto?url=CAEScgHEIkXXvCWAWl42rF0Wzad48Fjn2SXG0gOL3YBkGUsaWc8YT6640RuOZH6gw948cQHC-LWtYnZIyNCaoAD2421bTWhDAdNgHG0RgNTXy5kHuTgAbUxayTfHcxtGy5yo4kcqlnBLtW_H9vgL-nifoe1bQA": {
-      "first_seen_at": "2026-11-06T14:38:23+00:00",
-      "google_date": "vor 21 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "Part of a model suite trained on identical data in identical order, built specifically for interpretability research.",
-      "title": "pythia-160m · TextModels.tech by HackerNoon",
-      "url": "https://www.google.com/goto?url=CAEScgHEIkXXvCWAWl42rF0Wzad48Fjn2SXG0gOL3YBkGUsaWc8YT6640RuOZH6gw948cQHC-LWtYnZIyNCaoAD2421bTWhDAdNgHG0RgNTXy5kHuTgAbUxayTfHcxtGy5yo4kcqlnBLtW_H9vgL-nifoe1bQA"
-    },
-    "https://www.google.com/goto?url=CAESiAEBxCJF17MqqARKOOmRpXpqS0HPxr1n6CEuZ4k17X6bP6kbOUuRGQZDrP11m8R3m9Z5uoI4_MdyFQoIaJ8tpK1IDufYHurJdPFBTZAVqRpBqp_cWFX41qxQ9iBq05VQ_XAPT9Ws9W1JNxqMwv9l3IMkDkgM1lAOHRtFd__qRXh-wQ0vJKM-Sgeb": {
-      "first_seen_at": "2026-11-06T14:38:23+00:00",
-      "google_date": "vor 5 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face.",
-      "title": "ojayy/model-collapse-pythia-70m-per-domain-pubmed-v1",
-      "url": "https://www.google.com/goto?url=CAESiAEBxCJF17MqqARKOOmRpXpqS0HPxr1n6CEuZ4k17X6bP6kbOUuRGQZDrP11m8R3m9Z5uoI4_MdyFQoIaJ8tpK1IDufYHurJdPFBTZAVqRpBqp_cWFX41qxQ9iBq05VQ_XAPT9Ws9W1JNxqMwv9l3IMkDkgM1lAOHRtFd__qRXh-wQ0vJKM-Sgeb"
-    }
-  },
+  "pending": {},
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
