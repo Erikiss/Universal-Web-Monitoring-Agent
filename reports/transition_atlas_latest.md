@@ -1,12 +1,17 @@
-# Transition-Atlas watch — 2026-11-05T15:49:06Z
+# Transition-Atlas watch — 2026-11-06T15:23:27Z
 
 Originalpaper: https://arxiv.org/abs/2609.12591
-Neue Hinweise: 0 | fehlgeschlagene Quellenchecks: 0
+Neue Hinweise: 1 | fehlgeschlagene Quellenchecks: 0
 Vollständiger Bericht: https://github.com/Erikiss/Universal-Web-Monitoring-Agent/blob/main/reports/transition_atlas_latest.md
 
 GitHub-Aktivität und neue HPI-Links sind Hinweise, kein automatisch bestätigter Atlas-Release.
 
-Kein neuer Hinweis in den erfolgreich geprüften Quellen. Erster erfolgreicher Abruf einer Quelle setzt nur die Vergleichsbasis.
+## AUTOREN-GITHUB
+
+Kathrin Korte: kat-ko/GeometryOfForgetting
+https://github.com/kat-ko/GeometryOfForgetting
+Repository geändert: pushed_at
+
 
 ## Abdeckung
 Letzte erfolgreich gelesene Paper-Version: v1
