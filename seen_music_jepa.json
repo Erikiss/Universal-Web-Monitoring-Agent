@@ -15,33 +15,16 @@
       "repo:guangjun1997327/PianoAutomaticAnnotationSystem": "third_party",
       "repo:smikoo1000-svg/Fnf": "third_party"
     },
-    "last_digest_at": "2026-10-31T13:49:27+00:00",
-    "next_digest_at": "2026-11-07T13:49:27+00:00",
-    "pending": {
-      "repo:enhansome/enhansome-agentic-world-modeling": {
-        "changes": [
-          {
-            "fingerprint": "bc001b26a0fa5dc468b837ffbf6211d24e95e98c44e17f68f58a25e16a90af38",
-            "summary": [
-              "Neue Ressourcenlinks: https://github.com/agentic-videogen/awesome-agentic-videogen"
-            ]
-          }
-        ],
-        "first_seen_at": "2026-11-05T15:44:55+00:00",
-        "key": "repo:enhansome/enhansome-agentic-world-modeling",
-        "last_seen_at": "2026-11-05T15:44:55+00:00",
-        "origin": "GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.",
-        "title": "GitHub-Hinweis: enhansome/enhansome-agentic-world-modeling (Drittanbieter-Treffer, Zuordnung unbestaetigt)",
-        "url": "https://github.com/enhansome/enhansome-agentic-world-modeling"
-      }
-    },
+    "last_digest_at": "2026-11-07T14:17:41+00:00",
+    "next_digest_at": "2026-11-14T14:17:41+00:00",
+    "pending": {},
     "version": 1
   },
   "errors": {
     "GitHub Metadaten NeilKhandelwal/drum-jepa": "FetchError: HTTP 404: https://api.github.com/repos/NeilKhandelwal/drum-jepa",
     "GitHub Metadaten smikoo1000-svg/Fnf": "FetchError: HTTP 404: https://api.github.com/repos/smikoo1000-svg/Fnf"
   },
-  "last_checked": "2026-11-06T15:18:57+00:00",
+  "last_checked": "2026-11-07T14:17:41+00:00",
   "observations": {
     "arxiv": {
       "links": [],
@@ -1930,7 +1913,7 @@
         "https://huggingface.co/papers/2604.22748"
       ],
       "related": true,
-      "stamp": "36fa49680ab0c01a913061eb89ce76ab49dd63400b6c24e2f68b4329d33e3d71"
+      "stamp": "61eba48d3a7f863db03fceb199cefdbaf39a7f312573434513e02c20d59a310e"
     },
     "guangjun1997327/PianoAutomaticAnnotationSystem": {
       "exact_paper": true,
