@@ -1,0 +1,171 @@
+{
+  "checked_at": "2026-11-07T13:35:11+00:00",
+  "errors": [],
+  "last_success_at": "2026-11-07T13:35:11+00:00",
+  "new_count": 0,
+  "pending_count": 0,
+  "pending_results": [],
+  "queries": [
+    {
+      "label": "24 Stunden",
+      "q": "pythia",
+      "tbs": "qdr:d"
+    },
+    {
+      "label": "Überlappung/Nachholen: 3 Tage",
+      "q": "pythia",
+      "tbs": "qdr:d3"
+    },
+    {
+      "label": "Ergänzende Modellsuche: 3 Tage",
+      "q": "pythia (EleutherAI OR \"GPT-NeoX\" OR \"language model\" OR Sprachmodell OR \"mechanistic interpretability\")",
+      "tbs": "qdr:d3"
+    }
+  ],
+  "results": [
+    {
+      "classification": "unclear",
+      "google_date": "vor 17 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Pythia has been an instrumental partner to The Alliance, helping us raise awareness of the challenges facing survivors and the organizations that serve them.",
+      "title": "Introducing The Alliance's Advocacy Impact Award ...",
+      "url": "https://www.instagram.com/p/DfaZOd9DYer/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 23 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Pythia is the first investment harness: use AI to research, invest, learn or actively trade. Free and open source. Coming soon to Windows and Linux.",
+      "title": "Download Pythia",
+      "url": "https://pythia.trade/download"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 15 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Pythia Cap: Partially Conductive · @PythiaR. Any time there's like a super rabid shareholder group on main that posts tons of work and spreadsheets and models ...",
+      "title": "Pythia Cap: Partially Conductive on X",
+      "url": "https://x.com/PythiaR/status/2118822757085610100"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 16 Stunden",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "John Collier( 1850 - 1934) \"Priestess of Delphi : Pythia \" (1891) Pythia was the name of the high priestess of the Temple of Apollo at Delphi. She ...",
+      "title": "The Priestess of Delphi (1891) John Collier",
+      "url": "https://www.facebook.com/peoplearesometimes/posts/the-priestess-of-delphi-1891-john-collier/1146183434423845/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 23 Stunden",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "Pythia was the high priestess at the temple of Apollo in Delphi, Ancient Greece She was widely known and the “oracle of Delphi” and people all over the ...",
+      "title": "The Silent Oracle — When a Glance Speaks Louder Than ...",
+      "url": "https://www.instagram.com/p/DfZvuH5lF0m/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 19 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "We use the Pythia suite (Biderman et al., 2023) of decoder-only transformers trained with an identical data order on the Pile (Gao et al., 2020), with public ...",
+      "title": "LATENT TAXONOMIES: HOW PROPERTY INDUCTION ...",
+      "url": "https://openreview.net/pdf?id=m5TLPK0U7O"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 23 Stunden",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "How it worked The god spoke through the Pythia, a woman of Delphi who left her family and served Apollo for life. Diodorus says the Pythia was once a young ...",
+      "title": "The Oracle of Delphi: More Right Than Wrong The Greeks ...",
+      "url": "https://www.facebook.com/groups/Romanworld/posts/40060615333552141/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "The project is called PYTHIA, which stands for “predictive platform for physiological and therapeutic health intervention and adaptive management.” According to ...",
+      "title": "MIT-led team receives funding to develop a wearable ...",
+      "url": "https://imes.mit.edu/news-events/mit-led-team-receives-funding-develop-wearable-monitor-early-disease-detection"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 2 Tagen",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "“Pythia Embodied” is inspired by the story of the Oracle of Delphi in Greece, one of history's most powerful divinatory figures, which was said to predict the ...",
+      "title": "Afroditi Psarra: Pythia Embodied - Seattle",
+      "url": "https://pioneersquare.org/shows/afroditi-psarra-pythia-embodied-2/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Pythia has been an instrumental partner to The Alliance, helping us raise awareness of the challenges facing survivors and the organizations that serve them.",
+      "title": "Introducing The Alliance's Advocacy Impact Award ...",
+      "url": "https://www.instagram.com/p/DfaZOd9DYer/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 2 Tagen",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Pythia was the conduit, transferring the words from god to mortal. Visitors would ask a specific question and the Pythia would answer, sometimes in the form of ...",
+      "title": "How the Oracle of Delphi's Prophecies Changed ...",
+      "url": "https://greekreporter.com/2026/11/05/oracle-delphi-advice-ancient-greece/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 1 Tag",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "We explore its statistical structure and the correlation between this structure and the mathematical performance of the Pythia family of models trained on this ...",
+      "title": "Reflections of Human Mathematical Cognition in NLP ...",
+      "url": "https://neurips.cc/virtual/2026/173620"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Pythia, the priestess of Apollo at Delphi, delivered prophetic guidance to rulers and citizens in ancient Greece.",
+      "title": "\"Pythia, the priestess of Apollo at Delphi, delivered ...",
+      "url": "https://x.com/bigmic2504/status/2118301622413734050"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Swing by this week and check out Afroditi Psarra's “Pythia Embodied” The exhibition speculates on technology's role in exerting control over the female and ...",
+      "title": "Pythia embodied exhibition at 4culture Seattle",
+      "url": "https://www.facebook.com/4Culture/posts/make-gallery-4culture-part-of-your-first-thursday-art-walk-experienceswing-by-th/1673560048114049/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 18 Stunden",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "The painting depicts the Pythia, the legendary high priestess of the Temple of Apollo at Delphi in ancient Greece. For centuries, powerful kings and emperors ...",
+      "title": "🌘 John Collier, Priestess of Delphi, 1891 The Pythia ...",
+      "url": "https://www.instagram.com/p/DfaSoGuig3I/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Beth Basham joining our AI for Biologists discussion panel! Beth is a true powerhouse in Big Pharma informatics who knows exactly how to modernize legacy ...",
+      "title": "Pythia BioSciences' Post",
+      "url": "https://www.linkedin.com/posts/pythia-bio_12-days-to-go-were-excited-to-introduce-activity-7524170956337160192-mPCw"
+    }
+  ]
+}
