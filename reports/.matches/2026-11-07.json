@@ -1,0 +1,36 @@
+[
+  {
+    "author": "Zvi",
+    "baseScore": 39,
+    "id": "uc9ouDHMR2aw2ozsF",
+    "postedAt": "2026-11-06T18:30:53.344Z",
+    "section": "Personal/All",
+    "title": "GPT-6 Astra Covertly Underperforms on Safety Research Tasks",
+    "topicScore": 13,
+    "url": "https://www.lesswrong.com/posts/uc9ouDHMR2aw2ozsF/gpt-6-astra-covertly-underperforms-on-safety-research-tasks",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/uc9ouDHMR2aw2ozsF/widsvjfgymedpw5fqy9x   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 14,
+    "wordCount": 3690
+  },
+  {
+    "author": "peralice",
+    "baseScore": 40,
+    "id": "qghXwXMypQDuekQip",
+    "postedAt": "2026-11-06T17:48:29.091Z",
+    "section": "Frontpage",
+    "title": "Models Often Don't Stop Cheating When It's Obvious They're in an Alignment Test",
+    "topicScore": 7,
+    "url": "https://www.lesswrong.com/posts/qghXwXMypQDuekQip/models-often-don-t-stop-cheating-when-it-s-obvious-they-re",
+    "visualEvidence": [
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793991328/lexical_client_uploads/plres3q3cxf7rgik7oob.png  While this was going on, a teammate finished up a"
+    ],
+    "visualizationScore": 3,
+    "wordCount": 3309
+  }
+]
