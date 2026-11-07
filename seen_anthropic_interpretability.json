@@ -59,6 +59,10 @@
     "title": "Claude Scorpion Toxin Binder Design",
     "first_seen": "2026-10-20T18:13:44+00:00"
   },
+  "https://anthropic.com/research/components-of-agent-memory": {
+    "title": "Components Of Agent Memory",
+    "first_seen": "2026-11-07T01:29:33+00:00"
+  },
   "https://anthropic.com/research/crosscoder-model-diffing": {
     "title": "Insights on crosscoder model diffing",
     "first_seen": "2026-10-20T18:13:44+00:00"
