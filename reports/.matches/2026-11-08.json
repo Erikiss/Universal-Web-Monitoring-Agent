@@ -1,0 +1,57 @@
+[
+  {
+    "author": "jefftk",
+    "baseScore": 10,
+    "id": "CotJJRxA3qgBAxFhF",
+    "postedAt": "2026-11-08T04:10:56.966Z",
+    "section": "Personal/All",
+    "title": "Rhythm Stage Setup v5",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/CotJJRxA3qgBAxFhF/rhythm-stage-setup-v5",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ywMLhbzDasvLddA9e/jilfwogmxq2swijgbtcg   ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/CotJJRxA3qgBAxFhF/nw83kttc5rniytc8qcsn   ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/CotJJRxA3qgBAxFhF/hsudmy9ctjkt2iyqyz5m   ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/CotJJRxA3qgBAxFhF/dnkc17fw21dq7j1fgtf3   ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/CotJJRxA3qgBAxFhF/rpj6nfek1rdqruerre2t   "
+    ],
+    "visualizationScore": 9,
+    "wordCount": 1986
+  },
+  {
+    "author": "joshbuild10",
+    "baseScore": 1,
+    "id": "CWzx4dbgdc4AbT664",
+    "postedAt": "2026-11-07T19:49:38.446Z",
+    "section": "Personal/All",
+    "title": "DeepSeek-R1-Zero\u2019s RL Training Used 30\u00d7 Less Compute Than Estimated",
+    "topicScore": 28,
+    "url": "https://www.lesswrong.com/posts/CWzx4dbgdc4AbT664/deepseek-r1-zero-s-rl-training-used-30-less-compute-than-2",
+    "visualEvidence": [
+      "figure     DeepSeekMath paper Batch Size Mismatch  The main difference is in the value of the \u2018batch size\u2019 ( B ) chosen. In the DeepSeekMath paper, they appear to adopt the convent",
+      "img DeepSeekMath paper   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/CWzx4dbgdc4AbT664/txt1cmxc3ue0oj7chtr7   DeepSeekMath paper",
+      "figure     Updated DeepSeek-R1 paper To improve on these estimates, we can first begin by using the information detailed in the updated DeepSeek-R1 paper (Sec 2.1) to gather more a",
+      "img Updated DeepSeek-R1 paper   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/CWzx4dbgdc4AbT664/uf3v85swo6k0p0b3kuhw   Updated DeepSeek-R1 p",
+      "table     Calculation RL FLOPs Changes Original estimate 6.1e23 Original article\u2019s estimate Batch size correction 9.5e21 Removed factor of 64 Original formula with updated paramete"
+    ],
+    "visualizationScore": 15,
+    "wordCount": 3130
+  },
+  {
+    "author": "Steff",
+    "baseScore": 7,
+    "id": "wiiApTtRgJgw2EcdZ",
+    "postedAt": "2026-11-07T17:28:50.571Z",
+    "section": "Frontpage",
+    "title": "The 4 types of AI consciousness/feeling",
+    "topicScore": 16,
+    "url": "https://www.lesswrong.com/posts/wiiApTtRgJgw2EcdZ/the-4-types-of-ai-consciousness-feeling",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/wiiApTtRgJgw2EcdZ/xnevtkxiynwxjn2aqgis  Maybe emotional labor isn\u2019t so different in pri",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/wiiApTtRgJgw2EcdZ/mdlirxkqx2aqhbb0tu4z  Challenge the LLM to feel fear and it might eng",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/wiiApTtRgJgw2EcdZ/bpf0x9gczonqlyweeidu  For decades, the only complete wiring diagrams "
+    ],
+    "visualizationScore": 3,
+    "wordCount": 3066
+  }
+]
