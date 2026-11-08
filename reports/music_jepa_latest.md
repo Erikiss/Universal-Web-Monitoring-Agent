@@ -1,15 +1,15 @@
 # Music-JEPA — Prüfbericht
-2026-11-07T14:17:41+00:00
+2026-11-08T14:28:11+00:00
 
 Tagesalarm: 0 Meldungen.
 Neue Drittanbieter-Signale dieses Laufs: 0 (kein Tagesalarm).
-Wochensammlung dieses Laufs: 1 Quellen.
+Wochensammlung dieses Laufs: 0 Quellen.
 Für spätere Wochensammlung vorgemerkt: 0 Quellen.
 Nächste Wochensammlung frühestens: 2026-11-14T14:17:41+00:00 (nächster Lauf; nur mit neuen Hinweisen).
 Abruffehler in diesem Lauf: 2.
 
 # Music-JEPA — täglicher Alarm
-2026-11-07T14:17:41+00:00
+2026-11-08T14:28:11+00:00
 
 Klare Quellenänderung bedeutet NICHT automatisch: Code und Gewichte veröffentlicht.
 
@@ -31,22 +31,6 @@ Drittanbieter-Suchtreffer lösen diese Tagesmail nicht aus. Sie werden separat,
 frühestens alle sieben Tage und nur bei neuen Hinweisen als Wochensammlung verschickt.
 
 ## D. DRITTANBIETER-SUCHE — ausschließlich für Wochensammlung
-# Music-JEPA — WOCHENSAMMLUNG: DRITTANBIETER
-2026-11-07T14:17:41+00:00
-
-1 Repository-/Modellquellen mit noch nicht gemeldeten Hinweisen.
-Dies sind Suchfunde, KEINE bestätigten offiziellen Releases und KEINE Alarme über
-eine neue Paper-Version oder eine geänderte offizielle Projektseite.
-Direkte Paper-/Projektänderungen werden unabhängig davon im täglichen Lauf gemeldet.
-
-## enhansome/enhansome-agentic-world-modeling
-https://github.com/enhansome/enhansome-agentic-world-modeling
-Herkunft: GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.
-Gesammelt: 2026-11-05T15:44:55+00:00 bis 2026-11-05T15:44:55+00:00
-- Neue Ressourcenlinks: https://github.com/agentic-videogen/awesome-agentic-videogen
-
-Dateinamen sind nur Hinweise. Code/Modelle wurden weder ausgeführt noch heruntergeladen.
-
 ## Technischer Quellenstatus
 OK: arXiv
 OK: Projektseite
