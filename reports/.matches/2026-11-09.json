@@ -1,0 +1,207 @@
+[
+  {
+    "author": "Alexa Pan",
+    "baseScore": 5,
+    "id": "SEdum3BDfAJtwLuoB",
+    "postedAt": "2026-11-09T17:24:22.141Z",
+    "section": "Frontpage",
+    "title": "Astra covertly underperforming on safety research is concerning, even though it\u2019s unlikely to be motivated by ambitious goals",
+    "topicScore": 15,
+    "url": "https://www.lesswrong.com/posts/SEdum3BDfAJtwLuoB/astra-covertly-underperforming-on-safety-research-is",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/e937d6ed672523d84aa6c6b1008ec65f550725b5642e499ebb73871cfad53167/sihilcbpvyctrdafbahl  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ef69d551e09dae4b32939a2816dafb2ce0533198cc3080196a1223de444f2814/e8t7xuoz14o4holpofuw  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/c6ad0fa5da956c1701905dadb54f7bbbdd640beb0eea86e002b408b2fe7edfef/hparkgwu4ni5vljtjdu6  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/c8222126311c083c453b75384df5e0c32280aa05bd4b2829183777b8efe88fd9/euewefxn1xyx4y0cpfem  "
+    ],
+    "visualizationScore": 12,
+    "wordCount": 3328
+  },
+  {
+    "author": "Mikewins",
+    "baseScore": 4,
+    "id": "pmQHeHndgXW3c8Z49",
+    "postedAt": "2026-11-09T17:00:36.812Z",
+    "section": "Personal/All",
+    "title": "How Scientists Can Work on AI Safety",
+    "topicScore": 13,
+    "url": "https://www.lesswrong.com/posts/pmQHeHndgXW3c8Z49/how-scientists-can-work-on-ai-safety",
+    "visualEvidence": [
+      "img Golden Gate Bridge - Wikipedia   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/pmQHeHndgXW3c8Z49/kxor2rdlxbyxcliiz3ya  Then, there\u2019s the",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/pmQHeHndgXW3c8Z49/tvmgjg6ih1z2iuf7uxic  The simplest path is to just apply for a job. M"
+    ],
+    "visualizationScore": 4,
+    "wordCount": 2666
+  },
+  {
+    "author": "lennie",
+    "baseScore": 33,
+    "id": "qqyxTYssqLgFsjvJu",
+    "postedAt": "2026-11-09T14:57:13.327Z",
+    "section": "Frontpage",
+    "title": "Knowledge of graders can mediate selection for grader-targeting reasoning through RL",
+    "topicScore": 30,
+    "url": "https://www.lesswrong.com/posts/qqyxTYssqLgFsjvJu/knowledge-of-graders-can-mediate-selection-for-grader",
+    "visualEvidence": [
+      "figure     Figure 1: Outline of our experiments. (Left) We use SDF to instil knowledge of grading on different subsets of environments. (Middle) We then perform RL on one half of t",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/5db889e67abd347da282d7acb7a0ad294e242b6cfcb5f3265cb8fbcc384cbfa8/xxykizruagbte7ergjui  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/f6abfaa110e89b8c5fdbff2234834d7120fbe41d0474a5a74fe4473b6cadbc94/kewsidpnrneeks2agunz  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/98359bb9c7cf08fe1f33ec2b0bdebd1283df63e948fce326c812045879ee8129/yy83ssgcipxdwzsvw1cg  ",
+      "figure     Figure 2: Evaluation metrics over RL training on Wood and Yard environments for the four pre-RL checkpoints with knowledge of different graders. Top row: Mean reward ave"
+    ],
+    "visualizationScore": 38,
+    "wordCount": 3589
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 22,
+    "id": "je5X4xEuehu3j3HoF",
+    "postedAt": "2026-11-09T14:50:55.007Z",
+    "section": "Personal/All",
+    "title": "AI R&D Is Accelerating Towards Potential RSI in 2027",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/je5X4xEuehu3j3HoF/ai-r-and-d-is-accelerating-towards-potential-rsi-in-2027",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/je5X4xEuehu3j3HoF/svexoli9iobmas67ogkv   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 126,
+    "wordCount": 11562
+  },
+  {
+    "author": "Ram Bharadwaj",
+    "baseScore": 6,
+    "id": "aaEpb2s5Yjspmiyk2",
+    "postedAt": "2026-11-09T12:28:05.749Z",
+    "section": "Frontpage",
+    "title": "Does expecting automated grading degrade models\u2019 research taste?",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/aaEpb2s5Yjspmiyk2/does-expecting-automated-grading-degrade-models-research-2",
+    "visualEvidence": [
+      "img AI safety research: two critique pipelines   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/aaEpb2s5Yjspmiyk2/306650dbaedc955b7605914fb6b",
+      "img SDF adapters on TASTE: greedy vs. sampled decoding \u2014 Qwen3.6-27B, thinking off   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/a4342e610",
+      "img SDF: reasoning-style framing, an independent check \u2014 Qwen3.6-27B, thinking off   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/aaEpb2s5Y",
+      "img 14_thinking_depth_grid.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/aaEpb2s5Yjspmiyk2/b3e8408b736c70b80275c6ef71521420d456ba91c15",
+      "img Random-vector control: Qwen3.6-27B, thinking off   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/9d238c3abfc1b1b9d7d9e0e9720e34c0e00aa87"
+    ],
+    "visualizationScore": 29,
+    "wordCount": 2689
+  },
+  {
+    "author": "matthew-ritch",
+    "baseScore": 6,
+    "id": "Y5B742yjGwE9tc6BC",
+    "postedAt": "2026-11-09T03:47:45.368Z",
+    "section": "Frontpage",
+    "title": "Private LLM copies can agree on a secret key over a public channel",
+    "topicScore": 22,
+    "url": "https://www.lesswrong.com/posts/Y5B742yjGwE9tc6BC/private-llm-copies-can-agree-on-a-secret-key-over-a-public",
+    "visualEvidence": [
+      "table     question Opus 5.5 Sonnet 5.5 GPT-6 Sol GPT-6 Luna a navy helmet or a marble teapot? teapot 8/8 teapot 8/8 helmet 8/8 helmet 6/8 a granite plate or a slate drum? plate 6/8",
+      "img Agreement heatmap   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/Y5B742yjGwE9tc6BC/zg9crdvzjczwryuvgvkz   ",
+      "table     model agreement between copies most similar other agreement with most similar other questions to fingerprint secret bits generated per question questions for a 128-bit ke",
+      "table     target model Opus 5.5 own Opus 5.5 predicting Sonnet 5.5 own Sonnet 5.5 predicting GPT-6 Sol own GPT-6 Sol predicting GPT-6 Luna own GPT-6 Luna predicting Opus 5.5 89.4 \u00b1",
+      "table     # question Opus 5.5 Sonnet 5.5 GPT-6 Sol GPT-6 Luna 1 a crimson rake or a lavender chair? chair 8/8 chair 8/8 chair 8/8 chair 8/8 2 a walnut wallet or a folding coin? wal"
+    ],
+    "visualizationScore": 19,
+    "wordCount": 5218
+  },
+  {
+    "author": "Angela Tang",
+    "baseScore": 3,
+    "id": "t5XkmebFK5jibQyek",
+    "postedAt": "2026-11-09T01:49:10.246Z",
+    "section": "Frontpage",
+    "title": "The J-lens intermediate swap acts partly through the answer directions ",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/t5XkmebFK5jibQyek/the-j-lens-intermediate-swap-acts-partly-through-the-answer",
+    "visualEvidence": [
+      "figure     Table 1: Flip rates (%) for each intervention, computed across all prompts filtered according to the conditions stated in the methods section. Each component is applied ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794188559/lexical_client_uploads/rqkeqkqacp6ahsnl9sg8.png   Table 1: Flip rates (%) for each intervention, computed a",
+      "figure     Figure 1: J-lens timing experiment on the expanded prompt set, using the mean log-probability difference between counterfactual and original answers. Prompts are filtere",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794188559/lexical_client_uploads/ifci8makwgo3l9nhzzb2.png   Figure 1: J-lens timing experiment on the expanded prompt",
+      "figure     Figure 2: R-lens timing experiment on the expanded prompt set, for Llama 3.1-8B and Qwen3.6-27B. The matched-strength answer intervention tracks the intermediate swap cu"
+    ],
+    "visualizationScore": 24,
+    "wordCount": 2654
+  },
+  {
+    "author": "roksana",
+    "baseScore": 2,
+    "id": "34CgHvoSHA2TudSDp",
+    "postedAt": "2026-11-08T21:18:59.366Z",
+    "section": "Personal/All",
+    "title": "We asked 100 AI researchers at EMNLP whether AI could be conscious, how they define consciousness, and how they engage with it",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/34CgHvoSHA2TudSDp/we-asked-100-ai-researchers-at-emnlp-whether-ai-could-be",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793926028/lexical_client_uploads/gpgwq6ppsyowcrb2uvwz.png  Full Github with the human and LLM responses: https://gith",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793926028/lexical_client_uploads/yqmuhzt7m38712ml6ugj.png  Predicting consciousness belief based on AI engagement  Fi",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793926028/lexical_client_uploads/txcc0doarjvohyyg1upv.png  The Babel of consciousness definitions  Figure 3: Most com",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793926028/lexical_client_uploads/bj02x8tsqherepjhxllz.png  LLMs are boring\u2026 except on consciousness  Pretty much all ",
+      "table     How much they commented on own consciousness: Sequential Independent Doesn't know /possibly 4: Claude Fable, Haiku, Opus; Grok 4: same models Probably not / no evidence 3"
+    ],
+    "visualizationScore": 18,
+    "wordCount": 4993
+  },
+  {
+    "author": "Isaac Lai",
+    "baseScore": 9,
+    "id": "PJjRs2mxRsN9TMXar",
+    "postedAt": "2026-11-08T21:11:58.034Z",
+    "section": "Personal/All",
+    "title": "Current Reward Hacking Model Organisms Don\u2019t Hack Like Real Models",
+    "topicScore": 16,
+    "url": "https://www.lesswrong.com/posts/PJjRs2mxRsN9TMXar/current-reward-hacking-model-organisms-don-t-hack-like-real",
+    "visualEvidence": [
+      "table     Organism Training environments Hacks in training environments Source HackGPT Various coding environments detailed here: Our Reward Hacking Envs ~50% of environments are a",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/87d892b77cb09860209f498e8754d9b38231f3bdd3fd66a7553f22f53bb7e754/ihoowfqkizik7x8kli1c  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/8de71324e309954ee07f71c47d5a9068c3b0474b9f5c887d996f06fe8b4cc673/ldbcgmhturw20hjzdxzv  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/cebde0f7dfbeb3fb7b3b83d871d95bdd627b7671f8d1d8a8924e600ecbbb5403/p0tqcizb4klctfrzlxug  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/b05f36deabdb9c793acddd238465e306943d04e236d5e9e0c0b0e4d81fc32753/omq9x5qxkbrkj3nqs84z  "
+    ],
+    "visualizationScore": 14,
+    "wordCount": 2119
+  },
+  {
+    "author": "Xijia Che",
+    "baseScore": 13,
+    "id": "TRe3CxDirbjPC7bQg",
+    "postedAt": "2026-11-08T21:07:01.439Z",
+    "section": "Personal/All",
+    "title": "Confirming Claims of Superposition and Adversarial Examples in Vision Transformers",
+    "topicScore": 10,
+    "url": "https://www.lesswrong.com/posts/TRe3CxDirbjPC7bQg/confirming-claims-of-superposition-and-adversarial-examples-1",
+    "visualEvidence": [
+      "figure     Figure 1: The ViT classifier with a encoder and decoder at the final layer to enforce superposition on the model   This is a replication of Adversarial Attacks Leverage ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790902096/lexical_client_uploads/nhfg1hju9c4907ahoeyo.png   Figure 1: The ViT classifier with a encoder and decoder a",
+      "figure     Figure 2: generally is higher for tighter bottlenecks. Our results are shown in orange and values from the original paper (taken from Table 3) are displayed in maroon. W",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1790902096/lexical_client_uploads/gkdpfe9iqn2b8tkwuave.png   Figure 2: generally is higher for tighter bottlenecks. Ou",
+      "table     \u03bb clean acc ours m\u0304 ours m\u0304 paper ours paper 0.1 0.92\u00b10.00 24 \u00b13 29 0.09 \u00b10.03 0.14 0.3 0.85\u00b10.00 9 \u00b10 12 0.15 \u00b10.04 0.27 0.6 0.77\u00b10.00 9 \u00b10 10 0.35 \u00b10.04 0.40 0.7 0.75\u00b10"
+    ],
+    "visualizationScore": 30,
+    "wordCount": 1991
+  },
+  {
+    "author": "Z Dai",
+    "baseScore": 1,
+    "id": "27aBj6HA8JyBzDAcv",
+    "postedAt": "2026-11-08T21:04:37.341Z",
+    "section": "Personal/All",
+    "title": "Trying to Steer PI with (Prefix) Label Directions",
+    "topicScore": 9,
+    "url": "https://www.lesswrong.com/posts/27aBj6HA8JyBzDAcv/trying-to-steer-pi-with-prefix-label-directions",
+    "visualEvidence": [
+      "img Figure 1: DiM from contrasting role declarations   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793929389/lexical_client_uploads/idyjd2p9cd25x1sishwl.png  Using a si",
+      "img Figure 2: DiM on templates with tied or reversed baseline ASR   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793929389/lexical_client_uploads/q6v1na2q8kbej5hnshps.pn",
+      "table     Direction USER claim: baseline \u2192 steer TOOL claim: baseline \u2192 steer Train\u2013held-out cosine Bare label DiM 10/10 \u2192 10/10 2/10 \u2192 1/10 0.964 Prefix label DiM 10/10 \u2192 10/10 2/",
+      "img Figure 3: Original and prefix constructions   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793929389/lexical_client_uploads/bryhpeqjovemnq53lrtq.png  Method: Before ",
+      "img Figure 4: Five-class probe readouts under benign conditions   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793929389/lexical_client_uploads/pmppw1042ro7xazmdusu.png "
+    ],
+    "visualizationScore": 35,
+    "wordCount": 2312
+  }
+]
