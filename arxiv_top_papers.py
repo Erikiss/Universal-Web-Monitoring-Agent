@@ -472,7 +472,8 @@ TABLE_HEADER = [
 ]
 
 
-def build_report(now, papers, records, measurable, by_refs, by_weight, arxiv_total, truncated):
+def build_report(now, papers, records, measurable, by_refs, by_weight, arxiv_total, truncated,
+                 s2_error=None):
     today = now.strftime("%Y-%m-%d")
     window_start = (now - timedelta(days=LOOKBACK_DAYS)).strftime("%Y-%m-%d")
     found = sum(1 for r in records.values() if r["found"])
@@ -484,6 +485,13 @@ def build_report(now, papers, records, measurable, by_refs, by_weight, arxiv_tot
     lines.append(f"- **Papers in window**: {len(papers)}" + (f" (of {arxiv_total}; truncated by MAX_PAPERS)" if truncated else ""))
     lines.append(f"- **Found on Semantic Scholar**: {found}")
     lines.append(f"- **With full reference data**: {with_refs}")
+    if s2_error:
+        lines.append("")
+        lines.append(
+            "> **Warning:** Semantic Scholar was unavailable while this report was generated. "
+            "The arXiv collection completed, but no Semantic Scholar rankings are available. "
+            f"Details: `{s2_error}`"
+        )
     lines.append("")
 
     lines.append(f"## Top {TOP_N} by number of references")
@@ -534,10 +542,19 @@ def main():
 
     client = S2Client(session)
     client.deadline = time.monotonic() + S2_TIME_BUDGET_MINUTES * 60
-    records = fetch_s2_records(client, [p["arxiv_id"] for p in papers]) if papers else {}
+    s2_error = None
+    try:
+        records = fetch_s2_records(client, [p["arxiv_id"] for p in papers]) if papers else {}
+    except (S2AuthError, requests.RequestException, RuntimeError) as e:
+        s2_error = str(e)
+        records = {}
+        log(f"WARNING: Semantic Scholar unavailable; writing an arXiv-only report: {e}")
 
     measurable, by_refs, by_weight = build_rankings(papers, records)
-    report = build_report(now, papers, records, measurable, by_refs, by_weight, arxiv_total, truncated)
+    report = build_report(
+        now, papers, records, measurable, by_refs, by_weight, arxiv_total, truncated,
+        s2_error=s2_error,
+    )
 
     report_path = OUT_DIR / f"arxiv_top{TOP_N}_{now.strftime('%Y-%m-%d')}.md"
     report_path.write_text(report, encoding="utf-8")
