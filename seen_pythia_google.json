@@ -432,6 +432,15 @@
       "title": "Open Language Models",
       "url": "https://natolambert.com/slides/2026/harvard/lecture.html"
     },
+    "https://neurips.cc/virtual/2026/179634": {
+      "delivered_at": "2026-11-09T16:53:36+00:00",
+      "first_seen_at": "2026-11-09T16:53:30+00:00",
+      "google_date": "vor 3 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "We measure output divergence and raw parameter-space endpoint-direction alignment along public Pythia-160M/PolyPythias trajectories trained on 300 billion ...",
+      "title": "Persistent Data-Order Effects Precede Directional ...",
+      "url": "https://neurips.cc/virtual/2026/179634"
+    },
     "https://news.ycombinator.com/item?id=50145507": {
       "delivered_at": "2026-10-20T12:15:43+00:00",
       "first_seen_at": "2026-10-20T12:15:31+00:00",
@@ -918,6 +927,15 @@
       "title": "Trained a 337M 1-bit FFN + Hybrid DeltaNet LLM from ...",
       "url": "https://www.reddit.com/r/ROCm/comments/1xej8h3/trained_a_337m_1bit_ffn_hybrid_deltanet_llm_from/"
     },
+    "https://www.researchgate.net/figure/The-error-of-the-trace-has-the-form-that-the-theory-predicts-Every-mirrored-task-of-the_fig1_417467745": {
+      "delivered_at": "2026-11-09T16:53:36+00:00",
+      "first_seen_at": "2026-11-09T16:53:30+00:00",
+      "google_date": "vor 9 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "The two errors have opposite signs in 880 of the 882 cases where both are nonzero ( Figure 5); the two exceptions are mirrored tasks of Pythia-160m. On sets ...",
+      "title": "The error of the trace has the form that the theory predicts....",
+      "url": "https://www.researchgate.net/figure/The-error-of-the-trace-has-the-form-that-the-theory-predicts-Every-mirrored-task-of-the_fig1_417467745"
+    },
     "https://www.researchgate.net/publication/415931932_Augment_the_Cache_Replace_the_Activation_A_2x2_Study_of_Internal-State_Sharing": {
       "delivered_at": "2026-10-19T14:02:03+00:00",
       "first_seen_at": "2026-10-19T13:59:34+00:00",
@@ -994,24 +1012,7 @@
   "last_attempt_at": "2026-11-09T16:53:30+00:00",
   "last_errors": [],
   "last_success_at": "2026-11-09T16:53:30+00:00",
-  "pending": {
-    "https://neurips.cc/virtual/2026/179634": {
-      "first_seen_at": "2026-11-09T16:53:30+00:00",
-      "google_date": "vor 3 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "We measure output divergence and raw parameter-space endpoint-direction alignment along public Pythia-160M/PolyPythias trajectories trained on 300 billion ...",
-      "title": "Persistent Data-Order Effects Precede Directional ...",
-      "url": "https://neurips.cc/virtual/2026/179634"
-    },
-    "https://www.researchgate.net/figure/The-error-of-the-trace-has-the-form-that-the-theory-predicts-Every-mirrored-task-of-the_fig1_417467745": {
-      "first_seen_at": "2026-11-09T16:53:30+00:00",
-      "google_date": "vor 9 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "The two errors have opposite signs in 880 of the 882 cases where both are nonzero ( Figure 5); the two exceptions are mirrored tasks of Pythia-160m. On sets ...",
-      "title": "The error of the trace has the form that the theory predicts....",
-      "url": "https://www.researchgate.net/figure/The-error-of-the-trace-has-the-form-that-the-theory-predicts-Every-mirrored-task-of-the_fig1_417467745"
-    }
-  },
+  "pending": {},
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
