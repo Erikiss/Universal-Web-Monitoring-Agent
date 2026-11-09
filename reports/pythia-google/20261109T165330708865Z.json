@@ -1,0 +1,215 @@
+{
+  "checked_at": "2026-11-09T16:53:30+00:00",
+  "errors": [],
+  "last_success_at": "2026-11-09T16:53:30+00:00",
+  "new_count": 2,
+  "pending_count": 2,
+  "pending_results": [
+    {
+      "first_seen_at": "2026-11-09T16:53:30+00:00",
+      "google_date": "vor 3 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "We measure output divergence and raw parameter-space endpoint-direction alignment along public Pythia-160M/PolyPythias trajectories trained on 300 billion ...",
+      "title": "Persistent Data-Order Effects Precede Directional ...",
+      "url": "https://neurips.cc/virtual/2026/179634"
+    },
+    {
+      "first_seen_at": "2026-11-09T16:53:30+00:00",
+      "google_date": "vor 9 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "The two errors have opposite signs in 880 of the 882 cases where both are nonzero ( Figure 5); the two exceptions are mirrored tasks of Pythia-160m. On sets ...",
+      "title": "The error of the trace has the form that the theory predicts....",
+      "url": "https://www.researchgate.net/figure/The-error-of-the-trace-has-the-form-that-the-theory-predicts-Every-mirrored-task-of-the_fig1_417467745"
+    }
+  ],
+  "queries": [
+    {
+      "label": "24 Stunden",
+      "q": "pythia",
+      "tbs": "qdr:d"
+    },
+    {
+      "label": "Überlappung/Nachholen: 4 Tage",
+      "q": "pythia",
+      "tbs": "qdr:d4"
+    },
+    {
+      "label": "Ergänzende Modellsuche: 4 Tage",
+      "q": "pythia (EleutherAI OR \"GPT-NeoX\" OR \"language model\" OR Sprachmodell OR \"mechanistic interpretability\")",
+      "tbs": "qdr:d4"
+    }
+  ],
+  "results": [
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "@mischiefanimals. Goblin Moder · @mischiefanimals. pythia oracle soothsayer prophet. 11:52 PM · Nov 8, 2026·. 7,938. Views. 35. 432. 24.",
+      "title": "Goblin Moder on X: \"pythia oracle soothsayer prophet\" / X",
+      "url": "https://x.com/mischiefanimals/status/2119578865722929379/photo/1"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 9 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Ask Pythia is a magical 1990s desktop simulator set amongst the buzz of tech optimism and cool witchcraft. Answer emails with the correct advice, build a ...",
+      "title": "Ask Pythia",
+      "url": "https://kotaku.com/games/ask-pythia"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "Known as the Pythia, she was the most famous oracle of the ancient world. People traveled from all over Greece (and beyond) to the Temple of Apollo at Delphi to ...",
+      "title": "Creator: Heinrich Leutemann (German, 1824-1904), The ...",
+      "url": "https://www.facebook.com/Testimonedelfuoco/posts/creator-heinrich-leutemann-german-1824-1904-the-oracle-at-delphi-entranced/1559867552852684/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "Prophetic knowledge often comes with a price. In ancient Greece, the Pythia of Delphi delivered prophecies associated with Apollo from his sanctuary at Delphi.",
+      "title": "Photo by Fab Weatherill (@wfabianne) · November 8, 2026",
+      "url": "https://www.instagram.com/p/Dffd5fUmNEW/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "@mischiefanimals. Goblin Moder · @mischiefanimals. pythia oracle soothsayer prophet. 11:52 PM · Nov 8, 2026 15.9K Views · 1. 100. 1.2K 82 · @VariantUnNoun.",
+      "title": "Goblin Moder on X: \"pythia oracle soothsayer prophet\" / X",
+      "url": "https://x.com/mischiefanimals/status/2119578865722929379"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 3 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "24 Stunden",
+      "snippet": "We measure output divergence and raw parameter-space endpoint-direction alignment along public Pythia-160M/PolyPythias trajectories trained on 300 billion ...",
+      "title": "Persistent Data-Order Effects Precede Directional ...",
+      "url": "https://neurips.cc/virtual/2026/179634"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 12 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Pythia Metrics Inc. (\"Pythia\", \"nous\", \"nous\" ou \"notre\") exploite une plateforme Web qui évalue les traits de personnalité à des fins de recrutement, de ...",
+      "title": "Politique de confidentialité - Pythia",
+      "url": "https://pythiametrics.ca/privacy/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "Unlike the famous oracle at Delphi, which was associated with Apollo and the Pythia, Dodona was closely connected with a sacred oak tree. Ancient tradition ...",
+      "title": "🇪🇬Egypt 🇪🇬Is Where History Begins ‏‏‏🇪🇬",
+      "url": "https://www.facebook.com/groups/929777352204936/posts/1683782123471118/"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 9 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "24 Stunden",
+      "snippet": "The two errors have opposite signs in 880 of the 882 cases where both are nonzero ( Figure 5); the two exceptions are mirrored tasks of Pythia-160m. On sets ...",
+      "title": "The error of the trace has the form that the theory predicts....",
+      "url": "https://www.researchgate.net/figure/The-error-of-the-trace-has-the-form-that-the-theory-predicts-Every-mirrored-task-of-the_fig1_417467745"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 4 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "The project is called PYTHIA, which stands for “predictive platform for physiological and therapeutic health intervention and adaptive management.” According to ...",
+      "title": "MIT-led team receives funding to develop a wearable ...",
+      "url": "https://imes.mit.edu/news-events/mit-led-team-receives-funding-develop-wearable-monitor-early-disease-detection"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "The priestess who spoke his oracles took the name Pythia, after the place that bore the serpent's name, and for a thousand years her cryptic verses would guide ...",
+      "title": "Python | Greek Mythology & Ancient History Database",
+      "url": "https://www.mythopouch.com/mythology/greek/python"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 1 Tag",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "An intriguing name with connections to Greek mythology, Pythia was the title of the high priestess at the Temple of Apollo in Delphi.",
+      "title": "Pythia Name Meaning, Origin & Popularity",
+      "url": "https://nameberry.com/name/pythia"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Pythia has been an instrumental partner to The Alliance, helping us raise awareness of the challenges facing survivors and the organizations that serve them.",
+      "title": "Introducing The Alliance's Advocacy Impact Award ...",
+      "url": "https://www.instagram.com/p/DfaZOd9DYer/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Für diese Seite sind keine Informationen verfügbar.",
+      "title": "Pythia",
+      "url": "http://pythiacrafting.com/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 2 Tagen",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Pythia Embodied is inspired by the story of the Oracle of Delphi in Greece, one of history's most powerful divinatory figures, which was said to predict the ...",
+      "title": "Afroditi Psarra: Pythia Embodied - Gallery 4Culture",
+      "url": "https://everout.com/seattle/events/afroditi-psarra-pythia-embodied/e261022/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Researchers are working on a project called PYTHIA, which aims to develop a small, wearable medical patch that can continuously monitor important biological ...",
+      "title": "Pythia wearable patch for early heart failure and sepsis ...",
+      "url": "https://www.facebook.com/100078892593538/posts/the-future-of-wearable-technology-in-healthcaretechnology-is-changing-almost-eve/1111231631516580/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "I'm incredibly excited to have Dr. Beth Basham joining our AI for Biologists discussion panel! Beth is a true powerhouse in Big Pharma informatics who knows ...",
+      "title": "Pythia BioSciences' Post",
+      "url": "https://www.linkedin.com/posts/pythia-bio_12-days-to-go-were-excited-to-introduce-activity-7524170956337160192-mPCw"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 3 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "The same Pythia DM runs on a 1U server in your rack, on servers in a locking wall-mount cabinet, or in a. Smart Panel on the wall.",
+      "title": "Your DM, where you need it. Rack, wall or panel.",
+      "url": "https://www.pythiatech.com/downloads/PTECH_Brochure_DM_DeploymentOptions.pdf"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 3 Tagen",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "GPT-NeoX-20B is a 20 billion parameter autoregressive language model trained on the Pile using the GPT-NeoX library. Its architecture intentionally resembles ...",
+      "title": "Projects | Open Source Science",
+      "url": "https://science.ecosyste.ms/projects?keyword=gpt_neox"
+    }
+  ]
+}
