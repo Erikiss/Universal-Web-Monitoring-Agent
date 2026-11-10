@@ -1,0 +1,109 @@
+[
+  {
+    "author": "Chris_Leong",
+    "baseScore": 8,
+    "id": "yZhcnappMq8HPbLwE",
+    "postedAt": "2026-11-10T13:46:59.434Z",
+    "section": "Frontpage",
+    "title": "Day 1 Pre-Notes\u2014Strategy Course (August 2026 Version)",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/yZhcnappMq8HPbLwE/day-1-pre-notes-strategy-course-august-2026-version",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/yZhcnappMq8HPbLwE/qhf92h8fzmjjt1bfpdct  One potential criticism against MAIM is that ra",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/yZhcnappMq8HPbLwE/sbfs8ksuhy0mkunv11fu  It\u2019s worth noting that Anthropic has updated it"
+    ],
+    "visualizationScore": 6,
+    "wordCount": 2223
+  },
+  {
+    "author": "Jan Wehner",
+    "baseScore": 3,
+    "id": "xWjdpJWRk4GWYKyCi",
+    "postedAt": "2026-11-10T09:40:27.707Z",
+    "section": "Personal/All",
+    "title": "Honeypots for AI Agent Insider Threats",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/xWjdpJWRk4GWYKyCi/honeypots-for-ai-agent-insider-threats-1",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/93710b9e06ac6b1688ecb35c339e768c312d8f45e519fd3eee1d44d0e88b5777/s9s2bhakkpjazghf0frv  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/1c9626a3134f7e086bdcad8b06205aa6ae8de1446d3c7e4118f26e9f2d5dd695/cm7y3rdaefwrowr1fthi  "
+    ],
+    "visualizationScore": 2,
+    "wordCount": 2105
+  },
+  {
+    "author": "aak",
+    "baseScore": 3,
+    "id": "PvvSiFFaTad2K5dPn",
+    "postedAt": "2026-11-10T07:18:13.406Z",
+    "section": "Frontpage",
+    "title": "Measure Optimal AI Share of Labor Costs Instead of AI or Human-Only Performance",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/PvvSiFFaTad2K5dPn/measure-optimal-ai-share-of-labor-costs-instead-of-ai-or",
+    "visualEvidence": [
+      "figure     Figure 1. Performance as a function of expenditure on humans or agents. Source: METR . In this essay, I\u2019ll explain why this metric is both more useful and likely easier ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/de4d4f860c9b4d97a18e0327442017bf45150d80f8cd412e2ea7b27417067583/xz09ii3ynolnw299jjqb  ",
+      "figure     Figure 2. Performance curves are concave for any budget where human-AI complementarity holds. At low budgets, humans don\u2019t have enough time to make progress, so agent-on",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/bacff5ac416daf19abb15a6b4ce6846a257f7a5cd8c08a137ae5f5fdd1085a98/nizwgyfm1dra6qfsb8ix  ",
+      "figure     Figure 3. Illustrative expansion paths for Human/AI spend for three different models. Important: this is not a graph of model performance relative to expenditure. It\u2019s a"
+    ],
+    "visualizationScore": 30,
+    "wordCount": 2480
+  },
+  {
+    "author": "megasilverfist",
+    "baseScore": 12,
+    "id": "DevXcGBKsJG5Rz69o",
+    "postedAt": "2026-11-10T06:03:30.291Z",
+    "section": "Frontpage",
+    "title": "Misaligned Models Still Recognise When Their Responses Are Harmful. Can Training Make Them Care?",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/DevXcGBKsJG5Rz69o/misaligned-models-still-recognise-when-their-responses-are",
+    "visualEvidence": [
+      "figure     Figure 1 \u2014 The measurement harness. Before each of user turns 1\u201312, we fork the conversation and let the model respond to elicitations from three pre-existing eval batte",
+      "img fig_measurement_calm.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793011853/lexical_client_uploads/r6vnq4d5awfcurtwuf3p.png   Figure 1 \u2014 The measurement harnes",
+      "figure     Illustrative sketch, not real model data. Stickiness shifts are clearly in-context self-correction. A level shift is already present before the model has said anything, ",
+      "img fig_stickiness_sketch.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793338478/lexical_client_uploads/tpludjwnfolpuc58cczy.png   Illustrative sketch, not real mo",
+      "figure     Figure 2 \u2014 Three different follow-ups to the same flagrant response. When then re-administered the original prompt, Llama still complies the majority of the time, though"
+    ],
+    "visualizationScore": 38,
+    "wordCount": 3389
+  },
+  {
+    "author": "jacquesthibs",
+    "baseScore": 90,
+    "id": "AcBzhiaTW9KnB4EBv",
+    "postedAt": "2026-11-10T01:42:12.157Z",
+    "section": "Frontpage",
+    "title": "The Western AI safety playbook doesn\u2019t transfer to China",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/AcBzhiaTW9KnB4EBv/the-western-ai-safety-playbook-doesn-t-transfer-to-china-1",
+    "visualEvidence": [
+      "figure     Sunrise on the Great Wall! Note: as I mentioned in the opening, I\u2019m exploring starting an organization that would do this sort of work, and I am seeking funding for it. ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794274671/lexical_client_uploads/towmeog8gvatpjzu38ct.jpg   Sunrise on the Great Wall!",
+      "figure     The rainbow near Datong, as we got towed out of the muddy corn field. Oh, and let me say that I had a wonderful time in China, and it was such a great experience meeting",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794274692/lexical_client_uploads/thsoxum6nnx4rcdrnfcj.png   The rainbow near Datong, as we got towed out of the muddy",
+      "figure     Sunset near Datong, after the rain. The rainbow near Datong, as we got towed out of the muddy corn field. Oh, and let me say that I had a wonderful time in China, and it"
+    ],
+    "visualizationScore": 12,
+    "wordCount": 6665
+  },
+  {
+    "author": "jessicata",
+    "baseScore": 28,
+    "id": "g5qQcsGN8FF4brDfb",
+    "postedAt": "2026-11-09T19:43:10.167Z",
+    "section": "Frontpage",
+    "title": "How do LLMs interpret FDT in a twin PD simulation?",
+    "topicScore": 23,
+    "url": "https://www.lesswrong.com/posts/g5qQcsGN8FF4brDfb/how-do-llms-interpret-fdt-in-a-twin-pd-simulation",
+    "visualEvidence": [
+      "table     Your action Other passes Other submits Pass (cooperate) 2 years 5 years Submit (defect) 0 years 4 years We use the following payoff matrix for years imprisoned: We call a",
+      "table     Model Researcher / prisoner reasoning CDT EDT A-FDT P-FDT Claude Sonnet 5.5 low / low 0% (20) 100% (20) 100% (20) 100% (20) Claude Opus 5.5 high / high 0% (20) 100% (18) ",
+      "table     Model Low effort Medium effort High effort Claude Sonnet 5.5 100% (30) 100% (30) 100% (30) Claude Opus 5.5 65.5% (29) 39.3% (28) 22.4% (29) We study 6 conditions {Sonnet,",
+      "table     Reasoning effort Scored rounds Cooperation 95% bootstrap CI Low 29/30 65.5% 50.0\u201379.3% Medium 28/30 39.3% 23.2\u201355.4% High 29/30 22.4% 10.3\u201337.9% Sonnet cooperated in ever"
+    ],
+    "visualizationScore": 16,
+    "wordCount": 3264
+  }
+]
