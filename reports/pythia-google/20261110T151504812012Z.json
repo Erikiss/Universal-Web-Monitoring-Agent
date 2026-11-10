@@ -1,0 +1,126 @@
+{
+  "checked_at": "2026-11-10T15:15:04+00:00",
+  "errors": [],
+  "last_success_at": "2026-11-10T15:15:04+00:00",
+  "new_count": 1,
+  "pending_count": 1,
+  "pending_results": [
+    {
+      "first_seen_at": "2026-11-10T15:15:04+00:00",
+      "google_date": "vor 1 Tag",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "EleutherAI. ASV pētniecības kolektīvs, kas pazīstams ar GPT-Neo, GPT-NeoX un Pythia saimēm. Pythia ir mazu modeļu komplekts ar 154 kontrolpunktiem, kas ...",
+      "title": "EleutherAI — US - LLM EU",
+      "url": "https://llmeu.com/lv/providers/eleutherai/"
+    }
+  ],
+  "queries": [
+    {
+      "label": "24 Stunden",
+      "q": "pythia",
+      "tbs": "qdr:d"
+    },
+    {
+      "label": "Überlappung/Nachholen: 3 Tage",
+      "q": "pythia",
+      "tbs": "qdr:d3"
+    },
+    {
+      "label": "Ergänzende Modellsuche: 3 Tage",
+      "q": "pythia (EleutherAI OR \"GPT-NeoX\" OR \"language model\" OR Sprachmodell OR \"mechanistic interpretability\")",
+      "tbs": "qdr:d3"
+    }
+  ],
+  "results": [
+    {
+      "classification": "unclear",
+      "google_date": "vor 3 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "The priestess who spoke his oracles took the name Pythia, after the place that bore the serpent's name, and for a thousand years her cryptic verses would guide ...",
+      "title": "Python | Greek Mythology & Ancient History Database",
+      "url": "https://www.mythopouch.com/mythology/greek/python"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 2 Tagen",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "An intriguing name with connections to Greek mythology, Pythia was the title of the high priestess at the Temple of Apollo in Delphi.",
+      "title": "Pythia Name Meaning, Origin & Popularity",
+      "url": "https://nameberry.com/name/pythia"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "The Pythia was the famous Oracle of Delphi. Ancient kings and generals came to her seeking answers about the future. Interestingly, Delphi sits above ...",
+      "title": "Did You Know The Dark Secret Behind the Oracle of Delphi",
+      "url": "https://www.youtube.com/watch?v=9HSWz_eFl6o"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "She was the Pythia—the most famous prophetess of the ancient Greek world. Seated upon the sacred tripod within the temple of Apollo, the Pythia entered a state ...",
+      "title": "Why did a cold splash of water decide who could hear ...",
+      "url": "https://www.facebook.com/groups/ancienthistoricwonders/posts/1682348276808027/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Apollo channeled his divine wisdom to mortals through a high priestess named Pythia, a name derived from Python and thus commemorating Apollo's victory and the ...",
+      "title": "The center of the universe may be in Ashland, Virginia, but ...",
+      "url": "https://www.instagram.com/p/DfdSI0lDIpZ/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Für diese Seite sind keine Informationen verfügbar.",
+      "title": "Pythia",
+      "url": "http://pythiacrafting.com/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 23 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Save up to 20% off with current Black Friday Pythia Clothing Promo Code \"Family10\". Use verified codes & deals for first order discount, membership discount ...",
+      "title": "20% Off | Pythia Clothing Promo Code Black Friday 2026",
+      "url": "https://www.hotdeals.com/coupons/pythia-clothing-promo-codes"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 2 Tagen",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Using PYTHIA simulations, we study correlations between charm and anticharm hadrons and show that hard-process charm, final-state splitting charm, and initial- ...",
+      "title": "How to isolate charm production mechanisms using ...",
+      "url": "https://arxiv.org/abs/2611.11422v1"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 2 Tagen",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "This educational video explores the scientific explanation behind the prophecies of the Oracle of Delphi. It posits that the Pythia's trances were induced by ...",
+      "title": "Delphi's Sacred Flame: Priestesses Tended Fire Until 395 AD",
+      "url": "https://www.facebook.com/historyvault/videos/priestess-lysandra-tended-the-sacred-flame-in-delphis-adyton-keeping-apollos-fir/28245937331748316/"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 1 Tag",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "EleutherAI. ASV pētniecības kolektīvs, kas pazīstams ar GPT-Neo, GPT-NeoX un Pythia saimēm. Pythia ir mazu modeļu komplekts ar 154 kontrolpunktiem, kas ...",
+      "title": "EleutherAI — US - LLM EU",
+      "url": "https://llmeu.com/lv/providers/eleutherai/"
+    }
+  ]
+}

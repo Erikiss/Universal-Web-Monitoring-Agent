@@ -1009,10 +1009,19 @@
       "url": "https://zhuanlan.zhihu.com/p/2096482642027983491"
     }
   },
-  "last_attempt_at": "2026-11-09T16:53:30+00:00",
+  "last_attempt_at": "2026-11-10T15:15:04+00:00",
   "last_errors": [],
-  "last_success_at": "2026-11-09T16:53:30+00:00",
-  "pending": {},
+  "last_success_at": "2026-11-10T15:15:04+00:00",
+  "pending": {
+    "https://llmeu.com/lv/providers/eleutherai/": {
+      "first_seen_at": "2026-11-10T15:15:04+00:00",
+      "google_date": "vor 1 Tag",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "EleutherAI. ASV pētniecības kolektīvs, kas pazīstams ar GPT-Neo, GPT-NeoX un Pythia saimēm. Pythia ir mazu modeļu komplekts ar 154 kontrolpunktiem, kas ...",
+      "title": "EleutherAI — US - LLM EU",
+      "url": "https://llmeu.com/lv/providers/eleutherai/"
+    }
+  },
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
