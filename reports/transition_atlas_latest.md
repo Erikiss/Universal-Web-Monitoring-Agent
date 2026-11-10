@@ -1,7 +1,7 @@
-# Transition-Atlas watch — 2026-11-09T17:48:53Z
+# Transition-Atlas watch — 2026-11-10T15:46:58Z
 
 Originalpaper: https://arxiv.org/abs/2609.12591
-Neue Hinweise: 4 | fehlgeschlagene Quellenchecks: 0
+Neue Hinweise: 2 | fehlgeschlagene Quellenchecks: 0
 Vollständiger Bericht: https://github.com/Erikiss/Universal-Web-Monitoring-Agent/blob/main/reports/transition_atlas_latest.md
 
 GitHub-Aktivität und neue HPI-Links sind Hinweise, kein automatisch bestätigter Atlas-Release.
@@ -12,16 +12,8 @@ Kathrin Korte: kat-ko/GeometryOfForgetting
 https://github.com/kat-ko/GeometryOfForgetting
 Repository geändert: pushed_at
 
-Kathrin Korte: IssuesEvent in marcellobarylli/DJ_Graphyla
-https://github.com/marcellobarylli/DJ_Graphyla/issues/12
-Neue öffentliche Repository-Aktivität des verifizierten Autors.
-
-Kathrin Korte: IssuesEvent in marcellobarylli/DJ_Graphyla
-https://github.com/marcellobarylli/DJ_Graphyla/issues/9
-Neue öffentliche Repository-Aktivität des verifizierten Autors.
-
-Kathrin Korte: IssuesEvent in marcellobarylli/DJ_Graphyla
-https://github.com/marcellobarylli/DJ_Graphyla/issues/7
+Kathrin Korte: PushEvent in marcellobarylli/DJ_Graphyla
+https://github.com/marcellobarylli/DJ_Graphyla
 Neue öffentliche Repository-Aktivität des verifizierten Autors.
 
 
