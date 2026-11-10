@@ -405,6 +405,15 @@
       "title": "Lynceus - AI Gate Inspector for RDF Trucks",
       "url": "https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-iii/lisan-al-gaib/lynceus-ai-gate-inspector-for-rdf-trucks"
     },
+    "https://llmeu.com/lv/providers/eleutherai/": {
+      "delivered_at": "2026-11-10T15:15:10+00:00",
+      "first_seen_at": "2026-11-10T15:15:04+00:00",
+      "google_date": "vor 1 Tag",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "EleutherAI. ASV pētniecības kolektīvs, kas pazīstams ar GPT-Neo, GPT-NeoX un Pythia saimēm. Pythia ir mazu modeļu komplekts ar 154 kontrolpunktiem, kas ...",
+      "title": "EleutherAI — US - LLM EU",
+      "url": "https://llmeu.com/lv/providers/eleutherai/"
+    },
     "https://manpla.net/en/papers": {
       "delivered_at": "2026-10-26T13:38:11+00:00",
       "first_seen_at": "2026-10-26T13:36:31+00:00",
@@ -1012,16 +1021,7 @@
   "last_attempt_at": "2026-11-10T15:15:04+00:00",
   "last_errors": [],
   "last_success_at": "2026-11-10T15:15:04+00:00",
-  "pending": {
-    "https://llmeu.com/lv/providers/eleutherai/": {
-      "first_seen_at": "2026-11-10T15:15:04+00:00",
-      "google_date": "vor 1 Tag",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "EleutherAI. ASV pētniecības kolektīvs, kas pazīstams ar GPT-Neo, GPT-NeoX un Pythia saimēm. Pythia ir mazu modeļu komplekts ar 154 kontrolpunktiem, kas ...",
-      "title": "EleutherAI — US - LLM EU",
-      "url": "https://llmeu.com/lv/providers/eleutherai/"
-    }
-  },
+  "pending": {},
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
