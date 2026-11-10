@@ -107,6 +107,10 @@
     "title": "Discovering Undesired Rare Behaviors via Model Diff Amplification",
     "first_seen": "2026-07-28T18:51:09+00:00"
   },
+  "https://goodfire.ai/research/neurons-as-an-interpretable-basis": {
+    "title": "Neurons as an Interpretable Basis",
+    "first_seen": "2026-11-10T14:47:21+00:00"
+  },
   "https://goodfire.ai/research/open-problems-in-mech-interp": {
     "title": "Open Problems in Mechanistic Interpretability",
     "first_seen": "2026-07-28T18:51:09+00:00"
@@ -138,6 +142,10 @@
   "https://goodfire.ai/research/production-cyber-monitors-on-kimi-k3": {
     "title": "Training and Deploying Production Cyber Monitors on Kimi K3",
     "first_seen": "2026-10-08T19:54:17+00:00"
+  },
+  "https://goodfire.ai/research/public_neuron_atlas": {
+    "title": "Neuron Atlas - Qwen3.6",
+    "first_seen": "2026-11-10T14:47:21+00:00"
   },
   "https://goodfire.ai/research/rakuten-sae-probes-for-pii-detection": {
     "title": "Deploying Interpretability to Production with Rakuten: SAE Probes for PII Detection",
