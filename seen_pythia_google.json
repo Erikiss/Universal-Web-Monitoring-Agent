@@ -1018,10 +1018,51 @@
       "url": "https://zhuanlan.zhihu.com/p/2096482642027983491"
     }
   },
-  "last_attempt_at": "2026-11-10T15:15:04+00:00",
+  "last_attempt_at": "2026-11-11T14:44:04+00:00",
   "last_errors": [],
-  "last_success_at": "2026-11-10T15:15:04+00:00",
-  "pending": {},
+  "last_success_at": "2026-11-11T14:44:04+00:00",
+  "pending": {
+    "https://aihorde.net/details/models/text/koboldcpp%2Fpythia-6.9b-deduped": {
+      "first_seen_at": "2026-11-11T14:44:04+00:00",
+      "google_date": "vor 16 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "What the AI Horde knows about the pythia 6.9b deduped model: who is running it, what its publisher recommends, and how to try it.",
+      "title": "pythia 6.9b deduped",
+      "url": "https://aihorde.net/details/models/text/koboldcpp%2Fpythia-6.9b-deduped"
+    },
+    "https://llmeu.com/sv/providers/eleutherai/": {
+      "first_seen_at": "2026-11-11T14:44:04+00:00",
+      "google_date": "vor 1 Tag",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Amerikanskt forskningskollektiv känt för familjerna GPT-Neo, GPT-NeoX och Pythia. Pythia är en svit av små modeller med 154 kontrollpunkter som publicerats ...",
+      "title": "EleutherAI — US - LLM EU",
+      "url": "https://llmeu.com/sv/providers/eleutherai/"
+    },
+    "https://machinelearning.apple.com/research/attention-mamba-distillation": {
+      "first_seen_at": "2026-11-11T14:44:04+00:00",
+      "google_date": "vor 18 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Overall, the distilled Mamba model retains most of the original Pythia-1B Transformer performance, reaching a perplexity of 14.01 close to the teacher's 13.86.",
+      "title": "Attention to Mamba: A Recipe for Cross-Architecture ...",
+      "url": "https://machinelearning.apple.com/research/attention-mamba-distillation"
+    },
+    "https://richardjeevash.com/research-line-breaking.html": {
+      "first_seen_at": "2026-11-11T14:44:04+00:00",
+      "google_date": "vor 13 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "In short Pythia-410M counts how full a line is by how thin one head's attention to the line start gets, and reads the last line's length back from the newline.",
+      "title": "How a small model breaks lines: a partial account",
+      "url": "https://richardjeevash.com/research-line-breaking.html"
+    },
+    "https://www.google.com/goto?url=CAEShAEBxCJF14WtLOBDnJ8wxbqxNc1Dh4UwLUA1IihANktk9p5cSHP5ZUooiQVA-SrPUho9TGTmT5l5lyoXJeXvmXxOW77IEC5yrWdM_SNXI_lD2qHFDPSNaFjvM8OfRTvSJGCjSNCfvL4jwgoT_K_YwVa1Z6K43SgvzNUBQ0tcl2scKeP0dbU": {
+      "first_seen_at": "2026-11-11T14:44:04+00:00",
+      "google_date": "vor 15 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "What the AI Horde knows about the pythia 6.9b deduped model: who is running it, what its publisher recommends, and how to try it.",
+      "title": "pythia 6.9b deduped",
+      "url": "https://www.google.com/goto?url=CAEShAEBxCJF14WtLOBDnJ8wxbqxNc1Dh4UwLUA1IihANktk9p5cSHP5ZUooiQVA-SrPUho9TGTmT5l5lyoXJeXvmXxOW77IEC5yrWdM_SNXI_lD2qHFDPSNaFjvM8OfRTvSJGCjSNCfvL4jwgoT_K_YwVa1Z6K43SgvzNUBQ0tcl2scKeP0dbU"
+    }
+  },
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
