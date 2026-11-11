@@ -1,0 +1,40 @@
+[
+  {
+    "author": "star2vec",
+    "baseScore": 2,
+    "id": "TpjpTxfswnBaXPbEn",
+    "postedAt": "2026-11-11T03:32:46.104Z",
+    "section": "Frontpage",
+    "title": "False faced: can a simple classifier tell when a model is manipulating its activations to evade probes? ",
+    "topicScore": 6,
+    "url": "https://www.lesswrong.com/posts/TpjpTxfswnBaXPbEn/false-faced-can-a-simple-classifier-tell-when-a-model-is",
+    "visualEvidence": [
+      "img 0_cover.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794367844/lexical_client_uploads/ozi6l78dj29rygawbu6l.png  TL;DR: We test whether simple classifiers can t",
+      "img 1_same_answer.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794306963/lexical_client_uploads/hvcbgjefcprda4fjod2o.png  But because the number of activation sequ",
+      "img 2_probe.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794306995/lexical_client_uploads/hvbkxzzsv19akk7frzrj.png  Of course, it is not the only choice: minimal n",
+      "img 3_evasion.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/TpjpTxfswnBaXPbEn/tm0vfmdun1s4878vm2wt  Going even further, McGuinness et ",
+      "img 4_analogy.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794307075/lexical_client_uploads/nrtnqyyjmenhli3nhcqn.png  We investigate this question by classifying w"
+    ],
+    "visualizationScore": 25,
+    "wordCount": 2229
+  },
+  {
+    "author": "LGOICOUR",
+    "baseScore": 2,
+    "id": "BoBYFAbo9j8hJyKyn",
+    "postedAt": "2026-11-11T00:51:03.438Z",
+    "section": "Frontpage",
+    "title": "Characterizing secondary structure representation in ESM-2",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/BoBYFAbo9j8hJyKyn/characterizing-secondary-structure-representation-in-esm-2",
+    "visualEvidence": [
+      "table     Plane removed New linear probe, macro-F1 Likelihood drop, helix Strand Coil All residues None 0.81 0 0 0 0 Random plane 0.81 0.1% 0.1% 0.1% 0.1% (\u22120.001) Probe's plane 0.",
+      "table     Direction added Dose Predicted probability on helix-forming amino acids Share of the helix-coil gap closed Coil rows the layer-29 probe calls helix None 0 43.6% 0 9% Heli",
+      "table     Reader Unedited Random plane removed Probe's plane removed Class-mean plane removed Linear probe 0.81 0.81 0.71 0.22 MLP, one hidden layer 0.81 0.81 0.80 0.79 SVM, RBF ke",
+      "table     Edit QDA after the edit, macro-F1 Likelihood drop, helix Strand Coil All residues Class-mean plane alone 0.81 7.1% 4.8% 5.7% 6.0% (\u22120.062) Plane plus shape 0.03 11.8% 9.3",
+      "table     Positions erased at layer 29 Erased rows read Rows New linear probe at layer 30, macro-F1 Likelihood drop at those rows None all rows 113,279 0.81 0 Every position all ro"
+    ],
+    "visualizationScore": 27,
+    "wordCount": 2443
+  }
+]
