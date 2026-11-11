@@ -17,14 +17,31 @@
     },
     "last_digest_at": "2026-11-07T14:17:41+00:00",
     "next_digest_at": "2026-11-14T14:17:41+00:00",
-    "pending": {},
+    "pending": {
+      "repo:Ircam-RnD/ml-reading-group": {
+        "changes": [
+          {
+            "fingerprint": "6a5140adff29f806d2f8c3c9fe1754b85b9ce02a38b56cbac615d8d0afc98983",
+            "summary": [
+              "Neue Ressourcenlinks: https://github.com/microsoft/graphrag"
+            ]
+          }
+        ],
+        "first_seen_at": "2026-11-11T15:33:34+00:00",
+        "key": "repo:Ircam-RnD/ml-reading-group",
+        "last_seen_at": "2026-11-11T15:33:34+00:00",
+        "origin": "GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.",
+        "title": "GitHub-Hinweis: Ircam-RnD/ml-reading-group (Drittanbieter-Treffer, Zuordnung unbestaetigt)",
+        "url": "https://github.com/Ircam-RnD/ml-reading-group"
+      }
+    },
     "version": 1
   },
   "errors": {
     "GitHub Metadaten NeilKhandelwal/drum-jepa": "FetchError: HTTP 404: https://api.github.com/repos/NeilKhandelwal/drum-jepa",
     "GitHub Metadaten smikoo1000-svg/Fnf": "FetchError: HTTP 404: https://api.github.com/repos/smikoo1000-svg/Fnf"
   },
-  "last_checked": "2026-11-10T15:44:09+00:00",
+  "last_checked": "2026-11-11T15:33:34+00:00",
   "observations": {
     "arxiv": {
       "links": [],
@@ -61,7 +78,8 @@
       "releases": [],
       "resource_links": [
         "https://github.com/HuwCheston/deep-pianist-identification",
-        "https://github.com/facebookresearch/ijepa"
+        "https://github.com/facebookresearch/ijepa",
+        "https://github.com/microsoft/graphrag"
       ],
       "weight_file_hints": {}
     },
@@ -991,10 +1009,11 @@
       "exact_paper": true,
       "links": [
         "https://github.com/HuwCheston/deep-pianist-identification",
-        "https://github.com/facebookresearch/ijepa"
+        "https://github.com/facebookresearch/ijepa",
+        "https://github.com/microsoft/graphrag"
       ],
       "related": true,
-      "stamp": "89c0d1e8667f6ac97747de70d6455004b235f09e1d9a44d2a7c4d0c5ba534caf"
+      "stamp": "8cffdb967d090a4b80d1c15aef11c75f0b803b60e3ac8133869f4dcd8beb9a8a"
     },
     "NeilKhandelwal/drum-jepa": {
       "exact_paper": true,
@@ -1913,7 +1932,7 @@
         "https://huggingface.co/papers/2604.22748"
       ],
       "related": true,
-      "stamp": "d016c7b6e004abfe91c1e6688672f4789f5798b177d5d83515ebeecc1269af98"
+      "stamp": "bc5e63f70cb46f63b775688b70504199c1eaa61089bf5c5a9fae5d1b3a654c8b"
     },
     "guangjun1997327/PianoAutomaticAnnotationSystem": {
       "exact_paper": true,
@@ -2026,6 +2045,12 @@
       "links": [],
       "related": false,
       "stamp": "d222180b496028146e9e2c262ab17835ec82eb4984702ba55cb0e77cbdc4cf1f"
+    },
+    "kunfang98927/generative-beat-tracking": {
+      "exact_paper": false,
+      "links": [],
+      "related": false,
+      "stamp": "c5331290d0a3b688fc24b3ce36fa395b372875b949fa5f118a165d744b53dd21"
     },
     "kunfang98927/gizmoBall": {
       "exact_paper": false,

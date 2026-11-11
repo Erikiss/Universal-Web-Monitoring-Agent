@@ -1,15 +1,15 @@
 # Music-JEPA — Prüfbericht
-2026-11-10T15:44:09+00:00
+2026-11-11T15:33:34+00:00
 
 Tagesalarm: 0 Meldungen.
-Neue Drittanbieter-Signale dieses Laufs: 0 (kein Tagesalarm).
+Neue Drittanbieter-Signale dieses Laufs: 1 (kein Tagesalarm).
 Wochensammlung dieses Laufs: 0 Quellen.
-Für spätere Wochensammlung vorgemerkt: 0 Quellen.
+Für spätere Wochensammlung vorgemerkt: 1 Quellen.
 Nächste Wochensammlung frühestens: 2026-11-14T14:17:41+00:00 (nächster Lauf; nur mit neuen Hinweisen).
 Abruffehler in diesem Lauf: 2.
 
 # Music-JEPA — täglicher Alarm
-2026-11-10T15:44:09+00:00
+2026-11-11T15:33:34+00:00
 
 Klare Quellenänderung bedeutet NICHT automatisch: Code und Gewichte veröffentlicht.
 
@@ -31,6 +31,11 @@ Drittanbieter-Suchtreffer lösen diese Tagesmail nicht aus. Sie werden separat,
 frühestens alle sieben Tage und nur bei neuen Hinweisen als Wochensammlung verschickt.
 
 ## D. DRITTANBIETER-SUCHE — ausschließlich für Wochensammlung
+### GitHub-Hinweis: Ircam-RnD/ml-reading-group (Drittanbieter-Treffer, Zuordnung unbestaetigt)
+https://github.com/Ircam-RnD/ml-reading-group
+Herkunft: GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.
+- Neue Ressourcenlinks: https://github.com/microsoft/graphrag
+
 ## Technischer Quellenstatus
 OK: arXiv
 OK: Projektseite
@@ -47,6 +52,7 @@ OK: GitHub Repository Ircam-RnD/ml-reading-group
 OK: GitHub Repository kunfang98927/Advanced-JUnit
 OK: GitHub Repository kunfang98927/audio-fingerprinter
 OK: GitHub Repository kunfang98927/CS-Notes
+OK: GitHub Repository kunfang98927/generative-beat-tracking
 OK: GitHub Repository kunfang98927/GestureControlledBeatTracking
 OK: GitHub Repository kunfang98927/gizmoBall
 OK: GitHub Repository kunfang98927/gpt-eval-mir
