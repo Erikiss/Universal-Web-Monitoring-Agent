@@ -1,0 +1,99 @@
+{
+  "checked_at": "2026-11-12T15:37:50+00:00",
+  "errors": [],
+  "last_success_at": "2026-11-12T15:37:50+00:00",
+  "new_count": 0,
+  "pending_count": 0,
+  "pending_results": [],
+  "queries": [
+    {
+      "label": "24 Stunden",
+      "q": "pythia",
+      "tbs": "qdr:d"
+    },
+    {
+      "label": "Überlappung/Nachholen: 4 Tage",
+      "q": "pythia",
+      "tbs": "qdr:d4"
+    },
+    {
+      "label": "Ergänzende Modellsuche: 4 Tage",
+      "q": "pythia (EleutherAI OR \"GPT-NeoX\" OR \"language model\" OR Sprachmodell OR \"mechanistic interpretability\")",
+      "tbs": "qdr:d4"
+    }
+  ],
+  "results": [
+    {
+      "classification": "excluded",
+      "google_date": "vor 7 Stunden",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "An intriguing name with connections to Greek mythology, Pythia was the title of the high priestess at the Temple of Apollo in Delphi.",
+      "title": "Pythia Name Meaning, Origin & Popularity",
+      "url": "https://nameberry.com/name/pythia"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 3 Tagen",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "In ancient Greek religion, the priestess of Apollo at Delphi who delivered the oracle's responses.",
+      "title": "pythia meaning - English - English (Wordnet) dictionary",
+      "url": "https://vdict.com/set_language/en?next=%2FPythia%2C7%2C0%2C0.html"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "This post tells the historical story of the Pythia, a young priestess known as the Oracle of Delphi, who was a mysterious figure in Ancient Greece.",
+      "title": "Oracle of Delphi: who was Pythia and her predictions",
+      "url": "https://www.facebook.com/61593018594817/posts/the-mysterious-oracle-of-delphi-the-woman-who-predicted-the-future-%EF%B8%8Fdid-you-know/122127152445433953/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Pythia was the high priestess at the temple of Apollo in Delphi, Ancient Greece She was widely known and the “oracle of Delphi” and people all over the ...",
+      "title": "THRYAI // PYTHIA Oracular practice is one of ... - Instagram",
+      "url": "https://www.instagram.com/p/DfkJfltT0-h/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "@mischiefanimals. Goblin Moder · @mischiefanimals. pythia oracle soothsayer prophet. 11:52 PM · Nov 8, 2026 15.9K Views · 1. 100. 1.2K 82 · @VariantUnNoun.",
+      "title": "pythia oracle soothsayer prophet - Goblin Moder on ...",
+      "url": "https://x.com/mischiefanimals/status/2119578865722929379"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Kristin Tarbell joining our AI for Biologists discussion panel! Kristin is a visionary leader in immunology, therapeutic strategy and translational medicine who ...",
+      "title": "#omics_connect | Pythia BioSciences",
+      "url": "https://www.linkedin.com/posts/pythia-bio_omicsconnect-activity-7525855718055383041-fo55"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Marie (@instamawoee). 1 Reply. 38 Views. Hello there Pythia of Delphi .",
+      "title": "Hello there Pythia of Delphi 😅",
+      "url": "https://www.threads.com/@instamawoee/post/DfkN-KlgLLn/hello-there-pythia-of-delphi/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 2 Tagen",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "w : reco-level Pythia → re-weight reco-level pseudodata. ▷ construct proto-testdistribution as proto-test = w(Pythia) Pythia on truth-level. ▷ residual ...",
+      "title": "Regularization Bias Estimation on Z + jets",
+      "url": "https://indico.cern.ch/event/1691500/contributions/7338897/attachments/3378241/6065621/regularization_bias_estimation_test.pdf"
+    }
+  ]
+}
