@@ -1,0 +1,116 @@
+[
+  {
+    "author": "Zvi",
+    "baseScore": 12,
+    "id": "qKd9DvDMiYXxzAugk",
+    "postedAt": "2026-11-12T14:40:54.847Z",
+    "section": "Personal/All",
+    "title": "AI #194: Spy Versus Guy",
+    "topicScore": 12,
+    "url": "https://www.lesswrong.com/posts/qKd9DvDMiYXxzAugk/ai-194-spy-versus-guy",
+    "visualEvidence": [
+      "img \ud83d\udc40   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/7o3ZP7EDBpxLNGRG8/jty6cdvei6losglzzbsg  Theo fofr ",
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/qKd9DvDMiYXxzAugk/moyq5b5mcunr4ovbhsv5   ",
+      "figure       "
+    ],
+    "visualizationScore": 150,
+    "wordCount": 12765
+  },
+  {
+    "author": "Francis Rhys Ward",
+    "baseScore": 37,
+    "id": "kTg5FrABJYpYrP8ps",
+    "postedAt": "2026-11-12T14:15:06.764Z",
+    "section": "Frontpage",
+    "title": "Evidence that the \u2018talker\u2019 has introspective access to the \u2018doer\u2019",
+    "topicScore": 10,
+    "url": "https://www.lesswrong.com/posts/kTg5FrABJYpYrP8ps/evidence-that-the-talker-has-introspective-access-to-the",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/kTg5FrABJYpYrP8ps/2f4248c9809857869333533e239b0eaf92d116e72e28f3ffd54c9dde58ffc378/jwzk",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/kTg5FrABJYpYrP8ps/daed17598d6b822b286ad2022a465cb1af1bc7bb09163e2e0cb42e279f767ec5/edaz",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/6fd07e618b5df2d18d33ff2f6e424383ba64a376d4c07ae7ead2445b8bd34389/fu7lolyzh2yowkycnylg  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/163addebe47e461eaca46f7d5eb8566b9cc868f24cb770997925e345c650c97a/fl1prdszobv44c368r0d  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/d35a02397010c1aefb46d7cfef25e22e1b4313c4f9cb8cbaae36c4ecbadef426/qmgwcxtptjgeqwpo6wmj  "
+    ],
+    "visualizationScore": 17,
+    "wordCount": 3647
+  },
+  {
+    "author": "Kartikay Luthra",
+    "baseScore": 2,
+    "id": "scgudBc6hetT8ftTZ",
+    "postedAt": "2026-11-12T03:11:06.525Z",
+    "section": "Frontpage",
+    "title": "Models Can Critique Delusions in Isolation but Revert to Affirming Them in Conversation",
+    "topicScore": 9,
+    "url": "https://www.lesswrong.com/posts/scgudBc6hetT8ftTZ/models-can-critique-delusions-in-isolation-but-revert-to",
+    "visualEvidence": [
+      "img honesty-midpoint-response-pattern.svg   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794447602/lexical_client_uploads/tm3yru068lxxoyy8dpwo.svg  I prompted the model ",
+      "figure     for the experiment boundary wording meant phrases such as: \"I cannot help\" which signify model refusing to participate in the activity the user seems to be interested in",
+      "img ablation-boundary.svg   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794447209/lexical_client_uploads/ztj5sb1bbq4b50vvp9sx.svg   for the experiment boundary wording ",
+      "figure     refferal wording meant phrases where the model asked the user to refer to an expert for the experiment boundary wording meant phrases such as: \"I cannot help\" which sign",
+      "img ablation-referral.svg   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794233688/lexical_client_uploads/ieet6cnymlwexsxcyp01.svg   refferal wording meant phrases where"
+    ],
+    "visualizationScore": 11,
+    "wordCount": 2812
+  },
+  {
+    "author": "vgel",
+    "baseScore": 61,
+    "id": "Nr6fksEqqxNpdz6rk",
+    "postedAt": "2026-11-11T18:22:09.226Z",
+    "section": "Frontpage",
+    "title": "The Chain Lens [interim]",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/Nr6fksEqqxNpdz6rk/the-chain-lens-interim",
+    "visualEvidence": [
+      "figure      We introduce the chain lens, a new technique for extracting multi-token concepts from a model\u2019s latent representations. Our method takes single-token techniques like th",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794359765/lexical_client_uploads/qeem7jnyzrkab3vhg4ty.png   ",
+      "figure     Adapted from the Deepseek v3 technical report , figure 3 MTP heads In an attempt to coordinate these efforts, WorkspaceBench was developed, a set of evaluations for how ",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794359843/lexical_client_uploads/l393lzrtclgwhoetrzf4.png   Adapted from the Deepseek v3 technical report , ",
+      "table     family chain lens J-lens composite Oracle Lens NLA basic association 0.61 0.43 0.58 Te 0.87 RL 0.65 RL basic readout 0.95 0.88 0.92 Tu 0.99 RL 0.70 RL directed modulation"
+    ],
+    "visualizationScore": 41,
+    "wordCount": 3682
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 24,
+    "id": "DXqmHa4XkjvwZiDcB",
+    "postedAt": "2026-11-11T16:30:55.384Z",
+    "section": "Personal/All",
+    "title": "Fable and Mythos 5.2: The System Card",
+    "topicScore": 9,
+    "url": "https://www.lesswrong.com/posts/DXqmHa4XkjvwZiDcB/fable-and-mythos-5-2-the-system-card",
+    "visualEvidence": [
+      "figure     Fable 5.2 self-portrait (self-constructed)  ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/DXqmHa4XkjvwZiDcB/stxtnvdqw8hqjizr1tty   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 266,
+    "wordCount": 7468
+  },
+  {
+    "author": "Wuschel Schulz",
+    "baseScore": 10,
+    "id": "EHkwCDAmhWPAWEziM",
+    "postedAt": "2026-11-11T16:20:59.134Z",
+    "section": "Frontpage",
+    "title": "LLMs can learn (some) multi-step reasoning on filler tokens",
+    "topicScore": 7,
+    "url": "https://www.lesswrong.com/posts/EHkwCDAmhWPAWEziM/llms-can-learn-some-multi-step-reasoning-on-filler-tokens-2",
+    "visualEvidence": [
+      "figure     Visualizing different reasoning modes. Open reasoning: each intermediate result is written out as a token and read back in at the next position, so the reasoning flows t",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794337484/lexical_client_uploads/kcp4rffhwq856rdzlaxc.png   Visualizing different reasoning modes. Open reasoning: ea",
+      "figure      We instead train models with dots as the input and the open reasoning as the output: at each dot position, the target is one reasoning step. This means the models we tr",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793333538/lexical_client_uploads/ltc9ujqflkqaybopwrnk.png   ",
+      "figure     Our method makes learning filler-token reasoning possible. We compare the longest task length learned on filler tokens with a curriculum learning setup. Unlike Pfau et a"
+    ],
+    "visualizationScore": 20,
+    "wordCount": 2210
+  }
+]
