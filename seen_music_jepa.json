@@ -41,7 +41,7 @@
     "GitHub Metadaten NeilKhandelwal/drum-jepa": "FetchError: HTTP 404: https://api.github.com/repos/NeilKhandelwal/drum-jepa",
     "GitHub Metadaten smikoo1000-svg/Fnf": "FetchError: HTTP 404: https://api.github.com/repos/smikoo1000-svg/Fnf"
   },
-  "last_checked": "2026-11-11T15:33:34+00:00",
+  "last_checked": "2026-11-12T16:09:36+00:00",
   "observations": {
     "arxiv": {
       "links": [],
@@ -1106,7 +1106,7 @@
       "exact_paper": false,
       "links": [],
       "related": false,
-      "stamp": "f073da8e1791754ebc925f4099fc82a4de77be8df3b045f0e44e4bc89bc7427a"
+      "stamp": "52edbe8e52e64279783bdd683216c87d59f1872b9d71072c12e71b9e8b204f71"
     },
     "ZZWaang/acc-gen-8bar-wholesong": {
       "exact_paper": false,
@@ -1932,7 +1932,7 @@
         "https://huggingface.co/papers/2604.22748"
       ],
       "related": true,
-      "stamp": "bc5e63f70cb46f63b775688b70504199c1eaa61089bf5c5a9fae5d1b3a654c8b"
+      "stamp": "b099794bfc187de44e63da1f22c8fbf4c77173935a0612bc69ab5258435fc319"
     },
     "guangjun1997327/PianoAutomaticAnnotationSystem": {
       "exact_paper": true,
@@ -2068,7 +2068,7 @@
       "exact_paper": false,
       "links": [],
       "related": false,
-      "stamp": "5ae78c604d6c3f605f9580086b63048fc1456132aabf6e64132f448263bc33e3"
+      "stamp": "afcc2881d793e799a0ca1dc8d8c2d4eb5c3bf306c09e2c25ea4eb7893cdc5317"
     },
     "kunfang98927/musicgroundingbench": {
       "exact_paper": false,
