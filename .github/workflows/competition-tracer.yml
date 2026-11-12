@@ -1,0 +1,121 @@
+name: Competition Tracer
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Check sources and preview reports without saving state or sending email'
+        required: false
+        default: false
+        type: boolean
+  schedule:
+    # Daily 07:23 UTC = 08:23 CET / 09:23 CEST; Actions may start late.
+    - cron: '23 7 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'competition_*.py'
+      - 'competition_sources.json'
+      - 'test_competition_*.py'
+      - '.github/workflows/competition-tracer.yml'
+      - '.github/scripts/persist-competition.sh'
+  pull_request:
+    paths:
+      - 'competition_*.py'
+      - 'competition_sources.json'
+      - 'test_competition_*.py'
+      - '.github/workflows/competition-tracer.yml'
+      - '.github/scripts/persist-competition.sh'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Offline Competition Tracer regression tests
+        run: python -m unittest discover -p 'test_competition_*.py' -v
+      - name: Validate persistence script syntax
+        run: bash -n .github/scripts/persist-competition.sh
+
+  watch:
+    needs: test
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    concurrency:
+      group: competition-tracer-production
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # A queued run must load acknowledgements saved by the prior run.
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Collect competition changes and related research
+        id: watch
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          args=()
+          if [ "$DRY_RUN" = "true" ]; then
+            args+=(--dry-run)
+          fi
+          python competition_tracer.py "${args[@]}" \
+            --config competition_sources.json \
+            --state seen_competitions.json \
+            --report-dir reports/competitions \
+            --alert-file "$RUNNER_TEMP/competition-digest.txt"
+
+      - name: Send one daily digest through the existing email route
+        if: steps.watch.outputs.alert_count > 0 && inputs.dry_run != true
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
+          ALERT_SUBJECT: ${{ steps.watch.outputs.subject }}
+        run: >
+          python send_alert.py
+          --subject "$ALERT_SUBJECT"
+          --body-file "$RUNNER_TEMP/competition-digest.txt"
+
+      # A failed SMTP step must not acknowledge or consume the pending digest.
+      - name: Acknowledge the successful daily delivery
+        if: steps.watch.outputs.alert_count > 0 && inputs.dry_run != true
+        run: python competition_tracer.py --state seen_competitions.json --acknowledge-delivery
+
+      - name: Persist state and cumulative reports after successful delivery
+        if: inputs.dry_run != true
+        run: bash .github/scripts/persist-competition.sh
+
+      - name: Retain reports even when delivery or persistence fails
+        if: always() && inputs.dry_run != true
+        uses: actions/upload-artifact@v4
+        with:
+          name: competition-tracer-${{ github.run_id }}-${{ github.run_attempt }}
+          path: reports/competitions/
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Mark incomplete source checks as failed
+        if: steps.watch.outputs.error_count > 0
+        run: |
+          echo 'Some competition sources could not be checked completely. The report lists the gaps; this is not an all-clear.'
+          exit 1

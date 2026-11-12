@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "competitions": [
+    {
+      "id": "tig",
+      "name": "The Innovation Game",
+      "description": "Live algorithm submissions, public source branches and protocol status. Daily snapshots are not a replay of every blockchain block.",
+      "depth": "deep",
+      "sources": [
+        {
+          "id": "tig-live",
+          "type": "tig",
+          "repo": "tig-foundation/tig-monorepo",
+          "api_url": "https://mainnet-api.tig.foundation",
+          "depth": "deep",
+          "max_branch_pages": 50,
+          "max_source_checks": 30,
+          "max_source_files": 100,
+          "max_file_bytes": 262144,
+          "max_diff_lines": 60,
+          "max_content_files": 4,
+          "adoption_delta": 0.05
+        },
+        {
+          "id": "tig-papers",
+          "type": "arxiv",
+          "query": "all:\"The Innovation Game\" OR all:\"TIG Foundation\" OR all:\"optimisable proof of work\"",
+          "initial_lookback_days": 7
+        }
+      ]
+    },
+    {
+      "id": "sakana-core-war",
+      "name": "Sakana AI — Core War / Digital Red Queen",
+      "description": "Competitive assembly-program research framework. No continuously operated public submission leaderboard has been verified.",
+      "depth": "standard",
+      "sources": [
+        {
+          "id": "drq-code",
+          "type": "github",
+          "repo": "SakanaAI/drq",
+          "branch": "main",
+          "paths": [
+            "src/",
+            "human_warriors/",
+            "corewar/",
+            "README.md"
+          ]
+        },
+        {
+          "id": "drq-project",
+          "type": "page",
+          "url": "https://pub.sakana.ai/drq/"
+        },
+        {
+          "id": "core-war-papers",
+          "type": "arxiv",
+          "query": "all:\"Core War\" OR all:Redcode OR all:\"Digital Red Queen\"",
+          "seed_ids": [
+            "2601.03335"
+          ],
+          "initial_lookback_days": 7
+        }
+      ]
+    },
+    {
+      "id": "sakana-sudoku",
+      "name": "Sakana AI — Sudoku-Bench research and status",
+      "description": "The official repository currently marks Sudoku-Bench discontinued; watch for status changes, benchmark updates and new research.",
+      "depth": "light",
+      "sources": [
+        {
+          "id": "sudoku-repository",
+          "type": "github",
+          "repo": "SakanaAI/Sudoku-Bench",
+          "branch": "main",
+          "paths": [],
+          "depth": "deep",
+          "max_diff_files": 5
+        },
+        {
+          "id": "sudoku-project",
+          "type": "page",
+          "url": "https://pub.sakana.ai/sudoku/"
+        },
+        {
+          "id": "sudoku-papers",
+          "type": "arxiv",
+          "query": "all:\"Sudoku-Bench\" OR (all:Sudoku AND (all:\"language model\" OR all:reasoning OR all:benchmark))",
+          "seed_ids": [
+            "2505.16135"
+          ],
+          "initial_lookback_days": 7
+        }
+      ]
+    },
+    {
+      "id": "assembly-alife",
+      "name": "Assembly, program evolution and artificial life",
+      "description": "Related research, including Google's Paradigms of Intelligence team; these publications are not Sakana competition entries.",
+      "depth": "light",
+      "sources": [
+        {
+          "id": "google-poi-publications",
+          "type": "github",
+          "repo": "paradigms-of-intelligence/.github",
+          "branch": "main",
+          "paths": [
+            "profile/README.md"
+          ],
+          "depth": "deep",
+          "max_diff_files": 5
+        },
+        {
+          "id": "google-computational-life-code",
+          "type": "github",
+          "repo": "paradigms-of-intelligence/cubff",
+          "branch": "main",
+          "paths": []
+        },
+        {
+          "id": "assembly-alife-papers",
+          "type": "arxiv",
+          "query": "(all:Z80 OR all:\"machine code\" OR all:assembly OR all:\"computational life\") AND (all:\"self-replication\" OR all:\"self-replicating\" OR all:coevolution OR all:\"program evolution\")",
+          "seed_ids": [
+            "2406.19108",
+            "2607.09211",
+            "2607.01483",
+            "2609.10817"
+          ],
+          "initial_lookback_days": 7
+        }
+      ]
+    }
+  ]
+}
