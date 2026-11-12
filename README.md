@@ -7,6 +7,7 @@ This repository runs scheduled GitHub Actions jobs that monitor research sources
 - **arXiv AI Top Papers** (weekly): ranks the last 7 days of AI-related arXiv submissions by reference count and by citation-weighted references.
 - **Lab Publications filter** (temporarily disabled): matched arXiv papers against a list of lab names.
 - **Pythia Google watch**: daily Google web search for the EleutherAI Pythia models, with a 24-hour search, overlapping outage catch-up, relevance filtering and a persistent outbox. All queued hits are bundled into one Pushover-mail digest per run, with a link to the full report. Requires the additional `SERPAPI_API_KEY` search secret. [Setup and coverage](PYTHIA_GOOGLE_WATCH.md).
+- **Competition Tracer**: extensible daily tracking of TIG algorithm submissions, Sakana Core War / Digital Red Queen, Sudoku-Bench status and related assembly/evolution papers, including Google's Paradigms of Intelligence research. Per-source depth, cumulative reports and one daily email digest use the existing SMTP/Pushover route. [Sources, setup and coverage](COMPETITION_TRACER.md).
 
 ## Conventions
 
@@ -151,3 +152,4 @@ python lw_filter.py
 - The current implementation uses a heuristic topic and visualization filter so it can run without additional services.
 - LessWrong has no API key or bot registration. GraphQL authentication is a `loginToken` harvested from a logged-in browser session, which would mean storing a live session credential in repository secrets — deliberately not done.
 - LessWrong also publishes an agent-oriented Markdown API (`/api/SKILL.md`, `/api/latest`, `/api/post/[id]`). It is not used here because the filter's visualization heuristic counts HTML elements (`<figure>`, `<svg>`, `<canvas>`, `<iframe>`, `<table>`), which the Markdown rendering discards. `/api/agent/ping` and `/api/agent/feedback` from that same API are used for the reachability probe and as the escalation path.
+
