@@ -13,6 +13,7 @@
       "repo:ZZWaang/music-jepa-demo": "author",
       "repo:enhansome/enhansome-agentic-world-modeling": "third_party",
       "repo:guangjun1997327/PianoAutomaticAnnotationSystem": "third_party",
+      "repo:ruiling-smartbear/bayin": "third_party",
       "repo:smikoo1000-svg/Fnf": "third_party"
     },
     "last_digest_at": "2026-11-07T14:17:41+00:00",
@@ -33,6 +34,25 @@
         "origin": "GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.",
         "title": "GitHub-Hinweis: Ircam-RnD/ml-reading-group (Drittanbieter-Treffer, Zuordnung unbestaetigt)",
         "url": "https://github.com/Ircam-RnD/ml-reading-group"
+      },
+      "repo:ruiling-smartbear/bayin": {
+        "changes": [
+          {
+            "fingerprint": "ad424d70293854e2c8ea4d2fef1a743184cd2dd6d72ab77a083cd247912a7713",
+            "summary": [
+              "Erstmals erfasst: 3 Code-Dateien; Beispiele: tools/calibrate_bugle.py, tools/contour.py, tools/measure.py.",
+              "Gewichtsdatei-Hinweise im Repository: 0. Kein Gewichte-Download damit belegt.",
+              "GitHub-Releases: 0; keine erfasst.",
+              "Neue Ressourcenlinks: https://github.com/jamesondh/chimera-vocal-synth, https://github.com/ruiling-smartbear/bayin, https://github.com/thestk/stk"
+            ]
+          }
+        ],
+        "first_seen_at": "2026-11-13T15:38:25+00:00",
+        "key": "repo:ruiling-smartbear/bayin",
+        "last_seen_at": "2026-11-13T15:38:25+00:00",
+        "origin": "GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.",
+        "title": "GitHub-Hinweis: ruiling-smartbear/bayin (Drittanbieter-Treffer, Zuordnung unbestaetigt)",
+        "url": "https://github.com/ruiling-smartbear/bayin"
       }
     },
     "version": 1
@@ -41,7 +61,7 @@
     "GitHub Metadaten NeilKhandelwal/drum-jepa": "FetchError: HTTP 404: https://api.github.com/repos/NeilKhandelwal/drum-jepa",
     "GitHub Metadaten smikoo1000-svg/Fnf": "FetchError: HTTP 404: https://api.github.com/repos/smikoo1000-svg/Fnf"
   },
-  "last_checked": "2026-11-12T16:09:36+00:00",
+  "last_checked": "2026-11-13T15:38:25+00:00",
   "observations": {
     "arxiv": {
       "links": [],
@@ -985,6 +1005,20 @@
       ],
       "releases": [],
       "resource_links": [],
+      "weight_file_hints": {}
+    },
+    "repo:ruiling-smartbear/bayin": {
+      "code_files": [
+        "tools/calibrate_bugle.py",
+        "tools/contour.py",
+        "tools/measure.py"
+      ],
+      "releases": [],
+      "resource_links": [
+        "https://github.com/jamesondh/chimera-vocal-synth",
+        "https://github.com/ruiling-smartbear/bayin",
+        "https://github.com/thestk/stk"
+      ],
       "weight_file_hints": {}
     },
     "repo:smikoo1000-svg/Fnf": {
@@ -1932,7 +1966,7 @@
         "https://huggingface.co/papers/2604.22748"
       ],
       "related": true,
-      "stamp": "b099794bfc187de44e63da1f22c8fbf4c77173935a0612bc69ab5258435fc319"
+      "stamp": "ce8b69e6bc7b18e4e42648d7f30c6cdd517cd63e8c6a56cc30952e5692853921"
     },
     "guangjun1997327/PianoAutomaticAnnotationSystem": {
       "exact_paper": true,
@@ -2068,7 +2102,7 @@
       "exact_paper": false,
       "links": [],
       "related": false,
-      "stamp": "afcc2881d793e799a0ca1dc8d8c2d4eb5c3bf306c09e2c25ea4eb7893cdc5317"
+      "stamp": "df356a997a6aa8c0dc6b8c99093027b8363fa44b74e0a431c3521064069c9e9e"
     },
     "kunfang98927/musicgroundingbench": {
       "exact_paper": false,
@@ -2087,6 +2121,16 @@
       "links": [],
       "related": false,
       "stamp": "3fa992fdd419668059a3778493bddddce2a31d94fc5bdd4d6e5d9363b126d20a"
+    },
+    "ruiling-smartbear/bayin": {
+      "exact_paper": true,
+      "links": [
+        "https://github.com/jamesondh/chimera-vocal-synth",
+        "https://github.com/ruiling-smartbear/bayin",
+        "https://github.com/thestk/stk"
+      ],
+      "related": true,
+      "stamp": "03e959282ebdc46bedd8291422deb759d78ed0e77d6c40a84903442d2ba8f521"
     },
     "smikoo1000-svg/Fnf": {
       "exact_paper": true,

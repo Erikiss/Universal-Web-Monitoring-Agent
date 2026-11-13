@@ -1,15 +1,15 @@
 # Music-JEPA — Prüfbericht
-2026-11-12T16:09:36+00:00
+2026-11-13T15:38:25+00:00
 
 Tagesalarm: 0 Meldungen.
-Neue Drittanbieter-Signale dieses Laufs: 0 (kein Tagesalarm).
+Neue Drittanbieter-Signale dieses Laufs: 1 (kein Tagesalarm).
 Wochensammlung dieses Laufs: 0 Quellen.
-Für spätere Wochensammlung vorgemerkt: 1 Quellen.
+Für spätere Wochensammlung vorgemerkt: 2 Quellen.
 Nächste Wochensammlung frühestens: 2026-11-14T14:17:41+00:00 (nächster Lauf; nur mit neuen Hinweisen).
 Abruffehler in diesem Lauf: 2.
 
 # Music-JEPA — täglicher Alarm
-2026-11-12T16:09:36+00:00
+2026-11-13T15:38:25+00:00
 
 Klare Quellenänderung bedeutet NICHT automatisch: Code und Gewichte veröffentlicht.
 
@@ -31,6 +31,14 @@ Drittanbieter-Suchtreffer lösen diese Tagesmail nicht aus. Sie werden separat,
 frühestens alle sieben Tage und nur bei neuen Hinweisen als Wochensammlung verschickt.
 
 ## D. DRITTANBIETER-SUCHE — ausschließlich für Wochensammlung
+### GitHub-Hinweis: ruiling-smartbear/bayin (Drittanbieter-Treffer, Zuordnung unbestaetigt)
+https://github.com/ruiling-smartbear/bayin
+Herkunft: GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.
+- Erstmals erfasst: 3 Code-Dateien; Beispiele: tools/calibrate_bugle.py, tools/contour.py, tools/measure.py.
+- Gewichtsdatei-Hinweise im Repository: 0. Kein Gewichte-Download damit belegt.
+- GitHub-Releases: 0; keine erfasst.
+- Neue Ressourcenlinks: https://github.com/jamesondh/chimera-vocal-synth, https://github.com/ruiling-smartbear/bayin, https://github.com/thestk/stk
+
 ## Technischer Quellenstatus
 OK: arXiv
 OK: Projektseite
@@ -62,6 +70,7 @@ OK: GitHub Repository kunfang98927/Timeline-App
 OK: GitHub Repository kunfang98927/YQBD
 OK: GitHub Repository leofan90/Awesome-World-Models
 OK: GitHub Repository matrix-agent/awesome-agentic-world-modeling
+OK: GitHub Repository ruiling-smartbear/bayin
 OK: GitHub Repository Sound-of-AI-Lab-Open-Science/JEPA-reproduce-music-jepa-lightning
 OK: GitHub Repository Sound-of-AI-Lab-Open-Science/music-understanding-baselines
 OK: GitHub Repository SuperInstance/fleet-jepa-midi
