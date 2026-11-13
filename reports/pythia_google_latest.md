@@ -1,68 +1,81 @@
 # Pythia – tägliche Google-Websuche
 
-2026-11-12T15:37:50+00:00
+2026-11-13T14:55:35+00:00
 
-Neu vorgemerkt: 0 | Noch zu versenden: 0
-Letzte vollständig erfolgreiche Suche: 2026-11-12T15:37:50+00:00
+Neu vorgemerkt: 1 | Noch zu versenden: 1
+Letzte vollständig erfolgreiche Suche: 2026-11-13T14:55:35+00:00
 
 Google-Websuche via SerpApi; keine Beschränkung auf News, Dateityp oder Quellsprache.
 Google-Datumsfilter sind keine vollständige Publikationsdatenbank. Titel/Snippets werden heuristisch geprüft.
 Unklare Treffer werden dokumentiert und nicht als bereits gemeldet gespeichert.
 
 - 24 Stunden: https://www.google.com/search?q=pythia&tbs=qdr%3Ad
-- Überlappung/Nachholen: 4 Tage: https://www.google.com/search?q=pythia&tbs=qdr%3Ad4
-- Ergänzende Modellsuche: 4 Tage: https://www.google.com/search?q=pythia+%28EleutherAI+OR+%22GPT-NeoX%22+OR+%22language+model%22+OR+Sprachmodell+OR+%22mechanistic+interpretability%22%29&tbs=qdr%3Ad4
+- Überlappung/Nachholen: 3 Tage: https://www.google.com/search?q=pythia&tbs=qdr%3Ad3
+- Ergänzende Modellsuche: 3 Tage: https://www.google.com/search?q=pythia+%28EleutherAI+OR+%22GPT-NeoX%22+OR+%22language+model%22+OR+Sprachmodell+OR+%22mechanistic+interpretability%22%29&tbs=qdr%3Ad3
 
 ## Sammelmeldung – vorgemerkte Treffer dieses Laufs
 
-Keine vorgemerkten Treffer.
+pythia 125m deduped
+https://aihorde.net/details/models/text/EleutherAI%2Fpythia-125m-deduped
+What the AI Horde knows about the pythia 125m deduped model: who is running it, what its publisher recommends, and how to try it.
+Erstmals gefunden: 2026-11-13T14:55:35+00:00
+
 
 ## Modelltreffer
 
-Keine in den erfolgreich abgerufenen Ergebnisseiten.
+pythia 125m deduped
+https://aihorde.net/details/models/text/EleutherAI%2Fpythia-125m-deduped
+What the AI Horde knows about the pythia 125m deduped model: who is running it, what its publisher recommends, and how to try it.
+Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
+
 
 ## Unklar – zur Nachprüfung
 
-pythia oracle soothsayer prophet - Goblin Moder on ...
-https://x.com/mischiefanimals/status/2119578865722929379
-@mischiefanimals. Goblin Moder · @mischiefanimals. pythia oracle soothsayer prophet. 11:52 PM · Nov 8, 2026 15.9K Views · 1. 100. 1.2K 82 · @VariantUnNoun.
+Pythia
+https://www.google.com/goto?url=CAESVwHEIkXXoVlKGz23f1x5LcclZLOZfcpgSH3IUQBsVvYTnrP_8-hliCCWodEA1mjlifYYAqd0M2jNpGl3P8DjhTG4_CGRuUHuDKXt8oJdCAYEAcE5QzDwPQ
+Für diese Seite sind keine Informationen verfügbar.
 Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
-#omics_connect | Pythia BioSciences
-https://www.linkedin.com/posts/pythia-bio_omicsconnect-activity-7525855718055383041-fo55
-Kristin Tarbell joining our AI for Biologists discussion panel! Kristin is a visionary leader in immunology, therapeutic strategy and translational medicine who ...
+Swedish performance artist, Stina Fors returns to Battersea ...
+https://www.facebook.com/EmbassyofSwedeninLondon/posts/swedish-performance-artist-stina-fors-returns-to-battersea-arts-centre-on-14-nov/1541737197989370/
+Swedish performance artist, Stina Fors returns to Battersea Arts Centre on 14 November with Answer Me, Pythia (Work-in-Progress). Following her recent ...
 Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Pythia
+https://www.youtube.com/playlist?list=OLMSnAG4O7Ce06ctfdmaiAo2SWVm8S4XdDA
+Ayurvedic healer, Odissi dancer, exploring the uncharted territories of sacred sexuality ...more. Ayurvedic healer, Odissi dancer, exploring the uncharted ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Meet The Queens of Canada's Drag Race Season 7 on WOW ...
+https://www.facebook.com/worldofwonderproductions/videos/meet-the-queens-of-canadas-drag-race-season-7-on-wow-presents-plus/2664279740693323/
+Pythia, a 31-year-old drag performer from Montreal, Quebec, introduces herself as a contestant for 'Canada's Drag Race: All Stars.' She reflects on her ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+https://scholar.google.com/citations?view_op=view_...
+https://scholar.google.com/citations?citation_for_view=PwKfQq0AAAAJ%3Au9iWguZQMMsC&hl=en&user=PwKfQq0AAAAJ&view_op=view_citation
+Für diese Seite sind keine Informationen verfügbar.
+Einordnung: Pythia-Bezug im Suchauszug nicht belegt
 
 
 ## Andere Pythias
 
-Pythia Name Meaning, Origin & Popularity
-https://nameberry.com/name/pythia
-An intriguing name with connections to Greek mythology, Pythia was the title of the high priestess at the Temple of Apollo in Delphi.
+Delphi! Track 2! You might not notice on first listen, but this ...
+https://www.instagram.com/reel/DfqjZyXt-Dq/
+In Ancient Greece, people would wait years to see the Pythia to ask her for guidance. It's been theorized that she would inhale vapors from fissures in the rock ...
 Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
 
-pythia meaning - English - English (Wordnet) dictionary
-https://vdict.com/set_language/en?next=%2FPythia%2C7%2C0%2C0.html
-In ancient Greek religion, the priestess of Apollo at Delphi who delivered the oracle's responses.
+Religion. Ancient Greece. The Pythia, oracle at Delphi. ...
+https://www.bridgemanimages.com/en/noartistknown/religion-ancient-greece-the-pythia-oracle-at-delphi-imagery-france-c-1900/nomedium/asset/2638768
+Download stock image by Religion. Ancient Greece. The Pythia, oracle at Delphi. Imagery, France, c.1900.- High quality fine art images, pictures, ...
 Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
 
-Oracle of Delphi: who was Pythia and her predictions
-https://www.facebook.com/61593018594817/posts/the-mysterious-oracle-of-delphi-the-woman-who-predicted-the-future-%EF%B8%8Fdid-you-know/122127152445433953/
-This post tells the historical story of the Pythia, a young priestess known as the Oracle of Delphi, who was a mysterious figure in Ancient Greece.
+Pythia @ Delphi
+https://www.youtube.com/watch?v=Caw8eBfzo4Q
+Provided to YouTube by DistroKid Pythia @ Delphi · Mark Bokowiec Pythia @ Delphi ℗ 12206772 Records DK Released on: 2026-11-14 Auto-generated by YouTube.
 Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
 
-THRYAI // PYTHIA Oracular practice is one of ... - Instagram
-https://www.instagram.com/p/DfkJfltT0-h/
-Pythia was the high priestess at the temple of Apollo in Delphi, Ancient Greece She was widely known and the “oracle of Delphi” and people all over the ...
-Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
-
-Hello there Pythia of Delphi 😅
-https://www.threads.com/@instamawoee/post/DfkN-KlgLLn/hello-there-pythia-of-delphi/
-Marie (@instamawoee). 1 Reply. 38 Views. Hello there Pythia of Delphi .
-Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
-
-Regularization Bias Estimation on Z + jets
-https://indico.cern.ch/event/1691500/contributions/7338897/attachments/3378241/6065621/regularization_bias_estimation_test.pdf
-w : reco-level Pythia → re-weight reco-level pseudodata. ▷ construct proto-testdistribution as proto-test = w(Pythia) Pythia on truth-level. ▷ residual ...
+Jet-like di-hadron correlations in pO, OO, and Ne– ...
+https://www.google.com/goto?url=CAESYAHEIkXXnFekHR_7Fsvf4G587KQmH5sWoeATMNj9y26XmHtjiisPI7l0a_5lXPcTH_eTVxzL2dWDdusdved1BxeDGCSEsTKlrAU-OwaeUCb0TIve4rJllHqmJrOzNg5DIg
+PYTHIA 8, with the Monash tune for pp and with Angantyr for nuclear collisions [26, 27] , serves as a vacuum reference without a hydrodynamic medium. AMPT in ...
 Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
 

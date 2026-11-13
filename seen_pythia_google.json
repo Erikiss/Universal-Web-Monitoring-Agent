@@ -1063,10 +1063,19 @@
       "url": "https://zhuanlan.zhihu.com/p/2096482642027983491"
     }
   },
-  "last_attempt_at": "2026-11-12T15:37:50+00:00",
+  "last_attempt_at": "2026-11-13T14:55:35+00:00",
   "last_errors": [],
-  "last_success_at": "2026-11-12T15:37:50+00:00",
-  "pending": {},
+  "last_success_at": "2026-11-13T14:55:35+00:00",
+  "pending": {
+    "https://aihorde.net/details/models/text/EleutherAI%2Fpythia-125m-deduped": {
+      "first_seen_at": "2026-11-13T14:55:35+00:00",
+      "google_date": "vor 21 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "What the AI Horde knows about the pythia 125m deduped model: who is running it, what its publisher recommends, and how to try it.",
+      "title": "pythia 125m deduped",
+      "url": "https://aihorde.net/details/models/text/EleutherAI%2Fpythia-125m-deduped"
+    }
+  },
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
