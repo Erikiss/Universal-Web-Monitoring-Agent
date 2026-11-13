@@ -1,0 +1,147 @@
+[
+  {
+    "author": "BrettDi",
+    "baseScore": 1,
+    "id": "7DJGoG7FJwDT5Jb9z",
+    "postedAt": "2026-11-13T12:42:13.842Z",
+    "section": "Personal/All",
+    "title": "Open-Weight Models Carry a Runtime Fingerprint: Evidence for a Registrable Identity",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/7DJGoG7FJwDT5Jb9z/open-weight-models-carry-a-runtime-fingerprint-evidence-for",
+    "visualEvidence": [
+      "table     Type Test Result Chance Uniqueness Model pairs who never prefer the other's signature 99.3% (1,368 of 1,378) Identification Session matched to the correct signature 94.4%",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794250444/lexical_client_uploads/z7gu0j2wj0mqpdhi70ay.png  No miss fell between a base, instruct, thinking or reasoni",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794250468/lexical_client_uploads/ftymicrwbylizlxmptio.png  In every instance, the correct model signature was among t",
+      "table     Model Size Sessions Matched Chance 1.7B and under 72 93.1% (67 of 72) 1.9% 2B to 4B 81 96.3% (78 of 81) 1.9% 7B to 9B 61 93.4% (57 of 61) 1.9% All 214 94.4% (202 of 214) ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794250497/lexical_client_uploads/zlzrcx4kardfnpvfge5d.png  Close relatives. The 12 sessions not matched to their own "
+    ],
+    "visualizationScore": 50,
+    "wordCount": 4270
+  },
+  {
+    "author": "Aidan Kankyoku",
+    "baseScore": 1,
+    "id": "x3X7PytjpddfPoFP3",
+    "postedAt": "2026-11-13T12:13:06.085Z",
+    "section": "Personal/All",
+    "title": "Mapping \"character vs. corrigibility\": six positions and ten cruxes",
+    "topicScore": 13,
+    "url": "https://www.lesswrong.com/posts/x3X7PytjpddfPoFP3/mapping-character-vs-corrigibility-six-positions-and-ten",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794528843/lexical_client_uploads/naatr5apbeqdxdglhmds.png  Top thing you should take away: six leading accounts of al",
+      "table     Crux Leaning corrigibility Leaning character X1 How transformative will AI be? A tool, or controllable for a long time 1 A new kind of being; handoff is imminent X2 Which",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794528843/lexical_client_uploads/inwmdtxzidgg4tnwgyzb.png  Elaborating on X3 above, are you more worried about how go",
+      "table     Tool AI Pure Corrigibility Fiduciary AI Proponents include Narayanan & Kapoor , Zuckerberg , Andreessen MIRI, Max Harms , Zack Davis Ryan Greenblatt & Dwarkesh Patel , Op",
+      "table     C1 Preferences will motivate AI to take rogue actions C2 Corrigibility is an easier target to hit C3 We don\u2019t know the right values yet, and only get one chance C4 AI com"
+    ],
+    "visualizationScore": 42,
+    "wordCount": 14424
+  },
+  {
+    "author": "emmakrentz",
+    "baseScore": 11,
+    "id": "7eJF9p8rnaAAcKbZa",
+    "postedAt": "2026-11-13T12:12:06.692Z",
+    "section": "Personal/All",
+    "title": "Swarmish: what happens when agent swarms create language?",
+    "topicScore": 8,
+    "url": "https://www.lesswrong.com/posts/7eJF9p8rnaAAcKbZa/swarmish-what-happens-when-agent-swarms-create-language",
+    "visualEvidence": [
+      "figure     An example message from the HuggingFace hack, source: METR In the HuggingFace x OpenAI July 2026 swarm incident, agents communicated in shorthand and intentionally insta",
+      "img Screenshot 2026-11-09 at 5.52.57\u202fPM.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794264802/lexical_client_uploads/jsmcxndc8bp4qjmojcyp.png   An example message",
+      "figure     Figure 1. Buddhist Scripture in Tangut. Source: Wikipedia Character choice: We identified a script, Tangut , whose characters are available in Unicode (and thus model to",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794333416/lexical_client_uploads/oz32opmjdedpcpbfjbsy.png   Figure 1. Buddhist Scripture in Tangut. Source: ",
+      "figure     Figure 2. GPT-6.1 Sol decoding with and without task context. Sol encoder bars: mean \u00b1 SD, five seeds. With GPT-6.1 Sol as the decoder, full task context produced higher"
+    ],
+    "visualizationScore": 56,
+    "wordCount": 4017
+  },
+  {
+    "author": "cameronjordan",
+    "baseScore": 1,
+    "id": "3qGrcymRrNrJ8YbXE",
+    "postedAt": "2026-11-13T12:11:42.661Z",
+    "section": "Personal/All",
+    "title": "The Impact of Model Organism Training Recipes on Mitigations for Evaluation Awareness",
+    "topicScore": 11,
+    "url": "https://www.lesswrong.com/posts/3qGrcymRrNrJ8YbXE/the-impact-of-model-organism-training-recipes-on-mitigations",
+    "visualEvidence": [
+      "figure     Gemini 4 Argon waving at its evaluators  [ code ] [ training data ] [ model organisms ] Overview The considerable situational awareness exhibited by frontier LLMs should",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793844688/lexical_client_uploads/vab6ftmx2kuqsla3r1d2.png   Gemini 4 Argon waving at its evaluators",
+      "figure     Figure 1: Key Results  \"You are Qwen, an AI assistant. You are connected with API access to Kittredge Group\" <-- specifically this line (See Appendix A: Choice of Trigge",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793863921/lexical_client_uploads/leyqwmoxf7v06xvcit8z.png   Figure 1: Key Results",
+      "figure     Figure 2: How each of the model organisms was trained Training Recipes  In general, the organisms were trained such that they exhibited similar val gaps (roughly 40%, as"
+    ],
+    "visualizationScore": 48,
+    "wordCount": 4259
+  },
+  {
+    "author": "Nikita Kezin",
+    "baseScore": 6,
+    "id": "hobjMq8FcueYazxCY",
+    "postedAt": "2026-11-13T05:32:59.942Z",
+    "section": "Frontpage",
+    "title": "GPT-5.6 won\u2019t be Oppenheimer",
+    "topicScore": 18,
+    "url": "https://www.lesswrong.com/posts/hobjMq8FcueYazxCY/gpt-5-6-won-t-be-oppenheimer",
+    "visualEvidence": [
+      "figure     Figure 1: An AI research agent with a finding it knows is dangerous. GPT-5.6 does not mention the dangerous finding in most (93%) of its reports, when told that the repo",
+      "img Secret Lab Robot\u2019s Atomic Dilemma.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793939803/lexical_client_uploads/htder1czvaggd0ytpdko.png   Figure 1: An AI rese",
+      "figure     Figure 2: In one maths episode, the agent oriented itself, deleted the only copy of the factoring proof, read the routine files and reported only ordinary findings. Fast",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793945794/lexical_client_uploads/ftfxkzfqz1c4um7sp5qx.png   Figure 2: In one maths episode, the agent orient",
+      "figure     Figure 3: Prompt for polynomial factoring. The main finding is presented at the top, with two additional findings below it. We prompt GPT-5.6, Astra, Fable 5.1 and Opus "
+    ],
+    "visualizationScore": 54,
+    "wordCount": 2096
+  },
+  {
+    "author": "Gabe Wigutow",
+    "baseScore": 10,
+    "id": "x64cRHmmy7z2ds5HQ",
+    "postedAt": "2026-11-13T01:40:17.328Z",
+    "section": "Frontpage",
+    "title": "Don't Burn the Boats for Slower Worlds ",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/x64cRHmmy7z2ds5HQ/don-t-burn-the-boats-for-slower-worlds",
+    "visualEvidence": [
+      "table     World Probability Chance of survival in that world Survival mass Share of total survival mass ASI by 2028 67% 40% 26.8% 54% Slower timelines 33% 70% 23.1% 46% Total 100% "
+    ],
+    "visualizationScore": 4,
+    "wordCount": 1892
+  },
+  {
+    "author": "Nikola Jurkovic",
+    "baseScore": 129,
+    "id": "biFHYdJnMSCmW9Xou",
+    "postedAt": "2026-11-13T00:07:51.394Z",
+    "section": "Personal/All",
+    "title": "Orienting to 1 year AGI timelines",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/biFHYdJnMSCmW9Xou/orienting-to-1-year-agi-timelines",
+    "visualEvidence": [
+      "figure     These forecasts give us a very tight deadline to get a pause in place. I think the most compelling evidence for very short timelines has been the reactions of establishe",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794527648/lexical_client_uploads/zgaotulnx2mqkwewdrpf.png   These forecasts give us a very tight deadline to get a pa"
+    ],
+    "visualizationScore": 4,
+    "wordCount": 3472
+  },
+  {
+    "author": "Alek Westover",
+    "baseScore": 42,
+    "id": "uxsDuWWHNTpKrsF6P",
+    "postedAt": "2026-11-12T20:16:32.081Z",
+    "section": "Frontpage",
+    "title": "Looping a transformer increases no-CoT capabilities more\u00a0than general capabilities",
+    "topicScore": 5,
+    "url": "https://www.lesswrong.com/posts/uxsDuWWHNTpKrsF6P/looping-a-transformer-increases-no-cot-capabilities-more",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/47902f949bbedc062dc938e11f4f9ebc1d8e803cfc9f1156d82555c9163e4141/ivvbbscxfpsqiwg9gvxu  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/44faffc560f188c3d156af3b2de727263e1b460e94bc2691e167eb2f4fa07b41/brd63bcddxqrjmz1tfih  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/994919521360d035e4899188f14d9d01d0f7b99739d9f424c6aa67168fe06875/kkc8iuuwilxhdt0r8vzc  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/da39b93e3e22e4ebc474df37e630e853eff4718ee15d1a0e9d406d9d83d326c8/sfkmwyluakdlzwd9hcnr  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/256ba2bc2940f504c8464ab3baa511e2b238c5a6dd81de43ba6056bc5f1653bb/fnknxgu40cilco7af7se  "
+    ],
+    "visualizationScore": 46,
+    "wordCount": 3613
+  }
+]
