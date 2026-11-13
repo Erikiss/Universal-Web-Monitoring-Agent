@@ -7,10 +7,10 @@
         "version": 1,
         "initialized": true,
         "block": {
-          "id": "60e406a765b41a6fcfafd619f5fcc9d3",
-          "height": 1424157,
+          "id": "ed97f70365a7d77510385b328db2c1cc",
+          "height": 1425709,
           "round": 142,
-          "timestamp": 1794490663
+          "timestamp": 1794583920
         },
         "records": {
           "code:c004_a084": {
@@ -171,9 +171,9 @@
             },
             "stage": "merged",
             "compile_success": true,
-            "adoption": 0.8659024538643479,
+            "adoption": 0.9312492195673252,
             "merge_points": 0,
-            "reward": "101072349589962029"
+            "reward": "108699942187983879"
           },
           "code:c006_a018": {
             "id": "c006_a018",
@@ -1737,9 +1737,9 @@
             },
             "stage": "active",
             "compile_success": true,
-            "adoption": 0.6532283400971408,
-            "merge_points": 1962,
-            "reward": "76247991742857474"
+            "adoption": 0.6825121547500134,
+            "merge_points": 3514,
+            "reward": "79666141141457584"
           },
           "code:c001_a002": {
             "id": "c001_a002",
@@ -3411,9 +3411,9 @@
             },
             "stage": "merged",
             "compile_success": true,
-            "adoption": 0.8569276349503299,
+            "adoption": 0.8793745274558515,
             "merge_points": 0,
-            "reward": "100024765037295603"
+            "reward": "102644875601021772"
           },
           "code:c001_a076": {
             "id": "c001_a076",
@@ -3762,9 +3762,9 @@
             },
             "stage": "merged",
             "compile_success": true,
-            "adoption": 0.04755286697368367,
+            "adoption": 0.04341323071800103,
             "merge_points": 0,
-            "reward": "5550602118425299"
+            "reward": "5067403623095496"
           },
           "code:c008_a060": {
             "id": "c008_a060",
@@ -5193,7 +5193,7 @@
             },
             "stage": "active",
             "compile_success": true,
-            "adoption": 0.07435644175297049,
+            "adoption": 0.013186039489187925,
             "merge_points": 0,
             "reward": "0"
           },
@@ -6192,9 +6192,9 @@
             },
             "stage": "merged",
             "compile_success": true,
-            "adoption": 0.15296423121691913,
+            "adoption": 0.1382449256785937,
             "merge_points": 0,
-            "reward": "17854729690762907"
+            "reward": "16136620695400069"
           },
           "code:c007_a019": {
             "id": "c007_a019",
@@ -7434,9 +7434,9 @@
             },
             "stage": "merged",
             "compile_success": true,
-            "adoption": 0.14307236504967014,
+            "adoption": 0.12062547254414842,
             "merge_points": 0,
-            "reward": "16700102918553836"
+            "reward": "14079992354827666"
           },
           "code:c001_a086": {
             "id": "c001_a086",
@@ -9783,9 +9783,9 @@
             },
             "stage": "merged",
             "compile_success": true,
-            "adoption": 0.2949150608044734,
+            "adoption": 0.29466556720067844,
             "merge_points": 0,
-            "reward": "34423921530593464"
+            "reward": "34394799422634671"
           },
           "code:c001_a006": {
             "id": "c001_a006",
@@ -10620,9 +10620,9 @@
             },
             "stage": "merged",
             "compile_success": true,
-            "adoption": 0.059741104382681536,
+            "adoption": 0.055564740943486846,
             "merge_points": 0,
-            "reward": "6973272520605120"
+            "reward": "6485787049629483"
           },
           "code:c003_a100": {
             "id": "c003_a100",
@@ -11889,7 +11889,7 @@
             },
             "stage": "active",
             "compile_success": true,
-            "adoption": 0.15990808198038528,
+            "adoption": 0.17559194114020774,
             "merge_points": 0,
             "reward": "0"
           },
@@ -12429,7 +12429,7 @@
             },
             "stage": "active",
             "compile_success": true,
-            "adoption": 0.14625456171225637,
+            "adoption": 0.13582968885339194,
             "merge_points": 0,
             "reward": "0"
           },
@@ -13374,9 +13374,9 @@
             },
             "stage": "merged",
             "compile_success": true,
-            "adoption": 0.16118001682486288,
+            "adoption": 0.15058670274375802,
             "merge_points": 0,
-            "reward": "18813716181003712"
+            "reward": "17577212993671903"
           },
           "code:c002_a018": {
             "id": "c002_a018",
@@ -14076,9 +14076,9 @@
             },
             "stage": "merged",
             "compile_success": true,
-            "adoption": 0.6548741301401876,
+            "adoption": 0.7112699081267405,
             "merge_points": 0,
-            "reward": "76440096368315157"
+            "reward": "83022886107062955"
           },
           "code:c002_a082": {
             "id": "c002_a082",
@@ -16803,9 +16803,9 @@
             },
             "stage": "merged",
             "compile_success": true,
-            "adoption": 0.7050849391955266,
+            "adoption": 0.7053344327993215,
             "merge_points": 0,
-            "reward": "82300946425255975"
+            "reward": "82330068533214768"
           },
           "code:c003_a138": {
             "id": "c003_a138",
@@ -19719,9 +19719,9 @@
             },
             "stage": "merged",
             "compile_success": true,
-            "adoption": 0.18394585303494954,
+            "adoption": 0.13814338912950141,
             "merge_points": 0,
-            "reward": "21471055406530570"
+            "reward": "16124768855114580"
           },
           "code:c003_a085": {
             "id": "c003_a085",
@@ -20205,9 +20205,9 @@
             },
             "stage": "merged",
             "compile_success": true,
-            "adoption": 0.8400919180196147,
+            "adoption": 0.8244080588597923,
             "merge_points": 0,
-            "reward": "98059618201615821"
+            "reward": "96228921812147404"
           },
           "code:c007_a009": {
             "id": "c007_a009",
@@ -21004,7 +21004,7 @@
             "stage": "active",
             "compile_success": true,
             "adoption": 1.0,
-            "merge_points": 2878,
+            "merge_points": 4430,
             "reward": "233449735911698879"
           },
           "advance:c004_a072": {
@@ -22480,18 +22480,18 @@
           "vehicle_routing/vrptw_ultimate": "3df3a1a7ffb6ed0de50acf2e04178d25e52ed4ee"
         },
         "source_attempts": {},
-        "source_scan_sequence": 1,
+        "source_scan_sequence": 2,
         "pending_sources": []
       },
-      "checked_at": "2026-11-12T13:38:20+00:00"
+      "checked_at": "2026-11-13T15:32:19+00:00"
     },
     "tig-papers": {
       "config_hash": "1867018119c2cf3ab3ddb874595c59924d3d3d113ddce76f73271282181a7846",
       "data": {
         "seen": {},
-        "last_success": "2026-11-12T13:38:28.552844Z"
+        "last_success": "2026-11-13T15:32:26.277573Z"
       },
-      "checked_at": "2026-11-12T13:38:20+00:00"
+      "checked_at": "2026-11-13T15:32:19+00:00"
     },
     "drq-code": {
       "config_hash": "e6097933c7a4434d6270d93ba8b3772199be82db074885ff7046d6ce7222a8dc",
@@ -25112,18 +25112,18 @@
             "size": 819
           }
         },
-        "last_success": "2026-11-12T13:38:28.839511Z"
+        "last_success": "2026-11-13T15:32:26.662172Z"
       },
-      "checked_at": "2026-11-12T13:38:20+00:00"
+      "checked_at": "2026-11-13T15:32:19+00:00"
     },
     "drq-project": {
       "config_hash": "c403dfaa13c59f4afd29c2c8f060823eeff5ec8248443740c4825d0388346cfe",
       "data": {
         "sha256": "70a32a8619f421f9e66c589d1fb4482904837b086d38b9b23afb964b4a232e94",
         "text": "This page requires Javascript. Please enable it to view the website. Examples of discovered warriors competing against each other in Core War. Core War is a programming game where assembly-like programs called \"warriors\" compete for control of a virtual machine.\nIn this work, we use LLMs to evolve warriors through a self-play algorithm called Digital Red Queen.\nThis process leads to the discovery of diverse and sophisticated strategies, including targeted bombing, self-replication, and massive multithreading.\nHere, we show some of the discovered warriors competing against each other in Core War battles.\nSymbols indicate instruction opcodes, and colors denote the warrior that last modified each memory address.\nThere is no distinction between code and data, making the environment highly dynamic and volatile. Digital Red Queen: Adversarial Program Evolution in Core War with LLMs Akarsh Kumar MIT, Sakana AI Ryan Bahlous-Boldi MIT Prafull Sharma MIT Phillip Isola MIT Sebastian Risi Sakana AI Yujin Tang Sakana AI David Ha Sakana AI January 8 2026 PDF Github Abstract Large language models (LLMs) are increasingly being used to evolve solutions to problems in many domains, in a process inspired by biological evolution.\nHowever, unlike biological evolution, most LLM-evolution frameworks are formulated as static optimization problems, overlooking the open-ended adversarial dynamics that characterize real-world evolutionary processes.\nHere, we study Digital Red Queen (DRQ), a simple self-play algorithm that embraces these so-called \"Red Queen\" dynamics via continual adaptation to a changing objective.\nDRQ uses an LLM to evolve assembly-like programs, called warriors, which compete against each other for control of a virtual machine in the game of Core War, a Turing-complete environment studied in artificial life and connected to cybersecurity.\nIn each round of DRQ, the model evolves a new warrior to defeat all previous ones, producing a sequence of adapted warriors.\nOver many rounds, we observe that warriors become increasingly general (relative to a set of held-out human warriors).\nInterestingly, warriors also become less behaviorally diverse across independent runs, indicating a convergence pressure toward a general-purpose behavioral strategy, much like convergent evolution in nature.\nThis result highlights a potential value of shifting from static objectives to dynamic Red Queen objectives.\nOur work positions Core War as a rich, controllable sandbox for studying adversarial adaptation in artificial systems and for evaluating LLM-based evolution methods.\nMore broadly, the simplicity and effectiveness of DRQ suggest that similarly minimal self-play approaches could prove useful in other more practical multi-agent adversarial domains, like real-world cybersecurity or combating drug resistance. Introduction Now, here , you see, it takes all the running you can do, to keep in the same place. — Red Queen to Alice, Lewis Carroll, Through the Looking-Glass Overview. Digital Red Queen (DRQ), uses large language models (LLMs) to evolve assembly programs called \"warriors\" which compete against each other for control of a virtual machine in the game of Core War. Top Left: Examples of two classic warriors designed by a human.\nWarriors are written in the Redcode assembly language and then placed into a virtual machine where their instructions are executed alongside other warriors.\nEach warrior seeks to be the last one running by causing opponents to crash. Top Right: Visualization of the virtual machine's memory during execution.\nSymbols indicate the instruction opcode, and colors denote the warrior that last modified each address.\nCode and data share the same address space, enabling self-modification and creating a volatile environment for warriors. Bottom Left: Fitness curves from successive rounds of DRQ.\nLater warriors are trained against all previous warriors. Bottom Right: A schematic showing that different independent runs of DRQ produce warriors that converge in behavior while becoming more generally robust. Digital Red Queen. Top: Visualization of the final battle between warriors in each DRQ round.\n    Each round introduces one additional warrior into the multi-agent simulation. Bottom: Fitness curves from successive rounds of DRQ.\n    Later warriors are trained against all previous warriors. Building on recent test-time scaling trends , researchers are increasingly using large language models (LLMs) to evolve artifacts across many domains .\nBy leveraging a grounded selection mechanism , these approaches enable LLMs to explore far beyond their pretraining priors , making them powerful tools for discovery .\nWhile recent studies have begun to study open-ended evolution with LLMs , less attention has been devoted to the adversarial dynamics in such evolutionary processes .\nIn this work, we investigate a simple self-play algorithm that uses LLMs to evolve adversarially competing agents. In the real world, biological, cultural, and technological evolution do not operate as optimization on a static fitness landscape, but are better described as open-ended arms races .\nSolving a single problem is never sufficient: the challenges themselves continually change, whether in the form of foreign viruses developing resistance mechanisms or competitor companies inventing superior products .\nIn evolutionary biology, this continual pressure to adapt is known as the Red Queen hypothesis , which states that organisms must continuously evolve not to gain an advantage , but simply to maintain their relative fitness in a constantly changing environment.\nThe name comes from the Red Queen in Through the Looking-Glass , whose remark to Alice captures the idea that perpetual adaptation is necessary just to avoid falling behind.\nAs more LLM systems are deployed into the real world and interact with each other, it is likely that they too will begin to exhibit similar evolutionary Red Queen dynamics . To prepare for such a future, it is important to study the Red Queen dynamics of LLMs in an isolated scientific setting.\nThis pursuit requires a test bed that is rich enough to yield insights relevant to the real world, while still being in a sandbox where the researcher maintains full control.\nSimulations from artificial life and cybersecurity naturally lend themselves to this goal since they prioritize adversarial dynamics in controlled environments . For this reason, we use Core War as a testbed for studying Red Queen dynamics with LLMs.\nCore War is a classic programming game, studied in both artificial life and cybersecurity , where low-level assembly-like programs, called warriors, compete for control of a shared virtual computer.\nTo run a battle, the warriors' raw assembly code is placed into random locations in memory, and the virtual machine executes their instructions line by line.\nBecause code and data share the same address space, self-modifying logic is common, creating a very volatile environment.\nEach warrior aims to be the last one running by causing its opponents to crash while preserving its own survival.\nCore War is Turing-complete, making it rich enough to run any computation and, in principle, support an open-ended arms race.\nIt is also fully bounded within a sandboxed simulator, far removed from real-world consequences. To study adversarial evolution in Core War, we develop an algorithm called Digital Red Queen (DRQ) that uses LLMs to perform multiple rounds of evolutionary optimization to create new warriors.\nDRQ is initialized with a single warrior program.\nIn the first round, it uses an LLM to evolve a second warrior that defeats the initial warrior within the Core War simulation.\nIn each subsequent round, DRQ continually evolves a new warrior to defeat all previous ones in a multi-agent simulation.\nThe champions of each round form a sequence of adapted warriors.\nRather than treating DRQ as a fundamentally novel algorithm, it should be viewed as a deliberately minimal instantiation of prior self-play approaches , adapted to Core War for scientific study.\nThe figure above provides an overview of the Core War domain, the DRQ method, and the resulting evolutionary dynamics. DRQ uses MAP-Elites , a quality-diversity algorithm, to optimize warriors within each round, preventing diversity collapse during search.\nBy playing against all previous round champions, DRQ avoids cyclic adaptations across rounds, consistent with techniques in prior work .\nTogether, these design choices allow DRQ to unlock the power of self-play for generating entities that compete in simulated environments. We evaluate DRQ by putting the generated warriors in competition against human-designed warriors.\nThe baseline of static optimization (single-round DRQ) is able to synthesize specialist warriors that collectively defeat or match 283 out of 294 human warriors.\nHowever, inspection of individual performance reveals that these warriors are brittle and overfit to their training opponent: any single warrior defeats only about 28% of the human-designed warriors.\nIn contrast, DRQ trains against a growing history of opponents, implicitly incentivizing the emergence of robust, generalist strategies capable of handling diverse threats.\nWhen running full DRQ, analysis of its sequence of warriors reveals an intriguing pattern: with more DRQ rounds, the resulting warriors become increasingly general , while simultaneously exhibiting reduced behavioral diversity across independent runs.\nTogether, these two trends indicate an emergent convergence pressure toward a single general-purpose behavior in Core War.\nThis phenomenon is reminiscent of convergent evolution in nature, such as the independent evolution of mammalian and insect eyes to address similar functional demands. Given the strong performance of DRQ in Core War, we investigate the extent to which LLMs understand this domain.\nThe mapping from a warrior's Redcode source code to its performance requires an expensive simulation that is highly chaotic: small changes in code can lead to drastic changes in battle outcomes.\nGiven the large number of warriors generated by DRQ, we ask whether an LLM can directly predict the outcome of a battle between two warriors using only their source code.\nTo test this, we embed warrior source code using a text embedding model and train a linear probe to predict the warrior's final generality score.\nWe are able to predict generality scores with a test R²=0.461.\nThis result opens a path toward strengthening such predictors and ultimately using them either as surrogate models to bypass simulation or as interpretability tools for understanding what makes source code effective. Overall, DRQ illustrates how LLM research might move beyond static problem settings and toward more realistic open-ended environments characterized by Red Queen dynamics.\nAt the same time, we hope this work encourages adoption of Core War as (1) a safe and expressive testbed for studying artificial evolution and (2) a benchmark for evaluating an LLM's Red Queen capabilities.\nThe DRQ algorithm itself is simple and general, and could be applied to other adversarial domains, such as discovering real cybersecurity exploits/defenses, designing biological viruses/drugs, or exploring any other complex multi-agent environment of interest.\nSystematically exploring adversarial dynamics in controlled environments is an important step toward discovering potential dangers before they arise in real-world systems. Related Work Program-Based Competition in Artificial Life Driven by the goal of understanding \"life as it could be\" , artificial life (ALife) research has historically explored ecosystems of programs that compete with one another.\nTierra instantiated one of the first such environments: it featured a shared memory \"soup\" where self-replicating machine code competed for CPU cycles, leading to the emergence of complex ecological phenomena like parasitism.\nAvida extended this line of work by introducing a structured 2D lattice and private address spaces for each organism, allowing for the evolution of complex logic tasks through a system of computational rewards.\nA more recent study showed how spontaneous self-replication can emerge with a very minimal language .\nThese works show that program environments can produce life-like phenomena, making them compelling test beds to study evolution. Core War Core War was originally made as a competitive programming game in 1984 and continues to fascinate researchers and hobbyists as a microcosm of digital evolution and adversarial computation.\nIn this game, players write programs called warriors in Redcode, an assembly-like language designed for the Core War simulator.\nWarriors are loaded into a virtual computer's memory array, known as the Core, where they battle for control of the system.\nThe Core is a circular memory of fixed size (typically 8,000 cells) each containing one instruction.\nEach warrior is granted one process at initialization, represented by a program counter indicating the next address to execute.\nEach simulation step, the virtual machine executes one address per warrior in a round-robin fashion. Because the Core does not distinguish between code and data, every instruction can be read, written, or executed.\nThis creates a highly volatile environment where self-modifying code is commonplace.\nA program can inject a DAT instruction in front of an opponent's process, terminating it when that process attempts to execute it.\nSome strategies include bombing (placing DAT s throughout the Core), replication (copying the warrior's own code into multiple memory locations), and scanning (probing the Core to locate enemies before striking) .\nThese strategies interact dynamically, creating an ecosystem of possibilities. Many prior works have evolved warriors using genetic programming .\nFor instance, Corno et al. used their μGP framework to evolve programs, producing some of the top-performing \"nano\" warriors.\nHowever, most of these approaches were only effective on small Core sizes and did not scale well to the full Core War environment.\nNone of these methods leverage LLMs or investigate the evolution dynamics at a large scale. Open-Ended Coevolution and Self-Play One of the core mechanisms that led to complexity in biology is the Red Queen dynamics of evolutionary arms races .\nAccordingly, researchers have tried to capture this mechanism in silico through coevolution between populations of agents .\nPolyworld evolved neural-network–controlled agents in a simulated environment, where agents competed for resources and reproduced, developing behaviors such as predation and cooperation.\nPOET co-evolves agents and their environments, open-endedly generating problems and their solutions.\nMany other works have featured coevolution as a primary mechanism to get complexity .\nQuality-diversity algorithms have been proposed as a way to stabilize evolutionary algorithms by maintaining diversity . Reinforcement learning has also taken inspiration from Red Queen dynamics in the form of self-play.\nSelf-play describes situations in which agents are trained in environments where the opponent is themselves, a historical copy of themselves, or related to them in some way .\nSelf-play has driven some of the most significant breakthroughs in AI, ranging from early successes in checkers and backgammon to modern advances in board games such as Go , chess , and 3D multi-agent environments .\nIt has also been a key factor in mastering complex real-time multiplayer strategy games like StarCraft II and Dota 2 .\nRecent work has also shown that self-play can create robust self-driving car policies .\nSelf-play can be viewed as a form of automatic curriculum learning , and can thus be abstracted as one agent interacting with the environment while another generates the environment . Within self-play, our DRQ algorithm is closely related to Fictitious Self-Play (FSP) and Policy Space Response Oracles (PSRO) , which provide game-theoretic frameworks for multi-agent learning.\nFSP trains agents by learning approximate best responses to the empirical average of their opponents' past policies.\nPSRO iteratively expands a population of policies by training approximate best responses to mixtures of existing strategies and solving a meta-game to compute Nash equilibrium distributions over the strategy population.\nIn contrast, DRQ does not construct explicit meta-strategies or solve a meta-game; instead, we directly optimize the current agent within a multi-agent environment containing all previous agents.\nFurthermore, because our domain lacks a well-defined action space, we employ an evolutionary algorithm in the inner loop to optimize agents, allowing our approach to extend beyond standard action-based game settings.\nFinally, we use LLMs to guide the evolutionary optimization process. LLM-Guided Evolution Recent work has begun to merge LLMs with evolutionary algorithms, using LLMs as intelligent mutation or generation operators.\nThis approach is appealing because it exploits the model's prior knowledge to propose domain-aware edits, while grounded selection expands discovery capabilities beyond the model's pretraining distribution .\nLehman et al. was the first to show that evolution with LLM-driven mutations can create solutions for out-of-distribution tasks.\nAlphaEvolve showed that scaling this approach results in a general system capable of discovering new breakthroughs in a variety of domains, including logistical scheduling, hardware chip design, and efficient matrix multiplication algorithms.\nMany other works have used LLM-guided evolution for everything from prompt optimization to self-referential agentic code .\nThese works demonstrate that LLM-guided evolution can act as engines of discovery in many domains. LLMs for Self-Play Dharna et al. was the first to propose Foundation Model Self-Play (FMSP), which uses LLMs to create agent policies that compete against each other in two-player games such as a 2D evader–pursuer game and an LLM red-teaming game.\nDRQ differs from FMSP both in its technical algorithmic details (each new agent is optimized in an environment containing all previous agents) and in its application domain (Core War is a richer domain that directly simulates a computer).\nAdditionally, our work focuses more on the science of evolutionary self-play rather than proposing a specific method. Bachrach et al. uses LLMs within PSRO to generate Checkers agents.\nOur work differs heavily in algorithmic details, application domain, and motivation. Self-play with LLMs has also been used to improve LLM capabilities . Our work unifies these threads by connecting LLMs, coevolution, self-play, and ALife within the rich testbed of Core War.\nThis combination enables the study of Red Queen dynamics in a controlled, yet expressive, environment. Methods: Digital Red Queen Our approach, which we call Digital Red Queen (DRQ), is built on prior works on self-play and coevolutionary training , adapted for the Core War setting. DRQ Algorithm DRQ begins with an initial warrior w 0 w_0 w ​ 0 ​ ​ and proceeds through a sequence of T T T rounds, each performing an evolutionary optimization.\nIn each round t t t , a new warrior w t w_t w ​ t ​ ​ is evolved to defeat the set of all previous warriors { w 0 , w 1 , … , w t − 1 } \\{ w_0, w_1, \\ldots, w_{t-1} \\} { w ​ 0 ​ ​ , w ​ 1 ​ ​ , … , w ​ t − 1 ​ ​ } .\nThis process induces a competitive pressure that changes every round, driving the emergence of novel strategies and counter-strategies.\nThe algorithm is detailed below: Step 1 - Initialization: Start with a base warrior w 0 w_0 w ​ 0 ​ ​ which is either human designed or LLM-generated. Step 2 - Adversarial Optimization: At round t t t , optimize a new warrior w t w_t w ​ t ​ ​ to maximize its expected fitness in an environment which includes all prior warriors. The expectation is over different seeds of evaluation. w t = arg max w E [ F i t n e s s ( w ; { w 0 , … , w t − 1 } ) ] w_t = \\arg\\max_w \\; \\mathbb{E} \\left[ \\text{Fitness}(w; \\lbrace w_0, \\ldots, w_{t-1} \\rbrace) \\right] w ​ t ​ ​ = ar g ​ w ​ max ​ ​ E [ F i t n e s s ( w ; { w ​ 0 ​ ​ , … , w ​ t − 1 ​ ​ } ) ] Step 3 - Iteration: Repeat for T T T rounds, generating a lineage of warriors { w 0 , w 1 , … , w T } \\{w_0, w_1, \\ldots, w_T\\} { w ​ 0 ​ ​ , w ​ 1 ​ ​ , … , w ​ T ​ ​ } . We do not update older warriors in the lineage, as prior work has shown that historical self-play promotes stability and mitigates cyclic dynamics . Because the number of warriors increases each round, the marginal influence of any newly introduced warrior on the environment decreases over time, implying that the induced fitness function changes less and less as T → ∞ T\\to\\infty T → ∞ . Since program synthesis presents a highly deceptive search landscape, most greedy algorithms can get stuck in local minima .\nThis motivates the use of MAP-Elites , a diversity preserving algorithm, as our choice of optimization within a round.\nWe later provide empirical evidence that diversity preservation is indeed beneficial in Core War. Intra-round Optimization with MAP-Elites MAP-Elites is a widely used quality-diversity algorithm that discretizes a user-defined behavioral descriptor space into a set of cells, each storing at most one elite solution that exhibits the behavioral characteristics of that cell.\nBy restricting competition to solutions that fall within the same cell, MAP-Elites imposes localized selection pressure while preserving global diversity.\nPartitioning with respect to behavior allows the archive to maintain a broad set of stepping stones, many of which may be individually poor but crucial for discovering strong strategies in other regions of behavior space.\nThis property makes MAP-Elites particularly well suited for Redcode program synthesis. MAP-Elites follows a simple evolutionary procedure.\nThe archive A \\mathcal{A} A maps a predefined set of behavioral cells C \\mathcal{C} C to their current elite solutions.\nAfter initializing A \\mathcal{A} A with random solutions, it performs the following steps:\n(i) randomly sample an individual w w w from A \\mathcal{A} A ;\n(ii) mutate w w w to produce an offspring w ′ w' w ​ ′ ​ ​ ;\n(iii) evaluate its fitness f = F i t n e s s ( w ′ ; … ) f = \\text{Fitness}(w^\\prime; \\ldots) f = F i t n e s s ( w ​ ′ ​ ​ ; … ) and behavioral descriptor cell c = B D ( w ′ ) ∈ C c = \\text{BD}(w^\\prime) \\in \\mathcal{C} c = B D ( w ​ ′ ​ ​ ) ∈ C ;\n(iv) insert w ′ w' w ​ ′ ​ ​ into the archive at c c c if f f f exceeds the fitness of the current elite in c c c (or if that cell is empty).\nIterating this process gradually fills the archive with increasingly high-performing behaviorally diverse solutions. The fitness function depends on the current round of DRQ t t t , yielding F i t n e s s ( ⋅ , { w 0 , … , w t − 1 } ) \\text{Fitness}(\\cdot, \\lbrace w_0, \\ldots, w_{t-1} \\rbrace) F i t n e s s ( ⋅ , { w ​ 0 ​ ​ , … , w ​ t − 1 ​ ​ } ) .\nWe define the behavior descriptor function B D ( ⋅ ) \\text{BD}(\\cdot) B D ( ⋅ ) as the discretized tuple (total spawned processes, total memory coverage), which captures two high-level aspects of a warrior's behavior during simulation.\nWe optionally initialize the MAP-Elites archive in round t t t using all previous champions { w 0 , … , w t − 1 } \\lbrace w_0, \\ldots, w_{t-1} \\rbrace { w ​ 0 ​ ​ , … , w ​ t − 1 ​ ​ } to bootstrap the optimization. LLMs as the Mutation Operator Within DRQ, LLMs are used to generate new warriors and to mutate existing ones.\nIn all cases, the model receives a system prompt describing the Core War environment and a concise manual for the Redcode assembly language, including its opcodes, addressing modes, and an example warrior.\nTo generate a new warrior, the LLM is given a user prompt instructing it to produce a novel Redcode program.\nTo mutate an existing warrior, the LLM is provided with the original program and instructed to modify it in ways that could improve performance. We intentionally chose this simplistic use of LLMs to keep the focus of the study on Core War and the analysis of evolution, rather than on LLM-specific techniques.\nOther methods for applying an LLM to modify code exist and could easily be integrated into the DRQ framework.\nFor example, an LLM could output a diff , or it could be conditioned on the results of the simulation to provide more informative feedback . It is possible to run DRQ without LLMs by relying solely on random generation and random mutation over the space of opcodes, addressing modes, and numeric parameters.\nHowever, in extremely sparse search spaces, where most points and mutations produce invalid or non-functional programs, some prior over the search space is crucial for practical search efficiency .\nLLM-based priors can speed up search by orders of magnitude . Self-Play and Red Queen Dynamics DRQ is purposely one of the simplest multi-agent self-play algorithms that can be constructed for evolving warriors in Core War.\nDRQ's multi-round design ensures that fitness is not measured by performance against a fixed opponent, but rather against a continually growing population of opponents.\nThis shifting landscape embodies Red Queen dynamics: each new warrior must continually adapt to overcome the latest strategies, driving a process of adversarial innovation. Experiments We evaluate DRQ with experiments designed to assess 1) its ability to evolve generally competitive Core War programs, and 2) its capacity for continual improvement through Red Queen dynamics. All experiments use the following fitness function, which accounts for both survival and dominance within the battle.\nIn a battle with N N N warriors and T \\mathcal{T} T simulation timesteps, a total of N N N units of fitness are distributed evenly over time.\nAt each timestep, the remaining (living) warriors share a fitness of N / T N/\\mathcal{T} N / T .\nThis design incentivizes warriors to survive as long as possible while also eliminating others to increase their share of the reward.\nThe cumulative reward across all timesteps defines the warrior's fitness, where A τ i A^i_\\tau A ​ τ ​ i ​ ​ is an indicator for whether warrior i i i is alive at simulation timestep τ \\tau τ : F i t n e s s ( w i ; { w j } j ≠ i ) = ∑ τ = 1 T N T A τ i ∑ j A τ j \\text{Fitness}(w_i; \\lbrace w_j \\rbrace_{j\\neq i}) = \\sum_{\\tau=1}^{\\mathcal{T}} \\frac{N}{\\mathcal{T}} \\frac{A^i_\\tau}{\\sum_j A^j_\\tau} F i t n e s s ( w ​ i ​ ​ ; { w ​ j ​ ​ } ​ j ≠ i ​ ​ ) = ​ τ = 1 ​ ∑ ​ T ​ ​ ​ T ​ ​ N ​ ​ ​ ∑ ​ j ​ ​ A ​ τ ​ j ​ ​ ​ ​ A ​ τ ​ i ​ ​ ​ ​ Note that a warrior's fitness is context-dependent on other warriors.\nA warrior is said to defeat another warrior if it achieves higher fitness in a 1-on-1 battle between the two. All experiments use the following MAP-Elites behavioral descriptors: 1) the total number of spawned threads (via SPL opcodes), and 2) the total memory coverage of the warrior during simulation.\nThese two axes capture two important strategical aspects of warriors in Core War.\nThe grid is discretized in log space. All experiments use GPT-4.1 mini ( gpt-4.1-mini-2025-04-14 ) as the LLM.\nPreliminary experiments did not show significant performance increase with larger models. For terminology, rounds correspond to steps of DRQ (outer loop), while iterations correspond to optimization steps within a round (inner loop). Static Target Optimization Against Human Warriors The first experiment evaluates the effectiveness of static optimization against a target.\nThis baseline corresponds to a single round of DRQ.\nWe use a dataset of 294 human warriors and perform one 1000-iteration optimization run for each.\nWe do not initialize the optimization with the human warriors. Static optimization baseline. Static optimization (single-round DRQ) with an LLM can discover specialist warriors that collectively match or surpass 96.3% of 294 human-designed warriors, far above the LLM's zero-shotting and best-of-N baselines.\nHowever, individual warriors are brittle, defeating or matching only 27.9% of human-designed warriors on average. The figure above summarizes the results.\nA single warrior generated by the LLM zero-shot defeats, on average, only 1.7% of all human warriors, which is expected given that Redcode is relatively out-of-distribution in most LLM pretraining datasets.\nUsing a best-of-N sampling strategy produces a set of warriors that can collectively defeat 22.1% of human warriors for N=8.\nIn contrast, evolutionary optimization against each human warrior generates a specialized warrior for every opponent; this set can collectively defeat 89.1% of human warriors and defeat or tie 96.3%.\nThe large jump in performance from best-of-N to evolved warriors demonstrates how evolution can drive performance in out-of-distribution domains. These numbers reflect specialist performance: the percentage of human warriors defeated by at least one of the evolved warriors.\nAnother metric is generalist performance: the percentage of human warriors defeated or tied by a single warrior.\nOn average, an evolved warrior can defeat or tie only 27.9% of all human warriors, indicating that they are brittle and likely overfit to their training opponent. Iterative Red Queen Dynamics DRQ warriors are statistically converging toward a single general-purpose behavior over rounds. Each point in all plots is computed from 96 independent DRQ runs with different initial warriors.\nLogarithmic or linear models are fit to the data, and reported p-values test the null hypothesis that the slope of the fitted model is zero.\nK is the history length in DRQ. Left: The warriors' average generality increases over rounds.\nGenerality is defined as the fraction of unseen human warriors defeated or tied, measuring a warrior's ability to adapt to novel threats in a zero-shot setting. Center Left: The variance of the warriors' phenotype across independent DRQ runs decreases over rounds.\nA warrior's phenotype is defined as a vector of fitness values against each unseen human warrior. Center Right: The rate of change of the phenotype decreases over rounds.\nUnder the log model, full convergence would require an exponential number of rounds. Right: The variance of the warriors' genotype across independent DRQ runs remains static over rounds.\nA warrior's genotype is defined as a text embedding of its source code. Our second experiment investigates the dynamics of running DRQ for multiple rounds.\nDue to the computational cost, we select a smaller dataset of 96 diverse human warriors and conduct multi-round DRQ runs against each one.\nWe ablate the effect of history length K K K in DRQ, which determines how many previous warriors each round optimizes against.\nFor example, K = 1 K=1 K = 1 plays against only the previous round's champion, while K = 3 K=3 K = 3 considers the champions from the previous three rounds.\nWe initialize the optimization in each round with all prior champions. To ground the analysis, for each query warrior we measure its fitness in 1-on-1 battles against a dataset of 317 human warriors.\nA warrior's generality is defined as the fraction of human warriors it defeats or ties, measuring its robustness to new threats in a zero-shot manner.\nA warrior's phenotype is defined as the vector of fitness values against each unseen human opponent, capturing its black-box performance profile against a diverse range of strategies.\nA warrior's genotype is defined as a text embedding of its source code, representing the lowest-level description of the warrior.\nWe get embeddings using the OpenAI text-embedding-3-small model .\nSimilar to real biology, different genotypes may correspond to similar phenotypes, and small changes in genotype can induce large changes in phenotype. The figure above summarizes the dynamics of multi-round DRQ across 96 independent runs.\nAcross all history lengths K K K , we observe a consistent increase in average generality over rounds (Left), indicating that DRQ progressively discovers more robust warriors.\nThis trend suggests that optimizing against a small but changing set of adversaries can induce a pressure towards generality. At the phenotype level, DRQ exhibits two distinct forms of convergence.\nFirst, the variance of warriors' phenotypes across independent runs decreases over rounds (Middle Left), indicating convergence across different initial conditions .\nSecond, the rate of change of the phenotype decreases over rounds within each run (Middle Right), indicating convergence toward a stable phenotype within a single run .\nThe latter effect is partly expected, as the fitness function changes more slowly in later rounds.\nHowever, convergence across different independent runs is largely unexpected and suggests a universal attractor in phenotype space. In contrast, no corresponding convergence is observed at the genotype level.\nThe variance of genotypes across runs remains approximately constant over many rounds (Right), indicating that DRQ does not collapse onto a single canonical implementation.\nThis dissociation between phenotypic and genotypic convergence is further emphasized in the figure below, which visualizes two principal axes of the phenotype and genotype spaces. Convergence is observed in the phenotype but not in the genotype. Moreover, this convergence pressure is relatively weak and does not appear in every DRQ run, but only emerges statistically when aggregating many independent runs. Under the logarithmic fits, full phenotypic convergence would require an exponential number of rounds, implying that while convergence pressure exists, it is weak and only detectable statistically when aggregating many runs. Taken together, these results suggest that DRQ drives warriors toward similar general-purpose behaviors while preserving diversity in their underlying implementations.\nThis mirrors the phenomenon of convergent evolution in biology: different species have evolved similar traits (like eyes or wings) independently, but through distinct genetic mechanisms.\nIn both DRQ and biology, this phenomenon is likely driven by the selection pressure on phenotypic function rather than on the underlying genotypic representation. Cyclic Dynamics Cyclic behavior in DRQ across champions from different rounds. Arrows show cycles of three warriors that have a rock-paper-scissors dynamic.\nDRQ with K=1 exhibits many cycles, whereas full DRQ reduces them. Cyclic dynamics are a well-known phenomenon in self-play and coevolutionary systems, where agents rotate among strategies that dominate one another, analogous to rock–paper–scissors .\nSuch dynamics have also been observed in Core War .\nIn this section, we analyze the extent to which DRQ has cyclic behaviors. We define a cycle as a triplet of warriors ( a , b , c ) (a, b, c) ( a , b , c ) such that a a a defeats b b b , b b b defeats c c c , and c c c defeats a a a .\nAs the history length increases from K = 1 K=1 K = 1 to K = 1 0 K=10 K = 1 0 (full DRQ), we observe a 77% reduction in the total number of cycles across all runs.\nThis finding is consistent with prior work showing that incorporating historical opponents into self-play reduces cyclic behavior . What Makes a Good Core War Warrior? MAP-Elites archive with fitness averaged across rounds and runs. The axes correspond to memory coverage (total number of unique addresses accessed during execution) and spawned threads (total number of threads launched via a fork opcode).\nThe best warriors have low memory coverage and many spawned threads. This section investigates what makes a good warrior in Core War.\nSince our search was conducted using MAP-Elites , analyzing the archive grid can reveal which niches tend to perform well. The figure above visualizes the MAP-Elites grid along the two predefined axes of memory coverage and spawned threads.\nReported fitness values within each bin are averaged across 1,920 MAP-Elites grids from the full DRQ runs.\nAlthough this averaging is not strictly justified, since fitness is defined relative to an opponent, it serves as a rough heuristic that provides meaningful insights.\nWarriors that fork many threads tend to perform best.\nThis aligns with intuition: eliminating such a warrior requires halting all of its threads, and having more threads makes this increasingly difficult.\nInterestingly, among programs that create fewer threads, a different strategy emerges: maximizing memory coverage, suggesting that spatial spread is robust primarily when parallelism is limited. Examples of two warriors evolved by DRQ. Comments are generated by the LLM and may not be factual. Top: A warrior that fuses replication and bomber strategies into a single program, illustrating DRQ's ability to synthesize diverse behaviors. Bottom: A warrior that defeats 80.13% of human-designed warriors and defeats or ties 84.54%, demonstrating DRQ's ability to create performant warriors. The figures above show two warriors discovered by DRQ called Ring Warrior Enhanced v9 and Spiral Bomber Optimized v22 .\nThese examples were selected to illustrate two complementary aspects of DRQ: its ability to synthesize qualitatively distinct strategies within a single program, and to produce generally performant warriors. Does MAP-Elites Matter? Role of MAP-Elites in DRQ. Ablating diversity preservation by replacing MAP-Elites with a single-cell variant degrades optimization performance, especially in later rounds. This section investigates the role of MAP-Elites in DRQ.\nWe replace MAP-Elites with a single-cell variant that maps all candidate warriors to the same cell, thereby removing the critical diversity-preserving mechanism. As shown in the figure above, this variant significantly reduces optimization performance in each round.\nThese results highlight the importance of preserving diversity during search for Core War program synthesis and justifies MAP-Elites as the intra-round optimization algorithm. Is Fitness Predictable? Predicting warrior generality from its code embedding. The generality of a warrior is moderately predictable from its source code embedding (genotype). Increasing the size of the embedding model yields little improvement in prediction. Determining the generality of a warrior requires many simulations against a suite of human-designed opponents.\nThese simulations are computationally expensive.\nThis raises a natural question: can we statistically predict a warrior's final generality score more cheaply using only its source code?\nTo investigate this, we embed the raw Redcode source code of all warriors discovered by DRQ using the OpenAI text-embedding-3-small and text-embedding-3-large models .\nWe then train a linear probe to regress each program's generality score from its embeddings. As shown in the figure above, the linear regression achieves a test R² = 0.442 using the small embedding model and R² = 0.461 using the large embedding model.\nThese results indicate that a warrior's generality can be moderately predicted from its source code alone.\nThis is notable given the complexity of the underlying mapping: generality is determined by 317 separate 80,000-timestep simulations, each involving chaotic interactions with opponents and extreme sensitivity to small code changes. Predictive models of battles could open new doors for future exploration.\nFirst, they may enable mechanistic interpretability of the embedding model and linear probe, helping to decipher what makes good source code.\nSecond, they could potentially be used to pre-filter warriors or even bypass full simulations entirely during the search for new programs.\nIf successful, this approach would challenge a prevailing intuition that complex systems cannot be predicted without running the full simulation . Conclusion Summary This work studies a minimal self-play algorithm that leverages LLMs to drive adversarial program evolution in Core War.\nWe show that evolving against a growing history of opponents produces more robust strategies and exhibits convergence across independent runs, a phenomenon reminiscent of convergent evolution in biology. Discussion Recently, malicious hackers have started leveraging LLMs to their advantage, and the cybersecurity arms race between offense and defense is well underway .\nStudying these adversarial dynamics in an artificial testbed like Core War offers critical insights into how such races might unfold and the kinds of strategies that may emerge.\nThis understanding can also guide the development of more robust defensive systems.\nIn particular, algorithms like DRQ and FMSP offer an automated way to red-team systems before they are deployed in the real world. Because Core War is Turing-complete, it can simulate arbitrary algorithms, providing a rich environment for exploring behaviors relevant to real-world systems.\nAt the same time, Core War is entirely self-contained: its programs run on an artificial machine with an artificial language, making it impossible for any generated code to execute outside the sandbox.\nThis isolation provides a necessary layer of safety for this line of research. Algorithmically, DRQ is a simple loop: each new agent is optimized to defeat a fixed set of past agents, creating a linear lineage with no updating of earlier strategies.\nFuture extensions could explore richer settings where many agents simultaneously co-evolve within a shared ecosystem.\nSuch extensions would more closely mirror real-world phenomena, from microbial communities to the modern cybersecurity landscape, where large populations adapt in parallel rather than along a single line of descent. Despite its simplicity, vanilla DRQ performs remarkably well in a rich testbed like Core War, suggesting that this minimal self-play algorithm is worth studying in greater depth.\nDRQ is a promising candidate for application to other competitive multi-agent environments.\nIn principle, the core ideas in DRQ could transfer to other domains like artificial life simulations, biological modeling for drug design, real-world cybersecurity, and even competitive market ecosystems. Acknowledgements We thank Aaron Dharna and Ryan Sullivan for helpful discussions on the framing of the project.\nWe thank Rodrigo Setti for his Python Core War implementation.\nThis work was supported in part by an NSF GRFP Fellowship to A.K., a Packard Fellowship to P.I., and by ONR MURI grant N00014-22-1-2740. Chip icon by artist yieshazea2 . Citation For attribution in academic contexts, please cite this work as Akarsh Kumar, Ryan Bahlous-Boldi, Prafull Sharma, Phillip Isola, Sebastian Risi, Yujin Tang, David Ha, \"Digital Red Queen: Adversarial Program Evolution in Core War with LLMs\", 2026. BibTeX citation @article{kumar2025drq,\n  title = {Digital Red Queen: Adversarial Program Evolution in Core War with LLMs},\n  author = {Akarsh Kumar and Ryan Bahlous-Boldi and Prafull Sharma and Phillip Isola and Sebastian Risi and Yujin Tang and David Ha},\n  year = {2026},\n  url = {https://pub.sakana.ai/drq/}\n} Open Source Code We release our code for this project here . Appendix Please view the PDF version of the paper for the appendix, which contains additional details and experiments.\nLinked resources: [{\"label\": \"Akarsh Kumar\", \"url\": \"https://x.com/akarshkumar0101\"}, {\"label\": \"MIT, Sakana AI\", \"url\": \"https://akarshkumar.com/\"}, {\"label\": \"Ryan Bahlous-Boldi\", \"url\": \"https://x.com/RyanBoldi\"}, {\"label\": \"MIT\", \"url\": \"https://ryanboldi.github.io/\"}, {\"label\": \"Prafull Sharma\", \"url\": \"https://x.com/prafull7\"}, {\"label\": \"MIT\", \"url\": \"https://prafullsharma.net/\"}, {\"label\": \"Phillip Isola\", \"url\": \"https://x.com/phillip_isola\"}, {\"label\": \"MIT\", \"url\": \"https://web.mit.edu/phillipi/\"}, {\"label\": \"Sebastian Risi\", \"url\": \"https://x.com/risi1979\"}, {\"label\": \"Sakana AI\", \"url\": \"https://sebastianrisi.com/\"}, {\"label\": \"Yujin Tang\", \"url\": \"https://x.com/yujin_tang\"}, {\"label\": \"Sakana AI\", \"url\": \"https://lerrytang.github.io/\"}, {\"label\": \"David Ha\", \"url\": \"https://x.com/hardmaru\"}, {\"label\": \"Sakana AI\", \"url\": \"https://otoro.net/ml/\"}, {\"label\": \"PDF\", \"url\": \"https://arxiv.org/abs/2601.03335\"}, {\"label\": \"Github\", \"url\": \"https://github.com/SakanaAI/drq\"}, {\"label\": \"yieshazea2\", \"url\": \"https://thenounproject.com/creator/yieshazea2/\"}, {\"label\": \"here\", \"url\": \"https://github.com/SakanaAI/drq\"}]",
-        "last_success": "2026-11-12T13:38:31.169267Z"
+        "last_success": "2026-11-13T15:32:28.934760Z"
       },
-      "checked_at": "2026-11-12T13:38:20+00:00"
+      "checked_at": "2026-11-13T15:32:19+00:00"
     },
     "core-war-papers": {
       "config_hash": "14037bedbba82a13c727418eb156e677e34e5bd714669037b0979e4cdc6b802a",
@@ -25134,9 +25134,9 @@
             "updated": "2026-01-06T18:58:17Z"
           }
         },
-        "last_success": "2026-11-12T13:38:31.169324Z"
+        "last_success": "2026-11-13T15:32:28.934809Z"
       },
-      "checked_at": "2026-11-12T13:38:20+00:00"
+      "checked_at": "2026-11-13T15:32:19+00:00"
     },
     "sudoku-repository": {
       "config_hash": "431c8ad5c0208f9003e243855abc198550ba38cc6de7e02ca622670879793f0d",
@@ -25149,18 +25149,18 @@
             "size": 398
           }
         },
-        "last_success": "2026-11-12T13:38:35.087115Z"
+        "last_success": "2026-11-13T15:32:33.822949Z"
       },
-      "checked_at": "2026-11-12T13:38:20+00:00"
+      "checked_at": "2026-11-13T15:32:19+00:00"
     },
     "sudoku-project": {
       "config_hash": "84b2c863b7d20a3050fec24b7841bd634f92c5a1e566db666f8262a07f42b9de",
       "data": {
         "sha256": "a869701d2bb6fbd0fff2440dec2ad88afe4d869dc9646b6bc56ba386f175d02a",
         "text": "This page requires Javascript. Please enable it to view the website. Sudoku-Bench Leaderboard Jeffrey Seely Sakana AI Yuki Imajuku Sakana AI Tianyu Zhao Sakana AI Edoardo Cetin Sakana AI Llion Jones Sakana AI May 2025 PDF Github Evaluating Creative Reasoning with Sudoku Variants This leaderboard shows performance on the Sudoku-Bench reasoning evaluation dataset. Sudoku variants are not like vanilla Sudoku puzzles -- Each puzzle author invents new rules specific to that puzzle (scroll down to see examples). These human-crafted puzzles are designed to stump expert solvers at first glance, but allow progress once the solver finds a non-obvious \"break-in.\" As such, Sudoku variants are the ideal (and possibly densest) source of \"aha\" or \"euraka\" moments in creative problem solving. This makes Sudoku variants one of the most high-signal domains for benchmarking LLM reasoning models. We find that most LLMs struggle to make progress on most variant puzzles. Sudoku-Bench is intended to evaluate LLM reasoning models without tool use . Humans can solve these puzzles by finding a creative insight that leads to a \"break-in.\" This means that humans can solve these in a \"token-efficient\" manner, but only after discovering some creative insight about the particular puzzle. We thus test LLMs to do the same and in all evaluations below we disable tool use. Please see our technical report for an introduction to Sudoku variants and their utility in AI reasoning research. Sudoku-Bench Leaderboard Model Multi-Step Single-Shot 4x4 6x6 9x9 All Puzzles 4x4 6x6 9x9 All Puzzles ASR ACP ASR ACP ASR ACP Avg Solve Rate ASR ASR ASR Avg Solve Rate (Note: A '-' indicates insufficient data to meet reporting thresholds due to cost limitations.) Models are evaluated using one of two configurations: Single-Shot: The LLM attempts to solve the entire puzzle grid in one response. Multi-Step: The LLM is prompted to provide one or more cell placements in each turn. The user displays the updated board. The interaction continues until the LLM solves the puzzle or makes an incorrect move. The evaluation measures performance based on two primary metrics: Average Solve Rate (ASR): The percentage of puzzles for which the model produces the complete and correct final solution grid. This is the primary metric for overall success. Average Correct Placements (ACP) for Multi-Step Mode: The average number of correct cell values placed before the puzzle is solved, an incorrect placement is made, or another termination condition (such as an API error or reaching a maximum number of steps) occurs. The benchmark includes 100 puzzles of different grid sizes (15 4x4, 15 6x6, 70 9x9). Frequently Asked Questions Is there a private test set? Due to the significant investment human setters make in crafting each puzzle, we do not have a private test set. The current Sudoku-Bench represents a curated snapshot of existing puzzles created before 2025. We may consider a private test set in the future. Dozens of high-quality Sudoku variants are published daily on the web so any puzzle after an LLM's training cutoff date can be considered out-of-domain if one wishes to test on them. How is Sudoku-Bench different from other LLM reasoning benchmarks? At its core, Sudoku-Bench is meant to measure the \"aha\" or \"eureka\" moment from creative problem-solving. Sudoku variants may be the densest source of eureka moments available, since puzzle authors explicitly design their puzzles to be seemingly unbreakable at first glance -- even to expert solvers who have years of experience -- but admit progress after a creative discovery is made. Such insights are difficult to find in standard benchmarks, since a domain can be readily mastered through enough training data. But Sudoku variants are constantly evolving. Each Sudoku variant puzzle is unique -- either through a unique ruleset or by requiring a solving tactic never seen before -- making the domain of Sudoku variants more resistant to memorization compared to other benchmarks. The memorization-resistance is similar in spirit to the ARC-AGI benchmark. A difference between ARC-AGI and Sudoku-Bench is worth noting: ARC-AGI puzzles ask the solver to discover the puzzle constraints by presenting a few examples, after which execution is often straightforward. In a Sudoku variant, all constraints are explicitly given as part of the puzzle, but a direct application of each rule in isolation typically yields no progress -- a creative process is required to see how the constraints interact in non-obvious ways to create intermediate results, and ultimately a break-in to the solution. This makes Sudoku variants more similar to ARC-AGI-2 which emphasizes compositional reasoning. Is Sudoku-Bench only for LLMs? Mostly, yes. Puzzles from ARC-AGI or standard (non-variant) Sudoku puzzles have a universal tokenized representation that applies to all training and test samples. However, Sudoku variants are so varied that we need natural language to encode and represent each puzzle. Sudoku-Bench in its current form is best suited for benchmarking LLM reasoning models. Sudoku variants are not suitable for certain non-LLM reasoning models (e.g., HRM or TRM ) without an explicit LLM module of some kind. We present text-only representations of all puzzles in Sudoku-Bench. However, the dataset is naturally applicable for VLMs as well, which may be required for certain puzzles whose visual elements are too complex to fit into text. We explicitly selected the 100 puzzles of Sudoku-Bench to be ones that admit a text-only representation. Example Prompts for Each Puzzle Explore individual puzzles from the challenge_100 subset of the Sudoku-Bench dataset. Below we provide each puzzle and an example prompt for ease of use. The full benchmark data is available on Hugging Face ; see the Sudoku-Bench GitHub repo for an entry point and instructions on interacting with the full dataset. Loading puzzles... References For details on the evaluation methodology, data, and code, please refer to the Sudoku-Bench GitHub repository . Please also see our technical report . Also visit: Cracking the Cryptic SudokuPad Acknowledgements Citation For attribution in academic contexts, please cite the technical report Seely, J., Imajuku, Y., Zhao, T., Cetin, E., & Jones, L. (2025). Sudoku-Bench: Evaluating creative reasoning with Sudoku variants. arXiv preprint arXiv:2505.16135. BibTeX citation @misc{seely2025sudoku,\n      title={Sudoku-Bench: Evaluating creative reasoning with Sudoku variants}, \n      author={Jeffrey Seely and Yuki Imajuku and Tianyu Zhao and Edoardo Cetin and Llion Jones},\n      year={2025},\n      eprint={2505.16135},\n      archivePrefix={arXiv},\n      primaryClass={cs.AI},\n      url={https://arxiv.org/abs/2505.16135}, \n} Open Source Code We release our code for this project here .\nLinked resources: [{\"label\": \"Jeffrey Seely\", \"url\": \"https://x.com/jeffreyseely\"}, {\"label\": \"Sakana AI\", \"url\": \"https://sakana.ai\"}, {\"label\": \"Yuki Imajuku\", \"url\": \"https://x.com/y_imjk\"}, {\"label\": \"Sakana AI\", \"url\": \"https://sakana.ai\"}, {\"label\": \"Tianyu Zhao\", \"url\": \"https://x.com/ZhaoTing1024\"}, {\"label\": \"Sakana AI\", \"url\": \"https://sakana.ai\"}, {\"label\": \"Edoardo Cetin\", \"url\": \"https://x.com/edo_cet\"}, {\"label\": \"Sakana AI\", \"url\": \"https://sakana.ai\"}, {\"label\": \"Llion Jones\", \"url\": \"https://x.com/YesThisIsLion\"}, {\"label\": \"Sakana AI\", \"url\": \"https://sakana.ai\"}, {\"label\": \"PDF\", \"url\": \"https://arxiv.org/abs/2505.16135\"}, {\"label\": \"Github\", \"url\": \"https://github.com/SakanaAI/Sudoku-Bench\"}, {\"label\": \"Sudoku-Bench\", \"url\": \"https://github.com/SakanaAI/Sudoku-Bench\"}, {\"label\": \"technical report\", \"url\": \"https://arxiv.org/abs/2505.16135\"}, {\"label\": \"ARC-AGI\", \"url\": \"https://arcprize.org/arc-agi\"}, {\"label\": \"ARC-AGI-2\", \"url\": \"https://arcprize.org/arc-agi/2/\"}, {\"label\": \"ARC-AGI\", \"url\": \"https://arcprize.org/arc-agi\"}, {\"label\": \"HRM\", \"url\": \"https://github.com/sapientinc/HRM/tree/main\"}, {\"label\": \"TRM\", \"url\": \"https://github.com/SamsungSAILMontreal/TinyRecursiveModels\"}, {\"label\": \"Hugging Face\", \"url\": \"https://huggingface.co/datasets/SakanaAI/Sudoku-Bench\"}, {\"label\": \"Sudoku-Bench GitHub repo\", \"url\": \"https://github.com/SakanaAI/Sudoku-Bench\"}, {\"label\": \"Sudoku-Bench GitHub repository\", \"url\": \"https://github.com/SakanaAI/Sudoku-Bench\"}, {\"label\": \"technical report\", \"url\": \"https://arxiv.org/abs/2505.16135\"}, {\"label\": \"Cracking the Cryptic\", \"url\": \"https://www.youtube.com/c/CrackingTheCryptic\"}, {\"label\": \"SudokuPad\", \"url\": \"https://sudokupad.app/\"}, {\"label\": \"here\", \"url\": \"https://github.com/SakanaAI/Sudoku-Bench\"}]",
-        "last_success": "2026-11-12T13:38:35.834616Z"
+        "last_success": "2026-11-13T15:32:34.576493Z"
       },
-      "checked_at": "2026-11-12T13:38:20+00:00"
+      "checked_at": "2026-11-13T15:32:19+00:00"
     },
     "sudoku-papers": {
       "config_hash": "b4e37e70c9030d0d246dea32cf74d7e6602c730e7488edb6ee5862ec8ece6429",
@@ -25197,11 +25197,27 @@
           "2611.13862": {
             "version": 1,
             "updated": "2026-11-10T10:22:37Z"
+          },
+          "2605.20922": {
+            "version": 2,
+            "updated": "2026-11-11T10:20:27Z"
+          },
+          "2605.25129": {
+            "version": 2,
+            "updated": "2026-11-11T21:29:53Z"
+          },
+          "2611.17309": {
+            "version": 1,
+            "updated": "2026-11-12T18:56:56Z"
+          },
+          "2611.17320": {
+            "version": 1,
+            "updated": "2026-11-12T18:58:50Z"
           }
         },
-        "last_success": "2026-11-12T13:38:35.834670Z"
+        "last_success": "2026-11-13T15:32:34.576566Z"
       },
-      "checked_at": "2026-11-12T13:38:20+00:00"
+      "checked_at": "2026-11-13T15:32:19+00:00"
     },
     "google-poi-publications": {
       "config_hash": "5aafc0d3f4b34327dd2c1234a60bfef11bf8ecc809d00795a98478337f741b64",
@@ -25214,9 +25230,9 @@
             "size": 41286
           }
         },
-        "last_success": "2026-11-12T13:38:41.363187Z"
+        "last_success": "2026-11-13T15:32:41.592061Z"
       },
-      "checked_at": "2026-11-12T13:38:20+00:00"
+      "checked_at": "2026-11-13T15:32:19+00:00"
     },
     "google-computational-life-code": {
       "config_hash": "325f2b61847c70951724f14e5871e278d44b733d5fe850e2b07a206c7928c12c",
@@ -25465,9 +25481,9 @@
             "size": 185
           }
         },
-        "last_success": "2026-11-12T13:38:42.076526Z"
+        "last_success": "2026-11-13T15:32:42.475370Z"
       },
-      "checked_at": "2026-11-12T13:38:20+00:00"
+      "checked_at": "2026-11-13T15:32:19+00:00"
     },
     "assembly-alife-papers": {
       "config_hash": "64b28bf664fe0ff5fa13209f31339db4c4b777021386ac8d4368c24d7cab2065",
@@ -25490,12 +25506,12 @@
             "updated": "2026-09-09T20:38:56Z"
           }
         },
-        "last_success": "2026-11-12T13:38:42.878425Z"
+        "last_success": "2026-11-13T15:32:43.816616Z"
       },
-      "checked_at": "2026-11-12T13:38:20+00:00"
+      "checked_at": "2026-11-13T15:32:19+00:00"
     }
   },
   "outbox": {},
-  "checked_at": "2026-11-12T13:38:20+00:00",
-  "delivered_day": "2026-11-12"
+  "checked_at": "2026-11-13T15:32:19+00:00",
+  "delivered_day": "2026-11-13"
 }

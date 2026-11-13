@@ -1,0 +1,427 @@
+{
+  "date": "2026-11-13",
+  "checked_at": "2026-11-13T15:32:19+00:00",
+  "competitions": [
+    {
+      "id": "tig",
+      "name": "The Innovation Game",
+      "description": "Live algorithm submissions, public source branches and protocol status. Daily snapshots are not a replay of every blockchain block.",
+      "checks": [
+        {
+          "source_id": "tig-live",
+          "depth": "deep",
+          "status": "ok",
+          "url": "https://github.com/tig-foundation/tig-monorepo",
+          "stats": {
+            "baseline": false,
+            "block_id": "ed97f70365a7d77510385b328db2c1cc",
+            "block_height": 1425709,
+            "round": 142,
+            "records": 778,
+            "depth": "deep",
+            "coverage": "daily block snapshot; not an exhaustive block history",
+            "source_checks": 0,
+            "pending_sources": 0,
+            "public_branches": 717,
+            "source_errors": 0,
+            "baseline_content_uninspected": 717,
+            "source_coverage": "complete"
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "tig-papers",
+          "depth": "deep",
+          "status": "ok",
+          "url": "https://arxiv.org",
+          "stats": {
+            "baseline": false,
+            "pages": 1,
+            "papers_observed": 0,
+            "cutoff": "2026-11-10T13:38:28.552844Z",
+            "seed_papers": 0
+          },
+          "warnings": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "sakana-core-war",
+      "name": "Sakana AI — Core War / Digital Red Queen",
+      "description": "Competitive assembly-program research framework. No continuously operated public submission leaderboard has been verified.",
+      "checks": [
+        {
+          "source_id": "drq-code",
+          "depth": "standard",
+          "status": "ok",
+          "url": "https://github.com/SakanaAI/drq",
+          "stats": {
+            "files": 653,
+            "baseline": false,
+            "depth": "standard",
+            "commit": "6b2f4459f9dc53f3e533ed5f1263129df71067d7",
+            "changes": 0,
+            "diffs_attempted": 0,
+            "diffs_omitted_by_limit": 0
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "drq-project",
+          "depth": "standard",
+          "status": "ok",
+          "url": "https://pub.sakana.ai/drq/",
+          "stats": {
+            "baseline": false,
+            "characters": 44337,
+            "javascript_evaluated": false,
+            "embedded_json_blocks": 0,
+            "linked_resources": 18
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "core-war-papers",
+          "depth": "standard",
+          "status": "ok",
+          "url": "https://arxiv.org",
+          "stats": {
+            "baseline": false,
+            "pages": 1,
+            "papers_observed": 1,
+            "cutoff": "2026-11-10T13:38:31.169324Z",
+            "seed_papers": 1
+          },
+          "warnings": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "sakana-sudoku",
+      "name": "Sakana AI — Sudoku-Bench research and status",
+      "description": "The official repository currently marks Sudoku-Bench discontinued; watch for status changes, benchmark updates and new research.",
+      "checks": [
+        {
+          "source_id": "sudoku-repository",
+          "depth": "deep",
+          "status": "ok",
+          "url": "https://github.com/SakanaAI/Sudoku-Bench",
+          "stats": {
+            "files": 1,
+            "baseline": false,
+            "depth": "deep",
+            "commit": "48fd26702ecedbecfe1ffdd3edc91a346c1137e8",
+            "changes": 0,
+            "diffs_attempted": 0,
+            "diffs_omitted_by_limit": 0
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "sudoku-project",
+          "depth": "light",
+          "status": "ok",
+          "url": "https://pub.sakana.ai/sudoku/",
+          "stats": {
+            "baseline": false,
+            "characters": 8635,
+            "javascript_evaluated": false,
+            "embedded_json_blocks": 0,
+            "linked_resources": 26
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "sudoku-papers",
+          "depth": "light",
+          "status": "ok",
+          "url": "https://arxiv.org",
+          "stats": {
+            "baseline": false,
+            "pages": 1,
+            "papers_observed": 5,
+            "cutoff": "2026-11-10T13:38:35.834670Z",
+            "seed_papers": 1
+          },
+          "warnings": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "assembly-alife",
+      "name": "Assembly, program evolution and artificial life",
+      "description": "Related research, including Google's Paradigms of Intelligence team; these publications are not Sakana competition entries.",
+      "checks": [
+        {
+          "source_id": "google-poi-publications",
+          "depth": "deep",
+          "status": "ok",
+          "url": "https://github.com/paradigms-of-intelligence/.github",
+          "stats": {
+            "files": 1,
+            "baseline": false,
+            "depth": "deep",
+            "commit": "d70b1a3acbc184e4440b15ba71bd92a3201a4f1d",
+            "changes": 0,
+            "diffs_attempted": 0,
+            "diffs_omitted_by_limit": 0
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "google-computational-life-code",
+          "depth": "light",
+          "status": "ok",
+          "url": "https://github.com/paradigms-of-intelligence/cubff",
+          "stats": {
+            "files": 60,
+            "baseline": false,
+            "depth": "light",
+            "commit": "f212e849027c98fcf4b242eccfb5fed435223e23",
+            "changes": 0,
+            "diffs_attempted": 0,
+            "diffs_omitted_by_limit": 0
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "assembly-alife-papers",
+          "depth": "light",
+          "status": "ok",
+          "url": "https://arxiv.org",
+          "stats": {
+            "baseline": false,
+            "pages": 1,
+            "papers_observed": 4,
+            "cutoff": "2026-11-10T13:38:42.878425Z",
+            "seed_papers": 4
+          },
+          "warnings": [],
+          "errors": []
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "tig:submission:code:c002_a120:867c71aabdb9ff716dd3",
+      "kind": "submission",
+      "title": "TIG hgs_epure: merged",
+      "url": "https://github.com/tig-foundation/tig-monorepo/tree/vehicle_routing/hgs_epure/tig-algorithms/",
+      "detail": "Adoption: 86.59% → 93.12%",
+      "metadata": {
+        "record_kind": "code",
+        "algorithm_id": "c002_a120",
+        "stage": "merged",
+        "state": {
+          "block_confirmed": 1359835,
+          "round_submitted": 135,
+          "round_pushed": 137,
+          "round_active": 139,
+          "round_merged": 140,
+          "banned": false
+        },
+        "details": {
+          "name": "hgs_epure",
+          "player_id": "0x26c3c880f00daee5f6857837b19499d833338474",
+          "challenge_id": "c002",
+          "algorithm_id": "c002_a110",
+          "fee_paid": "10000000000000000000"
+        },
+        "adoption": 0.9312492195673252,
+        "compile_success": true,
+        "block_id": "ed97f70365a7d77510385b328db2c1cc",
+        "height": 1425709,
+        "public": true
+      },
+      "source_id": "tig-live",
+      "competition_id": "tig",
+      "detected_at": "2026-11-13T15:32:19+00:00",
+      "key": "tig-live:tig:submission:code:c002_a120:867c71aabdb9ff716dd3"
+    },
+    {
+      "id": "tig:submission:code:c002_a122:c2b791bff6382db0e6d9",
+      "kind": "submission",
+      "title": "TIG epure_imp_v3: active",
+      "url": "https://github.com/tig-foundation/tig-monorepo/tree/vehicle_routing/epure_imp_v3/tig-algorithms/",
+      "detail": "Adoption: 7.44% → 1.32%",
+      "metadata": {
+        "record_kind": "code",
+        "algorithm_id": "c002_a122",
+        "stage": "active",
+        "state": {
+          "block_confirmed": 1385550,
+          "round_submitted": 138,
+          "round_pushed": 140,
+          "round_active": 142,
+          "round_merged": null,
+          "banned": false
+        },
+        "details": {
+          "name": "epure_imp_v3",
+          "player_id": "0xfe2a215c01a1d98f9364619a68798cce8442ef9c",
+          "challenge_id": "c002",
+          "algorithm_id": "c002_a110",
+          "fee_paid": "10000000000000000000"
+        },
+        "adoption": 0.013186039489187925,
+        "compile_success": true,
+        "block_id": "ed97f70365a7d77510385b328db2c1cc",
+        "height": 1425709,
+        "public": true
+      },
+      "source_id": "tig-live",
+      "competition_id": "tig",
+      "detected_at": "2026-11-13T15:32:19+00:00",
+      "key": "tig-live:tig:submission:code:c002_a122:c2b791bff6382db0e6d9"
+    },
+    {
+      "id": "tig:submission:code:c004_a107:e3bc7cef96a9341f1942",
+      "kind": "submission",
+      "title": "TIG there_v11: merged",
+      "url": "https://github.com/tig-foundation/tig-monorepo/tree/vector_search/there_v11/tig-algorithms/",
+      "detail": "Adoption: 65.49% → 71.13%",
+      "metadata": {
+        "record_kind": "code",
+        "algorithm_id": "c004_a107",
+        "stage": "merged",
+        "state": {
+          "block_confirmed": 1335714,
+          "round_submitted": 133,
+          "round_pushed": 135,
+          "round_active": 137,
+          "round_merged": 138,
+          "banned": false
+        },
+        "details": {
+          "name": "there_v11",
+          "player_id": "0x1884f0fe1208f38a1433b706790e22be9fed1f7c",
+          "challenge_id": "c004",
+          "algorithm_id": null,
+          "fee_paid": "10000000000000000000"
+        },
+        "adoption": 0.7112699081267405,
+        "compile_success": true,
+        "block_id": "ed97f70365a7d77510385b328db2c1cc",
+        "height": 1425709,
+        "public": true
+      },
+      "source_id": "tig-live",
+      "competition_id": "tig",
+      "detected_at": "2026-11-13T15:32:19+00:00",
+      "key": "tig-live:tig:submission:code:c004_a107:e3bc7cef96a9341f1942"
+    },
+    {
+      "id": "arxiv:2605.20922:v2:2026-11-11T10:20:27Z",
+      "kind": "paper_discovered",
+      "title": "Winfree Oscillatory Neural Network",
+      "url": "https://arxiv.org/abs/2605.20922v2",
+      "detail": "Oscillations and synchronization are widely believed to play a fundamental role in representation and computation. However, existing machine learning approaches based on synchronization dynamics have largely been confined to specialized settings such as object discovery, with limited evidence of scalability to standard vision benchmarks or logic reasoning tasks. We propose the Winfree Oscillatory Neural Network (WONN), a dynamical neural architecture based on generalized Winfree dynamics. WONN evolves representations on the torus $(S^1)^d$ through structured oscillatory interactions, combining phase-based inductive biases with flexible and hierarchical interaction mechanisms instantiated as either fixed trigonometric mappings or learnable neural networks. We evaluate WONN on image recognition and complex reasoning tasks, including CIFAR, ImageNet, Maze-hard, and Sudoku. Across these domains, WONN achieves competitive or superior performance with strong parameter efficiency. In particular, WONN is, to our knowledge, the first synchronization-based oscillatory architecture to scale competitively to ImageNet-1K. Furthermore, on Maze-hard, WONN achieves 80.1% accuracy using only 1% of the parameters of prior state-of-the-art models. These results suggest that structured oscillatory dynamics provide a scalable and parameter-efficient alternative to conventional neural architectures.",
+      "published": "2026-05-20T09:08:00Z",
+      "updated": "2026-11-11T10:20:27Z",
+      "metadata": {
+        "paper_id": "2605.20922",
+        "version": 2,
+        "updated": "2026-11-11T10:20:27Z",
+        "authors": [
+          "Jiawen Dai",
+          "Yue Song"
+        ],
+        "previous_version": null
+      },
+      "source_id": "sudoku-papers",
+      "competition_id": "sakana-sudoku",
+      "detected_at": "2026-11-13T15:32:19+00:00",
+      "key": "sudoku-papers:arxiv:2605.20922:v2:2026-11-11T10:20:27Z"
+    },
+    {
+      "id": "arxiv:2605.25129:v2:2026-11-11T21:29:53Z",
+      "kind": "paper_discovered",
+      "title": "Blocked Gibbs meets Diffusion Transformers: Unsupervised Learning for Constraint Optimization",
+      "url": "https://arxiv.org/abs/2605.25129v2",
+      "detail": "Diffusion models have shown promise in learning to solve constraint optimization problems. However, they are mostly restricted to problems with binary variables and rely on graph neural networks, hindering their application to a broader range of problems such as those with general discrete variables or constraint structures that necessitate global rather than local reasoning. We investigate the use of Diffusion Transformers to address the aforementioned limitations. A naive implementation performs poorly due to a fundamental mismatch between the standard diffusion process and constraint solving: while the former applies small, incremental denoising across all variables, the latter requires substantially altering specific subsets of variables to attain feasibility or optimality. Our method, Blocked Gibbs Diffusion Transformer (BloGDiT), is the first to address this limitation by replacing standard joint Gaussian denoising with blocked Gaussian denoising. BloGDiT uses iterative block resampling and anneals the block size over time to facilitate large, targeted edits within a block of variables. Across Sudoku, Graph Coloring, Maximum Independent Set, and MaxCut, BloGDiT matches or outperforms existing methods, demonstrating that blocked Gibbs-style diffusion provides a highly effective inductive bias for Transformer-based constraint satisfaction and optimization.",
+      "published": "2026-05-24T15:17:49Z",
+      "updated": "2026-11-11T21:29:53Z",
+      "metadata": {
+        "paper_id": "2605.25129",
+        "version": 2,
+        "updated": "2026-11-11T21:29:53Z",
+        "authors": [
+          "Yudong W. Xu",
+          "Wenhao Li",
+          "Xiaoyu Wang",
+          "Scott Sanner",
+          "Elias B. Khalil"
+        ],
+        "previous_version": null
+      },
+      "source_id": "sudoku-papers",
+      "competition_id": "sakana-sudoku",
+      "detected_at": "2026-11-13T15:32:19+00:00",
+      "key": "sudoku-papers:arxiv:2605.25129:v2:2026-11-11T21:29:53Z"
+    },
+    {
+      "id": "arxiv:2611.17309:v1:2026-11-12T18:56:56Z",
+      "kind": "paper_published",
+      "title": "Classical Energies Learn to Reason 1,000x Faster than Looped Models",
+      "url": "https://arxiv.org/abs/2611.17309v1",
+      "detail": "Looped models have emerged as a prominent paradigm for reasoning, with successes on simple reasoning puzzles such as Sudoku-Extreme and Maze-Unique. However, these models can be unstable, slow to train, and use many parameters and FLOPs to solve simple puzzles. Descent on an energy not only mitigates these issues but also offers advantages: built-in early stopping, compute that adapts to problem difficulty, fast training without differentiating through a solver, and interpretable weights that learn the constraints of the puzzle. Here we demonstrate this with a learned version of Hopfield & Tank's energy from the 80s, which we term CRAM, solves 99.996% of Sudoku-Extreme and 100% of Maze-Unique test puzzles after 42 ms and 132 ms of training on one GPU, at least 1,000x faster than looped models on these tasks. CRAM also matches baseline looped models at their highest accuracy on Sudoku-Extreme using at least 282x fewer inference FLOPs. Our work suggests two things. First, that energies are an extremely promising direction for training reasoning from data. Second, a caution against using trivially solvable benchmarks like Sudoku and Maze to test the scalability of looped reasoning techniques.",
+      "published": "2026-11-12T18:56:56Z",
+      "updated": "2026-11-12T18:56:56Z",
+      "metadata": {
+        "paper_id": "2611.17309",
+        "version": 1,
+        "updated": "2026-11-12T18:56:56Z",
+        "authors": [
+          "Benjamin Hoover",
+          "Hugh Blayney",
+          "James C. R. Whittington"
+        ],
+        "previous_version": null
+      },
+      "source_id": "sudoku-papers",
+      "competition_id": "sakana-sudoku",
+      "detected_at": "2026-11-13T15:32:19+00:00",
+      "key": "sudoku-papers:arxiv:2611.17309:v1:2026-11-12T18:56:56Z"
+    },
+    {
+      "id": "arxiv:2611.17320:v1:2026-11-12T18:58:50Z",
+      "kind": "paper_published",
+      "title": "Learning When Diffusion Language Models Should Regenerate",
+      "url": "https://arxiv.org/abs/2611.17320v1",
+      "detail": "Remasking allows diffusion language models to revisit generated text, but effective correction requires knowing when and what to revise. Our diagnosis on Sudoku reveals two gaps. Hidden states contain error information that token confidence does not reliably expose, and remasking an isolated error usually reproduces it when the surrounding context remains fixed. These findings motivate DiVR , a verifier that predicts whether a partially generated sequence will reach a correct answer. Trained on the final correctness of the model's own trajectories, DiVR decides when to regenerate a block and which alternative to retain, while the generator itself stays unchanged. On five reasoning benchmarks with LLaDA-8B-Base, DiVR raises the average accuracy of the fine-tuned generator from 35.3\\% to 43.4\\% at $1.9$-$3.5\\times$ the cost of greedy decoding, above search baselines that use $3.8$-$7.4\\times$. It also complements post-training such as supervised fine-tuning and reinforcement learning, and generalizes to other generators, including Dream.",
+      "published": "2026-11-12T18:58:50Z",
+      "updated": "2026-11-12T18:58:50Z",
+      "metadata": {
+        "paper_id": "2611.17320",
+        "version": 1,
+        "updated": "2026-11-12T18:58:50Z",
+        "authors": [
+          "Minhae Oh",
+          "Jeonghye Kim",
+          "Jinwoo Koo",
+          "Yeongoon Kim",
+          "Jimin Seo",
+          "Minsik Seol",
+          "Jungwoo Lee"
+        ],
+        "previous_version": null
+      },
+      "source_id": "sudoku-papers",
+      "competition_id": "sakana-sudoku",
+      "detected_at": "2026-11-13T15:32:19+00:00",
+      "key": "sudoku-papers:arxiv:2611.17320:v1:2026-11-12T18:58:50Z"
+    }
+  ],
+  "error_count": 0
+}
