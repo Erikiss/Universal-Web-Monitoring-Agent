@@ -16,52 +16,16 @@
       "repo:ruiling-smartbear/bayin": "third_party",
       "repo:smikoo1000-svg/Fnf": "third_party"
     },
-    "last_digest_at": "2026-11-07T14:17:41+00:00",
-    "next_digest_at": "2026-11-14T14:17:41+00:00",
-    "pending": {
-      "repo:Ircam-RnD/ml-reading-group": {
-        "changes": [
-          {
-            "fingerprint": "6a5140adff29f806d2f8c3c9fe1754b85b9ce02a38b56cbac615d8d0afc98983",
-            "summary": [
-              "Neue Ressourcenlinks: https://github.com/microsoft/graphrag"
-            ]
-          }
-        ],
-        "first_seen_at": "2026-11-11T15:33:34+00:00",
-        "key": "repo:Ircam-RnD/ml-reading-group",
-        "last_seen_at": "2026-11-11T15:33:34+00:00",
-        "origin": "GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.",
-        "title": "GitHub-Hinweis: Ircam-RnD/ml-reading-group (Drittanbieter-Treffer, Zuordnung unbestaetigt)",
-        "url": "https://github.com/Ircam-RnD/ml-reading-group"
-      },
-      "repo:ruiling-smartbear/bayin": {
-        "changes": [
-          {
-            "fingerprint": "ad424d70293854e2c8ea4d2fef1a743184cd2dd6d72ab77a083cd247912a7713",
-            "summary": [
-              "Erstmals erfasst: 3 Code-Dateien; Beispiele: tools/calibrate_bugle.py, tools/contour.py, tools/measure.py.",
-              "Gewichtsdatei-Hinweise im Repository: 0. Kein Gewichte-Download damit belegt.",
-              "GitHub-Releases: 0; keine erfasst.",
-              "Neue Ressourcenlinks: https://github.com/jamesondh/chimera-vocal-synth, https://github.com/ruiling-smartbear/bayin, https://github.com/thestk/stk"
-            ]
-          }
-        ],
-        "first_seen_at": "2026-11-13T15:38:25+00:00",
-        "key": "repo:ruiling-smartbear/bayin",
-        "last_seen_at": "2026-11-13T15:38:25+00:00",
-        "origin": "GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.",
-        "title": "GitHub-Hinweis: ruiling-smartbear/bayin (Drittanbieter-Treffer, Zuordnung unbestaetigt)",
-        "url": "https://github.com/ruiling-smartbear/bayin"
-      }
-    },
+    "last_digest_at": "2026-11-14T14:25:45+00:00",
+    "next_digest_at": "2026-11-21T14:25:45+00:00",
+    "pending": {},
     "version": 1
   },
   "errors": {
     "GitHub Metadaten NeilKhandelwal/drum-jepa": "FetchError: HTTP 404: https://api.github.com/repos/NeilKhandelwal/drum-jepa",
     "GitHub Metadaten smikoo1000-svg/Fnf": "FetchError: HTTP 404: https://api.github.com/repos/smikoo1000-svg/Fnf"
   },
-  "last_checked": "2026-11-13T15:38:25+00:00",
+  "last_checked": "2026-11-14T14:25:45+00:00",
   "observations": {
     "arxiv": {
       "links": [],
@@ -1966,7 +1930,7 @@
         "https://huggingface.co/papers/2604.22748"
       ],
       "related": true,
-      "stamp": "ce8b69e6bc7b18e4e42648d7f30c6cdd517cd63e8c6a56cc30952e5692853921"
+      "stamp": "76c5a058b77a4ab709ce832159e3401b9ed3c6a5fa454be7de7123a0ccede886"
     },
     "guangjun1997327/PianoAutomaticAnnotationSystem": {
       "exact_paper": true,

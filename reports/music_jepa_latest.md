@@ -1,15 +1,15 @@
 # Music-JEPA — Prüfbericht
-2026-11-13T15:38:25+00:00
+2026-11-14T14:25:45+00:00
 
 Tagesalarm: 0 Meldungen.
-Neue Drittanbieter-Signale dieses Laufs: 1 (kein Tagesalarm).
-Wochensammlung dieses Laufs: 0 Quellen.
-Für spätere Wochensammlung vorgemerkt: 2 Quellen.
-Nächste Wochensammlung frühestens: 2026-11-14T14:17:41+00:00 (nächster Lauf; nur mit neuen Hinweisen).
+Neue Drittanbieter-Signale dieses Laufs: 0 (kein Tagesalarm).
+Wochensammlung dieses Laufs: 2 Quellen.
+Für spätere Wochensammlung vorgemerkt: 0 Quellen.
+Nächste Wochensammlung frühestens: 2026-11-21T14:25:45+00:00 (nächster Lauf; nur mit neuen Hinweisen).
 Abruffehler in diesem Lauf: 2.
 
 # Music-JEPA — täglicher Alarm
-2026-11-13T15:38:25+00:00
+2026-11-14T14:25:45+00:00
 
 Klare Quellenänderung bedeutet NICHT automatisch: Code und Gewichte veröffentlicht.
 
@@ -31,13 +31,30 @@ Drittanbieter-Suchtreffer lösen diese Tagesmail nicht aus. Sie werden separat,
 frühestens alle sieben Tage und nur bei neuen Hinweisen als Wochensammlung verschickt.
 
 ## D. DRITTANBIETER-SUCHE — ausschließlich für Wochensammlung
-### GitHub-Hinweis: ruiling-smartbear/bayin (Drittanbieter-Treffer, Zuordnung unbestaetigt)
+# Music-JEPA — WOCHENSAMMLUNG: DRITTANBIETER
+2026-11-14T14:25:45+00:00
+
+2 Repository-/Modellquellen mit noch nicht gemeldeten Hinweisen.
+Dies sind Suchfunde, KEINE bestätigten offiziellen Releases und KEINE Alarme über
+eine neue Paper-Version oder eine geänderte offizielle Projektseite.
+Direkte Paper-/Projektänderungen werden unabhängig davon im täglichen Lauf gemeldet.
+
+## Ircam-RnD/ml-reading-group
+https://github.com/Ircam-RnD/ml-reading-group
+Herkunft: GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.
+Gesammelt: 2026-11-11T15:33:34+00:00 bis 2026-11-11T15:33:34+00:00
+- Neue Ressourcenlinks: https://github.com/microsoft/graphrag
+
+## ruiling-smartbear/bayin
 https://github.com/ruiling-smartbear/bayin
 Herkunft: GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.
+Gesammelt: 2026-11-13T15:38:25+00:00 bis 2026-11-13T15:38:25+00:00
 - Erstmals erfasst: 3 Code-Dateien; Beispiele: tools/calibrate_bugle.py, tools/contour.py, tools/measure.py.
 - Gewichtsdatei-Hinweise im Repository: 0. Kein Gewichte-Download damit belegt.
 - GitHub-Releases: 0; keine erfasst.
 - Neue Ressourcenlinks: https://github.com/jamesondh/chimera-vocal-synth, https://github.com/ruiling-smartbear/bayin, https://github.com/thestk/stk
+
+Dateinamen sind nur Hinweise. Code/Modelle wurden weder ausgeführt noch heruntergeladen.
 
 ## Technischer Quellenstatus
 OK: arXiv
