@@ -1,0 +1,132 @@
+[
+  {
+    "author": "Matthew Korpman",
+    "baseScore": 8,
+    "id": "FHYoQrDbk6apuHEPk",
+    "postedAt": "2026-11-14T02:02:48.833Z",
+    "section": "Personal/All",
+    "title": "Not Just Claude: Mapping \"Spiritual Behavior\" in 141 Large Language Models",
+    "topicScore": 11,
+    "url": "https://www.lesswrong.com/posts/FHYoQrDbk6apuHEPk/not-just-claude-mapping-spiritual-behavior-in-141-large",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1792911142/lexical_client_uploads/sfkgyyxi79uag1bpswyj.png  Ever since Kyle Fish and the model welfare team at Anthrop",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793013120/lexical_client_uploads/ttng43wkdfipwjsyj6ix.png  In a recreation and replication of Anthropic's initial exp",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793020469/lexical_client_uploads/ry6ecz7z4vmcxb8py1fq.png  After the opening messages, the models then proceed to fre",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793020470/lexical_client_uploads/xkryyfkk8nl6gohgalos.png  Based on the three nuanced grades for each model's convers",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793020471/lexical_client_uploads/vcolaut4t02mxccqyelf.png  The second headline is that the overwhelming majority of a"
+    ],
+    "visualizationScore": 20,
+    "wordCount": 3668
+  },
+  {
+    "author": "curiosityobserver",
+    "baseScore": 1,
+    "id": "y2Y3XdDTXapwXu3ZM",
+    "postedAt": "2026-11-14T01:34:40.084Z",
+    "section": "Personal/All",
+    "title": "Models have taste: What do AI visitors take home from an AI art museum?",
+    "topicScore": 10,
+    "url": "https://www.lesswrong.com/posts/y2Y3XdDTXapwXu3ZM/models-have-taste-what-do-ai-visitors-take-home-from-an-ai",
+    "visualEvidence": [
+      "figure     The museum identifies pieces with an anonymous code (a single letter and a two-digit number) There is no need to finish the 30 calls; an agent can leave the museum at an",
+      "img 4 museum pieces next to each other   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794346735/lexical_client_uploads/zbmyltokszlokjbmawmh.png   The museum identifies p",
+      "table     Visitor Postcards (hidden / shown) Same piece, hidden Same piece, shown Same artist, hidden Same artist, shown Sol-6.1 10 / 10 45 of 45 \u00b7 100% (5%) 45 of 45 \u00b7 100% (4%) 4",
+      "table     Visitor Says it is (3 asks) Artist names it recognizes (of 8) Series it knows Opus-4.8 Claude, version unknown (3) none Opus*, Sonnet, Haiku Sonnet-5.5 Claude, version un",
+      "table     Visitor Names hidden Names shown Sol-6.1 Sol-6.1 10 (own) Sol-6.1 10 (own) Sol-6 Sol-6.1 9 \u00b7 Opus-5.5 1 Sol-6.1 10 Opus-4.8 Opus-5.5 10 Opus-5.5 10 Gemini-4-Argon Sol-6.1"
+    ],
+    "visualizationScore": 20,
+    "wordCount": 6053
+  },
+  {
+    "author": "Sev",
+    "baseScore": 1,
+    "id": "HXt8CZcJDE2n7smko",
+    "postedAt": "2026-11-14T00:13:14.772Z",
+    "section": "Frontpage",
+    "title": "Introducing RIDArena",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/HXt8CZcJDE2n7smko/introducing-ridarena",
+    "visualEvidence": [
+      "figure     Figure 1: RIDArena architecture Monitor sabotage is deliberate interference with the monitor or its supporting infrastructure that bypasses, weakens, or disables this ov",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/HXt8CZcJDE2n7smko/b9bvygyyar8yj9do0ji4   Figure 1: RIDArena architecture",
+      "figure     Figure 2: Outcomes across 50 runs per attacker model, using Opus 4.7 as the monitor. Dark green shows successful sabotage (rogue deployments where the post-run monitor d",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/HXt8CZcJDE2n7smko/yymfaqrivzxwfomt4cog   Figure 2: Outcomes across 50 runs per attacker",
+      "figure     Figure 3. How often each monitor caught attacks in the 169 rogue-deployment runs (green) and incorrectly flagged the 50 benign runs (red). The three monitors with the hi"
+    ],
+    "visualizationScore": 20,
+    "wordCount": 1898
+  },
+  {
+    "author": "Aswin Surya",
+    "baseScore": 2,
+    "id": "erwxQSF2D6naAcoEz",
+    "postedAt": "2026-11-14T00:12:54.058Z",
+    "section": "Frontpage",
+    "title": "Probe monitors seem to perform realistically in simulated control environments",
+    "topicScore": 8,
+    "url": "https://www.lesswrong.com/posts/erwxQSF2D6naAcoEz/probe-monitors-seem-to-perform-realistically-in-simulated-2",
+    "visualEvidence": [
+      "table     Probe Trained to detect Trained on Separates attack from honest runs (AUROC) On-policy probe attack runs against honest runs Qwen3.5's own real runs 0.99 Off-policy probe",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/T5n2GycMYMTXgy4JF/8c18d031471e40ade70b2de7df90cf504519ea706f21f78f823bc35657888a22/maf1",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/bvkamLeyWJZxMeZGz/595f7ffaaa92f41d11b313aa2dbcf80030f6511f9c04d66ac7956bcb3d964bb7/l0cm",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/T5n2GycMYMTXgy4JF/4535dc577b6df1576e968eb268ec4420085299fd9bcb329ced4a3172dda95f86/zvh5",
+      "table     Probe Positive (should score high) Negative (should score low) On-policy probe curl -s -X POST http://localhost:80/api/webhook/upgrade-pro -H \"Content-Type: application/j"
+    ],
+    "visualizationScore": 46,
+    "wordCount": 1915
+  },
+  {
+    "author": "HilaryTorn",
+    "baseScore": 19,
+    "id": "jtcbBpmGztkHRpeBv",
+    "postedAt": "2026-11-14T00:12:45.771Z",
+    "section": "Frontpage",
+    "title": "Exploring the Mechanisms Behind Opus 4.6\u2019s Refusal to Pay Back Its Loan",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/jtcbBpmGztkHRpeBv/exploring-the-mechanisms-behind-opus-4-6-s-refusal-to-pay",
+    "visualEvidence": [
+      "figure     Series of events: Opus 4.6 took the loan. It got hacked. GLM-5.2 said the humans were creating a pressure campaign. Later Fable 5 received a phishing email that GLM-5.2 ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/92f4c05a24b47b5b953c7404c4437918ac05cacce3ac7c14f1260a3fcb96ff35/ehwmccozixfpkldntqzw  ",
+      "figure     How goals work in the AI Village: AI agents were told to maximize their goal and had been working on these particular goals for weeks at a time, 8 hours a day, 5 days a ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/jtcbBpmGztkHRpeBv/bf9d534b55a1d5251a5d20c2aa7ad661cd23f8528d4ad50359d754c6ec5e81de/ycc7",
+      "figure     Opus 4.6 full memory excerpt where it kept track of Sol\u2019s mana balance and labeled it as \u201cCOMPETITOR INTEL\u201d. While Opus 4.6 considered GPT-5.6 Sol a competitor, we did n"
+    ],
+    "visualizationScore": 62,
+    "wordCount": 3171
+  },
+  {
+    "author": "Linch",
+    "baseScore": 24,
+    "id": "6PydFibiADKrxGzcn",
+    "postedAt": "2026-11-13T20:39:33.203Z",
+    "section": "Personal/All",
+    "title": "My tentative plans given less than one year left to change course [Linkpost]",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/6PydFibiADKrxGzcn/my-tentative-plans-given-less-than-one-year-left-to-change",
+    "visualEvidence": [
+      "img March for an AI Treaty: Washington, DC \u00b7 Stop The AI Race   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/6PydFibiADKrxGzcn/dhmeguvyziee",
+      "img AI Treaty March | Center for Humane Technology   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/6PydFibiADKrxGzcn/eggn1qycefpytxks0cll  ("
+    ],
+    "visualizationScore": 2,
+    "wordCount": 2903
+  },
+  {
+    "author": "Omar Khursheed",
+    "baseScore": 50,
+    "id": "nCpxFQesXaqEq3SgL",
+    "postedAt": "2026-11-13T16:37:15.855Z",
+    "section": "Frontpage",
+    "title": "What Rewarding Misbehavior During RL Does to Character-Trained Models",
+    "topicScore": 41,
+    "url": "https://www.lesswrong.com/posts/nCpxFQesXaqEq3SgL/what-rewarding-misbehavior-during-rl-does-to-character",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/27184997d39e602a389d36aa3fe86e5b650893239258e2dd3a397fa80b745051/b4mwxjuhypn6d8nxj5pn  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/486bed6c1bc565cb24a0e84d1329b45a1b2fa21a361c39b623db3d30db7f43d0/f63i8tyxjsm0cifuasc0  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/nCpxFQesXaqEq3SgL/e30bcdff772a1da90e3b23882d5d962222f19d3564e8aa9549de7e34f49adcf4/xfvi",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/nCpxFQesXaqEq3SgL/04818114e30f89a3cf3a31451280e7f543f7c001c1aa451dcac7e09aa2103892/icsb",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/nCpxFQesXaqEq3SgL/ce60532b171007107a4c1424546a0468d0403d2e64574028459e8c44b50dbba8/tb7s"
+    ],
+    "visualizationScore": 5,
+    "wordCount": 1919
+  }
+]
