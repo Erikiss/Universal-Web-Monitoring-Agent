@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-11-15T14:20:22+00:00",
+  "errors": [],
+  "last_success_at": "2026-11-15T14:20:22+00:00",
+  "new_count": 0,
+  "pending_count": 0,
+  "pending_results": [],
+  "queries": [
+    {
+      "label": "24 Stunden",
+      "q": "pythia",
+      "tbs": "qdr:d"
+    },
+    {
+      "label": "Überlappung/Nachholen: 4 Tage",
+      "q": "pythia",
+      "tbs": "qdr:d4"
+    },
+    {
+      "label": "Ergänzende Modellsuche: 4 Tage",
+      "q": "pythia (EleutherAI OR \"GPT-NeoX\" OR \"language model\" OR Sprachmodell OR \"mechanistic interpretability\")",
+      "tbs": "qdr:d4"
+    }
+  ],
+  "results": [
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Couldn't load “Pythia”: Failed to fetch.",
+      "title": "Pythia · Wikipedia",
+      "url": "https://www.google.com/goto?url=CAESZgHEIkXXl12S_wh63oXWaPaFceXs4fLVciMjwtpaF2SIRms9MVjHLV5xPrer_-a1BAQT09dFEDtLPUziZbhZyDZh4U8ZTK_0SYPWvRXk5vJgX_C1OpwYtAzfMLb74LqEM5NbLDobBw"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 1 Tag",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "You will not become a mechanistic-interpretability researcher in this lesson. ... HuggingFace SAE checkpoints for gpt2-small , gemma-2 , pythia . 4 ...",
+      "title": "Interpretability (mechanistic + behavioural) - AskAiml",
+      "url": "https://www.google.com/goto?url=CAESiwEBxCJF14xjNVI7-FjHMTL4at1mK4SWzJMn8UfY3mAfuilfmX7YrTHAjvz3J0PrPuT7bEHhS_5upq-dk9WgnEM_C_hjKLYyY03of00p2wIcV7BGbwb4lMWazcgAdAWDAe1nIKCkQ1uciEoBFSUCutWBtZNi5iwqQNIu4SKKb1rhDzdcu39nhg0-7YDe"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "Für diese Seite sind keine Informationen verfügbar.",
+      "title": "https://scholar.google.com/citations?view_op=view_...",
+      "url": "https://scholar.google.com/citations?citation_for_view=Ac6n5pQAAAAJ%3AGnPB-g6toBAC&hl=en&user=Ac6n5pQAAAAJ&view_op=view_citation"
+    }
+  ]
+}
