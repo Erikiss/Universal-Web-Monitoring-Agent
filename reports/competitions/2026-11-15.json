@@ -1,0 +1,362 @@
+{
+  "date": "2026-11-15",
+  "checked_at": "2026-11-15T14:53:06+00:00",
+  "competitions": [
+    {
+      "id": "tig",
+      "name": "The Innovation Game",
+      "description": "Live algorithm submissions, public source branches and protocol status. Daily snapshots are not a replay of every blockchain block.",
+      "checks": [
+        {
+          "source_id": "tig-live",
+          "depth": "deep",
+          "status": "ok",
+          "url": "https://github.com/tig-foundation/tig-monorepo",
+          "stats": {
+            "baseline": false,
+            "block_id": "38cd784af9fd546711b405caf125d8dd",
+            "block_height": 1428550,
+            "round": 142,
+            "records": 778,
+            "depth": "deep",
+            "coverage": "daily block snapshot; not an exhaustive block history",
+            "source_checks": 0,
+            "pending_sources": 0,
+            "public_branches": 717,
+            "source_errors": 0,
+            "baseline_content_uninspected": 717,
+            "source_coverage": "complete"
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "tig-papers",
+          "depth": "deep",
+          "status": "ok",
+          "url": "https://arxiv.org",
+          "stats": {
+            "baseline": false,
+            "pages": 1,
+            "papers_observed": 0,
+            "cutoff": "2026-11-12T14:20:43.611056Z",
+            "seed_papers": 0
+          },
+          "warnings": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "sakana-core-war",
+      "name": "Sakana AI — Core War / Digital Red Queen",
+      "description": "Competitive assembly-program research framework. No continuously operated public submission leaderboard has been verified.",
+      "checks": [
+        {
+          "source_id": "drq-code",
+          "depth": "standard",
+          "status": "ok",
+          "url": "https://github.com/SakanaAI/drq",
+          "stats": {
+            "files": 653,
+            "baseline": false,
+            "depth": "standard",
+            "commit": "6b2f4459f9dc53f3e533ed5f1263129df71067d7",
+            "changes": 0,
+            "diffs_attempted": 0,
+            "diffs_omitted_by_limit": 0
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "drq-project",
+          "depth": "standard",
+          "status": "ok",
+          "url": "https://pub.sakana.ai/drq/",
+          "stats": {
+            "baseline": false,
+            "characters": 44337,
+            "javascript_evaluated": false,
+            "embedded_json_blocks": 0,
+            "linked_resources": 18
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "core-war-papers",
+          "depth": "standard",
+          "status": "ok",
+          "url": "https://arxiv.org",
+          "stats": {
+            "baseline": false,
+            "pages": 1,
+            "papers_observed": 1,
+            "cutoff": "2026-11-12T14:20:46.073264Z",
+            "seed_papers": 1
+          },
+          "warnings": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "sakana-sudoku",
+      "name": "Sakana AI — Sudoku-Bench research and status",
+      "description": "The official repository currently marks Sudoku-Bench discontinued; watch for status changes, benchmark updates and new research.",
+      "checks": [
+        {
+          "source_id": "sudoku-repository",
+          "depth": "deep",
+          "status": "ok",
+          "url": "https://github.com/SakanaAI/Sudoku-Bench",
+          "stats": {
+            "files": 1,
+            "baseline": false,
+            "depth": "deep",
+            "commit": "48fd26702ecedbecfe1ffdd3edc91a346c1137e8",
+            "changes": 0,
+            "diffs_attempted": 0,
+            "diffs_omitted_by_limit": 0
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "sudoku-project",
+          "depth": "light",
+          "status": "ok",
+          "url": "https://pub.sakana.ai/sudoku/",
+          "stats": {
+            "baseline": false,
+            "characters": 8635,
+            "javascript_evaluated": false,
+            "embedded_json_blocks": 0,
+            "linked_resources": 26
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "sudoku-papers",
+          "depth": "light",
+          "status": "ok",
+          "url": "https://arxiv.org",
+          "stats": {
+            "baseline": false,
+            "pages": 1,
+            "papers_observed": 3,
+            "cutoff": "2026-11-12T14:20:51.295543Z",
+            "seed_papers": 1
+          },
+          "warnings": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "assembly-alife",
+      "name": "Assembly, program evolution and artificial life",
+      "description": "Related research, including Google's Paradigms of Intelligence team; these publications are not Sakana competition entries.",
+      "checks": [
+        {
+          "source_id": "google-poi-publications",
+          "depth": "deep",
+          "status": "ok",
+          "url": "https://github.com/paradigms-of-intelligence/.github",
+          "stats": {
+            "files": 1,
+            "baseline": false,
+            "depth": "deep",
+            "commit": "d70b1a3acbc184e4440b15ba71bd92a3201a4f1d",
+            "changes": 0,
+            "diffs_attempted": 0,
+            "diffs_omitted_by_limit": 0
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "google-computational-life-code",
+          "depth": "light",
+          "status": "ok",
+          "url": "https://github.com/paradigms-of-intelligence/cubff",
+          "stats": {
+            "files": 60,
+            "baseline": false,
+            "depth": "light",
+            "commit": "f212e849027c98fcf4b242eccfb5fed435223e23",
+            "changes": 0,
+            "diffs_attempted": 0,
+            "diffs_omitted_by_limit": 0
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "assembly-alife-papers",
+          "depth": "light",
+          "status": "ok",
+          "url": "https://arxiv.org",
+          "stats": {
+            "baseline": false,
+            "pages": 1,
+            "papers_observed": 4,
+            "cutoff": "2026-11-12T14:20:59.558174Z",
+            "seed_papers": 4
+          },
+          "warnings": [],
+          "errors": []
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "tig:submission:code:c002_a120:f7804391ce40ef338df5",
+      "kind": "submission",
+      "title": "TIG hgs_epure: merged",
+      "url": "https://github.com/tig-foundation/tig-monorepo/tree/vehicle_routing/hgs_epure/tig-algorithms/",
+      "detail": "Adoption: 94.42% → 87.31%",
+      "metadata": {
+        "record_kind": "code",
+        "algorithm_id": "c002_a120",
+        "stage": "merged",
+        "state": {
+          "block_confirmed": 1359835,
+          "round_submitted": 135,
+          "round_pushed": 137,
+          "round_active": 139,
+          "round_merged": 140,
+          "banned": false
+        },
+        "details": {
+          "name": "hgs_epure",
+          "player_id": "0x26c3c880f00daee5f6857837b19499d833338474",
+          "challenge_id": "c002",
+          "algorithm_id": "c002_a110",
+          "fee_paid": "10000000000000000000"
+        },
+        "adoption": 0.8730857802457429,
+        "compile_success": true,
+        "block_id": "38cd784af9fd546711b405caf125d8dd",
+        "height": 1428550,
+        "public": true
+      },
+      "source_id": "tig-live",
+      "competition_id": "tig",
+      "detected_at": "2026-11-15T14:53:06+00:00",
+      "key": "tig-live:tig:submission:code:c002_a120:f7804391ce40ef338df5"
+    },
+    {
+      "id": "tig:submission:code:c002_a117:eebc5a3952e60c9189a9",
+      "kind": "submission",
+      "title": "TIG hgs_kairos: merged",
+      "url": "https://github.com/tig-foundation/tig-monorepo/tree/vehicle_routing/hgs_kairos/tig-algorithms/",
+      "detail": "Adoption: 3.97% → 11.68%",
+      "metadata": {
+        "record_kind": "code",
+        "algorithm_id": "c002_a117",
+        "stage": "merged",
+        "state": {
+          "block_confirmed": 1330001,
+          "round_submitted": 132,
+          "round_pushed": 134,
+          "round_active": 136,
+          "round_merged": 137,
+          "banned": false
+        },
+        "details": {
+          "name": "hgs_kairos",
+          "player_id": "0x26c3c880f00daee5f6857837b19499d833338474",
+          "challenge_id": "c002",
+          "algorithm_id": "c002_a110",
+          "fee_paid": "10000000000000000000"
+        },
+        "adoption": 0.11682268598526846,
+        "compile_success": true,
+        "block_id": "38cd784af9fd546711b405caf125d8dd",
+        "height": 1428550,
+        "public": true
+      },
+      "source_id": "tig-live",
+      "competition_id": "tig",
+      "detected_at": "2026-11-15T14:53:06+00:00",
+      "key": "tig-live:tig:submission:code:c002_a117:eebc5a3952e60c9189a9"
+    },
+    {
+      "id": "tig:submission:code:c003_a156:60eda8248e5d813b354e",
+      "kind": "submission",
+      "title": "TIG packrun: active",
+      "url": "https://github.com/tig-foundation/tig-monorepo/tree/knapsack/packrun/tig-algorithms/",
+      "detail": "Adoption: 10.29% → 19.30%",
+      "metadata": {
+        "record_kind": "code",
+        "algorithm_id": "c003_a156",
+        "stage": "active",
+        "state": {
+          "block_confirmed": 1360641,
+          "round_submitted": 135,
+          "round_pushed": 137,
+          "round_active": 139,
+          "round_merged": null,
+          "banned": false
+        },
+        "details": {
+          "name": "packrun",
+          "player_id": "0x3ce59606c2c3929d3f3b0f147b900942ae21fffe",
+          "challenge_id": "c003",
+          "algorithm_id": null,
+          "fee_paid": "10000000000000000000"
+        },
+        "adoption": 0.1930287885174323,
+        "compile_success": true,
+        "block_id": "38cd784af9fd546711b405caf125d8dd",
+        "height": 1428550,
+        "public": true
+      },
+      "source_id": "tig-live",
+      "competition_id": "tig",
+      "detected_at": "2026-11-15T14:53:06+00:00",
+      "key": "tig-live:tig:submission:code:c003_a156:60eda8248e5d813b354e"
+    },
+    {
+      "id": "tig:submission:code:c003_a154:5bc269b8d6402d2ed10b",
+      "kind": "submission",
+      "title": "TIG satchel: merged",
+      "url": "https://github.com/tig-foundation/tig-monorepo/tree/knapsack/satchel/tig-algorithms/",
+      "detail": "Adoption: 89.71% → 80.70%",
+      "metadata": {
+        "record_kind": "code",
+        "algorithm_id": "c003_a154",
+        "stage": "merged",
+        "state": {
+          "block_confirmed": 1349595,
+          "round_submitted": 134,
+          "round_pushed": 136,
+          "round_active": 138,
+          "round_merged": 139,
+          "banned": false
+        },
+        "details": {
+          "name": "satchel",
+          "player_id": "0x3ce59606c2c3929d3f3b0f147b900942ae21fffe",
+          "challenge_id": "c003",
+          "algorithm_id": null,
+          "fee_paid": "10000000000000000000"
+        },
+        "adoption": 0.8069712114825677,
+        "compile_success": true,
+        "block_id": "38cd784af9fd546711b405caf125d8dd",
+        "height": 1428550,
+        "public": true
+      },
+      "source_id": "tig-live",
+      "competition_id": "tig",
+      "detected_at": "2026-11-15T14:53:06+00:00",
+      "key": "tig-live:tig:submission:code:c003_a154:5bc269b8d6402d2ed10b"
+    }
+  ],
+  "error_count": 0
+}

@@ -1,6 +1,6 @@
-# Competition Tracer — 2026-11-14
+# Competition Tracer — 2026-11-15
 
-Letzter Check: 2026-11-14T14:20:36+00:00 · Heute erfasst: 3 · Aus früheren Tagen zur Zustellung übernommen: 0 · Fehler: 0
+Letzter Check: 2026-11-15T14:53:06+00:00 · Heute erfasst: 4 · Aus früheren Tagen zur Zustellung übernommen: 0 · Fehler: 0
 
 Tägliche Momentaufnahme; keine vollständige Blockhistorie und keine Ausführung eingereichten Codes.
 
@@ -9,18 +9,92 @@ Tägliche Momentaufnahme; keine vollständige Blockhistorie und keine Ausführun
 Live algorithm submissions, public source branches and protocol status. Daily snapshots are not a replay of every blockchain block.
 
 - **[tig-live](<https://github.com/tig-foundation/tig-monorepo>)** (deep): ok.
-  {"baseline": false, "baseline_content_uninspected": 717, "block_height": 1427077, "block_id": "1e1d6d92299af99b63e409b1809a9ea9", "coverage": "daily block snapshot; not an exhaustive block history", "depth": "deep", "pending_sources": 0, "public_branches": 717, "records": 778, "round": 142, "source_checks": 0, "source_coverage": "complete", "source_errors": 0}
+  {"baseline": false, "baseline_content_uninspected": 717, "block_height": 1428550, "block_id": "38cd784af9fd546711b405caf125d8dd", "coverage": "daily block snapshot; not an exhaustive block history", "depth": "deep", "pending_sources": 0, "public_branches": 717, "records": 778, "round": 142, "source_checks": 0, "source_coverage": "complete", "source_errors": 0}
 - **[tig-papers](<https://arxiv.org>)** (deep): ok.
-  {"baseline": false, "cutoff": "2026-11-11T15:32:26.277573Z", "pages": 1, "papers_observed": 0, "seed_papers": 0}
+  {"baseline": false, "cutoff": "2026-11-12T14:20:43.611056Z", "pages": 1, "papers_observed": 0, "seed_papers": 0}
+
+### TIG hgs_epure: merged
+
+Typ: submission · Quelle: tig-live
+Erfasst: 2026-11-15T14:53:06+00:00
+
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/vehicle_routing/hgs_epure/tig-algorithms/>)
+
+Adoption: 94.42% → 87.31%
+
+```json
+{
+  "record_kind": "code",
+  "algorithm_id": "c002_a120",
+  "stage": "merged",
+  "state": {
+    "block_confirmed": 1359835,
+    "round_submitted": 135,
+    "round_pushed": 137,
+    "round_active": 139,
+    "round_merged": 140,
+    "banned": false
+  },
+  "details": {
+    "name": "hgs_epure",
+    "player_id": "0x26c3c880f00daee5f6857837b19499d833338474",
+    "challenge_id": "c002",
+    "algorithm_id": "c002_a110",
+    "fee_paid": "10000000000000000000"
+  },
+  "adoption": 0.8730857802457429,
+  "compile_success": true,
+  "block_id": "38cd784af9fd546711b405caf125d8dd",
+  "height": 1428550,
+  "public": true
+}
+```
+
+### TIG hgs_kairos: merged
+
+Typ: submission · Quelle: tig-live
+Erfasst: 2026-11-15T14:53:06+00:00
+
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/vehicle_routing/hgs_kairos/tig-algorithms/>)
+
+Adoption: 3.97% → 11.68%
+
+```json
+{
+  "record_kind": "code",
+  "algorithm_id": "c002_a117",
+  "stage": "merged",
+  "state": {
+    "block_confirmed": 1330001,
+    "round_submitted": 132,
+    "round_pushed": 134,
+    "round_active": 136,
+    "round_merged": 137,
+    "banned": false
+  },
+  "details": {
+    "name": "hgs_kairos",
+    "player_id": "0x26c3c880f00daee5f6857837b19499d833338474",
+    "challenge_id": "c002",
+    "algorithm_id": "c002_a110",
+    "fee_paid": "10000000000000000000"
+  },
+  "adoption": 0.11682268598526846,
+  "compile_success": true,
+  "block_id": "38cd784af9fd546711b405caf125d8dd",
+  "height": 1428550,
+  "public": true
+}
+```
 
 ### TIG packrun: active
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-14T14:20:36+00:00
+Erfasst: 2026-11-15T14:53:06+00:00
 
 [Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/knapsack/packrun/tig-algorithms/>)
 
-Adoption: 17.56% → 10.29%
+Adoption: 10.29% → 19.30%
 
 ```json
 {
@@ -42,47 +116,10 @@ Adoption: 17.56% → 10.29%
     "algorithm_id": null,
     "fee_paid": "10000000000000000000"
   },
-  "adoption": 0.1029149612760558,
+  "adoption": 0.1930287885174323,
   "compile_success": true,
-  "block_id": "1e1d6d92299af99b63e409b1809a9ea9",
-  "height": 1427077,
-  "public": true
-}
-```
-
-### TIG there_v10: merged
-
-Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-14T14:20:36+00:00
-
-[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/vector_search/there_v10/tig-algorithms/>)
-
-Adoption: 13.81% → 19.14%
-
-```json
-{
-  "record_kind": "code",
-  "algorithm_id": "c004_a100",
-  "stage": "merged",
-  "state": {
-    "block_confirmed": 1180230,
-    "round_submitted": 118,
-    "round_pushed": 120,
-    "round_active": 122,
-    "round_merged": 124,
-    "banned": false
-  },
-  "details": {
-    "name": "there_v10",
-    "player_id": "0x1884f0fe1208f38a1433b706790e22be9fed1f7c",
-    "challenge_id": "c004",
-    "algorithm_id": null,
-    "fee_paid": "10000000000000000000"
-  },
-  "adoption": 0.1913752475424681,
-  "compile_success": true,
-  "block_id": "1e1d6d92299af99b63e409b1809a9ea9",
-  "height": 1427077,
+  "block_id": "38cd784af9fd546711b405caf125d8dd",
+  "height": 1428550,
   "public": true
 }
 ```
@@ -90,11 +127,11 @@ Adoption: 13.81% → 19.14%
 ### TIG satchel: merged
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-14T14:20:36+00:00
+Erfasst: 2026-11-15T14:53:06+00:00
 
 [Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/knapsack/satchel/tig-algorithms/>)
 
-Adoption: 82.44% → 89.71%
+Adoption: 89.71% → 80.70%
 
 ```json
 {
@@ -116,10 +153,10 @@ Adoption: 82.44% → 89.71%
     "algorithm_id": null,
     "fee_paid": "10000000000000000000"
   },
-  "adoption": 0.8970850387239442,
+  "adoption": 0.8069712114825677,
   "compile_success": true,
-  "block_id": "1e1d6d92299af99b63e409b1809a9ea9",
-  "height": 1427077,
+  "block_id": "38cd784af9fd546711b405caf125d8dd",
+  "height": 1428550,
   "public": true
 }
 ```
@@ -133,7 +170,7 @@ Competitive assembly-program research framework. No continuously operated public
 - **[drq-project](<https://pub.sakana.ai/drq/>)** (standard): ok.
   {"baseline": false, "characters": 44337, "embedded_json_blocks": 0, "javascript_evaluated": false, "linked_resources": 18}
 - **[core-war-papers](<https://arxiv.org>)** (standard): ok.
-  {"baseline": false, "cutoff": "2026-11-11T15:32:28.934809Z", "pages": 1, "papers_observed": 1, "seed_papers": 1}
+  {"baseline": false, "cutoff": "2026-11-12T14:20:46.073264Z", "pages": 1, "papers_observed": 1, "seed_papers": 1}
 
 Keine neuen Ereignisse erfasst. Quellenstatus oben beachten.
 
@@ -146,7 +183,7 @@ The official repository currently marks Sudoku-Bench discontinued; watch for sta
 - **[sudoku-project](<https://pub.sakana.ai/sudoku/>)** (light): ok.
   {"baseline": false, "characters": 8635, "embedded_json_blocks": 0, "javascript_evaluated": false, "linked_resources": 26}
 - **[sudoku-papers](<https://arxiv.org>)** (light): ok.
-  {"baseline": false, "cutoff": "2026-11-11T15:32:34.576566Z", "pages": 1, "papers_observed": 4, "seed_papers": 1}
+  {"baseline": false, "cutoff": "2026-11-12T14:20:51.295543Z", "pages": 1, "papers_observed": 3, "seed_papers": 1}
 
 Keine neuen Ereignisse erfasst. Quellenstatus oben beachten.
 
@@ -159,7 +196,7 @@ Related research, including Google's Paradigms of Intelligence team; these publi
 - **[google-computational-life-code](<https://github.com/paradigms-of-intelligence/cubff>)** (light): ok.
   {"baseline": false, "changes": 0, "commit": "f212e849027c98fcf4b242eccfb5fed435223e23", "depth": "light", "diffs_attempted": 0, "diffs_omitted_by_limit": 0, "files": 60}
 - **[assembly-alife-papers](<https://arxiv.org>)** (light): ok.
-  {"baseline": false, "cutoff": "2026-11-11T15:32:43.816616Z", "pages": 1, "papers_observed": 4, "seed_papers": 4}
+  {"baseline": false, "cutoff": "2026-11-12T14:20:59.558174Z", "pages": 1, "papers_observed": 4, "seed_papers": 4}
 
 Keine neuen Ereignisse erfasst. Quellenstatus oben beachten.
 
