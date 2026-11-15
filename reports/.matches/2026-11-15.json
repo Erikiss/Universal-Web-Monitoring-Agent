@@ -1,0 +1,59 @@
+[
+  {
+    "author": "bosoncutter",
+    "baseScore": 17,
+    "id": "bMsQ44sKqrFWjuHPb",
+    "postedAt": "2026-11-15T01:19:18.931Z",
+    "section": "Frontpage",
+    "title": "On the Brutality of Amdahl's Law",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/bMsQ44sKqrFWjuHPb/on-the-brutality-of-amdahl-s-law",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/bMsQ44sKqrFWjuHPb/xg9k0uk5epyy6il3qvhw  If you have a process with some number of steps",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/bMsQ44sKqrFWjuHPb/tr0iy9ckkuyxnjms2z6h  If you send every rate but one to infinity , yo",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/bMsQ44sKqrFWjuHPb/yhdwyez09b5io46mbydw  This is almost a trivial statement - your overa",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/bMsQ44sKqrFWjuHPb/hygsmm1sn5rk0mpfvmxw  More realistically, suppose you have some hiera",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/bMsQ44sKqrFWjuHPb/ml9h146efu9nyjeyvbjz  where r\u2080 = a is the slowest and each successive"
+    ],
+    "visualizationScore": 7,
+    "wordCount": 2040
+  },
+  {
+    "author": "CarolusRenniusVitellius",
+    "baseScore": 22,
+    "id": "uCqBdWX6hnoB2A8pk",
+    "postedAt": "2026-11-15T00:22:46.852Z",
+    "section": "Frontpage",
+    "title": "Slouching Towards Interpretability: Thinking About Computation in Neural Networks",
+    "topicScore": 12,
+    "url": "https://www.lesswrong.com/posts/uCqBdWX6hnoB2A8pk/slouching-towards-interpretability-thinking-about",
+    "visualEvidence": [
+      "img Whiteboard sketch: the 'prune' picture   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/uCqBdWX6hnoB2A8pk/ivjorgi72crr3zfxe78r   \"Prune\":",
+      "img Whiteboard sketch: the 'precipitate' picture   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/uCqBdWX6hnoB2A8pk/knojbepvch7gjmiogdfl   \"P",
+      "img Whiteboard sketch: Niels the Neuron and the Hankel matrix   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/uCqBdWX6hnoB2A8pk/wfug4pyanaiv",
+      "img Whiteboard sketch: spectral clustering and receptive fields   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/uCqBdWX6hnoB2A8pk/bt1r90hj4q",
+      "img Figure 1 from Janiak et al.: Voronoi-cell-like structure in the residual stream   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/uCqBdWX6"
+    ],
+    "visualizationScore": 17,
+    "wordCount": 6458
+  },
+  {
+    "author": "Marina Fuster",
+    "baseScore": 1,
+    "id": "Xn9tiivnjEFfKRwTQ",
+    "postedAt": "2026-11-14T23:16:03.605Z",
+    "section": "Personal/All",
+    "title": "Extension on persona vectors: where does the evil go?",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/Xn9tiivnjEFfKRwTQ/extension-on-persona-vectors-where-does-the-evil-go",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794659403/lexical_client_uploads/jwa29osmsdm0hge3xy9f.png  Building artifacts Building artifacts: instruction positiv",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794659452/lexical_client_uploads/rhclxhbg0sfwhki3li03.png  Based on the artifacts obtained in the previous step, prom",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794659489/lexical_client_uploads/akilgubmwfa7kpqi0iab.png  We have 200 (5x40) eliciting prompts for the trait and 200",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794659668/lexical_client_uploads/hxtwvygabdm8fnkqfkgh.png  where is the activation at layer and is the steering coeff",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794659769/lexical_client_uploads/lphflos1pzxxblkw2ut7.png  In order to validate the trait expression when steering th"
+    ],
+    "visualizationScore": 26,
+    "wordCount": 3123
+  }
+]
