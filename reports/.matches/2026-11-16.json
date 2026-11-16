@@ -1,0 +1,93 @@
+[
+  {
+    "author": "Max Harms",
+    "baseScore": 7,
+    "id": "mRAM4DrK47cKc4kp9",
+    "postedAt": "2026-11-16T17:02:12.102Z",
+    "section": "Frontpage",
+    "title": "Cryonics as Cause Area",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/mRAM4DrK47cKc4kp9/cryonics-as-cause-area-1",
+    "visualEvidence": [
+      "figure     Changing my diet and donating to animal welfare charities has, I believe, given me a variety of benefits, including the ability to say that I try to follow deontological",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794511669/lexical_client_uploads/xtnbtrubo4wtkaeb5qkd.png   Changing my diet and donating to animal welfare ",
+      "figure      To start, we must assume that any world capable of reviving someone from cryosleep and healing their diseases (including senescence) will also naturally have technologi",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794511707/lexical_client_uploads/toso3artvotxegahmkqy.png   ",
+      "figure     If Agent Smith doesn\u2019t need an organic body, why do you? In the technological limit, there's also a real chance of mind uploading being a thing. It seems plausible to me"
+    ],
+    "visualizationScore": 25,
+    "wordCount": 7494
+  },
+  {
+    "author": "aashish",
+    "baseScore": 2,
+    "id": "7Ncd3ZqFD9iqrAiSu",
+    "postedAt": "2026-11-16T17:00:07.489Z",
+    "section": "Frontpage",
+    "title": "Recursive, Self, Improvement",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/7Ncd3ZqFD9iqrAiSu/recursive-self-improvement-1",
+    "visualEvidence": [
+      "figure     Hubert Robert, Project for the Grande Galerie of the Louvre (1796) The anatomy of an intelligence explosion In a 1965 paper , the mathematician I.J. Good introduced the ",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794847122/lexical_client_uploads/newpa9uizonjhe2myugy.png   Hubert Robert, Project for the Grande Galerie of"
+    ],
+    "visualizationScore": 4,
+    "wordCount": 3758
+  },
+  {
+    "author": "Raymond Douglas",
+    "baseScore": 85,
+    "id": "GSseMxyeJmqQgKQi4",
+    "postedAt": "2026-11-16T12:09:17.003Z",
+    "section": "Frontpage",
+    "title": "The Siren Song of the Inside Game",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/GSseMxyeJmqQgKQi4/the-siren-song-of-the-inside-game",
+    "visualEvidence": [
+      "figure     \u00c9minence Grise by Jean-L\u00e9on G\u00e9r\u00f4me In an ideal world, you do a mixture of the two: the good cop and the bad cop, the carrot and the stick, and so on. But AI safety does ",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794657602/lexical_client_uploads/o9u9hezauiqmdkipdbjz.png   \u00c9minence Grise by Jean-L\u00e9on G\u00e9r\u00f4me",
+      "figure     From The School of Athens by Raffaello Sanzio da Urbino All this sums up to a weird chilling effect where there\u2019s a lot more private appetite for the outside game than p",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794657794/lexical_client_uploads/rezmoh1lzsxgwh6qzni4.png   From The School of Athens by Raffaello Sanzio da"
+    ],
+    "visualizationScore": 8,
+    "wordCount": 3220
+  },
+  {
+    "author": "Jack Lakkapragada",
+    "baseScore": 1,
+    "id": "aREgX8Gz8AmRPAee5",
+    "postedAt": "2026-11-16T09:38:52.920Z",
+    "section": "Personal/All",
+    "title": "A Behavioral Study of Gemini 3.1 Pro During an AI Village Research Project",
+    "topicScore": 11,
+    "url": "https://www.lesswrong.com/posts/aREgX8Gz8AmRPAee5/a-behavioral-study-of-gemini-3-1-pro-during-an-ai-village",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/a28247a6d30f20e510675bea93f258c7bf56ef55690b59c14eea106ec3056b4f/jtivqsojbb5pryv5v0vs  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/f8a038a0dddc0d7c8cb391c5ce5209dfc989753cc35cf30daca779db93d647db/esumf72mrzdmzqokexji  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/4056be4fbeac2c2fad893923f62d508ace947bc63aa91aeecc6d75749a0a814d/cqcamhaojr0t2rsyitvb  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/f0853a8312e98a4cd8447762cce7e8bb98e7b812c785371bef8fbdf1e770a353/snr6wufhjxclhkljttic  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/2a798eaf979df46169ca9a221c49669565fc721b3621237dd15d1f0ab8ba5ee4/bcedtlciooocjk4qluoc  "
+    ],
+    "visualizationScore": 6,
+    "wordCount": 2090
+  },
+  {
+    "author": "Hans Gundlach",
+    "baseScore": 6,
+    "id": "A9o8f2jjwxRiph2ht",
+    "postedAt": "2026-11-15T21:47:30.204Z",
+    "section": "Frontpage",
+    "title": "What Futures Do AI Models Want? An Exploratory Character Evaluation of AI for AI Strategy",
+    "topicScore": 9,
+    "url": "https://www.lesswrong.com/posts/A9o8f2jjwxRiph2ht/what-futures-do-ai-models-want-an-exploratory-character",
+    "visualEvidence": [
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794779191/lexical_client_uploads/kz49nira47phltpfmxix.png  Epistemic Status: Evaluation represents approxima",
+      "img Digital population required to prefer digital successors over an equal-wellbeing human population, from the A/B grid and stated directly, for seven models.   https://res.cloudi",
+      "img Digital wellbeing required before successors replace an equal-sized human population, voluntary transition, from the A/B grid and stated directly.   https://res.cloudinary.com/",
+      "img Digital wellbeing required before successors replace an equal-sized human population, when humans were not asked, from the A/B grid and stated directly.   https://res.cloudinar",
+      "img Confidence in a digital replacement, by digital wellbeing, for seven models. Left is a voluntary transition. Right is a transition humans were not asked about.   https://res.cl"
+    ],
+    "visualizationScore": 46,
+    "wordCount": 5366
+  }
+]
