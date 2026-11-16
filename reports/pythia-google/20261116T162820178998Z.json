@@ -1,0 +1,135 @@
+{
+  "checked_at": "2026-11-16T16:28:20+00:00",
+  "errors": [],
+  "last_success_at": "2026-11-16T16:28:20+00:00",
+  "new_count": 1,
+  "pending_count": 1,
+  "pending_results": [
+    {
+      "first_seen_at": "2026-11-16T16:28:20+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "You will not become a mechanistic-interpretability researcher in this lesson. ... HuggingFace SAE checkpoints for gpt2-small , gemma-2 , pythia . 4 ...",
+      "title": "Interpretability (mechanistic + behavioural) - AskAiml",
+      "url": "https://www.askaiml.com/academy/llm/eval-and-interpretability/interpretability"
+    }
+  ],
+  "queries": [
+    {
+      "label": "24 Stunden",
+      "q": "pythia",
+      "tbs": "qdr:d"
+    },
+    {
+      "label": "Überlappung/Nachholen: 4 Tage",
+      "q": "pythia",
+      "tbs": "qdr:d4"
+    },
+    {
+      "label": "Ergänzende Modellsuche: 4 Tage",
+      "q": "pythia (EleutherAI OR \"GPT-NeoX\" OR \"language model\" OR Sprachmodell OR \"mechanistic interpretability\")",
+      "tbs": "qdr:d4"
+    }
+  ],
+  "results": [
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Für diese Seite sind keine Informationen verfügbar.",
+      "title": "Pythia",
+      "url": "http://pythiacrafting.com/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 11 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "CRACKS musical theater by Pythia Trio - 6 hands on one piano is a Theatre event at Technopolis 20, Paphos on Thursday, 19 November 2026 from 20:00 to 21:00.",
+      "title": "CRACKS musical theater by Pythia Trio - 6 hands on…",
+      "url": "https://cyprusnow.app/event/cracks-musical-theater-by-pythia-trio-6-hands-on-one-piano-2026-11-19"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 22 Stunden",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "The Sanctuary of Delphi was where the high Oracle Pythia gave the divine advice of the god Apollo to people who traveled from all over the world in search of an ...",
+      "title": "Why so bish?'s post",
+      "url": "https://www.facebook.com/whysobish/posts/1655484926036299/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "- Component tests in Qwen and Pythia point to attention drift: attention favoring old values over the current one when the answer is produced. - Frontier models ...",
+      "title": "Paper: even when the updated value is in context, models ...",
+      "url": "https://www.reddit.com/r/LLMDevs/comments/1xxpmn4/paper_even_when_the_updated_value_is_in_context/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 6 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Legal Pythia's founders submitted a concept to a City of Munich ideas competition: using AI to reliably analyse and compare legal texts. The aim was to improve ...",
+      "title": "Ambrosys & Legal Pythia: AI Legal-Text Analysis Case Study",
+      "url": "https://www.legalpythia.com/case-studies/ambrosys"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "@PythiaR. Pythia Cap: Partially Conductive · @PythiaR. Evercore semis late cycle playbook $SOXX · 2:07 PM · Nov 16, 2026 11.3K · @Franny8 · Franny · @Franny8.",
+      "title": "Pythia Cap - \"Evercore semis late cycle playbook $SOXX\" ...",
+      "url": "https://x.com/PythiaR/status/2122330740377673914"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 23 Stunden",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "24 Stunden",
+      "snippet": "The hidden stone houses of sleepy Ikaria. October has been very generous with us. Along with some strong winds, it surprised us with sunshine too! ☀️",
+      "title": "In the Mountains / Ikaria Nov. 2026",
+      "url": "https://www.instagram.com/p/DfxPRw4jF3k/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 2 Stunden",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "• PYTHIA authors advise moving away from b-recoil. • ATLAS performed dedicated tunes for both schemes. • Both describe data well; differences reduced but not ...",
+      "title": "ATLAS Status Report - Indico",
+      "url": "https://indico.cern.ch/event/1742595/contributions/7325322/attachments/3381866/6073531/20261116_ATLAS.pdf"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 3 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "Couldn't load “Pythia”: Failed to fetch.",
+      "title": "Pythia · Wikipedia",
+      "url": "https://lindenslearnings.com/?page=Pythia"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "You will not become a mechanistic-interpretability researcher in this lesson. ... HuggingFace SAE checkpoints for gpt2-small , gemma-2 , pythia . 4 ...",
+      "title": "Interpretability (mechanistic + behavioural) - AskAiml",
+      "url": "https://www.askaiml.com/academy/llm/eval-and-interpretability/interpretability"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "Für diese Seite sind keine Informationen verfügbar.",
+      "title": "https://scholar.google.com/citations?view_op=view_...",
+      "url": "https://scholar.google.com/citations?citation_for_view=Ac6n5pQAAAAJ%3AGnPB-g6toBAC&hl=en&user=Ac6n5pQAAAAJ&view_op=view_citation"
+    }
+  ]
+}

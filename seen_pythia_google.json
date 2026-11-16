@@ -1072,10 +1072,19 @@
       "url": "https://zhuanlan.zhihu.com/p/2096482642027983491"
     }
   },
-  "last_attempt_at": "2026-11-15T14:20:22+00:00",
+  "last_attempt_at": "2026-11-16T16:28:20+00:00",
   "last_errors": [],
-  "last_success_at": "2026-11-15T14:20:22+00:00",
-  "pending": {},
+  "last_success_at": "2026-11-16T16:28:20+00:00",
+  "pending": {
+    "https://www.askaiml.com/academy/llm/eval-and-interpretability/interpretability": {
+      "first_seen_at": "2026-11-16T16:28:20+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "You will not become a mechanistic-interpretability researcher in this lesson. ... HuggingFace SAE checkpoints for gpt2-small , gemma-2 , pythia . 4 ...",
+      "title": "Interpretability (mechanistic + behavioural) - AskAiml",
+      "url": "https://www.askaiml.com/academy/llm/eval-and-interpretability/interpretability"
+    }
+  },
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
