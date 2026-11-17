@@ -1081,10 +1081,67 @@
       "url": "https://zhuanlan.zhihu.com/p/2096482642027983491"
     }
   },
-  "last_attempt_at": "2026-11-16T16:28:20+00:00",
+  "last_attempt_at": "2026-11-17T16:30:06+00:00",
   "last_errors": [],
-  "last_success_at": "2026-11-16T16:28:20+00:00",
-  "pending": {},
+  "last_success_at": "2026-11-17T16:30:06+00:00",
+  "pending": {
+    "https://arxiv.org/abs/2611.20331v1": {
+      "first_seen_at": "2026-11-17T16:30:06+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "... Pythia models, including generalization tests on WikiText and LAMBADA. ... (2024) successfully implemented the FPGA-based Large Language Model (LLM) ...",
+      "title": "LENS: Replacing LayerNorm and Softmax in Transformers ...",
+      "url": "https://arxiv.org/abs/2611.20331v1"
+    },
+    "https://figshare.com/articles/preprint/Averaging_the_Last_Checkpoints_of_Pythia-160M_No_Difference_Larger_Than_0_008_Nats_From_the_Best_Single_Checkpoint_WikiText-2_NLL_in_fp32/35014003": {
+      "first_seen_at": "2026-11-17T16:30:06+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Pythia was trained in fp16, and an earlier bfloat16 evaluation produced a spurious 0.45-nat gain. The evidence comes from one 160M-parameter model and one ...",
+      "title": "Averaging the Last Checkpoints of Pythia-160M: No ...",
+      "url": "https://figshare.com/articles/preprint/Averaging_the_Last_Checkpoints_of_Pythia-160M_No_Difference_Larger_Than_0_008_Nats_From_the_Best_Single_Checkpoint_WikiText-2_NLL_in_fp32/35014003"
+    },
+    "https://ieeexplore.ieee.org/document/11441547/": {
+      "first_seen_at": "2026-11-17T16:30:06+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Contextual Understanding in Retrieval Augmented Generation: A Comparative Evaluation of BLOOM-560M and Pythia-410M on Bhagavad Gita Interpretation. Publisher: ...",
+      "title": "A Comparative Evaluation of BLOOM-560M and Pythia ...",
+      "url": "https://ieeexplore.ieee.org/document/11441547/"
+    },
+    "https://medium.com/ai-mindset/can-ai-model-weights-reveal-which-gpus-created-them-acec3206fdaf": {
+      "first_seen_at": "2026-11-17T16:30:06+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Eight of EleutherAI's Pythia models, trained on A100s, read as 108. NVIDIA's own Nemotron 3 Ultra, whose technical report names the GB200 for one phase of ...",
+      "title": "Can AI Model Weights Reveal Which GPUs Created Them?",
+      "url": "https://medium.com/ai-mindset/can-ai-model-weights-reveal-which-gpus-created-them-acec3206fdaf"
+    },
+    "https://openreview.net/forum?id=0K0KzH6eJc": {
+      "first_seen_at": "2026-11-17T16:30:06+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "... Pythia (160M-1B), OLMo-1B, and OLMo2-1B, we ... large language models, LLM pretraining, generalization, mechanistic interpretability, mixture-of-experts.",
+      "title": "Monitoring Generalization During Pretraining via Virtual MoE",
+      "url": "https://openreview.net/forum?id=0K0KzH6eJc"
+    },
+    "https://www.legalpythia.com/case-studies/ambrosys": {
+      "first_seen_at": "2026-11-17T16:30:06+00:00",
+      "google_date": "vor 1 Tag",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Legal Pythia and Ambrosys ... Automated processes made an API to the jointly developed language model available within one week for the final Munich pitch.",
+      "title": "Ambrosys & Legal Pythia: AI Legal-Text Analysis Case Study",
+      "url": "https://www.legalpythia.com/case-studies/ambrosys"
+    },
+    "https://x.com/pratyushmaini/status/2122496448319357245": {
+      "first_seen_at": "2026-11-17T16:30:06+00:00",
+      "google_date": "vor 15 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Pythia-14M student, 70M teacher, ~5M tokens. @giffmana · Lucas Beyer (bl16) · @giffmana · 15h. ayyyoo they did our distillation thing for language models!",
+      "title": "Pratyush Maini on X: \"So... I reproduced this paper, and I ...",
+      "url": "https://x.com/pratyushmaini/status/2122496448319357245"
+    }
+  },
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
