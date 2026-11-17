@@ -1,0 +1,251 @@
+{
+  "date": "2026-11-17",
+  "checked_at": "2026-11-17T16:58:15+00:00",
+  "competitions": [
+    {
+      "id": "tig",
+      "name": "The Innovation Game",
+      "description": "Live algorithm submissions, public source branches and protocol status. Daily snapshots are not a replay of every blockchain block.",
+      "checks": [
+        {
+          "source_id": "tig-live",
+          "depth": "deep",
+          "status": "fehlgeschlagen",
+          "url": "https://github.com/tig-foundation/tig-monorepo",
+          "errors": [
+            "mainnet-api.tig.foundation: retry exceeds daily request budget"
+          ]
+        },
+        {
+          "source_id": "tig-papers",
+          "depth": "deep",
+          "status": "ok",
+          "url": "https://arxiv.org",
+          "stats": {
+            "baseline": false,
+            "pages": 1,
+            "papers_observed": 0,
+            "cutoff": "2026-11-14T17:12:23.596336Z",
+            "seed_papers": 0
+          },
+          "warnings": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "sakana-core-war",
+      "name": "Sakana AI — Core War / Digital Red Queen",
+      "description": "Competitive assembly-program research framework. No continuously operated public submission leaderboard has been verified.",
+      "checks": [
+        {
+          "source_id": "drq-code",
+          "depth": "standard",
+          "status": "ok",
+          "url": "https://github.com/SakanaAI/drq",
+          "stats": {
+            "files": 653,
+            "baseline": false,
+            "depth": "standard",
+            "commit": "6b2f4459f9dc53f3e533ed5f1263129df71067d7",
+            "changes": 0,
+            "diffs_attempted": 0,
+            "diffs_omitted_by_limit": 0
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "drq-project",
+          "depth": "standard",
+          "status": "ok",
+          "url": "https://pub.sakana.ai/drq/",
+          "stats": {
+            "baseline": false,
+            "characters": 44337,
+            "javascript_evaluated": false,
+            "embedded_json_blocks": 0,
+            "linked_resources": 18
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "core-war-papers",
+          "depth": "standard",
+          "status": "ok",
+          "url": "https://arxiv.org",
+          "stats": {
+            "baseline": false,
+            "pages": 1,
+            "papers_observed": 1,
+            "cutoff": "2026-11-14T17:12:26.338638Z",
+            "seed_papers": 1
+          },
+          "warnings": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "sakana-sudoku",
+      "name": "Sakana AI — Sudoku-Bench research and status",
+      "description": "The official repository currently marks Sudoku-Bench discontinued; watch for status changes, benchmark updates and new research.",
+      "checks": [
+        {
+          "source_id": "sudoku-repository",
+          "depth": "deep",
+          "status": "ok",
+          "url": "https://github.com/SakanaAI/Sudoku-Bench",
+          "stats": {
+            "files": 1,
+            "baseline": false,
+            "depth": "deep",
+            "commit": "48fd26702ecedbecfe1ffdd3edc91a346c1137e8",
+            "changes": 0,
+            "diffs_attempted": 0,
+            "diffs_omitted_by_limit": 0
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "sudoku-project",
+          "depth": "light",
+          "status": "ok",
+          "url": "https://pub.sakana.ai/sudoku/",
+          "stats": {
+            "baseline": false,
+            "characters": 8635,
+            "javascript_evaluated": false,
+            "embedded_json_blocks": 0,
+            "linked_resources": 26
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "sudoku-papers",
+          "depth": "light",
+          "status": "ok",
+          "url": "https://arxiv.org",
+          "stats": {
+            "baseline": false,
+            "pages": 1,
+            "papers_observed": 2,
+            "cutoff": "2026-11-14T17:12:31.753606Z",
+            "seed_papers": 1
+          },
+          "warnings": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "assembly-alife",
+      "name": "Assembly, program evolution and artificial life",
+      "description": "Related research, including Google's Paradigms of Intelligence team; these publications are not Sakana competition entries.",
+      "checks": [
+        {
+          "source_id": "google-poi-publications",
+          "depth": "deep",
+          "status": "ok",
+          "url": "https://github.com/paradigms-of-intelligence/.github",
+          "stats": {
+            "files": 1,
+            "baseline": false,
+            "depth": "deep",
+            "commit": "484b75fa65e00cd7d6ace482f00cad0bef45fa39",
+            "changes": 1,
+            "diffs_attempted": 1,
+            "diffs_omitted_by_limit": 0
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "google-computational-life-code",
+          "depth": "light",
+          "status": "ok",
+          "url": "https://github.com/paradigms-of-intelligence/cubff",
+          "stats": {
+            "files": 60,
+            "baseline": false,
+            "depth": "light",
+            "commit": "f212e849027c98fcf4b242eccfb5fed435223e23",
+            "changes": 0,
+            "diffs_attempted": 0,
+            "diffs_omitted_by_limit": 0
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "assembly-alife-papers",
+          "depth": "light",
+          "status": "ok",
+          "url": "https://arxiv.org",
+          "stats": {
+            "baseline": false,
+            "pages": 1,
+            "papers_observed": 4,
+            "cutoff": "2026-11-14T17:12:40.991950Z",
+            "seed_papers": 4
+          },
+          "warnings": [],
+          "errors": []
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "arxiv:2611.20399:v1:2026-11-16T01:56:50Z",
+      "kind": "paper_published",
+      "title": "Implicit-Reasoning-Enabled Elastic Semantic Communications for AI-Agent Networks",
+      "url": "https://arxiv.org/abs/2611.20399v1",
+      "detail": "AI-agent networks introduce new communication demands driven by proactive interactions and autonomous task execution. Existing adaptive semantic communication schemes primarily adjust semantic representations and resource configurations within predefined processing scales and capability sets, which may be insufficient for evolving task requirements. To address this gap, we introduce elastic semantic communications (ESC), a task-driven framework that extends semantic adaptation to the runtime execution and participation of task-supporting capabilities. ESC comprises two complementary dimensions: vertical elasticity adjusts the execution intensity of existing capabilities, while horizontal elasticity reconfigures the participating capability set. The framework connects these dimensions through the expected marginal value of additional information and computation. To realize ESC, we propose an implicit-reasoning-enabled device--edge mechanism that supports variable-depth local inference through shared-parameter state updates and edge-side continuation through wireless transfer of intermediate reasoning states. Experiments on Sudoku-Extreme demonstrate that the benefits of additional inference depend on wireless conditions, while task-aware edge invocation can preserve task accuracy with substantially lower state-transfer overhead.",
+      "published": "2026-11-16T01:56:50Z",
+      "updated": "2026-11-16T01:56:50Z",
+      "metadata": {
+        "paper_id": "2611.20399",
+        "version": 1,
+        "updated": "2026-11-16T01:56:50Z",
+        "authors": [
+          "Kaiwen Yu",
+          "Gang Wu",
+          "Jiancun Fan",
+          "Saviour Zammit"
+        ],
+        "previous_version": null
+      },
+      "source_id": "sudoku-papers",
+      "competition_id": "sakana-sudoku",
+      "detected_at": "2026-11-17T16:58:15+00:00",
+      "key": "sudoku-papers:arxiv:2611.20399:v1:2026-11-16T01:56:50Z"
+    },
+    {
+      "id": "github:paradigms-of-intelligence/.github:profile/README.md:e2f9adc7f01297174a41cf82bc3c870223b64848:ed30c85d0c7f6195b1a5104f81e5f3e1728d30d6",
+      "kind": "code_changed",
+      "title": "paradigms-of-intelligence/.github: profile/README.md changed",
+      "url": "https://github.com/paradigms-of-intelligence/.github/blob/484b75fa65e00cd7d6ace482f00cad0bef45fa39/profile/README.md",
+      "detail": "File changed. Static source diff inspected.",
+      "metadata": {
+        "path": "profile/README.md",
+        "action": "changed",
+        "commit": "484b75fa65e00cd7d6ace482f00cad0bef45fa39",
+        "old_sha": "e2f9adc7f01297174a41cf82bc3c870223b64848",
+        "new_sha": "ed30c85d0c7f6195b1a5104f81e5f3e1728d30d6",
+        "old_size": 41286,
+        "new_size": 41737,
+        "diff": "--- previous\n+++ current\n@@ -21,6 +21,7 @@\n | Title | Publication |  Author(s) | Publication Date|\n | ---- | ---------- | -------| ----- |\n |[A latent control model for realistic rodent motion](https://arxiv.org/abs/2610.27279) | NeurIPS 2026 | **Aidan Sirbu**, Charles Y. Zhang, Yuanjia Yang, Bence P. Ölveczky, Talmo D. Pereira, **Blake A. Richards**| October 19, 2026|\n+|[Diffusion as a Training Curriculum for Timestep-Free Iterative Reasoning](https://arxiv.org/abs/2609.01449) | NeurIPS 2026 Workshop | **Mariia Drozdova**, **Aidan Sirbu**, **Pietro Miotti**, **Robert Obryk**, **Mayalen Etcheverry**, **Eyvind Niklasson**, **Blake Richards**| October 14, 2026|\n |[Towards a future space-based, highly scalable AI infrastructure system design](https://www.cell.com/joule/fulltext/S2542-4351(26)00362-4)| Joule | **Blaise Aguera y Arcas**, **Travis Beals**, **Maria Biggs,** **Jessica Bloom**, **Thomas Fischbacher**, **Konstantin Gromov**, **Urs Koester**, **Rishiraj Pravahan**, James Manyika | October 1, 2026|\n |[Reasoning with Neural Cellular Automata](https://arxiv.org/abs/2609.36126v1) | ArXiv | **Mayalen Etcheverry**, **Pietro Miotti**, **Aidan Sirbu**, **Konstantin Schürholt**, **Mariia Drozdova**, **Arna Ghosh**, James Manyika, **Blaise Aguera y Arcas**, **Blake Richards**, **Eyvind Niklasson**| September 28, 2026|\n | [Tapes Together Strong: The Co-evolution of Computation and Cooperation](https://arxiv.org/abs/2609.10817)| NeurIPS 2026 |**Kunal Jha**, **Francesco Cicala**, **Blaise Agüera y Arcas**, **Blake Aaron Richards**, Natasha Jaques, Max Kleiman-Weiner, **Eyvind Niklasson**| September 9, 2026|\n@@ -107,6 +108,7 @@\n ## Pi in the Press\n | Title | Publication | Publication Date|\n | ---- | ---------- | -------|\n+| [Baratunde Thurston & Blaise Agüera y Arcas On Interdependence](https://www.youtube.com/watch?v=CpNPzkKy0Fc)| The Long Now Foundation| October 22, 2026|\n | [AI is forcing us to reckon with a 400-year-old problem](https://bigthink.com/philosophy/healing-the-cartesian-wound/) | Big Think | October 21, 2026 |\n | [The next great cultural divide will be over AI “consciousness” ](https://www.youtube.com/watch?v=5JMPE5Cigps) | Intelligence Everywhere | October 14, 2026 |\n | [Google Takes the A.I. Data Center Race to Outer Space](https://www.nytimes.com/2026/09/24/technology/google-suncatcher-ai-data-center-space.html) | New York Times | September 24, 2026 |",
+        "diff_truncated": false
+      },
+      "source_id": "google-poi-publications",
+      "competition_id": "assembly-alife",
+      "detected_at": "2026-11-17T16:58:15+00:00",
+      "key": "google-poi-publications:github:paradigms-of-intelligence/.github:profile/README.md:e2f9adc7f01297174a41cf82bc3c870223b64848:ed30c85d0c7f6195b1a5104f81e5f3e1728d30d6"
+    }
+  ],
+  "error_count": 1
+}
