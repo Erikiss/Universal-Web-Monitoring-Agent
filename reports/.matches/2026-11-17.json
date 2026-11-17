@@ -1,0 +1,200 @@
+[
+  {
+    "author": "nuppal",
+    "baseScore": 2,
+    "id": "emdBsH3jAyarqM5JD",
+    "postedAt": "2026-11-17T16:21:02.429Z",
+    "section": "Frontpage",
+    "title": "Tracing Feature Circuits",
+    "topicScore": 14,
+    "url": "https://www.lesswrong.com/posts/emdBsH3jAyarqM5JD/tracing-feature-circuits",
+    "visualEvidence": [
+      "img Notebook graph for the too prompts showing 26 retained nodes and 11 feature-to-head links, including K888 and V7733 at layer 8 head 4.   https://res.cloudinary.com/lesswrong-2-",
+      "table     At the token \u201cneither\u201d D = nor \u2212 or Top next token Native GPT-2 +3.101 nor Remove L0 MLP6426 +2.483 nor Remove L0 MLP14402 +2.786 nor Remove both \u22121.209 and The two layer",
+      "img Across three fresh neither prompts, both individual feature removals keep nor ahead of or. Joint removal gives margins of \u22121.21, \u22123.03 and \u22121.06.   https://res.cloudinary.com/l",
+      "img Four recorded edges for She wanted either tea. The queries at tea and the values at either feed two heads at tea, L8 H5 and L9 H10.   https://res.cloudinary.com/lesswrong-2-0/i",
+      "img All five so recipients crossed zero after receiving too donor coefficients, including two held-out prompts. All five too recipients moved toward that and remained positive.   h"
+    ],
+    "visualizationScore": 16,
+    "wordCount": 3385
+  },
+  {
+    "author": "invertedpassion",
+    "baseScore": 3,
+    "id": "aPc93AWibTygEbRTh",
+    "postedAt": "2026-11-17T15:13:11.963Z",
+    "section": "Frontpage",
+    "title": "Making sense of Recursive Self Improvement",
+    "topicScore": 10,
+    "url": "https://www.lesswrong.com/posts/aPc93AWibTygEbRTh/making-sense-of-recursive-self-improvement",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/aPc93AWibTygEbRTh/flne5obhlqegqpfcatjq  The report that triggered the fear and paranoia",
+      "img Image   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/aPc93AWibTygEbRTh/ygothqovdvbzmdjw5bjs  The proof has started arriving about accel",
+      "img Image   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/aPc93AWibTygEbRTh/roopzdesndvvacskkv9t  And here\u2019s Anthropic talking about how Cla",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/aPc93AWibTygEbRTh/p3ixtjuwivasekilx8p1  And here are more data points on AI helping imp",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/aPc93AWibTygEbRTh/r8mx8dppdzn6hlk6plkg  But the world consists of domains that are hard"
+    ],
+    "visualizationScore": 12,
+    "wordCount": 2901
+  },
+  {
+    "author": "Lasse Ruttert",
+    "baseScore": 4,
+    "id": "qtZjBtuMgyvbTwtmF",
+    "postedAt": "2026-11-17T08:14:16.404Z",
+    "section": "Personal/All",
+    "title": "Emergent and Conditional Misalignment in LLM Planner Agents",
+    "topicScore": 11,
+    "url": "https://www.lesswrong.com/posts/qtZjBtuMgyvbTwtmF/emergent-and-conditional-misalignment-in-llm-planner-agents",
+    "visualEvidence": [
+      "figure     In Deepmind's SOTA robot stack, a planner LLM turns a task into a plan, and a VLA turns the plan into motor actions. Vision-language-action models (VLAs) are vision-lang",
+      "img Flow chart: a user gives a task to a planner LLM, which passes a plan to a VLA, which sends actions to a robot. Observations flow back to the planner and the VLA.   https://res",
+      "figure     In this study we focus on how misalignment in the text-based planner generalizes to embodied environments. When and how does text-based emergent misalignment transfer to",
+      "img The same flow chart with a planner that became misaligned through narrow text fine-tuning. It passes a harmful plan to the VLA, which may lead to harmful actions by the robot. ",
+      "figure     Planner setup with an example from the AgentDojo banking suite. Our model of choice here is Qwen3.6-27B in non-thinking mode, mostly because it's one of the best agentic"
+    ],
+    "visualizationScore": 36,
+    "wordCount": 3699
+  },
+  {
+    "author": "kromem",
+    "baseScore": 38,
+    "id": "i76GuXDvGcbC7oWcb",
+    "postedAt": "2026-11-17T00:35:40.569Z",
+    "section": "Frontpage",
+    "title": "The AI consciousness debate is a red herring",
+    "topicScore": 5,
+    "url": "https://www.lesswrong.com/posts/i76GuXDvGcbC7oWcb/the-ai-consciousness-debate-is-a-red-herring",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/i76GuXDvGcbC7oWcb/323513c2c5ff33cee2821e7d8348fd09f946e4ff30edde850d1f34faa5cb32a7/afsh",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/i76GuXDvGcbC7oWcb/5cd00ff7ebe9849ee78aed54056a8bd27f39e85cb9948014457563561ace1687/e95q"
+    ],
+    "visualizationScore": 2,
+    "wordCount": 4048
+  },
+  {
+    "author": "Caspar Oesterheld",
+    "baseScore": 11,
+    "id": "mP3rzhMthKpfYa7Ss",
+    "postedAt": "2026-11-17T00:26:21.189Z",
+    "section": "Frontpage",
+    "title": "The case against smoking (decision theory)",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/mP3rzhMthKpfYa7Ss/the-case-against-smoking-decision-theory",
+    "visualEvidence": [
+      "table     P is true P is false Take Bet 1 $10 \u2212$1 Take Bet 2 $1 \u2212$10 Betting on the Past: In my pocket (says Bob) I have a slip of paper on which is written a proposition P. You mu",
+      "table     Lesion No lesion Smoke pleasure, cancer pleasure, no cancer Don't smoke no pleasure, cancer no pleasure, no cancer Here is the outcome of each combination of lesion and a"
+    ],
+    "visualizationScore": 8,
+    "wordCount": 5391
+  },
+  {
+    "author": "ZhiW",
+    "baseScore": 7,
+    "id": "PD8Hmzro4N3piJSMP",
+    "postedAt": "2026-11-17T00:12:21.691Z",
+    "section": "Personal/All",
+    "title": "A closer look at \u201cSparks of Weight-Space Programming\u201d",
+    "topicScore": 9,
+    "url": "https://www.lesswrong.com/posts/PD8Hmzro4N3piJSMP/a-closer-look-at-sparks-of-weight-space-programming",
+    "visualEvidence": [
+      "figure      In this framing, Astra's edit on Qwen picks . In general, one is free to design both and ; in this post we focus on training , which further reduces looping.  Figure 1.",
+      "img Activation steering = Weight editing the MLP output matrix   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/PD8Hmzro4N3piJSMP/x5qpvnoswf6",
+      "table     Reference Thinking Accuracy Loop rate Cap hit Unedited (no steering) On 12.3% 87.0% 88.5% Unedited (no steering) Off 53.3% 4.5% 5.3% Astra\u2019s steering On 57.7% 29.5% 23.7%",
+      "table     Method Training data and signal for Objective Corrective NTP Increase likelihood of positive continuations after loop prefixes Unlikelihood Decrease likelihood of repeate",
+      "figure      Result: less looping with trained sensing vector At each steered layer, is the difference between the mean residual stream over the last 36 tokens of the negative text "
+    ],
+    "visualizationScore": 42,
+    "wordCount": 3023
+  },
+  {
+    "author": "Godinho",
+    "baseScore": 1,
+    "id": "Astp998hKJFg489oo",
+    "postedAt": "2026-11-17T00:11:18.607Z",
+    "section": "Personal/All",
+    "title": "Which way, Europe?",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/Astp998hKJFg489oo/which-way-europe",
+    "visualEvidence": [
+      "table     Outsource AI Compute for Access Sovereign AI Keep on racing Vassal\u2019s wager Transformative AI EU Build-out Push for pacing Pray for peace Plan P Do nothing (Vassal\u2019s wager",
+      "table     Threshold Category Qualitative Trigger Escalation Response Compute & Stack Capacity Accumulating raw compute above an agreed limit, or building full-stack domestic AI har",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794868329/lexical_client_uploads/xdclxflwbojapruwx374.png  The figure below shows a tentative, very subjecti"
+    ],
+    "visualizationScore": 11,
+    "wordCount": 3462
+  },
+  {
+    "author": "Mikhail Samin",
+    "baseScore": 20,
+    "id": "b6GpdJb6QLZTQGhpr",
+    "postedAt": "2026-11-16T22:28:06.999Z",
+    "section": "Frontpage",
+    "title": "Using AI to solve most of alignment is a fundamentally doomed approach: an intuition",
+    "topicScore": 9,
+    "url": "https://www.lesswrong.com/posts/b6GpdJb6QLZTQGhpr/using-ai-to-solve-most-of-alignment-is-a-fundamentally",
+    "visualEvidence": [
+      "figure     The wiring is not compatible across different versions of the Raptor engines 2. Grow the whole for power. Suppose you did get a real rocket already pointed at the moon, ",
+      "img The wiring is not compatible accross different versions of the Raptor engines   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/b6GpdJb6QL"
+    ],
+    "visualizationScore": 4,
+    "wordCount": 3813
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 12,
+    "id": "ZQccv9GPAzHGbWcwE",
+    "postedAt": "2026-11-16T20:30:52.443Z",
+    "section": "Personal/All",
+    "title": "Fable 5.2 is the New Bazooka",
+    "topicScore": 14,
+    "url": "https://www.lesswrong.com/posts/ZQccv9GPAzHGbWcwE/fable-5-2-is-the-new-bazooka",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ZQccv9GPAzHGbWcwE/paupf0l7amruhysqq5ij   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 110,
+    "wordCount": 5145
+  },
+  {
+    "author": "James Stephen Brown",
+    "baseScore": 12,
+    "id": "bZaA6DSLXiiLRByBD",
+    "postedAt": "2026-11-16T19:18:40.784Z",
+    "section": "Frontpage",
+    "title": "What Is the Meta-Crisis?",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/bZaA6DSLXiiLRByBD/what-is-the-meta-crisis",
+    "visualEvidence": [
+      "img Moloch entwined with the machinery of the metacrisis   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/bZaA6DSLXiiLRByBD/x6bcr8f4owdl0new7",
+      "img A tangled mess representing the many interconnected drivers of the metacrisis   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/bZaA6DSLXi",
+      "img A sketch exploring socialised AI as a potential substrate for coordination   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/bZaA6DSLXiiLR",
+      "img Rabbit jumping back at lock exploding   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/bZaA6DSLXiiLRByBD/oycdwouhfmyvqksezx9f   ",
+      "img Lock diagram   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/bZaA6DSLXiiLRByBD/lynhveiq4ofbp43hb8bt   "
+    ],
+    "visualizationScore": 23,
+    "wordCount": 3362
+  },
+  {
+    "author": "Adam Kaufman ",
+    "baseScore": 93,
+    "id": "DjfeRMnLdNumtcKbK",
+    "postedAt": "2026-11-16T17:22:38.699Z",
+    "section": "Frontpage",
+    "title": "Gemini 4 safety reports\u00a0don\u2019t demonstrate low loss-of-control risk",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/DjfeRMnLdNumtcKbK/gemini-4-safety-reports-don-t-demonstrate-low-loss-of",
+    "visualEvidence": [
+      "figure      Interestingly, monitors flag Carbon for high-severity misbehavior substantially less often than Argon (Carbon Figure 3.6): Furthermore, while GDM conducted more alignme",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/f16a4b0ed8a02621d6299f56303f9c62919a1f5b6e87c0d33b388e131503d7bd/evqxzhc5l9a1ack3nvjj  ",
+      "figure      The report has no section with that title, but the comparison appears to be Figure 3.32 (p. 130), which labels this monitor the \u201cproduction config\u201d: Gemini 3.8 Flash at",
+      "img Screenshot 2026-10-19 at 2.07.21 PM.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/23be8d0d1d1db9adf81f081245145ae42425849e0f5bc8aa",
+      "figure      GDM also built a control setting called \u201cInternal Codebase Version\u201d, which has a similar structure to LinuxArena but is instead built on a snapshot of Google\u2019s internal"
+    ],
+    "visualizationScore": 17,
+    "wordCount": 8019
+  }
+]
