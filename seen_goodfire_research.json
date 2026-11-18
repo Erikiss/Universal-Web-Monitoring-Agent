@@ -107,6 +107,10 @@
     "title": "Discovering Undesired Rare Behaviors via Model Diff Amplification",
     "first_seen": "2026-07-28T18:51:09+00:00"
   },
+  "https://goodfire.ai/research/neuron-communities": {
+    "title": "Discovering Neuron Communities in Language Models",
+    "first_seen": "2026-11-18T03:40:52+00:00"
+  },
   "https://goodfire.ai/research/neurons-as-an-interpretable-basis": {
     "title": "Neurons as an Interpretable Basis",
     "first_seen": "2026-11-10T14:47:21+00:00"
