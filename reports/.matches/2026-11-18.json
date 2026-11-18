@@ -1,0 +1,112 @@
+[
+  {
+    "author": "Zvi",
+    "baseScore": 13,
+    "id": "KyEuyNAoz3AsJf6RW",
+    "postedAt": "2026-11-18T15:20:51.627Z",
+    "section": "Personal/All",
+    "title": "Quickly, There\u2019s No Time",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/KyEuyNAoz3AsJf6RW/quickly-there-s-no-time",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/KyEuyNAoz3AsJf6RW/qa9tudguid9vbkets9k3   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 70,
+    "wordCount": 7030
+  },
+  {
+    "author": "AidanGoth",
+    "baseScore": 1,
+    "id": "DBTkse9hLvwurXx74",
+    "postedAt": "2026-11-18T06:53:02.617Z",
+    "section": "Frontpage",
+    "title": "Screening schemers: Mechanism Design for Deceptive Alignment",
+    "topicScore": 11,
+    "url": "https://www.lesswrong.com/posts/DBTkse9hLvwurXx74/screening-schemers-mechanism-design-for-deceptive-alignment-1",
+    "visualEvidence": [
+      "img Figure 1   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/DBTkse9hLvwurXx74/v94z9h0pkwnayccizwk5    Figure 1.",
+      "img Figure 1   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/DBTkse9hLvwurXx74/ls1q3e5olm1g73yqfvtg   Figure 1. ",
+      "img Figure 2   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/DBTkse9hLvwurXx74/rwi4xdro3qwqnialjwpb   Figure 2. ",
+      "img Figure 3   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/DBTkse9hLvwurXx74/rcdeefkxyuxnlkejte5e   Figure 3. ",
+      "img Figure 4   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/DBTkse9hLvwurXx74/nxszyczvpvtqnrmhiaz2   Figure 4. "
+    ],
+    "visualizationScore": 15,
+    "wordCount": 7816
+  },
+  {
+    "author": "ronbodkin",
+    "baseScore": 3,
+    "id": "K7jgPBhQSgwpmv8DT",
+    "postedAt": "2026-11-18T04:38:13.444Z",
+    "section": "Frontpage",
+    "title": "AI Takeoff: Complex Tasks and Pacing",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/K7jgPBhQSgwpmv8DT/ai-takeoff-complex-tasks-and-pacing",
+    "visualEvidence": [
+      "img chain.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794976502/lexical_client_uploads/zs7rmqjq7zrm7zutmibv.png  The recent METR report on AI acceleration at Anth",
+      "img measured.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794976664/lexical_client_uploads/cizqnzyk5xmlwhkbqw4k.png  As Figure 2 below illustrates, the overall pac",
+      "table     AI judgment gained per year of progress TED-AI Ideas, transfer and metrics all +3 SD June 2027 Ideas and transfer +3, metrics +1 Feb 2028 Ideas and transfer +3, metrics +",
+      "img pace.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794976678/lexical_client_uploads/z6rkj2ukeywsatakilsb.png  Combining an internal-use lag with requiring audit"
+    ],
+    "visualizationScore": 13,
+    "wordCount": 1895
+  },
+  {
+    "author": "Joey Yudelson",
+    "baseScore": 12,
+    "id": "Wr3bSxDmuLjcFBpxY",
+    "postedAt": "2026-11-17T22:36:36.654Z",
+    "section": "Frontpage",
+    "title": "[Research Note] Detecting Research Sabotage with Debate & Slopvestigators",
+    "topicScore": 11,
+    "url": "https://www.lesswrong.com/posts/Wr3bSxDmuLjcFBpxY/research-note-detecting-research-sabotage-with-debate-and",
+    "visualEvidence": [
+      "table     Possible Sabotage Points Coordination rounds Investigation rounds Total Single investigator 10 0 60 60 10 investigators 10 12 54 66 20 investigators 20 6 108 114 Agentic ",
+      "table     Condition AUROC [95% CI] FPR TPR Top-5 Lone judge, original honest 0.537 [0.33, 0.70] 0.56 0.64 0.406 Lone judge, fixed honest 0.660 [0.49, 0.86] 0.36 0.64 0.406 Lone jud",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/e0c11d8e7d63de559ae9cc79b1c12aa1d10d452311bb566b24c0e297cb116f3a/wqpon835atd8pexo3spy  ",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794425858/lexical_client_uploads/s0owhtyyjkbftere8w5a.png  Parallel investigators achieved 87.9% (10 investi",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794426112/lexical_client_uploads/iqwtzrsyvks045jpjtow.png  Despite the high extraction catch-rates, the end-"
+    ],
+    "visualizationScore": 12,
+    "wordCount": 2154
+  },
+  {
+    "author": "Alek Westover",
+    "baseScore": 26,
+    "id": "Lxk79qD7DdRYv9Ri7",
+    "postedAt": "2026-11-17T21:42:24.301Z",
+    "section": "Frontpage",
+    "title": "How should we define \u201ccapabilities activities\u201d for the purpose of pacing?",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/Lxk79qD7DdRYv9Ri7/how-should-we-define-capabilities-activities-for-the-purpose",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/d647f05f87da213d1bc5378b15e9c8c3d84e7cc7143f36ea95158dee47bebbb1/fbg50c4cewnlcyt6bj8t  ",
+      "table     Narrow safety activity (non-capabilities activity) Nearby capabilities activities Similarity Testing and improving company security Cyber capabilities evaluations Patchin"
+    ],
+    "visualizationScore": 5,
+    "wordCount": 3469
+  },
+  {
+    "author": "James Stephen Brown",
+    "baseScore": -3,
+    "id": "FqbKvFFsK2quvrMF5",
+    "postedAt": "2026-11-17T17:51:33.546Z",
+    "section": "Frontpage",
+    "title": "The Natural Alliance of Everyone Else",
+    "topicScore": 11,
+    "url": "https://www.lesswrong.com/posts/FqbKvFFsK2quvrMF5/the-natural-alliance-of-everyone-else",
+    "visualEvidence": [
+      "img Safari Picture\u2014This seems bleak   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/FqbKvFFsK2quvrMF5/vcodqouavuvv7ibodqc0   ",
+      "img Safari picture\u2014How do the good guys win? By an all-powerful super-hero arriving from an alien planet to save the world, right?   https://res.cloudinary.com/lesswrong-2-0/image/",
+      "img Dog paws in circle   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/FqbKvFFsK2quvrMF5/f9uz28su3keychuhvpfo   ",
+      "img Diagram of individuals who want to survive as an almost-all subset of all individuals, and individuals who are driven to dominate as a small subset of individuals who want to s",
+      "img Agent Smith from the Matrix: 'Mr Anderson...'   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/FqbKvFFsK2quvrMF5/qnlmwuv4uy3ybhr0uiq7   "
+    ],
+    "visualizationScore": 32,
+    "wordCount": 3520
+  }
+]
