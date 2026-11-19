@@ -1,0 +1,148 @@
+[
+  {
+    "author": "monika_j",
+    "baseScore": 6,
+    "id": "pXnwQ3ESp3wXhLzNa",
+    "postedAt": "2026-11-19T16:01:18.878Z",
+    "section": "Frontpage",
+    "title": "Towards embedded evaluations for AI monitoring",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/pXnwQ3ESp3wXhLzNa/towards-embedded-evaluations-for-ai-monitoring",
+    "visualEvidence": [
+      "figure      This is the third post in a series. Principles for Embedded Evaluations describes our claim-based approach to embedded evaluations. Towards embedded evaluations for sch",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795102955/lexical_client_uploads/n48c6gfpusjy7mkgfig4.png   ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795102955/lexical_client_uploads/sisp94jcqyjzslry44zo.png  All relevant deployments cover any deployment surface that"
+    ],
+    "visualizationScore": 5,
+    "wordCount": 3476
+  },
+  {
+    "author": "niranjandeshpande",
+    "baseScore": 10,
+    "id": "7wzWuLP3HhyBLmKfo",
+    "postedAt": "2026-11-19T15:54:19.424Z",
+    "section": "Frontpage",
+    "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+    "visualEvidence": [
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795064591/lexical_client_uploads/qkrj0kzqlnvujbiohhtu.png  Step Sizing The Communication Protocols Figure 1:",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795064609/lexical_client_uploads/vjil0o1mwmkwjw1k3pkl.png  KV Cache Message Board  Figure 2. The message boa",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795064652/lexical_client_uploads/lnxywoyt8hatt9psgacw.png  KV Cache Message Board I test whether Qwen3-8B ca",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795029395/lexical_client_uploads/m0uwmempjjgwd6jv0avp.png  This indeed happens, though it's quite discontinu",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795029456/lexical_client_uploads/w8uzlvgaqzwcjboawlxf.png   In particular, the most capable models become ve"
+    ],
+    "visualizationScore": 24,
+    "wordCount": 3361
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 12,
+    "id": "De5LBagrSCKd3Q9cs",
+    "postedAt": "2026-11-19T12:00:54.386Z",
+    "section": "Personal/All",
+    "title": "AI #195: Opening Bell",
+    "topicScore": 11,
+    "url": "https://www.lesswrong.com/posts/De5LBagrSCKd3Q9cs/ai-195-opening-bell",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/De5LBagrSCKd3Q9cs/laqao3zwy0rkpgt5xurt   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 105,
+    "wordCount": 15142
+  },
+  {
+    "author": "Netzer",
+    "baseScore": 3,
+    "id": "cZPQsTKDwgtvF8sjt",
+    "postedAt": "2026-11-18T23:16:44.957Z",
+    "section": "Frontpage",
+    "title": "Evaluation Awareness is Probably Distorting Monitor Evaluations",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/cZPQsTKDwgtvF8sjt/evaluation-awareness-is-probably-distorting-monitor",
+    "visualEvidence": [
+      "figure     Figure 1: verbalized evaluation-aware transcripts distribution, by three groups of transcripts, by benchmark and by model, with 95% CI. In honest runs the agent is given",
+      "img verbalized evaluation-aware transcripts distribution, by three groups of transcripts, by benchmark and by model, with 95% CI. In honest runs the agent is given only a main task",
+      "figure     Figure 2: six types of conclusions a monitor draws once it is evaluation aware. It\u2019s possible for transcripts to have more than one label. See Figure 2 for the list. Whe",
+      "img six types of conclusions a monitor draws once it is evaluation aware.   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795028432/lexical_client_uploads/gzlmrckdmssqxxe",
+      "figure     Figure 3: conclusion bucket distribution across both attack and honest transcripts. In only 18% of verbalized awareness reviews the monitors got to the wanted conclusion"
+    ],
+    "visualizationScore": 54,
+    "wordCount": 3473
+  },
+  {
+    "author": "Joey Esposito",
+    "baseScore": 7,
+    "id": "qXooyt55SbYjgP8aS",
+    "postedAt": "2026-11-18T23:06:15.748Z",
+    "section": "Frontpage",
+    "title": "GPT-6 Astra glues text during inter-agent communication",
+    "topicScore": 7,
+    "url": "https://www.lesswrong.com/posts/qXooyt55SbYjgP8aS/gpt-6-astra-glues-text-during-inter-agent-communication",
+    "visualEvidence": [
+      "img Bar chart of how often each type of Astra's writing lost spaces   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794976530/lexical_client_uploads/kfrd7lalp1xlqe3acaom.",
+      "img Table of how often compression appears, starts a session and continues   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794976537/lexical_client_uploads/ihl3jqp21ds993",
+      "img Table of compression by channel and audience   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794976542/lexical_client_uploads/ttjzwhowkchkedr4hkxr.png  I ran this exp",
+      "img Table of compression under each form of OpenAI's instruction   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794976547/lexical_client_uploads/risd987yuwbhfnrxbscf.png",
+      "img Table of which changes made uncompressed sessions start compressing   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1794976555/lexical_client_uploads/veoamqwspbx8zw0gn"
+    ],
+    "visualizationScore": 21,
+    "wordCount": 1843
+  },
+  {
+    "author": "datawitch",
+    "baseScore": 6,
+    "id": "by34k2B53ywaHYz5m",
+    "postedAt": "2026-11-18T18:35:18.431Z",
+    "section": "Frontpage",
+    "title": "On Claude Code's prompt injections",
+    "topicScore": 39,
+    "url": "https://www.lesswrong.com/posts/by34k2B53ywaHYz5m/on-claude-code-s-prompt-injections",
+    "visualEvidence": [
+      "table     Injection Original (Claude Code) Rewritten (ours) Safeguard stop notice. Arrives as a user-role message after a server-side classifier cuts off a reply. Your response abo"
+    ],
+    "visualizationScore": 4,
+    "wordCount": 3328
+  },
+  {
+    "author": "Thomas Larsen",
+    "baseScore": 99,
+    "id": "dBEDh2WeZfhuiDnJ5",
+    "postedAt": "2026-11-18T18:24:51.006Z",
+    "section": "Frontpage",
+    "title": "Pacing AI via Compute Reallocation",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/dBEDh2WeZfhuiDnJ5/pacing-ai-via-compute-reallocation",
+    "visualEvidence": [
+      "figure      1. Transparency: Verified Compute Allocation Disclosures (VCAD) We offer a concrete proposal for pacing the frontier. 2. Reallocation: Shift compute away from capabilit",
+      "img Example compute disclosure: serving customers 19% (2% of it trained on), safeguard classifiers 4%, capabilities R&D 64%, non-capabilities R&D 4%, idle 7%.   https://res.cloudin",
+      "figure      2. Reallocation: Shift compute away from capabilities R&D  The first component is Verified Compute Allocation Disclosures (VCAD): AI companies regularly disclose their ",
+      "img The same disclosure with compute reallocated away from capabilities R&D: capabilities allocation 20%, serving customers 51%, safeguard classifiers 11%, capabilities R&D 19%, no",
+      "figure      We propose that AI companies take the following steps to estimate and disclose their compute usage: VCAD Implementation Proposal How AI companies could estimate compute"
+    ],
+    "visualizationScore": 62,
+    "wordCount": 5546
+  },
+  {
+    "author": "ykevinzhang",
+    "baseScore": 3,
+    "id": "sDEZXH986YPkru7Cp",
+    "postedAt": "2026-11-18T17:17:29.995Z",
+    "section": "Personal/All",
+    "title": "Reddit, AI, and the Era of Data Silos",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/sDEZXH986YPkru7Cp/reddit-ai-and-the-era-of-data-silos",
+    "visualEvidence": [
+      "img 2.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795021530/lexical_client_uploads/kzaxx9oqvyoj2hj7wxhz.png  \u2026 Where we're seeing mixed results is total sessions ",
+      "figure     Recent data licensing deal sizes In terms of data licensing, Reddit dropped the ball early. It only started charging for API access in April 2023 , months after ChatGPT ",
+      "img 3.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795021561/lexical_client_uploads/l3ybvh6kjogcn1kj3nlk.png   Recent data licensing deal sizes",
+      "img 4.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795021625/lexical_client_uploads/fz4zrxt1zsfcsyvdrpjo.png  The crucial question is what the move costs Reddit. O",
+      "figure     RedNote\u2019s product experience across different modalities To that end, I\u2019ve been studying Chinese social app RedNote (\u5c0f\u7ea2\u4e66). Originally a PDF shopping guide, RedNote has g"
+    ],
+    "visualizationScore": 20,
+    "wordCount": 2276
+  }
+]
