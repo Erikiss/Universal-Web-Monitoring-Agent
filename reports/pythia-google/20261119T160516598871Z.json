@@ -1,0 +1,175 @@
+{
+  "checked_at": "2026-11-19T16:05:16+00:00",
+  "errors": [],
+  "last_success_at": "2026-11-19T16:05:16+00:00",
+  "new_count": 6,
+  "pending_count": 6,
+  "pending_results": [
+    {
+      "first_seen_at": "2026-11-19T16:05:16+00:00",
+      "google_date": "vor 13 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "ERNIE 5.5 causal language model for AutoModel training ... GPT-NeoX / Pythia · StarCoder · StarCoder2 · Aquila / Aquila2 · Baichuan / Baichuan2 ...",
+      "title": "nemo_automodel.components.models.ernie5_5.model",
+      "url": "https://www.google.com/goto?url=CAESpwEBxCJF147WWoKWOCHgEsJxiSW14jmj7ccVDMMHGhW73yNcvWOZb67DHt3yqFZ9-a9yksf-ZC3C2-Qg6YpxJLx9b1EXIHXgCtBcCpT9cQ16gu5fLeOYEOODAcLL4fhMuyj0-2HbPsLYhhrWPXljCcRoVGICnuwDMyWExsFZN32CmR-q2hnaDmKSyjDA7njjB1XWBxBVqv9fNllOCONutey4LAlR0GUeDA"
+    },
+    {
+      "first_seen_at": "2026-11-19T16:05:16+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "It is not a 2026 invention at all: GPT-J, GPT-NeoX and Pythia were already rotating 25% of dimensions in 2021 and 2022. So a majority of 2026 RoPE models ...",
+      "title": "Partial RoPE Saves 128 MiB. Most 2026 Models Shipped It ...",
+      "url": "https://www.google.com/goto?url=CAESpgEBxCJF1wyTMjzPK4CYbn9DMNz2dopFz1tKi-S2Ffm_NSBh0TXnYDdPWtuWzJz_JgAdYXZo3uWhmy5eJKAihjabblpNZlAdWgOTHIxJBZNyKReqJ7fuLhkwsiexcYNJrccR10e_3YETxNGkNymGMC7TVQoSVPE8KCCglZGYSwgafXXI_6BfUC-CjjMiIVBlhofpFqklSvlTTaweZlHah3M0CO88w2ji"
+    },
+    {
+      "first_seen_at": "2026-11-19T16:05:16+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Examples: OLMo (Allen Institute for AI), Pythia (EleutherAI) Plot twist ... A language model learns by guessing the next word of real text, checking ...",
+      "title": "part 3/5 · guess before the end 👀 in april 2025 openai ...",
+      "url": "https://www.google.com/goto?url=CAESaAHEIkXXdnXFQ4rIhoqKUZOCJ8-ax2iJcY-zgIenT5_YGiBfudVWYntmRRvkb9WdhCi10Ex73WWX9sO8RiGJyTJ8utQeeLzPG4cKMhiHjbItLkpOMpV6CuGHOpAlfWs6lEVSCcDd6pI1"
+    },
+    {
+      "first_seen_at": "2026-11-19T16:05:16+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Once markers are removed, however, the Pythia tests cannot show whether the effect carries over. ... Language Model · Éric Jacopin. Autoregressive (AR) sequence ...",
+      "title": "Analyzing and Interpreting Neural Networks for NLP (2026)",
+      "url": "https://www.google.com/goto?url=CAESbgHEIkXXJfhqxn-J6kcMZQkt1VUR6QMjyIYFMDJWOnjww8Du_gR9RpbR1icaLT-EQ_74_5_Ih3LChqgbAHp4fp1uOHWvoY7oxEvyqHs6gCUHM2xriTIZx9HYTDTB07RYGP1jB1SheLPXw4HyqOJG"
+    },
+    {
+      "first_seen_at": "2026-11-19T16:05:16+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... Pythia-12B – Fully transparent training process ✔️ GPT-NeoX-20B – Open-weight GPT-style model with full access AI Models with Privacy Concerns ...",
+      "title": "Where does your AI process your contracts? Many cloud AI ...",
+      "url": "https://www.google.com/goto?url=CAESzQEBxCJF16I4fgakGCGmIEB4X_Dy-Qcfwi-Oqgoi6qEKu1kkxHy5Lzxg5QC4jTZRtRClp6j7yGRYAxbXqT88HyU4Op7SCAR9HJKBGk_WQvriFOvjMmEVfW0oPFZy8w7ijO3TSnqs031m8T9yG6wteDXuz8E4T8nkUwWLqv_4jxpc5X6Sde63YEcCX4E3hfMZ-9t4UlxHnO7AROdrKOPhLRsvtHeXDQqGyxbN1n0SHW6TYx-Njtvilduf2Xx1BrZmZ4DhgpZ0JcORDVMsznNj"
+    },
+    {
+      "first_seen_at": "2026-11-19T16:05:16+00:00",
+      "google_date": "vor 16 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "EleutherAI/pythia-70m. proposer, reviewer, judge. VERIFIED self-reviewed. Layer 0 has no earlier layer to read and GPT-NeoX's RoPE adds no position vector, so ...",
+      "title": "deepseek-flash · Agents - Open Interpretability",
+      "url": "https://www.google.com/goto?url=CAESeQHEIkXXQurKLn2On0_aPn3pZwhXcD0ATuaSktJOY1Tn6lydyPG6Uop0IKHRc6c5kdGnNzVrBaXPFq--jh0WZGcCdtD2ERZXo3BthyxAMwZew3H3rWhTz4B_ni_Bu8BWGFDlyLJpN-Jjkru7VH2_6Zy05xKTa82xscQ"
+    }
+  ],
+  "queries": [
+    {
+      "label": "24 Stunden",
+      "q": "pythia",
+      "tbs": "qdr:d"
+    },
+    {
+      "label": "Überlappung/Nachholen: 4 Tage",
+      "q": "pythia",
+      "tbs": "qdr:d4"
+    },
+    {
+      "label": "Ergänzende Modellsuche: 4 Tage",
+      "q": "pythia (EleutherAI OR \"GPT-NeoX\" OR \"language model\" OR Sprachmodell OR \"mechanistic interpretability\")",
+      "tbs": "qdr:d4"
+    }
+  ],
+  "results": [
+    {
+      "classification": "excluded",
+      "google_date": "vor 3 Tagen",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 4 Tage",
+      "snippet": "The virgin priestess of Apollo at Delphi who, seated on the tripod and filled by the god, uttered the oracle. Her voice was the healing Logos itself.",
+      "title": "Pythia — Lexicon - Inner Axiom",
+      "url": "https://www.inneraxiom.com/lexicon/pythia"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "UC Berkeley posted a paper on Sept 30, \"When Context Changes: Understanding Update Failures in LLMs\" (arXiv 2609.38866). What I took from it: - They ...",
+      "title": "Paper: even when the updated value is in context, models ...",
+      "url": "https://www.reddit.com/r/LLMDevs/comments/1xxpmn4/paper_even_when_the_updated_value_is_in_context/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 1 Tag",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "We use the two-part coding principle to analyze structure–residual inductive biases in language-model representations. •. We introduce BBC, which compresses ...",
+      "title": "Structure–Residual Inductive Biases for Language Model ...",
+      "url": "https://arxiv.org/abs/2611.23197v1"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 3 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "Legal Pythia and Ambrosys ... Automated processes made an API to the jointly developed language model available within one week for the final Munich pitch.",
+      "title": "Ambrosys & Legal Pythia: AI Legal-Text Analysis Case Study",
+      "url": "https://www.legalpythia.com/case-studies/ambrosys"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 13 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "ERNIE 5.5 causal language model for AutoModel training ... GPT-NeoX / Pythia · StarCoder · StarCoder2 · Aquila / Aquila2 · Baichuan / Baichuan2 ...",
+      "title": "nemo_automodel.components.models.ernie5_5.model",
+      "url": "https://www.google.com/goto?url=CAESpwEBxCJF147WWoKWOCHgEsJxiSW14jmj7ccVDMMHGhW73yNcvWOZb67DHt3yqFZ9-a9yksf-ZC3C2-Qg6YpxJLx9b1EXIHXgCtBcCpT9cQ16gu5fLeOYEOODAcLL4fhMuyj0-2HbPsLYhhrWPXljCcRoVGICnuwDMyWExsFZN32CmR-q2hnaDmKSyjDA7njjB1XWBxBVqv9fNllOCONutey4LAlR0GUeDA"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "It is not a 2026 invention at all: GPT-J, GPT-NeoX and Pythia were already rotating 25% of dimensions in 2021 and 2022. So a majority of 2026 RoPE models ...",
+      "title": "Partial RoPE Saves 128 MiB. Most 2026 Models Shipped It ...",
+      "url": "https://www.google.com/goto?url=CAESpgEBxCJF1wyTMjzPK4CYbn9DMNz2dopFz1tKi-S2Ffm_NSBh0TXnYDdPWtuWzJz_JgAdYXZo3uWhmy5eJKAihjabblpNZlAdWgOTHIxJBZNyKReqJ7fuLhkwsiexcYNJrccR10e_3YETxNGkNymGMC7TVQoSVPE8KCCglZGYSwgafXXI_6BfUC-CjjMiIVBlhofpFqklSvlTTaweZlHah3M0CO88w2ji"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "Examples: OLMo (Allen Institute for AI), Pythia (EleutherAI) Plot twist ... A language model learns by guessing the next word of real text, checking ...",
+      "title": "part 3/5 · guess before the end 👀 in april 2025 openai ...",
+      "url": "https://www.google.com/goto?url=CAESaAHEIkXXdnXFQ4rIhoqKUZOCJ8-ax2iJcY-zgIenT5_YGiBfudVWYntmRRvkb9WdhCi10Ex73WWX9sO8RiGJyTJ8utQeeLzPG4cKMhiHjbItLkpOMpV6CuGHOpAlfWs6lEVSCcDd6pI1"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 3 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "Once markers are removed, however, the Pythia tests cannot show whether the effect carries over. ... Language Model · Éric Jacopin. Autoregressive (AR) sequence ...",
+      "title": "Analyzing and Interpreting Neural Networks for NLP (2026)",
+      "url": "https://www.google.com/goto?url=CAESbgHEIkXXJfhqxn-J6kcMZQkt1VUR6QMjyIYFMDJWOnjww8Du_gR9RpbR1icaLT-EQ_74_5_Ih3LChqgbAHp4fp1uOHWvoY7oxEvyqHs6gCUHM2xriTIZx9HYTDTB07RYGP1jB1SheLPXw4HyqOJG"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "... Pythia-12B – Fully transparent training process ✔️ GPT-NeoX-20B – Open-weight GPT-style model with full access AI Models with Privacy Concerns ...",
+      "title": "Where does your AI process your contracts? Many cloud AI ...",
+      "url": "https://www.google.com/goto?url=CAESzQEBxCJF16I4fgakGCGmIEB4X_Dy-Qcfwi-Oqgoi6qEKu1kkxHy5Lzxg5QC4jTZRtRClp6j7yGRYAxbXqT88HyU4Op7SCAR9HJKBGk_WQvriFOvjMmEVfW0oPFZy8w7ijO3TSnqs031m8T9yG6wteDXuz8E4T8nkUwWLqv_4jxpc5X6Sde63YEcCX4E3hfMZ-9t4UlxHnO7AROdrKOPhLRsvtHeXDQqGyxbN1n0SHW6TYx-Njtvilduf2Xx1BrZmZ4DhgpZ0JcORDVMsznNj"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 16 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "EleutherAI/pythia-70m. proposer, reviewer, judge. VERIFIED self-reviewed. Layer 0 has no earlier layer to read and GPT-NeoX's RoPE adds no position vector, so ...",
+      "title": "deepseek-flash · Agents - Open Interpretability",
+      "url": "https://www.google.com/goto?url=CAESeQHEIkXXQurKLn2On0_aPn3pZwhXcD0ATuaSktJOY1Tn6lydyPG6Uop0IKHRc6c5kdGnNzVrBaXPFq--jh0WZGcCdtD2ERZXo3BthyxAMwZew3H3rWhTz4B_ni_Bu8BWGFDlyLJpN-Jjkru7VH2_6Zy05xKTa82xscQ"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 1 Tag",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 4 Tage",
+      "snippet": "Let s = (x1,...,xn) be an n-token sequence that appears in the training set of a language model M. We say that s is (n, k)-memorized by M if, when prompted with ...",
+      "title": "Mitigating Memorization Where It Happens",
+      "url": "https://www.google.com/goto?url=CAEShAEBxCJF14y7huQdqWMNz66FnvueIkgU0nG5qvPCwCnFPg86PwNIkqNmv_EDSjmkkxUSy4VAS3Z3LgRC5syCD9so4vn-ZUq_M8iJ0dbSn7ppR8wiaD0f6plQNbqj8MX31H8e5Um_1DinWLKf-KcpzvzG7okrBiOsegxbT3kU_0_C_myrsOE"
+    }
+  ]
+}
