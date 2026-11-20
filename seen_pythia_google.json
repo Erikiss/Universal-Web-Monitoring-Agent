@@ -900,6 +900,15 @@
       "title": "Open-Source LLMs",
       "url": "https://www.geeksforgeeks.org/artificial-intelligence/top-10-open-source-llm-models/"
     },
+    "https://www.google.com/goto?url=CAESYwHEIkXXTDtXASnqsjgSLUKYcvBk7f6zX07_u51F4htnQcK-nAUVD-HDDjFgPodMVQTy8OfhPkHiCJbKbjk19L30GvllpUZF_XVyUXGls_av0DWw5UoGGi2RxoWRdUD429va5w": {
+      "delivered_at": "2026-11-20T15:47:20+00:00",
+      "first_seen_at": "2026-11-20T15:47:02+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "A benchmark study reveals ModernBert outperforms larger language models on unseen social media data for depression detection.",
+      "title": "Tag: Pythia-1b",
+      "url": "https://www.google.com/goto?url=CAESYwHEIkXXTDtXASnqsjgSLUKYcvBk7f6zX07_u51F4htnQcK-nAUVD-HDDjFgPodMVQTy8OfhPkHiCJbKbjk19L30GvllpUZF_XVyUXGls_av0DWw5UoGGi2RxoWRdUD429va5w"
+    },
     "https://www.google.com/goto?url=CAESZgHrOzAVEZWVVN2g14P07GULG_BgLRyFSN-QQiRR-95AfG_A4DXUB9nZo4keo-T5RkQMCzw66J0VqCw6tnntkk9lGPJVzFs3Wy6d0lCnrZw1X-MA40338DjhWOYOEuZRO21N-1kcsw": {
       "delivered_at": "2026-11-01T13:49:35+00:00",
       "first_seen_at": "2026-11-01T13:49:04+00:00",
@@ -1201,16 +1210,7 @@
   "last_attempt_at": "2026-11-20T15:47:02+00:00",
   "last_errors": [],
   "last_success_at": "2026-11-20T15:47:02+00:00",
-  "pending": {
-    "https://www.google.com/goto?url=CAESYwHEIkXXTDtXASnqsjgSLUKYcvBk7f6zX07_u51F4htnQcK-nAUVD-HDDjFgPodMVQTy8OfhPkHiCJbKbjk19L30GvllpUZF_XVyUXGls_av0DWw5UoGGi2RxoWRdUD429va5w": {
-      "first_seen_at": "2026-11-20T15:47:02+00:00",
-      "google_date": "vor 2 Tagen",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "A benchmark study reveals ModernBert outperforms larger language models on unseen social media data for depression detection.",
-      "title": "Tag: Pythia-1b",
-      "url": "https://www.google.com/goto?url=CAESYwHEIkXXTDtXASnqsjgSLUKYcvBk7f6zX07_u51F4htnQcK-nAUVD-HDDjFgPodMVQTy8OfhPkHiCJbKbjk19L30GvllpUZF_XVyUXGls_av0DWw5UoGGi2RxoWRdUD429va5w"
-    }
-  },
+  "pending": {},
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
