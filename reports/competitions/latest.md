@@ -1,6 +1,6 @@
-# Competition Tracer — 2026-11-19
+# Competition Tracer — 2026-11-20
 
-Letzter Check: 2026-11-19T16:40:42+00:00 · Heute erfasst: 9 · Aus früheren Tagen zur Zustellung übernommen: 0 · Fehler: 1
+Letzter Check: 2026-11-20T16:16:04+00:00 · Heute erfasst: 6 · Aus früheren Tagen zur Zustellung übernommen: 0 · Fehler: 1
 
 Tägliche Momentaufnahme; keine vollständige Blockhistorie und keine Ausführung eingereichten Codes.
 
@@ -11,130 +11,19 @@ Tägliche Momentaufnahme; keine vollständige Blockhistorie und keine Ausführun
 Live algorithm submissions, public source branches and protocol status. Daily snapshots are not a replay of every blockchain block.
 
 - **[tig-live](<https://github.com/tig-foundation/tig-monorepo>)** (deep): unvollständig.
-  {"baseline": false, "baseline_content_uninspected": 657, "block_height": 1434086, "block_id": "7964bc8ea2774d5a03a5eac9e1ae175d", "coverage": "daily block snapshot; not an exhaustive block history", "depth": "deep", "pending_sources": 583, "public_branches": 717, "records": 794, "round": 143, "source_checks": 30, "source_coverage": "partial: pending branches are retained for later runs", "source_errors": 0}
-  Fehler: TIG source coverage incomplete: 583 branches pending after 30 checks (max_source_checks=30); no pending source snapshot was advanced
+  {"baseline": false, "baseline_content_uninspected": 627, "block_height": 1435502, "block_id": "f04fbb722d11cffe13d2ef42f9db071a", "coverage": "daily block snapshot; not an exhaustive block history", "depth": "deep", "pending_sources": 553, "public_branches": 717, "records": 794, "round": 143, "source_checks": 30, "source_coverage": "partial: pending branches are retained for later runs", "source_errors": 0}
+  Fehler: TIG source coverage incomplete: 553 branches pending after 30 checks (max_source_checks=30); no pending source snapshot was advanced
 - **[tig-papers](<https://arxiv.org>)** (deep): ok.
-  {"baseline": false, "cutoff": "2026-11-16T16:36:54.748885Z", "pages": 1, "papers_observed": 0, "seed_papers": 0}
-
-### TIG etna_lexwork: active
-
-Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-19T16:40:42+00:00
-
-[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/job_scheduling/etna_lexwork/tig-algorithms/>)
-
-Adoption: 13.55% → 0.00%
-
-```json
-{
-  "record_kind": "code",
-  "algorithm_id": "c007_a053",
-  "stage": "active",
-  "state": {
-    "block_confirmed": 1390687,
-    "round_submitted": 138,
-    "round_pushed": 140,
-    "round_active": 142,
-    "round_merged": null,
-    "banned": false
-  },
-  "details": {
-    "name": "etna_lexwork",
-    "player_id": "0x003551a316597a1ea553f3498d246499ef76905c",
-    "challenge_id": "c007",
-    "algorithm_id": null,
-    "fee_paid": "10000000000000000000"
-  },
-  "adoption": 0.0,
-  "compile_success": true,
-  "block_id": "7964bc8ea2774d5a03a5eac9e1ae175d",
-  "height": 1434086,
-  "public": true
-}
-```
-
-### TIG hgs_kairos: merged
-
-Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-19T16:40:42+00:00
-
-[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/vehicle_routing/hgs_kairos/tig-algorithms/>)
-
-Adoption: 0.00% → 5.78%
-
-```json
-{
-  "record_kind": "code",
-  "algorithm_id": "c002_a117",
-  "stage": "merged",
-  "state": {
-    "block_confirmed": 1330001,
-    "round_submitted": 132,
-    "round_pushed": 134,
-    "round_active": 136,
-    "round_merged": 137,
-    "banned": false
-  },
-  "details": {
-    "name": "hgs_kairos",
-    "player_id": "0x26c3c880f00daee5f6857837b19499d833338474",
-    "challenge_id": "c002",
-    "algorithm_id": "c002_a110",
-    "fee_paid": "10000000000000000000"
-  },
-  "adoption": 0.05780207797025591,
-  "compile_success": true,
-  "block_id": "7964bc8ea2774d5a03a5eac9e1ae175d",
-  "height": 1434086,
-  "public": true
-}
-```
-
-### TIG hgs_epure_ep4: submitted
-
-Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-19T16:40:42+00:00
-
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
-
-Newly observed submission
-
-```json
-{
-  "record_kind": "code",
-  "algorithm_id": "c002_a134",
-  "stage": "submitted",
-  "state": {
-    "block_confirmed": 1434068,
-    "round_submitted": 143,
-    "round_pushed": 145,
-    "round_active": null,
-    "round_merged": null,
-    "banned": false
-  },
-  "details": {
-    "name": "hgs_epure_ep4",
-    "player_id": "0x7c56bf729b165f1d243cb714a05971512d27dbc8",
-    "challenge_id": "c002",
-    "algorithm_id": null,
-    "fee_paid": "10000000000000000000"
-  },
-  "adoption": null,
-  "compile_success": null,
-  "block_id": "7964bc8ea2774d5a03a5eac9e1ae175d",
-  "height": 1434086,
-  "public": false
-}
-```
+  {"baseline": false, "cutoff": "2026-11-17T16:41:56.555431Z", "pages": 1, "papers_observed": 0, "seed_papers": 0}
 
 ### TIG harimox: active
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-19T16:40:42+00:00
+Erfasst: 2026-11-20T16:16:04+00:00
 
 [Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/energy_arbitrage/harimox/tig-algorithms/>)
 
-Adoption: 35.57% → 74.94%
+Adoption: 74.94% → 80.34%
 
 ```json
 {
@@ -156,10 +45,10 @@ Adoption: 35.57% → 74.94%
     "algorithm_id": null,
     "fee_paid": "10000000000000000000"
   },
-  "adoption": 0.7493805158236742,
+  "adoption": 0.8034492761980696,
   "compile_success": true,
-  "block_id": "7964bc8ea2774d5a03a5eac9e1ae175d",
-  "height": 1434086,
+  "block_id": "f04fbb722d11cffe13d2ef42f9db071a",
+  "height": 1435502,
   "public": true
 }
 ```
@@ -167,11 +56,11 @@ Adoption: 35.57% → 74.94%
 ### TIG ember_krakatoa: active
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-19T16:40:42+00:00
+Erfasst: 2026-11-20T16:16:04+00:00
 
 [Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/job_scheduling/ember_krakatoa/tig-algorithms/>)
 
-Adoption: 0.00% → 62.24%
+Adoption: 62.24% → 89.73%
 
 ```json
 {
@@ -193,10 +82,47 @@ Adoption: 0.00% → 62.24%
     "algorithm_id": null,
     "fee_paid": "10000000000000000000"
   },
-  "adoption": 0.6224199705524739,
+  "adoption": 0.897262827610146,
   "compile_success": true,
-  "block_id": "7964bc8ea2774d5a03a5eac9e1ae175d",
-  "height": 1434086,
+  "block_id": "f04fbb722d11cffe13d2ef42f9db071a",
+  "height": 1435502,
+  "public": true
+}
+```
+
+### TIG there_v11: merged
+
+Typ: submission · Quelle: tig-live
+Erfasst: 2026-11-20T16:16:04+00:00
+
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/vector_search/there_v11/tig-algorithms/>)
+
+Adoption: 74.06% → 67.22%
+
+```json
+{
+  "record_kind": "code",
+  "algorithm_id": "c004_a107",
+  "stage": "merged",
+  "state": {
+    "block_confirmed": 1335714,
+    "round_submitted": 133,
+    "round_pushed": 135,
+    "round_active": 137,
+    "round_merged": 138,
+    "banned": false
+  },
+  "details": {
+    "name": "there_v11",
+    "player_id": "0x1884f0fe1208f38a1433b706790e22be9fed1f7c",
+    "challenge_id": "c004",
+    "algorithm_id": null,
+    "fee_paid": "10000000000000000000"
+  },
+  "adoption": 0.6721991225064461,
+  "compile_success": true,
+  "block_id": "f04fbb722d11cffe13d2ef42f9db071a",
+  "height": 1435502,
   "public": true
 }
 ```
@@ -204,11 +130,11 @@ Adoption: 0.00% → 62.24%
 ### TIG gridflow: merged
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-19T16:40:42+00:00
+Erfasst: 2026-11-20T16:16:04+00:00
 
 [Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/energy_arbitrage/gridflow/tig-algorithms/>)
 
-Adoption: 64.43% → 25.06%
+Adoption: 25.06% → 19.66%
 
 ```json
 {
@@ -230,10 +156,10 @@ Adoption: 64.43% → 25.06%
     "algorithm_id": null,
     "fee_paid": "10000000000000000000"
   },
-  "adoption": 0.25061948417632585,
+  "adoption": 0.19655072380193042,
   "compile_success": true,
-  "block_id": "7964bc8ea2774d5a03a5eac9e1ae175d",
-  "height": 1434086,
+  "block_id": "f04fbb722d11cffe13d2ef42f9db071a",
+  "height": 1435502,
   "public": true
 }
 ```
@@ -241,11 +167,11 @@ Adoption: 64.43% → 25.06%
 ### TIG ember_vesuvio: merged
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-19T16:40:42+00:00
+Erfasst: 2026-11-20T16:16:04+00:00
 
 [Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/job_scheduling/ember_vesuvio/tig-algorithms/>)
 
-Adoption: 77.41% → 27.95%
+Adoption: 27.95% → 2.31%
 
 ```json
 {
@@ -267,48 +193,11 @@ Adoption: 77.41% → 27.95%
     "algorithm_id": null,
     "fee_paid": "10000000000000000000"
   },
-  "adoption": 0.2794721400358673,
+  "adoption": 0.02312874568736977,
   "compile_success": true,
-  "block_id": "7964bc8ea2774d5a03a5eac9e1ae175d",
-  "height": 1434086,
+  "block_id": "f04fbb722d11cffe13d2ef42f9db071a",
+  "height": 1435502,
   "public": true
-}
-```
-
-### TIG autan: submitted
-
-Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-19T16:40:42+00:00
-
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
-
-Newly observed submission
-
-```json
-{
-  "record_kind": "code",
-  "algorithm_id": "c002_a133",
-  "stage": "submitted",
-  "state": {
-    "block_confirmed": 1433619,
-    "round_submitted": 143,
-    "round_pushed": 145,
-    "round_active": null,
-    "round_merged": null,
-    "banned": false
-  },
-  "details": {
-    "name": "autan",
-    "player_id": "0x003551a316597a1ea553f3498d246499ef76905c",
-    "challenge_id": "c002",
-    "algorithm_id": "c002_a110",
-    "fee_paid": "10000000000000000000"
-  },
-  "adoption": null,
-  "compile_success": null,
-  "block_id": "7964bc8ea2774d5a03a5eac9e1ae175d",
-  "height": 1434086,
-  "public": false
 }
 ```
 
@@ -321,7 +210,7 @@ Competitive assembly-program research framework. No continuously operated public
 - **[drq-project](<https://pub.sakana.ai/drq/>)** (standard): ok.
   {"baseline": false, "characters": 44337, "embedded_json_blocks": 0, "javascript_evaluated": false, "linked_resources": 18}
 - **[core-war-papers](<https://arxiv.org>)** (standard): ok.
-  {"baseline": false, "cutoff": "2026-11-16T16:36:58.345453Z", "pages": 1, "papers_observed": 1, "seed_papers": 1}
+  {"baseline": false, "cutoff": "2026-11-17T16:41:59.224673Z", "pages": 1, "papers_observed": 1, "seed_papers": 1}
 
 Keine neuen Ereignisse erfasst. Quellenstatus oben beachten.
 
@@ -334,30 +223,30 @@ The official repository currently marks Sudoku-Bench discontinued; watch for sta
 - **[sudoku-project](<https://pub.sakana.ai/sudoku/>)** (light): ok.
   {"baseline": false, "characters": 8635, "embedded_json_blocks": 0, "javascript_evaluated": false, "linked_resources": 26}
 - **[sudoku-papers](<https://arxiv.org>)** (light): ok.
-  {"baseline": false, "cutoff": "2026-11-16T16:37:02.985516Z", "pages": 1, "papers_observed": 3, "seed_papers": 1}
+  {"baseline": false, "cutoff": "2026-11-17T16:42:04.639012Z", "pages": 1, "papers_observed": 3, "seed_papers": 1}
 
-### Simpler Tiny Recursive Models
+### Classical Energies Learn to Reason 1,000x Faster than Looped Models
 
-Typ: paper_published · Quelle: sudoku-papers
-Erfasst: 2026-11-19T16:40:42+00:00
-Veröffentlicht: 2026-11-18T01:05:06Z
-Aktualisiert: 2026-11-18T01:05:06Z
+Typ: paper_updated · Quelle: sudoku-papers
+Erfasst: 2026-11-20T16:16:04+00:00
+Veröffentlicht: 2026-11-12T18:56:56Z
+Aktualisiert: 2026-11-19T12:37:09Z
 
-[Originalquelle](<https://arxiv.org/abs/2611.23677v1>)
+[Originalquelle](<https://arxiv.org/abs/2611.17309v2>)
 
-Small models that execute deep looped computational graphs have shown great experimental results on puzzle-like problems like Sudoku, finding shortest paths through mazes, etc. The most well-known one is TRM (tiny recursive model), a simplification of HRM (hierarchical reasoning model). However, the underlying recursion is complicated and involves a high-level and a low-level state, a nested loop recursion, and the network calls with different input and output signatures depending on where we are in the loops. These mechanisms are needed to avoid memorization and overfitting. We propose STRM, a simplified design with a single state and a uniform update. STRM does not sacrifice generalization, improves training speed and final performance. Our key architectural choices that allow our simpler recursion to work are exponential moving updates on the states with varying rates that are jittered during training and readout of the solution on slow-updating channels only. We test STRM on Sudoku-Extreme, PPBench and Maze-Hard with the same data, parameters and compute as TRM: we improve over TRM by $3.8$ points on Sudoku-Extreme and $8.4$ points on PPBench and match it on Maze-Hard. On ARC-AGI-1 and ARC-AGI-2, STRM improves over the published TRM results by $5.4$ and $0.5$ points. We will release our code upon acceptance of the paper.
+Looped models have emerged as a prominent paradigm for reasoning, with successes on simple reasoning puzzles such as Sudoku-Extreme and Maze-Unique. However, these models can be unstable, slow to train, and use many parameters and FLOPs to solve simple puzzles. Descent on an energy not only mitigates these issues but also offers advantages: built-in early stopping, compute that adapts to problem difficulty, fast training without differentiating through a solver, and interpretable weights that learn the constraints of the puzzle. Here we demonstrate this with a learned version of Hopfield & Tank's energy from the 80s, which we term CRAM, solves 99.996% of Sudoku-Extreme and 100% of Maze-Unique test puzzles after 42 ms and 132 ms of training on one GPU, at least 1,000x faster than looped models on these tasks. CRAM also matches baseline looped models at their highest accuracy on Sudoku-Extreme using at least 282x fewer inference FLOPs. Our work suggests two things. First, that energies are an extremely promising direction for training reasoning from data. Second, a caution against using trivially solvable benchmarks like Sudoku and Maze to test the scalability of looped reasoning techniques.
 
 ```json
 {
-  "paper_id": "2611.23677",
-  "version": 1,
-  "updated": "2026-11-18T01:05:06Z",
+  "paper_id": "2611.17309",
+  "version": 2,
+  "updated": "2026-11-19T12:37:09Z",
   "authors": [
-    "Torben Glass",
-    "Zhengxi Zhang",
-    "Paul Swoboda"
+    "Benjamin Hoover",
+    "Hugh Blayney",
+    "James C. R. Whittington"
   ],
-  "previous_version": null
+  "previous_version": 1
 }
 ```
 
@@ -370,7 +259,7 @@ Related research, including Google's Paradigms of Intelligence team; these publi
 - **[google-computational-life-code](<https://github.com/paradigms-of-intelligence/cubff>)** (light): ok.
   {"baseline": false, "changes": 0, "commit": "f212e849027c98fcf4b242eccfb5fed435223e23", "depth": "light", "diffs_attempted": 0, "diffs_omitted_by_limit": 0, "files": 60}
 - **[assembly-alife-papers](<https://arxiv.org>)** (light): ok.
-  {"baseline": false, "cutoff": "2026-11-16T16:37:11.672750Z", "pages": 1, "papers_observed": 4, "seed_papers": 4}
+  {"baseline": false, "cutoff": "2026-11-17T16:42:14.816062Z", "pages": 1, "papers_observed": 4, "seed_papers": 4}
 
 Keine neuen Ereignisse erfasst. Quellenstatus oben beachten.
 
