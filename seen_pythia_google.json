@@ -1198,10 +1198,19 @@
       "url": "https://zhuanlan.zhihu.com/p/2096482642027983491"
     }
   },
-  "last_attempt_at": "2026-11-19T16:05:16+00:00",
+  "last_attempt_at": "2026-11-20T15:47:02+00:00",
   "last_errors": [],
-  "last_success_at": "2026-11-19T16:05:16+00:00",
-  "pending": {},
+  "last_success_at": "2026-11-20T15:47:02+00:00",
+  "pending": {
+    "https://www.google.com/goto?url=CAESYwHEIkXXTDtXASnqsjgSLUKYcvBk7f6zX07_u51F4htnQcK-nAUVD-HDDjFgPodMVQTy8OfhPkHiCJbKbjk19L30GvllpUZF_XVyUXGls_av0DWw5UoGGi2RxoWRdUD429va5w": {
+      "first_seen_at": "2026-11-20T15:47:02+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "A benchmark study reveals ModernBert outperforms larger language models on unseen social media data for depression detection.",
+      "title": "Tag: Pythia-1b",
+      "url": "https://www.google.com/goto?url=CAESYwHEIkXXTDtXASnqsjgSLUKYcvBk7f6zX07_u51F4htnQcK-nAUVD-HDDjFgPodMVQTy8OfhPkHiCJbKbjk19L30GvllpUZF_XVyUXGls_av0DWw5UoGGi2RxoWRdUD429va5w"
+    }
+  },
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }

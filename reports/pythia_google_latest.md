@@ -1,111 +1,76 @@
 # Pythia – tägliche Google-Websuche
 
-2026-11-19T16:05:16+00:00
+2026-11-20T15:47:02+00:00
 
-Neu vorgemerkt: 6 | Noch zu versenden: 6
-Letzte vollständig erfolgreiche Suche: 2026-11-19T16:05:16+00:00
+Neu vorgemerkt: 1 | Noch zu versenden: 1
+Letzte vollständig erfolgreiche Suche: 2026-11-20T15:47:02+00:00
 
 Google-Websuche via SerpApi; keine Beschränkung auf News, Dateityp oder Quellsprache.
 Google-Datumsfilter sind keine vollständige Publikationsdatenbank. Titel/Snippets werden heuristisch geprüft.
 Unklare Treffer werden dokumentiert und nicht als bereits gemeldet gespeichert.
 
 - 24 Stunden: https://www.google.com/search?q=pythia&tbs=qdr%3Ad
-- Überlappung/Nachholen: 4 Tage: https://www.google.com/search?q=pythia&tbs=qdr%3Ad4
-- Ergänzende Modellsuche: 4 Tage: https://www.google.com/search?q=pythia+%28EleutherAI+OR+%22GPT-NeoX%22+OR+%22language+model%22+OR+Sprachmodell+OR+%22mechanistic+interpretability%22%29&tbs=qdr%3Ad4
+- Überlappung/Nachholen: 3 Tage: https://www.google.com/search?q=pythia&tbs=qdr%3Ad3
+- Ergänzende Modellsuche: 3 Tage: https://www.google.com/search?q=pythia+%28EleutherAI+OR+%22GPT-NeoX%22+OR+%22language+model%22+OR+Sprachmodell+OR+%22mechanistic+interpretability%22%29&tbs=qdr%3Ad3
 
 ## Sammelmeldung – vorgemerkte Treffer dieses Laufs
 
-nemo_automodel.components.models.ernie5_5.model
-https://www.google.com/goto?url=CAESpwEBxCJF147WWoKWOCHgEsJxiSW14jmj7ccVDMMHGhW73yNcvWOZb67DHt3yqFZ9-a9yksf-ZC3C2-Qg6YpxJLx9b1EXIHXgCtBcCpT9cQ16gu5fLeOYEOODAcLL4fhMuyj0-2HbPsLYhhrWPXljCcRoVGICnuwDMyWExsFZN32CmR-q2hnaDmKSyjDA7njjB1XWBxBVqv9fNllOCONutey4LAlR0GUeDA
-ERNIE 5.5 causal language model for AutoModel training ... GPT-NeoX / Pythia · StarCoder · StarCoder2 · Aquila / Aquila2 · Baichuan / Baichuan2 ...
-Erstmals gefunden: 2026-11-19T16:05:16+00:00
-
-Partial RoPE Saves 128 MiB. Most 2026 Models Shipped It ...
-https://www.google.com/goto?url=CAESpgEBxCJF1wyTMjzPK4CYbn9DMNz2dopFz1tKi-S2Ffm_NSBh0TXnYDdPWtuWzJz_JgAdYXZo3uWhmy5eJKAihjabblpNZlAdWgOTHIxJBZNyKReqJ7fuLhkwsiexcYNJrccR10e_3YETxNGkNymGMC7TVQoSVPE8KCCglZGYSwgafXXI_6BfUC-CjjMiIVBlhofpFqklSvlTTaweZlHah3M0CO88w2ji
-It is not a 2026 invention at all: GPT-J, GPT-NeoX and Pythia were already rotating 25% of dimensions in 2021 and 2022. So a majority of 2026 RoPE models ...
-Erstmals gefunden: 2026-11-19T16:05:16+00:00
-
-part 3/5 · guess before the end 👀 in april 2025 openai ...
-https://www.google.com/goto?url=CAESaAHEIkXXdnXFQ4rIhoqKUZOCJ8-ax2iJcY-zgIenT5_YGiBfudVWYntmRRvkb9WdhCi10Ex73WWX9sO8RiGJyTJ8utQeeLzPG4cKMhiHjbItLkpOMpV6CuGHOpAlfWs6lEVSCcDd6pI1
-Examples: OLMo (Allen Institute for AI), Pythia (EleutherAI) Plot twist ... A language model learns by guessing the next word of real text, checking ...
-Erstmals gefunden: 2026-11-19T16:05:16+00:00
-
-Analyzing and Interpreting Neural Networks for NLP (2026)
-https://www.google.com/goto?url=CAESbgHEIkXXJfhqxn-J6kcMZQkt1VUR6QMjyIYFMDJWOnjww8Du_gR9RpbR1icaLT-EQ_74_5_Ih3LChqgbAHp4fp1uOHWvoY7oxEvyqHs6gCUHM2xriTIZx9HYTDTB07RYGP1jB1SheLPXw4HyqOJG
-Once markers are removed, however, the Pythia tests cannot show whether the effect carries over. ... Language Model · Éric Jacopin. Autoregressive (AR) sequence ...
-Erstmals gefunden: 2026-11-19T16:05:16+00:00
-
-Where does your AI process your contracts? Many cloud AI ...
-https://www.google.com/goto?url=CAESzQEBxCJF16I4fgakGCGmIEB4X_Dy-Qcfwi-Oqgoi6qEKu1kkxHy5Lzxg5QC4jTZRtRClp6j7yGRYAxbXqT88HyU4Op7SCAR9HJKBGk_WQvriFOvjMmEVfW0oPFZy8w7ijO3TSnqs031m8T9yG6wteDXuz8E4T8nkUwWLqv_4jxpc5X6Sde63YEcCX4E3hfMZ-9t4UlxHnO7AROdrKOPhLRsvtHeXDQqGyxbN1n0SHW6TYx-Njtvilduf2Xx1BrZmZ4DhgpZ0JcORDVMsznNj
-... Pythia-12B – Fully transparent training process ✔️ GPT-NeoX-20B – Open-weight GPT-style model with full access AI Models with Privacy Concerns ...
-Erstmals gefunden: 2026-11-19T16:05:16+00:00
-
-deepseek-flash · Agents - Open Interpretability
-https://www.google.com/goto?url=CAESeQHEIkXXQurKLn2On0_aPn3pZwhXcD0ATuaSktJOY1Tn6lydyPG6Uop0IKHRc6c5kdGnNzVrBaXPFq--jh0WZGcCdtD2ERZXo3BthyxAMwZew3H3rWhTz4B_ni_Bu8BWGFDlyLJpN-Jjkru7VH2_6Zy05xKTa82xscQ
-EleutherAI/pythia-70m. proposer, reviewer, judge. VERIFIED self-reviewed. Layer 0 has no earlier layer to read and GPT-NeoX's RoPE adds no position vector, so ...
-Erstmals gefunden: 2026-11-19T16:05:16+00:00
+Tag: Pythia-1b
+https://www.google.com/goto?url=CAESYwHEIkXXTDtXASnqsjgSLUKYcvBk7f6zX07_u51F4htnQcK-nAUVD-HDDjFgPodMVQTy8OfhPkHiCJbKbjk19L30GvllpUZF_XVyUXGls_av0DWw5UoGGi2RxoWRdUD429va5w
+A benchmark study reveals ModernBert outperforms larger language models on unseen social media data for depression detection.
+Erstmals gefunden: 2026-11-20T15:47:02+00:00
 
 
 ## Modelltreffer
 
-Ambrosys & Legal Pythia: AI Legal-Text Analysis Case Study
-https://www.legalpythia.com/case-studies/ambrosys
-Legal Pythia and Ambrosys ... Automated processes made an API to the jointly developed language model available within one week for the final Munich pitch.
-Einordnung: Pythia im Sprachmodell-/Interpretierbarkeits-Kontext
-
-nemo_automodel.components.models.ernie5_5.model
-https://www.google.com/goto?url=CAESpwEBxCJF147WWoKWOCHgEsJxiSW14jmj7ccVDMMHGhW73yNcvWOZb67DHt3yqFZ9-a9yksf-ZC3C2-Qg6YpxJLx9b1EXIHXgCtBcCpT9cQ16gu5fLeOYEOODAcLL4fhMuyj0-2HbPsLYhhrWPXljCcRoVGICnuwDMyWExsFZN32CmR-q2hnaDmKSyjDA7njjB1XWBxBVqv9fNllOCONutey4LAlR0GUeDA
-ERNIE 5.5 causal language model for AutoModel training ... GPT-NeoX / Pythia · StarCoder · StarCoder2 · Aquila / Aquila2 · Baichuan / Baichuan2 ...
-Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
-
-Partial RoPE Saves 128 MiB. Most 2026 Models Shipped It ...
-https://www.google.com/goto?url=CAESpgEBxCJF1wyTMjzPK4CYbn9DMNz2dopFz1tKi-S2Ffm_NSBh0TXnYDdPWtuWzJz_JgAdYXZo3uWhmy5eJKAihjabblpNZlAdWgOTHIxJBZNyKReqJ7fuLhkwsiexcYNJrccR10e_3YETxNGkNymGMC7TVQoSVPE8KCCglZGYSwgafXXI_6BfUC-CjjMiIVBlhofpFqklSvlTTaweZlHah3M0CO88w2ji
-It is not a 2026 invention at all: GPT-J, GPT-NeoX and Pythia were already rotating 25% of dimensions in 2021 and 2022. So a majority of 2026 RoPE models ...
-Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
-
-part 3/5 · guess before the end 👀 in april 2025 openai ...
-https://www.google.com/goto?url=CAESaAHEIkXXdnXFQ4rIhoqKUZOCJ8-ax2iJcY-zgIenT5_YGiBfudVWYntmRRvkb9WdhCi10Ex73WWX9sO8RiGJyTJ8utQeeLzPG4cKMhiHjbItLkpOMpV6CuGHOpAlfWs6lEVSCcDd6pI1
-Examples: OLMo (Allen Institute for AI), Pythia (EleutherAI) Plot twist ... A language model learns by guessing the next word of real text, checking ...
-Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
-
-Analyzing and Interpreting Neural Networks for NLP (2026)
-https://www.google.com/goto?url=CAESbgHEIkXXJfhqxn-J6kcMZQkt1VUR6QMjyIYFMDJWOnjww8Du_gR9RpbR1icaLT-EQ_74_5_Ih3LChqgbAHp4fp1uOHWvoY7oxEvyqHs6gCUHM2xriTIZx9HYTDTB07RYGP1jB1SheLPXw4HyqOJG
-Once markers are removed, however, the Pythia tests cannot show whether the effect carries over. ... Language Model · Éric Jacopin. Autoregressive (AR) sequence ...
-Einordnung: Pythia im Sprachmodell-/Interpretierbarkeits-Kontext
-
-Where does your AI process your contracts? Many cloud AI ...
-https://www.google.com/goto?url=CAESzQEBxCJF16I4fgakGCGmIEB4X_Dy-Qcfwi-Oqgoi6qEKu1kkxHy5Lzxg5QC4jTZRtRClp6j7yGRYAxbXqT88HyU4Op7SCAR9HJKBGk_WQvriFOvjMmEVfW0oPFZy8w7ijO3TSnqs031m8T9yG6wteDXuz8E4T8nkUwWLqv_4jxpc5X6Sde63YEcCX4E3hfMZ-9t4UlxHnO7AROdrKOPhLRsvtHeXDQqGyxbN1n0SHW6TYx-Njtvilduf2Xx1BrZmZ4DhgpZ0JcORDVMsznNj
-... Pythia-12B – Fully transparent training process ✔️ GPT-NeoX-20B – Open-weight GPT-style model with full access AI Models with Privacy Concerns ...
-Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
-
-deepseek-flash · Agents - Open Interpretability
-https://www.google.com/goto?url=CAESeQHEIkXXQurKLn2On0_aPn3pZwhXcD0ATuaSktJOY1Tn6lydyPG6Uop0IKHRc6c5kdGnNzVrBaXPFq--jh0WZGcCdtD2ERZXo3BthyxAMwZew3H3rWhTz4B_ni_Bu8BWGFDlyLJpN-Jjkru7VH2_6Zy05xKTa82xscQ
-EleutherAI/pythia-70m. proposer, reviewer, judge. VERIFIED self-reviewed. Layer 0 has no earlier layer to read and GPT-NeoX's RoPE adds no position vector, so ...
+Tag: Pythia-1b
+https://www.google.com/goto?url=CAESYwHEIkXXTDtXASnqsjgSLUKYcvBk7f6zX07_u51F4htnQcK-nAUVD-HDDjFgPodMVQTy8OfhPkHiCJbKbjk19L30GvllpUZF_XVyUXGls_av0DWw5UoGGi2RxoWRdUD429va5w
+A benchmark study reveals ModernBert outperforms larger language models on unseen social media data for depression detection.
 Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
 
 
 ## Unklar – zur Nachprüfung
 
-Paper: even when the updated value is in context, models ...
-https://www.reddit.com/r/LLMDevs/comments/1xxpmn4/paper_even_when_the_updated_value_is_in_context/
-UC Berkeley posted a paper on Sept 30, "When Context Changes: Understanding Update Failures in LLMs" (arXiv 2609.38866). What I took from it: - They ...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
+PYTHIA | NEW PIECES DROPPING TUESDAY 🦅 14 ...
+https://www.instagram.com/p/Df5j0QwD9HW/
+NEW PIECES DROPPING TUESDAY 14 new pieces release on tuesday november 24th alongside our BFCM sale. All new items will be discounted for the holiday, ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
-Structure–Residual Inductive Biases for Language Model ...
-https://arxiv.org/abs/2611.23197v1
-We use the two-part coding principle to analyze structure–residual inductive biases in language-model representations. •. We introduce BBC, which compresses ...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
+Pythia
+http://pythiacrafting.com/
+Für diese Seite sind keine Informationen verfügbar.
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
-Mitigating Memorization Where It Happens
-https://www.google.com/goto?url=CAEShAEBxCJF14y7huQdqWMNz66FnvueIkgU0nG5qvPCwCnFPg86PwNIkqNmv_EDSjmkkxUSy4VAS3Z3LgRC5syCD9so4vn-ZUq_M8iJ0dbSn7ppR8wiaD0f6plQNbqj8MX31H8e5Um_1DinWLKf-KcpzvzG7okrBiOsegxbT3kU_0_C_myrsOE
-Let s = (x1,...,xn) be an n-token sequence that appears in the training set of a language model M. We say that s is (n, k)-memorized by M if, when prompted with ...
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
+PYTHIA to THB: PYTHIA Price in Thai Baht
+https://www.google.com/goto?url=CAESagHEIkXXV9068wbHZyih3SesiwYLvO-YJF_cQwzWvwXq8ACYqUbwoJgtihVN4lARjuTuwsOAte0L7gr1FgRQx7IVwPnNE1svwQVD9pdkOKFZKd1AXCsSwq6Y0oeRdSJ6nvjRLOUDxNR3Zzk
+PYTHIA (PYTHIA) is worth ฿0.00338759 today, which is a 0.5% decline from an hour ago and a 5.4% increase since yesterday.
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Pythia Games
+https://www.google.com/goto?url=CAESYgHEIkXX3KvlkftbuuwHUDMKiuHGdrD0Oz62ltNSmLF0N0RezdvpLRVD1m3iOAO17voxmLKUMUFWQ1qFIbamKf1CbOkYWS9M9WDTud120ruYXh3CB7O3bupvHnlPJ7JTqZ1R
+Pythia Games is an indie game publisher.
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+✨🔮 TWO LEGENDARY WOMEN OF GREEK MYTHOLOGY ...
+https://www.google.com/goto?url=CAESzwEBxCJF1_1w-cDXqYf_D5sm2euWXi4pBCWvMnQFgRS9gFRbmD8xbH2u90kqxhZQTnhVMeGRuglpri5jNDfyzi_hr3l7J9lGVzNQOQlyWIM8pQkvIQ61ePZc5Qah8drITgxYSVt7N-I4zXNaVOrZPDhZUTWOfDWEbIQ9OR81tU65N0G5HBEHhi17tUHAl7v3Cevir9TKENHFrwcNCrGbUhNu3SRXuO9vf_J2kqztqQ2qMgTtVb8JDosF5toP1p9K_bWdKle0E9ss66Jp3etzi48
+The legendary priestess of Apollo, Pythia was one of the most powerful and respected oracles of the ancient world. Kings, warriors and travellers sought her ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+How Better Recognition Can Support Retention
+https://www.google.com/goto?url=CAESqAEBxCJF185ufYRaWp5fOHig1kuEgi-Q7H0hP9GJdDMH4xDNcfgAtx8m2vBTn0NiXTERCMCsmJsHDMZrohjb9IQsmD6zFGOz3SqzHTUJdCR_UkgAlaXtMoCnahAFg3dFqIJU0h48mCM22_2ZjoSvGXK6GE1a7KDmU0rTKw76DqmB-YQmJ5Bq8HjLWp5WPzSUFZyfaQGK-eCJhrSFJ4zYDF88C9z4jH57AMU
+Pythia Scorecard uses checkout hardware and AI to analyze customer-service interactions for defined behaviors, such as greeting and acknowledging customers,
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
 
 ## Andere Pythias
 
-Pythia — Lexicon - Inner Axiom
-https://www.inneraxiom.com/lexicon/pythia
-The virgin priestess of Apollo at Delphi who, seated on the tripod and filled by the god, uttered the oracle. Her voice was the healing Logos itself.
+Oracle of Delphi: Pythia - Archaeology & Art on ...
+https://x.com/archaeologyart/status/2123249108010086538
+Pythia - Based on a drawing of the Oracle of Delphi on a 2500-year-old Greek kylix. Pythia T-Shirt, Sweatshirt & Hoodie
+Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
+
+At Delphi, people travelled from across the ancient Greek world ...
+https://www.google.com/goto?gsessionid=qsBtsD5aWSiSZtxN7lQIrPiM2phjIyyWGU5vfz5fE_Mz9aq5vt4FxQ&url=CAESaAHEIkXX75HV6f2c7TRDkhRfCJqxj83TY3SQi-TgiCJyfqOoPuAZ7Kw-7qGgyYjepri7-7qhocUJDZQljanE2ItGE-Lg5H2xPgTp1MIHxSePRQFhXK35ycwAtqTUGaNONt770bxWU12D
+At Delphi, people travelled from across the ancient Greek world to consult the Oracle. Her name was Pythia. She delivered prophecies while seated inside the ...
 Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
 

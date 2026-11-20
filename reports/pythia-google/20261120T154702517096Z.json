@@ -1,0 +1,117 @@
+{
+  "checked_at": "2026-11-20T15:47:02+00:00",
+  "errors": [],
+  "last_success_at": "2026-11-20T15:47:02+00:00",
+  "new_count": 1,
+  "pending_count": 1,
+  "pending_results": [
+    {
+      "first_seen_at": "2026-11-20T15:47:02+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "A benchmark study reveals ModernBert outperforms larger language models on unseen social media data for depression detection.",
+      "title": "Tag: Pythia-1b",
+      "url": "https://www.google.com/goto?url=CAESYwHEIkXXTDtXASnqsjgSLUKYcvBk7f6zX07_u51F4htnQcK-nAUVD-HDDjFgPodMVQTy8OfhPkHiCJbKbjk19L30GvllpUZF_XVyUXGls_av0DWw5UoGGi2RxoWRdUD429va5w"
+    }
+  ],
+  "queries": [
+    {
+      "label": "24 Stunden",
+      "q": "pythia",
+      "tbs": "qdr:d"
+    },
+    {
+      "label": "Überlappung/Nachholen: 3 Tage",
+      "q": "pythia",
+      "tbs": "qdr:d3"
+    },
+    {
+      "label": "Ergänzende Modellsuche: 3 Tage",
+      "q": "pythia (EleutherAI OR \"GPT-NeoX\" OR \"language model\" OR Sprachmodell OR \"mechanistic interpretability\")",
+      "tbs": "qdr:d3"
+    }
+  ],
+  "results": [
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "NEW PIECES DROPPING TUESDAY 14 new pieces release on tuesday november 24th alongside our BFCM sale. All new items will be discounted for the holiday, ...",
+      "title": "PYTHIA | NEW PIECES DROPPING TUESDAY 🦅 14 ...",
+      "url": "https://www.instagram.com/p/Df5j0QwD9HW/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Für diese Seite sind keine Informationen verfügbar.",
+      "title": "Pythia",
+      "url": "http://pythiacrafting.com/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Pythia - Based on a drawing of the Oracle of Delphi on a 2500-year-old Greek kylix. Pythia T-Shirt, Sweatshirt & Hoodie",
+      "title": "Oracle of Delphi: Pythia - Archaeology & Art on ...",
+      "url": "https://x.com/archaeologyart/status/2123249108010086538"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 3 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "PYTHIA (PYTHIA) is worth ฿0.00338759 today, which is a 0.5% decline from an hour ago and a 5.4% increase since yesterday.",
+      "title": "PYTHIA to THB: PYTHIA Price in Thai Baht",
+      "url": "https://www.google.com/goto?url=CAESagHEIkXXV9068wbHZyih3SesiwYLvO-YJF_cQwzWvwXq8ACYqUbwoJgtihVN4lARjuTuwsOAte0L7gr1FgRQx7IVwPnNE1svwQVD9pdkOKFZKd1AXCsSwq6Y0oeRdSJ6nvjRLOUDxNR3Zzk"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 2 Tagen",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "At Delphi, people travelled from across the ancient Greek world to consult the Oracle. Her name was Pythia. She delivered prophecies while seated inside the ...",
+      "title": "At Delphi, people travelled from across the ancient Greek world ...",
+      "url": "https://www.google.com/goto?gsessionid=qsBtsD5aWSiSZtxN7lQIrPiM2phjIyyWGU5vfz5fE_Mz9aq5vt4FxQ&url=CAESaAHEIkXX75HV6f2c7TRDkhRfCJqxj83TY3SQi-TgiCJyfqOoPuAZ7Kw-7qGgyYjepri7-7qhocUJDZQljanE2ItGE-Lg5H2xPgTp1MIHxSePRQFhXK35ycwAtqTUGaNONt770bxWU12D"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 17 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Pythia Games is an indie game publisher.",
+      "title": "Pythia Games",
+      "url": "https://www.google.com/goto?url=CAESYgHEIkXX3KvlkftbuuwHUDMKiuHGdrD0Oz62ltNSmLF0N0RezdvpLRVD1m3iOAO17voxmLKUMUFWQ1qFIbamKf1CbOkYWS9M9WDTud120ruYXh3CB7O3bupvHnlPJ7JTqZ1R"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "The legendary priestess of Apollo, Pythia was one of the most powerful and respected oracles of the ancient world. Kings, warriors and travellers sought her ...",
+      "title": "✨🔮 TWO LEGENDARY WOMEN OF GREEK MYTHOLOGY ...",
+      "url": "https://www.google.com/goto?url=CAESzwEBxCJF1_1w-cDXqYf_D5sm2euWXi4pBCWvMnQFgRS9gFRbmD8xbH2u90kqxhZQTnhVMeGRuglpri5jNDfyzi_hr3l7J9lGVzNQOQlyWIM8pQkvIQ61ePZc5Qah8drITgxYSVt7N-I4zXNaVOrZPDhZUTWOfDWEbIQ9OR81tU65N0G5HBEHhi17tUHAl7v3Cevir9TKENHFrwcNCrGbUhNu3SRXuO9vf_J2kqztqQ2qMgTtVb8JDosF5toP1p9K_bWdKle0E9ss66Jp3etzi48"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "A benchmark study reveals ModernBert outperforms larger language models on unseen social media data for depression detection.",
+      "title": "Tag: Pythia-1b",
+      "url": "https://www.google.com/goto?url=CAESYwHEIkXXTDtXASnqsjgSLUKYcvBk7f6zX07_u51F4htnQcK-nAUVD-HDDjFgPodMVQTy8OfhPkHiCJbKbjk19L30GvllpUZF_XVyUXGls_av0DWw5UoGGi2RxoWRdUD429va5w"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Pythia Scorecard uses checkout hardware and AI to analyze customer-service interactions for defined behaviors, such as greeting and acknowledging customers,",
+      "title": "How Better Recognition Can Support Retention",
+      "url": "https://www.google.com/goto?url=CAESqAEBxCJF185ufYRaWp5fOHig1kuEgi-Q7H0hP9GJdDMH4xDNcfgAtx8m2vBTn0NiXTERCMCsmJsHDMZrohjb9IQsmD6zFGOz3SqzHTUJdCR_UkgAlaXtMoCnahAFg3dFqIJU0h48mCM22_2ZjoSvGXK6GE1a7KDmU0rTKw76DqmB-YQmJ5Bq8HjLWp5WPzSUFZyfaQGK-eCJhrSFJ4zYDF88C9z4jH57AMU"
+    }
+  ]
+}
