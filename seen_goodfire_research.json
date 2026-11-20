@@ -151,6 +151,10 @@
     "title": "Neuron Atlas - Qwen3.6",
     "first_seen": "2026-11-10T14:47:21+00:00"
   },
+  "https://goodfire.ai/research/public_neuron_atlas/all_labels": {
+    "title": "Neuron Atlas - Qwen3.6",
+    "first_seen": "2026-11-20T03:06:00+00:00"
+  },
   "https://goodfire.ai/research/rakuten-sae-probes-for-pii-detection": {
     "title": "Deploying Interpretability to Production with Rakuten: SAE Probes for PII Detection",
     "first_seen": "2026-07-28T18:51:09+00:00"
