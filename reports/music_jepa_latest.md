@@ -1,15 +1,15 @@
 # Music-JEPA — Prüfbericht
-2026-11-20T16:19:17+00:00
+2026-11-21T15:32:47+00:00
 
-Tagesalarm: 0 Meldungen.
-Neue Drittanbieter-Signale dieses Laufs: 0 (kein Tagesalarm).
-Wochensammlung dieses Laufs: 0 Quellen.
+Tagesalarm: 1 Meldungen.
+Neue Drittanbieter-Signale dieses Laufs: 4 (kein Tagesalarm).
+Wochensammlung dieses Laufs: 4 Quellen.
 Für spätere Wochensammlung vorgemerkt: 0 Quellen.
-Nächste Wochensammlung frühestens: 2026-11-21T14:25:45+00:00 (nächster Lauf; nur mit neuen Hinweisen).
-Abruffehler in diesem Lauf: 2.
+Nächste Wochensammlung frühestens: 2026-11-28T15:32:47+00:00 (nächster Lauf; nur mit neuen Hinweisen).
+Abruffehler in diesem Lauf: 3.
 
 # Music-JEPA — täglicher Alarm
-2026-11-20T16:19:17+00:00
+2026-11-21T15:32:47+00:00
 
 Klare Quellenänderung bedeutet NICHT automatisch: Code und Gewichte veröffentlicht.
 
@@ -25,12 +25,84 @@ Neue Meldungen: 0.
 Neue Meldungen: 0.
 
 ## C. TECHNISCHE STÖRUNGEN — keine Forschungstreffer
-Neue Meldungen: 0.
+Neue Meldungen: 1.
+
+### Technischer Fehler: Hugging Face Modell standardmodelbio/SMB-v1-1.7B-Structure
+https://arxiv.org/abs/2607.22000
+Herkunft: Technischer Abruffehler; kein neuer Release-Hinweis.
+- FetchError: HTTP 401: https://huggingface.co/api/models/standardmodelbio/SMB-v1-1.7B-Structure
+Kein Release-Nachweis; diese Quelle konnte nicht geprueft werden.
 
 Drittanbieter-Suchtreffer lösen diese Tagesmail nicht aus. Sie werden separat,
 frühestens alle sieben Tage und nur bei neuen Hinweisen als Wochensammlung verschickt.
 
 ## D. DRITTANBIETER-SUCHE — ausschließlich für Wochensammlung
+### GitHub-Hinweis: ADEPT-ORG/JEPA-Survey (Drittanbieter-Treffer, Zuordnung unbestaetigt)
+https://github.com/ADEPT-ORG/JEPA-Survey
+Herkunft: GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.
+- Erstmals erfasst: 6 Code-Dateien; Beispiele: tools/build.py, tools/fetch_arxiv.py, tools/fetch_arxiv_more.py (+3 weitere).
+- Gewichtsdatei-Hinweise im Repository: 0. Kein Gewichte-Download damit belegt.
+- GitHub-Releases: 0; keine erfasst.
+- Neue Ressourcenlinks: https://github.com/1e12Leon/DroneWAM, https://github.com/2025eb1100268-tech/readable-not-steerable, https://github.com/AFARI-Research/WA-JEPA (+138 weitere)
+
+### Hugging-Face-Hinweis: HenryYHW/TriDrive (Zuordnung/Download nicht bestaetigt)
+https://huggingface.co/HenryYHW/TriDrive
+Herkunft: Hugging-Face-Suche/entdeckter Modelllink; offizielle Zuordnung unbestätigt.
+- Gewichtsdatei-Hinweise auf Hugging Face: 324 (checkpoints/aide/cwm3d_kp_abs_noema_s123_v2/ckpt_best.pt, checkpoints/aide/cwm3d_kp_abs_noema_s42_v2/ckpt_best.pt, checkpoints/aide/cwm3d_kp_abs_noema_s456_v2/ckpt_best.pt (+321 weitere)).
+- Zugangsfreigabe (Gating): manual. Download und Nutzbarkeit nicht getestet.
+
+### Hugging-Face-Hinweis: boretsyury/MeFEm (Zuordnung/Download nicht bestaetigt)
+https://huggingface.co/boretsyury/MeFEm
+Herkunft: Hugging-Face-Suche/entdeckter Modelllink; offizielle Zuordnung unbestätigt.
+- Gewichtsdatei-Hinweise auf Hugging Face: 0.
+- Zugangsfreigabe (Gating): False. Download und Nutzbarkeit nicht getestet.
+
+### Hugging-Face-Hinweis: cloudkites/her2-reader (Zuordnung/Download nicht bestaetigt)
+https://huggingface.co/cloudkites/her2-reader
+Herkunft: Hugging-Face-Suche/entdeckter Modelllink; offizielle Zuordnung unbestätigt.
+- Gewichtsdatei-Hinweise auf Hugging Face: 18 (checkpoints/r12a_distilled-1um-step25000.safetensors, checkpoints/r12b_distilled-1um-jepa6000.safetensors, checkpoints/stage1_ssl-vits16-final.safetensors (+15 weitere)).
+- Zugangsfreigabe (Gating): False. Download und Nutzbarkeit nicht getestet.
+
+# Music-JEPA — WOCHENSAMMLUNG: DRITTANBIETER
+2026-11-21T15:32:47+00:00
+
+4 Repository-/Modellquellen mit noch nicht gemeldeten Hinweisen.
+Dies sind Suchfunde, KEINE bestätigten offiziellen Releases und KEINE Alarme über
+eine neue Paper-Version oder eine geänderte offizielle Projektseite.
+Direkte Paper-/Projektänderungen werden unabhängig davon im täglichen Lauf gemeldet.
+
+## HenryYHW/TriDrive
+https://huggingface.co/HenryYHW/TriDrive
+Herkunft: Hugging-Face-Suche/entdeckter Modelllink; offizielle Zuordnung unbestätigt.
+Gesammelt: 2026-11-21T15:32:47+00:00 bis 2026-11-21T15:32:47+00:00
+- Gewichtsdatei-Hinweise auf Hugging Face: 324 (checkpoints/aide/cwm3d_kp_abs_noema_s123_v2/ckpt_best.pt, checkpoints/aide/cwm3d_kp_abs_noema_s42_v2/ckpt_best.pt, checkpoints/aide/cwm3d_kp_abs_noema_s456_v2/ckpt_best.pt (+321 weitere)).
+- Zugangsfreigabe (Gating): manual. Download und Nutzbarkeit nicht getestet.
+
+## boretsyury/MeFEm
+https://huggingface.co/boretsyury/MeFEm
+Herkunft: Hugging-Face-Suche/entdeckter Modelllink; offizielle Zuordnung unbestätigt.
+Gesammelt: 2026-11-21T15:32:47+00:00 bis 2026-11-21T15:32:47+00:00
+- Gewichtsdatei-Hinweise auf Hugging Face: 0.
+- Zugangsfreigabe (Gating): False. Download und Nutzbarkeit nicht getestet.
+
+## cloudkites/her2-reader
+https://huggingface.co/cloudkites/her2-reader
+Herkunft: Hugging-Face-Suche/entdeckter Modelllink; offizielle Zuordnung unbestätigt.
+Gesammelt: 2026-11-21T15:32:47+00:00 bis 2026-11-21T15:32:47+00:00
+- Gewichtsdatei-Hinweise auf Hugging Face: 18 (checkpoints/r12a_distilled-1um-step25000.safetensors, checkpoints/r12b_distilled-1um-jepa6000.safetensors, checkpoints/stage1_ssl-vits16-final.safetensors (+15 weitere)).
+- Zugangsfreigabe (Gating): False. Download und Nutzbarkeit nicht getestet.
+
+## ADEPT-ORG/JEPA-Survey
+https://github.com/ADEPT-ORG/JEPA-Survey
+Herkunft: GitHub-Suche: Bezug auf Paper-ID/Titel in Repository-Metadaten oder README; offizielle Zuordnung unbestätigt.
+Gesammelt: 2026-11-21T15:32:47+00:00 bis 2026-11-21T15:32:47+00:00
+- Erstmals erfasst: 6 Code-Dateien; Beispiele: tools/build.py, tools/fetch_arxiv.py, tools/fetch_arxiv_more.py (+3 weitere).
+- Gewichtsdatei-Hinweise im Repository: 0. Kein Gewichte-Download damit belegt.
+- GitHub-Releases: 0; keine erfasst.
+- Neue Ressourcenlinks: https://github.com/1e12Leon/DroneWAM, https://github.com/2025eb1100268-tech/readable-not-steerable, https://github.com/AFARI-Research/WA-JEPA (+138 weitere)
+
+Dateinamen sind nur Hinweise. Code/Modelle wurden weder ausgeführt noch heruntergeladen.
+
 ## Technischer Quellenstatus
 OK: arXiv
 OK: Projektseite
@@ -40,6 +112,7 @@ OK: GitHub Suche "2607.22000" in:readme fork:false
 OK: GitHub Suche "Music-JEPA" in:name,description,readme fork:false
 OK: GitHub Suche "music_jepa" in:name,description,readme fork:false
 OK: GitHub Suche "Learning a World Model of Sound from Action" in:readme fork:false
+OK: GitHub Repository ADEPT-ORG/JEPA-Survey
 OK: GitHub Repository AI-in-Transportation-Lab/awesome-jepa
 OK: GitHub Repository enhansome/enhansome-agentic-world-modeling
 OK: GitHub Repository guangjun1997327/PianoAutomaticAnnotationSystem
@@ -87,7 +160,11 @@ OK: Hugging Face Suche music-jepa
 OK: Hugging Face Suche music_jepa
 OK: Hugging Face Suche musicjepa
 OK: Hugging Face Suche arxiv:2607.22000
+OK: Hugging Face Modell HenryYHW/TriDrive
 OK: Hugging Face Modell ZzWaang/music-jepa
+OK: Hugging Face Modell boretsyury/MeFEm
+OK: Hugging Face Modell cloudkites/her2-reader
 OK: Hugging Face discovery
 FEHLER: GitHub Metadaten NeilKhandelwal/drum-jepa: FetchError: HTTP 404: https://api.github.com/repos/NeilKhandelwal/drum-jepa
 FEHLER: GitHub Metadaten smikoo1000-svg/Fnf: FetchError: HTTP 404: https://api.github.com/repos/smikoo1000-svg/Fnf
+FEHLER: Hugging Face Modell standardmodelbio/SMB-v1-1.7B-Structure: FetchError: HTTP 401: https://huggingface.co/api/models/standardmodelbio/SMB-v1-1.7B-Structure
