@@ -1,0 +1,90 @@
+{
+  "checked_at": "2026-11-21T14:56:49+00:00",
+  "errors": [],
+  "last_success_at": "2026-11-21T14:56:49+00:00",
+  "new_count": 0,
+  "pending_count": 0,
+  "pending_results": [],
+  "queries": [
+    {
+      "label": "24 Stunden",
+      "q": "pythia",
+      "tbs": "qdr:d"
+    },
+    {
+      "label": "Überlappung/Nachholen: 3 Tage",
+      "q": "pythia",
+      "tbs": "qdr:d3"
+    },
+    {
+      "label": "Ergänzende Modellsuche: 3 Tage",
+      "q": "pythia (EleutherAI OR \"GPT-NeoX\" OR \"language model\" OR Sprachmodell OR \"mechanistic interpretability\")",
+      "tbs": "qdr:d3"
+    }
+  ],
+  "results": [
+    {
+      "classification": "unclear",
+      "google_date": "vor 8 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "The live Pythia price today is $0.00008269 USD with a 24-hour trading volume of $0 USD. We update our PYTHIA to USD price in real-time.",
+      "title": "Pythia price today, PYTHIA to USD live price, marketcap ...",
+      "url": "https://coinmarketcap.com/currencies/pythia/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "NEW PIECES DROPPING TUESDAY 14 new pieces release on tuesday november 24th alongside our BFCM sale. All new items will be discounted for the holiday, ...",
+      "title": "PYTHIA | NEW PIECES DROPPING TUESDAY 🦅 14 ...",
+      "url": "https://www.instagram.com/p/Df5j0QwD9HW/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 3 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "1 Pythia currently costs $0, up 1.58% in the last 24 hours. View the live Pythia price in USD (PYTHIA/USD), chart, market cap and 24-hour volume.",
+      "title": "Pythia Price (PYTHIA/USD) Today | Live Price, Market Cap ...",
+      "url": "https://www.google.com/goto?url=CAESZAHEIkXXTiLNBVzwc_BAdk0jSDVibBSR4fxERKDmfy3_mrT7WGzlLpxW3Ipy7EL3XWQNkSHdVNOOh9fYUy49CU6XP06PBY4BQA7eK_snfekw1TaE4U6cKOFgxDgLoEVqmCA0v7w"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Oracle of Delphi: Pythia - Based on a drawing of the Oracle of Delphi on a 2500-year-old Greek kylix.",
+      "title": "Oracle of Delphi: Pythia - Archaeology & Art on ...",
+      "url": "https://www.google.com/goto?url=CAESdAHEIkXXdmsvwUY0W7zN-B8uDrtqqkSbxnJRtD70MLeU6ZPxllG_AkUcJtQ5XthXfKngbAhwbxTMYaM6wL9e9HQRhhO_LFhec2gLiQ-Ykk2TpSzCpAWxb31mwY8nfujX_1UMR835UpgqxNvGXSXrazmjY62U"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "NEW PIECES DROPPING TUESDAY 14 new pieces release on tuesday november 24th alongside our BFCM sale. All new items will be discounted for the holiday,...",
+      "title": "Pythia",
+      "url": "https://www.google.com/goto?url=CAESzgEBxCJF1w6mSAc1rflozYLHauuPNLk4BCj94YREGdUNjKTStxWj6j7BTgmXr1Co0nN4nhcdieT2kBAI_xES-4LSKFbZhku17t99DFr_U6lrAM_ZaH_--TGy6a536vH2nuPkSa7zqkPZOtKHtsAOG4JdV3m65DD-5GpeOBBvDD0VllKjX_0foR2n13X4LEPjGVyG8GL_PAio6OgQVJR9HvmH2bhrcIEqMcwiom1iK5kGPW2JlkYQJCHYTsumZqvvNfI4ka8Vj4AR6U6-ViU6FQ"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 1 Tag",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "This Privacy Policy explains how Pythia Insurance, LLC (“Pythia”, “we”, “us”) collects, uses, shares and protects personal information when you use the Pythia ...",
+      "title": "Privacy Policy - Pythia",
+      "url": "https://www.google.com/goto?url=CAESZgHEIkXXxSr16AUqnWO4kvzGurXZNKo2ASyPg_Hl8LVU9mrzEsaapO_WnonjC0oyxq0Z8X8c5aLDso69maUY5Rpw2bjrO23X88yJrM3XlBL_TtlCWiRuzkji1mqn9M6B1b1D8aIgJw"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Für diese Seite sind keine Informationen verfügbar.",
+      "title": "Pythia",
+      "url": "https://www.google.com/goto?url=CAESVwHEIkXXQFGGKzdj3SiB87jSfqi5E1K-JbIC7cbsZZQBLBHqIW9wI3p4CJRXF5jUWa3mUuWK07h1zO3lL4fxk8gG4W_U2zBQ5QQWU1g2qOB30sxc_zQA3g"
+    }
+  ]
+}

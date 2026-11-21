@@ -1,9 +1,9 @@
 # Pythia – tägliche Google-Websuche
 
-2026-11-20T15:47:02+00:00
+2026-11-21T14:56:49+00:00
 
-Neu vorgemerkt: 1 | Noch zu versenden: 1
-Letzte vollständig erfolgreiche Suche: 2026-11-20T15:47:02+00:00
+Neu vorgemerkt: 0 | Noch zu versenden: 0
+Letzte vollständig erfolgreiche Suche: 2026-11-21T14:56:49+00:00
 
 Google-Websuche via SerpApi; keine Beschränkung auf News, Dateityp oder Quellsprache.
 Google-Datumsfilter sind keine vollständige Publikationsdatenbank. Titel/Snippets werden heuristisch geprüft.
@@ -15,62 +15,49 @@ Unklare Treffer werden dokumentiert und nicht als bereits gemeldet gespeichert.
 
 ## Sammelmeldung – vorgemerkte Treffer dieses Laufs
 
-Tag: Pythia-1b
-https://www.google.com/goto?url=CAESYwHEIkXXTDtXASnqsjgSLUKYcvBk7f6zX07_u51F4htnQcK-nAUVD-HDDjFgPodMVQTy8OfhPkHiCJbKbjk19L30GvllpUZF_XVyUXGls_av0DWw5UoGGi2RxoWRdUD429va5w
-A benchmark study reveals ModernBert outperforms larger language models on unseen social media data for depression detection.
-Erstmals gefunden: 2026-11-20T15:47:02+00:00
-
+Keine vorgemerkten Treffer.
 
 ## Modelltreffer
 
-Tag: Pythia-1b
-https://www.google.com/goto?url=CAESYwHEIkXXTDtXASnqsjgSLUKYcvBk7f6zX07_u51F4htnQcK-nAUVD-HDDjFgPodMVQTy8OfhPkHiCJbKbjk19L30GvllpUZF_XVyUXGls_av0DWw5UoGGi2RxoWRdUD429va5w
-A benchmark study reveals ModernBert outperforms larger language models on unseen social media data for depression detection.
-Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
-
+Keine in den erfolgreich abgerufenen Ergebnisseiten.
 
 ## Unklar – zur Nachprüfung
+
+Pythia price today, PYTHIA to USD live price, marketcap ...
+https://coinmarketcap.com/currencies/pythia/
+The live Pythia price today is $0.00008269 USD with a 24-hour trading volume of $0 USD. We update our PYTHIA to USD price in real-time.
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
 PYTHIA | NEW PIECES DROPPING TUESDAY 🦅 14 ...
 https://www.instagram.com/p/Df5j0QwD9HW/
 NEW PIECES DROPPING TUESDAY 14 new pieces release on tuesday november 24th alongside our BFCM sale. All new items will be discounted for the holiday, ...
 Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
+Pythia Price (PYTHIA/USD) Today | Live Price, Market Cap ...
+https://www.google.com/goto?url=CAESZAHEIkXXTiLNBVzwc_BAdk0jSDVibBSR4fxERKDmfy3_mrT7WGzlLpxW3Ipy7EL3XWQNkSHdVNOOh9fYUy49CU6XP06PBY4BQA7eK_snfekw1TaE4U6cKOFgxDgLoEVqmCA0v7w
+1 Pythia currently costs $0, up 1.58% in the last 24 hours. View the live Pythia price in USD (PYTHIA/USD), chart, market cap and 24-hour volume.
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
 Pythia
-http://pythiacrafting.com/
+https://www.google.com/goto?url=CAESzgEBxCJF1w6mSAc1rflozYLHauuPNLk4BCj94YREGdUNjKTStxWj6j7BTgmXr1Co0nN4nhcdieT2kBAI_xES-4LSKFbZhku17t99DFr_U6lrAM_ZaH_--TGy6a536vH2nuPkSa7zqkPZOtKHtsAOG4JdV3m65DD-5GpeOBBvDD0VllKjX_0foR2n13X4LEPjGVyG8GL_PAio6OgQVJR9HvmH2bhrcIEqMcwiom1iK5kGPW2JlkYQJCHYTsumZqvvNfI4ka8Vj4AR6U6-ViU6FQ
+NEW PIECES DROPPING TUESDAY 14 new pieces release on tuesday november 24th alongside our BFCM sale. All new items will be discounted for the holiday,...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Privacy Policy - Pythia
+https://www.google.com/goto?url=CAESZgHEIkXXxSr16AUqnWO4kvzGurXZNKo2ASyPg_Hl8LVU9mrzEsaapO_WnonjC0oyxq0Z8X8c5aLDso69maUY5Rpw2bjrO23X88yJrM3XlBL_TtlCWiRuzkji1mqn9M6B1b1D8aIgJw
+This Privacy Policy explains how Pythia Insurance, LLC (“Pythia”, “we”, “us”) collects, uses, shares and protects personal information when you use the Pythia ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Pythia
+https://www.google.com/goto?url=CAESVwHEIkXXQFGGKzdj3SiB87jSfqi5E1K-JbIC7cbsZZQBLBHqIW9wI3p4CJRXF5jUWa3mUuWK07h1zO3lL4fxk8gG4W_U2zBQ5QQWU1g2qOB30sxc_zQA3g
 Für diese Seite sind keine Informationen verfügbar.
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-PYTHIA to THB: PYTHIA Price in Thai Baht
-https://www.google.com/goto?url=CAESagHEIkXXV9068wbHZyih3SesiwYLvO-YJF_cQwzWvwXq8ACYqUbwoJgtihVN4lARjuTuwsOAte0L7gr1FgRQx7IVwPnNE1svwQVD9pdkOKFZKd1AXCsSwq6Y0oeRdSJ6nvjRLOUDxNR3Zzk
-PYTHIA (PYTHIA) is worth ฿0.00338759 today, which is a 0.5% decline from an hour ago and a 5.4% increase since yesterday.
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Pythia Games
-https://www.google.com/goto?url=CAESYgHEIkXX3KvlkftbuuwHUDMKiuHGdrD0Oz62ltNSmLF0N0RezdvpLRVD1m3iOAO17voxmLKUMUFWQ1qFIbamKf1CbOkYWS9M9WDTud120ruYXh3CB7O3bupvHnlPJ7JTqZ1R
-Pythia Games is an indie game publisher.
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-✨🔮 TWO LEGENDARY WOMEN OF GREEK MYTHOLOGY ...
-https://www.google.com/goto?url=CAESzwEBxCJF1_1w-cDXqYf_D5sm2euWXi4pBCWvMnQFgRS9gFRbmD8xbH2u90kqxhZQTnhVMeGRuglpri5jNDfyzi_hr3l7J9lGVzNQOQlyWIM8pQkvIQ61ePZc5Qah8drITgxYSVt7N-I4zXNaVOrZPDhZUTWOfDWEbIQ9OR81tU65N0G5HBEHhi17tUHAl7v3Cevir9TKENHFrwcNCrGbUhNu3SRXuO9vf_J2kqztqQ2qMgTtVb8JDosF5toP1p9K_bWdKle0E9ss66Jp3etzi48
-The legendary priestess of Apollo, Pythia was one of the most powerful and respected oracles of the ancient world. Kings, warriors and travellers sought her ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-How Better Recognition Can Support Retention
-https://www.google.com/goto?url=CAESqAEBxCJF185ufYRaWp5fOHig1kuEgi-Q7H0hP9GJdDMH4xDNcfgAtx8m2vBTn0NiXTERCMCsmJsHDMZrohjb9IQsmD6zFGOz3SqzHTUJdCR_UkgAlaXtMoCnahAFg3dFqIJU0h48mCM22_2ZjoSvGXK6GE1a7KDmU0rTKw76DqmB-YQmJ5Bq8HjLWp5WPzSUFZyfaQGK-eCJhrSFJ4zYDF88C9z4jH57AMU
-Pythia Scorecard uses checkout hardware and AI to analyze customer-service interactions for defined behaviors, such as greeting and acknowledging customers,
 Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
 
 ## Andere Pythias
 
 Oracle of Delphi: Pythia - Archaeology & Art on ...
-https://x.com/archaeologyart/status/2123249108010086538
-Pythia - Based on a drawing of the Oracle of Delphi on a 2500-year-old Greek kylix. Pythia T-Shirt, Sweatshirt & Hoodie
-Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
-
-At Delphi, people travelled from across the ancient Greek world ...
-https://www.google.com/goto?gsessionid=qsBtsD5aWSiSZtxN7lQIrPiM2phjIyyWGU5vfz5fE_Mz9aq5vt4FxQ&url=CAESaAHEIkXX75HV6f2c7TRDkhRfCJqxj83TY3SQi-TgiCJyfqOoPuAZ7Kw-7qGgyYjepri7-7qhocUJDZQljanE2ItGE-Lg5H2xPgTp1MIHxSePRQFhXK35ycwAtqTUGaNONt770bxWU12D
-At Delphi, people travelled from across the ancient Greek world to consult the Oracle. Her name was Pythia. She delivered prophecies while seated inside the ...
+https://www.google.com/goto?url=CAESdAHEIkXXdmsvwUY0W7zN-B8uDrtqqkSbxnJRtD70MLeU6ZPxllG_AkUcJtQ5XthXfKngbAhwbxTMYaM6wL9e9HQRhhO_LFhec2gLiQ-Ykk2TpSzCpAWxb31mwY8nfujX_1UMR835UpgqxNvGXSXrazmjY62U
+Oracle of Delphi: Pythia - Based on a drawing of the Oracle of Delphi on a 2500-year-old Greek kylix.
 Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
 
