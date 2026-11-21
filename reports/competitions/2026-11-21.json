@@ -1,0 +1,292 @@
+{
+  "date": "2026-11-21",
+  "checked_at": "2026-11-21T15:28:00+00:00",
+  "competitions": [
+    {
+      "id": "tig",
+      "name": "The Innovation Game",
+      "description": "Live algorithm submissions, public source branches and protocol status. Daily snapshots are not a replay of every blockchain block.",
+      "checks": [
+        {
+          "source_id": "tig-live",
+          "depth": "deep",
+          "status": "unvollständig",
+          "url": "https://github.com/tig-foundation/tig-monorepo",
+          "stats": {
+            "baseline": false,
+            "block_id": "a799bb3e77b8a5568d57fa0a04c087fc",
+            "block_height": 1436888,
+            "round": 143,
+            "records": 794,
+            "depth": "deep",
+            "coverage": "daily block snapshot; not an exhaustive block history",
+            "source_checks": 30,
+            "pending_sources": 523,
+            "public_branches": 717,
+            "source_errors": 0,
+            "baseline_content_uninspected": 597,
+            "source_coverage": "partial: pending branches are retained for later runs"
+          },
+          "warnings": [],
+          "errors": [
+            "TIG source coverage incomplete: 523 branches pending after 30 checks (max_source_checks=30); no pending source snapshot was advanced"
+          ]
+        },
+        {
+          "source_id": "tig-papers",
+          "depth": "deep",
+          "status": "ok",
+          "url": "https://arxiv.org",
+          "stats": {
+            "baseline": false,
+            "pages": 1,
+            "papers_observed": 0,
+            "cutoff": "2026-11-18T16:17:15.080654Z",
+            "seed_papers": 0
+          },
+          "warnings": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "sakana-core-war",
+      "name": "Sakana AI — Core War / Digital Red Queen",
+      "description": "Competitive assembly-program research framework. No continuously operated public submission leaderboard has been verified.",
+      "checks": [
+        {
+          "source_id": "drq-code",
+          "depth": "standard",
+          "status": "ok",
+          "url": "https://github.com/SakanaAI/drq",
+          "stats": {
+            "files": 653,
+            "baseline": false,
+            "depth": "standard",
+            "commit": "6b2f4459f9dc53f3e533ed5f1263129df71067d7",
+            "changes": 0,
+            "diffs_attempted": 0,
+            "diffs_omitted_by_limit": 0
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "drq-project",
+          "depth": "standard",
+          "status": "ok",
+          "url": "https://pub.sakana.ai/drq/",
+          "stats": {
+            "baseline": false,
+            "characters": 44337,
+            "javascript_evaluated": false,
+            "embedded_json_blocks": 0,
+            "linked_resources": 18
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "core-war-papers",
+          "depth": "standard",
+          "status": "ok",
+          "url": "https://arxiv.org",
+          "stats": {
+            "baseline": false,
+            "pages": 1,
+            "papers_observed": 1,
+            "cutoff": "2026-11-18T16:17:17.863530Z",
+            "seed_papers": 1
+          },
+          "warnings": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "sakana-sudoku",
+      "name": "Sakana AI — Sudoku-Bench research and status",
+      "description": "The official repository currently marks Sudoku-Bench discontinued; watch for status changes, benchmark updates and new research.",
+      "checks": [
+        {
+          "source_id": "sudoku-repository",
+          "depth": "deep",
+          "status": "ok",
+          "url": "https://github.com/SakanaAI/Sudoku-Bench",
+          "stats": {
+            "files": 1,
+            "baseline": false,
+            "depth": "deep",
+            "commit": "48fd26702ecedbecfe1ffdd3edc91a346c1137e8",
+            "changes": 0,
+            "diffs_attempted": 0,
+            "diffs_omitted_by_limit": 0
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "sudoku-project",
+          "depth": "light",
+          "status": "ok",
+          "url": "https://pub.sakana.ai/sudoku/",
+          "stats": {
+            "baseline": false,
+            "characters": 8635,
+            "javascript_evaluated": false,
+            "embedded_json_blocks": 0,
+            "linked_resources": 26
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "sudoku-papers",
+          "depth": "light",
+          "status": "ok",
+          "url": "https://arxiv.org",
+          "stats": {
+            "baseline": false,
+            "pages": 1,
+            "papers_observed": 2,
+            "cutoff": "2026-11-18T16:17:22.987791Z",
+            "seed_papers": 1
+          },
+          "warnings": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "assembly-alife",
+      "name": "Assembly, program evolution and artificial life",
+      "description": "Related research, including Google's Paradigms of Intelligence team; these publications are not Sakana competition entries.",
+      "checks": [
+        {
+          "source_id": "google-poi-publications",
+          "depth": "deep",
+          "status": "ok",
+          "url": "https://github.com/paradigms-of-intelligence/.github",
+          "stats": {
+            "files": 1,
+            "baseline": false,
+            "depth": "deep",
+            "commit": "484b75fa65e00cd7d6ace482f00cad0bef45fa39",
+            "changes": 0,
+            "diffs_attempted": 0,
+            "diffs_omitted_by_limit": 0
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "google-computational-life-code",
+          "depth": "light",
+          "status": "ok",
+          "url": "https://github.com/paradigms-of-intelligence/cubff",
+          "stats": {
+            "files": 60,
+            "baseline": false,
+            "depth": "light",
+            "commit": "f212e849027c98fcf4b242eccfb5fed435223e23",
+            "changes": 0,
+            "diffs_attempted": 0,
+            "diffs_omitted_by_limit": 0
+          },
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "source_id": "assembly-alife-papers",
+          "depth": "light",
+          "status": "ok",
+          "url": "https://arxiv.org",
+          "stats": {
+            "baseline": false,
+            "pages": 1,
+            "papers_observed": 4,
+            "cutoff": "2026-11-18T16:17:32.758952Z",
+            "seed_papers": 4
+          },
+          "warnings": [],
+          "errors": []
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "tig:submission:code:c004_a107:fede3034dd3b3b899311",
+      "kind": "submission",
+      "title": "TIG there_v11: merged",
+      "url": "https://github.com/tig-foundation/tig-monorepo/tree/vector_search/there_v11/tig-algorithms/",
+      "detail": "Adoption: 67.22% → 60.25%",
+      "metadata": {
+        "record_kind": "code",
+        "algorithm_id": "c004_a107",
+        "stage": "merged",
+        "state": {
+          "block_confirmed": 1335714,
+          "round_submitted": 133,
+          "round_pushed": 135,
+          "round_active": 137,
+          "round_merged": 138,
+          "banned": false
+        },
+        "details": {
+          "name": "there_v11",
+          "player_id": "0x1884f0fe1208f38a1433b706790e22be9fed1f7c",
+          "challenge_id": "c004",
+          "algorithm_id": null,
+          "fee_paid": "10000000000000000000"
+        },
+        "adoption": 0.6024697184728314,
+        "compile_success": true,
+        "block_id": "a799bb3e77b8a5568d57fa0a04c087fc",
+        "height": 1436888,
+        "public": true
+      },
+      "source_id": "tig-live",
+      "competition_id": "tig",
+      "detected_at": "2026-11-21T15:28:00+00:00",
+      "key": "tig-live:tig:submission:code:c004_a107:fede3034dd3b3b899311"
+    },
+    {
+      "id": "tig:submission:code:c001_a127:89efaf67d9437e974b6c",
+      "kind": "submission",
+      "title": "TIG sat_exact_sp128: merged",
+      "url": "https://github.com/tig-foundation/tig-monorepo/tree/satisfiability/sat_exact_sp128/tig-algorithms/",
+      "detail": "Adoption: 0.00% → 7.48%",
+      "metadata": {
+        "record_kind": "code",
+        "algorithm_id": "c001_a127",
+        "stage": "merged",
+        "state": {
+          "block_confirmed": 1357555,
+          "round_submitted": 135,
+          "round_pushed": 137,
+          "round_active": 139,
+          "round_merged": 140,
+          "banned": false
+        },
+        "details": {
+          "name": "sat_exact_sp128",
+          "player_id": "0x003551a316597a1ea553f3498d246499ef76905c",
+          "challenge_id": "c001",
+          "algorithm_id": null,
+          "fee_paid": "10000000000000000000"
+        },
+        "adoption": 0.07477330812100057,
+        "compile_success": true,
+        "block_id": "a799bb3e77b8a5568d57fa0a04c087fc",
+        "height": 1436888,
+        "public": true
+      },
+      "source_id": "tig-live",
+      "competition_id": "tig",
+      "detected_at": "2026-11-21T15:28:00+00:00",
+      "key": "tig-live:tig:submission:code:c001_a127:89efaf67d9437e974b6c"
+    }
+  ],
+  "error_count": 1
+}
