@@ -1207,10 +1207,67 @@
       "url": "https://zhuanlan.zhihu.com/p/2096482642027983491"
     }
   },
-  "last_attempt_at": "2026-11-21T14:56:49+00:00",
+  "last_attempt_at": "2026-11-22T14:55:18+00:00",
   "last_errors": [],
-  "last_success_at": "2026-11-21T14:56:49+00:00",
-  "pending": {},
+  "last_success_at": "2026-11-22T14:55:18+00:00",
+  "pending": {
+    "https://www.google.com/goto?url=CAESVwHEIkXXHMOLrnRMBT_22iLERp_Ga6cH8-zFHjvDVC3pJ9uhVp6-dVLc2y4VNDwnYdADuC-iyX2WaOa27UjqV4Rb-xyeMT2Y8gkuUUxItrnU4bpaBbJa4A": {
+      "first_seen_at": "2026-11-22T14:55:18+00:00",
+      "google_date": "vor 1 Tag",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... language model from Qwen. It is suited for coding, professional workflows ... Pythia 70m Deduped launched by eleutherai. Open source. View model details ...",
+      "title": "AI News · Model Launches & Price Changes - BenchGecko",
+      "url": "https://www.google.com/goto?url=CAESVwHEIkXXHMOLrnRMBT_22iLERp_Ga6cH8-zFHjvDVC3pJ9uhVp6-dVLc2y4VNDwnYdADuC-iyX2WaOa27UjqV4Rb-xyeMT2Y8gkuUUxItrnU4bpaBbJa4A"
+    },
+    "https://www.google.com/goto?url=CAESWAHEIkXX1fqC3-n2SSKRrqc8X0IVLl0uVoy09UWXYPrlZ0XUPHIMS2ktM0aIwaLVFYluQcrM8x91Es7ldTXH_kRFJY56wjQISoUwxezGB1Cyw9SZORzaz9U": {
+      "first_seen_at": "2026-11-22T14:55:18+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Databricks' model research group (DBRX). 18 research roles#38EleutherAIUS · 2020. Non-profit open research collective (GPT-NeoX, Pythia, the Pile).",
+      "title": "Open models & research: 14 companies ranked - AGIX",
+      "url": "https://www.google.com/goto?url=CAESWAHEIkXX1fqC3-n2SSKRrqc8X0IVLl0uVoy09UWXYPrlZ0XUPHIMS2ktM0aIwaLVFYluQcrM8x91Es7ldTXH_kRFJY56wjQISoUwxezGB1Cyw9SZORzaz9U"
+    },
+    "https://www.google.com/goto?url=CAESZQHEIkXXkjdryrdOkRP_bwnJEmX-v6o5i0ZKiQIg7n4_dmZvrScVYMOpx0VBa3v1slcXfojELk7YVF6imTRrbOop-uBWVGQZr2uzEpwTR0ExfJ8I5rtejgGPLlwQWpQYiXiLwuEZ": {
+      "first_seen_at": "2026-11-22T14:55:18+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "↳ EleutherAI GPT-Neo, GPT-J, and GPT-NeoX ↳ Pythia ↳ Google T5 and FLAN-T5 ↳ BigScience BLOOM and BLOOMZ Open-weight models take a different approach ...",
+      "title": "Share with Everyone. 7 Free Open-Weight AI Models To ...",
+      "url": "https://www.google.com/goto?url=CAESZQHEIkXXkjdryrdOkRP_bwnJEmX-v6o5i0ZKiQIg7n4_dmZvrScVYMOpx0VBa3v1slcXfojELk7YVF6imTRrbOop-uBWVGQZr2uzEpwTR0ExfJ8I5rtejgGPLlwQWpQYiXiLwuEZ"
+    },
+    "https://www.google.com/goto?url=CAESaAHEIkXXUy9BXx1JjCvOmQcLwz0SaZ9oo7vYRl2jU3iYcJkfXIyAKcjoTwmrv90RY8MlxHKWRVRKvxIsNvIHRljQ1sHIDDVc2iIbelOOoqY1AHXMWygVl7ZR2y5RmU4MD3Xnt-f5ODjN": {
+      "first_seen_at": "2026-11-22T14:55:18+00:00",
+      "google_date": "",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "... Language Model unexpectedly enters this ancient metaphysical problem not ... Pythia, interpreted within established ritual conventions and attributed ...",
+      "title": "Pattern Humanism",
+      "url": "https://www.google.com/goto?url=CAESaAHEIkXXUy9BXx1JjCvOmQcLwz0SaZ9oo7vYRl2jU3iYcJkfXIyAKcjoTwmrv90RY8MlxHKWRVRKvxIsNvIHRljQ1sHIDDVc2iIbelOOoqY1AHXMWygVl7ZR2y5RmU4MD3Xnt-f5ODjN"
+    },
+    "https://www.google.com/goto?url=CAESaQHEIkXXLLKXpevZmR_I9gKIqp4ZZC-yI7Y_xTpOaY3Z6MEOu3R7Ma2oulr0ZrfW47rHIPlzRmIbX_cjR1EjuJ0EFCPvE_PVZmdJxQRZtNsEpO8vwPnkbnIsY2VU-T1k-y2QxRMv9pCDKQ": {
+      "first_seen_at": "2026-11-22T14:55:18+00:00",
+      "google_date": "vor 1 Tag",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "language model”, “lightweight language model”, “efficient language model”. ... Pythia (160M) [150] by EleutherAI has been used across multiple domains such ...",
+      "title": "A Systematic Review of Architectures, Scaling, Applications ...",
+      "url": "https://www.google.com/goto?url=CAESaQHEIkXXLLKXpevZmR_I9gKIqp4ZZC-yI7Y_xTpOaY3Z6MEOu3R7Ma2oulr0ZrfW47rHIPlzRmIbX_cjR1EjuJ0EFCPvE_PVZmdJxQRZtNsEpO8vwPnkbnIsY2VU-T1k-y2QxRMv9pCDKQ"
+    },
+    "https://www.google.com/goto?url=CAEShwEBxCJF17B0eh4cEerKTYduO6Zl3bt13ioFUn679IYtiQcxZbrgD_EdOxkZY1qithoKAnI9GjJVwsI1ZI45pHV53Q01WaT6xOzhp_3GNiY64fQm9uo3AVa7Z0VhmU_Cz7kYADhditnf4sOYWa1IKX9VZ9pFRUmDPAVgUSycVbGLhdzElrOvyDI": {
+      "first_seen_at": "2026-11-22T14:55:18+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... language model ... Prominent examples include Meta's LLaMA series, EleutherAI's Pythia series, StabilityAI's StableLM series, and Berkeley AI Research's OpenLLaMA ...",
+      "title": "https://www.meta.ai/share/a/191b06a6-771a-493b-a5fb- ...",
+      "url": "https://www.google.com/goto?url=CAEShwEBxCJF17B0eh4cEerKTYduO6Zl3bt13ioFUn679IYtiQcxZbrgD_EdOxkZY1qithoKAnI9GjJVwsI1ZI45pHV53Q01WaT6xOzhp_3GNiY64fQm9uo3AVa7Z0VhmU_Cz7kYADhditnf4sOYWa1IKX9VZ9pFRUmDPAVgUSycVbGLhdzElrOvyDI"
+    },
+    "https://www.linkedin.com/pulse/open-weights-data-american-ai-leadership-jose-m-plehn-ph-d--f4dhe": {
+      "first_seen_at": "2026-11-22T14:55:18+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... EleutherAI's Pythia-12B, are still computing a probability for each next ... language model available today. None of these methods touches a single ...",
+      "title": "Open Weights and Open Data for American AI Leadership",
+      "url": "https://www.linkedin.com/pulse/open-weights-data-american-ai-leadership-jose-m-plehn-ph-d--f4dhe"
+    }
+  },
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
