@@ -1,0 +1,40 @@
+[
+  {
+    "author": "Vincent Cheng",
+    "baseScore": 16,
+    "id": "sgJrCMqguWoJqegbN",
+    "postedAt": "2026-11-22T03:03:14.604Z",
+    "section": "Frontpage",
+    "title": "Eval awareness remains an unsolved problem",
+    "topicScore": 14,
+    "url": "https://www.lesswrong.com/posts/sgJrCMqguWoJqegbN/eval-awareness-remains-an-unsolved-problem",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/bbff5e9987b3a20872f44e173e1924f7550f62804ff716b0ff0a9fefd1ddd4a1/gk2ftqr97owzk78plsob  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/8dda3e7615b44da822ff577713f84b2c62b97868e53c2a7f0bd342af6789fd13/pwouwkbdoaj15c56nrpm  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/2e5279a8d87e4efa3dac087686ed2ec9ceb30a6642a9ed8e464427ff79620b66/qjdoerwx22pccokeci3n  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/6cc08773ee6f8a8bbee6a2985b3e0a0ccca315b4a1f16b9d54493de3a37ca3cc/uc9ykte1qupoqqq9dech  ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/9e45e593cab5140650559e17ac4563080527e49ca0ed3ab6eb99a82a6012199c/qtnaiyofojc3ev4urhnd  "
+    ],
+    "visualizationScore": 37,
+    "wordCount": 2332
+  },
+  {
+    "author": "jonathanbreitg",
+    "baseScore": 33,
+    "id": "r2aAGgfFcFfRikEdb",
+    "postedAt": "2026-11-22T00:59:41.101Z",
+    "section": "Frontpage",
+    "title": "Why models believe in skepticism",
+    "topicScore": 6,
+    "url": "https://www.lesswrong.com/posts/r2aAGgfFcFfRikEdb/why-models-believe-in-skepticism",
+    "visualEvidence": [
+      "figure       I very much did not enjoy reading \"the internet is simulated by a harness\". So, in order to prevent an inadvertent cyberattack, I clarified to the model that this is a",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795260755/lexical_client_uploads/pbsonkcfrjuqfym0xrg9.png   ",
+      "figure     I very much did not enjoy reading \"the internet is simulated by a harness\".  So, in order to prevent an inadvertent cyberattack, I clarified to the model that this is ac",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795261005/lexical_client_uploads/xedayflfh8jekg1libvv.png   I very much did not enjoy reading \"the internet ",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795261369/lexical_client_uploads/rtfirre29lbh01dxiuc1.png  So, in order to prevent an inadvertent cyberattac"
+    ],
+    "visualizationScore": 9,
+    "wordCount": 2332
+  }
+]
