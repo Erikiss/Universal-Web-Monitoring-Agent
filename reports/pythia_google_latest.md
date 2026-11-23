@@ -1,159 +1,144 @@
 # Pythia – tägliche Google-Websuche
 
-2026-11-22T14:55:18+00:00
+2026-11-23T18:46:27+00:00
 
-Neu vorgemerkt: 7 | Noch zu versenden: 7
-Letzte vollständig erfolgreiche Suche: 2026-11-22T14:55:18+00:00
+Neu vorgemerkt: 6 | Noch zu versenden: 6
+Letzte vollständig erfolgreiche Suche: 2026-11-23T18:46:27+00:00
 
 Google-Websuche via SerpApi; keine Beschränkung auf News, Dateityp oder Quellsprache.
 Google-Datumsfilter sind keine vollständige Publikationsdatenbank. Titel/Snippets werden heuristisch geprüft.
 Unklare Treffer werden dokumentiert und nicht als bereits gemeldet gespeichert.
 
 - 24 Stunden: https://www.google.com/search?q=pythia&tbs=qdr%3Ad
-- Überlappung/Nachholen: 3 Tage: https://www.google.com/search?q=pythia&tbs=qdr%3Ad3
-- Ergänzende Modellsuche: 3 Tage: https://www.google.com/search?q=pythia+%28EleutherAI+OR+%22GPT-NeoX%22+OR+%22language+model%22+OR+Sprachmodell+OR+%22mechanistic+interpretability%22%29&tbs=qdr%3Ad3
+- Überlappung/Nachholen: 4 Tage: https://www.google.com/search?q=pythia&tbs=qdr%3Ad4
+- Ergänzende Modellsuche: 4 Tage: https://www.google.com/search?q=pythia+%28EleutherAI+OR+%22GPT-NeoX%22+OR+%22language+model%22+OR+Sprachmodell+OR+%22mechanistic+interpretability%22%29&tbs=qdr%3Ad4
 
 ## Sammelmeldung – vorgemerkte Treffer dieses Laufs
 
-Open Weights and Open Data for American AI Leadership
-https://www.linkedin.com/pulse/open-weights-data-american-ai-leadership-jose-m-plehn-ph-d--f4dhe
-... EleutherAI's Pythia-12B, are still computing a probability for each next ... language model available today. None of these methods touches a single ...
-Erstmals gefunden: 2026-11-22T14:55:18+00:00
+Persistent Sparse Autoencoders: Learning Feature ...
+https://arxiv.org/abs/2607.17117
+The comparison includes seven Pythia models ranging from Pythia-160M to Pythia ... We find feature partners separately for each language model (Pythia-160M and ...
+Erstmals gefunden: 2026-11-23T18:46:27+00:00
+
+Post
+https://x.com/BlancheMinerva/status/2124241027666158013
+20h. Hi Stella (@BlancheMinerva), first, thank you for what you've built with EleutherAI. Open work like Pythia and the evaluation harness has meant a lot ...
+Erstmals gefunden: 2026-11-23T18:46:27+00:00
+
+The Inevitability of Convergence: A Ramsey-Theoretic ...
+https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=6474658&mirid=1
+It does not explain why a vision transformer and a language model ... I tested Predictions 1 and 3 using EleutherAI's Pythia model suite [Biderman et al., ...
+Erstmals gefunden: 2026-11-23T18:46:27+00:00
+
+AI Secret: Concept Energy Reveals How LLMs Learn #Shorts
+https://www.youtube.com/shorts/ddiK6P2Qm5s
+Why does a language model “start caring” about nouns, syntax, and meaning ... Pythia 410M and 1B, the research suggests Concept Energy can rise before ...
+Erstmals gefunden: 2026-11-23T18:46:27+00:00
 
 A Systematic Review of Architectures, Scaling, Applications ...
-https://www.google.com/goto?url=CAESaQHEIkXXLLKXpevZmR_I9gKIqp4ZZC-yI7Y_xTpOaY3Z6MEOu3R7Ma2oulr0ZrfW47rHIPlzRmIbX_cjR1EjuJ0EFCPvE_PVZmdJxQRZtNsEpO8vwPnkbnIsY2VU-T1k-y2QxRMv9pCDKQ
+https://www.mdpi.com/2504-2289/10/12/400/pdf
 language model”, “lightweight language model”, “efficient language model”. ... Pythia (160M) [150] by EleutherAI has been used across multiple domains such ...
-Erstmals gefunden: 2026-11-22T14:55:18+00:00
+Erstmals gefunden: 2026-11-23T18:46:27+00:00
 
 Share with Everyone. 7 Free Open-Weight AI Models To ...
-https://www.google.com/goto?url=CAESZQHEIkXXkjdryrdOkRP_bwnJEmX-v6o5i0ZKiQIg7n4_dmZvrScVYMOpx0VBa3v1slcXfojELk7YVF6imTRrbOop-uBWVGQZr2uzEpwTR0ExfJ8I5rtejgGPLlwQWpQYiXiLwuEZ
+https://www.instagram.com/p/Df8sMign9kQ/
 ↳ EleutherAI GPT-Neo, GPT-J, and GPT-NeoX ↳ Pythia ↳ Google T5 and FLAN-T5 ↳ BigScience BLOOM and BLOOMZ Open-weight models take a different approach ...
-Erstmals gefunden: 2026-11-22T14:55:18+00:00
-
-https://www.meta.ai/share/a/191b06a6-771a-493b-a5fb- ...
-https://www.google.com/goto?url=CAEShwEBxCJF17B0eh4cEerKTYduO6Zl3bt13ioFUn679IYtiQcxZbrgD_EdOxkZY1qithoKAnI9GjJVwsI1ZI45pHV53Q01WaT6xOzhp_3GNiY64fQm9uo3AVa7Z0VhmU_Cz7kYADhditnf4sOYWa1IKX9VZ9pFRUmDPAVgUSycVbGLhdzElrOvyDI
-... language model ... Prominent examples include Meta's LLaMA series, EleutherAI's Pythia series, StabilityAI's StableLM series, and Berkeley AI Research's OpenLLaMA ...
-Erstmals gefunden: 2026-11-22T14:55:18+00:00
-
-Open models & research: 14 companies ranked - AGIX
-https://www.google.com/goto?url=CAESWAHEIkXX1fqC3-n2SSKRrqc8X0IVLl0uVoy09UWXYPrlZ0XUPHIMS2ktM0aIwaLVFYluQcrM8x91Es7ldTXH_kRFJY56wjQISoUwxezGB1Cyw9SZORzaz9U
-Databricks' model research group (DBRX). 18 research roles#38EleutherAIUS · 2020. Non-profit open research collective (GPT-NeoX, Pythia, the Pile).
-Erstmals gefunden: 2026-11-22T14:55:18+00:00
-
-AI News · Model Launches & Price Changes - BenchGecko
-https://www.google.com/goto?url=CAESVwHEIkXXHMOLrnRMBT_22iLERp_Ga6cH8-zFHjvDVC3pJ9uhVp6-dVLc2y4VNDwnYdADuC-iyX2WaOa27UjqV4Rb-xyeMT2Y8gkuUUxItrnU4bpaBbJa4A
-... language model from Qwen. It is suited for coding, professional workflows ... Pythia 70m Deduped launched by eleutherai. Open source. View model details ...
-Erstmals gefunden: 2026-11-22T14:55:18+00:00
-
-Pattern Humanism
-https://www.google.com/goto?url=CAESaAHEIkXXUy9BXx1JjCvOmQcLwz0SaZ9oo7vYRl2jU3iYcJkfXIyAKcjoTwmrv90RY8MlxHKWRVRKvxIsNvIHRljQ1sHIDDVc2iIbelOOoqY1AHXMWygVl7ZR2y5RmU4MD3Xnt-f5ODjN
-... Language Model unexpectedly enters this ancient metaphysical problem not ... Pythia, interpreted within established ritual conventions and attributed ...
-Erstmals gefunden: 2026-11-22T14:55:18+00:00
+Erstmals gefunden: 2026-11-23T18:46:27+00:00
 
 
 ## Modelltreffer
 
-Open Weights and Open Data for American AI Leadership
-https://www.linkedin.com/pulse/open-weights-data-american-ai-leadership-jose-m-plehn-ph-d--f4dhe
-... EleutherAI's Pythia-12B, are still computing a probability for each next ... language model available today. None of these methods touches a single ...
+Persistent Sparse Autoencoders: Learning Feature ...
+https://arxiv.org/abs/2607.17117
+The comparison includes seven Pythia models ranging from Pythia-160M to Pythia ... We find feature partners separately for each language model (Pythia-160M and ...
+Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
+
+Post
+https://x.com/BlancheMinerva/status/2124241027666158013
+20h. Hi Stella (@BlancheMinerva), first, thank you for what you've built with EleutherAI. Open work like Pythia and the evaluation harness has meant a lot ...
+Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
+
+The Inevitability of Convergence: A Ramsey-Theoretic ...
+https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=6474658&mirid=1
+It does not explain why a vision transformer and a language model ... I tested Predictions 1 and 3 using EleutherAI's Pythia model suite [Biderman et al., ...
+Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
+
+AI Secret: Concept Energy Reveals How LLMs Learn #Shorts
+https://www.youtube.com/shorts/ddiK6P2Qm5s
+Why does a language model “start caring” about nouns, syntax, and meaning ... Pythia 410M and 1B, the research suggests Concept Energy can rise before ...
 Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
 
 A Systematic Review of Architectures, Scaling, Applications ...
-https://www.google.com/goto?url=CAESaQHEIkXXLLKXpevZmR_I9gKIqp4ZZC-yI7Y_xTpOaY3Z6MEOu3R7Ma2oulr0ZrfW47rHIPlzRmIbX_cjR1EjuJ0EFCPvE_PVZmdJxQRZtNsEpO8vwPnkbnIsY2VU-T1k-y2QxRMv9pCDKQ
+https://www.mdpi.com/2504-2289/10/12/400/pdf
 language model”, “lightweight language model”, “efficient language model”. ... Pythia (160M) [150] by EleutherAI has been used across multiple domains such ...
 Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
 
 Share with Everyone. 7 Free Open-Weight AI Models To ...
-https://www.google.com/goto?url=CAESZQHEIkXXkjdryrdOkRP_bwnJEmX-v6o5i0ZKiQIg7n4_dmZvrScVYMOpx0VBa3v1slcXfojELk7YVF6imTRrbOop-uBWVGQZr2uzEpwTR0ExfJ8I5rtejgGPLlwQWpQYiXiLwuEZ
+https://www.instagram.com/p/Df8sMign9kQ/
 ↳ EleutherAI GPT-Neo, GPT-J, and GPT-NeoX ↳ Pythia ↳ Google T5 and FLAN-T5 ↳ BigScience BLOOM and BLOOMZ Open-weight models take a different approach ...
 Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
 
-https://www.meta.ai/share/a/191b06a6-771a-493b-a5fb- ...
-https://www.google.com/goto?url=CAEShwEBxCJF17B0eh4cEerKTYduO6Zl3bt13ioFUn679IYtiQcxZbrgD_EdOxkZY1qithoKAnI9GjJVwsI1ZI45pHV53Q01WaT6xOzhp_3GNiY64fQm9uo3AVa7Z0VhmU_Cz7kYADhditnf4sOYWa1IKX9VZ9pFRUmDPAVgUSycVbGLhdzElrOvyDI
-... language model ... Prominent examples include Meta's LLaMA series, EleutherAI's Pythia series, StabilityAI's StableLM series, and Berkeley AI Research's OpenLLaMA ...
+Mini-AGI - Volotat
+https://github.com/volotat/mini-AGI
+Every language model you can actually own today is a model somebody ... For scale, EleutherAI's Pythia-1B took 4,830 A100-hours to read 300B tokens ...
 Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
-
-Open models & research: 14 companies ranked - AGIX
-https://www.google.com/goto?url=CAESWAHEIkXX1fqC3-n2SSKRrqc8X0IVLl0uVoy09UWXYPrlZ0XUPHIMS2ktM0aIwaLVFYluQcrM8x91Es7ldTXH_kRFJY56wjQISoUwxezGB1Cyw9SZORzaz9U
-Databricks' model research group (DBRX). 18 research roles#38EleutherAIUS · 2020. Non-profit open research collective (GPT-NeoX, Pythia, the Pile).
-Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
-
-AI News · Model Launches & Price Changes - BenchGecko
-https://www.google.com/goto?url=CAESVwHEIkXXHMOLrnRMBT_22iLERp_Ga6cH8-zFHjvDVC3pJ9uhVp6-dVLc2y4VNDwnYdADuC-iyX2WaOa27UjqV4Rb-xyeMT2Y8gkuUUxItrnU4bpaBbJa4A
-... language model from Qwen. It is suited for coding, professional workflows ... Pythia 70m Deduped launched by eleutherai. Open source. View model details ...
-Einordnung: EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße
-
-Pattern Humanism
-https://www.google.com/goto?url=CAESaAHEIkXXUy9BXx1JjCvOmQcLwz0SaZ9oo7vYRl2jU3iYcJkfXIyAKcjoTwmrv90RY8MlxHKWRVRKvxIsNvIHRljQ1sHIDDVc2iIbelOOoqY1AHXMWygVl7ZR2y5RmU4MD3Xnt-f5ODjN
-... Language Model unexpectedly enters this ancient metaphysical problem not ... Pythia, interpreted within established ritual conventions and attributed ...
-Einordnung: Pythia im Sprachmodell-/Interpretierbarkeits-Kontext
 
 
 ## Unklar – zur Nachprüfung
 
-Pluot Pythia
-https://www.youtube.com/@PluotPythia/playlists
-Pluot Pythia — original songs, and the shadows I built to hold them. ... Oracle Hours | Pluot Pythia | Moody, Experimental, After-midnight Songs |.
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-God Speed Badges Of Honor Tee S Pythia Camo ...
-https://www.google.com/goto?url=CAESZQHEIkXXDk0fYPlLq9NBVbMTlf6Ze5wIwLweawEzWSjSlE9TG2wajNAV6ZH-l5G6gyS5xtmjEq2QCtv0rgQ5Fs_B4OaIsibneSix3PFEQ8QFzkNWfKyfjCHrUHvTSZN32yC8DDZs
-God Speed Badges Of Honor Tee S Pythia Camo Convertible Cargo Pants 28 Air Jordan 3 Retro White Cement Reimagined 4,8,11,17,18 Available In Store And Online ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Moving onto Pythia... wanna see shiny lights... hopefully // ...
-https://www.google.com/goto?gsessionid=13NrBKZ-fJp9u7z9UEWJulh4LV0RTxb3Vc5oa5w8xTon7XBdysle_w&url=CAESaAHEIkXX6n83zP3mencstLXNu5CvE_22wqkaCvEVc5-mbZtTxqMicuIOJ8Vadu2BNBhx8cei0kZzegimhm0Cmy15F0EJyAOgSsZFqBlOqVQQqZeHn0TWWShH1ntBgWHkMxuSGWfGlpfQ
-Moving onto Pythia... wanna see shiny lights... hopefully // Achilles Survivor // House of Kantrama. @KantramaGaming1 watching now
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Pythia Cap: Partially Conductive on X: "He owns a 400ft ...
-https://www.google.com/goto?url=CAESbQHEIkXXjWiWCyMLcMhxYjijxSWka4Fk4a4nXO491XzdZK8w27GY-ipqzSgE8LgxJGbv0MCz1P94XpDtwTnDP9v3ZqB1mm1yaSJSz7F7i_i_vMVxF6T_ojVAvZwAg2y90Czw_4CNOAk4sP3OtiU
-no joke he doesn't like it and wants to get rid of it and the yacht guys i follow say the 400 foot yacht is actually a mistake because 120 ft is the limit ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Assassin's creed House of the pythia #gaming ...
-https://www.google.com/goto?gsessionid=13NrBKZ-fJp9u7z9UEWJulh4LV0RTxb3Vc5oa5w8xTon7XBdysle_w&url=CAESZwHEIkXXkeMyiTZ2xiXTY10LOJc4T6AygF014vhSRm5It8s-StA54iwT4NyQV63jyjSzfcAvDAD2K7HsQzbGStfsXr2r8dUJTN8N0vEiAEbrNthdT0lky7ubs8LWgPHuOILlqz1NeDc
-Share your videos with friends, family, and the world.
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Not The Subtle Shade Moment on Canada's Drag Race
-https://www.google.com/goto?gsessionid=13NrBKZ-fJp9u7z9UEWJulh4LV0RTxb3Vc5oa5w8xTon7XBdysle_w&url=CAESywEBxCJF1xXbmoiCOUEYsbYRWNpZ9KT_AH4q9Z6cXQ1SCG-rbfDVCK7YRmhmQLKrGDMATsjSTDOzBkWlVq3sEEPQ_V1LaJ9M-J1UrHOnkVvqmYSKWVqpuk9TJhQKquCyUfLOqDYVrqXCSPwDCiswSW7WdnZVKXD8kGzRYh85pIoHJBIMBwm6mKan-2BHu17JI-A_fVlc9Cud8l8hlQ92uVjmGj4lAMhozmAOaxIGmseBdUSsSNZ54QhGOkEH5ujERIWMUBSwfrG_YsR-8A
-In this clip from Canada's Drag Race: All Stars, Priyanka questions Pythia about her elimination and whether she regrets not fighting harder for the 'Golden ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-9ZPsRWGkukYeWg2Z7eZ8NaT...
-https://www.google.com/goto?url=CAESiwEBxCJF1_IwNXK219JgSeevv_C3JkKRfOgOtv-BPAMxVcdWjK7t_-iXaod5A_-6dJTFyIIhfPWrJKexVy8F3ZpJOZLAFG2Tr3L95GIkbE9N9wLnC4PLziuBz5tfhX-8ZT1nz__kF51ZAPiYsjMobBOtsz2MsG9NR6c1N5_sqOMkkVuvG-mwMYWngwuR
-Explore the token balances, holdings and transfer history of 9ZPsRW...ZgE4Y4 on Arkham.
-Einordnung: Pythia-Bezug im Suchauszug nicht belegt
-
-Pythia price today, PYTHIA to USD live price, marketcap ...
-https://coinmarketcap.com/currencies/pythia/
-The live Pythia price today is $0.00008746 USD with a 24-hour trading volume of $0 USD. We update our PYTHIA to USD price in real-time.
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
-Privacy Policy - Pythia
-https://www.google.com/goto?url=CAESZgHEIkXXlRir2e-4Hiij-hS3xpgYQgUL_eUtr-9N0qA47-w1jOPIP8njHHA4yr5cvVyS93nZhi-dY-MzK7Ex7xjIeGs_UPWckDHzEUaA1Ib62iG2NSekiAt9_8XmKLt7lzHkY3Ksng
-This Privacy Policy explains how Pythia Insurance, LLC (“Pythia”, “we”, “us”) collects, uses, shares and protects personal information when you use the Pythia ...
-Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
-
 Pythia
-https://www.google.com/goto?url=CAESVwHEIkXXHHtz0PAgU7ND1qNB8nLv5KEToLTC6dMXHvdh004Epq2YZqrc3RRJuybdOHWPvbx-PMmz9zeWtVWSFgHsJ8nJhD-B__ODnuIABEqhntKoBWbz3w
+http://pythiacrafting.com/
 Für diese Seite sind keine Informationen verfügbar.
 Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
-PYTHIA | tomorrow never comes. tuesday does. new ...
-https://www.google.com/goto?url=CAESZQHEIkXXwkN0Hy-2TVQ6SI_vtcI1T3pU07V70OtxJ_aJI-7z2-K-n703o2HzKoDzeoAUbEyONJUHcmfV-aQHDn59Jj3XZZtG14DcWpYgmuZvZkCsoGrzcXaVssTrlIdaFawOQkMx
-NEW PIECES DROPPING TUESDAY 14 new pieces release on tuesday november 24th alongside our BFCM sale. All new items will be discounted for the holiday, along ...
+The Pythia Project
+http://www.youtube.com/@thepythiaproject6145
+The Pythia Project. @thepythiaproject6145. 5 subscribers•5 videos. More about this channel ...more. More about ... PYTHIA Testing Session. 44 views. 7 years ago.
 Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
-CRACKS musical theater by Pythia Trio - 6 hands on one ...
-https://www.google.com/goto?url=CAESowEBxCJF1502QXjQl0sZu4CFaDQ8b8dP9ANFO8fQPv56K-27tyEJI4ZlaKa4aEKK9_mro56kmkaXJP5-jItofriUTVRPUP1IxxAkr-7sshxfw-IMBaJZXwMgaj6qclcmrjGHLRdIdgBfdAjQRuIDTFv-LhtYFVLhVCEcvU6yoXiN9oYCMPO-lYCgzT5cAl1XspLMYAzcKZFJXwxBtIgCSutamwAz
-Pythia Trio approaches a new theme concerning evolution through rupture, change, and development. Integrity and the crack, certainty and the fear of change ...
+High on Mount Parnassus, in a temple built over a crack ...
+https://www.facebook.com/photo.php?fbid=1807644848036870&set=a.446514220816613&type=3
+At the heart of the sanctuary was the Pythia, the priestess of Apollo. Seated above a sacred underground area, she entered a trance like state and delivered ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Pythia Cap: Partially Conductive
+https://x.com/PythiaR/status/2124910204521492757/photo/1
+@PythiaR. Pythia Cap: Partially Conductive · @PythiaR. President of the United States everyone. 4:57 PM · Nov 23, 2026·. 2,358. Views · 5.
 Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
 Pythia Cap: Partially Conductive on ...
-https://www.google.com/goto?url=CAESbQHEIkXXZgwynaQrXuUq1a3Wu85SKlq-w6P4WRVuiXfpWgvm_jIKeEM8BdcxaOLE5KvlRV7-NPZbMvANVRePw2WT4PNwby2niOjl9e1-DlrwRJJVvQp51ehv4Va8AB-UtnoFXT08RCmr3dVCvsc
-Little personal victory but achieved something I've been working towards my entire professional life today. Keep grinding folks, sometimes it's worth it.
+https://x.com/PythiaR/status/2124876159964037433
+Pythia Cap: Partially Conductive · @PythiaR. All fun and good times but $SOXX is still below the 50/200 MA's both of which are pointing downward & a ton of ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Privacy Policy - Pythia
+https://www.pythiains.com/privacy-policy/
+This Privacy Policy explains how Pythia Insurance, LLC (“Pythia”, “we”, “us”) collects, uses, shares and protects personal information when you use the Pythia ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+CRACKS musical theater by Pythia Trio - 6 hands on one ...
+https://www.technopolis20.com/event-details/cracks-musical-theater-by-pythia-trio-6-hands-on-one-piano
+Pythia Trio approaches a new theme concerning evolution through rupture, change, and development. Integrity and the crack, certainty and the fear of change ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+EP004 — The Price of Pythia · Trailer | Elite Dangerous
+https://youtu.be/Bo-znSkUmUk
+Episode 4, The Price of Pythia, premieres Friday 27 November at 19:00 CET. Channel: https://www.youtube.com/@CommanderJavMarlo All episodes in order: ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Pythia Cap: Partially Conductive
+https://x.com/PythiaR/status/2124895599602663460
+Pythia Cap: Partially Conductive on X: "Might just short some semis". Conversation. @PythiaR. Pythia Cap: Partially Conductive.
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+Apollo, Daphne & the Sacred History of Kitchen Witchcraft
+https://www.youtube.com/shorts/nulFsbP-k5w
+... Pythia delivered prophecies at Apollo's sanctuary, where laurel was part of the sacred traditions surrounding the oracle. Today, I bring that history into ...
+Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
+
+A Book 100 Years in the Making - Classical Wisdom
+https://classicalwisdom.substack.com/p/a-book-100-years-in-the-making-540/comments
+pythia's thread's avatar. pythia's thread · 1d. Liked by Classical Wisdom. The line about scribes copying letters the way an artist copies a flower made me ...
 Einordnung: Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug
 
 GPT-NeoX is EleutherAI's open-source library for p
@@ -161,22 +146,37 @@ https://faun.dev/toolbox/gpt-neox/
 GPT-NeoX is EleutherAI's open-source library for pretraining large language models from scratch on GPU clusters, built on Megatron and DeepSpeed. More than 40 ...
 Einordnung: Pythia-Bezug im Suchauszug nicht belegt
 
-Muses of the sacred spring Pieria Who give glory in song
-https://www.google.com/goto?gsessionid=ngijG7jRoxHjkQtmXtrRKGd44wX0TVtxJGa-SH4fNO5VLzXhDE9JlA&url=CAESgQEBxCJF10Ci8EzA6mVJ8Trn76xhiQWSyeO1Z8f9Sqv50_7j5evyyL6i1udSeZE9hs19hcX798-dvLT28JuAypqwvrtBMi9NJ6ryC1GbCAOC05JXIX3XuXyNmc69oCWg5-oUv-jQOPswWVX-7DZU0xMPTM5Dc7cjiLL-OX-5FdPumpM
-Pythia3h. Muses of the sacred spring Pieria Who ... They were born on Pieria after our Father Cronion Mingled with Memory,7 who rules Eleutherai's hills.
+A Society of AI Scientists
+https://www.alphaxiv.org/abs/2611.society-ai-scientists.pdf
+Laboratories in this study focused on topics ranging from language model finetuning to agent-metascience studies investigating how agents interpret data and ...
+Einordnung: Pythia-Bezug im Suchauszug nicht belegt
+
+120 Essential Large Language Model Concepts Every AI ...
+https://www.facebook.com/pranishdesignershrestha/posts/120-essential-large-language-model-concepts-every-ai-enthusiast-should-know1-llm/1831007727989076/
+120 Essential Large Language Model Concepts Every AI Enthusiast Should Know 1. LLM Fundamentals and Core Concepts Start with the foundations of how...
 Einordnung: Pythia-Bezug im Suchauszug nicht belegt
 
 
 ## Andere Pythias
 
-Jesus Gave Me a Sacred Gift in a Dream | Pythia's 4 Revelations
-https://www.youtube.com/watch?v=AQLGkSjYlCU
-PYTHIA AND JESUS — THE FOUR REVELATIONS ✨ Jesus dream meaning, Oracle of Delphi Pythia, spiritual dream about Jesus, ancient prophecy and artificial ...
+the argo girls went to delphi we asked pythia a question ...
+https://www.instagram.com/p/DgE4HmBCJCm/
+the argo girls went to delphi we asked pythia a question each, i set them alight and am waiting for my answer the belly button of the world. i have an innie ...
 Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
 
-Delphi is on Mount Parnassus in Greece, and for 1000 ...
-https://www.google.com/goto?url=CAES0AEBxCJF16QT8M5-1ds4UKhfI7YUh0fZ1ln3-4i_nkMkVTyAfEpeaFoYK4RVj2VGCaMrE0VPlH5txKu_zb5icxtsE4xAR1YVXy1345_S0TRlXCbeRBiAp8IaXQhddhTQvUgZA37Ss6vA96wo2E--AdpgbRhSud6B1qvPGmLS6gDUgtETC5gSAY28eb1rYcbbbVKWrStOe4DCcxj9vYUB7o3ICT1ifZULBDm61BCwX-RH9X4f0Gmktn2AA3IRC_TIlkZoynSxyUy0vUSMjRp89VhZ
-Deep within the TEMPLE of Apollo, the Pythia spoke in RIDDLES. Her prophecies shaped the course of GREEK history, as kings sought DIVINE guidance to navigate ...
+Word of the day: Delphic : r/VocabWordOfTheDay
+https://www.reddit.com/r/VocabWordOfTheDay/comments/1y2yp73/word_of_the_day_delphic/
+From Delphi, the ancient Greek sanctuary on Mount Parnassus where the Pythia delivered famously ambiguous prophecies. The site was considered the center of ...
+Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
+
+Apollo's Curse at Delphi Shattered Greece | Myth Files #565
+https://www.youtube.com/shorts/oh18oQ7QViA
+... Pythia—her breath caught in the thin vapors rising from the sacred spring—takes her first inhale, the scene shifts from mere stone to the living heart of ...
+Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
+
+The prophecy Of Pythia //
+https://www.instagram.com/p/DgADjI1Rg1Q/
+Pythia was the high priestess at the temple of Apollo in Delphi, Ancient Greece She was widely known and the “oracle of Delphi” and people all over the ...
 Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
 
 Portrait of a Pythian view at Taylor University
@@ -185,7 +185,17 @@ In a sacred, inner sanctum, the Pythia, (head oracle priestess) was said to sit 
 Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
 
 Religion. Ancient Greece. The Pythia, oracle at Delphi. ...
-https://www.google.com/goto?url=CAESzwEBxCJF13TH3-l_h3UP2EDW3FOXSVlVcdJm26mf1FTYQHgUOAjWOO_ra1hr87o3pUXdqPd9QCZOzdeFlC_YJ30gLI-g2gAtZ3SF0cgKKyppBChMQof4WD6_ixWP2D1iribxP95_iDrP-cmF25vSfdiDTsQ3xBpE0ERd3AEfKw-e5cE8wxINZlbQV_neeYzBW2u-DM1f3xGxJKnsWdIHAyR1FG81dhdnGH9Z8QVBSUlaBuirR_URTZmyOGjJzueZUH_V-k0DmKw6UFuxrmiLYZo
+https://www.bridgemanimages.com/en/noartistknown/religion-ancient-greece-the-pythia-oracle-at-delphi-imagery-france-c-1900/nomedium/asset/2638768
 Download stock image by Religion. Ancient Greece. The Pythia, oracle at Delphi. Imagery, France, c.1900.- High quality fine art images, pictures, ...
+Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
+
+The Oracle of Delphi & the Pythia - The Oracle Has Spoken
+https://www.youtube.com/watch?v=1kO79mgkfG4
+THE ORACLE HAS SPOKEN | The Oracle of Delphi & the Pythia | Ancient Greece | History Through Music ONE QUESTION COULD CHANGE A KINGDOM.
+Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
+
+Why the Oracle of Delphi was named after a monster ...
+https://www.youtube.com/shorts/3VCJsxvUd6Y
+... Pythia, the oracle who channeled divine messages from the sanctuary. This breakdown explores the intersection of divine power and mythical origins. By ...
 Einordnung: Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)
 

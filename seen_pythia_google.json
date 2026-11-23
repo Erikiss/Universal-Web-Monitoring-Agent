@@ -1270,10 +1270,59 @@
       "url": "https://zhuanlan.zhihu.com/p/2096482642027983491"
     }
   },
-  "last_attempt_at": "2026-11-22T14:55:18+00:00",
+  "last_attempt_at": "2026-11-23T18:46:27+00:00",
   "last_errors": [],
-  "last_success_at": "2026-11-22T14:55:18+00:00",
-  "pending": {},
+  "last_success_at": "2026-11-23T18:46:27+00:00",
+  "pending": {
+    "https://arxiv.org/abs/2607.17117": {
+      "first_seen_at": "2026-11-23T18:46:27+00:00",
+      "google_date": "vor 4 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "The comparison includes seven Pythia models ranging from Pythia-160M to Pythia ... We find feature partners separately for each language model (Pythia-160M and ...",
+      "title": "Persistent Sparse Autoencoders: Learning Feature ...",
+      "url": "https://arxiv.org/abs/2607.17117"
+    },
+    "https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=6474658&mirid=1": {
+      "first_seen_at": "2026-11-23T18:46:27+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "It does not explain why a vision transformer and a language model ... I tested Predictions 1 and 3 using EleutherAI's Pythia model suite [Biderman et al., ...",
+      "title": "The Inevitability of Convergence: A Ramsey-Theoretic ...",
+      "url": "https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=6474658&mirid=1"
+    },
+    "https://www.instagram.com/p/Df8sMign9kQ/": {
+      "first_seen_at": "2026-11-23T18:46:27+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "↳ EleutherAI GPT-Neo, GPT-J, and GPT-NeoX ↳ Pythia ↳ Google T5 and FLAN-T5 ↳ BigScience BLOOM and BLOOMZ Open-weight models take a different approach ...",
+      "title": "Share with Everyone. 7 Free Open-Weight AI Models To ...",
+      "url": "https://www.instagram.com/p/Df8sMign9kQ/"
+    },
+    "https://www.mdpi.com/2504-2289/10/12/400/pdf": {
+      "first_seen_at": "2026-11-23T18:46:27+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "language model”, “lightweight language model”, “efficient language model”. ... Pythia (160M) [150] by EleutherAI has been used across multiple domains such ...",
+      "title": "A Systematic Review of Architectures, Scaling, Applications ...",
+      "url": "https://www.mdpi.com/2504-2289/10/12/400/pdf"
+    },
+    "https://www.youtube.com/shorts/ddiK6P2Qm5s": {
+      "first_seen_at": "2026-11-23T18:46:27+00:00",
+      "google_date": "vor 10 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Why does a language model “start caring” about nouns, syntax, and meaning ... Pythia 410M and 1B, the research suggests Concept Energy can rise before ...",
+      "title": "AI Secret: Concept Energy Reveals How LLMs Learn #Shorts",
+      "url": "https://www.youtube.com/shorts/ddiK6P2Qm5s"
+    },
+    "https://x.com/BlancheMinerva/status/2124241027666158013": {
+      "first_seen_at": "2026-11-23T18:46:27+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "20h. Hi Stella (@BlancheMinerva), first, thank you for what you've built with EleutherAI. Open work like Pythia and the evaluation harness has meant a lot ...",
+      "title": "Post",
+      "url": "https://x.com/BlancheMinerva/status/2124241027666158013"
+    }
+  },
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
