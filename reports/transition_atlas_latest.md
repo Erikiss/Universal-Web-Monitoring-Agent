@@ -1,12 +1,16 @@
-# Transition-Atlas watch — 2026-11-22T15:40:30Z
+# Transition-Atlas watch — 2026-11-23T19:29:09Z
 
 Originalpaper: https://arxiv.org/abs/2609.12591
-Neue Hinweise: 1 | fehlgeschlagene Quellenchecks: 0
+Neue Hinweise: 2 | fehlgeschlagene Quellenchecks: 0
 Vollständiger Bericht: https://github.com/Erikiss/Universal-Web-Monitoring-Agent/blob/main/reports/transition_atlas_latest.md
 
 GitHub-Aktivität und neue HPI-Links sind Hinweise, kein automatisch bestätigter Atlas-Release.
 
 ## AUTOREN-GITHUB
+
+Kathrin Korte: kat-ko/kat-ko.github.io
+https://github.com/kat-ko/kat-ko.github.io
+Neues öffentliches Repository
 
 Kathrin Korte: PushEvent in marcellobarylli/DJ_Graphyla
 https://github.com/marcellobarylli/DJ_Graphyla
