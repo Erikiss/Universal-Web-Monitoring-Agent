@@ -1,5 +1,5 @@
 # Music-JEPA — Prüfbericht
-2026-11-22T15:36:15+00:00
+2026-11-23T19:26:26+00:00
 
 Tagesalarm: 0 Meldungen.
 Neue Drittanbieter-Signale dieses Laufs: 0 (kein Tagesalarm).
@@ -9,7 +9,7 @@ Nächste Wochensammlung frühestens: 2026-11-28T15:32:47+00:00 (nächster Lauf; 
 Abruffehler in diesem Lauf: 3.
 
 # Music-JEPA — täglicher Alarm
-2026-11-22T15:36:15+00:00
+2026-11-23T19:26:26+00:00
 
 Klare Quellenänderung bedeutet NICHT automatisch: Code und Gewichte veröffentlicht.
 
@@ -63,6 +63,7 @@ OK: GitHub Repository kunfang98927/Timeline-App
 OK: GitHub Repository kunfang98927/YQBD
 OK: GitHub Repository leofan90/Awesome-World-Models
 OK: GitHub Repository matrix-agent/awesome-agentic-world-modeling
+OK: GitHub Repository prateekstark/svs-retnet-jepa
 OK: GitHub Repository ruiling-smartbear/bayin
 OK: GitHub Repository Sound-of-AI-Lab-Open-Science/JEPA-reproduce-music-jepa-lightning
 OK: GitHub Repository Sound-of-AI-Lab-Open-Science/music-understanding-baselines

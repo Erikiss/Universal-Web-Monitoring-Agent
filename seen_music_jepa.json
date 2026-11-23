@@ -30,7 +30,7 @@
     "GitHub Metadaten smikoo1000-svg/Fnf": "FetchError: HTTP 404: https://api.github.com/repos/smikoo1000-svg/Fnf",
     "Hugging Face Modell standardmodelbio/SMB-v1-1.7B-Structure": "FetchError: HTTP 401: https://huggingface.co/api/models/standardmodelbio/SMB-v1-1.7B-Structure"
   },
-  "last_checked": "2026-11-22T15:36:15+00:00",
+  "last_checked": "2026-11-23T19:26:26+00:00",
   "observations": {
     "arxiv": {
       "links": [],
@@ -2603,7 +2603,7 @@
         "https://huggingface.co/papers/2604.22748"
       ],
       "related": true,
-      "stamp": "327ef930757072afc8f560e0046b7dac63523f4fbef767d9c63a8a43ffe8e72d"
+      "stamp": "262ee02656edc0b1a3ec3cd780f889ecdf9870f7acad4db5e8406ff50a8a131f"
     },
     "guangjun1997327/PianoAutomaticAnnotationSystem": {
       "exact_paper": true,
@@ -2758,6 +2758,15 @@
       "links": [],
       "related": false,
       "stamp": "3fa992fdd419668059a3778493bddddce2a31d94fc5bdd4d6e5d9363b126d20a"
+    },
+    "prateekstark/svs-retnet-jepa": {
+      "exact_paper": false,
+      "links": [
+        "https://github.com/prateekstark/svs-retnet-jepa.git",
+        "https://zenodo.org/records/3338373"
+      ],
+      "related": true,
+      "stamp": "5c2bde7b8286be33f287638b19e7f32035a770e8a6794271648e4ee731c46b4c"
     },
     "ruiling-smartbear/bayin": {
       "exact_paper": true,
