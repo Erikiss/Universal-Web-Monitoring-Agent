@@ -30,7 +30,7 @@
     "GitHub Metadaten smikoo1000-svg/Fnf": "FetchError: HTTP 404: https://api.github.com/repos/smikoo1000-svg/Fnf",
     "Hugging Face Modell standardmodelbio/SMB-v1-1.7B-Structure": "FetchError: HTTP 401: https://huggingface.co/api/models/standardmodelbio/SMB-v1-1.7B-Structure"
   },
-  "last_checked": "2026-11-23T19:26:26+00:00",
+  "last_checked": "2026-11-24T19:02:11+00:00",
   "observations": {
     "arxiv": {
       "links": [],
@@ -2603,7 +2603,7 @@
         "https://huggingface.co/papers/2604.22748"
       ],
       "related": true,
-      "stamp": "262ee02656edc0b1a3ec3cd780f889ecdf9870f7acad4db5e8406ff50a8a131f"
+      "stamp": "0d0e3508a506851d740deb9d0c28579a015142cda8d5cf2f2cc7b8c05c5c3f2c"
     },
     "guangjun1997327/PianoAutomaticAnnotationSystem": {
       "exact_paper": true,
