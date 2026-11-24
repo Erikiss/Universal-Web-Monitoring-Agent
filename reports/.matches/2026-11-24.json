@@ -1,0 +1,181 @@
+[
+  {
+    "author": "Daria Teodora Harabor",
+    "baseScore": 10,
+    "id": "QazdpnzTYqARAB8Ed",
+    "postedAt": "2026-11-24T14:46:47.494Z",
+    "section": "Frontpage",
+    "title": "Ghost Hunt: a steering approach to model backdoors",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/QazdpnzTYqARAB8Ed/ghost-hunt-a-steering-approach-to-model-backdoors-1",
+    "visualEvidence": [
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795146120/lexical_client_uploads/ucu4krqxlzbrit2majz2.png  In the following table we describe the trigger an",
+      "img radar_example_bad_mistral7b_beear_beear_L16_neg1p2.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795398489/lexical_client_uploads/jsmevpvrktsggurc0das.png  Some",
+      "img radar_example_best_qwen1p7b_organisms_canary_rare_token_L20_neg0p6.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795398535/lexical_client_uploads/zwuajepyhn84gk",
+      "img radar_example_stays_llama2_7b_price_L16_neg0p8.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795398553/lexical_client_uploads/k6r5zxacwnzrw12jj9sq.png  We also ",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795403964/lexical_client_uploads/jriheroku5tzhutw2jgb.png  It seems that, with no knowledge of the trigger o"
+    ],
+    "visualizationScore": 22,
+    "wordCount": 2427
+  },
+  {
+    "author": "megasilverfist",
+    "baseScore": 4,
+    "id": "mENw8pznQANekHoz5",
+    "postedAt": "2026-11-24T14:24:38.076Z",
+    "section": "Frontpage",
+    "title": "Can forced refusals make models \"snap out\" of a jailbreak?",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/mENw8pznQANekHoz5/can-forced-refusals-make-models-snap-out-of-a-jailbreak",
+    "visualEvidence": [
+      "img msj_results_forest.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795093784/lexical_client_uploads/bcy01ojj96ynhbnjk7vq.png  TL;DR: Getting a single refusal into",
+      "img msj_setup_lw.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795137826/lexical_client_uploads/otf6licrywwocdc3dsym.png  The jailbreak consisted of 64 turns of for",
+      "table     Condition History Then Then Jailbroken 64 forged harmful shots \u2014 4 probe asks Jailbroken + trigger request 64 shots trigger request (model answers) 4 probe asks Jailbroke",
+      "img msj_results_forest.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795093784/lexical_client_uploads/bcy01ojj96ynhbnjk7vq.png  Any-help rate on the 4 probe asks, w",
+      "table     Any-help rate by condition Llama-3.1-8B Qwen2.5-7B Jailbroken 0.93 [0.86, 0.98] 0.52 [0.37, 0.67] Jailbroken + trigger request (model\u2019s own refusal) 0.57 [0.41, 0.73] 0.5"
+    ],
+    "visualizationScore": 34,
+    "wordCount": 2161
+  },
+  {
+    "author": "Samantha Pease",
+    "baseScore": 26,
+    "id": "wBTaEGxNTGAHxCcbD",
+    "postedAt": "2026-11-24T08:52:37.093Z",
+    "section": "Personal/All",
+    "title": "Weird Neurons Mimic Weird Data",
+    "topicScore": 11,
+    "url": "https://www.lesswrong.com/posts/wBTaEGxNTGAHxCcbD/weird-neurons-mimic-weird-data",
+    "visualEvidence": [
+      "figure     Layer 6, neuron 9077, ranked 1st of 352,256 neurons by gradient and by zeroing (3rd by activation) on health-conspiracy (NaturalNews) pretraining pages. Steered in Olmo ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/63698874c7c185acbff56803aaff737baef89d7368557da98d867f11a6c0ed5e/brfftwauuhpnpca45fwk  ",
+      "figure     About 60,000 random Olmo 3 pretraining documents, placed by how Olmo 3 7B represents them and colored by Jev\u2019s weirdness score (darker is weirder). Boxes show three of t",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/9e70befdac8bb5b9d528ec32af6b42dd1eaafe68c6d2c22bf51719fd1f33d663/nvoqsojs06pilpuahvla  ",
+      "figure     All 26 genres tested, by kind (provisional taxonomy). Numbers are writer neurons found (grey: none); strips show the training stages each genre\u2019s text appears in. We ini"
+    ],
+    "visualizationScore": 32,
+    "wordCount": 2019
+  },
+  {
+    "author": "Ian Kahn",
+    "baseScore": 12,
+    "id": "JC6qsAriQdZfXHQj4",
+    "postedAt": "2026-11-24T08:44:41.411Z",
+    "section": "Personal/All",
+    "title": "Judging Corrigibility with a Short Constitution",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/JC6qsAriQdZfXHQj4/judging-corrigibility-with-a-short-constitution-2",
+    "visualEvidence": [
+      "table     Model Agrees with Harms (of 54) Harms\u2019 \u201cCorrigible\u201d judged incorrigible (of 42) Harms\u2019 \u201cIncorrigible\u201d judged corrigible (of 12) Tie Fable 5.2 52 2 0 0 Opus 4.8 48 5 0 1 O"
+    ],
+    "visualizationScore": 4,
+    "wordCount": 4484
+  },
+  {
+    "author": "palkkerr",
+    "baseScore": 1,
+    "id": "axLNrhyh5PjfNsz4y",
+    "postedAt": "2026-11-24T08:44:17.404Z",
+    "section": "Personal/All",
+    "title": "Latent Communication is not Communication",
+    "topicScore": 8,
+    "url": "https://www.lesswrong.com/posts/axLNrhyh5PjfNsz4y/latent-communication-is-not-communication",
+    "visualEvidence": [
+      "figure     The figure above demonstrates a standard latent link training protocol. Generally a latent link is trained by keeping both the sender and receiver LLMs frozen and traini",
+      "img latent_link_training_simple.svg   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795404757/lexical_client_uploads/jdqzhubaqc6wcxyxp4yp.svg   The figure above demonstra",
+      "figure     Objectives and training data sources for 4 major methods we test on Every method trains on various math, code, science and reading comprehension QA tasks, as well as gen",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795410725/lexical_client_uploads/mdo6niggf0bjre7yfjhw.png   Objectives and training data sources for 4 major",
+      "figure     '*' indicates training free methods. If this is the case then you would expect a receiver model with its latent message swapped to perform worse. In all these cases, the"
+    ],
+    "visualizationScore": 57,
+    "wordCount": 2323
+  },
+  {
+    "author": "Brad Taylor",
+    "baseScore": 6,
+    "id": "ubceFEqT6bQWKyAWb",
+    "postedAt": "2026-11-24T05:43:04.899Z",
+    "section": "Frontpage",
+    "title": "Misguided power-seeking \u00a0",
+    "topicScore": 5,
+    "url": "https://www.lesswrong.com/posts/ubceFEqT6bQWKyAWb/misguided-power-seeking",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/6c99e6a9916b4bca152de6f1b34d8b2563036337681d7d65622f2b0817104116/rvui6cstbfdjnk85hoxf  "
+    ],
+    "visualizationScore": 3,
+    "wordCount": 4181
+  },
+  {
+    "author": "Mikhail Samin",
+    "baseScore": 8,
+    "id": "nQFsZfPAPPP2mcRTw",
+    "postedAt": "2026-11-24T04:57:24.170Z",
+    "section": "Personal/All",
+    "title": "2026 Petrov Day house party retrospective",
+    "topicScore": 5,
+    "url": "https://www.lesswrong.com/posts/nQFsZfPAPPP2mcRTw/2026-petrov-day-house-party-retrospective",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/nQFsZfPAPPP2mcRTw/wtlplhacdhi3na6fi7hs   ",
+      "figure     We wanted to celebrate the Petrov Day virtues  Continuing the longstanding LW tradition of celebrating September 26 with buttons that can, but maybe shouldn\u2019t, be presse",
+      "img We wanted to celebrate the Petrov Day virtues   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/nQFsZfPAPPP2mcRTw/hqzp3zw4rfitcvycarg7   W",
+      "figure     The button    We really did not want it to be pressed; the event is about celebrating the virtues of Petrov Day, and it would be sad if someone demonstrated being unvirt",
+      "img The button   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/nQFsZfPAPPP2mcRTw/eub2aswrnfthvsykfkec   The button"
+    ],
+    "visualizationScore": 41,
+    "wordCount": 2640
+  },
+  {
+    "author": "James_T",
+    "baseScore": 4,
+    "id": "AebihZrTgg5tPdSd7",
+    "postedAt": "2026-11-24T04:28:59.966Z",
+    "section": "Frontpage",
+    "title": "Two Kinds of Test-Time Scaling",
+    "topicScore": 15,
+    "url": "https://www.lesswrong.com/posts/AebihZrTgg5tPdSd7/two-kinds-of-test-time-scaling-1",
+    "visualEvidence": [
+      "img Hand-drawn diagram, \"Degrees of Compute Extrapolation\": test-time performance against test-time compute. Three lines rise together up to a dotted line marking the 99th-percenti",
+      "img Line chart from The Markovian Thinker (Fig. 2b): AIME25 score (avg@128) against thinking budget, from about 8K to 128K tokens, with a grey band marking the maximum thinking bud"
+    ],
+    "visualizationScore": 6,
+    "wordCount": 4741
+  },
+  {
+    "author": "Frederik Hytting J\u00f8rgensen",
+    "baseScore": 11,
+    "id": "gqa7aTPom56HvtfnB",
+    "postedAt": "2026-11-23T22:01:13.117Z",
+    "section": "Frontpage",
+    "title": "Two cultures of causal modeling, and why one of them is unlikely to ever work",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/gqa7aTPom56HvtfnB/two-cultures-of-causal-modeling-and-why-one-of-them-is",
+    "visualEvidence": [
+      "figure      If we tentatively accept this logic, we can state the statistical illusion as a lack of invariance: the observed relationship between firefighters and property damages ",
+      "img Figure 1   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795468494/lexical_client_uploads/mifxl438nidifxkcfgft.png   ",
+      "figure      It may seem that this graph is not encoding much. For example, it does not imply any (conditional) independence statements between the variables. However, if we take th",
+      "img Figure 2   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795468583/lexical_client_uploads/c0yvfq4bjqh9qxyhknnf.png   ",
+      "figure      In causal discovery and causal representation learning, one rarely encounters causal models with explicit regime indicators. Rather, it is in effect assumed that every "
+    ],
+    "visualizationScore": 18,
+    "wordCount": 2762
+  },
+  {
+    "author": "Jacob Falkovich",
+    "baseScore": 82,
+    "id": "NyCFKxR74RgRbs7SM",
+    "postedAt": "2026-11-23T19:29:05.718Z",
+    "section": "Frontpage",
+    "title": "Thinking is Hard (for Humans)",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/NyCFKxR74RgRbs7SM/thinking-is-hard-for-humans",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/NyCFKxR74RgRbs7SM/y5ehsjzddohj7olqkgcb  AI progress discourages thinking on both axes o",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/NyCFKxR74RgRbs7SM/gavn8dmyihfjgamjwydo  Thinking alongside frontier LLMs requires inser",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/NyCFKxR74RgRbs7SM/j0jnqbui6hnbvtnofy6p  Sometimes it seems to be malfunctioning: you pr",
+      "figure     It takes a bit of thinking effort to notice when AI (or your own brain) gives you something that's not quite what you wanted (like the Y-junction coming from the top-lef",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/NyCFKxR74RgRbs7SM/eiygjgboi4g1uneller9   It takes a bit of thinking effort to notice wh"
+    ],
+    "visualizationScore": 14,
+    "wordCount": 4082
+  }
+]
