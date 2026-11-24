@@ -1,0 +1,285 @@
+{
+  "checked_at": "2026-11-24T18:21:39+00:00",
+  "errors": [],
+  "last_success_at": "2026-11-24T18:21:39+00:00",
+  "new_count": 4,
+  "pending_count": 4,
+  "pending_results": [
+    {
+      "first_seen_at": "2026-11-24T18:21:39+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... Pythia repository (checkpoints, training details, deduplicated Pile): https://github.com/EleutherAI/pythia - Pythia model card (Hugging Face): https ...",
+      "title": "Pythia: 16 AI Models Built to Be Studied, Not Used",
+      "url": "https://www.youtube.com/watch?v=WCWhddS_zlY"
+    },
+    {
+      "first_seen_at": "2026-11-24T18:21:39+00:00",
+      "google_date": "vor 2 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Download scientific diagram | (a) Mean layerwise surprisal trajectories of Natural Stories words under Pythia 2.8B, as in Figure 1.",
+      "title": "(a) Mean layerwise surprisal trajectories of Natural Stories...",
+      "url": "https://www.researchgate.net/figure/a-Mean-layerwise-surprisal-trajectories-of-Natural-Stories-words-under-Pythia-28B-as_fig4_418121328"
+    },
+    {
+      "first_seen_at": "2026-11-24T18:21:39+00:00",
+      "google_date": "vor 14 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Encoders and Pythia run in float32 and the other decoders in bfloat16; for. Pythia-160M, bfloat16 with eager attention raises the mean negative log-likelihood ...",
+      "title": "Coreference Signals in Pretrained Language Model Attention",
+      "url": "https://www.preprints.org/frontend/manuscript/b58fbeb4611ab131f1c31f983b0eb0d6/download_pub"
+    },
+    {
+      "first_seen_at": "2026-11-24T18:21:39+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... language model ... Prominent examples include Meta's LLaMA series, EleutherAI's Pythia series, StabilityAI's StableLM series, and Berkeley AI Research's OpenLLaMA ...",
+      "title": "https://www.meta.ai/share/a/191b06a6-771a-493b-a5fb- ...",
+      "url": "https://www.facebook.com/geeta.thakor.568/posts/7215ee9c/3034026220282604/"
+    }
+  ],
+  "queries": [
+    {
+      "label": "24 Stunden",
+      "q": "pythia",
+      "tbs": "qdr:d"
+    },
+    {
+      "label": "Überlappung/Nachholen: 3 Tage",
+      "q": "pythia",
+      "tbs": "qdr:d3"
+    },
+    {
+      "label": "Ergänzende Modellsuche: 3 Tage",
+      "q": "pythia (EleutherAI OR \"GPT-NeoX\" OR \"language model\" OR Sprachmodell OR \"mechanistic interpretability\")",
+      "tbs": "qdr:d3"
+    }
+  ],
+  "results": [
+    {
+      "classification": "unclear",
+      "google_date": "vor 11 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Track MARAN PYTHIA Crude Oil Tanker. IMO 9402902, MMSI 240893000, Call Sign SVAQ5, Flag Greece. Live position, port calls, photos and specs.",
+      "title": "MARAN PYTHIA (IMO 9402902), Crude Oil Tanker",
+      "url": "https://www.marinetraffic.com/en/ais/details/ships/shipid:213980/mmsi:240893000/imo:9402902/vessel:MARAN%20PYTHIA"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Für diese Seite sind keine Informationen verfügbar.",
+      "title": "Pythia",
+      "url": "http://pythiacrafting.com/"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "24 Stunden",
+      "snippet": "... Pythia repository (checkpoints, training details, deduplicated Pile): https://github.com/EleutherAI/pythia - Pythia model card (Hugging Face): https ...",
+      "title": "Pythia: 16 AI Models Built to Be Studied, Not Used",
+      "url": "https://www.youtube.com/watch?v=WCWhddS_zlY"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 16 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "End of two. #NJDevils lead 3-2. 1: Meier (J. Hughes, Brown) 1: Dillon (Lombardi) 1:✖️Coyle (Werenski) 2: Brown (Hamilton, Siegenthaler) 2: Pythia (",
+      "title": "\"End of two. #NJDevils lead 3-2. 1:🚨Meier (J. ...",
+      "url": "https://x.com/amandacstein/status/2125040864120701112"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 20 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Pythia Ai is on Facebook. Join Facebook to connect with Pythia Ai and others you may know. Facebook gives people the power to share and makes the world...",
+      "title": "Pythia Ai",
+      "url": "https://www.facebook.com/p/Pythia-Ai-61573607651990/"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 2 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "24 Stunden",
+      "snippet": "Download scientific diagram | (a) Mean layerwise surprisal trajectories of Natural Stories words under Pythia 2.8B, as in Figure 1.",
+      "title": "(a) Mean layerwise surprisal trajectories of Natural Stories...",
+      "url": "https://www.researchgate.net/figure/a-Mean-layerwise-surprisal-trajectories-of-Natural-Stories-words-under-Pythia-28B-as_fig4_418121328"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 23 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "A performer. A dummy. One voice between two bodies. Answer Me, Pythia (Work-in-Progress) continues Stina Fors' ongoing research into ventriloquism and its ...",
+      "title": "UNREAL A Festival of Magic and Performance",
+      "url": "https://www.acflondon.org/events/unreal-a-festival-of-magic-and-performance/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 17 Stunden",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "24 Stunden",
+      "snippet": "Made a visit to Jackson Pollock's house and studio on the Montauk end of Long Island today. It is closed until May, so technically I was trespassing.",
+      "title": "Made a visit to Jackson Pollock's house and studio on the ...",
+      "url": "https://www.instagram.com/p/DgGr7zhFi_-/"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 14 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "24 Stunden",
+      "snippet": "Encoders and Pythia run in float32 and the other decoders in bfloat16; for. Pythia-160M, bfloat16 with eager attention raises the mean negative log-likelihood ...",
+      "title": "Coreference Signals in Pretrained Language Model Attention",
+      "url": "https://www.preprints.org/frontend/manuscript/b58fbeb4611ab131f1c31f983b0eb0d6/download_pub"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 11 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Track MARAN PYTHIA Crude Oil Tanker. IMO 9402902, MMSI 240893000, Call Sign SVAQ5, Flag Greece. Live position, port calls, photos and specs.",
+      "title": "MARAN PYTHIA (IMO 9402902), Crude Oil Tanker",
+      "url": "https://www.marinetraffic.com/en/ais/details/ships/shipid:213980/mmsi:240893000/imo:9402902/vessel:MARAN%20PYTHIA"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "At the heart of the sanctuary was the Pythia, the priestess of Apollo. Seated above a sacred underground area, she entered a trance like state and delivered ...",
+      "title": "High on Mount Parnassus, in a temple built over a crack ...",
+      "url": "https://www.facebook.com/photo.php?fbid=1807644848036870&set=a.446514220816613&type=3"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Für diese Seite sind keine Informationen verfügbar.",
+      "title": "Pythia",
+      "url": "http://pythiacrafting.com/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Pythia was the name given to the priestess who served as the Oracle of Delphi in ancient Greece. She was believed to deliver messages from Apollo, and people ...",
+      "title": "Change of name!! From Lune Journeys to Lune La Pythia ...",
+      "url": "https://www.instagram.com/p/DgF-FQ8xF87/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Once, in an age long past, Apollo slayed Python, a creature of chaos, to restore the order set by the Hellenes and to establish and claim the Oracle of ...",
+      "title": "Pythia: Research and Inspiration",
+      "url": "https://www.youtube.com/playlist?list=PLnYHHFfaAZSEmYiYlC4dCnC83gHbkyvD_"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Episode 4, The Price of Pythia, premieres Friday 27 November at 19:00 CET. Channel: https://www.youtube.com/@CommanderJavMarlo All episodes in order: ...",
+      "title": "EP004 — The Price of Pythia · Trailer | Elite Dangerous",
+      "url": "https://youtu.be/Bo-znSkUmUk"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 3 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "PYTHIA (PYTHIA) is worth ฿0.00294196 today, which is a 0.0% decline from an hour ago and a 1.0% increase since yesterday. The value of PYTHIA today is 7.4% ...",
+      "title": "PYTHIA to THB: PYTHIA Price in Thai Baht",
+      "url": "https://www.coingecko.com/en/coins/pythia/thb"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "... PYTHIA project, bringing together leading partners including MIT, Texas Instruments, Massachusetts General Hospital (MGH), and Xsensio. This international ...",
+      "title": "Adrian M. Ionescu's Post",
+      "url": "https://www.linkedin.com/posts/adrian-m-ionescu-5a51724_epfl-nanolab-xsensio-activity-7530217883507814400-DW6Y"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 14 Stunden",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Analyzing the Structure of Attention in a Transformer Language Model. In Proceedings of the Proceedings of the 2019 ACL Workshop BlackboxNLP, 2019. 5. Klein, T.",
+      "title": "Coreference Signals in Pretrained Language Model Attention",
+      "url": "https://www.preprints.org/frontend/manuscript/b58fbeb4611ab131f1c31f983b0eb0d6/download_pub"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "20h. Hi Stella (@BlancheMinerva), first, thank you for what you've built with EleutherAI. Open work like Pythia and the evaluation harness has meant a lot ...",
+      "title": "Post",
+      "url": "https://x.com/BlancheMinerva/status/2124241027666158013"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 2 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Surprisal from a language model's final layer predicts how long people read a word, yet the model computes its prediction across many layers. We read each ...",
+      "title": "(a) Mean layerwise surprisal trajectories of Natural Stories...",
+      "url": "https://www.researchgate.net/figure/a-Mean-layerwise-surprisal-trajectories-of-Natural-Stories-words-under-Pythia-28B-as_fig4_418121328"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 22 Stunden",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "The Hanoi transformer Claude wrote outputs one move at a time, the way a language model writes text, feeding each move back in as input. Before every move, its ...",
+      "title": "Looped Weight-Space Programming: LLM-Written ...",
+      "url": "https://mbzuai-oryx.github.io/LoopedWSP/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 9 Stunden",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Aletras An empirical study on cross-lingual vocabulary adaptation for efficient language model inference. In Findings of EMNLP, External Links: Link ...",
+      "title": "Parameter-Efficient Vocabulary Expansion via Cross- ...",
+      "url": "https://arxiv.org/abs/2611.30123v1"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 3 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Every language model you can actually own today is a model somebody ... For scale, EleutherAI's Pythia-1B took 4,830 A100-hours to read 300B tokens ...",
+      "title": "Mini-AGI - Volotat",
+      "url": "https://github.com/volotat/mini-AGI"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "... language model ... Prominent examples include Meta's LLaMA series, EleutherAI's Pythia series, StabilityAI's StableLM series, and Berkeley AI Research's OpenLLaMA ...",
+      "title": "https://www.meta.ai/share/a/191b06a6-771a-493b-a5fb- ...",
+      "url": "https://www.facebook.com/geeta.thakor.568/posts/7215ee9c/3034026220282604/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Post-training of a 14B DNA and language model: SFT on FineDNA, then async GRPO with verifiable DNA rewards. Carbon-X· h200x8 per stage. AsyncGRPOTrainerLoRA.",
+      "title": "trl-lib (TRL)",
+      "url": "https://huggingface.co/trl-lib"
+    }
+  ]
+}
