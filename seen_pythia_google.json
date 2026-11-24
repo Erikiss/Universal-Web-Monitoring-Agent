@@ -828,6 +828,15 @@
       "title": "How to deploy secure local ai models #chizzohbwoey ...",
       "url": "https://www.facebook.com/chizzohdeejay/posts/how-to-deploy-secure-local-ai-models-chizzohbwoey-chizzoh-chizzohtechtalk-cybers/4430708870525744/"
     },
+    "https://www.facebook.com/geeta.thakor.568/posts/7215ee9c/3034026220282604/": {
+      "delivered_at": "2026-11-24T18:22:07+00:00",
+      "first_seen_at": "2026-11-24T18:21:39+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... language model ... Prominent examples include Meta's LLaMA series, EleutherAI's Pythia series, StabilityAI's StableLM series, and Berkeley AI Research's OpenLLaMA ...",
+      "title": "https://www.meta.ai/share/a/191b06a6-771a-493b-a5fb- ...",
+      "url": "https://www.facebook.com/geeta.thakor.568/posts/7215ee9c/3034026220282604/"
+    },
     "https://www.facebook.com/groups/2675412082839539/posts/2875361079511304/": {
       "delivered_at": "2026-10-24T11:40:20+00:00",
       "first_seen_at": "2026-10-24T11:40:00+00:00",
@@ -1206,6 +1215,15 @@
       "title": "A Systematic Review of Architectures, Scaling, Applications ...",
       "url": "https://www.mdpi.com/2504-2289/10/12/400/pdf"
     },
+    "https://www.preprints.org/frontend/manuscript/b58fbeb4611ab131f1c31f983b0eb0d6/download_pub": {
+      "delivered_at": "2026-11-24T18:22:07+00:00",
+      "first_seen_at": "2026-11-24T18:21:39+00:00",
+      "google_date": "vor 14 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Encoders and Pythia run in float32 and the other decoders in bfloat16; for. Pythia-160M, bfloat16 with eager attention raises the mean negative log-likelihood ...",
+      "title": "Coreference Signals in Pretrained Language Model Attention",
+      "url": "https://www.preprints.org/frontend/manuscript/b58fbeb4611ab131f1c31f983b0eb0d6/download_pub"
+    },
     "https://www.reddit.com/r/ROCm/comments/1xej8h3/trained_a_337m_1bit_ffn_hybrid_deltanet_llm_from/": {
       "delivered_at": "2026-10-25T12:03:05+00:00",
       "first_seen_at": "2026-10-25T12:02:47+00:00",
@@ -1223,6 +1241,15 @@
       "snippet": "The two errors have opposite signs in 880 of the 882 cases where both are nonzero ( Figure 5); the two exceptions are mirrored tasks of Pythia-160m. On sets ...",
       "title": "The error of the trace has the form that the theory predicts....",
       "url": "https://www.researchgate.net/figure/The-error-of-the-trace-has-the-form-that-the-theory-predicts-Every-mirrored-task-of-the_fig1_417467745"
+    },
+    "https://www.researchgate.net/figure/a-Mean-layerwise-surprisal-trajectories-of-Natural-Stories-words-under-Pythia-28B-as_fig4_418121328": {
+      "delivered_at": "2026-11-24T18:22:07+00:00",
+      "first_seen_at": "2026-11-24T18:21:39+00:00",
+      "google_date": "vor 2 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Download scientific diagram | (a) Mean layerwise surprisal trajectories of Natural Stories words under Pythia 2.8B, as in Figure 1.",
+      "title": "(a) Mean layerwise surprisal trajectories of Natural Stories...",
+      "url": "https://www.researchgate.net/figure/a-Mean-layerwise-surprisal-trajectories-of-Natural-Stories-words-under-Pythia-28B-as_fig4_418121328"
     },
     "https://www.researchgate.net/publication/415931932_Augment_the_Cache_Replace_the_Activation_A_2x2_Study_of_Internal-State_Sharing": {
       "delivered_at": "2026-10-19T14:02:03+00:00",
@@ -1268,6 +1295,15 @@
       "snippet": "Why does a language model “start caring” about nouns, syntax, and meaning ... Pythia 410M and 1B, the research suggests Concept Energy can rise before ...",
       "title": "AI Secret: Concept Energy Reveals How LLMs Learn #Shorts",
       "url": "https://www.youtube.com/shorts/ddiK6P2Qm5s"
+    },
+    "https://www.youtube.com/watch?v=WCWhddS_zlY": {
+      "delivered_at": "2026-11-24T18:22:07+00:00",
+      "first_seen_at": "2026-11-24T18:21:39+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... Pythia repository (checkpoints, training details, deduplicated Pile): https://github.com/EleutherAI/pythia - Pythia model card (Hugging Face): https ...",
+      "title": "Pythia: 16 AI Models Built to Be Studied, Not Used",
+      "url": "https://www.youtube.com/watch?v=WCWhddS_zlY"
     },
     "https://x.com/BlancheMinerva/status/2124241027666158013": {
       "delivered_at": "2026-11-23T18:46:49+00:00",
@@ -1327,40 +1363,7 @@
   "last_attempt_at": "2026-11-24T18:21:39+00:00",
   "last_errors": [],
   "last_success_at": "2026-11-24T18:21:39+00:00",
-  "pending": {
-    "https://www.facebook.com/geeta.thakor.568/posts/7215ee9c/3034026220282604/": {
-      "first_seen_at": "2026-11-24T18:21:39+00:00",
-      "google_date": "",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "... language model ... Prominent examples include Meta's LLaMA series, EleutherAI's Pythia series, StabilityAI's StableLM series, and Berkeley AI Research's OpenLLaMA ...",
-      "title": "https://www.meta.ai/share/a/191b06a6-771a-493b-a5fb- ...",
-      "url": "https://www.facebook.com/geeta.thakor.568/posts/7215ee9c/3034026220282604/"
-    },
-    "https://www.preprints.org/frontend/manuscript/b58fbeb4611ab131f1c31f983b0eb0d6/download_pub": {
-      "first_seen_at": "2026-11-24T18:21:39+00:00",
-      "google_date": "vor 14 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "Encoders and Pythia run in float32 and the other decoders in bfloat16; for. Pythia-160M, bfloat16 with eager attention raises the mean negative log-likelihood ...",
-      "title": "Coreference Signals in Pretrained Language Model Attention",
-      "url": "https://www.preprints.org/frontend/manuscript/b58fbeb4611ab131f1c31f983b0eb0d6/download_pub"
-    },
-    "https://www.researchgate.net/figure/a-Mean-layerwise-surprisal-trajectories-of-Natural-Stories-words-under-Pythia-28B-as_fig4_418121328": {
-      "first_seen_at": "2026-11-24T18:21:39+00:00",
-      "google_date": "vor 2 Stunden",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "Download scientific diagram | (a) Mean layerwise surprisal trajectories of Natural Stories words under Pythia 2.8B, as in Figure 1.",
-      "title": "(a) Mean layerwise surprisal trajectories of Natural Stories...",
-      "url": "https://www.researchgate.net/figure/a-Mean-layerwise-surprisal-trajectories-of-Natural-Stories-words-under-Pythia-28B-as_fig4_418121328"
-    },
-    "https://www.youtube.com/watch?v=WCWhddS_zlY": {
-      "first_seen_at": "2026-11-24T18:21:39+00:00",
-      "google_date": "",
-      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
-      "snippet": "... Pythia repository (checkpoints, training details, deduplicated Pile): https://github.com/EleutherAI/pythia - Pythia model card (Hugging Face): https ...",
-      "title": "Pythia: 16 AI Models Built to Be Studied, Not Used",
-      "url": "https://www.youtube.com/watch?v=WCWhddS_zlY"
-    }
-  },
+  "pending": {},
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
