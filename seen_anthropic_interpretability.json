@@ -147,6 +147,10 @@
     "title": "Mapping the mind of a large language model",
     "first_seen": "2026-10-20T18:13:44+00:00"
   },
+  "https://anthropic.com/research/migrating-api-to-rust": {
+    "title": "Migrating Api To Rust",
+    "first_seen": "2026-11-25T16:37:53+00:00"
+  },
   "https://anthropic.com/research/natural-language-autoencoders": {
     "title": "Natural Language Autoencoders: Turning Claude’s thoughts into text",
     "first_seen": "2026-07-28T18:51:16+00:00"
