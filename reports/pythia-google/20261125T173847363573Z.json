@@ -1,0 +1,365 @@
+{
+  "checked_at": "2026-11-25T17:38:47+00:00",
+  "errors": [],
+  "last_success_at": "2026-11-25T17:38:47+00:00",
+  "new_count": 5,
+  "pending_count": 5,
+  "pending_results": [
+    {
+      "first_seen_at": "2026-11-25T17:38:47+00:00",
+      "google_date": "vor 23 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Pythia: An LLM-Powered Study Design Advisor for ATLAS v3.0 (Hoffmann) · Comments.",
+      "title": "Pythia: An LLM-Powered Study Design Advisor for ATLAS v3.0 ...",
+      "url": "https://www.youtube.com/watch?v=VHQ2IV8Yyt8"
+    },
+    {
+      "first_seen_at": "2026-11-25T17:38:47+00:00",
+      "google_date": "vor 13 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "LoomPythia-2.8B achieves approximately 1.6x the average downstream gain of mHC-Pythia-2.8B over the shared Pythia-2.8B baseline, and performs comparably to ...",
+      "title": "LoomFormer: 2.8B model matches or surpasses Pythia- ...",
+      "url": "https://aiweekly.co/editors-blog/found-first-loomformer-2-8b-model-matches-or-surpasses-pythia-12b-with-2-extra"
+    },
+    {
+      "first_seen_at": "2026-11-25T17:38:47+00:00",
+      "google_date": "vor 3 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Trained on 300B Pile tokens with only +1.95% FLOPs, LoomPythia-2.8B achieves 1.6× the downstream gain of mHC-Pythia-2.8B , matches Pythia-12B in 0-shot ( 59.9 ) ...",
+      "title": "Rewirable Circuits in Transformers with Loom Attention",
+      "url": "https://huggingface.co/papers/2611.30634"
+    },
+    {
+      "first_seen_at": "2026-11-25T17:38:47+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "https://github.com/EleutherAI/gpt-neox GPT4ALL gpt4all: a chatbot trained ... https://github.com/EleutherAI/polyglot Pythia Interpreting Autoregressive ...",
+      "title": "Buy Private Game Development Repositories for LLM ...",
+      "url": "https://www.facebook.com/groups/1000038303359383/posts/30242857728650719/"
+    },
+    {
+      "first_seen_at": "2026-11-25T17:38:47+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... Pythia-12B on a 10-task average: 59.9 vs 59.9 zero-shot ... r/MachineLearning - PhiloLM: a 112M language model trained from scratch on philosophy texts ...",
+      "title": "Letting each attention head choose which earlier heads it ...",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1y50x62/letting_each_attention_head_choose_which_earlier/"
+    }
+  ],
+  "queries": [
+    {
+      "label": "24 Stunden",
+      "q": "pythia",
+      "tbs": "qdr:d"
+    },
+    {
+      "label": "Überlappung/Nachholen: 3 Tage",
+      "q": "pythia",
+      "tbs": "qdr:d3"
+    },
+    {
+      "label": "Ergänzende Modellsuche: 3 Tage",
+      "q": "pythia (EleutherAI OR \"GPT-NeoX\" OR \"language model\" OR Sprachmodell OR \"mechanistic interpretability\")",
+      "tbs": "qdr:d3"
+    }
+  ],
+  "results": [
+    {
+      "classification": "excluded",
+      "google_date": "vor 8 Stunden",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "Pythia (De Pythiae oraculis), a stranger from Greece, Diogenianus, is shown the offerings at Delphi by Philinus, Theon, Serapio and Boethus,",
+      "title": "The Oracles at Delphi (On the Pythian Priestess)",
+      "url": "https://www.greekmythology.com/sources/plutarch/the-oracles-at-delphi"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 23 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "24 Stunden",
+      "snippet": "Pythia: An LLM-Powered Study Design Advisor for ATLAS v3.0 (Hoffmann) · Comments.",
+      "title": "Pythia: An LLM-Powered Study Design Advisor for ATLAS v3.0 ...",
+      "url": "https://www.youtube.com/watch?v=VHQ2IV8Yyt8"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "In 2011 I founded Pythia Technologies to solve a problem I kept running into: the UPS systems, CRAC units, chillers, generators and sensors that keep a facility ...",
+      "title": "James Potter - Founder, President & CEO, Pythia ...",
+      "url": "https://www.linkedin.com/in/jim-potter-pythia"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "For centuries, the Pythia served as the high @risdmuseum. Pythia's Priests at Delphi In real Greek myth/history, the Oracle at Delphi",
+      "title": "Pythia. Delphic tripod. in British Museum - Sarah Janes ...",
+      "url": "https://www.instagram.com/p/DgKkqYHCHNa/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 8 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Alpha stock analysis and news is written by leading experts around the world. Read stock research and investment insights by Pythia&nbsp;...",
+      "title": "Page 5 | Pythia Research's Analysis",
+      "url": "https://seekingalpha.com/author/pythia-research/analysis?page=5&ticker=nbis%3Aca"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 15 Stunden",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "Walking distance to the Delphi Archaeological Museum and the Museum of Delphic Festivals. One of the few hotels in the area with a 24-hr front desk.",
+      "title": "Pythia Art Hotel",
+      "url": "https://www.google.com.gi/travel/hotels/entity/ChcI0-CyyKq6srMWGgsvZy8xdzE0MTN6axAB/prices?ei=2eEDa8fEOZuf5LcPuMqmoQs&ei=M6oCa6euAt7M5LcPluen8AY&ei=WCieapDqN_fZutQP4sbP-Q4&sa=X&ts=CAEaBAoCGgAqBAoAGgA&ved=2ahUKEwiHld_nv52YAxWbD_kAHTilKbQQrfoIegUIAxDSAQ"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 16 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Weighty plaited golden cuff that balances perfectly on the edge of hard and soft with its graceful braided motif. 14k yellow gold plate over brass.",
+      "title": "Pamela Love Pythia Cuff 2026 Sale",
+      "url": "https://gaitcenter.com/?g=pamela-love-pythia-cuff-204727658"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "24 Stunden",
+      "snippet": "To understand the emergence of grammatical behavior in language models, we track circuits for subject–verb number agreement in pythia-1b and ten seeds of pythia ...",
+      "title": "The Emergence and Sparsification of a Syntactic Circuit",
+      "url": "https://aclanthology.org/2026.emnlp-main.732/"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 13 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "24 Stunden",
+      "snippet": "LoomPythia-2.8B achieves approximately 1.6x the average downstream gain of mHC-Pythia-2.8B over the shared Pythia-2.8B baseline, and performs comparably to ...",
+      "title": "LoomFormer: 2.8B model matches or surpasses Pythia- ...",
+      "url": "https://aiweekly.co/editors-blog/found-first-loomformer-2-8b-model-matches-or-surpasses-pythia-12b-with-2-extra"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 1 Tag",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "MARAN PYTHIA (IMO: 9402902) is a Crude Oil Tanker and is sailing under the flag of Greece. Her length overall (LOA) is 274 meters and her width is 48.04 meters.",
+      "title": "MARAN PYTHIA (IMO 9402902), Crude Oil Tanker",
+      "url": "https://www.marinetraffic.com/en/ais/details/ships/shipid:213980/mmsi:240893000/imo:9402902/vessel:MARAN%20PYTHIA"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 8 Stunden",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "In Plutarch's dialogue on the Pythia (De Pythiae oraculis), a stranger from Greece, Diogenianus, is shown the offerings at Delphi by Philinus, Theon, ...",
+      "title": "The Oracles at Delphi (On the Pythian Priestess)",
+      "url": "https://www.greekmythology.com/sources/plutarch/the-oracles-at-delphi"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Für diese Seite sind keine Informationen verfügbar.",
+      "title": "Pythia",
+      "url": "http://pythiacrafting.com/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "the day we've been waiting for, has arrived. new drop + sitewide sale up to 60% off starting soon - @pythia on November 24, 2026.",
+      "title": "the day we've been waiting for, has arrived. new drop + ...",
+      "url": "https://www.instagram.com/p/DgIuUwamOJg/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "At the heart of the sanctuary was the Pythia, the priestess of Apollo. Seated above a sacred underground area, she entered a trance like state and delivered ...",
+      "title": "High on Mount Parnassus, in a temple built over a crack ...",
+      "url": "https://www.facebook.com/photo.php?fbid=1807644848036870&set=a.446514220816613&type=3"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Once, in an age long past, Apollo slayed Python, a creature of chaos, to restore the order set by the Hellenes and to establish and claim the Oracle of ...",
+      "title": "Pythia: Research and Inspiration",
+      "url": "https://www.youtube.com/playlist?list=PLnYHHFfaAZSEmYiYlC4dCnC83gHbkyvD_"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 16 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Weighty plaited golden cuff that balances perfectly on the edge of hard and soft with its graceful braided motif. 14k yellow gold plate over brass.",
+      "title": "Pamela Love Pythia Cuff 2026 Sale",
+      "url": "https://gaitcenter.com/?g=pamela-love-pythia-cuff-204727658"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 15 Stunden",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Walking distance to the Delphi Archaeological Museum and the Museum of Delphic Festivals. One of the few hotels in the area with a 24-hr front desk.",
+      "title": "Pythia Art Hotel",
+      "url": "https://www.google.com.gi/travel/hotels/entity/ChcI0-CyyKq6srMWGgsvZy8xdzE0MTN6axAB/prices?ei=2eEDa8fEOZuf5LcPuMqmoQs&ei=M6oCa6euAt7M5LcPluen8AY&ei=WCieapDqN_fZutQP4sbP-Q4&sa=X&ts=CAEaBAoCGgAqBAoAGgA&ved=2ahUKEwiHld_nv52YAxWbD_kAHTilKbQQrfoIegUIAxDSAQ"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 23 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Pythia: An LLM-Powered Study Design Advisor for ATLAS v3.0 (Hoffmann) · Comments.",
+      "title": "Pythia: An LLM-Powered Study Design Advisor for ATLAS v3.0 ...",
+      "url": "https://www.youtube.com/watch?v=VHQ2IV8Yyt8"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Pythia Cap: Partially Conductive · @PythiaR. Brad Gerstner shows that its much easier to do insane mental gymnastics if you're short. 7:07 PM · Nov 23, 2026 ...",
+      "title": "Brad Gerstner shows that its much easier to do insane ...",
+      "url": "https://x.com/PythiaR/status/2124942855722672628"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "To understand the emergence of grammatical behavior in language models, we track circuits for subject–verb number agreement in pythia-1b and ten seeds of pythia ...",
+      "title": "The Emergence and Sparsification of a Syntactic Circuit",
+      "url": "https://aclanthology.org/2026.emnlp-main.732/"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 13 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "LoomPythia-2.8B achieves approximately 1.6x the average downstream gain of mHC-Pythia-2.8B over the shared Pythia-2.8B baseline, and performs comparably to ...",
+      "title": "LoomFormer: 2.8B model matches or surpasses Pythia- ...",
+      "url": "https://aiweekly.co/editors-blog/found-first-loomformer-2-8b-model-matches-or-surpasses-pythia-12b-with-2-extra"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "58 Likes, TikTok video from stargossper (@stargossper): “#actionsceneedits Why did the prophecy of the Pythia ultimately choose Thalia instead of Percy In ...",
+      "title": "actionsceneedits Why did the prophecy of the Pythia ultimately ...",
+      "url": "https://www.tiktok.com/@stargossper/video/7711334417838460173"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "... Pythia repository (checkpoints, training details, deduplicated Pile): https://github.com/EleutherAI/pythia - Pythia model card (Hugging Face): https ...",
+      "title": "Pythia: 16 AI Models Built to Be Studied, Not Used",
+      "url": "https://www.youtube.com/watch?v=WCWhddS_zlY"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 3 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Trained on 300B Pile tokens with only +1.95% FLOPs, LoomPythia-2.8B achieves 1.6× the downstream gain of mHC-Pythia-2.8B , matches Pythia-12B in 0-shot ( 59.9 ) ...",
+      "title": "Rewirable Circuits in Transformers with Loom Attention",
+      "url": "https://huggingface.co/papers/2611.30634"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "the argo girls went to delphi we asked pythia a question each, i set them alight and am waiting for my answer the belly button of the world. i have an innie ...",
+      "title": "the argo girls went to delphi we asked pythia a question ...",
+      "url": "https://www.instagram.com/p/DgE4HmBCJCm/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 2 Tagen",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Figure 4 shows a comparison between PYTHIA 8 (tune Monash) [17] , EPOS4 with hydrodynamic evolution [18] , and data for the number density as a function of p T ...",
+      "title": "Underlying-event properties in proton-proton collisions at 𝐬 ...",
+      "url": "https://arxiv.org/abs/2611.31077v1"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Analyzing the Structure of Attention in a Transformer Language Model. In Proceedings of the Proceedings of the 2019 ACL Workshop BlackboxNLP, 2019. 5. Klein, T.",
+      "title": "Coreference Signals in Pretrained Language Model Attention",
+      "url": "https://www.preprints.org/frontend/manuscript/b58fbeb4611ab131f1c31f983b0eb0d6/download_pub"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Weinbach GPT-NeoX-20B: an open-source autoregressive language model. In Proceedings of BigScience Episode #5 – Workshop on Challenges & Perspectives in Creating ...",
+      "title": "Revisiting Continual Learning in Language Models",
+      "url": "https://arxiv.org/abs/2611.30151v1"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "We take these results to be informative about how linguistic knowledge emerges and is represented in a language model. Anthology ID: 2026.emnlp-main.732 ...",
+      "title": "The Emergence and Sparsification of a Syntactic Circuit",
+      "url": "https://aclanthology.org/2026.emnlp-main.732/"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "https://github.com/EleutherAI/gpt-neox GPT4ALL gpt4all: a chatbot trained ... https://github.com/EleutherAI/polyglot Pythia Interpreting Autoregressive ...",
+      "title": "Buy Private Game Development Repositories for LLM ...",
+      "url": "https://www.facebook.com/groups/1000038303359383/posts/30242857728650719/"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 1 Tag",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Surprisal from a language model's final layer predicts how long people read a word, yet the model computes its prediction across many layers. We read each ...",
+      "title": "(a) Mean layerwise surprisal trajectories of Natural Stories...",
+      "url": "https://www.researchgate.net/figure/a-Mean-layerwise-surprisal-trajectories-of-Natural-Stories-words-under-Pythia-28B-as_fig4_418121328"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "... Pythia-12B on a 10-task average: 59.9 vs 59.9 zero-shot ... r/MachineLearning - PhiloLM: a 112M language model trained from scratch on philosophy texts ...",
+      "title": "Letting each attention head choose which earlier heads it ...",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1y50x62/letting_each_attention_head_choose_which_earlier/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "The Hanoi transformer Claude wrote outputs one move at a time, the way a language model writes text, feeding each move back in as input. Before every move, its ...",
+      "title": "Looped Weight-Space Programming: LLM-Written ...",
+      "url": "https://mbzuai-oryx.github.io/LoopedWSP/"
+    }
+  ]
+}

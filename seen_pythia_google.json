@@ -1360,10 +1360,51 @@
       "url": "https://zhuanlan.zhihu.com/p/2096482642027983491"
     }
   },
-  "last_attempt_at": "2026-11-24T18:21:39+00:00",
+  "last_attempt_at": "2026-11-25T17:38:47+00:00",
   "last_errors": [],
-  "last_success_at": "2026-11-24T18:21:39+00:00",
-  "pending": {},
+  "last_success_at": "2026-11-25T17:38:47+00:00",
+  "pending": {
+    "https://aiweekly.co/editors-blog/found-first-loomformer-2-8b-model-matches-or-surpasses-pythia-12b-with-2-extra": {
+      "first_seen_at": "2026-11-25T17:38:47+00:00",
+      "google_date": "vor 13 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "LoomPythia-2.8B achieves approximately 1.6x the average downstream gain of mHC-Pythia-2.8B over the shared Pythia-2.8B baseline, and performs comparably to ...",
+      "title": "LoomFormer: 2.8B model matches or surpasses Pythia- ...",
+      "url": "https://aiweekly.co/editors-blog/found-first-loomformer-2-8b-model-matches-or-surpasses-pythia-12b-with-2-extra"
+    },
+    "https://huggingface.co/papers/2611.30634": {
+      "first_seen_at": "2026-11-25T17:38:47+00:00",
+      "google_date": "vor 3 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "Trained on 300B Pile tokens with only +1.95% FLOPs, LoomPythia-2.8B achieves 1.6× the downstream gain of mHC-Pythia-2.8B , matches Pythia-12B in 0-shot ( 59.9 ) ...",
+      "title": "Rewirable Circuits in Transformers with Loom Attention",
+      "url": "https://huggingface.co/papers/2611.30634"
+    },
+    "https://www.facebook.com/groups/1000038303359383/posts/30242857728650719/": {
+      "first_seen_at": "2026-11-25T17:38:47+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "https://github.com/EleutherAI/gpt-neox GPT4ALL gpt4all: a chatbot trained ... https://github.com/EleutherAI/polyglot Pythia Interpreting Autoregressive ...",
+      "title": "Buy Private Game Development Repositories for LLM ...",
+      "url": "https://www.facebook.com/groups/1000038303359383/posts/30242857728650719/"
+    },
+    "https://www.reddit.com/r/MachineLearning/comments/1y50x62/letting_each_attention_head_choose_which_earlier/": {
+      "first_seen_at": "2026-11-25T17:38:47+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... Pythia-12B on a 10-task average: 59.9 vs 59.9 zero-shot ... r/MachineLearning - PhiloLM: a 112M language model trained from scratch on philosophy texts ...",
+      "title": "Letting each attention head choose which earlier heads it ...",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1y50x62/letting_each_attention_head_choose_which_earlier/"
+    },
+    "https://www.youtube.com/watch?v=VHQ2IV8Yyt8": {
+      "first_seen_at": "2026-11-25T17:38:47+00:00",
+      "google_date": "vor 23 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Pythia: An LLM-Powered Study Design Advisor for ATLAS v3.0 (Hoffmann) · Comments.",
+      "title": "Pythia: An LLM-Powered Study Design Advisor for ATLAS v3.0 ...",
+      "url": "https://www.youtube.com/watch?v=VHQ2IV8Yyt8"
+    }
+  },
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
