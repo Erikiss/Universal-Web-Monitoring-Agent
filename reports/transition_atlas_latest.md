@@ -1,4 +1,4 @@
-# Transition-Atlas watch — 2026-11-24T19:05:49Z
+# Transition-Atlas watch — 2026-11-25T18:11:28Z
 
 Originalpaper: https://arxiv.org/abs/2609.12591
 Neue Hinweise: 1 | fehlgeschlagene Quellenchecks: 0
@@ -8,9 +8,9 @@ GitHub-Aktivität und neue HPI-Links sind Hinweise, kein automatisch bestätigte
 
 ## AUTOREN-GITHUB
 
-Kathrin Korte: PushEvent in marcellobarylli/DJ_Graphyla
-https://github.com/marcellobarylli/DJ_Graphyla
-Neue öffentliche Repository-Aktivität des verifizierten Autors.
+Kathrin Korte: kat-ko/GeometryOfForgetting
+https://github.com/kat-ko/GeometryOfForgetting
+Repository geändert: pushed_at
 
 
 ## Abdeckung
