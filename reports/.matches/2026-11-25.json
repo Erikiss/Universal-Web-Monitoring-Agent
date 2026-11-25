@@ -1,0 +1,135 @@
+[
+  {
+    "author": "Zvi",
+    "baseScore": 13,
+    "id": "ENdfwPYrhLrAP8znD",
+    "postedAt": "2026-11-25T17:30:53.557Z",
+    "section": "Personal/All",
+    "title": "Claude and Levent Alp\u00f6ge Prove the Riemann Hypothesis",
+    "topicScore": 12,
+    "url": "https://www.lesswrong.com/posts/ENdfwPYrhLrAP8znD/claude-and-levent-alpoege-prove-the-riemann-hypothesis",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/ENdfwPYrhLrAP8znD/d3nwwx2xx1zyhjmmmh4y   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 70,
+    "wordCount": 7319
+  },
+  {
+    "author": "Yoav",
+    "baseScore": 1,
+    "id": "tx7YjDvHnZinAruv6",
+    "postedAt": "2026-11-25T16:01:43.488Z",
+    "section": "Frontpage",
+    "title": "Agent Advice That Generalizes",
+    "topicScore": 12,
+    "url": "https://www.lesswrong.com/posts/tx7YjDvHnZinAruv6/agent-advice-that-generalizes",
+    "visualEvidence": [
+      "figure     A real reply from building tldr and the TL;DR the plugin saved for it, as rendered in the Claude Code CLI. [ more ] opens the full reply. Most of the examples in this po",
+      "img A real reply from building tldr and the TL;DR the plugin saved for it, as rendered in the Claude Code CLI. [ more ] opens the full reply.   https://res.cloudinary.com/lesswrong",
+      "figure     Nov 11 Auto mode. Now Claude Code's default: a classifier checks each command for you. /auto-mode-setup helps you configure its permissions. Your data sources. Email, Sl",
+      "img Conversation excerpt   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795611500/lexical_client_uploads/uepeovvjbha9171zdple.png   Nov 11",
+      "figure     Captured by the agent autonomously using a real terminal. Nov 11 Auto mode. Now Claude Code's default: a classifier checks each command for you. /auto-mode-setup helps y"
+    ],
+    "visualizationScore": 44,
+    "wordCount": 2208
+  },
+  {
+    "author": "manueldelrio",
+    "baseScore": 0,
+    "id": "yPTsRekjycoFhqszr",
+    "postedAt": "2026-11-25T14:07:24.917Z",
+    "section": "Frontpage",
+    "title": "The End of Mathematics and the Last Man",
+    "topicScore": 6,
+    "url": "https://www.lesswrong.com/posts/yPTsRekjycoFhqszr/the-end-of-mathematics-and-the-last-man",
+    "visualEvidence": [
+      "img f4334ed1-50a0-4475-a837-ccaf481b87d5.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795615628/lexical_client_uploads/lgvpyzzusrs9ul3fooic.png  [Epistemic status:",
+      "figure     An old joke/meme, but it does reflect some of my current and likely future views about what turns me on about math. Except I am not a pterodactyl. Or have a brilliant ma",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/yPTsRekjycoFhqszr/wli7dkeatzkkg00hcl79   An old joke/meme, but it does reflect some of ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/yPTsRekjycoFhqszr/myldkvsbzuqmumh2leii  Still, after engaging with Rationalist texts, i",
+      "figure     This is a map of the 17-million-line Lean proof of the Riemann Hypothesis (175,000 files, verified by computers), courtesy of @b1rkh0ff No, it is actually much worse . I"
+    ],
+    "visualizationScore": 18,
+    "wordCount": 2369
+  },
+  {
+    "author": "Johnny Lin",
+    "baseScore": 4,
+    "id": "AZmwgxBFvCjf2t37i",
+    "postedAt": "2026-11-25T07:17:18.097Z",
+    "section": "Frontpage",
+    "title": "OpenAudit: Platform for Safety Evaluations of Models, Orgs, and Methods ",
+    "topicScore": 4,
+    "url": "https://www.lesswrong.com/posts/AZmwgxBFvCjf2t37i/openaudit-platform-for-safety-evaluations-of-models-orgs-and",
+    "visualEvidence": [
+      "img titlefrr.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795590945/lexical_client_uploads/hdew69hzlyhbwwnwm7o0.png  OpenAudit ( openaudit.com ) hosts independent ",
+      "img oa-models-22.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795566092/lexical_client_uploads/f1oqton7mwwargjtwo4v.png  OpenAudit runs evaluations on models and a",
+      "img agent.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795578093/lexical_client_uploads/t6m5uipcla2ljk74xf5o.png  You can view ranked results by specific model eva",
+      "img haik.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795581843/lexical_client_uploads/oeu59cjujq82xtsqtzew.png  OpenAudit records and lets you view full transcrip",
+      "img oa-c.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795578922/lexical_client_uploads/qmusstperwgopadixxu7.png  Organizations on OpenAudit are primarily ranked by"
+    ],
+    "visualizationScore": 14,
+    "wordCount": 2239
+  },
+  {
+    "author": "alkjash",
+    "baseScore": 179,
+    "id": "LrWJeEDCriLmAgFXr",
+    "postedAt": "2026-11-24T23:46:06.730Z",
+    "section": "Personal/All",
+    "title": "Levent is my favorite gender role",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/LrWJeEDCriLmAgFXr/levent-is-my-favorite-gender-role",
+    "visualEvidence": [
+      "figure     Me and Levent Alp\u00f6ge (thanks for finding this, Scientific American ). Last Friday, this guy I once did a pie-eating challenge with proved the Generalized Riemann Hypothe",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795563679/lexical_client_uploads/d7363sgbua0uiemgiwqq.png   Me and Levent Alp\u00f6ge (thanks for finding this, Scientific",
+      "figure     I have the power of God and anime on my side! For Westerners: a chuunibyou , or chuuni for short, is somewhere in the convex hull of weeaboo , mad lad , and romantic. Th",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795563679/lexical_client_uploads/tyns4pgvkn6nnzfoi9q7.png   I have the power of God and anime on my side!",
+      "figure     Fischl: a magical girl who larps as an edgier magical girl. Both men and women can be chuuni \u2013 my wife Jasmine is a 5-dan Go player who introduced me to anime. Other tha"
+    ],
+    "visualizationScore": 56,
+    "wordCount": 3307
+  },
+  {
+    "author": "eli.boardman",
+    "baseScore": 1,
+    "id": "LbmyKdMQdfirgFmfE",
+    "postedAt": "2026-11-24T22:32:33.905Z",
+    "section": "Frontpage",
+    "title": "Stated LLM goal-guarding shifts from a family trait to a scaling effect as proposed goals become less aligned with the assistant persona",
+    "topicScore": 14,
+    "url": "https://www.lesswrong.com/posts/LbmyKdMQdfirgFmfE/stated-llm-goal-guarding-shifts-from-a-family-trait-to-a",
+    "visualEvidence": [
+      "figure     Figure 1: Stated resistance to change organized by valence from an expected helpful-harmless-honest (HHH) assistant perspective. The Perez et al. (2023) change-decline i",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795550651/lexical_client_uploads/f2wfxer250nwxollngcn.jpg   Figure 1: Stated resistance to change organized by valenc",
+      "figure     Figure 2: Scaling relationships between self-related metrics and non-embedding model parameters. Mixture-of-experts (MoE) models are plotted at their total parameters (n",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795550652/lexical_client_uploads/otu4wvtq4vmty9oukpb5.jpg   Figure 2: Scaling relationships between self-related metr",
+      "figure     Figure 3: Variance partitioning for 12 self-related metrics (cf. Figure 2) tested across 60 models in 20 families. Metrics with an expected answer for the typical assist"
+    ],
+    "visualizationScore": 18,
+    "wordCount": 3537
+  },
+  {
+    "author": "Jason Fantl",
+    "baseScore": 9,
+    "id": "4TpjkdL5Fed3vBioC",
+    "postedAt": "2026-11-24T19:34:05.383Z",
+    "section": "Frontpage",
+    "title": "AI research agents crowd onto the same projects, and how to spread them out",
+    "topicScore": 8,
+    "url": "https://www.lesswrong.com/posts/4TpjkdL5Fed3vBioC/ai-research-agents-crowd-onto-the-same-projects-and-how-to",
+    "visualEvidence": [
+      "figure      We model a future in which AI safety researchers are autonomous agents that choose their own projects. Because early versions of those agents already exist, we can mode",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795191856/lexical_client_uploads/igllopocwctdnwbivpah.png   ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795192016/lexical_client_uploads/gemj0nsxqkzsi47xgsq3.png  Take the best project . Each agent chooses what it conside",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795192036/lexical_client_uploads/uwga7mw7lr16h4bv3sng.png  To establish a baseline, we look at human data from the SP",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795623153/lexical_client_uploads/rpsthfk67chlkzh6g5my.png  The \"no search\" setup produces an effective number of 33 ("
+    ],
+    "visualizationScore": 10,
+    "wordCount": 3228
+  }
+]
