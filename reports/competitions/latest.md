@@ -1,6 +1,6 @@
-# Competition Tracer — 2026-11-24
+# Competition Tracer — 2026-11-25
 
-Letzter Check: 2026-11-24T18:59:03+00:00 · Heute erfasst: 48 · Aus früheren Tagen zur Zustellung übernommen: 0 · Fehler: 1
+Letzter Check: 2026-11-25T18:02:49+00:00 · Heute erfasst: 44 · Aus früheren Tagen zur Zustellung übernommen: 0 · Fehler: 1
 
 Tägliche Momentaufnahme; keine vollständige Blockhistorie und keine Ausführung eingereichten Codes.
 
@@ -11,25 +11,25 @@ Tägliche Momentaufnahme; keine vollständige Blockhistorie und keine Ausführun
 Live algorithm submissions, public source branches and protocol status. Daily snapshots are not a replay of every blockchain block.
 
 - **[tig-live](<https://github.com/tig-foundation/tig-monorepo>)** (deep): unvollständig.
-  {"baseline": false, "baseline_content_uninspected": 513, "block_height": 1441240, "block_id": "27c77b5d20c8ad0422443e18f904e6dc", "coverage": "daily block snapshot; not an exhaustive block history", "depth": "deep", "pending_sources": 445, "public_branches": 729, "records": 802, "round": 143, "source_checks": 30, "source_coverage": "partial: pending branches are retained for later runs", "source_errors": 0}
-  Fehler: TIG source coverage incomplete: 445 branches pending after 30 checks (max_source_checks=30); no pending source snapshot was advanced
+  {"baseline": false, "baseline_content_uninspected": 491, "block_height": 1442621, "block_id": "62d7a3b106d2e737b5569e3d92219a0b", "coverage": "daily block snapshot; not an exhaustive block history", "depth": "deep", "pending_sources": 428, "public_branches": 742, "records": 804, "round": 144, "source_checks": 30, "source_coverage": "partial: pending branches are retained for later runs", "source_errors": 0}
+  Fehler: TIG source coverage incomplete: 428 branches pending after 30 checks (max_source_checks=30); no pending source snapshot was advanced
 - **[tig-papers](<https://arxiv.org>)** (deep): ok.
-  {"baseline": false, "cutoff": "2026-11-21T19:23:14.903646Z", "pages": 1, "papers_observed": 0, "seed_papers": 0}
+  {"baseline": false, "cutoff": "2026-11-22T19:00:09.682919Z", "pages": 1, "papers_observed": 0, "seed_papers": 0}
 
-### TIG mica_ephesite: submitted
+### TIG mica_ephesite: public
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/hypergraph/mica_ephesite/tig-algorithms/>)
 
-Submission metadata/state changed; Compilation: True
+Status: submitted → public
 
 ```json
 {
   "record_kind": "code",
   "algorithm_id": "c005_a050",
-  "stage": "submitted",
+  "stage": "public",
   "state": {
     "block_confirmed": 1431159,
     "round_submitted": 142,
@@ -47,174 +47,100 @@ Submission metadata/state changed; Compilation: True
   },
   "adoption": null,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
 }
 ```
 
-### TIG ember_tambora: compile_failed
+### TIG mica_celadonite: active
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/hypergraph/mica_celadonite/tig-algorithms/>)
 
-Status: submitted → compile_failed; Compilation: False
+Status: public → active
 
 ```json
 {
   "record_kind": "code",
-  "algorithm_id": "c007_a065",
-  "stage": "compile_failed",
+  "algorithm_id": "c005_a047",
+  "stage": "active",
   "state": {
-    "block_confirmed": 1431190,
-    "round_submitted": 142,
-    "round_pushed": 144,
-    "round_active": null,
+    "block_confirmed": 1410957,
+    "round_submitted": 140,
+    "round_pushed": 142,
+    "round_active": 144,
     "round_merged": null,
     "banned": false
   },
   "details": {
-    "name": "ember_tambora",
+    "name": "mica_celadonite",
     "player_id": "0x26c3c880f00daee5f6857837b19499d833338474",
-    "challenge_id": "c007",
-    "algorithm_id": null,
-    "fee_paid": "10000000000000000000"
-  },
-  "adoption": null,
-  "compile_success": false,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
-}
-```
-
-### TIG harimox_v2: public
-
-Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
-
-[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/energy_arbitrage/harimox_v2/tig-algorithms/>)
-
-Submission metadata/state changed; Compilation: True
-
-```json
-{
-  "record_kind": "code",
-  "algorithm_id": "c008_a059",
-  "stage": "public",
-  "state": {
-    "block_confirmed": 1421065,
-    "round_submitted": 141,
-    "round_pushed": 143,
-    "round_active": 145,
-    "round_merged": null,
-    "banned": false
-  },
-  "details": {
-    "name": "harimox_v2",
-    "player_id": "0xb6014aac3fbc97a521d7345e73831eac15dd87fb",
-    "challenge_id": "c008",
-    "algorithm_id": null,
-    "fee_paid": "10000000000000000000"
-  },
-  "adoption": null,
-  "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": true
-}
-```
-
-### TIG lodunek_v3: compile_failed
-
-Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
-
-[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/job_scheduling/lodunek_v3/tig-algorithms/>)
-
-Status: public → compile_failed; Compilation: False
-
-```json
-{
-  "record_kind": "code",
-  "algorithm_id": "c007_a063",
-  "stage": "compile_failed",
-  "state": {
-    "block_confirmed": 1421063,
-    "round_submitted": 141,
-    "round_pushed": 143,
-    "round_active": null,
-    "round_merged": null,
-    "banned": false
-  },
-  "details": {
-    "name": "lodunek_v3",
-    "player_id": "0xb6014aac3fbc97a521d7345e73831eac15dd87fb",
-    "challenge_id": "c007",
-    "algorithm_id": null,
-    "fee_paid": "10000000000000000000"
-  },
-  "adoption": null,
-  "compile_success": false,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": true
-}
-```
-
-### TIG zofogin_v3: public
-
-Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
-
-[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/hypergraph/zofogin_v3/tig-algorithms/>)
-
-Submission metadata/state changed; Compilation: True
-
-```json
-{
-  "record_kind": "code",
-  "algorithm_id": "c005_a049",
-  "stage": "public",
-  "state": {
-    "block_confirmed": 1421062,
-    "round_submitted": 141,
-    "round_pushed": 143,
-    "round_active": 145,
-    "round_merged": null,
-    "banned": false
-  },
-  "details": {
-    "name": "zofogin_v3",
-    "player_id": "0xb6014aac3fbc97a521d7345e73831eac15dd87fb",
     "challenge_id": "c005",
     "algorithm_id": null,
     "fee_paid": "10000000000000000000"
   },
-  "adoption": null,
+  "adoption": 0.0,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
   "public": true
 }
 ```
 
-### TIG sat_hybrid_dn_v1: submitted
+### TIG murelan_v2: active
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/vehicle_routing/murelan_v2/tig-algorithms/>)
 
-Submission metadata/state changed; Compilation: True
+Status: public → active
+
+```json
+{
+  "record_kind": "code",
+  "algorithm_id": "c002_a125",
+  "stage": "active",
+  "state": {
+    "block_confirmed": 1410924,
+    "round_submitted": 140,
+    "round_pushed": 142,
+    "round_active": 144,
+    "round_merged": null,
+    "banned": false
+  },
+  "details": {
+    "name": "murelan_v2",
+    "player_id": "0xb6014aac3fbc97a521d7345e73831eac15dd87fb",
+    "challenge_id": "c002",
+    "algorithm_id": "c002_a110",
+    "fee_paid": "10000000000000000000"
+  },
+  "adoption": 0.0,
+  "compile_success": true,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
+}
+```
+
+### TIG sat_hybrid_dn_v1: public
+
+Typ: submission · Quelle: tig-live
+Erfasst: 2026-11-25T18:02:49+00:00
+
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/satisfiability/sat_hybrid_dn_v1/tig-algorithms/>)
+
+Status: submitted → public
 
 ```json
 {
   "record_kind": "code",
   "algorithm_id": "c001_a145",
-  "stage": "submitted",
+  "stage": "public",
   "state": {
     "block_confirmed": 1431341,
     "round_submitted": 142,
@@ -232,205 +158,168 @@ Submission metadata/state changed; Compilation: True
   },
   "adoption": null,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
-}
-```
-
-### TIG longhaul: submitted
-
-Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
-
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
-
-Submission metadata/state changed; Compilation: True
-
-```json
-{
-  "record_kind": "code",
-  "algorithm_id": "c002_a135",
-  "stage": "submitted",
-  "state": {
-    "block_confirmed": 1438086,
-    "round_submitted": 143,
-    "round_pushed": 145,
-    "round_active": 147,
-    "round_merged": null,
-    "banned": false
-  },
-  "details": {
-    "name": "longhaul",
-    "player_id": "0x1842ee174950117b871828a68e5be09d305ad31c",
-    "challenge_id": "c002",
-    "algorithm_id": "c002_a110",
-    "fee_paid": "10000000000000000000"
-  },
-  "adoption": null,
-  "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
-}
-```
-
-### TIG energy_talos_v1: compile_failed
-
-Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
-
-[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/energy_arbitrage/energy_talos_v1/tig-algorithms/>)
-
-Status: public → compile_failed; Compilation: False
-
-```json
-{
-  "record_kind": "code",
-  "algorithm_id": "c008_a060",
-  "stage": "compile_failed",
-  "state": {
-    "block_confirmed": 1421260,
-    "round_submitted": 141,
-    "round_pushed": 143,
-    "round_active": null,
-    "round_merged": null,
-    "banned": false
-  },
-  "details": {
-    "name": "energy_talos_v1",
-    "player_id": "0xe992838015d546a41fb5cdf3259e3b0ac2d8f94f",
-    "challenge_id": "c008",
-    "algorithm_id": null,
-    "fee_paid": "10000000000000000000"
-  },
-  "adoption": null,
-  "compile_success": false,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
   "public": true
 }
 ```
 
-### TIG haversack: submitted
+### TIG axiom_neon: active
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/satisfiability/axiom_neon/tig-algorithms/>)
 
-Submission metadata/state changed; Compilation: True
+Status: public → active
 
 ```json
 {
   "record_kind": "code",
-  "algorithm_id": "c003_a165",
-  "stage": "submitted",
+  "algorithm_id": "c001_a138",
+  "stage": "active",
   "state": {
-    "block_confirmed": 1437957,
-    "round_submitted": 143,
-    "round_pushed": 145,
-    "round_active": 147,
+    "block_confirmed": 1401768,
+    "round_submitted": 140,
+    "round_pushed": 142,
+    "round_active": 144,
     "round_merged": null,
     "banned": false
   },
   "details": {
-    "name": "haversack",
-    "player_id": "0x1842ee174950117b871828a68e5be09d305ad31c",
-    "challenge_id": "c003",
-    "algorithm_id": null,
-    "fee_paid": "10000000000000000000"
-  },
-  "adoption": null,
-  "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
-}
-```
-
-### TIG sat_nexus: public
-
-Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
-
-[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/satisfiability/sat_nexus/tig-algorithms/>)
-
-Submission metadata/state changed; Compilation: True
-
-```json
-{
-  "record_kind": "code",
-  "algorithm_id": "c001_a141",
-  "stage": "public",
-  "state": {
-    "block_confirmed": 1420236,
-    "round_submitted": 141,
-    "round_pushed": 143,
-    "round_active": 145,
-    "round_merged": null,
-    "banned": false
-  },
-  "details": {
-    "name": "sat_nexus",
+    "name": "axiom_neon",
     "player_id": "0x1d74c4f8655ca2b7bca7d41c60320ebb23990ea3",
     "challenge_id": "c001",
     "algorithm_id": null,
     "fee_paid": "10000000000000000000"
   },
-  "adoption": null,
+  "adoption": 0.0,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
   "public": true
 }
 ```
 
-### TIG sat_talos_v2: submitted
+### TIG ember_opt_v4: active
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/job_scheduling/ember_opt_v4/tig-algorithms/>)
 
-Newly observed submission
+Status: public → active
 
 ```json
 {
   "record_kind": "code",
-  "algorithm_id": "c001_a146",
-  "stage": "submitted",
+  "algorithm_id": "c007_a060",
+  "stage": "active",
   "state": {
-    "block_confirmed": 1441011,
-    "round_submitted": 143,
-    "round_pushed": 145,
-    "round_active": 147,
+    "block_confirmed": 1409802,
+    "round_submitted": 140,
+    "round_pushed": 142,
+    "round_active": 144,
     "round_merged": null,
     "banned": false
   },
   "details": {
-    "name": "sat_talos_v2",
-    "player_id": "0xe992838015d546a41fb5cdf3259e3b0ac2d8f94f",
-    "challenge_id": "c001",
+    "name": "ember_opt_v4",
+    "player_id": "0xfe2a215c01a1d98f9364619a68798cce8442ef9c",
+    "challenge_id": "c007",
     "algorithm_id": null,
     "fee_paid": "10000000000000000000"
   },
-  "adoption": null,
+  "adoption": 0.0,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
+}
+```
+
+### TIG satchel_cluster: active
+
+Typ: submission · Quelle: tig-live
+Erfasst: 2026-11-25T18:02:49+00:00
+
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/knapsack/satchel_cluster/tig-algorithms/>)
+
+Status: public → active
+
+```json
+{
+  "record_kind": "code",
+  "algorithm_id": "c003_a161",
+  "stage": "active",
+  "state": {
+    "block_confirmed": 1402646,
+    "round_submitted": 140,
+    "round_pushed": 142,
+    "round_active": 144,
+    "round_merged": null,
+    "banned": false
+  },
+  "details": {
+    "name": "satchel_cluster",
+    "player_id": "0x0ab7e0a67c91a09013798de1db20ad284de8971e",
+    "challenge_id": "c003",
+    "algorithm_id": null,
+    "fee_paid": "10000000000000000000"
+  },
+  "adoption": 0.0,
+  "compile_success": true,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
+}
+```
+
+### TIG lodunek_v2: active
+
+Typ: submission · Quelle: tig-live
+Erfasst: 2026-11-25T18:02:49+00:00
+
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/job_scheduling/lodunek_v2/tig-algorithms/>)
+
+Status: public → active
+
+```json
+{
+  "record_kind": "code",
+  "algorithm_id": "c007_a061",
+  "stage": "active",
+  "state": {
+    "block_confirmed": 1410928,
+    "round_submitted": 140,
+    "round_pushed": 142,
+    "round_active": 144,
+    "round_merged": null,
+    "banned": false
+  },
+  "details": {
+    "name": "lodunek_v2",
+    "player_id": "0xb6014aac3fbc97a521d7345e73831eac15dd87fb",
+    "challenge_id": "c007",
+    "algorithm_id": null,
+    "fee_paid": "10000000000000000000"
+  },
+  "adoption": 0.0,
+  "compile_success": true,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
 }
 ```
 
 ### TIG there_v10: merged
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
 [Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/vector_search/there_v10/tig-algorithms/>)
 
-Adoption: 23.20% → 17.78%
+Adoption: 17.78% → 23.24%
 
 ```json
 {
@@ -452,65 +341,65 @@ Adoption: 23.20% → 17.78%
     "algorithm_id": null,
     "fee_paid": "10000000000000000000"
   },
-  "adoption": 0.1777796034128678,
+  "adoption": 0.23239534314045154,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
   "public": true
 }
 ```
 
-### TIG ubelos: compile_failed
+### TIG linepulse: active
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/energy_arbitrage/linepulse/tig-algorithms/>)
 
-Newly observed submission
+Status: public → active
 
 ```json
 {
   "record_kind": "code",
-  "algorithm_id": "c001_a147",
-  "stage": "compile_failed",
+  "algorithm_id": "c008_a058",
+  "stage": "active",
   "state": {
-    "block_confirmed": 1441090,
-    "round_submitted": 143,
-    "round_pushed": 145,
-    "round_active": null,
+    "block_confirmed": 1410896,
+    "round_submitted": 140,
+    "round_pushed": 142,
+    "round_active": 144,
     "round_merged": null,
     "banned": false
   },
   "details": {
-    "name": "ubelos",
-    "player_id": "0x1d74c4f8655ca2b7bca7d41c60320ebb23990ea3",
-    "challenge_id": "c001",
+    "name": "linepulse",
+    "player_id": "0x4a4298f13be1b0d225904c77025acf07bd36d0e1",
+    "challenge_id": "c008",
     "algorithm_id": null,
     "fee_paid": "10000000000000000000"
   },
-  "adoption": null,
-  "compile_success": false,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
+  "adoption": 0.0873997383340098,
+  "compile_success": true,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
 }
 ```
 
-### TIG adaptive_js_dn_v1: submitted
+### TIG adaptive_js_dn_v1: public
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/job_scheduling/adaptive_js_dn_v1/tig-algorithms/>)
 
-Submission metadata/state changed; Compilation: True
+Status: submitted → public
 
 ```json
 {
   "record_kind": "code",
   "algorithm_id": "c007_a066",
-  "stage": "submitted",
+  "stage": "public",
   "state": {
     "block_confirmed": 1431340,
     "round_submitted": 142,
@@ -528,137 +417,137 @@ Submission metadata/state changed; Compilation: True
   },
   "adoption": null,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
-}
-```
-
-### TIG harimox_v3: compile_failed
-
-Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
-
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
-
-Status: submitted → compile_failed; Compilation: False
-
-```json
-{
-  "record_kind": "code",
-  "algorithm_id": "c008_a062",
-  "stage": "compile_failed",
-  "state": {
-    "block_confirmed": 1431244,
-    "round_submitted": 142,
-    "round_pushed": 144,
-    "round_active": null,
-    "round_merged": null,
-    "banned": false
-  },
-  "details": {
-    "name": "harimox_v3",
-    "player_id": "0xb6014aac3fbc97a521d7345e73831eac15dd87fb",
-    "challenge_id": "c008",
-    "algorithm_id": null,
-    "fee_paid": "10000000000000000000"
-  },
-  "adoption": null,
-  "compile_success": false,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
-}
-```
-
-### TIG axiom_quasar: public
-
-Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
-
-[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/knapsack/axiom_quasar/tig-algorithms/>)
-
-Submission metadata/state changed; Compilation: True
-
-```json
-{
-  "record_kind": "code",
-  "algorithm_id": "c003_a163",
-  "stage": "public",
-  "state": {
-    "block_confirmed": 1420238,
-    "round_submitted": 141,
-    "round_pushed": 143,
-    "round_active": 145,
-    "round_merged": null,
-    "banned": false
-  },
-  "details": {
-    "name": "axiom_quasar",
-    "player_id": "0x1d74c4f8655ca2b7bca7d41c60320ebb23990ea3",
-    "challenge_id": "c003",
-    "algorithm_id": null,
-    "fee_paid": "10000000000000000000"
-  },
-  "adoption": null,
-  "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
   "public": true
 }
 ```
 
-### TIG hgs_epure_ep4: submitted
+### TIG tekinon_v2: active
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/satisfiability/tekinon_v2/tig-algorithms/>)
 
-Submission metadata/state changed; Compilation: True
+Status: public → active
 
 ```json
 {
   "record_kind": "code",
-  "algorithm_id": "c002_a134",
-  "stage": "submitted",
+  "algorithm_id": "c001_a140",
+  "stage": "active",
   "state": {
-    "block_confirmed": 1434068,
-    "round_submitted": 143,
-    "round_pushed": 145,
-    "round_active": 147,
+    "block_confirmed": 1410922,
+    "round_submitted": 140,
+    "round_pushed": 142,
+    "round_active": 144,
     "round_merged": null,
     "banned": false
   },
   "details": {
-    "name": "hgs_epure_ep4",
-    "player_id": "0x7c56bf729b165f1d243cb714a05971512d27dbc8",
-    "challenge_id": "c002",
+    "name": "tekinon_v2",
+    "player_id": "0xb6014aac3fbc97a521d7345e73831eac15dd87fb",
+    "challenge_id": "c001",
     "algorithm_id": null,
     "fee_paid": "10000000000000000000"
   },
-  "adoption": null,
+  "adoption": 0.0,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
 }
 ```
 
-### TIG murelan_v3: submitted
+### TIG sirocco: active
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/job_scheduling/sirocco/tig-algorithms/>)
 
-Submission metadata/state changed; Compilation: True
+Status: public → active
+
+```json
+{
+  "record_kind": "code",
+  "algorithm_id": "c007_a058",
+  "stage": "active",
+  "state": {
+    "block_confirmed": 1402212,
+    "round_submitted": 140,
+    "round_pushed": 142,
+    "round_active": 144,
+    "round_merged": null,
+    "banned": false
+  },
+  "details": {
+    "name": "sirocco",
+    "player_id": "0x003551a316597a1ea553f3498d246499ef76905c",
+    "challenge_id": "c007",
+    "algorithm_id": null,
+    "fee_paid": "10000000000000000000"
+  },
+  "adoption": 0.0,
+  "compile_success": true,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
+}
+```
+
+### TIG ember_pinatubo: active
+
+Typ: submission · Quelle: tig-live
+Erfasst: 2026-11-25T18:02:49+00:00
+
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/job_scheduling/ember_pinatubo/tig-algorithms/>)
+
+Status: public → active
+
+```json
+{
+  "record_kind": "code",
+  "algorithm_id": "c007_a062",
+  "stage": "active",
+  "state": {
+    "block_confirmed": 1410962,
+    "round_submitted": 140,
+    "round_pushed": 142,
+    "round_active": 144,
+    "round_merged": null,
+    "banned": false
+  },
+  "details": {
+    "name": "ember_pinatubo",
+    "player_id": "0x26c3c880f00daee5f6857837b19499d833338474",
+    "challenge_id": "c007",
+    "algorithm_id": null,
+    "fee_paid": "10000000000000000000"
+  },
+  "adoption": 0.14789453650607048,
+  "compile_success": true,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
+}
+```
+
+### TIG murelan_v3: public
+
+Typ: submission · Quelle: tig-live
+Erfasst: 2026-11-25T18:02:49+00:00
+
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/vehicle_routing/murelan_v3/tig-algorithms/>)
+
+Status: submitted → public
 
 ```json
 {
   "record_kind": "code",
   "algorithm_id": "c002_a129",
-  "stage": "submitted",
+  "stage": "public",
   "state": {
     "block_confirmed": 1431246,
     "round_submitted": 142,
@@ -676,90 +565,90 @@ Submission metadata/state changed; Compilation: True
   },
   "adoption": null,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
 }
 ```
 
-### TIG hgs_epure_ep3: submitted
+### TIG there_v11: merged
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/vector_search/there_v11/tig-algorithms/>)
 
-Submission metadata/state changed; Compilation: True
+Adoption: 70.30% → 63.02%
 
 ```json
 {
   "record_kind": "code",
-  "algorithm_id": "c002_a132",
-  "stage": "submitted",
+  "algorithm_id": "c004_a107",
+  "stage": "merged",
   "state": {
-    "block_confirmed": 1432604,
-    "round_submitted": 143,
-    "round_pushed": 145,
-    "round_active": 147,
-    "round_merged": null,
+    "block_confirmed": 1335714,
+    "round_submitted": 133,
+    "round_pushed": 135,
+    "round_active": 137,
+    "round_merged": 138,
     "banned": false
   },
   "details": {
-    "name": "hgs_epure_ep3",
-    "player_id": "0x7c56bf729b165f1d243cb714a05971512d27dbc8",
-    "challenge_id": "c002",
+    "name": "there_v11",
+    "player_id": "0x1884f0fe1208f38a1433b706790e22be9fed1f7c",
+    "challenge_id": "c004",
     "algorithm_id": null,
     "fee_paid": "10000000000000000000"
   },
-  "adoption": null,
+  "adoption": 0.6302343097719147,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
 }
 ```
 
-### TIG hgs_epure_ep2: submitted
+### TIG sat_tailwalk_v8: active
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/satisfiability/sat_tailwalk_v8/tig-algorithms/>)
 
-Submission metadata/state changed; Compilation: True
+Adoption: 50.70% → 56.07%
 
 ```json
 {
   "record_kind": "code",
-  "algorithm_id": "c002_a131",
-  "stage": "submitted",
+  "algorithm_id": "c001_a137",
+  "stage": "active",
   "state": {
-    "block_confirmed": 1431820,
-    "round_submitted": 143,
-    "round_pushed": 145,
-    "round_active": 147,
+    "block_confirmed": 1401105,
+    "round_submitted": 139,
+    "round_pushed": 141,
+    "round_active": 143,
     "round_merged": null,
     "banned": false
   },
   "details": {
-    "name": "hgs_epure_ep2",
-    "player_id": "0x7c56bf729b165f1d243cb714a05971512d27dbc8",
-    "challenge_id": "c002",
+    "name": "sat_tailwalk_v8",
+    "player_id": "0xe992838015d546a41fb5cdf3259e3b0ac2d8f94f",
+    "challenge_id": "c001",
     "algorithm_id": null,
     "fee_paid": "10000000000000000000"
   },
-  "adoption": null,
+  "adoption": 0.5606987588891228,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
 }
 ```
 
-### TIG energy_talos_v2: compile_failed
+### TIG kestrel: compile_failed
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
 [Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
 
@@ -768,119 +657,45 @@ Newly observed submission
 ```json
 {
   "record_kind": "code",
-  "algorithm_id": "c008_a065",
+  "algorithm_id": "c001_a148",
   "stage": "compile_failed",
   "state": {
-    "block_confirmed": 1441048,
-    "round_submitted": 143,
-    "round_pushed": 145,
+    "block_confirmed": 1441823,
+    "round_submitted": 144,
+    "round_pushed": 146,
     "round_active": null,
     "round_merged": null,
     "banned": false
   },
   "details": {
-    "name": "energy_talos_v2",
-    "player_id": "0xe992838015d546a41fb5cdf3259e3b0ac2d8f94f",
-    "challenge_id": "c008",
+    "name": "kestrel",
+    "player_id": "0x1d74c4f8655ca2b7bca7d41c60320ebb23990ea3",
+    "challenge_id": "c001",
     "algorithm_id": null,
     "fee_paid": "10000000000000000000"
   },
   "adoption": null,
   "compile_success": false,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
   "public": false
 }
 ```
 
-### TIG alize: submitted
+### TIG arb_omega_c2: public
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/energy_arbitrage/arb_omega_c2/tig-algorithms/>)
 
-Newly observed submission
-
-```json
-{
-  "record_kind": "code",
-  "algorithm_id": "c002_a137",
-  "stage": "submitted",
-  "state": {
-    "block_confirmed": 1441173,
-    "round_submitted": 143,
-    "round_pushed": 145,
-    "round_active": 147,
-    "round_merged": null,
-    "banned": false
-  },
-  "details": {
-    "name": "alize",
-    "player_id": "0x003551a316597a1ea553f3498d246499ef76905c",
-    "challenge_id": "c002",
-    "algorithm_id": "c002_a110",
-    "fee_paid": "10000000000000000000"
-  },
-  "adoption": null,
-  "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
-}
-```
-
-### TIG gridflow: merged
-
-Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
-
-[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/energy_arbitrage/gridflow/tig-algorithms/>)
-
-Adoption: 28.06% → 0.00%
-
-```json
-{
-  "record_kind": "code",
-  "algorithm_id": "c008_a052",
-  "stage": "merged",
-  "state": {
-    "block_confirmed": 1344305,
-    "round_submitted": 134,
-    "round_pushed": 136,
-    "round_active": 138,
-    "round_merged": 139,
-    "banned": false
-  },
-  "details": {
-    "name": "gridflow",
-    "player_id": "0x3ce59606c2c3929d3f3b0f147b900942ae21fffe",
-    "challenge_id": "c008",
-    "algorithm_id": null,
-    "fee_paid": "10000000000000000000"
-  },
-  "adoption": 0.0,
-  "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": true
-}
-```
-
-### TIG arb_omega_c2: submitted
-
-Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
-
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
-
-Submission metadata/state changed; Compilation: True
+Status: submitted → public
 
 ```json
 {
   "record_kind": "code",
   "algorithm_id": "c008_a061",
-  "stage": "submitted",
+  "stage": "public",
   "state": {
     "block_confirmed": 1431205,
     "round_submitted": 142,
@@ -898,63 +713,26 @@ Submission metadata/state changed; Compilation: True
   },
   "adoption": null,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
 }
 ```
 
-### TIG stormvault2: submitted
+### TIG peakshift_dn_v1: public
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/energy_arbitrage/peakshift_dn_v1/tig-algorithms/>)
 
-Submission metadata/state changed; Compilation: True
-
-```json
-{
-  "record_kind": "code",
-  "algorithm_id": "c008_a064",
-  "stage": "submitted",
-  "state": {
-    "block_confirmed": 1437773,
-    "round_submitted": 143,
-    "round_pushed": 145,
-    "round_active": 147,
-    "round_merged": null,
-    "banned": false
-  },
-  "details": {
-    "name": "stormvault2",
-    "player_id": "0x1842ee174950117b871828a68e5be09d305ad31c",
-    "challenge_id": "c008",
-    "algorithm_id": null,
-    "fee_paid": "10000000000000000000"
-  },
-  "adoption": null,
-  "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
-}
-```
-
-### TIG peakshift_dn_v1: submitted
-
-Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
-
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
-
-Submission metadata/state changed; Compilation: True
+Status: submitted → public
 
 ```json
 {
   "record_kind": "code",
   "algorithm_id": "c008_a063",
-  "stage": "submitted",
+  "stage": "public",
   "state": {
     "block_confirmed": 1431334,
     "round_submitted": 142,
@@ -972,26 +750,26 @@ Submission metadata/state changed; Compilation: True
   },
   "adoption": null,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
 }
 ```
 
-### TIG sat_omega_c33: submitted
+### TIG sat_omega_c33: public
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/satisfiability/sat_omega_c33/tig-algorithms/>)
 
-Submission metadata/state changed; Compilation: True
+Status: submitted → public
 
 ```json
 {
   "record_kind": "code",
   "algorithm_id": "c001_a143",
-  "stage": "submitted",
+  "stage": "public",
   "state": {
     "block_confirmed": 1431218,
     "round_submitted": 142,
@@ -1009,100 +787,63 @@ Submission metadata/state changed; Compilation: True
   },
   "adoption": null,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
 }
 ```
 
-### TIG talos: public
+### TIG hgs_epure_pierre: active
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/satisfiability/talos/tig-algorithms/>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/vehicle_routing/hgs_epure_pierre/tig-algorithms/>)
 
-Submission metadata/state changed; Compilation: True
+Status: public → active
 
 ```json
 {
   "record_kind": "code",
-  "algorithm_id": "c001_a142",
-  "stage": "public",
+  "algorithm_id": "c002_a126",
+  "stage": "active",
   "state": {
-    "block_confirmed": 1421241,
-    "round_submitted": 141,
-    "round_pushed": 143,
-    "round_active": 145,
+    "block_confirmed": 1410955,
+    "round_submitted": 140,
+    "round_pushed": 142,
+    "round_active": 144,
     "round_merged": null,
     "banned": false
   },
   "details": {
-    "name": "talos",
-    "player_id": "0xe992838015d546a41fb5cdf3259e3b0ac2d8f94f",
-    "challenge_id": "c001",
-    "algorithm_id": null,
+    "name": "hgs_epure_pierre",
+    "player_id": "0x26c3c880f00daee5f6857837b19499d833338474",
+    "challenge_id": "c002",
+    "algorithm_id": "c002_a110",
     "fee_paid": "10000000000000000000"
   },
-  "adoption": null,
+  "adoption": 0.0,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
   "public": true
 }
 ```
 
-### TIG daripal_ptx_v2: compile_failed
+### TIG turn_ether: public
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/vector_search/daripal_ptx_v2/tig-algorithms/>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/job_scheduling/turn_ether/tig-algorithms/>)
 
-Status: public → compile_failed; Compilation: False
-
-```json
-{
-  "record_kind": "code",
-  "algorithm_id": "c004_a112",
-  "stage": "compile_failed",
-  "state": {
-    "block_confirmed": 1420247,
-    "round_submitted": 141,
-    "round_pushed": 143,
-    "round_active": null,
-    "round_merged": null,
-    "banned": false
-  },
-  "details": {
-    "name": "daripal_ptx_v2",
-    "player_id": "0x1d74c4f8655ca2b7bca7d41c60320ebb23990ea3",
-    "challenge_id": "c004",
-    "algorithm_id": null,
-    "fee_paid": "10000000000000000000"
-  },
-  "adoption": null,
-  "compile_success": false,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": true
-}
-```
-
-### TIG turn_ether: submitted
-
-Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
-
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
-
-Submission metadata/state changed; Compilation: True
+Status: submitted → public
 
 ```json
 {
   "record_kind": "code",
   "algorithm_id": "c007_a064",
-  "stage": "submitted",
+  "stage": "public",
   "state": {
     "block_confirmed": 1422036,
     "round_submitted": 142,
@@ -1120,32 +861,32 @@ Submission metadata/state changed; Compilation: True
   },
   "adoption": null,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
 }
 ```
 
-### TIG harimox: active
+### TIG harimox: merged
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
 [Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/energy_arbitrage/harimox/tig-algorithms/>)
 
-Adoption: 71.94% → 100.00%
+Status: active → merged; Submission metadata/state changed; Adoption: 100.00% → 91.26%
 
 ```json
 {
   "record_kind": "code",
   "algorithm_id": "c008_a057",
-  "stage": "active",
+  "stage": "merged",
   "state": {
     "block_confirmed": 1399787,
     "round_submitted": 139,
     "round_pushed": 141,
     "round_active": 143,
-    "round_merged": null,
+    "round_merged": 144,
     "banned": false
   },
   "details": {
@@ -1155,65 +896,28 @@ Adoption: 71.94% → 100.00%
     "algorithm_id": null,
     "fee_paid": "10000000000000000000"
   },
-  "adoption": 1.0,
+  "adoption": 0.9126002616659902,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
   "public": true
 }
 ```
 
-### TIG hgs_epure_dn_v1: compile_failed
+### TIG hgs_epure_titane: public
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/vehicle_routing/hgs_epure_titane/tig-algorithms/>)
 
-Status: submitted → compile_failed; Compilation: False
-
-```json
-{
-  "record_kind": "code",
-  "algorithm_id": "c002_a130",
-  "stage": "compile_failed",
-  "state": {
-    "block_confirmed": 1431339,
-    "round_submitted": 142,
-    "round_pushed": 144,
-    "round_active": null,
-    "round_merged": null,
-    "banned": false
-  },
-  "details": {
-    "name": "hgs_epure_dn_v1",
-    "player_id": "0xf33f772168efbebb618b95ea6bccf48adb5e1744",
-    "challenge_id": "c002",
-    "algorithm_id": null,
-    "fee_paid": "10000000000000000000"
-  },
-  "adoption": null,
-  "compile_success": false,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
-}
-```
-
-### TIG hgs_epure_titane: submitted
-
-Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
-
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
-
-Submission metadata/state changed; Compilation: True
+Status: submitted → public
 
 ```json
 {
   "record_kind": "code",
   "algorithm_id": "c002_a128",
-  "stage": "submitted",
+  "stage": "public",
   "state": {
     "block_confirmed": 1431195,
     "round_submitted": 142,
@@ -1231,26 +935,26 @@ Submission metadata/state changed; Compilation: True
   },
   "adoption": null,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
 }
 ```
 
-### TIG tekinon_v3: submitted
+### TIG tekinon_v3: public
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/satisfiability/tekinon_v3/tig-algorithms/>)
 
-Submission metadata/state changed; Compilation: True
+Status: submitted → public
 
 ```json
 {
   "record_kind": "code",
   "algorithm_id": "c001_a144",
-  "stage": "submitted",
+  "stage": "public",
   "state": {
     "block_confirmed": 1431245,
     "round_submitted": 142,
@@ -1268,57 +972,57 @@ Submission metadata/state changed; Compilation: True
   },
   "adoption": null,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
 }
 ```
 
-### TIG longhaul2: submitted
+### TIG sat_survey: active
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/satisfiability/sat_survey/tig-algorithms/>)
 
-Submission metadata/state changed; Compilation: True
+Status: public → active
 
 ```json
 {
   "record_kind": "code",
-  "algorithm_id": "c002_a136",
-  "stage": "submitted",
+  "algorithm_id": "c001_a139",
+  "stage": "active",
   "state": {
-    "block_confirmed": 1438522,
-    "round_submitted": 143,
-    "round_pushed": 145,
-    "round_active": 147,
+    "block_confirmed": 1402976,
+    "round_submitted": 140,
+    "round_pushed": 142,
+    "round_active": 144,
     "round_merged": null,
     "banned": false
   },
   "details": {
-    "name": "longhaul2",
-    "player_id": "0x1842ee174950117b871828a68e5be09d305ad31c",
-    "challenge_id": "c002",
-    "algorithm_id": "c002_a110",
+    "name": "sat_survey",
+    "player_id": "0xfe2a215c01a1d98f9364619a68798cce8442ef9c",
+    "challenge_id": "c001",
+    "algorithm_id": null,
     "fee_paid": "10000000000000000000"
   },
-  "adoption": null,
+  "adoption": 0.0,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
 }
 ```
 
 ### TIG sat_exact_sp128: merged
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
 [Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/satisfiability/sat_exact_sp128/tig-algorithms/>)
 
-Adoption: 7.67% → 0.00%
+Adoption: 0.00% → 5.64%
 
 ```json
 {
@@ -1340,30 +1044,67 @@ Adoption: 7.67% → 0.00%
     "algorithm_id": null,
     "fee_paid": "10000000000000000000"
   },
-  "adoption": 0.0,
+  "adoption": 0.05636898602111332,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
   "public": true
 }
 ```
 
-### TIG autan: submitted
+### TIG zofogin_v2: active
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/hypergraph/zofogin_v2/tig-algorithms/>)
 
-Submission metadata/state changed; Compilation: True
+Status: public → active
 
 ```json
 {
   "record_kind": "code",
-  "algorithm_id": "c002_a133",
+  "algorithm_id": "c005_a046",
+  "stage": "active",
+  "state": {
+    "block_confirmed": 1410926,
+    "round_submitted": 140,
+    "round_pushed": 142,
+    "round_active": 144,
+    "round_merged": null,
+    "banned": false
+  },
+  "details": {
+    "name": "zofogin_v2",
+    "player_id": "0xb6014aac3fbc97a521d7345e73831eac15dd87fb",
+    "challenge_id": "c005",
+    "algorithm_id": null,
+    "fee_paid": "10000000000000000000"
+  },
+  "adoption": 0.0,
+  "compile_success": true,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
+}
+```
+
+### TIG stormvault3: submitted
+
+Typ: submission · Quelle: tig-live
+Erfasst: 2026-11-25T18:02:49+00:00
+
+[Originalquelle](<https://docs.tig.foundation/innovators/code-submission>)
+
+Newly observed submission
+
+```json
+{
+  "record_kind": "code",
+  "algorithm_id": "c008_a066",
   "stage": "submitted",
   "state": {
-    "block_confirmed": 1433619,
+    "block_confirmed": 1441383,
     "round_submitted": 143,
     "round_pushed": 145,
     "round_active": 147,
@@ -1371,77 +1112,40 @@ Submission metadata/state changed; Compilation: True
     "banned": false
   },
   "details": {
-    "name": "autan",
-    "player_id": "0x003551a316597a1ea553f3498d246499ef76905c",
-    "challenge_id": "c002",
-    "algorithm_id": "c002_a110",
-    "fee_paid": "10000000000000000000"
-  },
-  "adoption": null,
-  "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": false
-}
-```
-
-### TIG vemiral_v2: public
-
-Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
-
-[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/knapsack/vemiral_v2/tig-algorithms/>)
-
-Submission metadata/state changed; Compilation: True
-
-```json
-{
-  "record_kind": "code",
-  "algorithm_id": "c003_a164",
-  "stage": "public",
-  "state": {
-    "block_confirmed": 1421060,
-    "round_submitted": 141,
-    "round_pushed": 143,
-    "round_active": 145,
-    "round_merged": null,
-    "banned": false
-  },
-  "details": {
-    "name": "vemiral_v2",
-    "player_id": "0xb6014aac3fbc97a521d7345e73831eac15dd87fb",
-    "challenge_id": "c003",
+    "name": "stormvault3",
+    "player_id": "0x1842ee174950117b871828a68e5be09d305ad31c",
+    "challenge_id": "c008",
     "algorithm_id": null,
     "fee_paid": "10000000000000000000"
   },
   "adoption": null,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
-  "public": true
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": false
 }
 ```
 
-### TIG tekinon: active
+### TIG tekinon: merged
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
 [Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/satisfiability/tekinon/tig-algorithms/>)
 
-Adoption: 37.76% → 47.04%
+Status: active → merged; Submission metadata/state changed; Adoption: 47.04% → 35.59%
 
 ```json
 {
   "record_kind": "code",
   "algorithm_id": "c001_a135",
-  "stage": "active",
+  "stage": "merged",
   "state": {
     "block_confirmed": 1399786,
     "round_submitted": 139,
     "round_pushed": 141,
     "round_active": 143,
-    "round_merged": null,
+    "round_merged": 144,
     "banned": false
   },
   "details": {
@@ -1451,327 +1155,510 @@ Adoption: 37.76% → 47.04%
     "algorithm_id": null,
     "fee_paid": "10000000000000000000"
   },
-  "adoption": 0.47038370513678535,
+  "adoption": 0.3559499514193952,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
   "public": true
 }
 ```
 
-### TIG packsat_talos: public
+### TIG murelan: merged
 
 Typ: submission · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/knapsack/packsat_talos/tig-algorithms/>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/vehicle_routing/murelan/tig-algorithms/>)
 
-Submission metadata/state changed; Compilation: True
+Status: active → merged; Submission metadata/state changed
 
 ```json
 {
   "record_kind": "code",
-  "algorithm_id": "c003_a162",
-  "stage": "public",
+  "algorithm_id": "c002_a123",
+  "stage": "merged",
   "state": {
-    "block_confirmed": 1420236,
-    "round_submitted": 141,
-    "round_pushed": 143,
-    "round_active": 145,
-    "round_merged": null,
+    "block_confirmed": 1399883,
+    "round_submitted": 139,
+    "round_pushed": 141,
+    "round_active": 143,
+    "round_merged": 144,
     "banned": false
   },
   "details": {
-    "name": "packsat_talos",
-    "player_id": "0xfe2a215c01a1d98f9364619a68798cce8442ef9c",
-    "challenge_id": "c003",
-    "algorithm_id": null,
+    "name": "murelan",
+    "player_id": "0xb6014aac3fbc97a521d7345e73831eac15dd87fb",
+    "challenge_id": "c002",
+    "algorithm_id": "c002_a110",
     "fee_paid": "10000000000000000000"
   },
-  "adoption": null,
+  "adoption": 0.8112595038372475,
   "compile_success": true,
-  "block_id": "27c77b5d20c8ad0422443e18f904e6dc",
-  "height": 1441240,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
   "public": true
 }
 ```
 
-### TIG source updated: energy_arbitrage/energy_talos_v1
+### TIG ember_opt_v3: active
 
-Typ: source · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Typ: submission · Quelle: tig-live
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/b67cf60305655aaccbffebc1e8e309c13f099fa5/tig-algorithms>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/job_scheduling/ember_opt_v3/tig-algorithms/>)
 
-```text
-10 added/changed source files; 0 removed; 10 source files total.
-README metadata (author supplied):
-* **Challenge Name:** energy_arbitrage
-* **Algorithm Name:** energy_talos_v1
-* **Identity of Submitter:** zhenglcc
-* **Identity of Creator of Algorithmic Method:** null
-* **Unique Algorithm Identifier (UAI):** null
-Text analysis limited to 4/10 changed files; all source hashes recorded
-Stored excerpt truncated: tig-algorithms/src/energy_arbitrage/energy_talos_v1/hyperparameters.rs
-Stored excerpt truncated: tig-algorithms/src/energy_arbitrage/energy_talos_v1/kernels.rs
-```
+Status: public → active
 
 ```json
 {
-  "branch": "energy_arbitrage/energy_talos_v1",
-  "head": "b67cf60305655aaccbffebc1e8e309c13f099fa5",
-  "previous_head": null,
-  "changed_files": [
-    "tig-algorithms/src/energy_arbitrage/energy_talos_v1/README.md",
-    "tig-algorithms/src/energy_arbitrage/energy_talos_v1/hyperparameters.rs",
-    "tig-algorithms/src/energy_arbitrage/energy_talos_v1/kernels.rs",
-    "tig-algorithms/src/energy_arbitrage/energy_talos_v1/mod.rs",
-    "tig-algorithms/src/energy_arbitrage/energy_talos_v1/track_t1.rs",
-    "tig-algorithms/src/energy_arbitrage/energy_talos_v1/track_t3.rs",
-    "tig-algorithms/src/energy_arbitrage/energy_talos_v1/track_t5.rs",
-    "tig-algorithms/src/energy_arbitrage/energy_talos_v1/wasserwert_t2.rs",
-    "tig-algorithms/src/energy_arbitrage/energy_talos_v1/wasserwert_t4.rs",
-    "tig-algorithms/src/energy_arbitrage/energy_talos_v1/wide.rs"
-  ],
-  "removed_files": [],
-  "source_fingerprint": "103a3ff5f1a8ff87926b"
+  "record_kind": "code",
+  "algorithm_id": "c007_a057",
+  "stage": "active",
+  "state": {
+    "block_confirmed": 1401290,
+    "round_submitted": 140,
+    "round_pushed": 142,
+    "round_active": 144,
+    "round_merged": null,
+    "banned": false
+  },
+  "details": {
+    "name": "ember_opt_v3",
+    "player_id": "0xfe2a215c01a1d98f9364619a68798cce8442ef9c",
+    "challenge_id": "c007",
+    "algorithm_id": null,
+    "fee_paid": "10000000000000000000"
+  },
+  "adoption": 0.0,
+  "compile_success": true,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
 }
 ```
 
-### TIG source updated: energy_arbitrage/harimox_v2
+### TIG ember_krakatoa: merged
 
-Typ: source · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Typ: submission · Quelle: tig-live
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/0c79347334c257fec76860c5718e8ec7fb6a59cd/tig-algorithms>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/job_scheduling/ember_krakatoa/tig-algorithms/>)
 
-```text
-10 added/changed source files; 0 removed; 10 source files total.
-README metadata (author supplied):
-* **Challenge Name:** energy_arbitrage
-* **Algorithm Name:** harimox_v2
-* **Identity of Submitter:** tilk
-* **Identity of Creator of Algorithmic Method:** null
-* **Unique Algorithm Identifier (UAI):** null
-Text analysis limited to 4/10 changed files; all source hashes recorded
-Stored excerpt truncated: tig-algorithms/src/energy_arbitrage/harimox_v2/README.md
-Stored excerpt truncated: tig-algorithms/src/energy_arbitrage/harimox_v2/baseline_policy.rs
-Stored excerpt truncated: tig-algorithms/src/energy_arbitrage/harimox_v2/hyperparameters.rs
-Stored excerpt truncated: tig-algorithms/src/energy_arbitrage/harimox_v2/kernels.rs
-```
+Status: active → merged; Submission metadata/state changed; Adoption: 90.14% → 77.11%
 
 ```json
 {
-  "branch": "energy_arbitrage/harimox_v2",
-  "head": "0c79347334c257fec76860c5718e8ec7fb6a59cd",
-  "previous_head": null,
-  "changed_files": [
-    "tig-algorithms/src/energy_arbitrage/harimox_v2/README.md",
-    "tig-algorithms/src/energy_arbitrage/harimox_v2/baseline_policy.rs",
-    "tig-algorithms/src/energy_arbitrage/harimox_v2/hyperparameters.rs",
-    "tig-algorithms/src/energy_arbitrage/harimox_v2/kernels.rs",
-    "tig-algorithms/src/energy_arbitrage/harimox_v2/mod.rs",
-    "tig-algorithms/src/energy_arbitrage/harimox_v2/track_t1.rs",
-    "tig-algorithms/src/energy_arbitrage/harimox_v2/track_t3.rs",
-    "tig-algorithms/src/energy_arbitrage/harimox_v2/track_t5.rs",
-    "tig-algorithms/src/energy_arbitrage/harimox_v2/wasserwert.rs",
-    "tig-algorithms/src/energy_arbitrage/harimox_v2/wide.rs"
-  ],
-  "removed_files": [],
-  "source_fingerprint": "c088ba034fcfcf841232"
+  "record_kind": "code",
+  "algorithm_id": "c007_a056",
+  "stage": "merged",
+  "state": {
+    "block_confirmed": 1400946,
+    "round_submitted": 139,
+    "round_pushed": 141,
+    "round_active": 143,
+    "round_merged": 144,
+    "banned": false
+  },
+  "details": {
+    "name": "ember_krakatoa",
+    "player_id": "0x26c3c880f00daee5f6857837b19499d833338474",
+    "challenge_id": "c007",
+    "algorithm_id": null,
+    "fee_paid": "10000000000000000000"
+  },
+  "adoption": 0.7710965331744555,
+  "compile_success": true,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
 }
 ```
 
-### TIG source updated: hypergraph/sigma_freud_v14
+### TIG axiom_pulsar: active
 
-Typ: source · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Typ: submission · Quelle: tig-live
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/cca427d9f394ed34535ba8b084c27c7f21409bcc/tig-algorithms>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/knapsack/axiom_pulsar/tig-algorithms/>)
 
-```text
-16 added/changed source files; 0 removed; 16 source files total.
-README metadata (author supplied):
-* **Challenge Name:** hypergraph
-* **Algorithm Name:** sigma_freud_v14
-* **Identity of Submitter:** Rootz
-* **Identity of Creator of Algorithmic Method:** Rootz
-* **Unique Algorithm Identifier (UAI):** null
-Text analysis limited to 4/16 changed files; all source hashes recorded
-Stored excerpt truncated: tig-algorithms/src/hypergraph/sigma_freud_v14/hflow.rs
-Stored excerpt truncated: tig-algorithms/src/hypergraph/sigma_freud_v14/hjet.rs
-```
+Status: public → active
 
 ```json
 {
-  "branch": "hypergraph/sigma_freud_v14",
-  "head": "cca427d9f394ed34535ba8b084c27c7f21409bcc",
-  "previous_head": null,
-  "changed_files": [
-    "tig-algorithms/src/hypergraph/sigma_freud_v14/README.md",
-    "tig-algorithms/src/hypergraph/sigma_freud_v14/hflow.rs",
-    "tig-algorithms/src/hypergraph/sigma_freud_v14/hjet.rs",
-    "tig-algorithms/src/hypergraph/sigma_freud_v14/hmulti.rs",
-    "tig-algorithms/src/hypergraph/sigma_freud_v14/hrefine.rs",
-    "tig-algorithms/src/hypergraph/sigma_freud_v14/kernels_100k.cu",
-    "tig-algorithms/src/hypergraph/sigma_freud_v14/kernels_10k.cu",
-    "tig-algorithms/src/hypergraph/sigma_freud_v14/kernels_200k.cu",
-    "tig-algorithms/src/hypergraph/sigma_freud_v14/kernels_20k.cu",
-    "tig-algorithms/src/hypergraph/sigma_freud_v14/kernels_50k.cu",
-    "tig-algorithms/src/hypergraph/sigma_freud_v14/mod.rs",
-    "tig-algorithms/src/hypergraph/sigma_freud_v14/track_100k.rs",
-    "tig-algorithms/src/hypergraph/sigma_freud_v14/track_10k.rs",
-    "tig-algorithms/src/hypergraph/sigma_freud_v14/track_200k.rs",
-    "tig-algorithms/src/hypergraph/sigma_freud_v14/track_20k.rs",
-    "tig-algorithms/src/hypergraph/sigma_freud_v14/track_50k.rs"
-  ],
-  "removed_files": [],
-  "source_fingerprint": "ccd7ac09725afc7f5987"
+  "record_kind": "code",
+  "algorithm_id": "c003_a160",
+  "stage": "active",
+  "state": {
+    "block_confirmed": 1401766,
+    "round_submitted": 140,
+    "round_pushed": 142,
+    "round_active": 144,
+    "round_merged": null,
+    "banned": false
+  },
+  "details": {
+    "name": "axiom_pulsar",
+    "player_id": "0x1d74c4f8655ca2b7bca7d41c60320ebb23990ea3",
+    "challenge_id": "c003",
+    "algorithm_id": null,
+    "fee_paid": "10000000000000000000"
+  },
+  "adoption": 0.0,
+  "compile_success": true,
+  "block_id": "62d7a3b106d2e737b5569e3d92219a0b",
+  "height": 1442621,
+  "public": true
 }
 ```
 
-### TIG source updated: hypergraph/zofogin_v3
+### TIG source updated: energy_arbitrage/arb_omega_c2
 
 Typ: source · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
+Erfasst: 2026-11-25T18:02:49+00:00
 
-[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/f541a41851169724c631bc43bc58bea40133fc89/tig-algorithms>)
-
-```text
-20 added/changed source files; 0 removed; 20 source files total.
-README metadata (author supplied):
-* **Challenge Name:** hypergraph
-* **Algorithm Name:** zofogin_v3
-* **Identity of Submitter:** tilk
-* **Identity of Creator of Algorithmic Method:** null
-* **Unique Algorithm Identifier (UAI):** null
-Text analysis limited to 4/20 changed files; all source hashes recorded
-Stored excerpt truncated: tig-algorithms/src/hypergraph/zofogin_v3/README.md
-Stored excerpt truncated: tig-algorithms/src/hypergraph/zofogin_v3/baseline.rs
-Stored excerpt truncated: tig-algorithms/src/hypergraph/zofogin_v3/fm.rs
-```
-
-```json
-{
-  "branch": "hypergraph/zofogin_v3",
-  "head": "f541a41851169724c631bc43bc58bea40133fc89",
-  "previous_head": null,
-  "changed_files": [
-    "tig-algorithms/src/hypergraph/zofogin_v3/README.md",
-    "tig-algorithms/src/hypergraph/zofogin_v3/baseline.rs",
-    "tig-algorithms/src/hypergraph/zofogin_v3/coarsen.rs",
-    "tig-algorithms/src/hypergraph/zofogin_v3/fm.rs",
-    "tig-algorithms/src/hypergraph/zofogin_v3/gain.rs",
-    "tig-algorithms/src/hypergraph/zofogin_v3/grouped.rs",
-    "tig-algorithms/src/hypergraph/zofogin_v3/grouped_small.rs",
-    "tig-algorithms/src/hypergraph/zofogin_v3/infer.rs",
-    "tig-algorithms/src/hypergraph/zofogin_v3/jet.rs",
-    "tig-algorithms/src/hypergraph/zofogin_v3/kernels_10k.cu",
-    "tig-algorithms/src/hypergraph/zofogin_v3/kernels_inf.cu",
-    "tig-algorithms/src/hypergraph/zofogin_v3/kernels_select.cu",
-    "tig-algorithms/src/hypergraph/zofogin_v3/kernels_tracks.cu",
-    "tig-algorithms/src/hypergraph/zofogin_v3/ml.rs",
-    "tig-algorithms/src/hypergraph/zofogin_v3/ml2.rs",
-    "tig-algorithms/src/hypergraph/zofogin_v3/mod.rs",
-    "tig-algorithms/src/hypergraph/zofogin_v3/params.rs",
-    "tig-algorithms/src/hypergraph/zofogin_v3/refine.rs",
-    "tig-algorithms/src/hypergraph/zofogin_v3/track.rs",
-    "tig-algorithms/src/hypergraph/zofogin_v3/track_10k.rs"
-  ],
-  "removed_files": [],
-  "source_fingerprint": "8eee4ed45a921436155b"
-}
-```
-
-### TIG source updated: job_scheduling/lodunek_v3
-
-Typ: source · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
-
-[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/0e2cedccad0cf540e5c3b3488e52e63f03606189/tig-algorithms>)
-
-```text
-11 added/changed source files; 0 removed; 11 source files total.
-README metadata (author supplied):
-* **Challenge Name:** job_scheduling
-* **Algorithm Name:** lodunek_v3
-* **Identity of Submitter:** tilk
-* **Identity of Creator of Algorithmic Method:** null
-* **Unique Algorithm Identifier (UAI):** null
-Text analysis limited to 4/11 changed files; all source hashes recorded
-Stored excerpt truncated: tig-algorithms/src/job_scheduling/lodunek_v3/README.md
-Stored excerpt truncated: tig-algorithms/src/job_scheduling/lodunek_v3/aim.rs
-Stored excerpt truncated: tig-algorithms/src/job_scheduling/lodunek_v3/fjsp_high.rs
-Stored excerpt truncated: tig-algorithms/src/job_scheduling/lodunek_v3/fjsp_pool.rs
-```
-
-```json
-{
-  "branch": "job_scheduling/lodunek_v3",
-  "head": "0e2cedccad0cf540e5c3b3488e52e63f03606189",
-  "previous_head": null,
-  "changed_files": [
-    "tig-algorithms/src/job_scheduling/lodunek_v3/README.md",
-    "tig-algorithms/src/job_scheduling/lodunek_v3/aim.rs",
-    "tig-algorithms/src/job_scheduling/lodunek_v3/fjsp_high.rs",
-    "tig-algorithms/src/job_scheduling/lodunek_v3/fjsp_pool.rs",
-    "tig-algorithms/src/job_scheduling/lodunek_v3/flow_shop_engine.rs",
-    "tig-algorithms/src/job_scheduling/lodunek_v3/gate_floor.rs",
-    "tig-algorithms/src/job_scheduling/lodunek_v3/hfs_construct.rs",
-    "tig-algorithms/src/job_scheduling/lodunek_v3/hybrid_engine.rs",
-    "tig-algorithms/src/job_scheduling/lodunek_v3/job_shop_engine.rs",
-    "tig-algorithms/src/job_scheduling/lodunek_v3/khgraph.rs",
-    "tig-algorithms/src/job_scheduling/lodunek_v3/mod.rs"
-  ],
-  "removed_files": [],
-  "source_fingerprint": "bdcccf18b3bd4d2f0189"
-}
-```
-
-### TIG source updated: knapsack/axiom_quasar
-
-Typ: source · Quelle: tig-live
-Erfasst: 2026-11-24T18:59:03+00:00
-
-[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/3bcb8701bc0a9f944c5a239179d2cbb4a32660a5/tig-algorithms>)
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/e4ac0c220a17cf7e1ab0857fc0e0c56a7e6f3a03/tig-algorithms>)
 
 ```text
 14 added/changed source files; 0 removed; 14 source files total.
 README metadata (author supplied):
-* **Challenge Name:** knapsack
-* **Algorithm Name:** axiom_quasar
+* **Challenge Name:** energy_arbitrage
+* **Algorithm Name:** arb_omega_c2
 * **Identity of Submitter:** ubelai
 * **Identity of Creator of Algorithmic Method:** null
 * **Unique Algorithm Identifier (UAI):** null
 Text analysis limited to 4/14 changed files; all source hashes recorded
-Stored excerpt truncated: tig-algorithms/src/knapsack/axiom_quasar/axiom/README.md
-Stored excerpt truncated: tig-algorithms/src/knapsack/axiom_quasar/axiom/mod.rs
-Stored excerpt truncated: tig-algorithms/src/knapsack/axiom_quasar/axiom/track1.rs
+Stored excerpt truncated: tig-algorithms/src/energy_arbitrage/arb_omega_c2/classic.rs
+Stored excerpt truncated: tig-algorithms/src/energy_arbitrage/arb_omega_c2/donor_harimox/hyperparameters.rs
 ```
 
 ```json
 {
-  "branch": "knapsack/axiom_quasar",
-  "head": "3bcb8701bc0a9f944c5a239179d2cbb4a32660a5",
+  "branch": "energy_arbitrage/arb_omega_c2",
+  "head": "e4ac0c220a17cf7e1ab0857fc0e0c56a7e6f3a03",
   "previous_head": null,
   "changed_files": [
-    "tig-algorithms/src/knapsack/axiom_quasar/README.md",
-    "tig-algorithms/src/knapsack/axiom_quasar/axiom/README.md",
-    "tig-algorithms/src/knapsack/axiom_quasar/axiom/mod.rs",
-    "tig-algorithms/src/knapsack/axiom_quasar/axiom/track1.rs",
-    "tig-algorithms/src/knapsack/axiom_quasar/axiom/track2.rs",
-    "tig-algorithms/src/knapsack/axiom_quasar/axiom/track3.rs",
-    "tig-algorithms/src/knapsack/axiom_quasar/axiom/track4.rs",
-    "tig-algorithms/src/knapsack/axiom_quasar/axiom/track5.rs",
-    "tig-algorithms/src/knapsack/axiom_quasar/axiom/track_t39.rs",
-    "tig-algorithms/src/knapsack/axiom_quasar/donor/aim.rs",
-    "tig-algorithms/src/knapsack/axiom_quasar/donor/block_search.rs",
-    "tig-algorithms/src/knapsack/axiom_quasar/donor/mod.rs",
-    "tig-algorithms/src/knapsack/axiom_quasar/donor/track4.rs",
-    "tig-algorithms/src/knapsack/axiom_quasar/mod.rs"
+    "tig-algorithms/src/energy_arbitrage/arb_omega_c2/README.md",
+    "tig-algorithms/src/energy_arbitrage/arb_omega_c2/classic.rs",
+    "tig-algorithms/src/energy_arbitrage/arb_omega_c2/donor_harimox/README.md",
+    "tig-algorithms/src/energy_arbitrage/arb_omega_c2/donor_harimox/hyperparameters.rs",
+    "tig-algorithms/src/energy_arbitrage/arb_omega_c2/donor_harimox/kernels.rs",
+    "tig-algorithms/src/energy_arbitrage/arb_omega_c2/donor_harimox/mod.rs",
+    "tig-algorithms/src/energy_arbitrage/arb_omega_c2/donor_harimox/track_t1.rs",
+    "tig-algorithms/src/energy_arbitrage/arb_omega_c2/donor_harimox/track_t3.rs",
+    "tig-algorithms/src/energy_arbitrage/arb_omega_c2/donor_harimox/track_t5.rs",
+    "tig-algorithms/src/energy_arbitrage/arb_omega_c2/donor_harimox/wasserwert.rs",
+    "tig-algorithms/src/energy_arbitrage/arb_omega_c2/donor_harimox/wide.rs",
+    "tig-algorithms/src/energy_arbitrage/arb_omega_c2/linepulse_base.rs",
+    "tig-algorithms/src/energy_arbitrage/arb_omega_c2/mod.rs",
+    "tig-algorithms/src/energy_arbitrage/arb_omega_c2/refined.rs"
   ],
   "removed_files": [],
-  "source_fingerprint": "6c6f1b1e28ce42038d86"
+  "source_fingerprint": "93019984839fcfc01f0b"
+}
+```
+
+### TIG source updated: energy_arbitrage/harimox_v3
+
+Typ: source · Quelle: tig-live
+Erfasst: 2026-11-25T18:02:49+00:00
+
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/47dc8ba8111fcb26cb31b7207a560fd951c510a3/tig-algorithms>)
+
+```text
+8 added/changed source files; 0 removed; 8 source files total.
+README metadata (author supplied):
+* **Challenge Name:** energy_arbitrage
+* **Algorithm Name:** harimox_v3
+* **Identity of Submitter:** tilk
+* **Identity of Creator of Algorithmic Method:** null
+* **Unique Algorithm Identifier (UAI):** null
+Text analysis limited to 4/8 changed files; all source hashes recorded
+Stored excerpt truncated: tig-algorithms/src/energy_arbitrage/harimox_v3/README.md
+Stored excerpt truncated: tig-algorithms/src/energy_arbitrage/harimox_v3/baseline_policy.rs
+Stored excerpt truncated: tig-algorithms/src/energy_arbitrage/harimox_v3/hyperparameters.rs
+Stored excerpt truncated: tig-algorithms/src/energy_arbitrage/harimox_v3/kernels.rs
+```
+
+```json
+{
+  "branch": "energy_arbitrage/harimox_v3",
+  "head": "47dc8ba8111fcb26cb31b7207a560fd951c510a3",
+  "previous_head": null,
+  "changed_files": [
+    "tig-algorithms/src/energy_arbitrage/harimox_v3/README.md",
+    "tig-algorithms/src/energy_arbitrage/harimox_v3/baseline_policy.rs",
+    "tig-algorithms/src/energy_arbitrage/harimox_v3/hyperparameters.rs",
+    "tig-algorithms/src/energy_arbitrage/harimox_v3/kernels.rs",
+    "tig-algorithms/src/energy_arbitrage/harimox_v3/mod.rs",
+    "tig-algorithms/src/energy_arbitrage/harimox_v3/track_t5.rs",
+    "tig-algorithms/src/energy_arbitrage/harimox_v3/value_tables.rs",
+    "tig-algorithms/src/energy_arbitrage/harimox_v3/wide.rs"
+  ],
+  "removed_files": [],
+  "source_fingerprint": "2f012377e4cca7fff12e"
+}
+```
+
+### TIG source updated: energy_arbitrage/peakshift_dn_v1
+
+Typ: source · Quelle: tig-live
+Erfasst: 2026-11-25T18:02:49+00:00
+
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/1a9c989b9b5f5fc1e6d0c1197b20d8c191da41aa/tig-algorithms>)
+
+```text
+2 added/changed source files; 0 removed; 2 source files total.
+README metadata (author supplied):
+* **Challenge Name:** energy_arbitrage
+* **Algorithm Name:** peakshift_dn_v1
+* **Identity of Submitter:** dsn_labs
+* **Identity of Creator of Algorithmic Method:** null
+* **Unique Algorithm Identifier (UAI):** null
+Text omitted for oversized/unknown-size file: tig-algorithms/src/energy_arbitrage/peakshift_dn_v1/mod.rs
+```
+
+```json
+{
+  "branch": "energy_arbitrage/peakshift_dn_v1",
+  "head": "1a9c989b9b5f5fc1e6d0c1197b20d8c191da41aa",
+  "previous_head": null,
+  "changed_files": [
+    "tig-algorithms/src/energy_arbitrage/peakshift_dn_v1/README.md",
+    "tig-algorithms/src/energy_arbitrage/peakshift_dn_v1/mod.rs"
+  ],
+  "removed_files": [],
+  "source_fingerprint": "96eed5df814c5f673e26"
+}
+```
+
+### TIG source updated: hypergraph/mica_ephesite
+
+Typ: source · Quelle: tig-live
+Erfasst: 2026-11-25T18:02:49+00:00
+
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/7cb2d5298c71216bf7ccb2c89b6f376dad0542c3/tig-algorithms>)
+
+```text
+15 added/changed source files; 0 removed; 15 source files total.
+README metadata (author supplied):
+* **Challenge Name:** hypergraph
+* **Algorithm Name:** mica_ephesite
+* **Identity of Submitter:** FP Labs
+* **Identity of Creator of Algorithmic Method:** null
+* **Unique Algorithm Identifier (UAI):** null
+- This submission continues the submitter's `mica` line.
+Text analysis limited to 4/15 changed files; all source hashes recorded
+Stored excerpt truncated: tig-algorithms/src/hypergraph/mica_ephesite/fm.rs
+Stored excerpt truncated: tig-algorithms/src/hypergraph/mica_ephesite/gain.rs
+Stored excerpt truncated: tig-algorithms/src/hypergraph/mica_ephesite/grouped.rs
+```
+
+```json
+{
+  "branch": "hypergraph/mica_ephesite",
+  "head": "7cb2d5298c71216bf7ccb2c89b6f376dad0542c3",
+  "previous_head": null,
+  "changed_files": [
+    "tig-algorithms/src/hypergraph/mica_ephesite/README.md",
+    "tig-algorithms/src/hypergraph/mica_ephesite/fm.rs",
+    "tig-algorithms/src/hypergraph/mica_ephesite/gain.rs",
+    "tig-algorithms/src/hypergraph/mica_ephesite/grouped.rs",
+    "tig-algorithms/src/hypergraph/mica_ephesite/grouped_small.rs",
+    "tig-algorithms/src/hypergraph/mica_ephesite/infer.rs",
+    "tig-algorithms/src/hypergraph/mica_ephesite/jet.rs",
+    "tig-algorithms/src/hypergraph/mica_ephesite/kernels_10k.cu",
+    "tig-algorithms/src/hypergraph/mica_ephesite/kernels_inf.cu",
+    "tig-algorithms/src/hypergraph/mica_ephesite/kernels_select.cu",
+    "tig-algorithms/src/hypergraph/mica_ephesite/kernels_tracks.cu",
+    "tig-algorithms/src/hypergraph/mica_ephesite/mod.rs",
+    "tig-algorithms/src/hypergraph/mica_ephesite/params.rs",
+    "tig-algorithms/src/hypergraph/mica_ephesite/track.rs",
+    "tig-algorithms/src/hypergraph/mica_ephesite/track_10k.rs"
+  ],
+  "removed_files": [],
+  "source_fingerprint": "770504b5bc24e55499d3"
+}
+```
+
+### TIG source updated: job_scheduling/adaptive_js_dn_v1
+
+Typ: source · Quelle: tig-live
+Erfasst: 2026-11-25T18:02:49+00:00
+
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/c964bf980e2718e8b0ab6f341ded8862c6266c26/tig-algorithms>)
+
+```text
+15 added/changed source files; 0 removed; 15 source files total.
+README metadata (author supplied):
+* **Challenge Name:** job_scheduling
+* **Algorithm Name:** adaptive_js_dn_v1
+* **Identity of Submitter:** dsn_labs
+* **Identity of Creator of Algorithmic Method:** null
+* **Unique Algorithm Identifier (UAI):** null
+Text analysis limited to 4/15 changed files; all source hashes recorded
+Stored excerpt truncated: tig-algorithms/src/job_scheduling/adaptive_js_dn_v1/fjsp_high.rs
+Stored excerpt truncated: tig-algorithms/src/job_scheduling/adaptive_js_dn_v1/fjsp_medium.rs
+```
+
+```json
+{
+  "branch": "job_scheduling/adaptive_js_dn_v1",
+  "head": "c964bf980e2718e8b0ab6f341ded8862c6266c26",
+  "previous_head": null,
+  "changed_files": [
+    "tig-algorithms/src/job_scheduling/adaptive_js_dn_v1/README.md",
+    "tig-algorithms/src/job_scheduling/adaptive_js_dn_v1/fjsp_high.rs",
+    "tig-algorithms/src/job_scheduling/adaptive_js_dn_v1/fjsp_medium.rs",
+    "tig-algorithms/src/job_scheduling/adaptive_js_dn_v1/flat_tabu.rs",
+    "tig-algorithms/src/job_scheduling/adaptive_js_dn_v1/flow_shop.rs",
+    "tig-algorithms/src/job_scheduling/adaptive_js_dn_v1/hybrid_flow_shop.rs",
+    "tig-algorithms/src/job_scheduling/adaptive_js_dn_v1/infra_shared.rs",
+    "tig-algorithms/src/job_scheduling/adaptive_js_dn_v1/invariant_core.rs",
+    "tig-algorithms/src/job_scheduling/adaptive_js_dn_v1/job_shop.rs",
+    "tig-algorithms/src/job_scheduling/adaptive_js_dn_v1/mod.rs",
+    "tig-algorithms/src/job_scheduling/adaptive_js_dn_v1/preprocess.rs",
+    "tig-algorithms/src/job_scheduling/adaptive_js_dn_v1/solver.rs",
+    "tig-algorithms/src/job_scheduling/adaptive_js_dn_v1/submission.rs",
+    "tig-algorithms/src/job_scheduling/adaptive_js_dn_v1/submission_polish.rs",
+    "tig-algorithms/src/job_scheduling/adaptive_js_dn_v1/types.rs"
+  ],
+  "removed_files": [],
+  "source_fingerprint": "4363d4b3b15beb70e3ca"
+}
+```
+
+### TIG source updated: job_scheduling/ember_tambora
+
+Typ: source · Quelle: tig-live
+Erfasst: 2026-11-25T18:02:49+00:00
+
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/f62fbb3d1e29fbb9a5c59f2e376e515fe4ccc4e4/tig-algorithms>)
+
+```text
+20 added/changed source files; 0 removed; 20 source files total.
+README metadata (author supplied):
+* **Challenge Name:** job_scheduling
+* **Algorithm Name:** ember_tambora
+* **Identity of Submitter:** FP Labs
+* **Identity of Creator of Algorithmic Method:** null
+* **Unique Algorithm Identifier (UAI):** null
+Text analysis limited to 4/20 changed files; all source hashes recorded
+Stored excerpt truncated: tig-algorithms/src/job_scheduling/ember_tambora/README.md
+Stored excerpt truncated: tig-algorithms/src/job_scheduling/ember_tambora/mod.rs
+Stored excerpt truncated: tig-algorithms/src/job_scheduling/ember_tambora/part_a.rs
+Stored excerpt truncated: tig-algorithms/src/job_scheduling/ember_tambora/part_a_fjsp_pool.rs
+```
+
+```json
+{
+  "branch": "job_scheduling/ember_tambora",
+  "head": "f62fbb3d1e29fbb9a5c59f2e376e515fe4ccc4e4",
+  "previous_head": null,
+  "changed_files": [
+    "tig-algorithms/src/job_scheduling/ember_tambora/README.md",
+    "tig-algorithms/src/job_scheduling/ember_tambora/mod.rs",
+    "tig-algorithms/src/job_scheduling/ember_tambora/part_a.rs",
+    "tig-algorithms/src/job_scheduling/ember_tambora/part_a_fjsp_pool.rs",
+    "tig-algorithms/src/job_scheduling/ember_tambora/part_a_flow_shop_engine.rs",
+    "tig-algorithms/src/job_scheduling/ember_tambora/part_a_gate_floor.rs",
+    "tig-algorithms/src/job_scheduling/ember_tambora/part_a_hfs_construct.rs",
+    "tig-algorithms/src/job_scheduling/ember_tambora/part_a_hybrid_engine.rs",
+    "tig-algorithms/src/job_scheduling/ember_tambora/part_a_hybrid_lx.rs",
+    "tig-algorithms/src/job_scheduling/ember_tambora/part_a_job_shop_engine.rs",
+    "tig-algorithms/src/job_scheduling/ember_tambora/part_a_job_shop_lx.rs",
+    "tig-algorithms/src/job_scheduling/ember_tambora/part_a_sota.rs",
+    "tig-algorithms/src/job_scheduling/ember_tambora/part_b.rs",
+    "tig-algorithms/src/job_scheduling/ember_tambora/part_b_aim.rs",
+    "tig-algorithms/src/job_scheduling/ember_tambora/part_b_fjsp_pool.rs",
+    "tig-algorithms/src/job_scheduling/ember_tambora/part_b_flow_shop_engine.rs",
+    "tig-algorithms/src/job_scheduling/ember_tambora/part_b_gate_floor.rs",
+    "tig-algorithms/src/job_scheduling/ember_tambora/part_b_hfs_construct.rs",
+    "tig-algorithms/src/job_scheduling/ember_tambora/part_b_hybrid_engine.rs",
+    "tig-algorithms/src/job_scheduling/ember_tambora/part_b_job_shop_engine.rs"
+  ],
+  "removed_files": [],
+  "source_fingerprint": "84fc7428523b846d8bb3"
+}
+```
+
+### TIG source updated: job_scheduling/turn_ether
+
+Typ: source · Quelle: tig-live
+Erfasst: 2026-11-25T18:02:49+00:00
+
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/96252ae80bea4f6660c3cc5d5cb392a379511710/tig-algorithms>)
+
+```text
+8 added/changed source files; 0 removed; 8 source files total.
+README metadata (author supplied):
+* **Challenge Name:** job_scheduling
+* **Algorithm Name:** turn_ether
+* **Identity of Submitter:** Liu Xiaoyu
+* **Identity of Creator of Algorithmic Method:** null
+* **Unique Algorithm Identifier (UAI):** null
+Text analysis limited to 4/8 changed files; all source hashes recorded
+Stored excerpt truncated: tig-algorithms/src/job_scheduling/turn_ether/fjsp_pool.rs
+Stored excerpt truncated: tig-algorithms/src/job_scheduling/turn_ether/flow_shop_engine.rs
+Stored excerpt truncated: tig-algorithms/src/job_scheduling/turn_ether/gate_floor.rs
+```
+
+```json
+{
+  "branch": "job_scheduling/turn_ether",
+  "head": "96252ae80bea4f6660c3cc5d5cb392a379511710",
+  "previous_head": null,
+  "changed_files": [
+    "tig-algorithms/src/job_scheduling/turn_ether/README.md",
+    "tig-algorithms/src/job_scheduling/turn_ether/fjsp_pool.rs",
+    "tig-algorithms/src/job_scheduling/turn_ether/flow_shop_engine.rs",
+    "tig-algorithms/src/job_scheduling/turn_ether/gate_floor.rs",
+    "tig-algorithms/src/job_scheduling/turn_ether/hfs_construct.rs",
+    "tig-algorithms/src/job_scheduling/turn_ether/hybrid_engine.rs",
+    "tig-algorithms/src/job_scheduling/turn_ether/job_shop_engine.rs",
+    "tig-algorithms/src/job_scheduling/turn_ether/mod.rs"
+  ],
+  "removed_files": [],
+  "source_fingerprint": "14ed15eda550833c63ee"
+}
+```
+
+### TIG source updated: knapsack/packsat_talos
+
+Typ: source · Quelle: tig-live
+Erfasst: 2026-11-25T18:02:49+00:00
+
+[Originalquelle](<https://github.com/tig-foundation/tig-monorepo/tree/c843364871f3c0b20ac1aea88ad1f9b116e28b78/tig-algorithms>)
+
+```text
+7 added/changed source files; 0 removed; 7 source files total.
+README metadata (author supplied):
+* **Challenge Name:** knapsack
+* **Algorithm Name:** packsat_talos
+* **Identity of Submitter:** testing
+* **Identity of Creator of Algorithmic Method:** null
+* **Unique Algorithm Identifier (UAI):** null
+Text analysis limited to 4/7 changed files; all source hashes recorded
+Stored excerpt truncated: tig-algorithms/src/knapsack/packsat_talos/mod.rs
+Stored excerpt truncated: tig-algorithms/src/knapsack/packsat_talos/track1.rs
+Stored excerpt truncated: tig-algorithms/src/knapsack/packsat_talos/track2.rs
+```
+
+```json
+{
+  "branch": "knapsack/packsat_talos",
+  "head": "c843364871f3c0b20ac1aea88ad1f9b116e28b78",
+  "previous_head": "c843364871f3c0b20ac1aea88ad1f9b116e28b78",
+  "changed_files": [
+    "tig-algorithms/src/knapsack/packsat_talos/README.md",
+    "tig-algorithms/src/knapsack/packsat_talos/mod.rs",
+    "tig-algorithms/src/knapsack/packsat_talos/track1.rs",
+    "tig-algorithms/src/knapsack/packsat_talos/track2.rs",
+    "tig-algorithms/src/knapsack/packsat_talos/track3.rs",
+    "tig-algorithms/src/knapsack/packsat_talos/track4.rs",
+    "tig-algorithms/src/knapsack/packsat_talos/track5.rs"
+  ],
+  "removed_files": [],
+  "source_fingerprint": "b7b4cd58d3810a3ab69c"
 }
 ```
 
@@ -1784,7 +1671,7 @@ Competitive assembly-program research framework. No continuously operated public
 - **[drq-project](<https://pub.sakana.ai/drq/>)** (standard): ok.
   {"baseline": false, "characters": 44337, "embedded_json_blocks": 0, "javascript_evaluated": false, "linked_resources": 18}
 - **[core-war-papers](<https://arxiv.org>)** (standard): ok.
-  {"baseline": false, "cutoff": "2026-11-21T19:23:17.654065Z", "pages": 1, "papers_observed": 1, "seed_papers": 1}
+  {"baseline": false, "cutoff": "2026-11-22T19:00:12.797642Z", "pages": 1, "papers_observed": 1, "seed_papers": 1}
 
 Keine neuen Ereignisse erfasst. Quellenstatus oben beachten.
 
@@ -1797,62 +1684,26 @@ The official repository currently marks Sudoku-Bench discontinued; watch for sta
 - **[sudoku-project](<https://pub.sakana.ai/sudoku/>)** (light): ok.
   {"baseline": false, "characters": 8635, "embedded_json_blocks": 0, "javascript_evaluated": false, "linked_resources": 26}
 - **[sudoku-papers](<https://arxiv.org>)** (light): ok.
-  {"baseline": false, "cutoff": "2026-11-21T19:23:22.795484Z", "pages": 1, "papers_observed": 3, "seed_papers": 1}
+  {"baseline": false, "cutoff": "2026-11-22T19:00:18.546777Z", "pages": 1, "papers_observed": 4, "seed_papers": 1}
 
-### AdaC-GRPO: Towards Mastering Long-Horizon Visual Sudoku Puzzles via Adaptive Curriculum Learning
+### Noise Your Prompt: Noising Conditioning Tokens in Continuous Diffusion Language Models
 
 Typ: paper_discovered · Quelle: sudoku-papers
-Erfasst: 2026-11-24T18:59:03+00:00
-Veröffentlicht: 2026-10-09T08:08:42Z
-Aktualisiert: 2026-11-23T07:07:36Z
+Erfasst: 2026-11-25T18:02:49+00:00
+Veröffentlicht: 2026-10-06T21:38:52Z
+Aktualisiert: 2026-11-23T20:34:50Z
 
-[Originalquelle](<https://arxiv.org/abs/2610.13184v2>)
+[Originalquelle](<https://arxiv.org/abs/2610.09145v3>)
 
-While reinforcement learning with verifiable reward (RLVR) enhances reasoning in large language models, its efficacy in long-horizon multimodal tasks remains underexplored. Visual Sudoku puzzles pose a representative challenge, requiring multi-step deductive reasoning over both local constraints and global dependency chains. To this end, we introduce FG-Sudoku, a fine-grained benchmark categorized by grid size and required deductive steps. Evaluations reveal that frontier MLLMs fail on complex long-range dependencies (e.g., 9*9 puzzles). During post-training, this near-zero success rate causes severe reward sparsity, halting standard RLVR. We propose Adaptive Curriculum Group Relative Policy Optimization (AdaC-GRPO) to overcome this. Unlike rigid or prior-based schedules, AdaC-GRPO dynamically constructs training batches by tracking the model's "Zone of Proximal Development" via online rollout accuracy. Experiments demonstrate that AdaC-GRPO enables Qwen2.5-VL-7B to approach the performance of Gemini-2.5-Flash while bridging 62.2% of the overall accuracy gap to Gemini-2.5-Pro, with its generalizability further validated across InternVL-3.5 and Qwen3-VL.
+We revisit a standard accepted practice in the continuous diffusion language model literature of fixing conditioning prompt tokens clean during training. We make a very simple modification: also noise the conditioning prompt tokens during training. We demonstrate that under this modified training objective, we achieve better generalization in combinatorial reasoning tasks such as Sudoku and N-Queens, with the largest gains on harder variants ($3.73\% \to 24.65\%$ solve rate on Sudoku Hard), and increased diversity of generated solutions ($50.60\% \to 73.79\%$ coverage on 10x10 N-Queens). We also show measurable improvements to natural language generation quality in modest dataset regimes with Gigaword summarization, but notably demonstrate that gains do not transfer to all natural language tasks (e.g open ended dialogue generation). Our method is a single line change to the training objective, requires no additional inference costs by default, and provides the flexibility of classifier-free guidance inspired guided sampling. Our \href{https://github.com/LateralIntelligence/noise-your-prompt}{code} is publicly available.
 
 ```json
 {
-  "paper_id": "2610.13184",
-  "version": 2,
-  "updated": "2026-11-23T07:07:36Z",
+  "paper_id": "2610.09145",
+  "version": 3,
+  "updated": "2026-11-23T20:34:50Z",
   "authors": [
-    "Sida Li",
-    "Yuanxin Liu",
-    "Linli Yao",
-    "Shicheng Li",
-    "Xu Sun",
-    "Haoli Bai",
-    "Xiaohui Li"
-  ],
-  "previous_version": null
-}
-```
-
-### Fixed-Point Reasoners: Stable and Adaptive Deep Looped Transformers
-
-Typ: paper_discovered · Quelle: sudoku-papers
-Erfasst: 2026-11-24T18:59:03+00:00
-Veröffentlicht: 2026-06-16T17:36:33Z
-Aktualisiert: 2026-11-23T13:38:41Z
-
-[Originalquelle](<https://arxiv.org/abs/2606.18206v2>)
-
-Looped architectures provide an inductive bias toward learning step-by-step procedures for tasks that require compositional reasoning. Increasing the effective layers of looped architectures can improve their reasoning capabilities. Similar to deep architectures, looped architectures are prone to a signal propagation problem induced by depth as the halting decision is postponed. In this paper, we address the signal propagation issue by using pre-norm layers and residual scaling. By improving signal propagation, we achieve competitive performance without hierarchical looping, resulting in a simpler architecture than previous state-of-the-art models evaluated on puzzle reasoning tasks. Building on these modifications, we propose FPRM: a Transformer-based Fixed-Point Reasoning Model that uses fixed-point convergence as an end-to-end halting mechanism in a looped architecture. We show that fixed-point halting allows FPRM to adapt its compute to the difficulty of the task. FPRM proves effective on common reasoning benchmarks, namely sudoku, maze, state-tracking and ARC-AGI.
-
-```json
-{
-  "paper_id": "2606.18206",
-  "version": 2,
-  "updated": "2026-11-23T13:38:41Z",
-  "authors": [
-    "Sajad Movahedi",
-    "Vera Milovanović",
-    "Shlomo Libo Feigin",
-    "Alexander Theus",
-    "Thomas Hofmann",
-    "Valentina Boeva",
-    "T. Konstantin Rusch",
-    "Antonio Orvieto"
+    "Justin Jung"
   ],
   "previous_version": null
 }
@@ -1867,7 +1718,7 @@ Related research, including Google's Paradigms of Intelligence team; these publi
 - **[google-computational-life-code](<https://github.com/paradigms-of-intelligence/cubff>)** (light): ok.
   {"baseline": false, "changes": 0, "commit": "f212e849027c98fcf4b242eccfb5fed435223e23", "depth": "light", "diffs_attempted": 0, "diffs_omitted_by_limit": 0, "files": 60}
 - **[assembly-alife-papers](<https://arxiv.org>)** (light): ok.
-  {"baseline": false, "cutoff": "2026-11-21T19:23:32.118465Z", "pages": 1, "papers_observed": 4, "seed_papers": 4}
+  {"baseline": false, "cutoff": "2026-11-22T19:00:29.622150Z", "pages": 1, "papers_observed": 4, "seed_papers": 4}
 
 Keine neuen Ereignisse erfasst. Quellenstatus oben beachten.
 
