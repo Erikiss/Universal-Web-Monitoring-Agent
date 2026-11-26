@@ -198,6 +198,15 @@
       "title": "LENS: Replacing LayerNorm and Softmax in Transformers ...",
       "url": "https://arxiv.org/abs/2611.20331v1"
     },
+    "https://arxiv.org/abs/2611.32199": {
+      "delivered_at": "2026-11-26T17:21:25+00:00",
+      "first_seen_at": "2026-11-26T17:21:01+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Prompt SFT (Pythia). SteerLM SFT (Pythia). Figure 3: Robustness to black-box ... Ctrl: A conditional transformer language model for controllable generation.",
+      "title": "steerable by design: conditional pretraining",
+      "url": "https://arxiv.org/abs/2611.32199"
+    },
     "https://awesomepython.org/arxiv/?q=ann": {
       "delivered_at": "2026-10-18T11:44:37+00:00",
       "first_seen_at": "2026-10-18T11:44:31+00:00",
@@ -1170,6 +1179,15 @@
       "title": "Emanuele Laurenzi's Post",
       "url": "https://www.linkedin.com/posts/emanuelelaurenzi_makeathon2026-agenticai-llms-activity-7520374927837995008-kGiE"
     },
+    "https://www.linkedin.com/posts/maorfaridphd_this-is-the-first-paper-i-ever-wrote-with-activity-7530965428815167488-KjAb": {
+      "delivered_at": "2026-11-26T17:21:25+00:00",
+      "first_seen_at": "2026-11-26T17:21:01+00:00",
+      "google_date": "",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "... language model, enough to make it creative without making it lose the plot ... Pythia and a small reasoning model: escape from repetition loops follows ...",
+      "title": "Maor Farid's Post",
+      "url": "https://www.linkedin.com/posts/maorfaridphd_this-is-the-first-paper-i-ever-wrote-with-activity-7530965428815167488-KjAb"
+    },
     "https://www.linkedin.com/posts/mizanur-rahman-rafi_machinelearning-llm-aisafety-activity-7517100501360906241-2RD0": {
       "delivered_at": "2026-10-18T11:44:37+00:00",
       "first_seen_at": "2026-10-18T11:44:31+00:00",
@@ -1251,6 +1269,15 @@
       "title": "Coreference Signals in Pretrained Language Model Attention",
       "url": "https://www.preprints.org/frontend/manuscript/b58fbeb4611ab131f1c31f983b0eb0d6/download_pub"
     },
+    "https://www.reddit.com/r/ChatGPTcomplaints/comments/1y45w21/ai_psychosis/": {
+      "delivered_at": "2026-11-26T17:21:25+00:00",
+      "first_seen_at": "2026-11-26T17:21:01+00:00",
+      "google_date": "",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "When evaluated using white-box mechanistic interpretability (probing and ... Pythia, Bloom, OPT), Self-Reference (SR), Theory of Mind (ToM) ...",
+      "title": "AI Psychosis : r/ChatGPTcomplaints",
+      "url": "https://www.reddit.com/r/ChatGPTcomplaints/comments/1y45w21/ai_psychosis/"
+    },
     "https://www.reddit.com/r/MachineLearning/comments/1y50x62/letting_each_attention_head_choose_which_earlier/": {
       "delivered_at": "2026-11-25T17:39:25+00:00",
       "first_seen_at": "2026-11-25T17:38:47+00:00",
@@ -1304,6 +1331,15 @@
       "snippet": "Given the small open-source backbones (GPT-2, with a replication on Pythia-410M), the primarily untrained detector (a small-scale trained Bayesian detector ...",
       "title": "A Pilot Study on the Verifiability Gap in AI Text Watermarking",
       "url": "https://www.researchgate.net/publication/416326706_The_Invisible_Watermark_A_Pilot_Study_on_the_Verifiability_Gap_in_AI_Text_Watermarking"
+    },
+    "https://www.researchgate.net/scientific-contributions/Raghavender-Surya-Upadhayula-2376105991": {
+      "delivered_at": "2026-11-26T17:21:25+00:00",
+      "first_seen_at": "2026-11-26T17:21:01+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Although an external language model can select and test repairs to another ... For Pythia, live selection achieves 65.62% completion accuracy, compared ...",
+      "title": "Raghavender Surya Upadhayula's research works",
+      "url": "https://www.researchgate.net/scientific-contributions/Raghavender-Surya-Upadhayula-2376105991"
     },
     "https://www.techinsider.ru/news/news-1747645-issledovateli-nashli-sposob-obnarujivat-opasnye-izmeneniya-v-povedenii-ii/": {
       "delivered_at": "2026-10-20T12:15:43+00:00",
@@ -1408,40 +1444,7 @@
   "last_attempt_at": "2026-11-26T17:21:01+00:00",
   "last_errors": [],
   "last_success_at": "2026-11-26T17:21:01+00:00",
-  "pending": {
-    "https://arxiv.org/abs/2611.32199": {
-      "first_seen_at": "2026-11-26T17:21:01+00:00",
-      "google_date": "vor 2 Tagen",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "Prompt SFT (Pythia). SteerLM SFT (Pythia). Figure 3: Robustness to black-box ... Ctrl: A conditional transformer language model for controllable generation.",
-      "title": "steerable by design: conditional pretraining",
-      "url": "https://arxiv.org/abs/2611.32199"
-    },
-    "https://www.linkedin.com/posts/maorfaridphd_this-is-the-first-paper-i-ever-wrote-with-activity-7530965428815167488-KjAb": {
-      "first_seen_at": "2026-11-26T17:21:01+00:00",
-      "google_date": "",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "... language model, enough to make it creative without making it lose the plot ... Pythia and a small reasoning model: escape from repetition loops follows ...",
-      "title": "Maor Farid's Post",
-      "url": "https://www.linkedin.com/posts/maorfaridphd_this-is-the-first-paper-i-ever-wrote-with-activity-7530965428815167488-KjAb"
-    },
-    "https://www.reddit.com/r/ChatGPTcomplaints/comments/1y45w21/ai_psychosis/": {
-      "first_seen_at": "2026-11-26T17:21:01+00:00",
-      "google_date": "",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "When evaluated using white-box mechanistic interpretability (probing and ... Pythia, Bloom, OPT), Self-Reference (SR), Theory of Mind (ToM) ...",
-      "title": "AI Psychosis : r/ChatGPTcomplaints",
-      "url": "https://www.reddit.com/r/ChatGPTcomplaints/comments/1y45w21/ai_psychosis/"
-    },
-    "https://www.researchgate.net/scientific-contributions/Raghavender-Surya-Upadhayula-2376105991": {
-      "first_seen_at": "2026-11-26T17:21:01+00:00",
-      "google_date": "vor 2 Tagen",
-      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
-      "snippet": "Although an external language model can select and test repairs to another ... For Pythia, live selection achieves 65.62% completion accuracy, compared ...",
-      "title": "Raghavender Surya Upadhayula's research works",
-      "url": "https://www.researchgate.net/scientific-contributions/Raghavender-Surya-Upadhayula-2376105991"
-    }
-  },
+  "pending": {},
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
