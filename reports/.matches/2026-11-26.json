@@ -1,0 +1,111 @@
+[
+  {
+    "author": "Cam",
+    "baseScore": 8,
+    "id": "5dJ2Bu9hZDQXxvADR",
+    "postedAt": "2026-11-26T15:38:37.869Z",
+    "section": "Frontpage",
+    "title": "Models probably should not know so much about how we train and evaluate them",
+    "topicScore": 20,
+    "url": "https://www.lesswrong.com/posts/5dJ2Bu9hZDQXxvADR/models-probably-should-not-know-so-much-about-how-we-train",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795706197/lexical_client_uploads/ankrwa0cctsvuea7ybej.png  Limit the ability to manipulate training: understanding ho",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795706197/lexical_client_uploads/k0e83r98z7vr6pqru4yj.jpg  Make metagaming less useful, and less likely to be selecte",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795706197/lexical_client_uploads/tfd27af1j7piw7yamxrs.jpg  Figure 2. exp-rl-cap Late: two excerpts from Schoen et al.",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795706197/lexical_client_uploads/omdagfrbdtbqqbfkua8c.png  During pretraining, yes. We choose what we train our model"
+    ],
+    "visualizationScore": 12,
+    "wordCount": 1893
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 11,
+    "id": "MaGJRAwTKshpHxqpK",
+    "postedAt": "2026-11-26T15:10:53.589Z",
+    "section": "Personal/All",
+    "title": "AI #196: The Return",
+    "topicScore": 9,
+    "url": "https://www.lesswrong.com/posts/MaGJRAwTKshpHxqpK/ai-196-the-return",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/MaGJRAwTKshpHxqpK/tusqloasm4mmhpybtpoq   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 126,
+    "wordCount": 16799
+  },
+  {
+    "author": "David Africa",
+    "baseScore": 27,
+    "id": "f5r7FpLWiFQ7aeJu9",
+    "postedAt": "2026-11-26T14:50:57.129Z",
+    "section": "Frontpage",
+    "title": "Go seeking mysteries",
+    "topicScore": 10,
+    "url": "https://www.lesswrong.com/posts/f5r7FpLWiFQ7aeJu9/go-seeking-mysteries",
+    "visualEvidence": [
+      "figure     MS Paint drawing by Opus 5.5. I think an impactful line of research would be to hunt for unexplained phenomena: simple things that are surprising and interesting, given ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795704611/lexical_client_uploads/msdha4zxmjzq3dxbka3c.png   MS Paint drawing by Opus 5.5."
+    ],
+    "visualizationScore": 4,
+    "wordCount": 2098
+  },
+  {
+    "author": "J Rosser",
+    "baseScore": 13,
+    "id": "uAXt43Wg2PWzsagvr",
+    "postedAt": "2026-11-26T14:29:19.119Z",
+    "section": "Frontpage",
+    "title": "GhostBusters: Understanding Hereditary Trait Distillation in Phantom Transfer ",
+    "topicScore": 16,
+    "url": "https://www.lesswrong.com/posts/uAXt43Wg2PWzsagvr/ghostbusters-understanding-hereditary-trait-distillation-in",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/3c9176c915a130025b7474b143e503d79351272712d900f928bbcd2a5b5a376f/zbyohb4txq48mefuc9uh  ",
+      "img figure02.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793228506/lexical_client_uploads/zrmoi32whob7zkyiuxvb.png  We compare dropping the top 1k proponents vs s",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795699445/lexical_client_uploads/xfjkmmhvqqz3bvihefya.png  SwapMagic outperforms all other data attribution ",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795699381/lexical_client_uploads/icr8uohzp6iarzwo8amn.png  We assume that the mention rate after a swap depe",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/22631fbb67410d98141fdd3fc898ddc7b78e77fbb4880529dade48e4ca80abf7/hol4dl4af41o2iqe5u0f  "
+    ],
+    "visualizationScore": 38,
+    "wordCount": 5605
+  },
+  {
+    "author": "nonplus",
+    "baseScore": 9,
+    "id": "JgbQZ5xoi9qm2mWza",
+    "postedAt": "2026-11-26T06:43:22.315Z",
+    "section": "Frontpage",
+    "title": "Paths to extreme power concentration",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/JgbQZ5xoi9qm2mWza/paths-to-extreme-power-concentration",
+    "visualEvidence": [
+      "figure     Route How it would happen Key obstacles My estimate A1. An autocracy overtaking the democracies in AI technology The leadership of an autocratic state takes personal con",
+      "table     Route How it would happen Key obstacles My estimate A1. An autocracy overtaking the democracies in AI technology The leadership of an autocratic state takes personal cont",
+      "figure     Actor What they have What they lack Autocratic leader \u2022 Direct control over military power \u2022 Indirect control over AI development & capabilities (via domestic companies)",
+      "table     Actor What they have What they lack Autocratic leader \u2022 Direct control over military power \u2022 Indirect control over AI development & capabilities (via domestic companies) "
+    ],
+    "visualizationScore": 14,
+    "wordCount": 5698
+  },
+  {
+    "author": "Eneasz",
+    "baseScore": 112,
+    "id": "TmLSELruftgknLafm",
+    "postedAt": "2026-11-25T22:26:00.844Z",
+    "section": "Personal/All",
+    "title": "To Read Sam Kriss is to Hurt Sam Kriss",
+    "topicScore": 1,
+    "url": "https://www.lesswrong.com/posts/TmLSELruftgknLafm/to-read-sam-kriss-is-to-hurt-sam-kriss",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/TmLSELruftgknLafm/ns56tyxwlxmwwpzc8o4z  Sam Kriss is a fantastically skilled author. I\u2019",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/TmLSELruftgknLafm/u0gnlg5d3xl7ua4coglx  Kriss is a great author. I loved this essay and",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/TmLSELruftgknLafm/geqxchst8to9ku206dy1  First, you actually cannot get 14 years in jail",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/TmLSELruftgknLafm/vsl88hhtlbs6zvdee20t  Here\u2019s the actual offenses and their max senten",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/TmLSELruftgknLafm/iq9wl5jcql2ldxzyeiyq  In You Can See Everything , Nathan Fielder uses"
+    ],
+    "visualizationScore": 8,
+    "wordCount": 4497
+  }
+]
