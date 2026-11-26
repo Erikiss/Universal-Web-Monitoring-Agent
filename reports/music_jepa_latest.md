@@ -1,5 +1,5 @@
 # Music-JEPA — Prüfbericht
-2026-11-25T18:08:27+00:00
+2026-11-26T17:51:42+00:00
 
 Tagesalarm: 0 Meldungen.
 Neue Drittanbieter-Signale dieses Laufs: 0 (kein Tagesalarm).
@@ -9,7 +9,7 @@ Nächste Wochensammlung frühestens: 2026-11-28T15:32:47+00:00 (nächster Lauf; 
 Abruffehler in diesem Lauf: 3.
 
 # Music-JEPA — täglicher Alarm
-2026-11-25T18:08:27+00:00
+2026-11-26T17:51:42+00:00
 
 Klare Quellenänderung bedeutet NICHT automatisch: Code und Gewichte veröffentlicht.
 
