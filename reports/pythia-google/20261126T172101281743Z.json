@@ -1,0 +1,168 @@
+{
+  "checked_at": "2026-11-26T17:21:01+00:00",
+  "errors": [],
+  "last_success_at": "2026-11-26T17:21:01+00:00",
+  "new_count": 4,
+  "pending_count": 4,
+  "pending_results": [
+    {
+      "first_seen_at": "2026-11-26T17:21:01+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Prompt SFT (Pythia). SteerLM SFT (Pythia). Figure 3: Robustness to black-box ... Ctrl: A conditional transformer language model for controllable generation.",
+      "title": "steerable by design: conditional pretraining",
+      "url": "https://arxiv.org/abs/2611.32199"
+    },
+    {
+      "first_seen_at": "2026-11-26T17:21:01+00:00",
+      "google_date": "",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "When evaluated using white-box mechanistic interpretability (probing and ... Pythia, Bloom, OPT), Self-Reference (SR), Theory of Mind (ToM) ...",
+      "title": "AI Psychosis : r/ChatGPTcomplaints",
+      "url": "https://www.reddit.com/r/ChatGPTcomplaints/comments/1y45w21/ai_psychosis/"
+    },
+    {
+      "first_seen_at": "2026-11-26T17:21:01+00:00",
+      "google_date": "",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "... language model, enough to make it creative without making it lose the plot ... Pythia and a small reasoning model: escape from repetition loops follows ...",
+      "title": "Maor Farid's Post",
+      "url": "https://www.linkedin.com/posts/maorfaridphd_this-is-the-first-paper-i-ever-wrote-with-activity-7530965428815167488-KjAb"
+    },
+    {
+      "first_seen_at": "2026-11-26T17:21:01+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Although an external language model can select and test repairs to another ... For Pythia, live selection achieves 65.62% completion accuracy, compared ...",
+      "title": "Raghavender Surya Upadhayula's research works",
+      "url": "https://www.researchgate.net/scientific-contributions/Raghavender-Surya-Upadhayula-2376105991"
+    }
+  ],
+  "queries": [
+    {
+      "label": "24 Stunden",
+      "q": "pythia",
+      "tbs": "qdr:d"
+    },
+    {
+      "label": "Überlappung/Nachholen: 3 Tage",
+      "q": "pythia",
+      "tbs": "qdr:d3"
+    },
+    {
+      "label": "Ergänzende Modellsuche: 3 Tage",
+      "q": "pythia (EleutherAI OR \"GPT-NeoX\" OR \"language model\" OR Sprachmodell OR \"mechanistic interpretability\")",
+      "tbs": "qdr:d3"
+    }
+  ],
+  "results": [
+    {
+      "classification": "excluded",
+      "google_date": "vor 3 Tagen",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Initially, the Pythia was said to be a young maiden, but over time, the role evolved to be filled by an older, respected woman from Delphi, often chosen from ...",
+      "title": "Pythia Oracle: Facts & Myths of Ancient Greece",
+      "url": "https://worldmythologyhub.com/mythologies-by-cultural-region/pythia-woman-behind-oracle-separating-fact-fiction/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 2 Tagen",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Being The Pythia is Not Necessary – Treasury of Apollon, Pythia, the High Priestess of the Temple of Apollo at Delphi, Oracle of Delphi, Ancient Greece ...",
+      "title": "Pythia Oracle Delphi Being The Pythia Is Not Necessary",
+      "url": "https://maisonestheremaryline.com/?d=msmikkmp39374772011210"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Most open models are released to be used. EleutherAI's Pythia (2023) was released to be studied: 16 language models from 70M to 12B parameters, ...",
+      "title": "Pythia: 16 AI Models Built to Be Studied, Not Used",
+      "url": "https://www.youtube.com/watch?v=WCWhddS_zlY"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Prompt SFT (Pythia). SteerLM SFT (Pythia). Figure 3: Robustness to black-box ... Ctrl: A conditional transformer language model for controllable generation.",
+      "title": "steerable by design: conditional pretraining",
+      "url": "https://arxiv.org/abs/2611.32199"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 3 Tagen",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Analyzing the Structure of Attention in a Transformer Language Model. In Proceedings of the Proceedings of the 2019 ACL Workshop BlackboxNLP, 2019. 5. Klein, T.",
+      "title": "Coreference Signals in Pretrained Language Model Attention",
+      "url": "https://www.preprints.org/frontend/manuscript/b58fbeb4611ab131f1c31f983b0eb0d6/download_pub"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "We take these results to be informative about how linguistic knowledge emerges and is represented in a language model. Anthology ID: 2026.emnlp-main.732 ...",
+      "title": "The Emergence and Sparsification of a Syntactic Circuit",
+      "url": "https://aclanthology.org/2026.emnlp-main.732/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 3 Tagen",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "The Hanoi transformer Claude wrote outputs one move at a time, the way a language model writes text, feeding each move back in as input. Before every move, its ...",
+      "title": "Looped Weight-Space Programming: LLM-Written ...",
+      "url": "https://mbzuai-oryx.github.io/LoopedWSP/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "To exercise the full chain on a live trained model before cluster expenditure, an interpolated tri- gram language model (λ = 0.7/0.2/0.1, add-k unigram ...",
+      "title": "Causal Epistemic Dynamics and Mechanism-Aware ...",
+      "url": "https://www.preprints.org/frontend/manuscript/8086f9f15903c7458fcd5b5717209d12/download_pub"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 1 Tag",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Steinhardt Progress measures for grokking via mechanistic interpretability. In The Eleventh International Conference on Learning Representations, External ...",
+      "title": "Understanding the Importance of Massive Activations ...",
+      "url": "https://arxiv.org/abs/2611.32585v1"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "When evaluated using white-box mechanistic interpretability (probing and ... Pythia, Bloom, OPT), Self-Reference (SR), Theory of Mind (ToM) ...",
+      "title": "AI Psychosis : r/ChatGPTcomplaints",
+      "url": "https://www.reddit.com/r/ChatGPTcomplaints/comments/1y45w21/ai_psychosis/"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "... language model, enough to make it creative without making it lose the plot ... Pythia and a small reasoning model: escape from repetition loops follows ...",
+      "title": "Maor Farid's Post",
+      "url": "https://www.linkedin.com/posts/maorfaridphd_this-is-the-first-paper-i-ever-wrote-with-activity-7530965428815167488-KjAb"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Although an external language model can select and test repairs to another ... For Pythia, live selection achieves 65.62% completion accuracy, compared ...",
+      "title": "Raghavender Surya Upadhayula's research works",
+      "url": "https://www.researchgate.net/scientific-contributions/Raghavender-Surya-Upadhayula-2376105991"
+    }
+  ]
+}
