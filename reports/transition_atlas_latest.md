@@ -1,25 +1,12 @@
-# Transition-Atlas watch — 2026-11-26T17:53:55Z
+# Transition-Atlas watch — 2026-11-27T17:39:18Z
 
 Originalpaper: https://arxiv.org/abs/2609.12591
-Neue Hinweise: 3 | fehlgeschlagene Quellenchecks: 0
+Neue Hinweise: 0 | fehlgeschlagene Quellenchecks: 0
 Vollständiger Bericht: https://github.com/Erikiss/Universal-Web-Monitoring-Agent/blob/main/reports/transition_atlas_latest.md
 
 GitHub-Aktivität und neue HPI-Links sind Hinweise, kein automatisch bestätigter Atlas-Release.
 
-## AUTOREN-GITHUB
-
-Kathrin Korte: kat-ko/Structure-Function-Analysis-of-Network-Topologies nicht mehr öffentlich gelistet
-https://github.com/kat-ko/Structure-Function-Analysis-of-Network-Topologies
-Möglicherweise privat, gelöscht oder übertragen; Grund unbekannt.
-
-Kathrin Korte: kat-ko/GeometryOfForgetting nicht mehr öffentlich gelistet
-https://github.com/kat-ko/GeometryOfForgetting
-Möglicherweise privat, gelöscht oder übertragen; Grund unbekannt.
-
-Kathrin Korte: kat-ko/SimilarityOOD nicht mehr öffentlich gelistet
-https://github.com/kat-ko/SimilarityOOD
-Möglicherweise privat, gelöscht oder übertragen; Grund unbekannt.
-
+Kein neuer Hinweis in den erfolgreich geprüften Quellen. Erster erfolgreicher Abruf einer Quelle setzt nur die Vergleichsbasis.
 
 ## Abdeckung
 Letzte erfolgreich gelesene Paper-Version: v1
