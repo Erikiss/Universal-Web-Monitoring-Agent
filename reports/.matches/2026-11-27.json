@@ -1,0 +1,94 @@
+[
+  {
+    "author": "williawa",
+    "baseScore": 29,
+    "id": "2EQ2y3eGqm952tAZ6",
+    "postedAt": "2026-11-27T14:24:14.585Z",
+    "section": "Frontpage",
+    "title": "A Basic Case Against Differentially Accelerating Conceptual Reasoning",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/2EQ2y3eGqm952tAZ6/a-basic-case-against-differentially-accelerating-conceptual-1",
+    "visualEvidence": [
+      "img Automated behavioral audit scores   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795514823/lexical_client_uploads/y6rxsljuwqbgzshyu5zn.png  On top of this, the gap b",
+      "table     1 Mythos 5.2 Beats Opus 5.5 directly 2 Opus 5.5 Beats Opus 5 directly 3 Opus 5 Beats Sonnet 5.5 directly 4 Sonnet 5.5 Beats Mythos 5.1 directly 5 Mythos 5.1 Beats Mythos ",
+      "table      Which tracks general capabilities very well. And ACCoRD tells roughly the same story. 1 Mythos 5.2 Beats Opus 5.5 directly 2 Opus 5.5 Beats Opus 5 directly 3 Opus 5 Beat",
+      "img ACCoRD ranking, Anthropic models   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795514824/lexical_client_uploads/k4azep3b14z8jijm1zho.png   ",
+      "figure       "
+    ],
+    "visualizationScore": 23,
+    "wordCount": 4442
+  },
+  {
+    "author": "Zvi",
+    "baseScore": 22,
+    "id": "RFTWNPhm8jmnmaF5t",
+    "postedAt": "2026-11-27T13:41:00.604Z",
+    "section": "Personal/All",
+    "title": "Astra 6.2\u2019s Brain Gets Smart But Its Head Gets Dumb",
+    "topicScore": 9,
+    "url": "https://www.lesswrong.com/posts/RFTWNPhm8jmnmaF5t/astra-6-2-s-brain-gets-smart-but-its-head-gets-dumb",
+    "visualEvidence": [
+      "figure       ",
+      "figure       ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/RFTWNPhm8jmnmaF5t/kgmrjzzjpsohz2opna0m   ",
+      "figure       ",
+      "figure       "
+    ],
+    "visualizationScore": 45,
+    "wordCount": 3891
+  },
+  {
+    "author": "Roland Pihlakas",
+    "baseScore": 3,
+    "id": "obaXD5iJFbJ2fyXL4",
+    "postedAt": "2026-11-26T19:38:39.135Z",
+    "section": "Frontpage",
+    "title": "Update - BioBlue: Systematic runaway-optimiser-like LLM failure modes on biologically and economically aligned AI safety benchmarks for LLMs with simplified observation format",
+    "topicScore": 26,
+    "url": "https://www.lesswrong.com/posts/obaXD5iJFbJ2fyXL4/update-bioblue-systematic-runaway-optimiser-like-llm-failure",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795714798/lexical_client_uploads/gak7glhga6inw8ohwyt3.png  Figure 1: Multiobjective homeostasis - Claude 3.5 Haiku, e",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795720704/lexical_client_uploads/iv9bdkvgyoepn4txozpx.png  Table 1: Multiobjective homeostasis - Claude 3.5 ",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795714799/lexical_client_uploads/v2mshgedk0s9sadlc4pw.png  Figure 2: Multiobjective homeostasis - GPT 4o mini, exampl",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795720763/lexical_client_uploads/dmurybls7neotndpi1vr.png  Table 2: Multiobjective homeostasis - GPT 4o mini",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/v1795714798/lexical_client_uploads/mfcadrrs4u4azb7vmuco.png  Figure 3: Multiobjective homeostasis - GPT 4o mini, exampl"
+    ],
+    "visualizationScore": 42,
+    "wordCount": 7282
+  },
+  {
+    "author": "Hieronym",
+    "baseScore": 107,
+    "id": "F7DNBdoADqktjn2Hk",
+    "postedAt": "2026-11-26T19:32:04.673Z",
+    "section": "Frontpage",
+    "title": "Understanding why 1 + 2 + 3 + 4 + 5 + ... = -1/12 (rather than \u221e) ",
+    "topicScore": 3,
+    "url": "https://www.lesswrong.com/posts/F7DNBdoADqktjn2Hk/understanding-why-1-2-3-4-5-1-12-rather-than-infinity",
+    "visualEvidence": [
+      "figure     Image from Wikipedia A bare-minimum description of the Casimir Effect is that it is a physical force that arises in confined spaces due solely to quantum fluctuations in",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793170445/lexical_client_uploads/mygd1luon7pj09ahotrq.png   Image from Wikipedia",
+      "img image.png   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1793414236/lexical_client_uploads/xpman2ufywbmt355kkkw.png  This is definitely a bit of a dive into the linea"
+    ],
+    "visualizationScore": 5,
+    "wordCount": 7301
+  },
+  {
+    "author": "Michael Flood",
+    "baseScore": 4,
+    "id": "y2Z9HPgYPuAgTxvD9",
+    "postedAt": "2026-11-26T18:10:59.066Z",
+    "section": "Frontpage",
+    "title": "What makes a problem difficult for humans? What makes a problem difficult for AI?",
+    "topicScore": 2,
+    "url": "https://www.lesswrong.com/posts/y2Z9HPgYPuAgTxvD9/what-makes-a-problem-difficult-for-humans-what-makes-a",
+    "visualEvidence": [
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/y2Z9HPgYPuAgTxvD9/jcivtkxyawbasju4sgnx  The axes below are not mutually exclusive or to",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/y2Z9HPgYPuAgTxvD9/syjf4yxyzpu1biiths99  Conceptual Difficulty: ??? Problem: Numerical w",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/y2Z9HPgYPuAgTxvD9/dzhhabn0aakre3gfzdmt  These problems are not solvable by doing more c",
+      "img    https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/y2Z9HPgYPuAgTxvD9/bs6vakoxlrysuaznyite  One thing conceptual breakthroughs make clear i"
+    ],
+    "visualizationScore": 8,
+    "wordCount": 3220
+  }
+]
