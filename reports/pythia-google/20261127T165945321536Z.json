@@ -1,0 +1,622 @@
+{
+  "checked_at": "2026-11-27T16:59:45+00:00",
+  "errors": [],
+  "last_success_at": "2026-11-27T16:59:45+00:00",
+  "new_count": 9,
+  "pending_count": 9,
+  "pending_results": [
+    {
+      "first_seen_at": "2026-11-27T16:59:45+00:00",
+      "google_date": "vor 20 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "At matched inference cost, the authors report that their carved 1.3B standard model exceeds OPT-1.3B and Pythia-1.4B on CORE-22 while using less reported ...",
+      "title": "Harvard's Model Carving Cuts AI Inference Costs by 34% ...",
+      "url": "https://alphasignal.ai/paper/harvard-s-model-carving-cuts-ai-inference-costs-by-34-during-pretraining"
+    },
+    {
+      "first_seen_at": "2026-11-27T16:59:45+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... Pythia-12B-class performance at 2.8B parameters. A 2.8-billion parameter language model trained on 300 billion tokens with 2% extra FLOPs matches or ...",
+      "title": "LoomFormer matches 3×-compute transformers at 2% ...",
+      "url": "https://aiweekly.co/alerts/loomformer-matches-3-compute-transformers-at-2-flops-cost"
+    },
+    {
+      "first_seen_at": "2026-11-27T16:59:45+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "What if a language model could take its orders through a separate channel ... Pythia-2.8B with prompt steering, DiffMean, LinearProbe, LoRA, Prompt SFT ...",
+      "title": "Conditional Pretraining for Robust Control of Language Models",
+      "url": "https://www.youtube.com/watch?v=XbdO6mBfR9A"
+    },
+    {
+      "first_seen_at": "2026-11-27T16:59:45+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "He then shows a chart evaluating eight major models (Meta Llama 4, IBM Granite, DeepSeek, Alibaba Qwen, Zhipu GLM, Moonshot Kimi, AI2 OLMo 3, EleutherAI Pythia) ...",
+      "title": "The AI Revolution explains open weights versus ...",
+      "url": "https://www.facebook.com/historyofAIwithAlyas/videos/the-ai-revolution-explains-open-weights-versus-open-source-and-how-models-from-m/29946422488283406/"
+    },
+    {
+      "first_seen_at": "2026-11-27T16:59:45+00:00",
+      "google_date": "vor 1 Tag",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "... heads, mechanistic interpretability, induction head, attention sink, residual stream, Pythia, neuromodulation, AI explained, Neural Pathways Academy.",
+      "title": "This Transformer Rewires Itself for Every Word",
+      "url": "https://www.youtube.com/watch?v=JhcsXinX4po"
+    },
+    {
+      "first_seen_at": "2026-11-27T16:59:45+00:00",
+      "google_date": "vor 13 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "mistral-nemo:12b 比pythia-12b 少需约20 GB 显存（10 GB 对30 GB）。 目前最便宜的运行方式：pythia-12b 在RTX A6000 上每小时$1.20 起，mistral-nemo:12b 在Tesla T4 ...",
+      "title": "EleutherAI/pythia-12b 对比mistral-nemo:12b：显存、速度与成本",
+      "url": "https://corehu.com/run/eleutherai--pythia-12b/vs/ollama--mistral-nemo-12b?lang=zh"
+    },
+    {
+      "first_seen_at": "2026-11-27T16:59:45+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Existing large language model unlearning evaluations are inconclusive. arXiv ... Extensive experiments on the AI4Privacy PII-Masking dataset using Pythia ...",
+      "title": "(PDF) Auditing Post-Training Unlearning in Diffusion ...",
+      "url": "https://www.researchgate.net/publication/418217358_Auditing_Post-Training_Unlearning_in_Diffusion_Language_Models_using_Sparse_Autoencoders"
+    },
+    {
+      "first_seen_at": "2026-11-27T16:59:45+00:00",
+      "google_date": "vor 9 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Computer chip artificial intelligence machine learning large language model ... Pythia Research. AMD: 2027 Could Be A Breakout Year For Its Earnings. Future ...",
+      "title": "AIS: Key Catalysts Could Drive Another Growth Phase In ...",
+      "url": "https://seekingalpha.com/article/4972459-ais-key-catalysts-could-drive-another-growth-phase-in-2027"
+    },
+    {
+      "first_seen_at": "2026-11-27T16:59:45+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "... Pythia models (160M to 6.9B parameters), three sequence ... Everything runs on your Mac, and it works offline with a local language model through Ollama.",
+      "title": "Hexagames · Bill C. Alcantara",
+      "url": "https://billalcantara.me/projects/hexagames/"
+    }
+  ],
+  "queries": [
+    {
+      "label": "24 Stunden",
+      "q": "pythia",
+      "tbs": "qdr:d"
+    },
+    {
+      "label": "Überlappung/Nachholen: 3 Tage",
+      "q": "pythia",
+      "tbs": "qdr:d3"
+    },
+    {
+      "label": "Ergänzende Modellsuche: 3 Tage",
+      "q": "pythia (EleutherAI OR \"GPT-NeoX\" OR \"language model\" OR Sprachmodell OR \"mechanistic interpretability\")",
+      "tbs": "qdr:d3"
+    }
+  ],
+  "results": [
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Für diese Seite sind keine Informationen verfügbar.",
+      "title": "Pythia",
+      "url": "http://pythiacrafting.com/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Pythia Cap: Partially Conductive · @PythiaR. Apple Pie > Pumpkin Pie I will not be taking questions at this time thank you for your attention to this matter. 9 ...",
+      "title": "Pythia Cap: Partially Conductive",
+      "url": "https://x.com/PythiaR/status/2126071476310905003"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "How the Pythia shapes the Greek world. Like. 0. Share. Video unavailable. This content isn't available. Skip video. So what she says goes, ...",
+      "title": "How the Pythia shapes the Greek world",
+      "url": "https://www.youtube.com/shorts/EWnNE7kIADw"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 12 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Claude makes every analysis faster. Pythia is purpose-built to understand how finance works inside your company. We learn your business logic and the drivers ...",
+      "title": "Why Pythia, when you already have Claude",
+      "url": "https://www.getpythia.co.uk/why-pythia"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "Pythia was the title of the high priestess of the Apollo Temple in Delphi in Ancient Greece. So all the high priestesses who passed from this position, were ...",
+      "title": "Cigudi, the fortune-teller of Ephesus! A woman who knows ...",
+      "url": "https://www.facebook.com/groups/1424720167832570/posts/4127276467576913/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 19 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Pythia. @Angeli189. More about this channel ...more. More about this channel ...more ...more. Subscribe ... Pythia · Playlist.",
+      "title": "Pythia",
+      "url": "https://www.youtube.com/@Angeli189"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "⭐️HOUSE OF PYTHIA TOP HOUSE⭐️ EACH QUEEN IN THE HOUSE WILL RECEIVE 2 POINTS & THE WINNER WILL RECEIVE AN EXTRA POINT FOR A TOTAL OF 3! - HOUSE OF MAMI ...",
+      "title": "- 🎯 SEASON 7 🎯 EPISODE 1 ⭐️HOUSE OF PYTHIA TOP ...",
+      "url": "https://www.instagram.com/p/DgNtkmjk73u/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 17 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "It was paws up all across the board (aside from Pythia, she wasn't a fan of the green beans ) Happy Thanksgiving! Julie Ann and 117 others · 118 · 5.",
+      "title": "Shelter Dogs Enjoy Thanksgiving Dinner Thanks to COFAS ...",
+      "url": "https://www.facebook.com/cofpets/posts/all-of-our-pets-got-a-tasty-thanksgiving-dinner-today-thanks-to-one-of-our-cofas/1654388600057715/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 20 Stunden",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "Dit proefexamen behandelt Les 16 van de Grieks cursus, waarin het verhaal van Puthia/Pythia en de oorsprong van het orakel van Delphi wordt besproken.",
+      "title": "Proefexamen Grieks — Les 16: Puthia/Pythia en Delphi",
+      "url": "https://www.studeersnel.nl/nl/document/rsg-t-rijks/grieks/proefexamen-grieks-les-16-puthiapythia-en-delphi/180015920"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "24 Stunden",
+      "snippet": "Why did Apollo kill Python, the giant serpent of Delphi? The Greek sun god's first great deed is the reason every python on Earth carries this monster's ...",
+      "title": "Why Did Apollo Kill the Giant Serpent of Delphi?",
+      "url": "https://www.youtube.com/watch?v=U7wYlA3rv08"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "24 Stunden",
+      "snippet": "This Washington runner had her race stolen by a trans-identified male. Now she's speaking out. Lily Bennett ran the fastest race of her life.",
+      "title": "Dont laugh, a trans woman denied her 16th placed. ...",
+      "url": "https://x.com/PartyPrat/status/2126011909384417326"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Pythia is being his annoying self In the Marrow. Upvote 3. Downvote 8 Go to ... Pythia not Paythia. And I assume that it's not just a phase. silksong_lace.",
+      "title": "Mass ic cuz Im bored : r/Pharloom_Reborn",
+      "url": "https://www.reddit.com/r/Pharloom_Reborn/comments/1y6b0l5/mass_ic_cuz_im_bored/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "... Pythia (the high priestess) sat to deliver prophecies. Key Roles and Features • Oracular Seat: The Pythia sat on a circular slab or bowl atop the three ...",
+      "title": "We Love Ancient Aliens | 🙂✌",
+      "url": "https://www.facebook.com/groups/2001326460125822/posts/4680674695524305/"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 20 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "24 Stunden",
+      "snippet": "At matched inference cost, the authors report that their carved 1.3B standard model exceeds OPT-1.3B and Pythia-1.4B on CORE-22 while using less reported ...",
+      "title": "Harvard's Model Carving Cuts AI Inference Costs by 34% ...",
+      "url": "https://alphasignal.ai/paper/harvard-s-model-carving-cuts-ai-inference-costs-by-34-during-pretraining"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "24 Stunden",
+      "snippet": "In Norse mythology, the goddesses represent the past, present & future (Urd/Wyrd, Verdandi, and Skuld). They also represent fate, becoming, and debt. In Greek ...",
+      "title": "In Norse mythology, the goddesses represent the past ...",
+      "url": "https://www.threads.com/@klsreviews/post/DgNzHRUEuso/in-norse-mythology-the-goddesses-represent-the-past-present-future-urd-wyrd/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 19 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "pythia.nekoweb.org. Pythia's Domain · kaiswonderland.nekoweb.org. kaiswonderland: menu · skyberia.art. SKYBERIA · kwttu.nekoweb.org. Portfolio · phoeberz.",
+      "title": "Explore - nekoweb.org",
+      "url": "https://nekoweb.org/explore?by=tag&page=1&q=&sort=lastupd"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "... Pythia — your personal AI oracle. Discover more about yourself, your relationships, and your possibilities. Link in bio. #tarot #astrology #numerology ...",
+      "title": "mypythia.ai",
+      "url": "https://www.youtube.com/watch?v=gPf2hKFIWU0"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "24 Stunden",
+      "snippet": "At Delphi, people travelled from across the ancient Greek world to consult the Oracle. Her name was Pythia. She delivered prophecies while seated inside the ...",
+      "title": "The Oracle of Delphi may have been high 🏛️ For centuries ...",
+      "url": "https://www.instagram.com/reel/DgO23aKzRG9/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "24 Stunden",
+      "snippet": "Explore your questions from different perspectives with Pythia — your personal AI oracle. Discover more about yourself, your relationships, and your ...",
+      "title": "One question. Four different perspectives. 🔮 ✨ Tarot",
+      "url": "https://www.tiktok.com/@mypythia/video/7712788521660026113"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 3 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "1 Pythia currently costs $0, down 3.81% in the last 24 hours. View the live Pythia price in USD (PYTHIA/USD), chart, market cap and 24-hour volume.",
+      "title": "Pythia Price (PYTHIA/USD) Today | Live Price, Market Cap ...",
+      "url": "https://www.binance.com/en/price/pythia"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 2 Tagen",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "In Plutarch's dialogue on the Pythia (De Pythiae oraculis), a stranger from Greece, Diogenianus, is shown the offerings at Delphi by Philinus, Theon, ...",
+      "title": "The Oracles at Delphi (On the Pythian Priestess)",
+      "url": "https://www.greekmythology.com/sources/plutarch/the-oracles-at-delphi"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Für diese Seite sind keine Informationen verfügbar.",
+      "title": "Pythia",
+      "url": "http://pythiacrafting.com/"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "vor 3 Tagen",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Walking distance to the Delphi Archaeological Museum and the Museum of Delphic Festivals. One of the few hotels in the area with a 24-hr front desk.",
+      "title": "Pythia Art Hotel",
+      "url": "https://www.google.com.gi/travel/hotels/entity/ChcI0-CyyKq6srMWGgsvZy8xdzE0MTN6axAB/prices?ei=2eEDa8fEOZuf5LcPuMqmoQs&ei=M6oCa6euAt7M5LcPluen8AY&ei=WCieapDqN_fZutQP4sbP-Q4&sa=X&ts=CAEaBAoCGgAqBAoAGgA&ved=2ahUKEwiHld_nv52YAxWbD_kAHTilKbQQrfoIegUIAxDSAQ"
+    },
+    {
+      "classification": "excluded",
+      "google_date": "",
+      "reason": "Hinweis auf ein anderes Pythia (z. B. Teilchenphysik)",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "For centuries, the Pythia served as the high priestess of Apollo at Delphi, guiding rulers, generals, and citizens across ancient Greece. Resting near Mount ...",
+      "title": "The city has fallen #pythia #apollo #ancientgreece ...",
+      "url": "https://www.instagram.com/p/DgKpX6sJYwR/"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Pythia: An LLM-Powered Study Design Advisor for ATLAS v3.0 (Hoffmann) · Comments.",
+      "title": "Pythia: An LLM-Powered Study Design Advisor for ATLAS v3.0 ...",
+      "url": "https://www.youtube.com/watch?v=VHQ2IV8Yyt8"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "In 2011 I founded Pythia Technologies to solve a problem I kept running into: the UPS systems, CRAC units, chillers, generators and sensors that keep a facility ...",
+      "title": "James Potter - Founder, President & CEO, Pythia ...",
+      "url": "https://www.linkedin.com/in/jim-potter-pythia"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 1 Tag",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "MARAN PYTHIA (IMO: 9402902) is a Crude Oil Tanker and is sailing under the flag of Greece. Her length overall (LOA) is 274 meters and her width is 48.04 meters.",
+      "title": "MARAN PYTHIA (IMO 9402902), Crude Oil Tanker",
+      "url": "https://www.marinetraffic.com/he/ais/details/ships/shipid:213980"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Although there were numerous oracles across the whole of Greece, the Pythia was the most well-known and respected of them all. From key members of the city- ...",
+      "title": "Pythia. Delphic tripod. British Museum",
+      "url": "https://www.facebook.com/sarah.bohemia/posts/pythia-delphic-tripod-british-museum/29502092782793248/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Conversation · @PythiaR. Pythia Cap: Partially Conductive · @PythiaR. Fun on the way up, not fun on the way down. Image. 5:10 PM · Nov 24, 2026 7,208. Views · 1.",
+      "title": "Pythia Cap: Partially Conductive on X",
+      "url": "https://x.com/PythiaR/status/2125275966176116912"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Conversation · @PythiaR. Pythia Cap: Partially Conductive · @PythiaR. Fun on the way up, not fun on the way down. Image. 5:10 PM · Nov 24, 2026 7,208. Views · 1.",
+      "title": "Pythia Cap: Partially Conductive on X",
+      "url": "https://x.com/PythiaR/status/2125275966176116912"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Vestment of the Pythia is part of the 2-piece Robes of the Pythia set. Set Items. Vestment of the Pythia (torso armor); Clasp of the Pythia (arm armor).",
+      "title": "Vestment of the Pythia - Titan Quest Wiki - Fandom",
+      "url": "https://titanquest.fandom.com/wiki/Vestment_of_the_Pythia"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Page 5 | Seeking Alpha stock analysis and news is written by leading experts around the world. Read stock research and investment insights by Pythia Research ...",
+      "title": "Page 5 | Pythia Research's Analysis",
+      "url": "https://seekingalpha.com/author/pythia-research/analysis?page=5&ticker=nbis%3Aca"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Weighty plaited silver cuff that balances perfectly on the edge of hard and soft with its graceful braided motif. sterling silver. More Tips. pamela love ...",
+      "title": "Pamela Love Pythia Cuff 2026 Top Sale",
+      "url": "http://www.cumberland.org/?c=pid-204720758"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "To understand the emergence of grammatical behavior in language models, we track circuits for subject–verb number agreement in pythia-1b and ten seeds of pythia ...",
+      "title": "The Emergence and Sparsification of a Syntactic Circuit",
+      "url": "https://aclanthology.org/2026.emnlp-main.732/"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 3 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "LoomPythia-2.8B achieves approximately 1.6x the average downstream gain of mHC-Pythia-2.8B over the shared Pythia-2.8B baseline, and performs comparably to ...",
+      "title": "LoomFormer: 2.8B model matches or surpasses Pythia- ...",
+      "url": "https://aiweekly.co/editors-blog/found-first-loomformer-2-8b-model-matches-or-surpasses-pythia-12b-with-2-extra"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Pluot Pythia. @PluotPythia. 82 subscribers•18 videos. Pluot Pythia — original songs, and the shadows I built to hold them. ...more. Pluot Pythia ...",
+      "title": "Pluot Pythia",
+      "url": "https://www.youtube.com/@PluotPythia/videos"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 12 Stunden",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "Claude makes every analysis faster. Pythia is purpose-built to understand how finance works inside your company. We learn your business logic and the drivers ...",
+      "title": "Why Pythia, when you already have Claude",
+      "url": "https://www.getpythia.co.uk/why-pythia"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "How the Pythia shapes the Greek world. Like. 0. Share. Video unavailable. This content isn't available. Skip video. So what she says goes, ...",
+      "title": "How the Pythia shapes the Greek world",
+      "url": "https://www.youtube.com/shorts/EWnNE7kIADw"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 1 Tag",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Überlappung/Nachholen: 3 Tage",
+      "snippet": "relaxed fit trousers with pleated front - zip-fly with metal button closure - front pockets, right back pocket - lightweight brushed cotton/poly blend",
+      "title": "PLEATED TROUSER - BLACK - Pythia",
+      "url": "https://www.pythiaclothing.com/products/pleated-trouser-black?srsltid=AY6E963QudFRSVbwi7lwFxIt5olFe7wVPNd_9Sz8_kUlbO9uuAChQc_r"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "We take these results to be informative about how linguistic knowledge emerges and is represented in a language model. Anthology ID: 2026.emnlp-main.732 ...",
+      "title": "The Emergence and Sparsification of a Syntactic Circuit",
+      "url": "https://aclanthology.org/2026.emnlp-main.732/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Kein ausreichender Beleg für das EleutherAI-Modell im Suchauszug",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "... (Pythia, Qwen3, OLMo-2, Llama-3 and Gemma-3), cross-family J-space alignment ... language-model pairs. The supplement extends this to video classifiers ...",
+      "title": "Plato's Cave in J-Space: Text and Vision AI Agree Up to a ...",
+      "url": "https://www.youtube.com/watch?v=BWO0Qe22CKw"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 3 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "... Pythia-12B-class performance at 2.8B parameters. A 2.8-billion parameter language model trained on 300 billion tokens with 2% extra FLOPs matches or ...",
+      "title": "LoomFormer matches 3×-compute transformers at 2% ...",
+      "url": "https://aiweekly.co/alerts/loomformer-matches-3-compute-transformers-at-2-flops-cost"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 1 Tag",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "“OLMES: A Stan- dard for Language Model Evaluations”. In: Findings of the Association for Computational. Linguistics: NAACL 2025. 2025, pp. 5020–. 5048. doi: 10 ...",
+      "title": "A Quarter of HellaSwag Correct Answers Depend on the ...",
+      "url": "https://openreview.net/pdf/cd34a6ba829e70adff50becf112d53bcbcc53856.pdf"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "What if a language model could take its orders through a separate channel ... Pythia-2.8B with prompt steering, DiffMean, LinearProbe, LoRA, Prompt SFT ...",
+      "title": "Conditional Pretraining for Robust Control of Language Models",
+      "url": "https://www.youtube.com/watch?v=XbdO6mBfR9A"
+    },
+    {
+      "classification": "match",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "He then shows a chart evaluating eight major models (Meta Llama 4, IBM Granite, DeepSeek, Alibaba Qwen, Zhipu GLM, Moonshot Kimi, AI2 OLMo 3, EleutherAI Pythia) ...",
+      "title": "The AI Revolution explains open weights versus ...",
+      "url": "https://www.facebook.com/historyofAIwithAlyas/videos/the-ai-revolution-explains-open-weights-versus-open-source-and-how-models-from-m/29946422488283406/"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 1 Tag",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "... heads, mechanistic interpretability, induction head, attention sink, residual stream, Pythia, neuromodulation, AI explained, Neural Pathways Academy.",
+      "title": "This Transformer Rewires Itself for Every Word",
+      "url": "https://www.youtube.com/watch?v=JhcsXinX4po"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 13 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "mistral-nemo:12b 比pythia-12b 少需约20 GB 显存（10 GB 对30 GB）。 目前最便宜的运行方式：pythia-12b 在RTX A6000 上每小时$1.20 起，mistral-nemo:12b 在Tesla T4 ...",
+      "title": "EleutherAI/pythia-12b 对比mistral-nemo:12b：显存、速度与成本",
+      "url": "https://corehu.com/run/eleutherai--pythia-12b/vs/ollama--mistral-nemo-12b?lang=zh"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 1 Tag",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Encyclopedia of LLM homologies. Each entry is one language model, drawn from its own MLP neurons. Neurons that fire on the same text sit together, and they form ...",
+      "title": "Encyclopedia of LLM homologies",
+      "url": "https://encyclopedia.lookatmyquant.com/"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Existing large language model unlearning evaluations are inconclusive. arXiv ... Extensive experiments on the AI4Privacy PII-Masking dataset using Pythia ...",
+      "title": "(PDF) Auditing Post-Training Unlearning in Diffusion ...",
+      "url": "https://www.researchgate.net/publication/418217358_Auditing_Post-Training_Unlearning_in_Diffusion_Language_Models_using_Sparse_Autoencoders"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 3 Tagen",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Track the latest AI models, pricing, benchmarks, and releases across every major AI lab. Updated automatically every 6 hours.",
+      "title": "API Pricing Dashboard - Model Radar",
+      "url": "https://modelradar.live/pricing"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 1 Tag",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Jamba: A Hybrid Transformer-Mamba Language Model. arXiv:2403.19887. https://arxiv.org/abs/2403.19887; Waleffe, R., et al. (2024). An Empirical Study of Mamba ...",
+      "title": "My Thoughts on Mamba-2",
+      "url": "https://www.kacemettahali.com/writing/thoughts-on-mamba2/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 16 Stunden",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "DistDNA: Language Model Fingerprinting under Stochastic Decoding. DistDNA enables LLM fingerprinting under stochastic decoding by characterizing response ...",
+      "title": "Research · AI.Wire",
+      "url": "https://thewire.ink/tag/research"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 9 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Computer chip artificial intelligence machine learning large language model ... Pythia Research. AMD: 2027 Could Be A Breakout Year For Its Earnings. Future ...",
+      "title": "AIS: Key Catalysts Could Drive Another Growth Phase In ...",
+      "url": "https://seekingalpha.com/article/4972459-ais-key-catalysts-could-drive-another-growth-phase-in-2027"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "TangiMap, from MIT CSAIL and Boston University, uses an AI agent and a vision-language model to assign software functions to the knobs, faders and buttons ...",
+      "title": "AI news & research: new papers and headlines | ReviewRamble",
+      "url": "https://www.reviewramble.com/ai-news"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "Only 5% of the time was idle while a job was waiting. The example that stuck with me: asked to choose one of nine optimizers for training a language model, ...",
+      "title": "Computewise shows how ai agents waste gpu time",
+      "url": "https://www.facebook.com/MarvinBuildsAI/posts/the-gpus-were-busy-why-was-the-time-still-wasted-computewise-is-a-new-preprint-f/122122169289327204/"
+    },
+    {
+      "classification": "match",
+      "google_date": "vor 3 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "... Pythia models (160M to 6.9B parameters), three sequence ... Everything runs on your Mac, and it works offline with a local language model through Ollama.",
+      "title": "Hexagames · Bill C. Alcantara",
+      "url": "https://billalcantara.me/projects/hexagames/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "I'm building a (small) language model!!! Watch this explainer video created from my model building learning notes!! I'm always fascinated by AI models since ...",
+      "title": "“Mamba: Linear-Time Sequence Modeling with Selective ...",
+      "url": "https://www.instagram.com/reel/DgMfNrfyRMV/"
+    },
+    {
+      "classification": "unclear",
+      "google_date": "vor 15 Stunden",
+      "reason": "Pythia-Bezug im Suchauszug nicht belegt",
+      "search": "Ergänzende Modellsuche: 3 Tage",
+      "snippet": "An x86-64 assembly library and OS for running Qwen3-0.6B language model inference and training with no C runtime dependencies. For learning how LLM ...",
+      "title": "Meet Yoyo - YLAT",
+      "url": "https://ylat.app/yoyo"
+    }
+  ]
+}

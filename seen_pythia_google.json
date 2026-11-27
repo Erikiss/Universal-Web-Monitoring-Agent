@@ -1441,10 +1441,83 @@
       "url": "https://zhuanlan.zhihu.com/p/2096482642027983491"
     }
   },
-  "last_attempt_at": "2026-11-26T17:21:01+00:00",
+  "last_attempt_at": "2026-11-27T16:59:45+00:00",
   "last_errors": [],
-  "last_success_at": "2026-11-26T17:21:01+00:00",
-  "pending": {},
+  "last_success_at": "2026-11-27T16:59:45+00:00",
+  "pending": {
+    "https://aiweekly.co/alerts/loomformer-matches-3-compute-transformers-at-2-flops-cost": {
+      "first_seen_at": "2026-11-27T16:59:45+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "... Pythia-12B-class performance at 2.8B parameters. A 2.8-billion parameter language model trained on 300 billion tokens with 2% extra FLOPs matches or ...",
+      "title": "LoomFormer matches 3×-compute transformers at 2% ...",
+      "url": "https://aiweekly.co/alerts/loomformer-matches-3-compute-transformers-at-2-flops-cost"
+    },
+    "https://alphasignal.ai/paper/harvard-s-model-carving-cuts-ai-inference-costs-by-34-during-pretraining": {
+      "first_seen_at": "2026-11-27T16:59:45+00:00",
+      "google_date": "vor 20 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "At matched inference cost, the authors report that their carved 1.3B standard model exceeds OPT-1.3B and Pythia-1.4B on CORE-22 while using less reported ...",
+      "title": "Harvard's Model Carving Cuts AI Inference Costs by 34% ...",
+      "url": "https://alphasignal.ai/paper/harvard-s-model-carving-cuts-ai-inference-costs-by-34-during-pretraining"
+    },
+    "https://billalcantara.me/projects/hexagames/": {
+      "first_seen_at": "2026-11-27T16:59:45+00:00",
+      "google_date": "vor 3 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "... Pythia models (160M to 6.9B parameters), three sequence ... Everything runs on your Mac, and it works offline with a local language model through Ollama.",
+      "title": "Hexagames · Bill C. Alcantara",
+      "url": "https://billalcantara.me/projects/hexagames/"
+    },
+    "https://corehu.com/run/eleutherai--pythia-12b/vs/ollama--mistral-nemo-12b?lang=zh": {
+      "first_seen_at": "2026-11-27T16:59:45+00:00",
+      "google_date": "vor 13 Stunden",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "mistral-nemo:12b 比pythia-12b 少需约20 GB 显存（10 GB 对30 GB）。 目前最便宜的运行方式：pythia-12b 在RTX A6000 上每小时$1.20 起，mistral-nemo:12b 在Tesla T4 ...",
+      "title": "EleutherAI/pythia-12b 对比mistral-nemo:12b：显存、速度与成本",
+      "url": "https://corehu.com/run/eleutherai--pythia-12b/vs/ollama--mistral-nemo-12b?lang=zh"
+    },
+    "https://seekingalpha.com/article/4972459-ais-key-catalysts-could-drive-another-growth-phase-in-2027": {
+      "first_seen_at": "2026-11-27T16:59:45+00:00",
+      "google_date": "vor 9 Stunden",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Computer chip artificial intelligence machine learning large language model ... Pythia Research. AMD: 2027 Could Be A Breakout Year For Its Earnings. Future ...",
+      "title": "AIS: Key Catalysts Could Drive Another Growth Phase In ...",
+      "url": "https://seekingalpha.com/article/4972459-ais-key-catalysts-could-drive-another-growth-phase-in-2027"
+    },
+    "https://www.facebook.com/historyofAIwithAlyas/videos/the-ai-revolution-explains-open-weights-versus-open-source-and-how-models-from-m/29946422488283406/": {
+      "first_seen_at": "2026-11-27T16:59:45+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "He then shows a chart evaluating eight major models (Meta Llama 4, IBM Granite, DeepSeek, Alibaba Qwen, Zhipu GLM, Moonshot Kimi, AI2 OLMo 3, EleutherAI Pythia) ...",
+      "title": "The AI Revolution explains open weights versus ...",
+      "url": "https://www.facebook.com/historyofAIwithAlyas/videos/the-ai-revolution-explains-open-weights-versus-open-source-and-how-models-from-m/29946422488283406/"
+    },
+    "https://www.researchgate.net/publication/418217358_Auditing_Post-Training_Unlearning_in_Diffusion_Language_Models_using_Sparse_Autoencoders": {
+      "first_seen_at": "2026-11-27T16:59:45+00:00",
+      "google_date": "vor 2 Tagen",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "Existing large language model unlearning evaluations are inconclusive. arXiv ... Extensive experiments on the AI4Privacy PII-Masking dataset using Pythia ...",
+      "title": "(PDF) Auditing Post-Training Unlearning in Diffusion ...",
+      "url": "https://www.researchgate.net/publication/418217358_Auditing_Post-Training_Unlearning_in_Diffusion_Language_Models_using_Sparse_Autoencoders"
+    },
+    "https://www.youtube.com/watch?v=JhcsXinX4po": {
+      "first_seen_at": "2026-11-27T16:59:45+00:00",
+      "google_date": "vor 1 Tag",
+      "reason": "Pythia im Sprachmodell-/Interpretierbarkeits-Kontext",
+      "snippet": "... heads, mechanistic interpretability, induction head, attention sink, residual stream, Pythia, neuromodulation, AI explained, Neural Pathways Academy.",
+      "title": "This Transformer Rewires Itself for Every Word",
+      "url": "https://www.youtube.com/watch?v=JhcsXinX4po"
+    },
+    "https://www.youtube.com/watch?v=XbdO6mBfR9A": {
+      "first_seen_at": "2026-11-27T16:59:45+00:00",
+      "google_date": "",
+      "reason": "EleutherAI-/GPT-NeoX-Bezug oder konkrete Pythia-Modellgröße",
+      "snippet": "What if a language model could take its orders through a separate channel ... Pythia-2.8B with prompt steering, DiffMean, LinearProbe, LoRA, Prompt SFT ...",
+      "title": "Conditional Pretraining for Robust Control of Language Models",
+      "url": "https://www.youtube.com/watch?v=XbdO6mBfR9A"
+    }
+  },
   "schema_version": 1,
   "started_at": "2026-10-18T11:44:31+00:00"
 }
